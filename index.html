@@ -427,38 +427,159 @@
         .signal-summary {
             display: grid;
             grid-template-columns: repeat(5, 1fr);
-            gap: 8px;
+            gap: 10px;
             margin-bottom: 24px;
         }
 
         .signal-card {
+            position: relative;
             background: var(--bg-secondary);
-            border: 1px solid var(--border-color);
-            border-radius: 12px;
-            padding: 14px 8px;
+            border-radius: 16px;
+            padding: 20px 12px 16px;
             text-align: center;
-            transition: all 0.2s;
-            box-shadow: var(--shadow-sm);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+            overflow: hidden;
+            border: 1px solid transparent;
+        }
+
+        .signal-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            border-radius: 16px 16px 0 0;
+        }
+
+        .signal-card {
+            cursor: pointer;
         }
 
         .signal-card:hover {
-            transform: translateY(-2px);
-            box-shadow: var(--shadow-md);
+            transform: translateY(-4px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
         }
 
-        .signal-count { font-size: 1.5rem; font-weight: 700; margin-bottom: 2px; }
-        .signal-label { font-size: 0.75rem; color: var(--text-secondary); font-weight: 500; }
+        .signal-card.active {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+        }
 
-        .signal-card.strong-buy { border-left: 3px solid var(--signal-strong-buy); }
-        .signal-card.strong-buy .signal-count { color: var(--signal-strong-buy); }
-        .signal-card.buy { border-left: 3px solid var(--signal-buy); }
-        .signal-card.buy .signal-count { color: var(--signal-buy); }
-        .signal-card.neutral { border-left: 3px solid var(--signal-neutral); }
-        .signal-card.neutral .signal-count { color: var(--signal-neutral); }
-        .signal-card.sell { border-left: 3px solid var(--signal-sell); }
-        .signal-card.sell .signal-count { color: var(--signal-sell); }
-        .signal-card.strong-sell { border-left: 3px solid var(--signal-strong-sell); }
-        .signal-card.strong-sell .signal-count { color: var(--signal-strong-sell); }
+        .signal-card.active::after {
+            content: '';
+            position: absolute;
+            bottom: 8px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 24px;
+            height: 3px;
+            border-radius: 2px;
+            background: currentColor;
+            opacity: 0.5;
+        }
+
+        .signal-icon {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 10px;
+            font-size: 1rem;
+            transition: transform 0.3s;
+        }
+
+        .signal-card:hover .signal-icon {
+            transform: scale(1.1);
+        }
+
+        .signal-count {
+            font-size: 1.75rem;
+            font-weight: 800;
+            margin-bottom: 4px;
+            letter-spacing: -0.5px;
+        }
+
+        .signal-label {
+            font-size: 0.7rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+        }
+
+        /* Strong Buy */
+        .signal-card.strong-buy::before { background: linear-gradient(90deg, #059669, #10b981); }
+        .signal-card.strong-buy { border-color: rgba(5, 150, 105, 0.15); background: linear-gradient(to bottom, rgba(5, 150, 105, 0.04), var(--bg-secondary)); }
+        .signal-card.strong-buy .signal-icon { background: linear-gradient(135deg, #059669, #10b981); color: white; }
+        .signal-card.strong-buy .signal-count { color: #059669; }
+        .signal-card.strong-buy .signal-label { color: #059669; }
+        .signal-card.strong-buy:hover { border-color: rgba(5, 150, 105, 0.3); box-shadow: 0 12px 24px rgba(5, 150, 105, 0.15); }
+
+        /* Buy */
+        .signal-card.buy::before { background: linear-gradient(90deg, #10b981, #34d399); }
+        .signal-card.buy { border-color: rgba(16, 185, 129, 0.15); background: linear-gradient(to bottom, rgba(16, 185, 129, 0.04), var(--bg-secondary)); }
+        .signal-card.buy .signal-icon { background: linear-gradient(135deg, #10b981, #34d399); color: white; }
+        .signal-card.buy .signal-count { color: #10b981; }
+        .signal-card.buy .signal-label { color: #10b981; }
+        .signal-card.buy:hover { border-color: rgba(16, 185, 129, 0.3); box-shadow: 0 12px 24px rgba(16, 185, 129, 0.15); }
+
+        /* Neutral */
+        .signal-card.neutral::before { background: linear-gradient(90deg, #d97706, #f59e0b); }
+        .signal-card.neutral { border-color: rgba(217, 119, 6, 0.15); background: linear-gradient(to bottom, rgba(217, 119, 6, 0.04), var(--bg-secondary)); }
+        .signal-card.neutral .signal-icon { background: linear-gradient(135deg, #d97706, #f59e0b); color: white; }
+        .signal-card.neutral .signal-count { color: #d97706; }
+        .signal-card.neutral .signal-label { color: #d97706; }
+        .signal-card.neutral:hover { border-color: rgba(217, 119, 6, 0.3); box-shadow: 0 12px 24px rgba(217, 119, 6, 0.15); }
+
+        /* Sell */
+        .signal-card.sell::before { background: linear-gradient(90deg, #ea580c, #f97316); }
+        .signal-card.sell { border-color: rgba(234, 88, 12, 0.15); background: linear-gradient(to bottom, rgba(234, 88, 12, 0.04), var(--bg-secondary)); }
+        .signal-card.sell .signal-icon { background: linear-gradient(135deg, #ea580c, #f97316); color: white; }
+        .signal-card.sell .signal-count { color: #ea580c; }
+        .signal-card.sell .signal-label { color: #ea580c; }
+        .signal-card.sell:hover { border-color: rgba(234, 88, 12, 0.3); box-shadow: 0 12px 24px rgba(234, 88, 12, 0.15); }
+
+        /* Strong Sell */
+        .signal-card.strong-sell::before { background: linear-gradient(90deg, #dc2626, #ef4444); }
+        .signal-card.strong-sell { border-color: rgba(220, 38, 38, 0.15); background: linear-gradient(to bottom, rgba(220, 38, 38, 0.04), var(--bg-secondary)); }
+        .signal-card.strong-sell .signal-icon { background: linear-gradient(135deg, #dc2626, #ef4444); color: white; }
+        .signal-card.strong-sell .signal-count { color: #dc2626; }
+        .signal-card.strong-sell .signal-label { color: #dc2626; }
+        .signal-card.strong-sell:hover { border-color: rgba(220, 38, 38, 0.3); box-shadow: 0 12px 24px rgba(220, 38, 38, 0.15); }
+
+        .filter-indicator {
+            display: none;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 16px;
+            background: var(--bg-accent);
+            border: 1px solid var(--accent-primary);
+            border-radius: 10px;
+            margin-bottom: 16px;
+            font-size: 0.85rem;
+            color: var(--accent-primary);
+        }
+
+        .filter-indicator.active { display: flex; }
+
+        .filter-indicator-text { flex: 1; font-weight: 500; }
+
+        .filter-clear-btn {
+            padding: 4px 12px;
+            background: var(--accent-primary);
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .filter-clear-btn:hover { background: var(--accent-primary-light); }
 
         .market-tabs {
             display: flex;
@@ -573,9 +694,11 @@
             .hero { padding: 20px 0 30px; }
             .hero h1 { font-size: 1.6rem; }
             .signal-summary { grid-template-columns: repeat(5, 1fr); gap: 6px; }
-            .signal-card { padding: 10px 4px; }
-            .signal-count { font-size: 1.2rem; }
-            .signal-label { font-size: 0.65rem; }
+            .signal-card { padding: 12px 4px 10px; border-radius: 12px; }
+            .signal-card::before { height: 3px; }
+            .signal-icon { width: 28px; height: 28px; font-size: 0.8rem; margin-bottom: 6px; }
+            .signal-count { font-size: 1.1rem; }
+            .signal-label { font-size: 0.55rem; letter-spacing: 0; }
             .results-table-wrapper { display: none; }
             .stock-cards { display: block; }
             .features-grid { grid-template-columns: 1fr; }
@@ -592,9 +715,12 @@
             main { padding: 100px 24px 60px; }
             .hero { padding: 50px 0 60px; }
             .hero h1 { font-size: 2.5rem; }
-            .signal-summary { gap: 12px; }
-            .signal-card { padding: 20px 16px; }
-            .signal-count { font-size: 2rem; }
+            .signal-summary { gap: 14px; }
+            .signal-card { padding: 24px 16px 20px; border-radius: 20px; }
+            .signal-card::before { height: 5px; }
+            .signal-icon { width: 44px; height: 44px; font-size: 1.2rem; margin-bottom: 12px; }
+            .signal-count { font-size: 2.25rem; }
+            .signal-label { font-size: 0.75rem; }
             .features-grid { grid-template-columns: repeat(4, 1fr); }
         }
     </style>
@@ -733,6 +859,7 @@
         let allData = null;
         let historyIndex = null;
         let currentMarket = 'all';
+        let currentSignal = null;
         let isViewingHistory = false;
 
         async function loadResults() {
@@ -741,6 +868,8 @@
                 const response = await fetch('./results/latest.json');
                 if (!response.ok) throw new Error('No results');
                 allData = await response.json();
+                currentMarket = 'all';
+                currentSignal = null;
                 renderResults(allData);
             } catch (error) {
                 container.innerHTML = `
@@ -770,6 +899,8 @@
                 allData = await response.json();
 
                 isViewingHistory = true;
+                currentMarket = 'all';
+                currentSignal = null;
                 document.getElementById('viewingDate').textContent = `📅 ${allData.date} 분석 결과 보는 중`;
                 document.getElementById('viewingHistoryBanner').classList.add('active');
 
@@ -870,19 +1001,110 @@
 
         function switchMarket(market) {
             currentMarket = market;
+            currentSignal = null; // 마켓 변경 시 시그널 필터 초기화
             document.querySelectorAll('.market-tab').forEach(tab => {
                 tab.classList.remove('active');
                 if (tab.dataset.market === market) tab.classList.add('active');
             });
-            if (allData) renderStockList(allData, market);
+            if (allData) {
+                updateSignalCards(allData);
+                updateFilterIndicator();
+                renderStockList(allData);
+            }
+        }
+
+        function filterBySignal(signal) {
+            // 같은 시그널 클릭 시 필터 해제
+            if (currentSignal === signal) {
+                currentSignal = null;
+            } else {
+                currentSignal = signal;
+            }
+
+            // 시그널 카드 active 상태 업데이트
+            document.querySelectorAll('.signal-card').forEach(card => {
+                card.classList.remove('active');
+                if (currentSignal && card.dataset.signal === currentSignal) {
+                    card.classList.add('active');
+                }
+            });
+
+            // 필터 인디케이터 업데이트
+            updateFilterIndicator();
+
+            if (allData) renderStockList(allData);
+        }
+
+        function clearSignalFilter() {
+            currentSignal = null;
+
+            document.querySelectorAll('.signal-card').forEach(card => {
+                card.classList.remove('active');
+            });
+
+            updateFilterIndicator();
+
+            if (allData) renderStockList(allData);
+        }
+
+        function updateFilterIndicator() {
+            const indicator = document.getElementById('filterIndicator');
+            const signalName = document.getElementById('filterSignalName');
+
+            if (indicator) {
+                if (currentSignal) {
+                    indicator.classList.add('active');
+                    if (signalName) signalName.textContent = currentSignal;
+                } else {
+                    indicator.classList.remove('active');
+                }
+            }
+        }
+
+        function getFilteredStocks(results) {
+            const { kospi, kosdaq } = categorizeStocks(results);
+            let filtered = currentMarket === 'kospi' ? kospi : currentMarket === 'kosdaq' ? kosdaq : results;
+
+            if (currentSignal) {
+                filtered = filtered.filter(r => r.signal === currentSignal);
+            }
+
+            return filtered;
+        }
+
+        function getSignalCounts(results) {
+            const { kospi, kosdaq } = categorizeStocks(results);
+            const marketFiltered = currentMarket === 'kospi' ? kospi : currentMarket === 'kosdaq' ? kosdaq : results;
+
+            const counts = { '적극매수': 0, '매수': 0, '중립': 0, '매도': 0, '적극매도': 0 };
+            marketFiltered.forEach(r => {
+                if (counts.hasOwnProperty(r.signal)) counts[r.signal]++;
+            });
+            return counts;
+        }
+
+        function updateSignalCards(data) {
+            const signalCounts = getSignalCounts(data.results);
+
+            document.querySelectorAll('.signal-card').forEach(card => {
+                const signal = card.dataset.signal;
+                const countEl = card.querySelector('.signal-count');
+                if (countEl && signalCounts.hasOwnProperty(signal)) {
+                    countEl.textContent = signalCounts[signal];
+                }
+
+                // active 상태 업데이트
+                card.classList.remove('active');
+                if (currentSignal === signal) {
+                    card.classList.add('active');
+                }
+            });
         }
 
         function renderResults(data) {
             const container = document.getElementById('results-container');
             const { kospi, kosdaq } = categorizeStocks(data.results);
-
-            const signalCounts = { '적극매수': 0, '매수': 0, '중립': 0, '매도': 0, '적극매도': 0 };
-            data.results.forEach(r => { if (signalCounts.hasOwnProperty(r.signal)) signalCounts[r.signal]++; });
+            const signalCounts = getSignalCounts(data.results);
 
             container.innerHTML = `
                 <div class="results-meta">
@@ -902,29 +1124,65 @@
                     </div>
                 </div>
 
-                <div class="signal-summary">
-                    <div class="signal-card strong-buy"><div class="signal-count">${signalCounts['적극매수']}</div><div class="signal-label">적극매수</div></div>
-                    <div class="signal-card buy"><div class="signal-count">${signalCounts['매수']}</div><div class="signal-label">매수</div></div>
-                    <div class="signal-card neutral"><div class="signal-count">${signalCounts['중립']}</div><div class="signal-label">중립</div></div>
-                    <div class="signal-card sell"><div class="signal-count">${signalCounts['매도']}</div><div class="signal-label">매도</div></div>
-                    <div class="signal-card strong-sell"><div class="signal-count">${signalCounts['적극매도']}</div><div class="signal-label">적극매도</div></div>
+                <div class="signal-summary" id="signal-summary">
+                    <div class="signal-card strong-buy ${currentSignal === '적극매수' ? 'active' : ''}" data-signal="적극매수" onclick="filterBySignal('적극매수')">
+                        <div class="signal-icon">🚀</div>
+                        <div class="signal-count">${signalCounts['적극매수']}</div>
+                        <div class="signal-label">적극매수</div>
+                    </div>
+                    <div class="signal-card buy ${currentSignal === '매수' ? 'active' : ''}" data-signal="매수" onclick="filterBySignal('매수')">
+                        <div class="signal-icon">📈</div>
+                        <div class="signal-count">${signalCounts['매수']}</div>
+                        <div class="signal-label">매수</div>
+                    </div>
+                    <div class="signal-card neutral ${currentSignal === '중립' ? 'active' : ''}" data-signal="중립" onclick="filterBySignal('중립')">
+                        <div class="signal-icon">⚖️</div>
+                        <div class="signal-count">${signalCounts['중립']}</div>
+                        <div class="signal-label">중립</div>
+                    </div>
+                    <div class="signal-card sell ${currentSignal === '매도' ? 'active' : ''}" data-signal="매도" onclick="filterBySignal('매도')">
+                        <div class="signal-icon">📉</div>
+                        <div class="signal-count">${signalCounts['매도']}</div>
+                        <div class="signal-label">매도</div>
+                    </div>
+                    <div class="signal-card strong-sell ${currentSignal === '적극매도' ? 'active' : ''}" data-signal="적극매도" onclick="filterBySignal('적극매도')">
+                        <div class="signal-icon">🔻</div>
+                        <div class="signal-count">${signalCounts['적극매도']}</div>
+                        <div class="signal-label">적극매도</div>
+                    </div>
                 </div>
 
                 <div class="market-tabs">
-                    <button class="market-tab active" data-market="all" onclick="switchMarket('all')">전체 <span class="tab-count">${data.results.length}</span></button>
-                    <button class="market-tab" data-market="kospi" onclick="switchMarket('kospi')">코스피 <span class="tab-count">${kospi.length}</span></button>
-                    <button class="market-tab" data-market="kosdaq" onclick="switchMarket('kosdaq')">코스닥 <span class="tab-count">${kosdaq.length}</span></button>
+                    <button class="market-tab ${currentMarket === 'all' ? 'active' : ''}" data-market="all" onclick="switchMarket('all')">전체 <span class="tab-count">${data.results.length}</span></button>
+                    <button class="market-tab ${currentMarket === 'kospi' ? 'active' : ''}" data-market="kospi" onclick="switchMarket('kospi')">코스피 <span class="tab-count">${kospi.length}</span></button>
+                    <button class="market-tab ${currentMarket === 'kosdaq' ? 'active' : ''}" data-market="kosdaq" onclick="switchMarket('kosdaq')">코스닥 <span class="tab-count">${kosdaq.length}</span></button>
+                </div>
+
+                <div class="filter-indicator ${currentSignal ? 'active' : ''}" id="filterIndicator">
+                    <span class="filter-indicator-text">🔍 "<span id="filterSignalName">${currentSignal || ''}</span>" 시그널 필터 적용 중</span>
+                    <button class="filter-clear-btn" onclick="clearSignalFilter()">필터 해제</button>
                 </div>
 
                 <div id="stock-list-container"></div>
             `;
-            renderStockList(data, currentMarket);
+            renderStockList(data);
         }
 
-        function renderStockList(data, market) {
+        function renderStockList(data) {
             const container = document.getElementById('stock-list-container');
-            const { kospi, kosdaq } = categorizeStocks(data.results);
-            let filteredResults = market === 'kospi' ? kospi : market === 'kosdaq' ? kosdaq : data.results;
+            const filteredResults = getFilteredStocks(data.results);
+
+            if (filteredResults.length === 0) {
+                const marketName = currentMarket === 'kospi' ? '코스피' : currentMarket === 'kosdaq' ? '코스닥' : '전체';
+                container.innerHTML = `
+                    <div class="empty-state">
+                        <div class="empty-state-icon">🔍</div>
+                        <h3>해당 조건의 종목이 없습니다</h3>
+                        <p>${marketName} 시장에서 "${currentSignal}" 시그널 종목을 찾을 수 없습니다.</p>
+                    </div>
+                `;
+                return;
+            }
 
             container.innerHTML = `
                 <div class="results-table-wrapper">
