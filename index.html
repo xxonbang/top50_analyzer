@@ -9,48 +9,32 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            /* 2026 Light Theme - Cloud Dancer Inspired */
             --bg-primary: #f8f9fa;
             --bg-secondary: #ffffff;
             --bg-card: #ffffff;
             --bg-card-hover: #f1f3f4;
             --bg-accent: #e8f4fd;
-
-            /* Text Colors - High Contrast for Readability */
             --text-primary: #1a1a2e;
             --text-secondary: #4a5568;
             --text-muted: #718096;
-
-            /* Accent Colors - Vibrant but Balanced */
             --accent-primary: #2563eb;
             --accent-primary-light: #3b82f6;
             --accent-secondary: #0891b2;
-            --accent-mint: #0d9488;
-
-            /* Signal Colors - Clear & Distinct */
             --signal-strong-buy: #059669;
             --signal-buy: #10b981;
             --signal-neutral: #d97706;
             --signal-sell: #ea580c;
             --signal-strong-sell: #dc2626;
-
-            /* Borders & Shadows */
             --border-color: #e2e8f0;
             --border-light: #f1f5f9;
             --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
             --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
             --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.1);
-
-            /* Mobile Safe Area */
             --safe-area-top: env(safe-area-inset-top);
             --safe-area-bottom: env(safe-area-inset-bottom);
         }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
 
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -60,15 +44,11 @@
             min-height: 100vh;
             font-size: 15px;
             -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
         }
 
-        /* Navigation */
         nav {
             position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
+            top: 0; left: 0; right: 0;
             background: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(12px);
             -webkit-backdrop-filter: blur(12px);
@@ -97,8 +77,7 @@
         }
 
         .logo-icon {
-            width: 32px;
-            height: 32px;
+            width: 32px; height: 32px;
             background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
             border-radius: 8px;
             display: flex;
@@ -108,10 +87,7 @@
             font-size: 1rem;
         }
 
-        .nav-links {
-            display: flex;
-            gap: 4px;
-        }
+        .nav-links { display: flex; gap: 4px; }
 
         .nav-links a {
             color: var(--text-secondary);
@@ -128,18 +104,6 @@
             background: var(--bg-accent);
         }
 
-        /* Mobile Menu Button */
-        .menu-btn {
-            display: none;
-            background: none;
-            border: none;
-            padding: 8px;
-            cursor: pointer;
-            color: var(--text-primary);
-            font-size: 1.5rem;
-        }
-
-        /* Main Content */
         main {
             max-width: 1200px;
             margin: 0 auto;
@@ -147,7 +111,6 @@
             padding-top: calc(80px + var(--safe-area-top));
         }
 
-        /* Hero Section */
         .hero {
             text-align: center;
             padding: 30px 0 40px;
@@ -158,7 +121,6 @@
             font-weight: 700;
             margin-bottom: 12px;
             color: var(--text-primary);
-            letter-spacing: -0.5px;
         }
 
         .hero h1 span {
@@ -173,7 +135,6 @@
             color: var(--text-secondary);
             max-width: 550px;
             margin: 0 auto 20px;
-            line-height: 1.7;
         }
 
         .hero-badges {
@@ -191,12 +152,19 @@
             font-size: 0.8rem;
             color: var(--text-secondary);
             font-weight: 500;
-            white-space: nowrap;
         }
 
-        /* Section Titles */
         .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             margin-bottom: 20px;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .section-header-left {
+            flex: 1;
         }
 
         .section-title {
@@ -211,9 +179,203 @@
             font-size: 0.9rem;
         }
 
-        /* Analysis Results Section */
-        .results-section {
-            margin-bottom: 40px;
+        /* History Button */
+        .history-btn {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 18px;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .history-btn:hover {
+            background: var(--bg-accent);
+            border-color: var(--accent-primary);
+            color: var(--accent-primary);
+        }
+
+        .history-btn .icon { font-size: 1.1rem; }
+
+        /* History Panel */
+        .history-overlay {
+            display: none;
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0, 0, 0, 0.4);
+            z-index: 200;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .history-overlay.active {
+            display: block;
+            opacity: 1;
+        }
+
+        .history-panel {
+            position: fixed;
+            top: 0; right: -400px; bottom: 0;
+            width: 380px;
+            max-width: 90vw;
+            background: var(--bg-secondary);
+            z-index: 201;
+            box-shadow: var(--shadow-lg);
+            transition: right 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .history-panel.active {
+            right: 0;
+        }
+
+        .history-panel-header {
+            padding: 20px;
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .history-panel-header h3 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .history-close-btn {
+            width: 36px; height: 36px;
+            border: none;
+            background: var(--bg-primary);
+            border-radius: 8px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            color: var(--text-muted);
+            transition: all 0.2s;
+        }
+
+        .history-close-btn:hover {
+            background: var(--border-color);
+            color: var(--text-primary);
+        }
+
+        .history-info {
+            padding: 12px 20px;
+            background: var(--bg-primary);
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .history-list {
+            flex: 1;
+            overflow-y: auto;
+            padding: 12px;
+        }
+
+        .history-item {
+            padding: 14px 16px;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.2s;
+            margin-bottom: 8px;
+            border: 1px solid transparent;
+        }
+
+        .history-item:hover {
+            background: var(--bg-primary);
+        }
+
+        .history-item.active {
+            background: var(--bg-accent);
+            border-color: var(--accent-primary);
+        }
+
+        .history-item-date {
+            font-weight: 700;
+            font-size: 0.95rem;
+            color: var(--text-primary);
+            margin-bottom: 6px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .history-item-date .today-badge {
+            background: var(--accent-primary);
+            color: white;
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-size: 0.7rem;
+            font-weight: 600;
+        }
+
+        .history-item-signals {
+            display: flex;
+            gap: 6px;
+            flex-wrap: wrap;
+        }
+
+        .history-signal {
+            font-size: 0.7rem;
+            padding: 3px 8px;
+            border-radius: 8px;
+            font-weight: 600;
+        }
+
+        .history-signal.buy { background: #d1fae5; color: var(--signal-buy); }
+        .history-signal.sell { background: #fee2e2; color: var(--signal-sell); }
+        .history-signal.neutral { background: #fef3c7; color: var(--signal-neutral); }
+
+        .history-empty {
+            text-align: center;
+            padding: 40px 20px;
+            color: var(--text-muted);
+        }
+
+        .history-empty-icon { font-size: 2.5rem; margin-bottom: 12px; }
+
+        .results-section { margin-bottom: 40px; }
+
+        .viewing-history-banner {
+            display: none;
+            background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+            color: white;
+            padding: 12px 20px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+        }
+
+        .viewing-history-banner.active { display: flex; }
+
+        .viewing-history-banner span { font-weight: 600; }
+
+        .back-to-latest-btn {
+            padding: 8px 16px;
+            background: rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 8px;
+            color: white;
+            font-size: 0.85rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .back-to-latest-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
         }
 
         .results-meta {
@@ -237,14 +399,12 @@
         }
 
         .meta-icon {
-            width: 40px;
-            height: 40px;
+            width: 40px; height: 40px;
             border-radius: 10px;
             display: flex;
             align-items: center;
             justify-content: center;
             font-size: 1.2rem;
-            flex-shrink: 0;
         }
 
         .meta-icon.date { background: #dbeafe; }
@@ -256,7 +416,6 @@
             text-transform: uppercase;
             letter-spacing: 0.5px;
             font-weight: 600;
-            margin-bottom: 2px;
         }
 
         .meta-value {
@@ -265,7 +424,6 @@
             color: var(--text-primary);
         }
 
-        /* Signal Summary */
         .signal-summary {
             display: grid;
             grid-template-columns: repeat(5, 1fr);
@@ -288,34 +446,20 @@
             box-shadow: var(--shadow-md);
         }
 
-        .signal-count {
-            font-size: 1.5rem;
-            font-weight: 700;
-            margin-bottom: 2px;
-        }
-
-        .signal-label {
-            font-size: 0.75rem;
-            color: var(--text-secondary);
-            font-weight: 500;
-        }
+        .signal-count { font-size: 1.5rem; font-weight: 700; margin-bottom: 2px; }
+        .signal-label { font-size: 0.75rem; color: var(--text-secondary); font-weight: 500; }
 
         .signal-card.strong-buy { border-left: 3px solid var(--signal-strong-buy); }
         .signal-card.strong-buy .signal-count { color: var(--signal-strong-buy); }
-
         .signal-card.buy { border-left: 3px solid var(--signal-buy); }
         .signal-card.buy .signal-count { color: var(--signal-buy); }
-
         .signal-card.neutral { border-left: 3px solid var(--signal-neutral); }
         .signal-card.neutral .signal-count { color: var(--signal-neutral); }
-
         .signal-card.sell { border-left: 3px solid var(--signal-sell); }
         .signal-card.sell .signal-count { color: var(--signal-sell); }
-
         .signal-card.strong-sell { border-left: 3px solid var(--signal-strong-sell); }
         .signal-card.strong-sell .signal-count { color: var(--signal-strong-sell); }
 
-        /* Market Tabs */
         .market-tabs {
             display: flex;
             gap: 8px;
@@ -343,33 +487,12 @@
             gap: 8px;
         }
 
-        .market-tab:hover {
-            color: var(--text-secondary);
-            background: var(--bg-primary);
-        }
+        .market-tab:hover { color: var(--text-secondary); background: var(--bg-primary); }
+        .market-tab.active { background: var(--accent-primary); color: white; }
+        .market-tab .tab-count { background: rgba(255,255,255,0.2); padding: 2px 8px; border-radius: 10px; font-size: 0.75rem; }
+        .market-tab.active .tab-count { background: rgba(255,255,255,0.3); }
+        .market-tab:not(.active) .tab-count { background: var(--bg-primary); }
 
-        .market-tab.active {
-            background: var(--accent-primary);
-            color: white;
-            box-shadow: var(--shadow-sm);
-        }
-
-        .market-tab .tab-count {
-            background: rgba(255, 255, 255, 0.2);
-            padding: 2px 8px;
-            border-radius: 10px;
-            font-size: 0.75rem;
-        }
-
-        .market-tab.active .tab-count {
-            background: rgba(255, 255, 255, 0.3);
-        }
-
-        .market-tab:not(.active) .tab-count {
-            background: var(--bg-primary);
-        }
-
-        /* Results Table - Desktop */
         .results-table-wrapper {
             background: var(--bg-secondary);
             border: 1px solid var(--border-color);
@@ -378,11 +501,7 @@
             box-shadow: var(--shadow-sm);
         }
 
-        .results-table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-
+        .results-table { width: 100%; border-collapse: collapse; }
         .results-table th {
             background: var(--bg-primary);
             padding: 12px 16px;
@@ -391,462 +510,92 @@
             font-weight: 700;
             color: var(--text-muted);
             text-transform: uppercase;
-            letter-spacing: 0.5px;
             border-bottom: 1px solid var(--border-color);
         }
+        .results-table td { padding: 14px 16px; border-bottom: 1px solid var(--border-light); vertical-align: middle; }
+        .results-table tr:last-child td { border-bottom: none; }
+        .results-table tr:hover { background: var(--bg-primary); }
 
-        .results-table td {
-            padding: 14px 16px;
-            border-bottom: 1px solid var(--border-light);
-            vertical-align: middle;
-        }
-
-        .results-table tr:last-child td {
-            border-bottom: none;
-        }
-
-        .results-table tr:hover {
-            background: var(--bg-primary);
-        }
-
-        .stock-name {
-            font-weight: 600;
-            color: var(--text-primary);
-            font-size: 0.9rem;
-        }
-
-        .stock-code {
-            font-size: 0.75rem;
-            color: var(--text-muted);
-            font-family: 'SF Mono', Monaco, monospace;
-            margin-top: 2px;
-        }
-
-        .signal-badge {
-            display: inline-block;
-            padding: 5px 12px;
-            border-radius: 16px;
-            font-size: 0.75rem;
-            font-weight: 600;
-        }
-
+        .stock-name { font-weight: 600; color: var(--text-primary); font-size: 0.9rem; }
+        .stock-code { font-size: 0.75rem; color: var(--text-muted); font-family: monospace; margin-top: 2px; }
+        .signal-badge { display: inline-block; padding: 5px 12px; border-radius: 16px; font-size: 0.75rem; font-weight: 600; }
         .signal-badge.적극매수 { background: #d1fae5; color: var(--signal-strong-buy); }
         .signal-badge.매수 { background: #d1fae5; color: var(--signal-buy); }
         .signal-badge.중립 { background: #fef3c7; color: var(--signal-neutral); }
         .signal-badge.매도 { background: #ffedd5; color: var(--signal-sell); }
         .signal-badge.적극매도 { background: #fee2e2; color: var(--signal-strong-sell); }
+        .analysis-reason { font-size: 0.85rem; color: var(--text-secondary); line-height: 1.5; max-width: 350px; }
+        .time-info { font-size: 0.75rem; color: var(--text-muted); line-height: 1.5; }
 
-        .analysis-reason {
-            font-size: 0.85rem;
-            color: var(--text-secondary);
-            line-height: 1.5;
-            max-width: 350px;
-        }
+        .stock-cards { display: none; }
+        .stock-card { background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 14px; padding: 16px; margin-bottom: 12px; }
+        .stock-card-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px; }
+        .stock-card-info { flex: 1; }
+        .stock-card .stock-name { font-size: 1rem; margin-bottom: 2px; }
+        .stock-card .stock-code { font-size: 0.8rem; }
+        .stock-card-reason { font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6; padding-top: 12px; border-top: 1px solid var(--border-light); }
+        .stock-card-time { font-size: 0.75rem; color: var(--text-muted); margin-top: 10px; display: flex; gap: 12px; }
 
-        .time-info {
-            font-size: 0.75rem;
-            color: var(--text-muted);
-            line-height: 1.5;
-        }
-
-        /* Mobile Stock Cards */
-        .stock-cards {
-            display: none;
-        }
-
-        .stock-card {
-            background: var(--bg-secondary);
-            border: 1px solid var(--border-color);
-            border-radius: 14px;
-            padding: 16px;
-            margin-bottom: 12px;
-            box-shadow: var(--shadow-sm);
-        }
-
-        .stock-card-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            margin-bottom: 12px;
-        }
-
-        .stock-card-info {
-            flex: 1;
-        }
-
-        .stock-card .stock-name {
-            font-size: 1rem;
-            margin-bottom: 2px;
-        }
-
-        .stock-card .stock-code {
-            font-size: 0.8rem;
-        }
-
-        .stock-card .signal-badge {
-            flex-shrink: 0;
-        }
-
-        .stock-card-reason {
-            font-size: 0.9rem;
-            color: var(--text-secondary);
-            line-height: 1.6;
-            padding-top: 12px;
-            border-top: 1px solid var(--border-light);
-        }
-
-        .stock-card-time {
-            font-size: 0.75rem;
-            color: var(--text-muted);
-            margin-top: 10px;
-            display: flex;
-            gap: 12px;
-        }
-
-        /* Features Grid */
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 12px;
-            margin-bottom: 40px;
-        }
-
-        .feature-card {
-            background: var(--bg-secondary);
-            border: 1px solid var(--border-color);
-            border-radius: 14px;
-            padding: 20px;
-            transition: all 0.3s;
-            box-shadow: var(--shadow-sm);
-        }
-
-        .feature-card:hover {
-            border-color: var(--accent-primary);
-            box-shadow: var(--shadow-md);
-            transform: translateY(-2px);
-        }
-
-        .feature-icon {
-            width: 44px;
-            height: 44px;
-            border-radius: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.3rem;
-            margin-bottom: 12px;
-        }
-
+        .features-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-bottom: 40px; }
+        .feature-card { background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 14px; padding: 20px; transition: all 0.3s; }
+        .feature-card:hover { border-color: var(--accent-primary); box-shadow: var(--shadow-md); transform: translateY(-2px); }
+        .feature-icon { width: 44px; height: 44px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; margin-bottom: 12px; }
         .feature-icon.blue { background: #dbeafe; }
         .feature-icon.cyan { background: #cffafe; }
         .feature-icon.mint { background: #ccfbf1; }
         .feature-icon.amber { background: #fef3c7; }
+        .feature-card h3 { font-size: 0.95rem; font-weight: 700; margin-bottom: 6px; color: var(--text-primary); }
+        .feature-card p { font-size: 0.85rem; color: var(--text-secondary); line-height: 1.5; }
 
-        .feature-card h3 {
-            font-size: 0.95rem;
-            font-weight: 700;
-            margin-bottom: 6px;
-            color: var(--text-primary);
-        }
+        .workflow { background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 16px; padding: 24px; margin-bottom: 40px; }
+        .workflow-steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-top: 20px; }
+        .step { text-align: center; position: relative; }
+        .step:not(:last-child)::after { content: '->'; position: absolute; top: 18px; right: -10px; color: var(--border-color); font-size: 1rem; }
+        .step-number { width: 40px; height: 40px; background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary)); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 10px; font-weight: 700; color: white; }
+        .step h4 { font-size: 0.85rem; font-weight: 700; margin-bottom: 4px; }
+        .step p { font-size: 0.75rem; color: var(--text-muted); }
 
-        .feature-card p {
-            font-size: 0.85rem;
-            color: var(--text-secondary);
-            line-height: 1.5;
-        }
+        footer { border-top: 1px solid var(--border-color); padding: 28px 16px; text-align: center; color: var(--text-muted); font-size: 0.85rem; background: var(--bg-secondary); }
+        footer p:last-child { margin-top: 6px; font-size: 0.75rem; }
 
-        /* Workflow */
-        .workflow {
-            background: var(--bg-secondary);
-            border: 1px solid var(--border-color);
-            border-radius: 16px;
-            padding: 24px;
-            margin-bottom: 40px;
-            box-shadow: var(--shadow-sm);
-        }
+        .loading { text-align: center; padding: 50px 20px; color: var(--text-muted); }
+        .loading-spinner { width: 36px; height: 36px; border: 3px solid var(--border-color); border-top-color: var(--accent-primary); border-radius: 50%; animation: spin 1s linear infinite; margin: 0 auto 14px; }
+        @keyframes spin { to { transform: rotate(360deg); } }
 
-        .workflow-steps {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 12px;
-            margin-top: 20px;
-        }
+        .empty-state { text-align: center; padding: 50px 20px; background: var(--bg-secondary); border: 2px dashed var(--border-color); border-radius: 16px; }
+        .empty-state-icon { font-size: 2.5rem; margin-bottom: 14px; }
+        .empty-state h3 { font-size: 1.05rem; margin-bottom: 6px; }
+        .empty-state p { color: var(--text-muted); font-size: 0.9rem; }
 
-        .step {
-            text-align: center;
-            position: relative;
-        }
-
-        .step:not(:last-child)::after {
-            content: '→';
-            position: absolute;
-            top: 18px;
-            right: -10px;
-            color: var(--border-color);
-            font-size: 1rem;
-        }
-
-        .step-number {
-            width: 40px;
-            height: 40px;
-            background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 10px;
-            font-weight: 700;
-            font-size: 1rem;
-            color: white;
-        }
-
-        .step h4 {
-            font-size: 0.85rem;
-            font-weight: 700;
-            margin-bottom: 4px;
-            color: var(--text-primary);
-        }
-
-        .step p {
-            font-size: 0.75rem;
-            color: var(--text-muted);
-            line-height: 1.4;
-        }
-
-        /* Footer */
-        footer {
-            border-top: 1px solid var(--border-color);
-            padding: 28px 16px;
-            padding-bottom: calc(28px + var(--safe-area-bottom));
-            text-align: center;
-            color: var(--text-muted);
-            font-size: 0.85rem;
-            background: var(--bg-secondary);
-        }
-
-        footer p:last-child {
-            margin-top: 6px;
-            font-size: 0.75rem;
-        }
-
-        /* Loading State */
-        .loading {
-            text-align: center;
-            padding: 50px 20px;
-            color: var(--text-muted);
-        }
-
-        .loading-spinner {
-            width: 36px;
-            height: 36px;
-            border: 3px solid var(--border-color);
-            border-top-color: var(--accent-primary);
-            border-radius: 50%;
-            animation: spin 1s linear infinite;
-            margin: 0 auto 14px;
-        }
-
-        @keyframes spin {
-            to { transform: rotate(360deg); }
-        }
-
-        /* Empty State */
-        .empty-state {
-            text-align: center;
-            padding: 50px 20px;
-            background: var(--bg-secondary);
-            border: 2px dashed var(--border-color);
-            border-radius: 16px;
-        }
-
-        .empty-state-icon {
-            font-size: 2.5rem;
-            margin-bottom: 14px;
-        }
-
-        .empty-state h3 {
-            font-size: 1.05rem;
-            margin-bottom: 6px;
-            color: var(--text-primary);
-        }
-
-        .empty-state p {
-            color: var(--text-muted);
-            font-size: 0.9rem;
-        }
-
-        /* Mobile Responsive */
         @media (max-width: 768px) {
-            .nav-links {
-                display: none;
-            }
-
-            .menu-btn {
-                display: block;
-            }
-
-            .nav-content {
-                height: 52px;
-            }
-
-            main {
-                padding: 72px 12px 40px;
-                padding-top: calc(72px + var(--safe-area-top));
-            }
-
-            .hero {
-                padding: 20px 0 30px;
-            }
-
-            .hero h1 {
-                font-size: 1.6rem;
-            }
-
-            .hero p {
-                font-size: 0.9rem;
-            }
-
-            .badge {
-                padding: 5px 10px;
-                font-size: 0.75rem;
-            }
-
-            .section-title {
-                font-size: 1.15rem;
-            }
-
-            .signal-summary {
-                grid-template-columns: repeat(5, 1fr);
-                gap: 6px;
-            }
-
-            .signal-card {
-                padding: 10px 4px;
-                border-radius: 10px;
-            }
-
-            .signal-count {
-                font-size: 1.2rem;
-            }
-
-            .signal-label {
-                font-size: 0.65rem;
-            }
-
-            .market-tabs {
-                padding: 4px;
-            }
-
-            .market-tab {
-                padding: 10px 12px;
-                font-size: 0.85rem;
-            }
-
-            .market-tab .tab-count {
-                font-size: 0.7rem;
-                padding: 2px 6px;
-            }
-
-            /* Show card view, hide table on mobile */
-            .results-table-wrapper {
-                display: none;
-            }
-
-            .stock-cards {
-                display: block;
-            }
-
-            .features-grid {
-                grid-template-columns: 1fr;
-                gap: 10px;
-            }
-
-            .feature-card {
-                padding: 18px;
-            }
-
-            .workflow {
-                padding: 20px 16px;
-            }
-
-            .workflow-steps {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 16px;
-            }
-
-            .step:not(:last-child)::after {
-                display: none;
-            }
-
-            .step-number {
-                width: 36px;
-                height: 36px;
-                font-size: 0.9rem;
-            }
+            .nav-links { display: none; }
+            main { padding: 72px 12px 40px; }
+            .hero { padding: 20px 0 30px; }
+            .hero h1 { font-size: 1.6rem; }
+            .signal-summary { grid-template-columns: repeat(5, 1fr); gap: 6px; }
+            .signal-card { padding: 10px 4px; }
+            .signal-count { font-size: 1.2rem; }
+            .signal-label { font-size: 0.65rem; }
+            .results-table-wrapper { display: none; }
+            .stock-cards { display: block; }
+            .features-grid { grid-template-columns: 1fr; }
+            .workflow-steps { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+            .step:not(:last-child)::after { display: none; }
+            .history-btn span { display: none; }
+            .history-btn { padding: 10px 14px; }
+            .section-header { flex-direction: row; }
         }
 
-        @media (max-width: 480px) {
-            .hero h1 {
-                font-size: 1.4rem;
-            }
-
-            .meta-card {
-                padding: 10px 12px;
-                gap: 10px;
-            }
-
-            .meta-icon {
-                width: 36px;
-                height: 36px;
-                font-size: 1rem;
-            }
-
-            .meta-value {
-                font-size: 0.9rem;
-            }
-        }
-
-        /* Desktop enhancements */
         @media (min-width: 769px) {
-            nav {
-                padding: 0 24px;
-            }
-
-            .nav-content {
-                height: 64px;
-            }
-
-            main {
-                padding: 100px 24px 60px;
-            }
-
-            .hero {
-                padding: 50px 0 60px;
-            }
-
-            .hero h1 {
-                font-size: 2.5rem;
-            }
-
-            .signal-summary {
-                gap: 12px;
-            }
-
-            .signal-card {
-                padding: 20px 16px;
-            }
-
-            .signal-count {
-                font-size: 2rem;
-            }
-
-            .features-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-
-            .workflow-steps {
-                gap: 16px;
-            }
+            nav { padding: 0 24px; }
+            .nav-content { height: 64px; }
+            main { padding: 100px 24px 60px; }
+            .hero { padding: 50px 0 60px; }
+            .hero h1 { font-size: 2.5rem; }
+            .signal-summary { gap: 12px; }
+            .signal-card { padding: 20px 16px; }
+            .signal-count { font-size: 2rem; }
+            .features-grid { grid-template-columns: repeat(4, 1fr); }
         }
     </style>
 </head>
@@ -865,6 +614,22 @@
         </div>
     </nav>
 
+    <!-- History Panel -->
+    <div class="history-overlay" id="historyOverlay" onclick="closeHistoryPanel()"></div>
+    <div class="history-panel" id="historyPanel">
+        <div class="history-panel-header">
+            <h3>📅 분석 히스토리</h3>
+            <button class="history-close-btn" onclick="closeHistoryPanel()">✕</button>
+        </div>
+        <div class="history-info" id="historyInfo">최근 30일간의 분석 기록</div>
+        <div class="history-list" id="historyList">
+            <div class="loading">
+                <div class="loading-spinner"></div>
+                <p>히스토리 로딩 중...</p>
+            </div>
+        </div>
+    </div>
+
     <main>
         <section class="hero">
             <h1>AI Vision <span>Stock Signal</span> Analyzer</h1>
@@ -879,8 +644,19 @@
 
         <section id="results" class="results-section">
             <div class="section-header">
-                <h2 class="section-title">최신 분석 결과</h2>
-                <p class="section-subtitle">거래량 상위 종목 AI 시그널 분석</p>
+                <div class="section-header-left">
+                    <h2 class="section-title">최신 분석 결과</h2>
+                    <p class="section-subtitle">거래량 상위 종목 AI 시그널 분석</p>
+                </div>
+                <button class="history-btn" onclick="openHistoryPanel()">
+                    <span class="icon">📅</span>
+                    <span>이전 분석 보기</span>
+                </button>
+            </div>
+
+            <div class="viewing-history-banner" id="viewingHistoryBanner">
+                <span id="viewingDate">📅 2024-01-01 분석 결과 보는 중</span>
+                <button class="back-to-latest-btn" onclick="loadLatestResults()">최신으로 돌아가기</button>
             </div>
 
             <div id="results-container">
@@ -893,7 +669,9 @@
 
         <section id="features">
             <div class="section-header">
-                <h2 class="section-title">주요 기능</h2>
+                <div class="section-header-left">
+                    <h2 class="section-title">주요 기능</h2>
+                </div>
             </div>
             <div class="features-grid">
                 <div class="feature-card">
@@ -925,22 +703,22 @@
                 <div class="step">
                     <div class="step-number">1</div>
                     <h4>종목 수집</h4>
-                    <p>API로 거래량 상위 120개 종목 획득</p>
+                    <p>API로 상위 120개 종목</p>
                 </div>
                 <div class="step">
                     <div class="step-number">2</div>
                     <h4>스크린샷</h4>
-                    <p>각 종목 페이지 풀스크린 캡처</p>
+                    <p>풀스크린 캡처</p>
                 </div>
                 <div class="step">
                     <div class="step-number">3</div>
                     <h4>AI 분석</h4>
-                    <p>120개 이미지 배치 분석</p>
+                    <p>배치 이미지 분석</p>
                 </div>
                 <div class="step">
                     <div class="step-number">4</div>
                     <h4>리포트</h4>
-                    <p>결과 저장 및 웹 표시</p>
+                    <p>결과 저장 (30일)</p>
                 </div>
             </div>
         </section>
@@ -953,18 +731,15 @@
 
     <script>
         let allData = null;
+        let historyIndex = null;
         let currentMarket = 'all';
+        let isViewingHistory = false;
 
         async function loadResults() {
             const container = document.getElementById('results-container');
-
             try {
                 const response = await fetch('./results/latest.json');
-
-                if (!response.ok) {
-                    throw new Error('No results available');
-                }
-
+                if (!response.ok) throw new Error('No results');
                 allData = await response.json();
                 renderResults(allData);
             } catch (error) {
@@ -978,18 +753,116 @@
             }
         }
 
-        function getMarketFromCode(code) {
-            // KOSDAQ codes typically start with 0, 1, 2, 3 and are 6 digits
-            // KOSPI codes are also 6 digits but typically in different ranges
-            // Based on the data, we can check code patterns or use the first 50 as KOSPI
-            const codeNum = parseInt(code);
-            // Common KOSDAQ patterns: starts with 0, 1, 2, 3 (under 400000)
-            // But this isn't reliable, so we'll use position-based detection
-            return null;
+        async function loadLatestResults() {
+            isViewingHistory = false;
+            document.getElementById('viewingHistoryBanner').classList.remove('active');
+            await loadResults();
+            closeHistoryPanel();
+        }
+
+        async function loadHistoryData(filename) {
+            const container = document.getElementById('results-container');
+            container.innerHTML = '<div class="loading"><div class="loading-spinner"></div><p>불러오는 중...</p></div>';
+
+            try {
+                const response = await fetch(`./results/history/${filename}`);
+                if (!response.ok) throw new Error('Not found');
+                allData = await response.json();
+
+                isViewingHistory = true;
+                document.getElementById('viewingDate').textContent = `📅 ${allData.date} 분석 결과 보는 중`;
+                document.getElementById('viewingHistoryBanner').classList.add('active');
+
+                renderResults(allData);
+                closeHistoryPanel();
+
+                // Update active state in history list
+                document.querySelectorAll('.history-item').forEach(item => {
+                    item.classList.remove('active');
+                    if (item.dataset.filename === filename) {
+                        item.classList.add('active');
+                    }
+                });
+            } catch (error) {
+                container.innerHTML = `
+                    <div class="empty-state">
+                        <div class="empty-state-icon">❌</div>
+                        <h3>데이터를 불러올 수 없습니다</h3>
+                        <p>해당 날짜의 분석 기록이 삭제되었거나 접근할 수 없습니다.</p>
+                    </div>
+                `;
+            }
+        }
+
+        async function loadHistoryIndex() {
+            const listContainer = document.getElementById('historyList');
+            const infoContainer = document.getElementById('historyInfo');
+
+            try {
+                const response = await fetch('./results/history_index.json');
+                if (!response.ok) throw new Error('No history');
+                historyIndex = await response.json();
+
+                infoContainer.textContent = `최근 ${historyIndex.retention_days}일간 총 ${historyIndex.total_records}개 기록`;
+
+                if (historyIndex.history.length === 0) {
+                    listContainer.innerHTML = `
+                        <div class="history-empty">
+                            <div class="history-empty-icon">📭</div>
+                            <p>아직 저장된 분석 기록이 없습니다.</p>
+                        </div>
+                    `;
+                    return;
+                }
+
+                const today = new Date().toISOString().split('T')[0];
+
+                listContainer.innerHTML = historyIndex.history.map(item => {
+                    const isToday = item.date === today;
+                    const buyCount = (item.signals['적극매수'] || 0) + (item.signals['매수'] || 0);
+                    const sellCount = (item.signals['적극매도'] || 0) + (item.signals['매도'] || 0);
+                    const neutralCount = item.signals['중립'] || 0;
+
+                    return `
+                        <div class="history-item ${isToday && !isViewingHistory ? 'active' : ''}"
+                             data-filename="${item.filename}"
+                             onclick="loadHistoryData('${item.filename}')">
+                            <div class="history-item-date">
+                                ${item.date}
+                                ${isToday ? '<span class="today-badge">TODAY</span>' : ''}
+                            </div>
+                            <div class="history-item-signals">
+                                ${buyCount > 0 ? `<span class="history-signal buy">매수 ${buyCount}</span>` : ''}
+                                ${neutralCount > 0 ? `<span class="history-signal neutral">중립 ${neutralCount}</span>` : ''}
+                                ${sellCount > 0 ? `<span class="history-signal sell">매도 ${sellCount}</span>` : ''}
+                            </div>
+                        </div>
+                    `;
+                }).join('');
+            } catch (error) {
+                listContainer.innerHTML = `
+                    <div class="history-empty">
+                        <div class="history-empty-icon">📭</div>
+                        <p>히스토리를 불러올 수 없습니다.</p>
+                    </div>
+                `;
+            }
+        }
+
+        function openHistoryPanel() {
+            document.getElementById('historyOverlay').classList.add('active');
+            document.getElementById('historyPanel').classList.add('active');
+            document.body.style.overflow = 'hidden';
+            loadHistoryIndex();
+        }
+
+        function closeHistoryPanel() {
+            document.getElementById('historyOverlay').classList.remove('active');
+            document.getElementById('historyPanel').classList.remove('active');
+            document.body.style.overflow = '';
         }
 
         function categorizeStocks(results) {
-            // First 50 are KOSPI, next 70 are KOSDAQ (based on collection order)
             const kospi = results.slice(0, 50);
             const kosdaq = results.slice(50, 120);
             return { kospi, kosdaq };
@@ -997,38 +870,19 @@
 
         function switchMarket(market) {
             currentMarket = market;
-
-            // Update tab states
             document.querySelectorAll('.market-tab').forEach(tab => {
                 tab.classList.remove('active');
-                if (tab.dataset.market === market) {
-                    tab.classList.add('active');
-                }
+                if (tab.dataset.market === market) tab.classList.add('active');
             });
-
-            // Filter and render results
-            if (allData) {
-                renderStockList(allData, market);
-            }
+            if (allData) renderStockList(allData, market);
         }
 
         function renderResults(data) {
             const container = document.getElementById('results-container');
             const { kospi, kosdaq } = categorizeStocks(data.results);
 
-            const signalCounts = {
-                '적극매수': 0,
-                '매수': 0,
-                '중립': 0,
-                '매도': 0,
-                '적극매도': 0
-            };
-
-            data.results.forEach(r => {
-                if (signalCounts.hasOwnProperty(r.signal)) {
-                    signalCounts[r.signal]++;
-                }
-            });
+            const signalCounts = { '적극매수': 0, '매수': 0, '중립': 0, '매도': 0, '적극매도': 0 };
+            data.results.forEach(r => { if (signalCounts.hasOwnProperty(r.signal)) signalCounts[r.signal]++; });
 
             container.innerHTML = `
                 <div class="results-meta">
@@ -1049,108 +903,50 @@
                 </div>
 
                 <div class="signal-summary">
-                    <div class="signal-card strong-buy">
-                        <div class="signal-count">${signalCounts['적극매수']}</div>
-                        <div class="signal-label">적극매수</div>
-                    </div>
-                    <div class="signal-card buy">
-                        <div class="signal-count">${signalCounts['매수']}</div>
-                        <div class="signal-label">매수</div>
-                    </div>
-                    <div class="signal-card neutral">
-                        <div class="signal-count">${signalCounts['중립']}</div>
-                        <div class="signal-label">중립</div>
-                    </div>
-                    <div class="signal-card sell">
-                        <div class="signal-count">${signalCounts['매도']}</div>
-                        <div class="signal-label">매도</div>
-                    </div>
-                    <div class="signal-card strong-sell">
-                        <div class="signal-count">${signalCounts['적극매도']}</div>
-                        <div class="signal-label">적극매도</div>
-                    </div>
+                    <div class="signal-card strong-buy"><div class="signal-count">${signalCounts['적극매수']}</div><div class="signal-label">적극매수</div></div>
+                    <div class="signal-card buy"><div class="signal-count">${signalCounts['매수']}</div><div class="signal-label">매수</div></div>
+                    <div class="signal-card neutral"><div class="signal-count">${signalCounts['중립']}</div><div class="signal-label">중립</div></div>
+                    <div class="signal-card sell"><div class="signal-count">${signalCounts['매도']}</div><div class="signal-label">매도</div></div>
+                    <div class="signal-card strong-sell"><div class="signal-count">${signalCounts['적극매도']}</div><div class="signal-label">적극매도</div></div>
                 </div>
 
                 <div class="market-tabs">
-                    <button class="market-tab active" data-market="all" onclick="switchMarket('all')">
-                        전체 <span class="tab-count">${data.results.length}</span>
-                    </button>
-                    <button class="market-tab" data-market="kospi" onclick="switchMarket('kospi')">
-                        코스피 <span class="tab-count">${kospi.length}</span>
-                    </button>
-                    <button class="market-tab" data-market="kosdaq" onclick="switchMarket('kosdaq')">
-                        코스닥 <span class="tab-count">${kosdaq.length}</span>
-                    </button>
+                    <button class="market-tab active" data-market="all" onclick="switchMarket('all')">전체 <span class="tab-count">${data.results.length}</span></button>
+                    <button class="market-tab" data-market="kospi" onclick="switchMarket('kospi')">코스피 <span class="tab-count">${kospi.length}</span></button>
+                    <button class="market-tab" data-market="kosdaq" onclick="switchMarket('kosdaq')">코스닥 <span class="tab-count">${kosdaq.length}</span></button>
                 </div>
 
                 <div id="stock-list-container"></div>
             `;
-
             renderStockList(data, currentMarket);
         }
 
         function renderStockList(data, market) {
             const container = document.getElementById('stock-list-container');
             const { kospi, kosdaq } = categorizeStocks(data.results);
-
-            let filteredResults;
-            switch(market) {
-                case 'kospi':
-                    filteredResults = kospi;
-                    break;
-                case 'kosdaq':
-                    filteredResults = kosdaq;
-                    break;
-                default:
-                    filteredResults = data.results;
-            }
+            let filteredResults = market === 'kospi' ? kospi : market === 'kosdaq' ? kosdaq : data.results;
 
             container.innerHTML = `
-                <!-- Desktop Table View -->
                 <div class="results-table-wrapper">
                     <table class="results-table">
-                        <thead>
-                            <tr>
-                                <th>종목</th>
-                                <th>시그널</th>
-                                <th>분석 근거</th>
-                                <th>시각</th>
-                            </tr>
-                        </thead>
+                        <thead><tr><th>종목</th><th>시그널</th><th>분석 근거</th><th>시각</th></tr></thead>
                         <tbody>
                             ${filteredResults.map(r => `
                                 <tr>
-                                    <td>
-                                        <div class="stock-name">${r.name}</div>
-                                        <div class="stock-code">${r.code}</div>
-                                    </td>
-                                    <td>
-                                        <span class="signal-badge ${r.signal}">${r.signal}</span>
-                                    </td>
-                                    <td>
-                                        <div class="analysis-reason">${r.reason || '-'}</div>
-                                    </td>
-                                    <td>
-                                        <div class="time-info">
-                                            ${r.capture_time ? `캡처: ${r.capture_time.split(' ')[1] || r.capture_time}` : ''}<br>
-                                            ${r.analysis_time ? `분석: ${r.analysis_time.split(' ')[1] || r.analysis_time}` : ''}
-                                        </div>
-                                    </td>
+                                    <td><div class="stock-name">${r.name}</div><div class="stock-code">${r.code}</div></td>
+                                    <td><span class="signal-badge ${r.signal}">${r.signal}</span></td>
+                                    <td><div class="analysis-reason">${r.reason || '-'}</div></td>
+                                    <td><div class="time-info">${r.capture_time ? `캡처: ${r.capture_time.split(' ')[1] || r.capture_time}` : ''}<br>${r.analysis_time ? `분석: ${r.analysis_time.split(' ')[1] || r.analysis_time}` : ''}</div></td>
                                 </tr>
                             `).join('')}
                         </tbody>
                     </table>
                 </div>
-
-                <!-- Mobile Card View -->
                 <div class="stock-cards">
                     ${filteredResults.map(r => `
                         <div class="stock-card">
                             <div class="stock-card-header">
-                                <div class="stock-card-info">
-                                    <div class="stock-name">${r.name}</div>
-                                    <div class="stock-code">${r.code}</div>
-                                </div>
+                                <div class="stock-card-info"><div class="stock-name">${r.name}</div><div class="stock-code">${r.code}</div></div>
                                 <span class="signal-badge ${r.signal}">${r.signal}</span>
                             </div>
                             <div class="stock-card-reason">${r.reason || '-'}</div>

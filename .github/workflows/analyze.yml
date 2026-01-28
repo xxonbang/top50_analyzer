@@ -169,20 +169,23 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          if [ -f results/latest.json ]; then
-            git add results/latest.json
+          # results/ 디렉토리 전체를 스테이징 (latest.json, history/, history_index.json)
+          if [ -d results ]; then
+            git add results/
 
             KST_TIME=$(TZ='Asia/Seoul' date +'%Y-%m-%d %H:%M')
 
             if ! git diff --staged --quiet; then
-              git commit -m "Update analysis results - $KST_TIME KST"
+              # 히스토리 파일 수 카운트
+              HISTORY_COUNT=$(ls -1 results/history/*.json 2>/dev/null | wc -l | tr -d ' ')
+              git commit -m "Update analysis results - $KST_TIME KST (${HISTORY_COUNT} days history)"
               git push
-              echo "Results committed and pushed."
+              echo "Results committed and pushed. History: ${HISTORY_COUNT} days"
             else
               echo "No changes to commit."
             fi
           else
-            echo "::warning::results/latest.json not found, skipping commit."
+            echo "::warning::results/ directory not found, skipping commit."
           fi
 
   notify-skip:
