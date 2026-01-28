@@ -1,8 +1,9 @@
 """
-Gemini API 연동 및 프롬프트 관리
+Gemini API 연동 및 프롬프트 관리 (배치 처리 방식)
 """
 from __future__ import annotations
 import time
+import base64
 from datetime import datetime
 from pathlib import Path
 from google import genai
@@ -49,136 +50,175 @@ def rotate_to_next_key():
     _current_key_index = (_current_key_index + 1) % len(GEMINI_API_KEYS)
 
 
-# 분석 프롬프트
-ANALYSIS_PROMPT = """이 이미지는 "{name}" (종목코드: {code})의 네이버 증권 상세 페이지입니다.
+# 배치 분석 프롬프트
+BATCH_ANALYSIS_PROMPT = """당신은 20년 경력의 대한민국 주식 시장 전문 퀀트 애널리스트입니다.
 
-다음 작업을 수행하세요:
+아래에 {count}개의 네이버 증권 종목 상세 페이지 스크린샷이 첨부되어 있습니다.
+각 이미지에 대해 다음 작업을 수행하세요:
 
-1. **데이터 추출**: 이미지에서 다음 정보를 추출하세요
-   - 현재가, 전일대비, 등락률
-   - 시가, 고가, 저가
-   - 거래량, 거래대금
+1. **데이터 추출**: 이미지에서 종목명, 종목코드, 현재가, 전일대비, 등락률을 추출
+2. **기술적 분석**: 차트 패턴, 이동평균선, 거래량 등을 분석하여 투자 시그널 결정
+3. **시그널 결정**: [적극매수, 매수, 중립, 매도, 적극매도] 중 하나 선택
+4. **분석 근거**: 시그널 결정의 근거를 2~3문장으로 설명
 
-2. **기술적 분석**: 차트와 지표를 분석하여 투자 시그널을 결정하세요
-   - 시그널: [적극매수, 매수, 중립, 매도, 적극매도] 중 하나
+종목 목록:
+{stock_list}
 
-3. **분석 근거**: 시그널 결정의 근거를 2~3문장으로 설명하세요
-
-다음 JSON 형식으로만 응답하세요:
+반드시 아래 JSON 형식으로만 응답하세요. 다른 텍스트 없이 JSON만 출력하세요:
 ```json
 {{
-  "name": "{name}",
-  "code": "{code}",
-  "current_price": "현재가",
-  "change": "전일대비",
-  "change_percent": "등락률",
-  "signal": "시그널",
-  "reason": "분석 근거"
+  "results": [
+    {{
+      "name": "종목명",
+      "code": "종목코드",
+      "current_price": "현재가",
+      "change": "전일대비",
+      "change_percent": "등락률",
+      "signal": "시그널",
+      "reason": "분석 근거 (2~3문장)"
+    }}
+  ]
 }}
 ```
+
+중요: 모든 {count}개 종목에 대해 분석 결과를 반드시 포함해야 합니다.
 """
 
 
-def analyze_stock_image(image_path: Path, stock: dict, max_retries: int = 3) -> dict | None:
-    """단일 종목 이미지 분석 (API 키 fallback 포함)"""
+def analyze_stocks_batch(scrape_results: list[dict], capture_dir: Path, max_retries: int = 3) -> list[dict]:
+    """모든 종목 이미지를 한 번에 배치 분석 (API 1회 호출)"""
+    print("\n=== Phase 3: AI 배치 분석 ===\n")
+    print(f"사용 가능한 API 키: {len(GEMINI_API_KEYS)}개")
 
+    # 성공한 종목만 필터링
+    valid_stocks = []
+    image_parts = []
+
+    for stock in scrape_results:
+        if not stock.get("success"):
+            continue
+
+        code = stock["code"]
+        image_path = capture_dir / f"{code}.png"
+
+        if not image_path.exists():
+            print(f"  [SKIP] {stock['name']}: 이미지 없음")
+            continue
+
+        # 이미지 로드 및 리사이즈
+        image_bytes = resize_image(image_path)
+        image_b64 = base64.b64encode(image_bytes).decode("utf-8")
+
+        valid_stocks.append(stock)
+        image_parts.append({
+            "inline_data": {
+                "mime_type": "image/png",
+                "data": image_b64
+            }
+        })
+
+    if not valid_stocks:
+        print("[ERROR] 분석할 종목이 없습니다.")
+        return []
+
+    print(f"분석 대상: {len(valid_stocks)}개 종목")
+    print(f"총 이미지: {len(image_parts)}개\n")
+
+    # 종목 리스트 문자열 생성
+    stock_list_str = "\n".join([
+        f"- {i+1}번째 이미지: {s['name']} ({s['code']}) - {s['market']}"
+        for i, s in enumerate(valid_stocks)
+    ])
+
+    # 프롬프트 생성
+    prompt = BATCH_ANALYSIS_PROMPT.format(
+        count=len(valid_stocks),
+        stock_list=stock_list_str
+    )
+
+    # API 호출 시도
     for attempt in range(max_retries):
         key_info = get_next_api_key()
         if not key_info:
-            print(f"  [ERROR] 사용 가능한 API 키가 없습니다.")
-            return None
+            print("[ERROR] 사용 가능한 API 키가 없습니다.")
+            return []
 
         api_key, key_index = key_info
+        print(f"[시도 {attempt + 1}/{max_retries}] API 키 #{key_index + 1} 사용")
 
         try:
-            # 클라이언트 생성
             client = genai.Client(api_key=api_key)
 
-            # 이미지 로드 및 리사이즈
-            image_bytes = resize_image(image_path)
+            # 모든 이미지와 프롬프트를 하나의 요청으로
+            parts = image_parts + [{"text": prompt}]
 
-            # 프롬프트 생성
-            prompt = ANALYSIS_PROMPT.format(name=stock["name"], code=stock["code"])
+            print("Gemini API 호출 중... (이미지 분석에 시간이 소요됩니다)")
 
-            # API 호출 (새 방식)
             response = client.models.generate_content(
                 model=GEMINI_MODEL,
                 contents=[
                     {
                         "role": "user",
-                        "parts": [
-                            {"inline_data": {"mime_type": "image/png", "data": image_bytes}},
-                            {"text": prompt}
-                        ]
+                        "parts": parts
                     }
                 ]
             )
 
+            print("응답 수신 완료. 파싱 중...")
+
             # 응답 파싱
             result = parse_json_response(response.text)
 
-            if result:
-                if result.get("signal") not in SIGNAL_CATEGORIES:
-                    result["signal"] = "중립"
-                rotate_to_next_key()
-                return result
+            if result and "results" in result:
+                analysis_results = result["results"]
+                analysis_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
-            return None
+                # 캡처 시각 및 분석 시각 추가
+                for i, item in enumerate(analysis_results):
+                    # 시그널 검증
+                    if item.get("signal") not in SIGNAL_CATEGORIES:
+                        item["signal"] = "중립"
+
+                    # 매칭되는 종목의 캡처 시각 추가
+                    matched_stock = next(
+                        (s for s in valid_stocks if s["code"] == item.get("code")),
+                        None
+                    )
+                    if matched_stock:
+                        item["capture_time"] = matched_stock.get("capture_time", "N/A")
+                    else:
+                        item["capture_time"] = "N/A"
+
+                    item["analysis_time"] = analysis_time
+
+                print(f"\n분석 완료: {len(analysis_results)}개 종목")
+                rotate_to_next_key()
+                return analysis_results
+
+            print("[WARNING] 응답 파싱 실패. 재시도...")
 
         except Exception as e:
             error_msg = str(e)
-            print(f"  [KEY #{key_index + 1}] 오류: {error_msg[:80]}")
+            print(f"  [KEY #{key_index + 1}] 오류: {error_msg[:100]}")
 
             if "429" in error_msg or "quota" in error_msg.lower() or "rate" in error_msg.lower():
                 mark_key_failed(key_index)
                 rotate_to_next_key()
-                time.sleep(1)
+                time.sleep(2)
                 continue
 
-            # 모델 이름 오류시 다른 키로 재시도하지 않음
             if "404" in error_msg:
-                return None
+                print("[ERROR] 모델을 찾을 수 없습니다.")
+                return []
 
-            return None
+            rotate_to_next_key()
+            time.sleep(1)
 
-    print(f"  [ERROR] {max_retries}회 시도 후 실패")
-    return None
+    print(f"[ERROR] {max_retries}회 시도 후 실패")
+    return []
 
 
+# 하위 호환성을 위한 별칭
 def analyze_stocks(scrape_results: list[dict], capture_dir: Path) -> list[dict]:
-    """여러 종목 분석"""
-    print("\n=== Phase 3: AI 분석 ===\n")
-    print(f"사용 가능한 API 키: {len(GEMINI_API_KEYS)}개\n")
-
-    results = []
-
-    for i, stock in enumerate(scrape_results, 1):
-        if not stock.get("success"):
-            continue
-
-        name = stock["name"]
-        code = stock["code"]
-        image_path = capture_dir / f"{code}.png"
-
-        if not image_path.exists():
-            print(f"[{i}] {name}: 이미지 없음")
-            continue
-
-        print(f"[{i}/{len(scrape_results)}] {name} 분석 중...", end=" ")
-
-        result = analyze_stock_image(image_path, stock)
-
-        if result:
-            # 캡처 시각 추가
-            result["capture_time"] = stock.get("capture_time", "N/A")
-            # 분석 완료 시각 추가
-            result["analysis_time"] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-            results.append(result)
-            print(f"-> {result.get('signal', 'N/A')}")
-        else:
-            print("-> 실패")
-
-        time.sleep(0.5)
-
-    print(f"\n분석 완료: {len(results)}개 종목")
-    return results
+    """analyze_stocks_batch의 별칭 (하위 호환성)"""
+    return analyze_stocks_batch(scrape_results, capture_dir)
