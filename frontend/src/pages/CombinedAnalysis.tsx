@@ -99,9 +99,8 @@ function ConfidenceBar({ score }: { score: number }) {
 function CombinedStockCard({ stock }: { stock: CombinedStock }) {
   const [isExpanded, setIsExpanded] = useState(false);
 
-  const priceChangeColor = stock.apiData
-    ? stock.apiData.price.change_rate_pct > 0 ? 'text-red-500' : stock.apiData.price.change_rate_pct < 0 ? 'text-blue-500' : 'text-text-secondary'
-    : 'text-text-secondary';
+  const changeRate = stock.apiData?.price?.change_rate_pct ?? 0;
+  const priceChangeColor = changeRate > 0 ? 'text-red-500' : changeRate < 0 ? 'text-blue-500' : 'text-text-secondary';
 
   return (
     <div className={cn(
@@ -126,11 +125,11 @@ function CombinedStockCard({ stock }: { stock: CombinedStock }) {
               {stock.market}
             </span>
           </div>
-          {stock.apiData && (
+          {stock.apiData?.price?.current != null && (
             <div className="flex items-baseline gap-1.5 md:gap-2">
               <span className="text-base md:text-lg font-bold">{stock.apiData.price.current.toLocaleString()}원</span>
               <span className={cn('text-xs md:text-sm font-medium', priceChangeColor)}>
-                {stock.apiData.price.change_rate_pct > 0 ? '+' : ''}{stock.apiData.price.change_rate_pct.toFixed(2)}%
+                {(stock.apiData.price.change_rate_pct ?? 0) > 0 ? '+' : ''}{(stock.apiData.price.change_rate_pct ?? 0).toFixed(2)}%
               </span>
             </div>
           )}
