@@ -19,13 +19,13 @@ const tabs: { key: MarketType; label: string }[] = [
 
 export function MarketTabs({ active, counts, onChange }: MarketTabsProps) {
   return (
-    <div className="flex gap-2 mb-4 bg-bg-secondary p-1.5 rounded-xl border border-border">
+    <div className="flex gap-1 md:gap-2 mb-4 bg-bg-secondary p-1 md:p-1.5 rounded-xl border border-border">
       {tabs.map((tab) => (
         <button
           key={tab.key}
           onClick={() => onChange(tab.key)}
           className={cn(
-            'flex-1 py-3 px-4 rounded-lg text-sm font-semibold transition-all flex items-center justify-center gap-2',
+            'flex-1 py-2 md:py-3 px-2 md:px-4 rounded-lg text-xs md:text-sm font-semibold transition-all flex items-center justify-center gap-1 md:gap-2',
             active === tab.key
               ? 'bg-accent-primary text-white'
               : 'text-text-muted hover:text-text-secondary hover:bg-bg-primary'
@@ -34,7 +34,7 @@ export function MarketTabs({ active, counts, onChange }: MarketTabsProps) {
           {tab.label}
           <span
             className={cn(
-              'px-2 py-0.5 rounded-full text-xs',
+              'px-1.5 md:px-2 py-0.5 rounded-full text-[0.65rem] md:text-xs',
               active === tab.key
                 ? 'bg-white/30'
                 : 'bg-bg-primary'

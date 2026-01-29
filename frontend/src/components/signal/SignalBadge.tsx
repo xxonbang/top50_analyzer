@@ -18,7 +18,7 @@ export function SignalBadge({ signal, className }: SignalBadgeProps) {
   return (
     <span
       className={cn(
-        'inline-block px-3 py-1 rounded-2xl text-xs font-semibold whitespace-nowrap',
+        'inline-block px-2 md:px-3 py-0.5 md:py-1 rounded-2xl text-[0.65rem] md:text-xs font-semibold whitespace-nowrap',
         colorClasses[signal],
         className
       )}

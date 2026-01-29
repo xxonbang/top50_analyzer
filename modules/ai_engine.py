@@ -226,3 +226,228 @@ def analyze_stocks_batch(scrape_results: list[dict], capture_dir: Path, max_retr
 def analyze_stocks(scrape_results: list[dict], capture_dir: Path) -> list[dict]:
     """analyze_stocks_batch의 별칭 (하위 호환성)"""
     return analyze_stocks_batch(scrape_results, capture_dir)
+
+
+# KIS API 데이터 분석용 프롬프트
+KIS_ANALYSIS_PROMPT = """당신은 20년 경력의 대한민국 주식 시장 전문 퀀트 애널리스트입니다.
+
+아래에 한국투자증권 OpenAPI에서 수집한 {count}개 종목의 실시간 데이터가 JSON 형식으로 제공됩니다.
+
+## 데이터 설명
+각 종목에는 다음 정보가 포함되어 있습니다:
+- **ranking**: 거래량 순위 및 거래량 변화율
+- **price**: 현재가, 등락률, 시고저종, 52주 고저
+- **valuation**: PER, PBR, EPS, BPS
+- **investor_flow**: 외인/기관/개인 순매수 동향 (당일, 5일)
+- **foreign_institution**: 외인/기관 5일/20일 누적 순매수
+- **member_trading**: 주요 증권사 매매 동향
+- **price_history**: 최근 20거래일 일봉 데이터
+- **order_book**: 호가 정보 (매수/매도 잔량)
+
+## 분석 요청
+각 종목에 대해 다음을 수행하세요:
+
+1. **기술적 분석**: 가격 추세, 거래량 변화, 이동평균 대비 위치 분석
+2. **수급 분석**: 외인/기관 매매 동향, 프로그램 매매 흐름
+3. **밸류에이션 분석**: PER/PBR 수준 및 업종 대비 적정성
+4. **시그널 결정**: [적극매수, 매수, 중립, 매도, 적극매도] 중 하나 선택
+5. **분석 근거**: 시그널 결정의 핵심 근거를 2~3문장으로 설명
+
+## 분석 대상 종목 데이터
+```json
+{stock_data}
+```
+
+반드시 아래 JSON 형식으로만 응답하세요. 다른 텍스트 없이 JSON만 출력하세요:
+```json
+{{
+  "analysis_time": "분석 시각 (YYYY-MM-DD HH:MM:SS)",
+  "results": [
+    {{
+      "code": "종목코드",
+      "name": "종목명",
+      "market": "KOSPI/KOSDAQ",
+      "current_price": 현재가(숫자),
+      "change_rate": 등락률(숫자),
+      "signal": "시그널",
+      "reason": "분석 근거 (2~3문장)",
+      "key_factors": {{
+        "price_trend": "가격 추세 (상승/횡보/하락)",
+        "volume_signal": "거래량 시그널 (급증/증가/보통/감소)",
+        "foreign_flow": "외인 동향 (매수우위/중립/매도우위)",
+        "institution_flow": "기관 동향 (매수우위/중립/매도우위)",
+        "valuation": "밸류에이션 (저평가/적정/고평가)"
+      }},
+      "risk_level": "위험도 (높음/중간/낮음)",
+      "confidence": 신뢰도(0.0~1.0)
+    }}
+  ]
+}}
+```
+
+중요: 모든 {count}개 종목에 대해 분석 결과를 반드시 포함해야 합니다.
+"""
+
+
+def analyze_kis_data(
+    stocks_data: dict,
+    stock_codes: list[str] | None = None,
+    max_retries: int = 3
+) -> list[dict]:
+    """KIS API 데이터 기반 종목 분석
+
+    Args:
+        stocks_data: 변환된 KIS 데이터 (top50_gemini.json 형식)
+        stock_codes: 분석할 종목 코드 리스트 (없으면 전체)
+        max_retries: 최대 재시도 횟수
+
+    Returns:
+        분석 결과 리스트
+    """
+    import json
+
+    print("\n=== KIS API 데이터 AI 분석 ===\n")
+    print(f"사용 가능한 API 키: {len(GEMINI_API_KEYS)}개")
+
+    stocks = stocks_data.get("stocks", {})
+
+    # 분석 대상 종목 필터링
+    if stock_codes:
+        target_stocks = {code: stocks[code] for code in stock_codes if code in stocks}
+    else:
+        target_stocks = stocks
+
+    if not target_stocks:
+        print("[ERROR] 분석할 종목이 없습니다.")
+        return []
+
+    print(f"분석 대상: {len(target_stocks)}개 종목\n")
+
+    # 프롬프트 생성
+    prompt = KIS_ANALYSIS_PROMPT.format(
+        count=len(target_stocks),
+        stock_data=json.dumps(target_stocks, ensure_ascii=False, indent=2)
+    )
+
+    # API 호출 시도
+    for attempt in range(max_retries):
+        key_info = get_next_api_key()
+        if not key_info:
+            print("[ERROR] 사용 가능한 API 키가 없습니다.")
+            return []
+
+        api_key, key_index = key_info
+        print(f"[시도 {attempt + 1}/{max_retries}] API 키 #{key_index + 1} 사용")
+
+        try:
+            client = genai.Client(api_key=api_key)
+
+            print("Gemini API 호출 중... (데이터 분석에 시간이 소요됩니다)")
+
+            response = client.models.generate_content(
+                model=GEMINI_MODEL,
+                contents=[
+                    {
+                        "role": "user",
+                        "parts": [{"text": prompt}]
+                    }
+                ]
+            )
+
+            print("응답 수신 완료. 파싱 중...")
+
+            # 응답 파싱
+            result = parse_json_response(response.text)
+
+            if result and "results" in result:
+                analysis_results = result["results"]
+                analysis_time = result.get(
+                    "analysis_time",
+                    datetime.now(KST).strftime("%Y-%m-%d %H:%M:%S")
+                )
+
+                # 시그널 검증 및 메타데이터 추가
+                for item in analysis_results:
+                    if item.get("signal") not in SIGNAL_CATEGORIES:
+                        item["signal"] = "중립"
+                    item["analysis_time"] = analysis_time
+                    item["data_source"] = "KIS_API"
+
+                print(f"\n분석 완료: {len(analysis_results)}개 종목")
+                rotate_to_next_key()
+                return analysis_results
+
+            print("[WARNING] 응답 파싱 실패. 재시도...")
+
+        except Exception as e:
+            error_msg = str(e)
+            print(f"  [KEY #{key_index + 1}] 오류: {error_msg[:100]}")
+
+            if "429" in error_msg or "quota" in error_msg.lower() or "rate" in error_msg.lower():
+                mark_key_failed(key_index)
+                rotate_to_next_key()
+                time.sleep(2)
+                continue
+
+            if "404" in error_msg:
+                print("[ERROR] 모델을 찾을 수 없습니다.")
+                return []
+
+            rotate_to_next_key()
+            time.sleep(1)
+
+    print(f"[ERROR] {max_retries}회 시도 후 실패")
+    return []
+
+
+def analyze_kis_data_batch(
+    stocks_data: dict,
+    batch_size: int = 10,
+    max_retries: int = 3
+) -> list[dict]:
+    """KIS API 데이터 배치 분석 (대량 종목용)
+
+    Args:
+        stocks_data: 변환된 KIS 데이터
+        batch_size: 배치당 종목 수
+        max_retries: 최대 재시도 횟수
+
+    Returns:
+        전체 분석 결과 리스트
+    """
+    stocks = stocks_data.get("stocks", {})
+    all_codes = list(stocks.keys())
+
+    print(f"\n=== KIS 데이터 배치 분석 시작 ===")
+    print(f"총 종목: {len(all_codes)}개, 배치 크기: {batch_size}개\n")
+
+    all_results = []
+
+    for i in range(0, len(all_codes), batch_size):
+        batch_codes = all_codes[i:i + batch_size]
+        batch_num = i // batch_size + 1
+        total_batches = (len(all_codes) + batch_size - 1) // batch_size
+
+        print(f"\n--- 배치 {batch_num}/{total_batches} ---")
+
+        results = analyze_kis_data(
+            stocks_data,
+            stock_codes=batch_codes,
+            max_retries=max_retries
+        )
+
+        if results:
+            all_results.extend(results)
+            print(f"배치 {batch_num} 완료: {len(results)}개 종목 분석")
+        else:
+            print(f"배치 {batch_num} 실패")
+
+        # 배치 간 딜레이 (rate limit 방지)
+        if i + batch_size < len(all_codes):
+            print("다음 배치 대기 중... (3초)")
+            time.sleep(3)
+
+    print(f"\n=== 배치 분석 완료 ===")
+    print(f"총 분석 완료: {len(all_results)}개 종목")
+
+    return all_results

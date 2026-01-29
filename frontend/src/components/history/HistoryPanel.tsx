@@ -48,19 +48,19 @@ export function HistoryPanel() {
       {/* Panel */}
       <div
         className={cn(
-          'fixed top-0 bottom-0 w-[380px] max-w-[90vw] bg-bg-secondary z-[201] shadow-lg transition-all duration-300 flex flex-col',
+          'fixed top-0 bottom-0 w-[320px] md:w-[380px] max-w-[85vw] bg-bg-secondary z-[201] shadow-lg transition-all duration-300 flex flex-col',
           isHistoryPanelOpen ? 'right-0' : '-right-[400px]'
         )}
       >
         {/* Header */}
-        <div className="p-5 border-b border-border flex justify-between items-center">
-          <h3 className="text-lg font-bold flex items-center gap-2">
+        <div className="p-4 md:p-5 border-b border-border flex justify-between items-center">
+          <h3 className="text-base md:text-lg font-bold flex items-center gap-2">
             <span>📅</span>
             분석 히스토리
           </h3>
           <button
             onClick={closeHistoryPanel}
-            className="w-9 h-9 rounded-lg bg-bg-primary text-text-muted hover:bg-border hover:text-text-primary transition-colors flex items-center justify-center text-xl"
+            className="w-8 h-8 md:w-9 md:h-9 rounded-lg bg-bg-primary text-text-muted hover:bg-border hover:text-text-primary transition-colors flex items-center justify-center text-lg md:text-xl"
           >
             ✕
           </button>
@@ -68,13 +68,13 @@ export function HistoryPanel() {
 
         {/* Info */}
         {historyIndex && (
-          <div className="px-5 py-3 bg-bg-primary text-xs text-text-muted border-b border-border">
+          <div className="px-4 md:px-5 py-2.5 md:py-3 bg-bg-primary text-[0.65rem] md:text-xs text-text-muted border-b border-border">
             최근 {historyIndex.retention_days}일간 총 {historyIndex.total_records}개 기록
           </div>
         )}
 
         {/* List */}
-        <div className="flex-1 overflow-y-auto p-3">
+        <div className="flex-1 overflow-y-auto p-2.5 md:p-3">
           {isLoading && <LoadingSpinner message="히스토리 로딩 중..." />}
 
           {error && (

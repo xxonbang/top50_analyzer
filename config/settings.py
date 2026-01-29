@@ -44,3 +44,15 @@ GEMINI_MODEL = "gemini-2.5-flash"
 
 # 시그널 카테고리
 SIGNAL_CATEGORIES = ["적극매수", "매수", "중립", "매도", "적극매도"]
+
+# 한국투자증권 API 설정
+# 주의: 순위분석 API는 모의투자에서 지원되지 않으므로 실전투자만 사용
+KIS_APP_KEY = os.getenv("KIS_APP_KEY")
+KIS_APP_SECRET = os.getenv("KIS_APP_SECRET")
+KIS_ACCOUNT_NO = os.getenv("KIS_ACCOUNT_NO")  # 계좌번호 (XXXXXXXX-XX 형식)
+
+# KIS API 엔드포인트 (실전투자 전용)
+KIS_BASE_URL = "https://openapi.koreainvestment.com:9443"
+
+# KIS API 결과 저장 경로
+KIS_OUTPUT_DIR = ROOT_DIR / "results" / "kis"
