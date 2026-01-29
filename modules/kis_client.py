@@ -176,7 +176,23 @@ class KISClient:
             "appsecret": self.app_secret,
         }
 
+        # AppKey 일부 마스킹하여 출력 (디버깅용)
+        masked_key = self.app_key[:4] + "****" + self.app_key[-4:] if self.app_key and len(self.app_key) > 8 else "NOT_SET"
+        print(f"[KIS] AppKey (마스킹): {masked_key}")
+        print(f"[KIS] Base URL: {self.base_url}")
+
         response = requests.post(url, headers=headers, json=body)
+
+        # 403 오류 시 상세 응답 출력
+        if response.status_code == 403:
+            print(f"[실패] 403 Client Error: Forbidden for url: {url}")
+            print(f"[실패] 응답 내용: {response.text}")
+            print(f"[실패] 가능한 원인:")
+            print(f"       1. AppKey/AppSecret이 잘못되었거나 실전투자용이 아님")
+            print(f"       2. KIS Developers에서 API 서비스 미신청 또는 만료 (1년 유효)")
+            print(f"       3. 모의투자 키를 실전투자 URL에 사용 중")
+            print(f"[해결] KIS Developers (https://apiportal.koreainvestment.com)에서 확인하세요")
+
         response.raise_for_status()
 
         data = response.json()
