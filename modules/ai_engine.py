@@ -244,6 +244,38 @@ def analyze_stocks(scrape_results: list[dict], capture_dir: Path) -> list[dict]:
     return analyze_stocks_batch(scrape_results, capture_dir)
 
 
+# KIS API 데이터 분석에 사용할 필수 필드 (API 토큰 제한 대응)
+KIS_ESSENTIAL_FIELDS = [
+    'code',                 # 종목코드
+    'name',                 # 종목명
+    'market',               # 시장구분
+    'ranking',              # 거래량 순위 및 변화율
+    'price',                # 현재가, 등락률, 시고저종, 52주 고저
+    'valuation',            # PER, PBR, EPS, BPS
+    'investor_flow',        # 외인/기관/개인 순매수 (당일, 5일)
+    'foreign_institution',  # 외인/기관 누적 순매수
+]
+
+
+def reduce_kis_data(stocks: dict) -> dict:
+    """KIS 데이터를 분석에 필요한 필수 필드만 추출하여 축소
+
+    Args:
+        stocks: 원본 종목 데이터 딕셔너리
+
+    Returns:
+        축소된 종목 데이터 딕셔너리
+    """
+    reduced = {}
+    for code, data in stocks.items():
+        reduced[code] = {
+            field: data[field]
+            for field in KIS_ESSENTIAL_FIELDS
+            if field in data
+        }
+    return reduced
+
+
 # KIS API 데이터 분석용 프롬프트
 KIS_ANALYSIS_PROMPT = """당신은 20년 경력의 대한민국 주식 시장 전문 퀀트 애널리스트입니다.
 
@@ -251,21 +283,21 @@ KIS_ANALYSIS_PROMPT = """당신은 20년 경력의 대한민국 주식 시장 �
 
 ## 데이터 설명
 각 종목에는 다음 정보가 포함되어 있습니다:
+- **code**: 종목코드
+- **name**: 종목명
+- **market**: 시장구분 (KOSPI/KOSDAQ)
 - **ranking**: 거래량 순위 및 거래량 변화율
 - **price**: 현재가, 등락률, 시고저종, 52주 고저
 - **valuation**: PER, PBR, EPS, BPS
 - **investor_flow**: 외인/기관/개인 순매수 동향 (당일, 5일)
 - **foreign_institution**: 외인/기관 5일/20일 누적 순매수
-- **member_trading**: 주요 증권사 매매 동향
-- **price_history**: 최근 20거래일 일봉 데이터
-- **order_book**: 호가 정보 (매수/매도 잔량)
 
 ## 분석 요청
 각 종목에 대해 다음을 수행하세요:
 
-1. **기술적 분석**: 가격 추세, 거래량 변화, 이동평균 대비 위치 등 제공된 모든 데이터, 지표, 수치 기반 분석
-2. **수급 분석**: 외인/기관 매매 동향, 프로그램 매매 흐름
-3. **밸류에이션 분석**: PER/PBR 수준 및 업종 대비 적정성
+1. **기술적 분석**: 가격 추세, 거래량 변화율, 52주 고저 대비 위치 분석
+2. **수급 분석**: 외인/기관 순매수 동향 및 누적 흐름 분석
+3. **밸류에이션 분석**: PER/PBR 수준 평가
 4. **시그널 결정**: [적극매수, 매수, 중립, 매도, 적극매도] 중 하나 선택
 5. **분석 근거**: 시그널 결정의 핵심 근거를 2~3문장으로 설명
 
@@ -337,12 +369,20 @@ def analyze_kis_data(
         print("[ERROR] 분석할 종목이 없습니다.")
         return []
 
-    print(f"분석 대상: {len(target_stocks)}개 종목\n")
+    print(f"분석 대상: {len(target_stocks)}개 종목")
+
+    # 데이터 축소 (API 토큰 제한 대응)
+    original_json = json.dumps(target_stocks, ensure_ascii=False)
+    reduced_stocks = reduce_kis_data(target_stocks)
+    reduced_json = json.dumps(reduced_stocks, ensure_ascii=False, indent=2)
+
+    reduction_rate = (1 - len(reduced_json) / len(original_json)) * 100
+    print(f"데이터 축소: {len(original_json):,}자 → {len(reduced_json):,}자 ({reduction_rate:.1f}% 감소)\n")
 
     # 프롬프트 생성
     prompt = KIS_ANALYSIS_PROMPT.format(
-        count=len(target_stocks),
-        stock_data=json.dumps(target_stocks, ensure_ascii=False, indent=2)
+        count=len(reduced_stocks),
+        stock_data=reduced_json
     )
 
     # API 호출 시도
