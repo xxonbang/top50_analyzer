@@ -41,9 +41,18 @@ class KISDataTransformer:
                 }
               }
         """
+        print("[TRANSFORM] KIS 데이터 변환 시작...")
+
         meta = raw_data.get("meta", {})
         rankings = raw_data.get("rankings", {})
         stock_details = raw_data.get("stock_details", {})
+
+        print(f"[TRANSFORM] 입력 데이터:")
+        print(f"  - meta 키: {list(meta.keys())}")
+        print(f"  - rankings 키: {list(rankings.keys())}")
+        print(f"  - kospi 종목 수: {len(rankings.get('kospi', []))}")
+        print(f"  - kosdaq 종목 수: {len(rankings.get('kosdaq', []))}")
+        print(f"  - stock_details 종목 수: {len(stock_details)}")
 
         # 순위 정보를 종목코드 기준 맵으로 변환
         ranking_map = self._build_ranking_map(rankings)
@@ -71,6 +80,16 @@ class KISDataTransformer:
             },
             "stocks": stocks,
         }
+
+        # 변환 결과 요약
+        result_json = json.dumps(result, ensure_ascii=False)
+        print(f"[TRANSFORM] 변환 완료:")
+        print(f"  - 출력 종목 수: {len(stocks)}")
+        print(f"  - 출력 데이터 크기: {len(result_json):,}자")
+        if stocks:
+            sample_code = list(stocks.keys())[0]
+            sample_keys = list(stocks[sample_code].keys())
+            print(f"  - 샘플 종목({sample_code}) 필드: {sample_keys}")
 
         return result
 

@@ -107,8 +107,10 @@ BATCH_ANALYSIS_PROMPT = """당신은 20년 경력의 대한민국 주식 시장 
 
 def analyze_stocks_batch(scrape_results: list[dict], capture_dir: Path, max_retries: int = 3) -> list[dict]:
     """모든 종목 이미지를 한 번에 배치 분석 (API 1회 호출)"""
-    print("\n=== Phase 3: AI 배치 분석 ===\n")
-    print(f"사용 가능한 API 키: {len(GEMINI_API_KEYS)}개")
+    print("\n=== Phase 3: AI 배치 분석 (Vision) ===\n")
+    print(f"[INFO] 사용 가능한 API 키: {len(GEMINI_API_KEYS)}개")
+    print(f"[INFO] 모델: {GEMINI_MODEL}")
+    print(f"[INFO] 최대 재시도: {max_retries}회")
 
     # 성공한 종목만 필터링
     valid_stocks = []
@@ -172,7 +174,9 @@ def analyze_stocks_batch(scrape_results: list[dict], capture_dir: Path, max_retr
             # 모든 이미지와 프롬프트를 하나의 요청으로
             parts = image_parts + [{"text": prompt}]
 
-            print("Gemini API 호출 중... (이미지 분석에 시간이 소요됩니다)")
+            print(f"[API] Gemini API 호출 시작...")
+            print(f"[API] 요청 데이터: 이미지 {len(image_parts)}개, 프롬프트 {len(prompt)}자")
+            api_start_time = time.time()
 
             response = client.models.generate_content(
                 model=GEMINI_MODEL,
@@ -184,7 +188,9 @@ def analyze_stocks_batch(scrape_results: list[dict], capture_dir: Path, max_retr
                 ]
             )
 
-            print("응답 수신 완료. 파싱 중...")
+            api_elapsed = time.time() - api_start_time
+            print(f"[API] 응답 수신 완료 (소요시간: {api_elapsed:.1f}초)")
+            print(f"[API] 응답 길이: {len(response.text)}자")
 
             # 응답 파싱
             result = parse_json_response(response.text)
@@ -194,7 +200,7 @@ def analyze_stocks_batch(scrape_results: list[dict], capture_dir: Path, max_retr
                 analysis_time = datetime.now(KST).strftime("%Y-%m-%d %H:%M:%S")
 
                 # 캡처 시각 및 분석 시각 추가
-                for i, item in enumerate(analysis_results):
+                for item in analysis_results:
                     # 시그널 검증
                     if item.get("signal") not in SIGNAL_CATEGORIES:
                         item["signal"] = "중립"
@@ -211,14 +217,17 @@ def analyze_stocks_batch(scrape_results: list[dict], capture_dir: Path, max_retr
 
                     item["analysis_time"] = analysis_time
 
-                print(f"\n분석 완료: {len(analysis_results)}개 종목")
+                print(f"\n[SUCCESS] 분석 완료: {len(analysis_results)}개 종목")
                 rotate_to_next_key()
                 return analysis_results
 
-            # 파싱 실패: API 호출은 성공했으므로 재호출하지 않음 (호출 횟수 절약)
+            # 파싱 실패: 디버깅 로그와 함께 재파싱 시도
             print("[ERROR] 응답 파싱 실패 - API 호출은 성공했으나 JSON 파싱 불가")
-            print(f"[DEBUG] 응답 길이: {len(response.text)}자")
-            print(f"[DEBUG] 응답 시작 200자: {response.text[:200]}...")
+            print("[DEBUG] 상세 파싱 로그:")
+            parse_json_response(response.text, debug=True)  # 디버그 모드로 재시도하여 로그 출력
+            print(f"[DEBUG] 응답 전체 (최대 500자):\n{response.text[:500]}")
+            if len(response.text) > 500:
+                print(f"[DEBUG] ... (총 {len(response.text)}자 중 500자만 표시)")
             rotate_to_next_key()
             return []  # 파싱 실패 시 빈 결과 반환, 재호출 안 함
 
@@ -377,7 +386,8 @@ def analyze_kis_data(
         print("[ERROR] 분석할 종목이 없습니다.")
         return []
 
-    print(f"분석 대상: {len(target_stocks)}개 종목")
+    print(f"[INFO] 분석 대상: {len(target_stocks)}개 종목")
+    print(f"[INFO] 종목 코드: {list(target_stocks.keys())[:10]}{'...' if len(target_stocks) > 10 else ''}")
 
     # 데이터 축소 (API 토큰 제한 대응)
     original_json = json.dumps(target_stocks, ensure_ascii=False)
@@ -385,28 +395,33 @@ def analyze_kis_data(
     reduced_json = json.dumps(reduced_stocks, ensure_ascii=False, indent=2)
 
     reduction_rate = (1 - len(reduced_json) / len(original_json)) * 100
-    print(f"데이터 축소: {len(original_json):,}자 → {len(reduced_json):,}자 ({reduction_rate:.1f}% 감소)\n")
+    print(f"[INFO] 데이터 축소: {len(original_json):,}자 → {len(reduced_json):,}자 ({reduction_rate:.1f}% 감소)")
 
     # 프롬프트 생성
     prompt = KIS_ANALYSIS_PROMPT.format(
         count=len(reduced_stocks),
         stock_data=reduced_json
     )
+    print(f"[INFO] 프롬프트 길이: {len(prompt):,}자\n")
 
     # API 호출 시도 (429 오류 시에만 재시도, 파싱 실패 시 재시도 안 함)
     for attempt in range(max_retries):
         key_info = get_next_api_key()
         if not key_info:
             print("[ERROR] 사용 가능한 API 키가 없습니다.")
+            print(f"[DEBUG] 실패한 키 인덱스: {list(_failed_keys)}")
             return []
 
         api_key, key_index = key_info
-        print(f"[시도 {attempt + 1}/{max_retries}] API 키 #{key_index + 1} 사용")
+        print(f"[시도 {attempt + 1}/{max_retries}] API 키 #{key_index + 1} 사용 (키 마스킹: {api_key[:8]}...)")
 
         try:
             client = genai.Client(api_key=api_key)
 
-            print("Gemini API 호출 중... (데이터 분석에 시간이 소요됩니다)")
+            print(f"[API] Gemini API 호출 시작...")
+            print(f"[API] 모델: {GEMINI_MODEL}")
+            print(f"[API] 요청 데이터: {len(prompt):,}자")
+            api_start_time = time.time()
 
             response = client.models.generate_content(
                 model=GEMINI_MODEL,
@@ -418,7 +433,9 @@ def analyze_kis_data(
                 ]
             )
 
-            print("응답 수신 완료. 파싱 중...")
+            api_elapsed = time.time() - api_start_time
+            print(f"[API] 응답 수신 완료 (소요시간: {api_elapsed:.1f}초)")
+            print(f"[API] 응답 길이: {len(response.text):,}자")
 
             # 응답 파싱
             result = parse_json_response(response.text)
@@ -431,26 +448,34 @@ def analyze_kis_data(
                 )
 
                 # 시그널 검증 및 메타데이터 추가
+                signal_stats = {}
                 for item in analysis_results:
                     if item.get("signal") not in SIGNAL_CATEGORIES:
                         item["signal"] = "중립"
                     item["analysis_time"] = analysis_time
                     item["data_source"] = "KIS_API"
+                    # 시그널 통계
+                    sig = item.get("signal", "중립")
+                    signal_stats[sig] = signal_stats.get(sig, 0) + 1
 
-                print(f"\n분석 완료: {len(analysis_results)}개 종목")
+                print(f"\n[SUCCESS] 분석 완료: {len(analysis_results)}개 종목")
+                print(f"[INFO] 시그널 분포: {signal_stats}")
                 rotate_to_next_key()
                 return analysis_results
 
-            # 파싱 실패: API 호출은 성공했으므로 재호출하지 않음 (호출 횟수 절약)
+            # 파싱 실패: 디버깅 로그와 함께 재파싱 시도
             print("[ERROR] 응답 파싱 실패 - API 호출은 성공했으나 JSON 파싱 불가")
-            print(f"[DEBUG] 응답 길이: {len(response.text)}자")
-            print(f"[DEBUG] 응답 시작 200자: {response.text[:200]}...")
+            print("[DEBUG] 상세 파싱 로그:")
+            parse_json_response(response.text, debug=True)  # 디버그 모드로 재시도하여 로그 출력
+            print(f"[DEBUG] 응답 전체 (최대 500자):\n{response.text[:500]}")
+            if len(response.text) > 500:
+                print(f"[DEBUG] ... (총 {len(response.text)}자 중 500자만 표시)")
             rotate_to_next_key()
             return []  # 파싱 실패 시 빈 결과 반환, 재호출 안 함
 
         except Exception as e:
             error_msg = str(e)
-            print(f"  [KEY #{key_index + 1}] 오류: {error_msg[:100]}")
+            print(f"[ERROR] [KEY #{key_index + 1}] 오류: {error_msg[:200]}")
 
             # 429 오류 (쿼터 초과): 다른 키로 재시도
             if "429" in error_msg or "quota" in error_msg.lower() or "rate" in error_msg.lower():

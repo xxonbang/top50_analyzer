@@ -55,55 +55,92 @@ def load_json(filepath: Path) -> dict:
         return json.load(f)
 
 
-def parse_json_response(text: str) -> dict | None:
-    """AI 응답에서 JSON 파싱 (다양한 형식 지원)"""
+def parse_json_response(text: str, debug: bool = False) -> dict | None:
+    """AI 응답에서 JSON 파싱 (다양한 형식 지원)
+
+    Args:
+        text: AI 응답 텍스트
+        debug: 디버깅 로그 출력 여부
+    """
     import re
 
     if not text or not text.strip():
+        if debug:
+            print("[PARSE DEBUG] 빈 응답 텍스트")
         return None
+
+    if debug:
+        print(f"[PARSE DEBUG] 원본 응답 길이: {len(text)}자")
+        print(f"[PARSE DEBUG] 응답 시작 100자: {text[:100]!r}")
+        print(f"[PARSE DEBUG] 응답 끝 100자: {text[-100:]!r}")
 
     # 시도할 JSON 문자열 후보들
     candidates = []
+    candidate_sources = []
 
     # 1. 마크다운 코드블록에서 JSON 추출 (```json ... ``` 또는 ``` ... ```)
     json_match = re.search(r"```(?:json)?\s*([\s\S]*?)```", text)
     if json_match:
         candidates.append(json_match.group(1).strip())
+        candidate_sources.append("markdown_codeblock")
+        if debug:
+            print(f"[PARSE DEBUG] 마크다운 코드블록 발견: {len(json_match.group(1))}자")
 
     # 2. 중괄호로 시작하고 끝나는 JSON 객체 추출
     brace_match = re.search(r'(\{[\s\S]*\})', text)
     if brace_match:
         candidates.append(brace_match.group(1).strip())
+        candidate_sources.append("brace_extraction")
+        if debug:
+            print(f"[PARSE DEBUG] 중괄호 JSON 추출: {len(brace_match.group(1))}자")
 
     # 3. 원본 텍스트 그대로
     candidates.append(text.strip())
+    candidate_sources.append("raw_text")
+
+    if debug:
+        print(f"[PARSE DEBUG] 파싱 후보 수: {len(candidates)}개")
 
     # 각 후보에 대해 파싱 시도
-    for json_str in candidates:
+    for idx, (json_str, source) in enumerate(zip(candidates, candidate_sources)):
         if not json_str:
             continue
 
         # 첫 번째 시도: 그대로 파싱
         try:
-            return json.loads(json_str)
-        except json.JSONDecodeError:
-            pass
+            result = json.loads(json_str)
+            if debug:
+                print(f"[PARSE DEBUG] 성공 (후보 {idx+1}/{len(candidates)}, {source}, 직접 파싱)")
+            return result
+        except json.JSONDecodeError as e:
+            if debug:
+                print(f"[PARSE DEBUG] 실패 (후보 {idx+1}, {source}, 직접): {str(e)[:50]}")
 
         # 두 번째 시도: 특수문자 제거 후 파싱
         try:
             cleaned = re.sub(r'[\x00-\x1F\x7F]', '', json_str)
-            return json.loads(cleaned)
-        except json.JSONDecodeError:
-            pass
+            result = json.loads(cleaned)
+            if debug:
+                print(f"[PARSE DEBUG] 성공 (후보 {idx+1}/{len(candidates)}, {source}, 특수문자 제거)")
+            return result
+        except json.JSONDecodeError as e:
+            if debug:
+                print(f"[PARSE DEBUG] 실패 (후보 {idx+1}, {source}, 특수문자 제거): {str(e)[:50]}")
 
         # 세 번째 시도: 줄바꿈 정리 후 파싱
         try:
             cleaned = re.sub(r'\n\s*', ' ', json_str)
             cleaned = re.sub(r'[\x00-\x1F\x7F]', '', cleaned)
-            return json.loads(cleaned)
-        except json.JSONDecodeError:
-            pass
+            result = json.loads(cleaned)
+            if debug:
+                print(f"[PARSE DEBUG] 성공 (후보 {idx+1}/{len(candidates)}, {source}, 줄바꿈 정리)")
+            return result
+        except json.JSONDecodeError as e:
+            if debug:
+                print(f"[PARSE DEBUG] 실패 (후보 {idx+1}, {source}, 줄바꿈 정리): {str(e)[:50]}")
 
+    if debug:
+        print(f"[PARSE DEBUG] 모든 파싱 시도 실패")
     return None
 
 
