@@ -354,19 +354,21 @@ jobs:
         run: |
           mkdir -p results/history
 
-          # Vision 결과 복사
-          if [ -f output/analysis_*.json ]; then
-            LATEST_FILE=$(ls -t output/analysis_*.json 2>/dev/null | head -n1)
-            if [ -n "$LATEST_FILE" ]; then
-              cp "$LATEST_FILE" results/latest.json
-              cp "$LATEST_FILE" "results/history/$(basename $LATEST_FILE)"
-              echo "Vision 결과 복사 완료: $LATEST_FILE"
-            fi
+          # Vision 결과 복사 (glob 패턴은 ls로 처리)
+          LATEST_FILE=$(ls -t output/analysis_*.json 2>/dev/null | head -n1)
+          if [ -n "$LATEST_FILE" ] && [ -f "$LATEST_FILE" ]; then
+            cp "$LATEST_FILE" results/latest.json
+            cp "$LATEST_FILE" "results/history/$(basename $LATEST_FILE)"
+            echo "Vision 결과 복사 완료: $LATEST_FILE"
+          else
+            echo "::warning::Vision 분석 결과 파일을 찾을 수 없습니다"
           fi
 
           # KIS 결과 확인
           if [ -f results/kis/analysis.json ]; then
             echo "KIS 분석 결과 확인됨"
+          else
+            echo "::warning::KIS 분석 결과 파일을 찾을 수 없습니다"
           fi
 
       - name: Update history index
