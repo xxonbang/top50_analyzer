@@ -1,4 +1,4 @@
-import { useState, useMemo, useEffect } from 'react';
+import { useState, useMemo, useEffect, memo } from 'react';
 import { useQuery } from '@tanstack/react-query';
 import { fetchLatestData, fetchKISData, fetchKISAnalysis } from '@/services/api';
 import type { StockResult, KISStockData, KISAnalysisResult, MarketType, SignalType } from '@/services/types';
@@ -95,8 +95,8 @@ function ConfidenceBar({ score }: { score: number }) {
   );
 }
 
-// 통합 종목 카드
-function CombinedStockCard({ stock }: { stock: CombinedStock }) {
+// 통합 종목 카드 (메모화)
+const CombinedStockCard = memo(function CombinedStockCard({ stock }: { stock: CombinedStock }) {
   const [isExpanded, setIsExpanded] = useState(false);
 
   const changeRate = stock.apiData?.price?.change_rate_pct ?? 0;
@@ -194,7 +194,7 @@ function CombinedStockCard({ stock }: { stock: CombinedStock }) {
       )}
     </div>
   );
-}
+});
 
 // 통계 요약 카드
 function StatCard({ icon, label, value, subValue, colorClass }: {
@@ -383,27 +383,50 @@ export function CombinedAnalysis() {
     return stocks.sort((a, b) => b.confidenceScore - a.confidenceScore);
   }, [combinedStocks, marketFilter, matchFilters, signalFilters]);
 
-  // 통계 계산
+  // 통계 계산 (단일 순회로 최적화)
   const stats = useMemo(() => {
+    let matched = 0, partial = 0, mismatched = 0, visionOnly = 0, apiOnly = 0;
+    let totalConfidence = 0;
+
+    for (const s of combinedStocks) {
+      switch (s.matchStatus) {
+        case 'match': matched++; break;
+        case 'partial': partial++; break;
+        case 'mismatch': mismatched++; break;
+        case 'vision-only': visionOnly++; break;
+        case 'api-only': apiOnly++; break;
+      }
+      totalConfidence += s.confidenceScore;
+    }
+
     const total = combinedStocks.length;
-    const matched = combinedStocks.filter(s => s.matchStatus === 'match').length;
-    const partial = combinedStocks.filter(s => s.matchStatus === 'partial').length;
-    const mismatched = combinedStocks.filter(s => s.matchStatus === 'mismatch').length;
-    const visionOnly = combinedStocks.filter(s => s.matchStatus === 'vision-only').length;
-    const apiOnly = combinedStocks.filter(s => s.matchStatus === 'api-only').length;
-    const avgConfidence = combinedStocks.length > 0
-      ? combinedStocks.reduce((sum, s) => sum + s.confidenceScore, 0) / combinedStocks.length
-      : 0;
+    const avgConfidence = total > 0 ? totalConfidence / total : 0;
 
     return { total, matched, partial, mismatched, visionOnly, apiOnly, avgConfidence };
   }, [combinedStocks]);
 
-  // 시장별 카운트
-  const marketCounts = useMemo(() => ({
-    all: filteredStocks.length,
-    kospi: combinedStocks.filter(s => s.market === 'KOSPI').length,
-    kosdaq: combinedStocks.filter(s => s.market === 'KOSDAQ').length,
-  }), [combinedStocks, filteredStocks]);
+  // 시장별 카운트 + 시그널별 카운트 (단일 순회)
+  const { marketCounts, signalCounts } = useMemo(() => {
+    let kospi = 0, kosdaq = 0;
+    const signals: Record<SignalType, number> = {
+      '적극매수': 0, '매수': 0, '중립': 0, '매도': 0, '적극매도': 0
+    };
+
+    for (const s of combinedStocks) {
+      // 시장 카운트
+      if (s.market === 'KOSPI') kospi++;
+      else if (s.market === 'KOSDAQ') kosdaq++;
+
+      // 시그널 카운트 (vision 또는 api 중 하나라도 해당되면 카운트)
+      if (s.visionSignal) signals[s.visionSignal]++;
+      if (s.apiSignal && s.apiSignal !== s.visionSignal) signals[s.apiSignal]++;
+    }
+
+    return {
+      marketCounts: { all: filteredStocks.length, kospi, kosdaq },
+      signalCounts: signals,
+    };
+  }, [combinedStocks, filteredStocks]);
 
   const isLoading = isLoadingVision || isLoadingKIS || isLoadingAnalysis;
 
@@ -526,7 +549,6 @@ export function CombinedAnalysis() {
                 '매도': 'bg-signal-sell text-white border-signal-sell',
                 '적극매도': 'bg-signal-strong-sell text-white border-signal-strong-sell',
               };
-              const count = combinedStocks.filter(s => s.visionSignal === signal || s.apiSignal === signal).length;
               return (
                 <button
                   key={signal}
@@ -538,7 +560,7 @@ export function CombinedAnalysis() {
                       : 'bg-bg-primary text-text-secondary border-border hover:border-accent-primary'
                   )}
                 >
-                  {signal} ({count})
+                  {signal} ({signalCounts[signal]})
                 </button>
               );
             })}
