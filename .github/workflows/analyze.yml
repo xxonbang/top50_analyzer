@@ -4,8 +4,8 @@ on:
   schedule:
     # KST 07:00 (UTC 22:00 previous day) - 장 시작 전
     - cron: '0 22 * * 0-4'
-    # KST 20:00 (UTC 11:00) - 장 마감 후
-    - cron: '0 11 * * 1-5'
+    # KST 20:00 (UTC 11:00) - 장 마감 후 + 일요일 (월요일 장 준비)
+    - cron: '0 11 * * 0-5'
   workflow_dispatch:
     inputs:
       force_run:
@@ -72,16 +72,27 @@ jobs:
           import pytz
 
           kst = pytz.timezone('Asia/Seoul')
-          today = datetime.now(kst).date()
+          now_kst = datetime.now(kst)
+          today = now_kst.date()
           status = get_market_status(today)
 
+          # 일요일 저녁(18시 이후)은 월요일 장 준비를 위해 분석 허용
+          is_sunday_evening = (today.weekday() == 6 and now_kst.hour >= 18)
+          should_run = status['is_market_open'] or is_sunday_evening
+
+          if is_sunday_evening:
+              status['reason'] = '일요일 저녁 (월요일 장 준비)'
+
           print(f\"날짜: {status['date']} ({status['weekday']})\")
+          print(f\"현재 시각: {now_kst.strftime('%H:%M')} KST\")
           print(f\"상태: {status['reason']}\")
+          if is_sunday_evening:
+              print(f\"일요일 저녁 분석 허용: True\")
 
           # GitHub Actions 출력 설정
           import os
           with open(os.environ['GITHUB_OUTPUT'], 'a') as f:
-              f.write(f\"is_market_open={'true' if status['is_market_open'] else 'false'}\n\")
+              f.write(f\"is_market_open={'true' if should_run else 'false'}\n\")
               f.write(f\"market_status={status['reason']}\n\")
           "
 
