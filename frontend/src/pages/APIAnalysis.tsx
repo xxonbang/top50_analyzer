@@ -124,11 +124,11 @@ function StockCard({
           <div className="font-medium">{stock.valuation?.pbr && stock.valuation.pbr > 0 ? stock.valuation.pbr.toFixed(2) : '-'}</div>
         </div>
         <div className="bg-bg-primary rounded-lg p-1.5 md:p-2 text-center">
-          <div className="text-text-muted mb-0.5 truncate">거래량</div>
+          <div className="text-text-muted mb-0.5">거래량</div>
           <div className="font-medium text-amber-600">+{stock.ranking?.volume_rate_vs_prev?.toFixed(0) ?? '-'}%</div>
         </div>
         <div className="bg-bg-primary rounded-lg p-1.5 md:p-2 text-center">
-          <div className="text-text-muted mb-0.5 truncate">52주</div>
+          <div className="text-text-muted mb-0.5">52주</div>
           <div className="font-medium">
             {stock.price?.high_52week ? ((stock.price.current / stock.price.high_52week) * 100).toFixed(0) : '-'}%
           </div>
@@ -184,8 +184,8 @@ function ResultsMeta({ collectedAt, totalStocks, analyzedCount }: {
   totalStocks: number;
   analyzedCount: number;
 }) {
-  const formattedDate = collectedAt?.replace('T', ' ').slice(0, 16) || '-';
-  const timeOnly = formattedDate.split(' ')[1] || '';
+  const dateOnly = collectedAt?.slice(0, 10) || '-';
+  const timeOnly = collectedAt?.slice(11, 16) || '';
 
   return (
     <div className="grid grid-cols-3 gap-2 md:gap-3 mb-5">
@@ -193,14 +193,16 @@ function ResultsMeta({ collectedAt, totalStocks, analyzedCount }: {
         <div className="w-8 h-8 md:w-10 md:h-10 rounded-lg bg-blue-100 flex items-center justify-center text-base md:text-xl flex-shrink-0">
           📅
         </div>
-        <div className="min-w-0">
+        <div className="min-w-0 flex-1">
           <div className="text-[0.6rem] md:text-[0.65rem] text-text-muted uppercase tracking-wide font-semibold">
             수집 시각
           </div>
-          <div className="text-xs md:text-base font-bold text-text-primary truncate">
-            <span className="hidden md:inline">{formattedDate}</span>
-            <span className="md:hidden">{timeOnly}</span>
+          <div className="text-xs md:text-base font-bold text-text-primary">
+            {dateOnly}
           </div>
+          {timeOnly && (
+            <div className="text-[0.65rem] md:text-xs text-text-muted font-medium">{timeOnly}</div>
+          )}
         </div>
       </div>
       <div className="bg-bg-secondary border border-border rounded-xl px-3 py-2.5 md:px-4 md:py-3 flex items-center gap-2 md:gap-3 shadow-sm">
