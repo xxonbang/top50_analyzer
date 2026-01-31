@@ -136,12 +136,10 @@ class KISDataTransformer:
         current_price = details.get("current_price", {})
         asking_price = details.get("asking_price", {})
         investor_trend = details.get("investor_trend", {})
-        member_trading = details.get("member_trading", {})
         daily_price = details.get("daily_price", {})
         daily_chart = details.get("daily_chart", {})
         financial_info = details.get("financial_info", {})
         foreign_inst = details.get("foreign_institution_summary", {})
-        program_trading = details.get("program_trading", {})
 
         # 종목명: ranking_info에서 가져오거나 daily_chart에서 가져옴
         stock_name = ""
@@ -209,12 +207,6 @@ class KISDataTransformer:
 
             # === 외인/기관 동향 요약 ===
             "foreign_institution": self._transform_foreign_institution(foreign_inst),
-
-            # === 회원사별 매매동향 ===
-            "member_trading": self._transform_member_trading(member_trading),
-
-            # === 프로그램 매매 ===
-            "program_trading": self._transform_program_trading(program_trading),
 
             # === 재무 정보 ===
             "financials": self._transform_financial_info(financial_info),
@@ -317,52 +309,6 @@ class KISDataTransformer:
                 "individual_net": summary_20d.get("individual_net"),
             },
             "description": "양수=순매수, 음수=순매도. 5일/20일 누적 합계",
-        }
-
-    def _transform_member_trading(self, member_trading: Dict[str, Any]) -> Dict[str, Any]:
-        """회원사별 매매동향 변환"""
-        if not member_trading:
-            return {}
-
-        return {
-            "top_sellers": member_trading.get("sell_members", [])[:5],
-            "top_buyers": member_trading.get("buy_members", [])[:5],
-            "description": "매도/매수 상위 5개 증권사",
-        }
-
-    def _transform_program_trading(self, program_trading: Dict[str, Any]) -> Dict[str, Any]:
-        """프로그램 매매 변환"""
-        if not program_trading:
-            return {}
-
-        # program_trading 배열에서 합계 계산
-        pt_data = program_trading.get("program_trading", [])
-
-        if not pt_data:
-            return {}
-
-        # 당일 프로그램 매매 합계
-        total_buy = sum(p.get("buy_volume", 0) for p in pt_data)
-        total_sell = sum(p.get("sell_volume", 0) for p in pt_data)
-        total_net = sum(p.get("net_volume", 0) for p in pt_data)
-
-        # 최근 5개 시점 데이터
-        recent = pt_data[:5]
-
-        return {
-            "total_buy_volume": total_buy,
-            "total_sell_volume": total_sell,
-            "net_volume": total_net,
-            "recent_trading": [
-                {
-                    "time": p.get("time"),
-                    "buy_volume": p.get("buy_volume"),
-                    "sell_volume": p.get("sell_volume"),
-                    "net_volume": p.get("net_volume"),
-                }
-                for p in recent
-            ],
-            "description": "프로그램 매매 동향. net_volume 양수=순매수, 음수=순매도",
         }
 
     def _transform_financial_info(self, financial_info: Dict[str, Any]) -> Dict[str, Any]:
