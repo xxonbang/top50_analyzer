@@ -65,6 +65,10 @@ class KISStockDetailAPI:
 
         output = result.get("output", {})
 
+        # API가 list를 반환하는 경우 처리
+        if isinstance(output, list):
+            output = output[0] if output else {}
+
         return {
             "stock_code": stock_code,
             "stock_name": output.get("rprs_mrkt_kor_name", ""),        # 종목명
@@ -111,6 +115,12 @@ class KISStockDetailAPI:
 
         output = result.get("output1", {})
         output2 = result.get("output2", {})
+
+        # API가 list를 반환하는 경우 처리
+        if isinstance(output, list):
+            output = output[0] if output else {}
+        if isinstance(output2, list):
+            output2 = output2[0] if output2 else {}
 
         # 10단계 호가 파싱
         ask_prices = []  # 매도호가 (1~10)
@@ -196,6 +206,10 @@ class KISStockDetailAPI:
 
         output = result.get("output", {})
 
+        # API가 list를 반환하는 경우 처리
+        if isinstance(output, list):
+            output = output[0] if output else {}
+
         # 매도 상위 5개 증권사
         sell_members = []
         for i in range(1, 6):
@@ -265,6 +279,10 @@ class KISStockDetailAPI:
 
         output1 = result.get("output1", {})
         output2 = result.get("output2", [])
+
+        # API가 list를 반환하는 경우 처리
+        if isinstance(output1, list):
+            output1 = output1[0] if output1 else {}
 
         # OHLCV 데이터 파싱
         ohlcv = []
