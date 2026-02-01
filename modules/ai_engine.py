@@ -290,7 +290,30 @@ def analyze_stocks_batch(scrape_results: list[dict], capture_dir: Path, max_retr
                     sig = item.get("signal", "중립")
                     signal_stats[sig] = signal_stats.get(sig, 0) + 1
 
-                # === 4. 결과 수 검증 (입력 대비 80% 미만이면 경고) ===
+                # === 4. 요청/응답 종목 리스트 일치 검증 ===
+                requested_codes = set(s["code"] for s in valid_stocks)
+                responded_codes = set(item.get("code") for item in valid_results)
+
+                missing_codes = requested_codes - responded_codes  # 요청했지만 응답 없음
+                extra_codes = responded_codes - requested_codes    # 요청 안했지만 응답 있음
+                matched_codes = requested_codes & responded_codes  # 일치
+
+                match_rate = (len(matched_codes) / len(requested_codes) * 100) if requested_codes else 0
+
+                print(f"\n[VALIDATION] 종목 리스트 검증:")
+                print(f"  - 요청: {len(requested_codes)}개, 응답: {len(responded_codes)}개, 일치: {len(matched_codes)}개 ({match_rate:.1f}%)")
+
+                if missing_codes:
+                    missing_names = [s["name"] for s in valid_stocks if s["code"] in missing_codes][:10]
+                    print(f"  - 누락된 종목 ({len(missing_codes)}개): {missing_names}{'...' if len(missing_codes) > 10 else ''}")
+
+                if extra_codes:
+                    print(f"  - 추가된 종목 ({len(extra_codes)}개): {list(extra_codes)[:10]}{'...' if len(extra_codes) > 10 else ''}")
+
+                if not missing_codes and not extra_codes:
+                    print(f"  - ✓ 요청/응답 종목 리스트 완전 일치")
+
+                # === 5. 결과 수 검증 (입력 대비 80% 미만이면 경고) ===
                 actual_count = len(valid_results)
                 coverage_rate = (actual_count / expected_count * 100) if expected_count > 0 else 0
 
@@ -551,6 +574,29 @@ def analyze_kis_data(
 
                 if len(raw_results) != len(analysis_results):
                     print(f"[INFO] 중복 제거: {len(raw_results)}개 → {len(analysis_results)}개")
+
+                # === 요청/응답 종목 리스트 일치 검증 ===
+                requested_codes = set(target_stocks.keys())
+                responded_codes = set(item.get("code") for item in analysis_results if item.get("code"))
+
+                missing_codes = requested_codes - responded_codes  # 요청했지만 응답 없음
+                extra_codes = responded_codes - requested_codes    # 요청 안했지만 응답 있음
+                matched_codes = requested_codes & responded_codes  # 일치
+
+                match_rate = (len(matched_codes) / len(requested_codes) * 100) if requested_codes else 0
+
+                print(f"\n[VALIDATION] 종목 리스트 검증:")
+                print(f"  - 요청: {len(requested_codes)}개, 응답: {len(responded_codes)}개, 일치: {len(matched_codes)}개 ({match_rate:.1f}%)")
+
+                if missing_codes:
+                    missing_names = [target_stocks[code].get("name", code) for code in list(missing_codes)[:10]]
+                    print(f"  - 누락된 종목 ({len(missing_codes)}개): {missing_names}{'...' if len(missing_codes) > 10 else ''}")
+
+                if extra_codes:
+                    print(f"  - 추가된 종목 ({len(extra_codes)}개): {list(extra_codes)[:10]}{'...' if len(extra_codes) > 10 else ''}")
+
+                if not missing_codes and not extra_codes:
+                    print(f"  - ✓ 요청/응답 종목 리스트 완전 일치")
 
                 # 결과 수 검증 (입력 대비 80% 미만이면 경고)
                 expected_count = len(target_stocks)
