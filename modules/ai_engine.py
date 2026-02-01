@@ -202,6 +202,15 @@ def analyze_stocks_batch(scrape_results: list[dict], capture_dir: Path, max_retr
                 analysis_results = result["results"]
                 analysis_time = datetime.now(KST).strftime("%Y-%m-%d %H:%M:%S")
 
+                # 결과 수 검증 (입력 대비 80% 미만이면 경고)
+                expected_count = len(valid_stocks)
+                actual_count = len(analysis_results)
+                coverage_rate = (actual_count / expected_count * 100) if expected_count > 0 else 0
+
+                if coverage_rate < 80:
+                    print(f"[WARNING] 결과 부족: {actual_count}/{expected_count}개 ({coverage_rate:.1f}%)")
+                    print(f"[WARNING] max_output_tokens 한계 또는 모델 처리 한계일 수 있음")
+
                 # 캡처 시각 및 분석 시각 추가
                 for item in analysis_results:
                     # 시그널 검증
@@ -220,7 +229,7 @@ def analyze_stocks_batch(scrape_results: list[dict], capture_dir: Path, max_retr
 
                     item["analysis_time"] = analysis_time
 
-                print(f"\n[SUCCESS] 분석 완료: {len(analysis_results)}개 종목")
+                print(f"\n[SUCCESS] 분석 완료: {len(analysis_results)}/{expected_count}개 종목 ({coverage_rate:.1f}%)")
                 rotate_to_next_key()
                 return analysis_results
 
@@ -473,6 +482,15 @@ def analyze_kis_data(
                 if len(raw_results) != len(analysis_results):
                     print(f"[INFO] 중복 제거: {len(raw_results)}개 → {len(analysis_results)}개")
 
+                # 결과 수 검증 (입력 대비 80% 미만이면 경고)
+                expected_count = len(target_stocks)
+                actual_count = len(analysis_results)
+                coverage_rate = (actual_count / expected_count * 100) if expected_count > 0 else 0
+
+                if coverage_rate < 80:
+                    print(f"[WARNING] 결과 부족: {actual_count}/{expected_count}개 ({coverage_rate:.1f}%)")
+                    print(f"[WARNING] max_output_tokens 한계 또는 모델 처리 한계일 수 있음")
+
                 # 시그널 검증 및 메타데이터 추가
                 signal_stats = {}
                 for item in analysis_results:
@@ -484,7 +502,7 @@ def analyze_kis_data(
                     sig = item.get("signal", "중립")
                     signal_stats[sig] = signal_stats.get(sig, 0) + 1
 
-                print(f"\n[SUCCESS] 분석 완료: {len(analysis_results)}개 종목")
+                print(f"\n[SUCCESS] 분석 완료: {len(analysis_results)}/{expected_count}개 종목 ({coverage_rate:.1f}%)")
                 print(f"[INFO] 시그널 분포: {signal_stats}")
                 rotate_to_next_key()
                 return analysis_results
