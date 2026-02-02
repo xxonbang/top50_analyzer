@@ -193,10 +193,10 @@ async def main():
     save_json(output_data, json_path)
     print(f"JSON 저장: {json_path}")
 
-    # 2. results/vision_latest.json 저장 (현재 결과)
-    latest_path = results_dir / "vision_latest.json"
-    save_json(output_data, latest_path)
-    print(f"Vision Latest 저장: {latest_path}")
+    # 2. results/vision_analysis.json 저장 (분석 결과)
+    analysis_path = results_dir / "vision_analysis.json"
+    save_json(output_data, analysis_path)
+    print(f"Vision 분석 결과 저장: {analysis_path}")
 
     # 3. results/history/ 에 날짜별 저장 (30일 보관)
     history_dir = results_dir / "history"

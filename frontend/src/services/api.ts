@@ -3,7 +3,7 @@ import type { AnalysisData, HistoryIndex, KISGeminiData, KISAnalysisData } from 
 const BASE_URL = import.meta.env.DEV ? '' : '.';
 
 export async function fetchLatestData(): Promise<AnalysisData> {
-  const response = await fetch(`${BASE_URL}/results/vision_latest.json`);
+  const response = await fetch(`${BASE_URL}/results/vision_analysis.json`);
   if (!response.ok) {
     throw new Error('Failed to fetch latest data');
   }

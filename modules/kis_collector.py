@@ -375,9 +375,8 @@ class KISDataCollector:
             exclude_etf=exclude_etf,
         )
 
-        # 최신 파일로 저장 (두 가지 형식)
-        self.save_to_json(data, "top50_latest.json")
-        self.save_to_json(data, "kis_latest.json")  # 명확한 KIS 파일명
+        # 최신 파일로 저장
+        self.save_to_json(data, "kis_latest.json")
 
         # 타임스탬프 파일 저장 (선택)
         if save_timestamped:

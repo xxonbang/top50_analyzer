@@ -24,7 +24,7 @@ class KISDataTransformer:
         self.output_dir = KIS_OUTPUT_DIR
         self.output_dir.mkdir(parents=True, exist_ok=True)
 
-    def load_raw_data(self, filename: str = "top50_latest.json") -> Dict[str, Any]:
+    def load_raw_data(self, filename: str = "kis_latest.json") -> Dict[str, Any]:
         """원본 데이터 로드"""
         filepath = self.output_dir / filename
         with open(filepath, 'r', encoding='utf-8') as f:
@@ -348,7 +348,7 @@ class KISDataTransformer:
 
     def run(
         self,
-        input_file: str = "top50_latest.json",
+        input_file: str = "kis_latest.json",
         output_file: str = "kis_gemini.json",
     ) -> Dict[str, Any]:
         """데이터 변환 실행

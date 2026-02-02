@@ -475,7 +475,7 @@ def analyze_kis_data(
     """KIS API 데이터 기반 종목 분석
 
     Args:
-        stocks_data: 변환된 KIS 데이터 (top50_gemini.json 형식)
+        stocks_data: 변환된 KIS 데이터 (kis_gemini.json 형식)
         stock_codes: 분석할 종목 코드 리스트 (없으면 전체)
         max_retries: 최대 재시도 횟수
 

@@ -231,7 +231,7 @@ jobs:
           echo "::notice::KIS API는 등록된 IP에서만 접근 가능합니다. GitHub Actions에서 403 오류 발생 시 IP 제한 때문입니다."
 
           if python kis_main.py; then
-            if [ -f "results/kis/top50_latest.json" ] || [ -f "results/kis/latest.json" ]; then
+            if [ -f "results/kis/kis_latest.json" ]; then
               echo "kis_collected=true" >> $GITHUB_OUTPUT
               echo "KIS 데이터 수집 성공"
               ls -la results/kis/
@@ -265,10 +265,8 @@ jobs:
           # KST 시간대
           KST = timezone(timedelta(hours=9))
 
-          # KIS 원본 데이터 로드 (top50_latest.json 또는 kis_latest.json)
-          kis_raw_path = Path('results/kis/top50_latest.json')
-          if not kis_raw_path.exists():
-              kis_raw_path = Path('results/kis/kis_latest.json')
+          # KIS 원본 데이터 로드
+          kis_raw_path = Path('results/kis/kis_latest.json')
           if not kis_raw_path.exists():
               print('KIS 데이터 파일이 없습니다.')
               exit(1)
@@ -381,7 +379,7 @@ jobs:
           # Vision 결과 복사 (glob 패턴은 ls로 처리)
           LATEST_FILE=$(ls -t output/analysis_*.json 2>/dev/null | head -n1)
           if [ -n "$LATEST_FILE" ] && [ -f "$LATEST_FILE" ]; then
-            cp "$LATEST_FILE" results/vision_latest.json
+            cp "$LATEST_FILE" results/vision_analysis.json
             # 히스토리 파일명: analysis_YYYY-MM-DD.json → vision_YYYY-MM-DD.json
             DATE_PART=$(basename "$LATEST_FILE" | sed 's/analysis_//' | sed 's/.json//')
             cp "$LATEST_FILE" "results/history/vision_${DATE_PART}.json"
@@ -469,7 +467,7 @@ jobs:
               VISION_STATUS="N/A"
               KIS_STATUS="N/A"
 
-              if [ -f results/vision_latest.json ]; then
+              if [ -f results/vision_analysis.json ]; then
                 VISION_STATUS="OK"
               fi
               if [ -f results/kis/kis_analysis.json ]; then
