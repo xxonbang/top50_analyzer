@@ -1,12 +1,12 @@
 import { useState, useMemo, memo } from 'react';
 import { useQuery } from '@tanstack/react-query';
-import { fetchLatestData, fetchKISData, fetchKISAnalysis } from '@/services/api';
+import { fetchLatestData, fetchKISData, fetchKISAnalysis, fetchHistoryIndex, fetchKISHistoryIndex } from '@/services/api';
 import type { StockResult, KISStockData, KISAnalysisResult, MarketType, SignalType, NewsItem } from '@/services/types';
-import { LoadingSpinner, EmptyState } from '@/components/common';
+import { LoadingSpinner, EmptyState, HistoryButton } from '@/components/common';
 import { SignalBadge } from '@/components/signal';
 import { MarketTabs } from '@/components/stock';
 import { NewsSection } from '@/components/news';
-// useUIStore 구독 제거 - activeTab 변경 시 불필요한 리렌더링 방지
+import { useUIStore } from '@/store/uiStore';
 import { cn } from '@/lib/utils';
 
 // 일치 상태 타입
@@ -261,6 +261,23 @@ export function CombinedAnalysis() {
   // 멀티셀렉트: 빈 Set = 전체 선택
   const [matchFilters, setMatchFilters] = useState<Set<MatchStatus>>(new Set());
   const [signalFilters, setSignalFilters] = useState<Set<SignalType>>(new Set());
+  const { openHistoryPanel } = useUIStore();
+
+  // 히스토리 인덱스 로드 (Vision + KIS 통합)
+  const { data: visionHistoryIndex } = useQuery({
+    queryKey: ['history', 'index'],
+    queryFn: fetchHistoryIndex,
+  });
+  const { data: kisHistoryIndex } = useQuery({
+    queryKey: ['kis-history', 'index'],
+    queryFn: fetchKISHistoryIndex,
+  });
+
+  // 통합 히스토리 카운트 (더 많은 쪽)
+  const historyCount = Math.max(
+    visionHistoryIndex?.total_records || 0,
+    kisHistoryIndex?.total_records || 0
+  );
 
   // 필터 토글 함수
   const toggleMatchFilter = (status: MatchStatus) => {
@@ -476,6 +493,10 @@ export function CombinedAnalysis() {
           <h2 className="text-xl font-bold text-text-primary mb-1">분석 종합</h2>
           <p className="text-sm text-text-muted">Vision AI와 한투 API 분석 결과 비교 검증</p>
         </div>
+        <HistoryButton
+          onClick={() => openHistoryPanel('vision')}
+          count={historyCount}
+        />
       </div>
 
       {/* KIS 데이터 없음 안내 */}

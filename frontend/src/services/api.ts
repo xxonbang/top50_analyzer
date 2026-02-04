@@ -57,3 +57,34 @@ export async function fetchKISAnalysis(): Promise<KISAnalysisData | null> {
     return null;
   }
 }
+
+// KIS 히스토리 API 함수들
+export async function fetchKISHistoryIndex(): Promise<HistoryIndex | null> {
+  try {
+    const response = await fetch(`${BASE_URL}/results/kis/history_index.json`);
+    if (!response.ok) {
+      if (response.status === 404) {
+        return null;
+      }
+      throw new Error('Failed to fetch KIS history index');
+    }
+    return response.json();
+  } catch {
+    return null;
+  }
+}
+
+export async function fetchKISHistoryData(filename: string): Promise<KISAnalysisData | null> {
+  try {
+    const response = await fetch(`${BASE_URL}/results/kis/history/${filename}`);
+    if (!response.ok) {
+      if (response.status === 404) {
+        return null;
+      }
+      throw new Error('Failed to fetch KIS history data');
+    }
+    return response.json();
+  } catch {
+    return null;
+  }
+}

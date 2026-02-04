@@ -31,6 +31,7 @@ export interface AnalysisData {
 
 export interface HistoryItem {
   date: string;
+  time?: string;  // KIS 히스토리용 (HHMM 형식)
   filename: string;
   total_stocks: number;
   signals: Record<SignalType, number>;

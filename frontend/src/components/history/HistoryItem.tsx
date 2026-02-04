@@ -13,6 +13,14 @@ export function HistoryItem({ item, isToday, isActive, onClick }: HistoryItemPro
   const sellCount = (item.signals['적극매도'] || 0) + (item.signals['매도'] || 0);
   const neutralCount = item.signals['중립'] || 0;
 
+  // 시간 포맷 (HHMM → HH:MM)
+  const formatTime = (time: string | undefined) => {
+    if (!time || time.length !== 4) return null;
+    return `${time.slice(0, 2)}:${time.slice(2)}`;
+  };
+
+  const formattedTime = formatTime(item.time);
+
   return (
     <div
       onClick={onClick}
@@ -24,7 +32,10 @@ export function HistoryItem({ item, isToday, isActive, onClick }: HistoryItemPro
       )}
     >
       <div className="font-bold text-sm text-text-primary mb-1.5 flex items-center gap-2">
-        {item.date}
+        <span>{item.date}</span>
+        {formattedTime && (
+          <span className="text-[0.7rem] font-normal text-text-muted">{formattedTime}</span>
+        )}
         {isToday && (
           <span className="bg-accent-primary text-white px-2 py-0.5 rounded-full text-[0.65rem] font-semibold">
             TODAY

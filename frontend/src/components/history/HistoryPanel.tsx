@@ -1,6 +1,8 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
+import { useQuery } from '@tanstack/react-query';
 import { useHistoryIndex } from '@/hooks/useHistoryIndex';
-import { useUIStore } from '@/store/uiStore';
+import { useUIStore, HistoryType } from '@/store/uiStore';
+import { fetchKISHistoryIndex } from '@/services/api';
 import { LoadingSpinner } from '@/components/common';
 import { HistoryItem } from './HistoryItem';
 import { cn } from '@/lib/utils';
@@ -8,13 +10,35 @@ import { cn } from '@/lib/utils';
 export function HistoryPanel() {
   const {
     isHistoryPanelOpen,
+    historyType,
     closeHistoryPanel,
     viewingHistoryFile,
     setViewingHistory,
     isViewingHistory,
   } = useUIStore();
 
-  const { data: historyIndex, isLoading, error } = useHistoryIndex();
+  // 내부 탭 상태 (패널 열릴 때 historyType으로 초기화)
+  const [activeTab, setActiveTab] = useState<HistoryType>(historyType);
+
+  // Vision 히스토리
+  const { data: visionHistoryIndex, isLoading: visionLoading, error: visionError } = useHistoryIndex();
+
+  // KIS 히스토리
+  const { data: kisHistoryIndex, isLoading: kisLoading, error: kisError } = useQuery({
+    queryKey: ['kis-history', 'index'],
+    queryFn: fetchKISHistoryIndex,
+  });
+
+  // 패널이 열릴 때 탭 초기화
+  useEffect(() => {
+    if (isHistoryPanelOpen) {
+      setActiveTab(historyType);
+    }
+  }, [isHistoryPanelOpen, historyType]);
+
+  const historyIndex = activeTab === 'vision' ? visionHistoryIndex : kisHistoryIndex;
+  const isLoading = activeTab === 'vision' ? visionLoading : kisLoading;
+  const error = activeTab === 'vision' ? visionError : kisError;
 
   const today = new Date().toISOString().split('T')[0];
 
@@ -66,9 +90,45 @@ export function HistoryPanel() {
           </button>
         </div>
 
+        {/* Tab Switch */}
+        <div className="px-4 md:px-5 py-2 md:py-2.5 border-b border-border bg-bg-primary">
+          <div className="flex gap-1 p-1 bg-slate-100 rounded-lg">
+            <button
+              onClick={() => setActiveTab('vision')}
+              className={cn(
+                'flex-1 py-1.5 md:py-2 px-3 rounded-md text-[0.7rem] md:text-xs font-medium transition-all',
+                activeTab === 'vision'
+                  ? 'bg-white text-purple-700 shadow-sm'
+                  : 'text-slate-500 hover:text-slate-700'
+              )}
+            >
+              <span className="mr-1">👁</span>
+              Vision AI
+              {visionHistoryIndex && (
+                <span className="ml-1 text-slate-400">({visionHistoryIndex.total_records})</span>
+              )}
+            </button>
+            <button
+              onClick={() => setActiveTab('kis')}
+              className={cn(
+                'flex-1 py-1.5 md:py-2 px-3 rounded-md text-[0.7rem] md:text-xs font-medium transition-all',
+                activeTab === 'kis'
+                  ? 'bg-white text-cyan-700 shadow-sm'
+                  : 'text-slate-500 hover:text-slate-700'
+              )}
+            >
+              <span className="mr-1">📡</span>
+              한투 API
+              {kisHistoryIndex && (
+                <span className="ml-1 text-slate-400">({kisHistoryIndex.total_records})</span>
+              )}
+            </button>
+          </div>
+        </div>
+
         {/* Info */}
         {historyIndex && (
-          <div className="px-4 md:px-5 py-2.5 md:py-3 bg-bg-primary text-[0.65rem] md:text-xs text-text-muted border-b border-border">
+          <div className="px-4 md:px-5 py-2.5 md:py-3 bg-bg-primary/50 text-[0.65rem] md:text-xs text-text-muted border-b border-border">
             최근 {historyIndex.retention_days}일간 총 {historyIndex.total_records}개 기록
           </div>
         )}
@@ -84,10 +144,15 @@ export function HistoryPanel() {
             </div>
           )}
 
-          {historyIndex && historyIndex.history.length === 0 && (
+          {!isLoading && !error && (!historyIndex || historyIndex.history.length === 0) && (
             <div className="text-center py-10 text-text-muted">
               <div className="text-4xl mb-3">📭</div>
               <p>아직 저장된 분석 기록이 없습니다.</p>
+              {activeTab === 'kis' && (
+                <p className="text-[0.65rem] mt-2">
+                  KIS API 히스토리는 다음 분석 실행부터 저장됩니다.
+                </p>
+              )}
             </div>
           )}
 

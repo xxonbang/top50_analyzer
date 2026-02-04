@@ -1,7 +1,8 @@
 import { useVisionData } from '@/hooks/useVisionData';
 import { useHistoryData } from '@/hooks/useHistoryData';
+import { useHistoryIndex } from '@/hooks/useHistoryIndex';
 import { useUIStore } from '@/store/uiStore';
-import { LoadingSpinner, EmptyState, Button } from '@/components/common';
+import { LoadingSpinner, EmptyState, HistoryButton } from '@/components/common';
 import { SignalSummary } from '@/components/signal';
 import { MarketTabs, StockList } from '@/components/stock';
 import { getSignalCounts, getFilteredStocks, categorizeStocks, getLatestAnalysisTime, formatTimeOnly } from '@/lib/utils';
@@ -155,6 +156,7 @@ export function VisionAnalysis() {
 
   const { data: latestData, isLoading: latestLoading, error: latestError } = useVisionData();
   const { data: historyData, isLoading: historyLoading } = useHistoryData(viewingHistoryFile);
+  const { data: historyIndex } = useHistoryIndex();
 
   const isLoading = isViewingHistory ? historyLoading : latestLoading;
   const data = isViewingHistory ? historyData : latestData;
@@ -167,10 +169,10 @@ export function VisionAnalysis() {
           <h2 className="text-lg md:text-xl font-bold text-text-primary mb-0.5 md:mb-1">최신 분석 결과</h2>
           <p className="text-xs md:text-sm text-text-muted">거래량 상위 종목 AI 시그널 분석</p>
         </div>
-        <Button variant="secondary" onClick={openHistoryPanel}>
-          <span className="text-base md:text-lg">📅</span>
-          <span className="hidden md:inline">이전 분석 보기</span>
-        </Button>
+        <HistoryButton
+          onClick={openHistoryPanel}
+          count={historyIndex?.total_records}
+        />
       </div>
 
       <ViewingHistoryBanner />

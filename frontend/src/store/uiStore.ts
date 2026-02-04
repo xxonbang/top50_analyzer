@@ -1,6 +1,9 @@
 import { create } from 'zustand';
 import type { SignalType, MarketType, AnalysisTab } from '@/services/types';
 
+// 히스토리 타입: vision 또는 kis
+export type HistoryType = 'vision' | 'kis';
+
 interface UIStore {
   // 현재 활성 탭
   activeTab: AnalysisTab;
@@ -11,6 +14,7 @@ interface UIStore {
 
   // 히스토리
   isHistoryPanelOpen: boolean;
+  historyType: HistoryType;  // 어떤 분석의 히스토리인지
   isViewingHistory: boolean;
   viewingHistoryFile: string | null;
 
@@ -21,7 +25,7 @@ interface UIStore {
   toggleSignalFilter: (signal: SignalType) => void;
   clearSignalFilter: () => void;
   toggleHistoryPanel: () => void;
-  openHistoryPanel: () => void;
+  openHistoryPanel: (type?: HistoryType) => void;
   closeHistoryPanel: () => void;
   setViewingHistory: (filename: string | null) => void;
   resetToLatest: () => void;
@@ -32,6 +36,7 @@ export const useUIStore = create<UIStore>((set) => ({
   activeMarket: 'all',
   activeSignal: null,
   isHistoryPanelOpen: false,
+  historyType: 'vision',
   isViewingHistory: false,
   viewingHistoryFile: null,
 
@@ -54,7 +59,10 @@ export const useUIStore = create<UIStore>((set) => ({
     isHistoryPanelOpen: !state.isHistoryPanelOpen
   })),
 
-  openHistoryPanel: () => set({ isHistoryPanelOpen: true }),
+  openHistoryPanel: (type = 'vision') => set({
+    isHistoryPanelOpen: true,
+    historyType: type,
+  }),
 
   closeHistoryPanel: () => set({ isHistoryPanelOpen: false }),
 

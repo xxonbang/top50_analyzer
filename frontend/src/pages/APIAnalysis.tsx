@@ -1,12 +1,12 @@
 import { useState, useMemo, useEffect } from 'react';
 import { useQuery } from '@tanstack/react-query';
-import { fetchKISData, fetchKISAnalysis } from '@/services/api';
+import { fetchKISData, fetchKISAnalysis, fetchKISHistoryIndex } from '@/services/api';
 import type { KISStockData, KISAnalysisResult, MarketType, SignalType, SignalCounts } from '@/services/types';
-import { LoadingSpinner, EmptyState, Button } from '@/components/common';
+import { LoadingSpinner, EmptyState, Button, HistoryButton } from '@/components/common';
 import { SignalSummary, SignalBadge } from '@/components/signal';
 import { MarketTabs } from '@/components/stock';
 import { NewsSection } from '@/components/news';
-// useUIStore 구독 제거 - activeTab 변경 시 불필요한 리렌더링 방지
+import { useUIStore } from '@/store/uiStore';
 
 // 숫자 포맷
 function formatNumber(num: number | null | undefined): string {
@@ -289,6 +289,7 @@ export function APIAnalysis() {
   const [marketFilter, setMarketFilter] = useState<MarketType>('all');
   const [signalFilter, setSignalFilter] = useState<SignalType | null>(null);
   const [expandedCards, setExpandedCards] = useState<Set<string>>(new Set());
+  const { openHistoryPanel } = useUIStore();
 
   // 필터 변경 시 확장된 카드 초기화
   useEffect(() => {
@@ -305,6 +306,12 @@ export function APIAnalysis() {
   const { data: analysisData } = useQuery({
     queryKey: ['kis-analysis'],
     queryFn: fetchKISAnalysis,
+  });
+
+  // KIS 히스토리 인덱스 로드
+  const { data: kisHistoryIndex } = useQuery({
+    queryKey: ['kis-history', 'index'],
+    queryFn: fetchKISHistoryIndex,
   });
 
   // 분석 결과를 코드별 맵으로 변환
@@ -413,6 +420,10 @@ export function APIAnalysis() {
           <h2 className="text-xl font-bold text-text-primary mb-1">한국투자증권 API 분석</h2>
           <p className="text-sm text-text-muted">실시간 API 기반 주식 데이터 분석</p>
         </div>
+        <HistoryButton
+          onClick={() => openHistoryPanel('kis')}
+          count={kisHistoryIndex?.total_records}
+        />
       </div>
 
       {/* 메타 정보 */}

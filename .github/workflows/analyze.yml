@@ -405,6 +405,7 @@ jobs:
       - name: Setup results directory
         run: |
           mkdir -p results/vision/history
+          mkdir -p results/kis/history
 
           # Vision 결과 복사 (glob 패턴은 ls로 처리)
           LATEST_FILE=$(ls -t output/analysis_*.json 2>/dev/null | head -n1)
@@ -418,9 +419,14 @@ jobs:
             echo "::warning::Vision 분석 결과 파일을 찾을 수 없습니다"
           fi
 
-          # KIS 결과 확인
+          # KIS 결과 히스토리 저장
           if [ -f results/kis/kis_analysis.json ]; then
             echo "KIS 분석 결과 확인됨"
+            # 현재 시간(KST)으로 히스토리 파일 생성
+            KIS_DATE=$(TZ='Asia/Seoul' date +'%Y-%m-%d')
+            KIS_TIME=$(TZ='Asia/Seoul' date +'%H%M')
+            cp results/kis/kis_analysis.json "results/kis/history/kis_${KIS_DATE}_${KIS_TIME}.json"
+            echo "KIS 히스토리 저장: kis_${KIS_DATE}_${KIS_TIME}.json"
           else
             echo "::warning::KIS 분석 결과 파일(kis_analysis.json)을 찾을 수 없습니다"
           fi
@@ -442,13 +448,14 @@ jobs:
           KST = timezone(timedelta(hours=9))
 
           results_dir = Path('results')
-          vision_dir = results_dir / 'vision'
-          history_dir = vision_dir / 'history'
 
-          # 히스토리 파일 목록 수집
-          history_files = []
-          if history_dir.exists():
-              for item in sorted(history_dir.iterdir(), reverse=True):
+          # === Vision 히스토리 인덱스 ===
+          vision_dir = results_dir / 'vision'
+          vision_history_dir = vision_dir / 'history'
+
+          vision_history_files = []
+          if vision_history_dir.exists():
+              for item in sorted(vision_history_dir.iterdir(), reverse=True):
                   if item.is_file() and item.suffix == '.json':
                       try:
                           date_str = item.stem.replace('vision_', '')
@@ -458,7 +465,7 @@ jobs:
                           for r in data.get('results', []):
                               signal = r.get('signal', '중립')
                               signal_counts[signal] = signal_counts.get(signal, 0) + 1
-                          history_files.append({
+                          vision_history_files.append({
                               'date': date_str,
                               'filename': item.name,
                               'total_stocks': data.get('total_stocks', 0),
@@ -467,18 +474,63 @@ jobs:
                       except Exception:
                           continue
 
-          index_data = {
+          vision_index_data = {
               'updated_at': datetime.now(KST).strftime('%Y-%m-%d %H:%M:%S'),
               'retention_days': 30,
-              'total_records': len(history_files),
-              'history': history_files
+              'total_records': len(vision_history_files),
+              'history': vision_history_files
           }
 
-          index_path = vision_dir / 'history_index.json'
-          with open(index_path, 'w', encoding='utf-8') as f:
-              json.dump(index_data, f, ensure_ascii=False, indent=2)
+          vision_index_path = vision_dir / 'history_index.json'
+          with open(vision_index_path, 'w', encoding='utf-8') as f:
+              json.dump(vision_index_data, f, ensure_ascii=False, indent=2)
 
-          print(f'히스토리 인덱스 갱신: {len(history_files)}개 기록')
+          print(f'Vision 히스토리 인덱스 갱신: {len(vision_history_files)}개 기록')
+
+          # === KIS 히스토리 인덱스 ===
+          kis_dir = results_dir / 'kis'
+          kis_history_dir = kis_dir / 'history'
+
+          kis_history_files = []
+          if kis_history_dir.exists():
+              for item in sorted(kis_history_dir.iterdir(), reverse=True):
+                  if item.is_file() and item.suffix == '.json':
+                      try:
+                          # 파일명: kis_YYYY-MM-DD_HHMM.json
+                          name_parts = item.stem.replace('kis_', '').split('_')
+                          date_str = name_parts[0] if name_parts else ''
+                          time_str = name_parts[1] if len(name_parts) > 1 else ''
+
+                          with open(item, 'r', encoding='utf-8') as f:
+                              data = json.load(f)
+
+                          signal_counts = {}
+                          for r in data.get('results', []):
+                              signal = r.get('signal', '중립')
+                              signal_counts[signal] = signal_counts.get(signal, 0) + 1
+
+                          kis_history_files.append({
+                              'date': date_str,
+                              'time': time_str,
+                              'filename': item.name,
+                              'total_stocks': data.get('total_analyzed', len(data.get('results', []))),
+                              'signals': signal_counts
+                          })
+                      except Exception:
+                          continue
+
+          kis_index_data = {
+              'updated_at': datetime.now(KST).strftime('%Y-%m-%d %H:%M:%S'),
+              'retention_days': 30,
+              'total_records': len(kis_history_files),
+              'history': kis_history_files
+          }
+
+          kis_index_path = kis_dir / 'history_index.json'
+          with open(kis_index_path, 'w', encoding='utf-8') as f:
+              json.dump(kis_index_data, f, ensure_ascii=False, indent=2)
+
+          print(f'KIS 히스토리 인덱스 갱신: {len(kis_history_files)}개 기록')
           "
 
       - name: Commit results
