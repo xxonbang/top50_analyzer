@@ -1,0 +1,22 @@
+{
+  "updated_at": "2026-02-05 00:05:48",
+  "retention_days": 30,
+  "total_records": 1,
+  "history": [
+    {
+      "date": "2026-02-05",
+      "time": "0005",
+      "filename": "combined_2026-02-05_0005.json",
+      "total_stocks": 100,
+      "match_count": 0,
+      "avg_confidence": 0.5,
+      "signals": {
+        "적극매수": 31,
+        "매수": 39,
+        "중립": 21,
+        "매도": 9,
+        "적극매도": 0
+      }
+    }
+  ]
+}
