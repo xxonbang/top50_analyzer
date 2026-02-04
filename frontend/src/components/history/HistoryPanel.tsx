@@ -1,57 +1,107 @@
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { useQuery } from '@tanstack/react-query';
-import { useHistoryIndex } from '@/hooks/useHistoryIndex';
-import { useUIStore, HistoryType } from '@/store/uiStore';
-import { fetchKISHistoryIndex, fetchCombinedHistoryIndex } from '@/services/api';
+import { fetchCombinedHistoryIndex } from '@/services/api';
+import { useUIStore } from '@/store/uiStore';
 import { LoadingSpinner } from '@/components/common';
-import { HistoryItem } from './HistoryItem';
 import { cn } from '@/lib/utils';
+
+// 시그널별 색상
+const signalColors: Record<string, string> = {
+  '적극매수': 'bg-signal-strong-buy',
+  '매수': 'bg-signal-buy',
+  '중립': 'bg-signal-neutral',
+  '매도': 'bg-signal-sell',
+  '적극매도': 'bg-signal-strong-sell',
+};
+
+interface HistoryItemData {
+  date: string;
+  time?: string;
+  filename: string;
+  total_stocks: number;
+  signals: Record<string, number>;
+}
+
+function HistoryItem({
+  item,
+  isToday,
+  isActive,
+  onClick,
+}: {
+  item: HistoryItemData;
+  isToday: boolean;
+  isActive: boolean;
+  onClick: () => void;
+}) {
+  const displayTime = item.time ? `${item.time.slice(0, 2)}:${item.time.slice(2)}` : '';
+
+  return (
+    <div
+      onClick={onClick}
+      className={cn(
+        'p-3 md:p-4 rounded-xl mb-2 cursor-pointer transition-all border',
+        isActive
+          ? 'bg-gradient-to-r from-indigo-50 to-purple-50 border-indigo-300 shadow-md'
+          : 'bg-bg-primary border-border hover:border-indigo-200 hover:shadow-sm'
+      )}
+    >
+      <div className="flex justify-between items-center mb-2">
+        <div className="flex items-center gap-2">
+          <span className="font-semibold text-sm md:text-base text-text-primary">
+            {item.date}
+          </span>
+          {displayTime && (
+            <span className="text-xs md:text-sm text-text-muted">
+              {displayTime}
+            </span>
+          )}
+          {isToday && (
+            <span className="px-1.5 py-0.5 bg-indigo-100 text-indigo-700 text-[0.6rem] md:text-xs rounded font-medium">
+              오늘
+            </span>
+          )}
+        </div>
+        <span className="text-xs md:text-sm text-text-muted">
+          {item.total_stocks}종목
+        </span>
+      </div>
+
+      {/* 시그널 바 */}
+      <div className="flex gap-0.5 h-1.5 md:h-2 rounded-full overflow-hidden bg-gray-100">
+        {(() => {
+          const signalSum = Object.values(item.signals || {}).reduce((a, b) => a + b, 0);
+          return Object.entries(item.signals || {}).map(([signal, count]) => {
+            if (count === 0) return null;
+            const width = signalSum > 0 ? (count / signalSum) * 100 : 0;
+            return (
+              <div
+                key={signal}
+                className={cn('h-full', signalColors[signal] || 'bg-gray-300')}
+                style={{ width: `${width}%` }}
+                title={`${signal}: ${count}`}
+              />
+            );
+          });
+        })()}
+      </div>
+    </div>
+  );
+}
 
 export function HistoryPanel() {
   const {
     isHistoryPanelOpen,
-    historyType,
     closeHistoryPanel,
-    viewingHistoryFile,
+    viewingHistoryDateTime,
     setViewingHistory,
     isViewingHistory,
   } = useUIStore();
 
-  // 내부 탭 상태 (패널 열릴 때 historyType으로 초기화)
-  const [activeTab, setActiveTab] = useState<HistoryType>(historyType);
-
-  // Vision 히스토리
-  const { data: visionHistoryIndex, isLoading: visionLoading, error: visionError } = useHistoryIndex();
-
-  // KIS 히스토리
-  const { data: kisHistoryIndex, isLoading: kisLoading, error: kisError } = useQuery({
-    queryKey: ['kis-history', 'index'],
-    queryFn: fetchKISHistoryIndex,
-  });
-
-  // Combined 히스토리
-  const { data: combinedHistoryIndex, isLoading: combinedLoading, error: combinedError } = useQuery({
+  // Combined 히스토리 인덱스 (통합 히스토리로 사용)
+  const { data: historyIndex, isLoading, error } = useQuery({
     queryKey: ['combined-history', 'index'],
     queryFn: fetchCombinedHistoryIndex,
   });
-
-  // 패널이 열릴 때 탭 초기화
-  useEffect(() => {
-    if (isHistoryPanelOpen) {
-      setActiveTab(historyType);
-    }
-  }, [isHistoryPanelOpen, historyType]);
-
-  // 현재 탭에 따른 데이터 선택
-  const historyIndex = activeTab === 'vision' ? visionHistoryIndex
-    : activeTab === 'kis' ? kisHistoryIndex
-    : combinedHistoryIndex;
-  const isLoading = activeTab === 'vision' ? visionLoading
-    : activeTab === 'kis' ? kisLoading
-    : combinedLoading;
-  const error = activeTab === 'vision' ? visionError
-    : activeTab === 'kis' ? kisError
-    : combinedError;
 
   const today = new Date().toISOString().split('T')[0];
 
@@ -66,9 +116,16 @@ export function HistoryPanel() {
     };
   }, [isHistoryPanelOpen]);
 
-  const handleItemClick = (filename: string) => {
-    setViewingHistory(filename);
+  const handleItemClick = (item: HistoryItemData) => {
+    // dateTime 형식으로 저장: "2026-02-04_0700"
+    const dateTime = item.time ? `${item.date}_${item.time}` : item.date;
+    setViewingHistory(dateTime);
     closeHistoryPanel();
+  };
+
+  // 현재 보고 있는 히스토리의 dateTime 계산
+  const getItemDateTime = (item: HistoryItemData) => {
+    return item.time ? `${item.date}_${item.time}` : item.date;
   };
 
   return (
@@ -103,61 +160,19 @@ export function HistoryPanel() {
           </button>
         </div>
 
-        {/* Tab Switch */}
-        <div className="px-4 md:px-5 py-2 md:py-2.5 border-b border-border bg-bg-primary">
-          <div className="flex gap-1 p-1 bg-slate-100 rounded-lg">
-            <button
-              onClick={() => setActiveTab('vision')}
-              className={cn(
-                'flex-1 py-1.5 md:py-2 px-2 md:px-3 rounded-md text-[0.6rem] md:text-xs font-medium transition-all',
-                activeTab === 'vision'
-                  ? 'bg-white text-purple-700 shadow-sm'
-                  : 'text-slate-500 hover:text-slate-700'
-              )}
-            >
-              <span className="mr-0.5 md:mr-1">👁</span>
-              <span className="hidden md:inline">Vision AI</span>
-              <span className="md:hidden">Vision</span>
-              {visionHistoryIndex && (
-                <span className="ml-0.5 md:ml-1 text-slate-400">({visionHistoryIndex.total_records})</span>
-              )}
-            </button>
-            <button
-              onClick={() => setActiveTab('kis')}
-              className={cn(
-                'flex-1 py-1.5 md:py-2 px-2 md:px-3 rounded-md text-[0.6rem] md:text-xs font-medium transition-all',
-                activeTab === 'kis'
-                  ? 'bg-white text-cyan-700 shadow-sm'
-                  : 'text-slate-500 hover:text-slate-700'
-              )}
-            >
-              <span className="mr-0.5 md:mr-1">📡</span>
-              <span className="hidden md:inline">한투 API</span>
-              <span className="md:hidden">API</span>
-              {kisHistoryIndex && (
-                <span className="ml-0.5 md:ml-1 text-slate-400">({kisHistoryIndex.total_records})</span>
-              )}
-            </button>
-            <button
-              onClick={() => setActiveTab('combined')}
-              className={cn(
-                'flex-1 py-1.5 md:py-2 px-2 md:px-3 rounded-md text-[0.6rem] md:text-xs font-medium transition-all',
-                activeTab === 'combined'
-                  ? 'bg-white text-indigo-700 shadow-sm'
-                  : 'text-slate-500 hover:text-slate-700'
-              )}
-            >
-              <span className="mr-0.5 md:mr-1">📊</span>
-              <span className="hidden md:inline">종합분석</span>
-              <span className="md:hidden">종합</span>
-              {combinedHistoryIndex && (
-                <span className="ml-0.5 md:ml-1 text-slate-400">({combinedHistoryIndex.total_records})</span>
-              )}
-            </button>
+        {/* Info */}
+        <div className="px-4 md:px-5 py-2.5 md:py-3 bg-indigo-50/50 text-[0.65rem] md:text-xs text-indigo-700 border-b border-indigo-100">
+          <div className="flex items-center gap-1.5">
+            <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M12 16v-4M12 8h.01"/>
+            </svg>
+            <span>
+              히스토리 선택 시 <strong>모든 탭</strong>이 해당 시점의 데이터로 동기화됩니다.
+            </span>
           </div>
         </div>
 
-        {/* Info */}
         {historyIndex && (
           <div className="px-4 md:px-5 py-2.5 md:py-3 bg-bg-primary/50 text-[0.65rem] md:text-xs text-text-muted border-b border-border">
             최근 {historyIndex.retention_days}일간 총 {historyIndex.total_records}개 기록
@@ -179,11 +194,9 @@ export function HistoryPanel() {
             <div className="text-center py-10 text-text-muted">
               <div className="text-4xl mb-3">📭</div>
               <p>아직 저장된 분석 기록이 없습니다.</p>
-              {activeTab === 'kis' && (
-                <p className="text-[0.65rem] mt-2">
-                  KIS API 히스토리는 다음 분석 실행부터 저장됩니다.
-                </p>
-              )}
+              <p className="text-[0.65rem] mt-2">
+                workflow 실행 후 히스토리가 생성됩니다.
+              </p>
             </div>
           )}
 
@@ -194,10 +207,10 @@ export function HistoryPanel() {
               isToday={item.date === today}
               isActive={
                 isViewingHistory
-                  ? viewingHistoryFile === item.filename
+                  ? viewingHistoryDateTime === getItemDateTime(item)
                   : item.date === today
               }
-              onClick={() => handleItemClick(item.filename)}
+              onClick={() => handleItemClick(item)}
             />
           ))}
         </div>
