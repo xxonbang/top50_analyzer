@@ -245,8 +245,20 @@ class KISDataTransformer:
         # 최근 5일 데이터 추출
         recent_days = daily_trend[:5] if daily_trend else []
 
-        # 오늘 데이터
-        today = recent_days[0] if recent_days else {}
+        # 최신 유효 데이터 찾기 (장중일 경우 오늘 데이터가 0일 수 있음)
+        # 0이 아닌 데이터가 있는 가장 최근 거래일 사용
+        today = {}
+        for day in recent_days:
+            # 외인/기관/개인 중 하나라도 0이 아니면 유효한 데이터
+            if (day.get("foreign_net", 0) != 0 or
+                day.get("organ_net", 0) != 0 or
+                day.get("individual_net", 0) != 0):
+                today = day
+                break
+
+        # 모든 데이터가 0이면 첫 번째 데이터 사용 (없을 수도 있음)
+        if not today and recent_days:
+            today = recent_days[0]
 
         # 5일 합계 계산
         foreign_5d = sum(d.get("foreign_net", 0) for d in recent_days)
