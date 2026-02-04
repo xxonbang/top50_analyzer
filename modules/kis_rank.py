@@ -232,11 +232,20 @@ class KISRankAPI:
             # 전종목은 코스피 + 코스닥 각각 조회하여 병합
             market_codes = ["0001", "1001"]
 
-        # 종목 수집
+        # 시장 코드 → 시장명 매핑
+        market_code_to_name = {
+            "0001": "KOSPI",
+            "1001": "KOSDAQ",
+        }
+
+        # 종목 수집 (시장 정보 포함)
         all_stocks = []
         seen_codes = set()
 
         for market_code in market_codes:
+            # API 호출 시 사용한 market_code로 시장 결정
+            actual_market = market_code_to_name.get(market_code, "UNKNOWN")
+
             if extended and exclude_etf:
                 stocks = self._collect_extended_stocks(market_code)
             else:
@@ -246,6 +255,8 @@ class KISRankAPI:
                 code = stock.get("mksc_shrn_iscd", "")
                 if code and code not in seen_codes:
                     seen_codes.add(code)
+                    # 시장 정보를 stock에 추가
+                    stock["_market"] = actual_market
                     all_stocks.append(stock)
 
         # 거래량 기준 정렬 (여러 시장 병합 시 필요)
@@ -256,7 +267,8 @@ class KISRankAPI:
         for stock in all_stocks:
             code = stock.get("mksc_shrn_iscd", "")
             name = stock.get("hts_kor_isnm", "")
-            stock_market = self._determine_market(code)
+            # API 호출 시 결정된 시장 사용 (추측 대신 실제 값)
+            stock_market = stock.get("_market", self._determine_market(code))
             is_etf = self._is_etf_or_etn(code, name)
 
             # ETF/ETN 제외 필터
