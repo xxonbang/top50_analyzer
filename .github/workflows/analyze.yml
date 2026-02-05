@@ -4,8 +4,8 @@ on:
   schedule:
     # KST 07:00 (UTC 22:00 previous day) - 장 시작 전
     - cron: '0 22 * * 0-4'
-    # KST 20:00 (UTC 11:00) - 장 마감 후 + 일요일 (월요일 장 준비)
-    - cron: '0 11 * * 0-5'
+    # KST 19:00 (UTC 10:00) - 장 마감 후 + 일요일 (월요일 장 준비)
+    - cron: '0 10 * * 0-5'
   workflow_dispatch:
     inputs:
       force_run:
@@ -568,10 +568,11 @@ jobs:
                   stats[status_key] += 1
               total_confidence += stock['confidence']
 
-              # 시그널 카운트 (vision 또는 api)
-              for sig in [stock.get('vision_signal'), stock.get('api_signal')]:
-                  if sig and sig in signal_counts:
-                      signal_counts[sig] += 1
+              # 시그널 카운트 (일치하는 시그널만)
+              vision_sig = stock.get('vision_signal')
+              api_sig = stock.get('api_signal')
+              if vision_sig and api_sig and vision_sig == api_sig:
+                  signal_counts[vision_sig] += 1
 
           stats['avg_confidence'] = total_confidence / stats['total'] if stats['total'] > 0 else 0
 
