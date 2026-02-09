@@ -14,8 +14,8 @@
 
 ### Phase 1: Market Data Scraping (List Up)
 - Target API (신버전 stock.naver.com):
-  - 코스피: https://stock.naver.com/api/domestic/market/stock/default?tradeType=KRX&marketType=KOSPI&orderType=quantTop&startIdx=0&pageSize=50
-  - 코스닥: https://stock.naver.com/api/domestic/market/stock/default?tradeType=KRX&marketType=KOSDAQ&orderType=quantTop&startIdx=0&pageSize=50
+  - 코스피: https://stock.naver.com/api/domestic/market/stock/default?tradeType=KRX&marketType=KOSPI&orderType=amountTop&startIdx=0&pageSize=50
+  - 코스닥: https://stock.naver.com/api/domestic/market/stock/default?tradeType=KRX&marketType=KOSDAQ&orderType=amountTop&startIdx=0&pageSize=50
 - Action:
   - API 호출로 코스피 상위 50개 종목의 종목명(itemname) 및 6자리 코드(itemcode) 추출
   - API 호출로 코스닥 상위 50개 종목의 종목명(itemname) 및 6자리 코드(itemcode) 추출
