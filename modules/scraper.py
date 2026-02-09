@@ -32,6 +32,11 @@ async def fetch_stock_list_from_api(page: Page, api_url: str, market: str, max_s
     response = await page.goto(api_url)
     data = await response.json()
 
+    if not isinstance(data, list):
+        print(f"[{market}] API 응답이 리스트가 아닙니다: {type(data).__name__}")
+        print(f"[{market}] 응답 내용: {str(data)[:200]}")
+        return []
+
     stocks = []
     for item in data[:max_stocks]:
         stocks.append({
