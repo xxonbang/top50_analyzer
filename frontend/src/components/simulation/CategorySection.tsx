@@ -1,4 +1,4 @@
-import { useMemo } from 'react';
+import { useMemo, useState } from 'react';
 import type { SimulationStock, SimulationCategory } from '@/services/types';
 import { StockBadge } from './StockBadge';
 import { ReturnDisplay } from './ReturnDisplay';
@@ -25,6 +25,7 @@ interface CategorySectionProps {
 export function CategorySection({ category, stocks, date }: CategorySectionProps) {
   const { activeCategories, toggleCategory, excludedStocks, excludeAllStocks, includeAllStocks } = useSimulationStore();
   const isActive = activeCategories.has(category);
+  const [expanded, setExpanded] = useState(true);
 
   const codes = useMemo(() => stocks.map((s) => s.code), [stocks]);
 
@@ -53,19 +54,21 @@ export function CategorySection({ category, stocks, date }: CategorySectionProps
     <div className={`border rounded-2xl overflow-hidden transition-opacity ${isActive ? 'border-border' : 'border-border/50 opacity-50'}`}>
       {/* 헤더 */}
       <div className="flex items-center justify-between px-4 py-3 bg-bg-secondary/50">
-        <label className="flex items-center gap-2 cursor-pointer select-none">
-          <input
-            type="checkbox"
-            checked={isActive}
-            onChange={() => toggleCategory(category)}
-            className="w-4 h-4 rounded accent-accent-primary"
-          />
-          <span className="text-base">{CATEGORY_ICONS[category]}</span>
-          <span className="font-semibold text-sm">{CATEGORY_LABELS[category]}</span>
-          <span className="text-xs text-text-muted">
-            {includedCount}/{stocks.length}
-          </span>
-        </label>
+        <div className="flex items-center gap-2">
+          <label className="flex items-center gap-2 cursor-pointer select-none">
+            <input
+              type="checkbox"
+              checked={isActive}
+              onChange={() => toggleCategory(category)}
+              className="w-4 h-4 rounded accent-accent-primary"
+            />
+            <span className="text-base">{CATEGORY_ICONS[category]}</span>
+            <span className="font-semibold text-sm">{CATEGORY_LABELS[category]}</span>
+            <span className="text-xs text-text-muted">
+              {includedCount}/{stocks.length}
+            </span>
+          </label>
+        </div>
 
         <div className="flex items-center gap-3">
           <ReturnDisplay value={isActive ? avgReturn : null} size="md" />
@@ -75,11 +78,22 @@ export function CategorySection({ category, stocks, date }: CategorySectionProps
           >
             {allExcluded ? '전체선택' : '전체해제'}
           </button>
+          <button
+            onClick={() => setExpanded(!expanded)}
+            className="p-1 text-text-muted hover:text-text-secondary transition-colors"
+          >
+            <svg
+              className={`w-4 h-4 transition-transform ${expanded ? '' : '-rotate-90'}`}
+              viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
+            >
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
+          </button>
         </div>
       </div>
 
       {/* 종목 그리드 */}
-      {isActive && (
+      {isActive && expanded && (
         <div className="p-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
           {stocks.map((stock) => (
             <StockBadge key={stock.code} stock={stock} category={category} date={date} />
