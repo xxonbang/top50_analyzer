@@ -1,0 +1,244 @@
+{
+  "date": "2026-02-10",
+  "collected_at": "2026-02-10T15:40:00+09:00",
+  "categories": {
+    "vision": [
+      {
+        "code": "105560",
+        "name": "KB금융",
+        "market": "KOSPI",
+        "open_price": 63020,
+        "close_price": 61260,
+        "return_pct": -2.79
+      },
+      {
+        "code": "006800",
+        "name": "미래에셋증권",
+        "market": "KOSPI",
+        "open_price": 51200,
+        "close_price": 50580,
+        "return_pct": -1.21
+      },
+      {
+        "code": "139480",
+        "name": "이마트",
+        "market": "KOSPI",
+        "open_price": 123020,
+        "close_price": 125990,
+        "return_pct": 2.41
+      },
+      {
+        "code": "055550",
+        "name": "신한지주",
+        "market": "KOSPI",
+        "open_price": 100200,
+        "close_price": 97890,
+        "return_pct": -2.31
+      },
+      {
+        "code": "086790",
+        "name": "하나금융지주",
+        "market": "KOSPI",
+        "open_price": 121630,
+        "close_price": 118270,
+        "return_pct": -2.76
+      },
+      {
+        "code": "316140",
+        "name": "우리금융지주",
+        "market": "KOSPI",
+        "open_price": 35000,
+        "close_price": 35360,
+        "return_pct": 1.03
+      },
+      {
+        "code": "047810",
+        "name": "한국항공우주",
+        "market": "KOSPI",
+        "open_price": 157500,
+        "close_price": 155280,
+        "return_pct": -1.41
+      },
+      {
+        "code": "000720",
+        "name": "현대건설",
+        "market": "KOSPI",
+        "open_price": 113010,
+        "close_price": 114550,
+        "return_pct": 1.36
+      },
+      {
+        "code": "000390",
+        "name": "삼화페인트",
+        "market": "KOSPI",
+        "open_price": 12140,
+        "close_price": 12350,
+        "return_pct": 1.73
+      },
+      {
+        "code": "007660",
+        "name": "이수페타시스",
+        "market": "KOSPI",
+        "open_price": 112760,
+        "close_price": 109440,
+        "return_pct": -2.94
+      },
+      {
+        "code": "451220",
+        "name": "아이엠티",
+        "market": "KOSDAQ",
+        "open_price": 13790,
+        "close_price": 14150,
+        "return_pct": 2.61
+      },
+      {
+        "code": "412350",
+        "name": "레이저쎌",
+        "market": "KOSDAQ",
+        "open_price": 3800,
+        "close_price": 3730,
+        "return_pct": -1.84
+      },
+      {
+        "code": "389140",
+        "name": "포바이포",
+        "market": "KOSDAQ",
+        "open_price": 9590,
+        "close_price": 9560,
+        "return_pct": -0.31
+      }
+    ],
+    "kis": [
+      {
+        "code": "139480",
+        "name": "이마트",
+        "market": "KOSPI",
+        "open_price": 114730,
+        "close_price": 112180,
+        "return_pct": -2.22
+      },
+      {
+        "code": "241520",
+        "name": "DSC인베스트먼트",
+        "market": "KOSDAQ",
+        "open_price": 11740,
+        "close_price": 11950,
+        "return_pct": 1.79
+      },
+      {
+        "code": "065170",
+        "name": "비엘팜텍",
+        "market": "KOSDAQ",
+        "open_price": 6980,
+        "close_price": 7180,
+        "return_pct": 2.87
+      },
+      {
+        "code": "267320",
+        "name": "나인테크",
+        "market": "KOSDAQ",
+        "open_price": 3780,
+        "close_price": 3960,
+        "return_pct": 4.76
+      },
+      {
+        "code": "078600",
+        "name": "대주전자재료",
+        "market": "KOSDAQ",
+        "open_price": 94800,
+        "close_price": 96140,
+        "return_pct": 1.41
+      },
+      {
+        "code": "393210",
+        "name": "토마토시스템",
+        "market": "KOSDAQ",
+        "open_price": 5490,
+        "close_price": 5600,
+        "return_pct": 2.0
+      },
+      {
+        "code": "000120",
+        "name": "CJ대한통운",
+        "market": "KOSPI",
+        "open_price": 139670,
+        "close_price": 141930,
+        "return_pct": 1.62
+      },
+      {
+        "code": "221800",
+        "name": "유투바이오",
+        "market": "KOSDAQ",
+        "open_price": 6770,
+        "close_price": 6590,
+        "return_pct": -2.66
+      },
+      {
+        "code": "018880",
+        "name": "한온시스템",
+        "market": "KOSPI",
+        "open_price": 4500,
+        "close_price": 4470,
+        "return_pct": -0.67
+      },
+      {
+        "code": "008830",
+        "name": "대동기어",
+        "market": "KOSDAQ",
+        "open_price": 25440,
+        "close_price": 25150,
+        "return_pct": -1.14
+      },
+      {
+        "code": "056080",
+        "name": "유진로봇",
+        "market": "KOSDAQ",
+        "open_price": 44610,
+        "close_price": 44260,
+        "return_pct": -0.78
+      },
+      {
+        "code": "048410",
+        "name": "현대바이오",
+        "market": "KOSDAQ",
+        "open_price": 11640,
+        "close_price": 11630,
+        "return_pct": -0.09
+      },
+      {
+        "code": "047040",
+        "name": "대우건설",
+        "market": "KOSPI",
+        "open_price": 7010,
+        "close_price": 6920,
+        "return_pct": -1.28
+      },
+      {
+        "code": "000390",
+        "name": "삼화페인트",
+        "market": "KOSPI",
+        "open_price": 12180,
+        "close_price": 12730,
+        "return_pct": 4.52
+      }
+    ],
+    "combined": [
+      {
+        "code": "139480",
+        "name": "이마트",
+        "market": "KOSPI",
+        "open_price": 118640,
+        "close_price": 120860,
+        "return_pct": 1.87
+      },
+      {
+        "code": "000390",
+        "name": "삼화페인트",
+        "market": "KOSPI",
+        "open_price": 12110,
+        "close_price": 12450,
+        "return_pct": 2.81
+      }
+    ]
+  }
+}

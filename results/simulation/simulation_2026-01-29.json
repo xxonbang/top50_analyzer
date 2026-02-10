@@ -1,0 +1,192 @@
+{
+  "date": "2026-01-29",
+  "collected_at": "2026-01-29T15:40:00+09:00",
+  "categories": {
+    "vision": [
+      {
+        "code": "001510",
+        "name": "SK증권",
+        "market": "KOSPI",
+        "open_price": 890,
+        "close_price": 910,
+        "return_pct": 2.25
+      },
+      {
+        "code": "001290",
+        "name": "상상인증권",
+        "market": "KOSPI",
+        "open_price": 780,
+        "close_price": 770,
+        "return_pct": -1.28
+      },
+      {
+        "code": "042700",
+        "name": "한미반도체",
+        "market": "KOSPI",
+        "open_price": 203100,
+        "close_price": 199080,
+        "return_pct": -1.98
+      },
+      {
+        "code": "001440",
+        "name": "대한전선",
+        "market": "KOSPI",
+        "open_price": 28510,
+        "close_price": 27720,
+        "return_pct": -2.77
+      },
+      {
+        "code": "00680K",
+        "name": "미래에셋증권2우B",
+        "market": "KOSPI",
+        "open_price": 14810,
+        "close_price": 15030,
+        "return_pct": 1.49
+      },
+      {
+        "code": "100840",
+        "name": "SNT에너지",
+        "market": "KOSPI",
+        "open_price": 45760,
+        "close_price": 46740,
+        "return_pct": 2.14
+      },
+      {
+        "code": "340930",
+        "name": "유일에너테크",
+        "market": "KOSPI",
+        "open_price": 1520,
+        "close_price": 1530,
+        "return_pct": 0.66
+      },
+      {
+        "code": "069540",
+        "name": "빛과전자",
+        "market": "KOSPI",
+        "open_price": 1630,
+        "close_price": 1630,
+        "return_pct": 0.0
+      },
+      {
+        "code": "090710",
+        "name": "휴림로봇",
+        "market": "KOSPI",
+        "open_price": 14920,
+        "close_price": 14860,
+        "return_pct": -0.4
+      },
+      {
+        "code": "100790",
+        "name": "미래에셋벤처투자",
+        "market": "KOSPI",
+        "open_price": 19500,
+        "close_price": 19510,
+        "return_pct": 0.05
+      },
+      {
+        "code": "469750",
+        "name": "아이비젼웍스",
+        "market": "KOSPI",
+        "open_price": 1410,
+        "close_price": 1460,
+        "return_pct": 3.55
+      },
+      {
+        "code": "024910",
+        "name": "경창산업",
+        "market": "KOSPI",
+        "open_price": 2350,
+        "close_price": 2290,
+        "return_pct": -2.55
+      },
+      {
+        "code": "462860",
+        "name": "더즌",
+        "market": "KOSPI",
+        "open_price": 5150,
+        "close_price": 5220,
+        "return_pct": 1.36
+      },
+      {
+        "code": "264850",
+        "name": "이랜시스",
+        "market": "KOSPI",
+        "open_price": 9270,
+        "close_price": 9250,
+        "return_pct": -0.22
+      },
+      {
+        "code": "232680",
+        "name": "라온로보틱스",
+        "market": "KOSPI",
+        "open_price": 19030,
+        "close_price": 19650,
+        "return_pct": 3.26
+      },
+      {
+        "code": "060720",
+        "name": "KH바텍",
+        "market": "KOSPI",
+        "open_price": 16760,
+        "close_price": 17270,
+        "return_pct": 3.04
+      },
+      {
+        "code": "274090",
+        "name": "켄코아에어로스페이스",
+        "market": "KOSPI",
+        "open_price": 30660,
+        "close_price": 30230,
+        "return_pct": -1.4
+      },
+      {
+        "code": "067000",
+        "name": "조이시티",
+        "market": "KOSPI",
+        "open_price": 2650,
+        "close_price": 2600,
+        "return_pct": -1.89
+      },
+      {
+        "code": "417200",
+        "name": "LS머트리얼즈",
+        "market": "KOSPI",
+        "open_price": 16230,
+        "close_price": 16610,
+        "return_pct": 2.34
+      },
+      {
+        "code": "072770",
+        "name": "멤레이비티",
+        "market": "KOSPI",
+        "open_price": 990,
+        "close_price": 980,
+        "return_pct": -1.01
+      },
+      {
+        "code": "263770",
+        "name": "유에스티",
+        "market": "KOSPI",
+        "open_price": 2180,
+        "close_price": 2250,
+        "return_pct": 3.21
+      },
+      {
+        "code": "347700",
+        "name": "스피어",
+        "market": "KOSPI",
+        "open_price": 22000,
+        "close_price": 22410,
+        "return_pct": 1.86
+      },
+      {
+        "code": "331380",
+        "name": "포커스에이아이",
+        "market": "KOSPI",
+        "open_price": 3630,
+        "close_price": 3550,
+        "return_pct": -2.2
+      }
+    ]
+  }
+}

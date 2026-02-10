@@ -1,0 +1,220 @@
+{
+  "date": "2026-02-06",
+  "collected_at": "2026-02-06T15:40:00+09:00",
+  "categories": {
+    "vision": [
+      {
+        "code": "004060",
+        "name": "SG세계물산",
+        "market": "KOSPI",
+        "open_price": 490,
+        "close_price": 490,
+        "return_pct": 0.0
+      },
+      {
+        "code": "010660",
+        "name": "화천기계",
+        "market": "KOSPI",
+        "open_price": 6400,
+        "close_price": 6680,
+        "return_pct": 4.38
+      },
+      {
+        "code": "225190",
+        "name": "LK삼양",
+        "market": "KOSDAQ",
+        "open_price": 2540,
+        "close_price": 2640,
+        "return_pct": 3.94
+      },
+      {
+        "code": "047770",
+        "name": "코데즈컴바인",
+        "market": "KOSDAQ",
+        "open_price": 3980,
+        "close_price": 3880,
+        "return_pct": -2.51
+      },
+      {
+        "code": "019570",
+        "name": "플루토스",
+        "market": "KOSDAQ",
+        "open_price": 340,
+        "close_price": 350,
+        "return_pct": 2.94
+      },
+      {
+        "code": "019210",
+        "name": "와이지-원",
+        "market": "KOSDAQ",
+        "open_price": 10130,
+        "close_price": 10580,
+        "return_pct": 4.44
+      }
+    ],
+    "kis": [
+      {
+        "code": "002100",
+        "name": "경농",
+        "market": "KOSPI",
+        "open_price": 9830,
+        "close_price": 9670,
+        "return_pct": -1.63
+      },
+      {
+        "code": "011930",
+        "name": "신성이엔지",
+        "market": "KOSPI",
+        "open_price": 2200,
+        "close_price": 2170,
+        "return_pct": -1.36
+      },
+      {
+        "code": "002140",
+        "name": "고려산업",
+        "market": "KOSPI",
+        "open_price": 2500,
+        "close_price": 2440,
+        "return_pct": -2.4
+      },
+      {
+        "code": "019570",
+        "name": "플루토스",
+        "market": "KOSDAQ",
+        "open_price": 330,
+        "close_price": 350,
+        "return_pct": 6.06
+      },
+      {
+        "code": "474170",
+        "name": "루미르",
+        "market": "KOSDAQ",
+        "open_price": 19190,
+        "close_price": 19820,
+        "return_pct": 3.28
+      },
+      {
+        "code": "050890",
+        "name": "쏠리드",
+        "market": "KOSDAQ",
+        "open_price": 9350,
+        "close_price": 9390,
+        "return_pct": 0.43
+      },
+      {
+        "code": "347700",
+        "name": "스피어",
+        "market": "KOSDAQ",
+        "open_price": 38370,
+        "close_price": 40270,
+        "return_pct": 4.95
+      },
+      {
+        "code": "255220",
+        "name": "SG",
+        "market": "KOSDAQ",
+        "open_price": 3360,
+        "close_price": 3450,
+        "return_pct": 2.68
+      },
+      {
+        "code": "263050",
+        "name": "유틸렉스",
+        "market": "KOSDAQ",
+        "open_price": 940,
+        "close_price": 930,
+        "return_pct": -1.06
+      },
+      {
+        "code": "047770",
+        "name": "코데즈컴바인",
+        "market": "KOSDAQ",
+        "open_price": 4080,
+        "close_price": 4150,
+        "return_pct": 1.72
+      },
+      {
+        "code": "009830",
+        "name": "한화솔루션",
+        "market": "KOSPI",
+        "open_price": 42110,
+        "close_price": 43370,
+        "return_pct": 2.99
+      },
+      {
+        "code": "225190",
+        "name": "LK삼양",
+        "market": "KOSDAQ",
+        "open_price": 2480,
+        "close_price": 2520,
+        "return_pct": 1.61
+      },
+      {
+        "code": "001550",
+        "name": "조비",
+        "market": "KOSPI",
+        "open_price": 13410,
+        "close_price": 13920,
+        "return_pct": 3.8
+      },
+      {
+        "code": "033340",
+        "name": "좋은사람들",
+        "market": "KOSDAQ",
+        "open_price": 1880,
+        "close_price": 1970,
+        "return_pct": 4.79
+      },
+      {
+        "code": "034940",
+        "name": "조아제약",
+        "market": "KOSDAQ",
+        "open_price": 1000,
+        "close_price": 980,
+        "return_pct": -2.0
+      },
+      {
+        "code": "009190",
+        "name": "대양금속",
+        "market": "KOSPI",
+        "open_price": 1380,
+        "close_price": 1410,
+        "return_pct": 2.17
+      },
+      {
+        "code": "030960",
+        "name": "양지사",
+        "market": "KOSDAQ",
+        "open_price": 8410,
+        "close_price": 8240,
+        "return_pct": -2.02
+      }
+    ],
+    "combined": [
+      {
+        "code": "225190",
+        "name": "LK삼양",
+        "market": "KOSPI",
+        "open_price": 2600,
+        "close_price": 2570,
+        "return_pct": -1.15
+      },
+      {
+        "code": "047770",
+        "name": "코데즈컴바인",
+        "market": "KOSPI",
+        "open_price": 3990,
+        "close_price": 4070,
+        "return_pct": 2.01
+      },
+      {
+        "code": "019570",
+        "name": "플루토스",
+        "market": "KOSPI",
+        "open_price": 330,
+        "close_price": 340,
+        "return_pct": 3.03
+      }
+    ]
+  }
+}

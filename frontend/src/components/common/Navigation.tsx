@@ -4,7 +4,7 @@ import { useQuery } from '@tanstack/react-query';
 import { fetchCombinedHistoryIndex } from '@/services/api';
 
 export function Navigation() {
-  const { isCompactView, toggleCompactView, openHistoryPanel } = useUIStore();
+  const { currentPage, setCurrentPage, isCompactView, toggleCompactView, openHistoryPanel } = useUIStore();
 
   // Combined 히스토리 인덱스
   const { data: historyIndex } = useQuery({
@@ -19,6 +19,35 @@ export function Navigation() {
 
         {/* 우측 버튼 그룹 */}
         <div className="flex items-center gap-2">
+          {/* 모의투자 / 홈으로 토글 */}
+          <button
+            onClick={() => setCurrentPage(currentPage === 'home' ? 'simulation' : 'home')}
+            className="flex items-center gap-1.5 px-2.5 md:px-3 py-1.5 md:py-2
+              bg-bg-secondary text-text-secondary
+              border border-border
+              rounded-lg text-xs md:text-sm font-medium
+              hover:border-accent-primary hover:text-accent-primary
+              transition-all"
+          >
+            {currentPage === 'home' ? (
+              <>
+                <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/>
+                  <polyline points="16 7 22 7 22 13"/>
+                </svg>
+                <span className="hidden md:inline">모의투자</span>
+              </>
+            ) : (
+              <>
+                <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/>
+                  <polyline points="9 22 9 12 15 12 15 22"/>
+                </svg>
+                <span className="hidden md:inline">홈으로</span>
+              </>
+            )}
+          </button>
+
           {/* 히스토리 버튼 */}
           <button
             onClick={openHistoryPanel}

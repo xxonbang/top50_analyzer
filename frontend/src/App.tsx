@@ -8,6 +8,9 @@ import { LoadingSpinner } from '@/components/common';
 
 // CombinedAnalysis는 lazy loading - 처음 접근 시에만 로드
 const CombinedAnalysis = lazy(() => import('@/pages/CombinedAnalysis').then(m => ({ default: m.CombinedAnalysis })));
+// SimulationPage는 lazy loading
+const SimulationPage = lazy(() => import('@/pages/SimulationPage').then(m => ({ default: m.SimulationPage })));
+
 import { useUIStore } from '@/store/uiStore';
 import { fetchLatestData, fetchKISData, fetchKISAnalysis, fetchHistoryIndex } from '@/services/api';
 
@@ -92,15 +95,22 @@ function MainContent() {
 function AppContent() {
   // 앱 로드 시 모든 데이터 미리 로드
   usePrefetchAllData();
+  const { currentPage } = useUIStore();
 
   return (
     <div className="min-h-screen bg-bg-primary text-text-primary">
       <Navigation />
-      <HistoryPanel />
+      {currentPage === 'home' && <HistoryPanel />}
       <Toast />
 
       <main className="max-w-[1200px] mx-auto px-4 md:px-6 pt-20 md:pt-24 pb-10">
-        <MainContent />
+        {currentPage === 'home' ? (
+          <MainContent />
+        ) : (
+          <Suspense fallback={<LoadingSpinner message="모의투자 페이지 로딩 중..." />}>
+            <SimulationPage />
+          </Suspense>
+        )}
       </main>
 
       <Footer />

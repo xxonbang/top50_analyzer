@@ -1,12 +1,17 @@
 import { create } from 'zustand';
 import type { SignalType, MarketType, AnalysisTab } from '@/services/types';
 
+export type PageType = 'home' | 'simulation';
+
 interface ToastState {
   isVisible: boolean;
   message: string;
 }
 
 interface UIStore {
+  // 현재 페이지
+  currentPage: PageType;
+
   // 현재 활성 탭
   activeTab: AnalysisTab;
 
@@ -26,6 +31,7 @@ interface UIStore {
   toast: ToastState;
 
   // Actions
+  setCurrentPage: (page: PageType) => void;
   setActiveTab: (tab: AnalysisTab) => void;
   setMarketFilter: (market: MarketType) => void;
   setSignalFilter: (signal: SignalType | null) => void;
@@ -41,6 +47,7 @@ interface UIStore {
 }
 
 export const useUIStore = create<UIStore>((set, get) => ({
+  currentPage: 'home',
   activeTab: 'vision',
   activeMarket: 'all',
   activeSignal: null,
@@ -49,6 +56,8 @@ export const useUIStore = create<UIStore>((set, get) => ({
   viewingHistoryDateTime: null,
   isCompactView: false,
   toast: { isVisible: false, message: '' },
+
+  setCurrentPage: (page) => set({ currentPage: page }),
 
   setActiveTab: (tab) => set({ activeTab: tab }),
 

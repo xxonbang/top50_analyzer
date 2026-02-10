@@ -1,0 +1,128 @@
+{
+  "date": "2026-02-02",
+  "collected_at": "2026-02-02T15:40:00+09:00",
+  "categories": {
+    "vision": [
+      {
+        "code": "005930",
+        "name": "삼성전자",
+        "market": "KOSPI",
+        "open_price": 77120,
+        "close_price": 78600,
+        "return_pct": 1.92
+      },
+      {
+        "code": "128820",
+        "name": "대성산업",
+        "market": "KOSPI",
+        "open_price": 8250,
+        "close_price": 8360,
+        "return_pct": 1.33
+      },
+      {
+        "code": "161000",
+        "name": "애경케미칼",
+        "market": "KOSPI",
+        "open_price": 9690,
+        "close_price": 9620,
+        "return_pct": -0.72
+      },
+      {
+        "code": "316140",
+        "name": "우리금융지주",
+        "market": "KOSPI",
+        "open_price": 12050,
+        "close_price": 12250,
+        "return_pct": 1.66
+      },
+      {
+        "code": "290660",
+        "name": "네오펙트",
+        "market": "KOSPI",
+        "open_price": 1170,
+        "close_price": 1180,
+        "return_pct": 0.85
+      },
+      {
+        "code": "038500",
+        "name": "삼표시멘트",
+        "market": "KOSPI",
+        "open_price": 10880,
+        "close_price": 10740,
+        "return_pct": -1.29
+      },
+      {
+        "code": "003310",
+        "name": "대주산업",
+        "market": "KOSPI",
+        "open_price": 5390,
+        "close_price": 5620,
+        "return_pct": 4.27
+      },
+      {
+        "code": "012210",
+        "name": "삼미금속",
+        "market": "KOSPI",
+        "open_price": 16440,
+        "close_price": 16170,
+        "return_pct": -1.64
+      },
+      {
+        "code": "090710",
+        "name": "휴림로봇",
+        "market": "KOSPI",
+        "open_price": 14020,
+        "close_price": 14180,
+        "return_pct": 1.14
+      },
+      {
+        "code": "380550",
+        "name": "뉴로핏",
+        "market": "KOSPI",
+        "open_price": 36990,
+        "close_price": 36870,
+        "return_pct": -0.32
+      },
+      {
+        "code": "038460",
+        "name": "바이오스마트",
+        "market": "KOSPI",
+        "open_price": 5790,
+        "close_price": 5960,
+        "return_pct": 2.94
+      },
+      {
+        "code": "354200",
+        "name": "엔젠바이오",
+        "market": "KOSPI",
+        "open_price": 2660,
+        "close_price": 2630,
+        "return_pct": -1.13
+      },
+      {
+        "code": "146060",
+        "name": "율촌",
+        "market": "KOSPI",
+        "open_price": 2020,
+        "close_price": 1960,
+        "return_pct": -2.97
+      },
+      {
+        "code": "222420",
+        "name": "쎄노텍",
+        "market": "KOSPI",
+        "open_price": 1950,
+        "close_price": 1970,
+        "return_pct": 1.03
+      },
+      {
+        "code": "052900",
+        "name": "KX하이텍",
+        "market": "KOSPI",
+        "open_price": 1120,
+        "close_price": 1090,
+        "return_pct": -2.68
+      }
+    ]
+  }
+}

@@ -1,0 +1,204 @@
+{
+  "date": "2026-02-05",
+  "collected_at": "2026-02-05T15:40:00+09:00",
+  "categories": {
+    "vision": [
+      {
+        "code": "008830",
+        "name": "대동기어",
+        "market": "KOSDAQ",
+        "open_price": 22880,
+        "close_price": 23900,
+        "return_pct": 4.46
+      },
+      {
+        "code": "440110",
+        "name": "파두",
+        "market": "KOSDAQ",
+        "open_price": 43910,
+        "close_price": 45110,
+        "return_pct": 2.73
+      },
+      {
+        "code": "067290",
+        "name": "JW신약",
+        "market": "KOSDAQ",
+        "open_price": 2000,
+        "close_price": 2000,
+        "return_pct": 0.0
+      },
+      {
+        "code": "056090",
+        "name": "시지메드텍",
+        "market": "KOSDAQ",
+        "open_price": 2050,
+        "close_price": 2040,
+        "return_pct": -0.49
+      }
+    ],
+    "kis": [
+      {
+        "code": "036170",
+        "name": "에이치엠넥스",
+        "market": "KOSDAQ",
+        "open_price": 1730,
+        "close_price": 1780,
+        "return_pct": 2.89
+      },
+      {
+        "code": "003490",
+        "name": "대한항공",
+        "market": "KOSPI",
+        "open_price": 23530,
+        "close_price": 23690,
+        "return_pct": 0.68
+      },
+      {
+        "code": "066430",
+        "name": "아이로보틱스",
+        "market": "KOSDAQ",
+        "open_price": 3800,
+        "close_price": 3990,
+        "return_pct": 5.0
+      },
+      {
+        "code": "048470",
+        "name": "대동스틸",
+        "market": "KOSDAQ",
+        "open_price": 3240,
+        "close_price": 3200,
+        "return_pct": -1.23
+      },
+      {
+        "code": "002070",
+        "name": "비비안",
+        "market": "KOSPI",
+        "open_price": 580,
+        "close_price": 610,
+        "return_pct": 5.17
+      },
+      {
+        "code": "043200",
+        "name": "파루",
+        "market": "KOSDAQ",
+        "open_price": 1110,
+        "close_price": 1150,
+        "return_pct": 3.6
+      },
+      {
+        "code": "008830",
+        "name": "대동기어",
+        "market": "KOSDAQ",
+        "open_price": 22670,
+        "close_price": 22280,
+        "return_pct": -1.72
+      },
+      {
+        "code": "323410",
+        "name": "카카오뱅크",
+        "market": "KOSPI",
+        "open_price": 27390,
+        "close_price": 28110,
+        "return_pct": 2.63
+      },
+      {
+        "code": "115530",
+        "name": "씨엔플러스",
+        "market": "KOSDAQ",
+        "open_price": 400,
+        "close_price": 420,
+        "return_pct": 5.0
+      },
+      {
+        "code": "023440",
+        "name": "제이스코홀딩스",
+        "market": "KOSDAQ",
+        "open_price": 880,
+        "close_price": 850,
+        "return_pct": -3.41
+      },
+      {
+        "code": "016600",
+        "name": "큐캐피탈",
+        "market": "KOSDAQ",
+        "open_price": 330,
+        "close_price": 330,
+        "return_pct": 0.0
+      },
+      {
+        "code": "121850",
+        "name": "코이즈",
+        "market": "KOSDAQ",
+        "open_price": 6420,
+        "close_price": 6710,
+        "return_pct": 4.52
+      },
+      {
+        "code": "440110",
+        "name": "파두",
+        "market": "KOSDAQ",
+        "open_price": 43720,
+        "close_price": 42810,
+        "return_pct": -2.08
+      },
+      {
+        "code": "065060",
+        "name": "지엔코",
+        "market": "KOSDAQ",
+        "open_price": 820,
+        "close_price": 830,
+        "return_pct": 1.22
+      },
+      {
+        "code": "080160",
+        "name": "모두투어",
+        "market": "KOSDAQ",
+        "open_price": 16460,
+        "close_price": 16760,
+        "return_pct": 1.82
+      },
+      {
+        "code": "322000",
+        "name": "HD현대에너지솔루션",
+        "market": "KOSPI",
+        "open_price": 82970,
+        "close_price": 81830,
+        "return_pct": -1.37
+      },
+      {
+        "code": "227950",
+        "name": "엔투텍",
+        "market": "KOSDAQ",
+        "open_price": 450,
+        "close_price": 450,
+        "return_pct": 0.0
+      },
+      {
+        "code": "011930",
+        "name": "신성이엔지",
+        "market": "KOSPI",
+        "open_price": 2100,
+        "close_price": 2190,
+        "return_pct": 4.29
+      }
+    ],
+    "combined": [
+      {
+        "code": "008830",
+        "name": "대동기어",
+        "market": "KOSPI",
+        "open_price": 23320,
+        "close_price": 22790,
+        "return_pct": -2.27
+      },
+      {
+        "code": "440110",
+        "name": "파두",
+        "market": "KOSDAQ",
+        "open_price": 44500,
+        "close_price": 44150,
+        "return_pct": -0.79
+      }
+    ]
+  }
+}

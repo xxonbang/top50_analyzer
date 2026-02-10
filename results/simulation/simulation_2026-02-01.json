@@ -1,0 +1,40 @@
+{
+  "date": "2026-02-01",
+  "collected_at": "2026-02-01T15:40:00+09:00",
+  "categories": {
+    "vision": [
+      {
+        "code": "001510",
+        "name": "SK증권",
+        "market": "KOSPI",
+        "open_price": 940,
+        "close_price": 960,
+        "return_pct": 2.13
+      },
+      {
+        "code": "012030",
+        "name": "DB",
+        "market": "KOSPI",
+        "open_price": 1800,
+        "close_price": 1850,
+        "return_pct": 2.78
+      },
+      {
+        "code": "009070",
+        "name": "KCTC",
+        "market": "KOSPI",
+        "open_price": 6740,
+        "close_price": 6670,
+        "return_pct": -1.04
+      },
+      {
+        "code": "001740",
+        "name": "SK네트웍스",
+        "market": "KOSPI",
+        "open_price": 5650,
+        "close_price": 5480,
+        "return_pct": -3.01
+      }
+    ]
+  }
+}

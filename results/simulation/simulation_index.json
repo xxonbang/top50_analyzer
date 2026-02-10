@@ -1,0 +1,120 @@
+{
+  "updated_at": "2026-02-10T22:39:58+09:00",
+  "total_records": 13,
+  "history": [
+    {
+      "date": "2026-02-10",
+      "filename": "simulation_2026-02-10.json",
+      "total_stocks": 29,
+      "category_counts": {
+        "vision": 13,
+        "kis": 14,
+        "combined": 2
+      }
+    },
+    {
+      "date": "2026-02-09",
+      "filename": "simulation_2026-02-09.json",
+      "total_stocks": 32,
+      "category_counts": {
+        "vision": 1,
+        "kis": 29,
+        "combined": 2
+      }
+    },
+    {
+      "date": "2026-02-08",
+      "filename": "simulation_2026-02-08.json",
+      "total_stocks": 34,
+      "category_counts": {
+        "vision": 7,
+        "kis": 22,
+        "combined": 5
+      }
+    },
+    {
+      "date": "2026-02-06",
+      "filename": "simulation_2026-02-06.json",
+      "total_stocks": 26,
+      "category_counts": {
+        "vision": 6,
+        "kis": 17,
+        "combined": 3
+      }
+    },
+    {
+      "date": "2026-02-05",
+      "filename": "simulation_2026-02-05.json",
+      "total_stocks": 24,
+      "category_counts": {
+        "vision": 4,
+        "kis": 18,
+        "combined": 2
+      }
+    },
+    {
+      "date": "2026-02-04",
+      "filename": "simulation_2026-02-04.json",
+      "total_stocks": 20,
+      "category_counts": {
+        "vision": 20
+      }
+    },
+    {
+      "date": "2026-02-03",
+      "filename": "simulation_2026-02-03.json",
+      "total_stocks": 30,
+      "category_counts": {
+        "vision": 30
+      }
+    },
+    {
+      "date": "2026-02-02",
+      "filename": "simulation_2026-02-02.json",
+      "total_stocks": 15,
+      "category_counts": {
+        "vision": 15
+      }
+    },
+    {
+      "date": "2026-02-01",
+      "filename": "simulation_2026-02-01.json",
+      "total_stocks": 4,
+      "category_counts": {
+        "vision": 4
+      }
+    },
+    {
+      "date": "2026-01-31",
+      "filename": "simulation_2026-01-31.json",
+      "total_stocks": 13,
+      "category_counts": {
+        "vision": 13
+      }
+    },
+    {
+      "date": "2026-01-30",
+      "filename": "simulation_2026-01-30.json",
+      "total_stocks": 20,
+      "category_counts": {
+        "vision": 20
+      }
+    },
+    {
+      "date": "2026-01-29",
+      "filename": "simulation_2026-01-29.json",
+      "total_stocks": 23,
+      "category_counts": {
+        "vision": 23
+      }
+    },
+    {
+      "date": "2026-01-28",
+      "filename": "simulation_2026-01-28.json",
+      "total_stocks": 3,
+      "category_counts": {
+        "vision": 3
+      }
+    }
+  ]
+}

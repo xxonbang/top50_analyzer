@@ -1,0 +1,248 @@
+{
+  "date": "2026-02-03",
+  "collected_at": "2026-02-03T15:40:00+09:00",
+  "categories": {
+    "vision": [
+      {
+        "code": "034020",
+        "name": "두산에너빌리티",
+        "market": "KOSPI",
+        "open_price": 92900,
+        "close_price": 92100,
+        "return_pct": -0.86
+      },
+      {
+        "code": "010140",
+        "name": "삼성중공업",
+        "market": "KOSPI",
+        "open_price": 29140,
+        "close_price": 28520,
+        "return_pct": -2.13
+      },
+      {
+        "code": "267270",
+        "name": "HD건설기계",
+        "market": "KOSPI",
+        "open_price": 138930,
+        "close_price": 144300,
+        "return_pct": 3.87
+      },
+      {
+        "code": "489790",
+        "name": "한화비전",
+        "market": "KOSPI",
+        "open_price": 62840,
+        "close_price": 65060,
+        "return_pct": 3.53
+      },
+      {
+        "code": "042660",
+        "name": "한화오션",
+        "market": "KOSPI",
+        "open_price": 141060,
+        "close_price": 140270,
+        "return_pct": -0.56
+      },
+      {
+        "code": "027360",
+        "name": "아주IB투자",
+        "market": "KOSPI",
+        "open_price": 5200,
+        "close_price": 5140,
+        "return_pct": -1.15
+      },
+      {
+        "code": "038460",
+        "name": "바이오스마트",
+        "market": "KOSPI",
+        "open_price": 5910,
+        "close_price": 5820,
+        "return_pct": -1.52
+      },
+      {
+        "code": "255220",
+        "name": "SG",
+        "market": "KOSPI",
+        "open_price": 3210,
+        "close_price": 3340,
+        "return_pct": 4.05
+      },
+      {
+        "code": "064260",
+        "name": "다날",
+        "market": "KOSPI",
+        "open_price": 9890,
+        "close_price": 9810,
+        "return_pct": -0.81
+      },
+      {
+        "code": "389680",
+        "name": "유디엠텍",
+        "market": "KOSPI",
+        "open_price": 1090,
+        "close_price": 1090,
+        "return_pct": 0.0
+      },
+      {
+        "code": "083640",
+        "name": "인콘",
+        "market": "KOSPI",
+        "open_price": 510,
+        "close_price": 520,
+        "return_pct": 1.96
+      },
+      {
+        "code": "115610",
+        "name": "이미지스",
+        "market": "KOSPI",
+        "open_price": 2490,
+        "close_price": 2440,
+        "return_pct": -2.01
+      },
+      {
+        "code": "012210",
+        "name": "삼미금속",
+        "market": "KOSPI",
+        "open_price": 18410,
+        "close_price": 18120,
+        "return_pct": -1.58
+      },
+      {
+        "code": "052900",
+        "name": "KX하이텍",
+        "market": "KOSPI",
+        "open_price": 1780,
+        "close_price": 1760,
+        "return_pct": -1.12
+      },
+      {
+        "code": "100790",
+        "name": "미래에셋벤처투자",
+        "market": "KOSPI",
+        "open_price": 21580,
+        "close_price": 21680,
+        "return_pct": 0.46
+      },
+      {
+        "code": "038500",
+        "name": "삼표시멘트",
+        "market": "KOSPI",
+        "open_price": 14380,
+        "close_price": 14310,
+        "return_pct": -0.49
+      },
+      {
+        "code": "225190",
+        "name": "LK삼양",
+        "market": "KOSPI",
+        "open_price": 1870,
+        "close_price": 1890,
+        "return_pct": 1.07
+      },
+      {
+        "code": "253590",
+        "name": "네오셈",
+        "market": "KOSPI",
+        "open_price": 18640,
+        "close_price": 18940,
+        "return_pct": 1.61
+      },
+      {
+        "code": "090710",
+        "name": "휴림로봇",
+        "market": "KOSPI",
+        "open_price": 14430,
+        "close_price": 14820,
+        "return_pct": 2.7
+      },
+      {
+        "code": "257720",
+        "name": "실리콘투",
+        "market": "KOSPI",
+        "open_price": 44480,
+        "close_price": 46440,
+        "return_pct": 4.41
+      },
+      {
+        "code": "041440",
+        "name": "현대에버다임",
+        "market": "KOSPI",
+        "open_price": 9140,
+        "close_price": 9390,
+        "return_pct": 2.74
+      },
+      {
+        "code": "209640",
+        "name": "와이제이링크",
+        "market": "KOSPI",
+        "open_price": 4580,
+        "close_price": 4690,
+        "return_pct": 2.4
+      },
+      {
+        "code": "008830",
+        "name": "대동기어",
+        "market": "KOSPI",
+        "open_price": 20630,
+        "close_price": 20130,
+        "return_pct": -2.42
+      },
+      {
+        "code": "047310",
+        "name": "파워로직스",
+        "market": "KOSPI",
+        "open_price": 6190,
+        "close_price": 6170,
+        "return_pct": -0.32
+      },
+      {
+        "code": "460470",
+        "name": "아이빔테크놀로지",
+        "market": "KOSPI",
+        "open_price": 3130,
+        "close_price": 3250,
+        "return_pct": 3.83
+      },
+      {
+        "code": "066430",
+        "name": "아이로보틱스",
+        "market": "KOSPI",
+        "open_price": 2680,
+        "close_price": 2660,
+        "return_pct": -0.75
+      },
+      {
+        "code": "319400",
+        "name": "현대무벡스",
+        "market": "KOSPI",
+        "open_price": 33020,
+        "close_price": 33110,
+        "return_pct": 0.27
+      },
+      {
+        "code": "478340",
+        "name": "나라스페이스테크놀로지",
+        "market": "KOSPI",
+        "open_price": 61340,
+        "close_price": 60950,
+        "return_pct": -0.64
+      },
+      {
+        "code": "250060",
+        "name": "모비스",
+        "market": "KOSPI",
+        "open_price": 4370,
+        "close_price": 4390,
+        "return_pct": 0.46
+      },
+      {
+        "code": "252990",
+        "name": "샘씨엔에스",
+        "market": "KOSPI",
+        "open_price": 11430,
+        "close_price": 11710,
+        "return_pct": 2.45
+      }
+    ]
+  }
+}

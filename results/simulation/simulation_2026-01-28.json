@@ -1,0 +1,32 @@
+{
+  "date": "2026-01-28",
+  "collected_at": "2026-01-28T15:40:00+09:00",
+  "categories": {
+    "vision": [
+      {
+        "code": "008600",
+        "name": "윌비스",
+        "market": "KOSPI",
+        "open_price": 1310,
+        "close_price": 1370,
+        "return_pct": 4.58
+      },
+      {
+        "code": "003490",
+        "name": "대한항공",
+        "market": "KOSPI",
+        "open_price": 26370,
+        "close_price": 25630,
+        "return_pct": -2.81
+      },
+      {
+        "code": "038500",
+        "name": "삼표시멘트",
+        "market": "KOSPI",
+        "open_price": 1060,
+        "close_price": 1090,
+        "return_pct": 2.83
+      }
+    ]
+  }
+}

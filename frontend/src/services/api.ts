@@ -1,4 +1,4 @@
-import type { AnalysisData, HistoryIndex, KISGeminiData, KISAnalysisData, CombinedAnalysisData } from './types';
+import type { AnalysisData, HistoryIndex, KISGeminiData, KISAnalysisData, CombinedAnalysisData, SimulationIndex, SimulationData } from './types';
 
 const BASE_URL = import.meta.env.DEV ? '' : '.';
 
@@ -128,6 +128,37 @@ export async function fetchCombinedHistoryData(filename: string): Promise<Combin
         return null;
       }
       throw new Error('Failed to fetch combined history data');
+    }
+    return response.json();
+  } catch {
+    return null;
+  }
+}
+
+// Simulation API 함수들
+export async function fetchSimulationIndex(): Promise<SimulationIndex | null> {
+  try {
+    const response = await fetch(`${BASE_URL}/results/simulation/simulation_index.json`);
+    if (!response.ok) {
+      if (response.status === 404) {
+        return null;
+      }
+      throw new Error('Failed to fetch simulation index');
+    }
+    return response.json();
+  } catch {
+    return null;
+  }
+}
+
+export async function fetchSimulationData(filename: string): Promise<SimulationData | null> {
+  try {
+    const response = await fetch(`${BASE_URL}/results/simulation/${filename}`);
+    if (!response.ok) {
+      if (response.status === 404) {
+        return null;
+      }
+      throw new Error('Failed to fetch simulation data');
     }
     return response.json();
   } catch {

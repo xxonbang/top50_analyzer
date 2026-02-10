@@ -209,3 +209,34 @@ export interface CombinedAnalysisData {
     kis_analysis: string | null;
   };
 }
+
+// 모의투자 시뮬레이션 타입
+export interface SimulationStock {
+  code: string;
+  name: string;
+  market: string;
+  open_price: number | null;
+  close_price: number | null;
+  return_pct: number | null;
+}
+
+export type SimulationCategory = 'vision' | 'kis' | 'combined';
+
+export interface SimulationData {
+  date: string;
+  collected_at: string;
+  categories: Record<SimulationCategory, SimulationStock[]>;
+}
+
+export interface SimulationIndexItem {
+  date: string;
+  filename: string;
+  total_stocks: number;
+  category_counts: Record<SimulationCategory, number>;
+}
+
+export interface SimulationIndex {
+  updated_at: string;
+  total_records: number;
+  history: SimulationIndexItem[];
+}
