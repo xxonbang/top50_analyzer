@@ -48,7 +48,7 @@ export function SimulationSummary({ dataByDate }: SimulationSummaryProps) {
             totalStocks++;
             const sellPrice = simulationMode === 'high' ? stock.high_price : stock.close_price;
             const returnPct = simulationMode === 'high' ? stock.high_return_pct : stock.return_pct;
-            if (stock.open_price !== null && sellPrice !== null && sellPrice !== undefined) {
+            if (stock.open_price != null && stock.open_price > 0 && sellPrice != null && sellPrice > 0) {
               pricedStocks++;
               totalInvested += stock.open_price;
               totalValue += sellPrice;

@@ -118,7 +118,11 @@ class SimulationCollector:
             if open_price == 0:
                 return None
 
-            return {"open_price": open_price, "close_price": close_price, "high_price": high_price}
+            return {
+                "open_price": open_price,
+                "close_price": close_price or None,
+                "high_price": high_price or None,
+            }
         except Exception as e:
             print(f"[Simulation] 가격 조회 에러 ({stock_code}): {e}")
             return None
@@ -131,7 +135,7 @@ class SimulationCollector:
             target_date: "YYYY-MM-DD" 형식
 
         Returns:
-            {"open_price": int, "close_price": int} or None
+            {"open_price": int, "close_price": int, "high_price": int} or None
         """
         try:
             result = self.kis.get_stock_daily_price(stock_code)
@@ -146,7 +150,11 @@ class SimulationCollector:
                     high_price = int(item.get("stck_hgpr", 0))
                     if open_price == 0:
                         return None
-                    return {"open_price": open_price, "close_price": close_price, "high_price": high_price}
+                    return {
+                        "open_price": open_price,
+                        "close_price": close_price or None,
+                        "high_price": high_price or None,
+                    }
 
             return None
         except Exception as e:

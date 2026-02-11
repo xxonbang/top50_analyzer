@@ -44,7 +44,7 @@ export function DateSelector({ items, dataByDate }: DateSelectorProps) {
             if (excludedStocks.has(stockKey(item.date, cat, s.code))) return;
             included++;
             const sellPrice = simulationMode === 'high' ? s.high_price : s.close_price;
-            if (s.open_price !== null && sellPrice !== null && sellPrice !== undefined) {
+            if (s.open_price != null && s.open_price > 0 && sellPrice != null && sellPrice > 0) {
               invested += s.open_price;
               value += sellPrice;
             }

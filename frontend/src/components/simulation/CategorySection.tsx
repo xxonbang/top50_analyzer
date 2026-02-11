@@ -38,7 +38,7 @@ export function CategorySection({ category, stocks, date }: CategorySectionProps
     const included = stocks.filter((s) => {
       if (excludedStocks.has(stockKey(date, category, s.code))) return false;
       const sellPrice = simulationMode === 'high' ? s.high_price : s.close_price;
-      return s.open_price !== null && sellPrice !== null && sellPrice !== undefined;
+      return s.open_price != null && s.open_price > 0 && sellPrice != null && sellPrice > 0;
     });
     if (included.length === 0) return null;
     const invested = included.reduce((sum, s) => sum + s.open_price!, 0);
