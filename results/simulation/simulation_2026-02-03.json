@@ -1,308 +1,462 @@
 {
   "date": "2026-02-03",
-  "collected_at": "2026-02-03T15:40:00+09:00",
+  "collected_at": "2026-02-11T23:30:26.156492+09:00",
   "categories": {
     "vision": [
       {
         "code": "034020",
         "name": "두산에너빌리티",
-        "market": "KOSPI",
-        "open_price": 92180,
-        "close_price": 92400,
-        "high_price": 92860,
-        "return_pct": 0.24,
-        "high_return_pct": 0.74
+        "market": "",
+        "open_price": 88300,
+        "close_price": 91200,
+        "high_price": 91200,
+        "return_pct": 3.28,
+        "high_return_pct": 3.28
       },
       {
         "code": "010140",
         "name": "삼성중공업",
-        "market": "KOSPI",
-        "open_price": 28590,
-        "close_price": 28020,
-        "high_price": 29120,
-        "return_pct": -1.99,
-        "high_return_pct": 1.85
+        "market": "",
+        "open_price": 28250,
+        "close_price": 28650,
+        "high_price": 28650,
+        "return_pct": 1.42,
+        "high_return_pct": 1.42
       },
       {
         "code": "267270",
         "name": "HD건설기계",
-        "market": "KOSPI",
-        "open_price": 132040,
-        "close_price": 132240,
-        "high_price": 134480,
-        "return_pct": 0.15,
-        "high_return_pct": 1.85
+        "market": "",
+        "open_price": 110500,
+        "close_price": 135900,
+        "high_price": 139400,
+        "return_pct": 22.99,
+        "high_return_pct": 26.15
       },
       {
         "code": "489790",
         "name": "한화비전",
-        "market": "KOSPI",
-        "open_price": 62090,
-        "close_price": 63420,
-        "high_price": 63680,
-        "return_pct": 2.14,
-        "high_return_pct": 2.56
+        "market": "",
+        "open_price": 59600,
+        "close_price": 63900,
+        "high_price": 65900,
+        "return_pct": 7.21,
+        "high_return_pct": 10.57
       },
       {
         "code": "042660",
         "name": "한화오션",
-        "market": "KOSPI",
-        "open_price": 141080,
-        "close_price": 137420,
-        "high_price": 142680,
-        "return_pct": -2.59,
-        "high_return_pct": 1.13
+        "market": "",
+        "open_price": 137700,
+        "close_price": 141400,
+        "high_price": 142300,
+        "return_pct": 2.69,
+        "high_return_pct": 3.34
       },
       {
         "code": "027360",
         "name": "아주IB투자",
-        "market": "KOSPI",
-        "open_price": 5020,
-        "close_price": 5000,
-        "high_price": 5130,
-        "return_pct": -0.4,
-        "high_return_pct": 2.19
+        "market": "",
+        "open_price": 4865,
+        "close_price": 5110,
+        "high_price": 5540,
+        "return_pct": 5.04,
+        "high_return_pct": 13.87
       },
       {
         "code": "038460",
         "name": "바이오스마트",
-        "market": "KOSPI",
-        "open_price": 6040,
-        "close_price": 6220,
-        "high_price": 6380,
-        "return_pct": 2.98,
-        "high_return_pct": 5.63
+        "market": "",
+        "open_price": 5360,
+        "close_price": 6080,
+        "high_price": 6780,
+        "return_pct": 13.43,
+        "high_return_pct": 26.49
       },
       {
         "code": "255220",
         "name": "SG",
-        "market": "KOSPI",
-        "open_price": 3190,
-        "close_price": 3120,
-        "high_price": 3190,
-        "return_pct": -2.19,
-        "high_return_pct": 0.0
+        "market": "",
+        "open_price": 2745,
+        "close_price": 3240,
+        "high_price": 3445,
+        "return_pct": 18.03,
+        "high_return_pct": 25.5
       },
       {
         "code": "064260",
         "name": "다날",
-        "market": "KOSPI",
-        "open_price": 9640,
-        "close_price": 10120,
-        "high_price": 10230,
-        "return_pct": 4.98,
-        "high_return_pct": 6.12
+        "market": "",
+        "open_price": 9180,
+        "close_price": 9620,
+        "high_price": 10060,
+        "return_pct": 4.79,
+        "high_return_pct": 9.59
       },
       {
         "code": "389680",
         "name": "유디엠텍",
-        "market": "KOSPI",
-        "open_price": 1090,
-        "close_price": 1130,
-        "high_price": 1150,
-        "return_pct": 3.67,
-        "high_return_pct": 5.5
+        "market": "",
+        "open_price": 850,
+        "close_price": 1079,
+        "high_price": 1079,
+        "return_pct": 26.94,
+        "high_return_pct": 26.94
       },
       {
         "code": "083640",
         "name": "인콘",
-        "market": "KOSPI",
-        "open_price": 500,
-        "close_price": 520,
-        "high_price": 520,
-        "return_pct": 4.0,
-        "high_return_pct": 4.0
+        "market": "",
+        "open_price": 410,
+        "close_price": 494,
+        "high_price": 494,
+        "return_pct": 20.49,
+        "high_return_pct": 20.49
       },
       {
         "code": "115610",
         "name": "이미지스",
-        "market": "KOSPI",
-        "open_price": 2360,
-        "close_price": 2320,
-        "high_price": 2370,
-        "return_pct": -1.69,
-        "high_return_pct": 0.42
+        "market": "",
+        "open_price": 1884,
+        "close_price": 2430,
+        "high_price": 2435,
+        "return_pct": 28.98,
+        "high_return_pct": 29.25
       },
       {
         "code": "012210",
         "name": "삼미금속",
-        "market": "KOSPI",
-        "open_price": 18080,
-        "close_price": 18350,
-        "high_price": 18470,
-        "return_pct": 1.49,
-        "high_return_pct": 2.16
+        "market": "",
+        "open_price": 16340,
+        "close_price": 17900,
+        "high_price": 19960,
+        "return_pct": 9.55,
+        "high_return_pct": 22.15
       },
       {
         "code": "052900",
         "name": "KX하이텍",
-        "market": "KOSPI",
-        "open_price": 1760,
-        "close_price": 1820,
-        "high_price": 1830,
-        "return_pct": 3.41,
-        "high_return_pct": 3.98
+        "market": "",
+        "open_price": 1207,
+        "close_price": 1315,
+        "high_price": 1411,
+        "return_pct": 8.95,
+        "high_return_pct": 16.9
       },
       {
         "code": "100790",
         "name": "미래에셋벤처투자",
-        "market": "KOSPI",
-        "open_price": 22240,
-        "close_price": 22900,
-        "high_price": 22980,
-        "return_pct": 2.97,
-        "high_return_pct": 3.33
+        "market": "",
+        "open_price": 19600,
+        "close_price": 22100,
+        "high_price": 22100,
+        "return_pct": 12.76,
+        "high_return_pct": 12.76
       },
       {
         "code": "038500",
         "name": "삼표시멘트",
-        "market": "KOSPI",
-        "open_price": 14460,
-        "close_price": 15140,
-        "high_price": 15190,
-        "return_pct": 4.7,
-        "high_return_pct": 5.05
+        "market": "",
+        "open_price": 11580,
+        "close_price": 14190,
+        "high_price": 14190,
+        "return_pct": 22.54,
+        "high_return_pct": 22.54
       },
       {
         "code": "225190",
         "name": "LK삼양",
-        "market": "KOSPI",
-        "open_price": 1800,
-        "close_price": 1790,
-        "high_price": 1840,
-        "return_pct": -0.56,
-        "high_return_pct": 2.22
+        "market": "",
+        "open_price": 1443,
+        "close_price": 1857,
+        "high_price": 1857,
+        "return_pct": 28.69,
+        "high_return_pct": 28.69
       },
       {
         "code": "253590",
         "name": "네오셈",
-        "market": "KOSPI",
-        "open_price": 19290,
-        "close_price": 19320,
-        "high_price": 19730,
-        "return_pct": 0.16,
-        "high_return_pct": 2.28
+        "market": "",
+        "open_price": 15790,
+        "close_price": 18770,
+        "high_price": 19090,
+        "return_pct": 18.87,
+        "high_return_pct": 20.9
       },
       {
         "code": "090710",
         "name": "휴림로봇",
-        "market": "KOSPI",
-        "open_price": 14280,
-        "close_price": 14640,
-        "high_price": 14920,
-        "return_pct": 2.52,
-        "high_return_pct": 4.48
+        "market": "",
+        "open_price": 14850,
+        "close_price": 14650,
+        "high_price": 14850,
+        "return_pct": -1.35,
+        "high_return_pct": 0.0
       },
       {
         "code": "257720",
         "name": "실리콘투",
-        "market": "KOSPI",
-        "open_price": 44750,
-        "close_price": 46170,
-        "high_price": 47350,
-        "return_pct": 3.17,
-        "high_return_pct": 5.81
+        "market": "",
+        "open_price": 52400,
+        "close_price": 45850,
+        "high_price": 52800,
+        "return_pct": -12.5,
+        "high_return_pct": 0.76
       },
       {
         "code": "041440",
         "name": "현대에버다임",
-        "market": "KOSPI",
-        "open_price": 9170,
-        "close_price": 8980,
-        "high_price": 9440,
-        "return_pct": -2.07,
-        "high_return_pct": 2.94
+        "market": "",
+        "open_price": 8320,
+        "close_price": 9120,
+        "high_price": 10040,
+        "return_pct": 9.62,
+        "high_return_pct": 20.67
       },
       {
         "code": "209640",
         "name": "와이제이링크",
-        "market": "KOSPI",
-        "open_price": 4590,
-        "close_price": 4580,
-        "high_price": 4650,
-        "return_pct": -0.22,
-        "high_return_pct": 1.31
+        "market": "",
+        "open_price": 4220,
+        "close_price": 4510,
+        "high_price": 4675,
+        "return_pct": 6.87,
+        "high_return_pct": 10.78
       },
       {
         "code": "008830",
         "name": "대동기어",
-        "market": "KOSPI",
-        "open_price": 20640,
-        "close_price": 20860,
-        "high_price": 21070,
-        "return_pct": 1.07,
-        "high_return_pct": 2.08
+        "market": "",
+        "open_price": 18100,
+        "close_price": 20800,
+        "high_price": 22450,
+        "return_pct": 14.92,
+        "high_return_pct": 24.03
       },
       {
         "code": "047310",
         "name": "파워로직스",
-        "market": "KOSPI",
-        "open_price": 6260,
-        "close_price": 6480,
-        "high_price": 6500,
-        "return_pct": 3.51,
-        "high_return_pct": 3.83
+        "market": "",
+        "open_price": 5910,
+        "close_price": 6130,
+        "high_price": 6510,
+        "return_pct": 3.72,
+        "high_return_pct": 10.15
       },
       {
         "code": "460470",
         "name": "아이빔테크놀로지",
-        "market": "KOSPI",
-        "open_price": 3260,
-        "close_price": 3330,
-        "high_price": 3410,
-        "return_pct": 2.15,
-        "high_return_pct": 4.6
+        "market": "",
+        "open_price": 3070,
+        "close_price": 3170,
+        "high_price": 3740,
+        "return_pct": 3.26,
+        "high_return_pct": 21.82
       },
       {
         "code": "066430",
         "name": "아이로보틱스",
-        "market": "KOSPI",
-        "open_price": 2680,
-        "close_price": 2690,
-        "high_price": 2750,
-        "return_pct": 0.37,
-        "high_return_pct": 2.61
+        "market": "",
+        "open_price": 2180,
+        "close_price": 2645,
+        "high_price": 2700,
+        "return_pct": 21.33,
+        "high_return_pct": 23.85
       },
       {
         "code": "319400",
         "name": "현대무벡스",
-        "market": "KOSPI",
-        "open_price": 34330,
-        "close_price": 34040,
-        "high_price": 35160,
-        "return_pct": -0.84,
-        "high_return_pct": 2.42
+        "market": "",
+        "open_price": 35350,
+        "close_price": 34500,
+        "high_price": 35450,
+        "return_pct": -2.4,
+        "high_return_pct": 0.28
       },
       {
         "code": "478340",
         "name": "나라스페이스테크놀로지",
-        "market": "KOSPI",
-        "open_price": 61840,
-        "close_price": 62380,
-        "high_price": 63200,
-        "return_pct": 0.87,
-        "high_return_pct": 2.2
+        "market": "",
+        "open_price": 59900,
+        "close_price": 61700,
+        "high_price": 64600,
+        "return_pct": 3.01,
+        "high_return_pct": 7.85
       },
       {
         "code": "250060",
         "name": "모비스",
-        "market": "KOSPI",
-        "open_price": 4530,
-        "close_price": 4490,
-        "high_price": 4650,
-        "return_pct": -0.88,
-        "high_return_pct": 2.65
+        "market": "",
+        "open_price": 4775,
+        "close_price": 4470,
+        "high_price": 5000,
+        "return_pct": -6.39,
+        "high_return_pct": 4.71
       },
       {
         "code": "252990",
         "name": "샘씨엔에스",
-        "market": "KOSPI",
-        "open_price": 11360,
-        "close_price": 11100,
-        "high_price": 11660,
-        "return_pct": -2.29,
-        "high_return_pct": 2.64
+        "market": "",
+        "open_price": 10420,
+        "close_price": 11140,
+        "high_price": 11400,
+        "return_pct": 6.91,
+        "high_return_pct": 9.4
       }
-    ]
+    ],
+    "kis": [],
+    "combined": []
+  },
+  "all_prices": {
+    "038460": {
+      "open_price": 5360,
+      "close_price": 6080,
+      "high_price": 6780
+    },
+    "100790": {
+      "open_price": 19600,
+      "close_price": 22100,
+      "high_price": 22100
+    },
+    "090710": {
+      "open_price": 14850,
+      "close_price": 14650,
+      "high_price": 14850
+    },
+    "010140": {
+      "open_price": 28250,
+      "close_price": 28650,
+      "high_price": 28650
+    },
+    "319400": {
+      "open_price": 35350,
+      "close_price": 34500,
+      "high_price": 35450
+    },
+    "478340": {
+      "open_price": 59900,
+      "close_price": 61700,
+      "high_price": 64600
+    },
+    "041440": {
+      "open_price": 8320,
+      "close_price": 9120,
+      "high_price": 10040
+    },
+    "225190": {
+      "open_price": 1443,
+      "close_price": 1857,
+      "high_price": 1857
+    },
+    "027360": {
+      "open_price": 4865,
+      "close_price": 5110,
+      "high_price": 5540
+    },
+    "389680": {
+      "open_price": 850,
+      "close_price": 1079,
+      "high_price": 1079
+    },
+    "115610": {
+      "open_price": 1884,
+      "close_price": 2430,
+      "high_price": 2435
+    },
+    "083640": {
+      "open_price": 410,
+      "close_price": 494,
+      "high_price": 494
+    },
+    "052900": {
+      "open_price": 1207,
+      "close_price": 1315,
+      "high_price": 1411
+    },
+    "047310": {
+      "open_price": 5910,
+      "close_price": 6130,
+      "high_price": 6510
+    },
+    "253590": {
+      "open_price": 15790,
+      "close_price": 18770,
+      "high_price": 19090
+    },
+    "489790": {
+      "open_price": 59600,
+      "close_price": 63900,
+      "high_price": 65900
+    },
+    "042660": {
+      "open_price": 137700,
+      "close_price": 141400,
+      "high_price": 142300
+    },
+    "257720": {
+      "open_price": 52400,
+      "close_price": 45850,
+      "high_price": 52800
+    },
+    "038500": {
+      "open_price": 11580,
+      "close_price": 14190,
+      "high_price": 14190
+    },
+    "250060": {
+      "open_price": 4775,
+      "close_price": 4470,
+      "high_price": 5000
+    },
+    "252990": {
+      "open_price": 10420,
+      "close_price": 11140,
+      "high_price": 11400
+    },
+    "008830": {
+      "open_price": 18100,
+      "close_price": 20800,
+      "high_price": 22450
+    },
+    "066430": {
+      "open_price": 2180,
+      "close_price": 2645,
+      "high_price": 2700
+    },
+    "255220": {
+      "open_price": 2745,
+      "close_price": 3240,
+      "high_price": 3445
+    },
+    "012210": {
+      "open_price": 16340,
+      "close_price": 17900,
+      "high_price": 19960
+    },
+    "064260": {
+      "open_price": 9180,
+      "close_price": 9620,
+      "high_price": 10060
+    },
+    "034020": {
+      "open_price": 88300,
+      "close_price": 91200,
+      "high_price": 91200
+    },
+    "460470": {
+      "open_price": 3070,
+      "close_price": 3170,
+      "high_price": 3740
+    },
+    "209640": {
+      "open_price": 4220,
+      "close_price": 4510,
+      "high_price": 4675
+    },
+    "267270": {
+      "open_price": 110500,
+      "close_price": 135900,
+      "high_price": 139400
+    }
   }
 }

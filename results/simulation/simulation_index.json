@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-11T17:27:30.291199+09:00",
+  "updated_at": "2026-02-11T23:34:58.442180+09:00",
   "total_records": 14,
   "history": [
     {
@@ -15,21 +15,21 @@
     {
       "date": "2026-02-10",
       "filename": "simulation_2026-02-10.json",
-      "total_stocks": 29,
+      "total_stocks": 40,
       "category_counts": {
-        "vision": 13,
-        "kis": 14,
-        "combined": 2
+        "vision": 6,
+        "kis": 30,
+        "combined": 4
       }
     },
     {
       "date": "2026-02-09",
       "filename": "simulation_2026-02-09.json",
-      "total_stocks": 32,
+      "total_stocks": 4,
       "category_counts": {
-        "vision": 1,
-        "kis": 29,
-        "combined": 2
+        "vision": 3,
+        "kis": 1,
+        "combined": 0
       }
     },
     {
@@ -45,21 +45,21 @@
     {
       "date": "2026-02-06",
       "filename": "simulation_2026-02-06.json",
-      "total_stocks": 26,
+      "total_stocks": 7,
       "category_counts": {
-        "vision": 6,
-        "kis": 17,
-        "combined": 3
+        "vision": 2,
+        "kis": 5,
+        "combined": 0
       }
     },
     {
       "date": "2026-02-05",
       "filename": "simulation_2026-02-05.json",
-      "total_stocks": 24,
+      "total_stocks": 31,
       "category_counts": {
-        "vision": 4,
-        "kis": 18,
-        "combined": 2
+        "vision": 0,
+        "kis": 31,
+        "combined": 0
       }
     },
     {
@@ -67,7 +67,9 @@
       "filename": "simulation_2026-02-04.json",
       "total_stocks": 20,
       "category_counts": {
-        "vision": 20
+        "vision": 20,
+        "kis": 0,
+        "combined": 0
       }
     },
     {
@@ -75,7 +77,9 @@
       "filename": "simulation_2026-02-03.json",
       "total_stocks": 30,
       "category_counts": {
-        "vision": 30
+        "vision": 30,
+        "kis": 0,
+        "combined": 0
       }
     },
     {
@@ -83,7 +87,9 @@
       "filename": "simulation_2026-02-02.json",
       "total_stocks": 15,
       "category_counts": {
-        "vision": 15
+        "vision": 15,
+        "kis": 0,
+        "combined": 0
       }
     },
     {
@@ -91,7 +97,9 @@
       "filename": "simulation_2026-02-01.json",
       "total_stocks": 4,
       "category_counts": {
-        "vision": 4
+        "vision": 4,
+        "kis": 0,
+        "combined": 0
       }
     },
     {
@@ -99,7 +107,9 @@
       "filename": "simulation_2026-01-31.json",
       "total_stocks": 13,
       "category_counts": {
-        "vision": 13
+        "vision": 13,
+        "kis": 0,
+        "combined": 0
       }
     },
     {
@@ -107,7 +117,9 @@
       "filename": "simulation_2026-01-30.json",
       "total_stocks": 20,
       "category_counts": {
-        "vision": 20
+        "vision": 20,
+        "kis": 0,
+        "combined": 0
       }
     },
     {
@@ -115,7 +127,9 @@
       "filename": "simulation_2026-01-29.json",
       "total_stocks": 23,
       "category_counts": {
-        "vision": 23
+        "vision": 23,
+        "kis": 0,
+        "combined": 0
       }
     },
     {
@@ -123,7 +137,9 @@
       "filename": "simulation_2026-01-28.json",
       "total_stocks": 3,
       "category_counts": {
-        "vision": 3
+        "vision": 3,
+        "kis": 0,
+        "combined": 0
       }
     }
   ]

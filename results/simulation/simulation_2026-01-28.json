@@ -1,38 +1,57 @@
 {
   "date": "2026-01-28",
-  "collected_at": "2026-01-28T15:40:00+09:00",
+  "collected_at": "2026-02-11T23:29:11.025638+09:00",
   "categories": {
     "vision": [
       {
         "code": "008600",
         "name": "윌비스",
-        "market": "KOSPI",
-        "open_price": 1280,
-        "close_price": 1270,
-        "high_price": 1290,
-        "return_pct": -0.78,
-        "high_return_pct": 0.78
+        "market": "",
+        "open_price": 494,
+        "close_price": 378,
+        "high_price": 544,
+        "return_pct": -23.48,
+        "high_return_pct": 10.12
       },
       {
         "code": "003490",
         "name": "대한항공",
-        "market": "KOSPI",
-        "open_price": 27320,
-        "close_price": 27750,
-        "high_price": 27940,
-        "return_pct": 1.57,
-        "high_return_pct": 2.27
+        "market": "",
+        "open_price": 24100,
+        "close_price": 23800,
+        "high_price": 24100,
+        "return_pct": -1.24,
+        "high_return_pct": 0.0
       },
       {
         "code": "038500",
         "name": "삼표시멘트",
-        "market": "KOSPI",
-        "open_price": 1090,
-        "close_price": 1060,
-        "high_price": 1110,
-        "return_pct": -2.75,
-        "high_return_pct": 1.83
+        "market": "",
+        "open_price": 5250,
+        "close_price": 6760,
+        "high_price": 6760,
+        "return_pct": 28.76,
+        "high_return_pct": 28.76
       }
-    ]
+    ],
+    "kis": [],
+    "combined": []
+  },
+  "all_prices": {
+    "038500": {
+      "open_price": 5250,
+      "close_price": 6760,
+      "high_price": 6760
+    },
+    "008600": {
+      "open_price": 494,
+      "close_price": 378,
+      "high_price": 544
+    },
+    "003490": {
+      "open_price": 24100,
+      "close_price": 23800,
+      "high_price": 24100
+    }
   }
 }

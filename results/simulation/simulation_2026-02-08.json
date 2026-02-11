@@ -1,77 +1,77 @@
 {
   "date": "2026-02-08",
-  "collected_at": "2026-02-08T15:40:00+09:00",
+  "collected_at": "2026-02-11T23:32:40.063245+09:00",
   "categories": {
     "vision": [
       {
         "code": "003620",
         "name": "KG모빌리티",
         "market": "KOSPI",
-        "open_price": 3870,
-        "close_price": 3880,
-        "high_price": 3920,
-        "return_pct": 0.26,
-        "high_return_pct": 1.29
+        "open_price": null,
+        "close_price": null,
+        "high_price": null,
+        "return_pct": null,
+        "high_return_pct": null
       },
       {
         "code": "009190",
         "name": "대양금속",
         "market": "KOSPI",
-        "open_price": 1210,
-        "close_price": 1200,
-        "high_price": 1220,
-        "return_pct": -0.83,
-        "high_return_pct": 0.83
+        "open_price": null,
+        "close_price": null,
+        "high_price": null,
+        "return_pct": null,
+        "high_return_pct": null
       },
       {
         "code": "225190",
         "name": "LK삼양",
         "market": "KOSDAQ",
-        "open_price": 2540,
-        "close_price": 2550,
-        "high_price": 2570,
-        "return_pct": 0.39,
-        "high_return_pct": 1.18
+        "open_price": null,
+        "close_price": null,
+        "high_price": null,
+        "return_pct": null,
+        "high_return_pct": null
       },
       {
         "code": "033340",
         "name": "좋은사람들",
         "market": "KOSDAQ",
-        "open_price": 1890,
-        "close_price": 1970,
-        "high_price": 2000,
-        "return_pct": 4.23,
-        "high_return_pct": 5.82
+        "open_price": null,
+        "close_price": null,
+        "high_price": null,
+        "return_pct": null,
+        "high_return_pct": null
       },
       {
         "code": "038500",
         "name": "삼표시멘트",
         "market": "KOSDAQ",
-        "open_price": 20080,
-        "close_price": 20360,
-        "high_price": 20390,
-        "return_pct": 1.39,
-        "high_return_pct": 1.54
+        "open_price": null,
+        "close_price": null,
+        "high_price": null,
+        "return_pct": null,
+        "high_return_pct": null
       },
       {
         "code": "065170",
         "name": "비엘팜텍",
         "market": "KOSDAQ",
-        "open_price": 5150,
-        "close_price": 5340,
-        "high_price": 5500,
-        "return_pct": 3.69,
-        "high_return_pct": 6.8
+        "open_price": null,
+        "close_price": null,
+        "high_price": null,
+        "return_pct": null,
+        "high_return_pct": null
       },
       {
         "code": "047770",
         "name": "코데즈컴바인",
         "market": "KOSDAQ",
-        "open_price": 4070,
-        "close_price": 4220,
-        "high_price": 4240,
-        "return_pct": 3.69,
-        "high_return_pct": 4.18
+        "open_price": null,
+        "close_price": null,
+        "high_price": null,
+        "return_pct": null,
+        "high_return_pct": null
       }
     ],
     "kis": [
@@ -79,221 +79,221 @@
         "code": "033340",
         "name": "좋은사람들",
         "market": "KOSDAQ",
-        "open_price": 1910,
-        "close_price": 1890,
-        "high_price": 1930,
-        "return_pct": -1.05,
-        "high_return_pct": 1.05
+        "open_price": null,
+        "close_price": null,
+        "high_price": null,
+        "return_pct": null,
+        "high_return_pct": null
       },
       {
         "code": "014990",
         "name": "인디에프",
         "market": "KOSPI",
-        "open_price": 810,
-        "close_price": 810,
-        "high_price": 830,
-        "return_pct": 0.0,
-        "high_return_pct": 2.47
+        "open_price": null,
+        "close_price": null,
+        "high_price": null,
+        "return_pct": null,
+        "high_return_pct": null
       },
       {
         "code": "019570",
         "name": "플루토스",
         "market": "KOSDAQ",
-        "open_price": 330,
-        "close_price": 340,
-        "high_price": 340,
-        "return_pct": 3.03,
-        "high_return_pct": 3.03
+        "open_price": null,
+        "close_price": null,
+        "high_price": null,
+        "return_pct": null,
+        "high_return_pct": null
       },
       {
         "code": "054300",
         "name": "팬스타엔터프라이즈",
         "market": "KOSDAQ",
-        "open_price": 730,
-        "close_price": 760,
-        "high_price": 780,
-        "return_pct": 4.11,
-        "high_return_pct": 6.85
+        "open_price": null,
+        "close_price": null,
+        "high_price": null,
+        "return_pct": null,
+        "high_return_pct": null
       },
       {
         "code": "021880",
         "name": "메이슨캐피탈",
         "market": "KOSDAQ",
-        "open_price": 280,
-        "close_price": 290,
-        "high_price": 290,
-        "return_pct": 3.57,
-        "high_return_pct": 3.57
+        "open_price": null,
+        "close_price": null,
+        "high_price": null,
+        "return_pct": null,
+        "high_return_pct": null
       },
       {
         "code": "417010",
         "name": "나노팀",
         "market": "KOSDAQ",
-        "open_price": 12290,
-        "close_price": 12870,
-        "high_price": 13090,
-        "return_pct": 4.72,
-        "high_return_pct": 6.51
+        "open_price": null,
+        "close_price": null,
+        "high_price": null,
+        "return_pct": null,
+        "high_return_pct": null
       },
       {
         "code": "002140",
         "name": "고려산업",
         "market": "KOSPI",
-        "open_price": 2520,
-        "close_price": 2600,
-        "high_price": 2600,
-        "return_pct": 3.17,
-        "high_return_pct": 3.17
+        "open_price": null,
+        "close_price": null,
+        "high_price": null,
+        "return_pct": null,
+        "high_return_pct": null
       },
       {
         "code": "050890",
         "name": "쏠리드",
         "market": "KOSDAQ",
-        "open_price": 9430,
-        "close_price": 9530,
-        "high_price": 9770,
-        "return_pct": 1.06,
-        "high_return_pct": 3.61
+        "open_price": null,
+        "close_price": null,
+        "high_price": null,
+        "return_pct": null,
+        "high_return_pct": null
       },
       {
         "code": "009830",
         "name": "한화솔루션",
         "market": "KOSPI",
-        "open_price": 41140,
-        "close_price": 43070,
-        "high_price": 43170,
-        "return_pct": 4.69,
-        "high_return_pct": 4.93
+        "open_price": null,
+        "close_price": null,
+        "high_price": null,
+        "return_pct": null,
+        "high_return_pct": null
       },
       {
         "code": "001550",
         "name": "조비",
         "market": "KOSPI",
-        "open_price": 13160,
-        "close_price": 13390,
-        "high_price": 13660,
-        "return_pct": 1.75,
-        "high_return_pct": 3.8
+        "open_price": null,
+        "close_price": null,
+        "high_price": null,
+        "return_pct": null,
+        "high_return_pct": null
       },
       {
         "code": "007110",
         "name": "일신석재",
         "market": "KOSPI",
-        "open_price": 1780,
-        "close_price": 1740,
-        "high_price": 1830,
-        "return_pct": -2.25,
-        "high_return_pct": 2.81
+        "open_price": null,
+        "close_price": null,
+        "high_price": null,
+        "return_pct": null,
+        "high_return_pct": null
       },
       {
         "code": "347700",
         "name": "스피어",
         "market": "KOSDAQ",
-        "open_price": 36780,
-        "close_price": 37430,
-        "high_price": 38130,
-        "return_pct": 1.77,
-        "high_return_pct": 3.67
+        "open_price": null,
+        "close_price": null,
+        "high_price": null,
+        "return_pct": null,
+        "high_return_pct": null
       },
       {
         "code": "225190",
         "name": "LK삼양",
         "market": "KOSDAQ",
-        "open_price": 2530,
-        "close_price": 2570,
-        "high_price": 2610,
-        "return_pct": 1.58,
-        "high_return_pct": 3.16
+        "open_price": null,
+        "close_price": null,
+        "high_price": null,
+        "return_pct": null,
+        "high_return_pct": null
       },
       {
         "code": "047770",
         "name": "코데즈컴바인",
         "market": "KOSDAQ",
-        "open_price": 4070,
-        "close_price": 4010,
-        "high_price": 4160,
-        "return_pct": -1.47,
-        "high_return_pct": 2.21
+        "open_price": null,
+        "close_price": null,
+        "high_price": null,
+        "return_pct": null,
+        "high_return_pct": null
       },
       {
         "code": "004060",
         "name": "SG세계물산",
         "market": "KOSPI",
-        "open_price": 480,
-        "close_price": 480,
-        "high_price": 490,
-        "return_pct": 0.0,
-        "high_return_pct": 2.08
+        "open_price": null,
+        "close_price": null,
+        "high_price": null,
+        "return_pct": null,
+        "high_return_pct": null
       },
       {
         "code": "030960",
         "name": "양지사",
         "market": "KOSDAQ",
-        "open_price": 8450,
-        "close_price": 8410,
-        "high_price": 8640,
-        "return_pct": -0.47,
-        "high_return_pct": 2.25
+        "open_price": null,
+        "close_price": null,
+        "high_price": null,
+        "return_pct": null,
+        "high_return_pct": null
       },
       {
         "code": "263050",
         "name": "유틸렉스",
         "market": "KOSDAQ",
-        "open_price": 930,
-        "close_price": 940,
-        "high_price": 970,
-        "return_pct": 1.08,
-        "high_return_pct": 4.3
+        "open_price": null,
+        "close_price": null,
+        "high_price": null,
+        "return_pct": null,
+        "high_return_pct": null
       },
       {
         "code": "009190",
         "name": "대양금속",
         "market": "KOSPI",
-        "open_price": 1410,
-        "close_price": 1380,
-        "high_price": 1420,
-        "return_pct": -2.13,
-        "high_return_pct": 0.71
+        "open_price": null,
+        "close_price": null,
+        "high_price": null,
+        "return_pct": null,
+        "high_return_pct": null
       },
       {
         "code": "045390",
         "name": "대아티아이",
         "market": "KOSDAQ",
-        "open_price": 4590,
-        "close_price": 4790,
-        "high_price": 4920,
-        "return_pct": 4.36,
-        "high_return_pct": 7.19
+        "open_price": null,
+        "close_price": null,
+        "high_price": null,
+        "return_pct": null,
+        "high_return_pct": null
       },
       {
         "code": "002100",
         "name": "경농",
         "market": "KOSPI",
-        "open_price": 9850,
-        "close_price": 9850,
-        "high_price": 9900,
-        "return_pct": 0.0,
-        "high_return_pct": 0.51
+        "open_price": null,
+        "close_price": null,
+        "high_price": null,
+        "return_pct": null,
+        "high_return_pct": null
       },
       {
         "code": "011930",
         "name": "신성이엔지",
         "market": "KOSPI",
-        "open_price": 2250,
-        "close_price": 2310,
-        "high_price": 2350,
-        "return_pct": 2.67,
-        "high_return_pct": 4.44
+        "open_price": null,
+        "close_price": null,
+        "high_price": null,
+        "return_pct": null,
+        "high_return_pct": null
       },
       {
         "code": "038500",
         "name": "삼표시멘트",
         "market": "KOSDAQ",
-        "open_price": 20220,
-        "close_price": 20670,
-        "high_price": 20670,
-        "return_pct": 2.23,
-        "high_return_pct": 2.23
+        "open_price": null,
+        "close_price": null,
+        "high_price": null,
+        "return_pct": null,
+        "high_return_pct": null
       }
     ],
     "combined": [
@@ -301,52 +301,53 @@
         "code": "009190",
         "name": "대양금속",
         "market": "KOSPI",
-        "open_price": 1400,
-        "close_price": 1390,
-        "high_price": 1430,
-        "return_pct": -0.71,
-        "high_return_pct": 2.14
+        "open_price": null,
+        "close_price": null,
+        "high_price": null,
+        "return_pct": null,
+        "high_return_pct": null
       },
       {
         "code": "225190",
         "name": "LK삼양",
         "market": "KOSPI",
-        "open_price": 2610,
-        "close_price": 2560,
-        "high_price": 2620,
-        "return_pct": -1.92,
-        "high_return_pct": 0.38
+        "open_price": null,
+        "close_price": null,
+        "high_price": null,
+        "return_pct": null,
+        "high_return_pct": null
       },
       {
         "code": "033340",
         "name": "좋은사람들",
         "market": "KOSPI",
-        "open_price": 1870,
-        "close_price": 1900,
-        "high_price": 1920,
-        "return_pct": 1.6,
-        "high_return_pct": 2.67
+        "open_price": null,
+        "close_price": null,
+        "high_price": null,
+        "return_pct": null,
+        "high_return_pct": null
       },
       {
         "code": "038500",
         "name": "삼표시멘트",
         "market": "KOSPI",
-        "open_price": 19770,
-        "close_price": 20310,
-        "high_price": 20430,
-        "return_pct": 2.73,
-        "high_return_pct": 3.34
+        "open_price": null,
+        "close_price": null,
+        "high_price": null,
+        "return_pct": null,
+        "high_return_pct": null
       },
       {
         "code": "047770",
         "name": "코데즈컴바인",
         "market": "KOSPI",
-        "open_price": 4000,
-        "close_price": 3960,
-        "high_price": 4060,
-        "return_pct": -1.0,
-        "high_return_pct": 1.5
+        "open_price": null,
+        "close_price": null,
+        "high_price": null,
+        "return_pct": null,
+        "high_return_pct": null
       }
     ]
-  }
+  },
+  "all_prices": {}
 }

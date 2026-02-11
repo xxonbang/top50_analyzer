@@ -1,48 +1,51 @@
 {
   "date": "2026-02-01",
-  "collected_at": "2026-02-01T15:40:00+09:00",
+  "collected_at": "2026-02-11T23:30:08.657966+09:00",
   "categories": {
     "vision": [
       {
         "code": "001510",
         "name": "SK증권",
-        "market": "KOSPI",
-        "open_price": 980,
-        "close_price": 990,
-        "high_price": 1000,
-        "return_pct": 1.02,
-        "high_return_pct": 2.04
+        "market": "",
+        "open_price": null,
+        "close_price": null,
+        "high_price": null,
+        "return_pct": null,
+        "high_return_pct": null
       },
       {
         "code": "012030",
         "name": "DB",
-        "market": "KOSPI",
-        "open_price": 1790,
-        "close_price": 1760,
-        "high_price": 1800,
-        "return_pct": -1.68,
-        "high_return_pct": 0.56
+        "market": "",
+        "open_price": null,
+        "close_price": null,
+        "high_price": null,
+        "return_pct": null,
+        "high_return_pct": null
       },
       {
         "code": "009070",
         "name": "KCTC",
-        "market": "KOSPI",
-        "open_price": 6610,
-        "close_price": 6420,
-        "high_price": 6720,
-        "return_pct": -2.87,
-        "high_return_pct": 1.66
+        "market": "",
+        "open_price": null,
+        "close_price": null,
+        "high_price": null,
+        "return_pct": null,
+        "high_return_pct": null
       },
       {
         "code": "001740",
         "name": "SK네트웍스",
-        "market": "KOSPI",
-        "open_price": 5520,
-        "close_price": 5780,
-        "high_price": 5880,
-        "return_pct": 4.71,
-        "high_return_pct": 6.52
+        "market": "",
+        "open_price": null,
+        "close_price": null,
+        "high_price": null,
+        "return_pct": null,
+        "high_return_pct": null
       }
-    ]
-  }
+    ],
+    "kis": [],
+    "combined": []
+  },
+  "all_prices": {}
 }

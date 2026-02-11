@@ -1,138 +1,141 @@
 {
   "date": "2026-01-31",
-  "collected_at": "2026-01-31T15:40:00+09:00",
+  "collected_at": "2026-02-11T23:29:55.748865+09:00",
   "categories": {
     "vision": [
       {
         "code": "001440",
         "name": "대한전선",
-        "market": "KOSPI",
-        "open_price": 29750,
-        "close_price": 29160,
-        "high_price": 30530,
-        "return_pct": -1.98,
-        "high_return_pct": 2.62
+        "market": "",
+        "open_price": null,
+        "close_price": null,
+        "high_price": null,
+        "return_pct": null,
+        "high_return_pct": null
       },
       {
         "code": "012030",
         "name": "DB",
-        "market": "KOSPI",
-        "open_price": 1830,
-        "close_price": 1900,
-        "high_price": 1930,
-        "return_pct": 3.83,
-        "high_return_pct": 5.46
+        "market": "",
+        "open_price": null,
+        "close_price": null,
+        "high_price": null,
+        "return_pct": null,
+        "high_return_pct": null
       },
       {
         "code": "006805",
         "name": "미래에셋증권우",
-        "market": "KOSPI",
-        "open_price": 19450,
-        "close_price": 19550,
-        "high_price": 19660,
-        "return_pct": 0.51,
-        "high_return_pct": 1.08
+        "market": "",
+        "open_price": null,
+        "close_price": null,
+        "high_price": null,
+        "return_pct": null,
+        "high_return_pct": null
       },
       {
         "code": "00680K",
         "name": "미래에셋증권2우B",
-        "market": "KOSPI",
-        "open_price": 15570,
-        "close_price": 16280,
-        "high_price": 16510,
-        "return_pct": 4.56,
-        "high_return_pct": 6.04
+        "market": "",
+        "open_price": null,
+        "close_price": null,
+        "high_price": null,
+        "return_pct": null,
+        "high_return_pct": null
       },
       {
         "code": "187660",
         "name": "현대ADM",
-        "market": "KOSPI",
-        "open_price": 3450,
-        "close_price": 3460,
-        "high_price": 3470,
-        "return_pct": 0.29,
-        "high_return_pct": 0.58
+        "market": "",
+        "open_price": null,
+        "close_price": null,
+        "high_price": null,
+        "return_pct": null,
+        "high_return_pct": null
       },
       {
         "code": "215600",
         "name": "신라젠",
-        "market": "KOSPI",
-        "open_price": 4500,
-        "close_price": 4380,
-        "high_price": 4520,
-        "return_pct": -2.67,
-        "high_return_pct": 0.44
+        "market": "",
+        "open_price": null,
+        "close_price": null,
+        "high_price": null,
+        "return_pct": null,
+        "high_return_pct": null
       },
       {
         "code": "080220",
         "name": "제주반도체",
-        "market": "KOSPI",
-        "open_price": 43460,
-        "close_price": 43210,
-        "high_price": 44760,
-        "return_pct": -0.58,
-        "high_return_pct": 2.99
+        "market": "",
+        "open_price": null,
+        "close_price": null,
+        "high_price": null,
+        "return_pct": null,
+        "high_return_pct": null
       },
       {
         "code": "012210",
         "name": "삼미금속",
-        "market": "KOSPI",
-        "open_price": 13530,
-        "close_price": 13950,
-        "high_price": 14200,
-        "return_pct": 3.1,
-        "high_return_pct": 4.95
+        "market": "",
+        "open_price": null,
+        "close_price": null,
+        "high_price": null,
+        "return_pct": null,
+        "high_return_pct": null
       },
       {
         "code": "003380",
         "name": "하림지주",
-        "market": "KOSPI",
-        "open_price": 14670,
-        "close_price": 14490,
-        "high_price": 14900,
-        "return_pct": -1.23,
-        "high_return_pct": 1.57
+        "market": "",
+        "open_price": null,
+        "close_price": null,
+        "high_price": null,
+        "return_pct": null,
+        "high_return_pct": null
       },
       {
         "code": "396300",
         "name": "세아메카닉스",
-        "market": "KOSPI",
-        "open_price": 4520,
-        "close_price": 4540,
-        "high_price": 4660,
-        "return_pct": 0.44,
-        "high_return_pct": 3.1
+        "market": "",
+        "open_price": null,
+        "close_price": null,
+        "high_price": null,
+        "return_pct": null,
+        "high_return_pct": null
       },
       {
         "code": "115610",
         "name": "이미지스",
-        "market": "KOSPI",
-        "open_price": 1780,
-        "close_price": 1770,
-        "high_price": 1810,
-        "return_pct": -0.56,
-        "high_return_pct": 1.69
+        "market": "",
+        "open_price": null,
+        "close_price": null,
+        "high_price": null,
+        "return_pct": null,
+        "high_return_pct": null
       },
       {
         "code": "466910",
         "name": "엔에이치스팩30호",
-        "market": "KOSPI",
-        "open_price": 3720,
-        "close_price": 3830,
-        "high_price": 3940,
-        "return_pct": 2.96,
-        "high_return_pct": 5.91
+        "market": "",
+        "open_price": null,
+        "close_price": null,
+        "high_price": null,
+        "return_pct": null,
+        "high_return_pct": null
       },
       {
         "code": "060720",
         "name": "KH바텍",
-        "market": "KOSPI",
-        "open_price": 18780,
-        "close_price": 18530,
-        "high_price": 19150,
-        "return_pct": -1.33,
-        "high_return_pct": 1.97
+        "market": "",
+        "open_price": null,
+        "close_price": null,
+        "high_price": null,
+        "return_pct": null,
+        "high_return_pct": null
       }
-    ]
-  }
+    ],
+    "kis": [],
+    "combined": []
+  },
+  "all_prices": {}
 }
