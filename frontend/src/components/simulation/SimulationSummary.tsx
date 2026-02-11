@@ -1,4 +1,5 @@
 import { useMemo } from 'react';
+import { useQueryClient } from '@tanstack/react-query';
 import type { SimulationData, SimulationCategory } from '@/services/types';
 import { ReturnDisplay } from './ReturnDisplay';
 import { useSimulationStore, stockKey } from '@/store/simulationStore';
@@ -21,6 +22,25 @@ const CATEGORY_ICONS: Record<SimulationCategory, string> = {
 
 export function SimulationSummary({ dataByDate }: SimulationSummaryProps) {
   const { selectedDates, activeCategories, excludedStocks, simulationMode } = useSimulationStore();
+  const queryClient = useQueryClient();
+
+  // 오늘 날짜의 마지막 수집 시각
+  const latestCollectedAt = useMemo(() => {
+    const now = new Date();
+    const todayStr = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
+    const todayData = dataByDate[todayStr];
+    if (!todayData?.collected_at) return null;
+    try {
+      const d = new Date(todayData.collected_at);
+      return `${String(d.getHours()).padStart(2, '0')}:${String(d.getMinutes()).padStart(2, '0')}`;
+    } catch {
+      return null;
+    }
+  }, [dataByDate]);
+
+  const handleRefresh = () => {
+    queryClient.invalidateQueries({ queryKey: ['simulation'] });
+  };
 
   const stats = useMemo(() => {
     let totalInvested = 0;
@@ -91,11 +111,28 @@ export function SimulationSummary({ dataByDate }: SimulationSummaryProps) {
       <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-3 mb-4 md:mb-5">
         <div className="flex items-center justify-between md:block">
           <div>
-            <h3 className="text-base font-semibold text-text-primary">종합 수익률</h3>
+            <div className="flex items-center gap-2">
+              <h3 className="text-base font-semibold text-text-primary">종합 수익률</h3>
+              <button
+                onClick={handleRefresh}
+                className="text-text-muted hover:text-accent-primary transition-colors p-1 -m-1"
+                title="데이터 새로고침"
+              >
+                <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                </svg>
+              </button>
+            </div>
             <div className="flex items-center gap-2 text-xs md:text-sm text-text-muted mt-0.5">
               <span>{stats.selectedDays}일</span>
               <span className="text-border">|</span>
               <span>{stats.pricedStocks}/{stats.totalStocks}종목</span>
+              {latestCollectedAt && (
+                <>
+                  <span className="text-border">|</span>
+                  <span>{latestCollectedAt} 수집</span>
+                </>
+              )}
             </div>
           </div>
           {/* 모바일에서 수익률을 헤더 옆에 표시 */}

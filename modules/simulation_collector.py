@@ -161,6 +161,106 @@ class SimulationCollector:
             print(f"[Simulation] 일봉 조회 에러 ({stock_code}, {target_date}): {e}")
             return None
 
+    def _get_earliest_today_stocks(self, today_str: str) -> dict[str, list[dict]]:
+        """당일 가장 빠른 시간의 분석 히스토리에서 적극매수 종목 추출
+
+        Args:
+            today_str: "YYYY-MM-DD" 형식
+
+        Returns:
+            카테고리별 적극매수 종목 딕셔너리. 히스토리가 없으면 *_analysis.json fallback.
+        """
+        categories: dict[str, list[dict]] = {"vision": [], "kis": [], "combined": []}
+        any_found = False
+
+        # --- Vision ---
+        vision_index = self._load_json(self.RESULTS_DIR / "vision" / "history_index.json")
+        if vision_index:
+            today_items = [
+                h for h in vision_index.get("history", [])
+                if h.get("date") == today_str
+            ]
+            today_items.sort(key=lambda x: x.get("time", "9999"))
+            if today_items:
+                earliest = today_items[0]
+                print(f"[Simulation] Vision 최초 분석: {earliest['filename']}")
+                data = self._load_json(
+                    self.RESULTS_DIR / "vision" / "history" / earliest["filename"]
+                )
+                if data:
+                    any_found = True
+                    for stock in data.get("results", []):
+                        if stock.get("signal") == "적극매수":
+                            market = stock.get("market", "")
+                            if market in ("코스피", "KOSPI"):
+                                market = "KOSPI"
+                            elif market in ("코스닥", "KOSDAQ"):
+                                market = "KOSDAQ"
+                            categories["vision"].append({
+                                "code": stock["code"],
+                                "name": stock["name"],
+                                "market": market,
+                            })
+
+        # --- KIS ---
+        kis_index = self._load_json(self.RESULTS_DIR / "kis" / "history_index.json")
+        if kis_index:
+            today_items = [
+                h for h in kis_index.get("history", [])
+                if h.get("date") == today_str
+            ]
+            today_items.sort(key=lambda x: x.get("time", "9999"))
+            if today_items:
+                earliest = today_items[0]
+                print(f"[Simulation] KIS 최초 분석: {earliest['filename']}")
+                data = self._load_json(
+                    self.RESULTS_DIR / "kis" / "history" / earliest["filename"]
+                )
+                if data:
+                    any_found = True
+                    for stock in data.get("results", []):
+                        if stock.get("signal") == "적극매수":
+                            categories["kis"].append({
+                                "code": stock["code"],
+                                "name": stock["name"],
+                                "market": stock.get("market", ""),
+                            })
+
+        # --- Combined ---
+        combined_index = self._load_json(self.RESULTS_DIR / "combined" / "history_index.json")
+        if combined_index:
+            today_items = [
+                h for h in combined_index.get("history", [])
+                if h.get("date") == today_str
+            ]
+            today_items.sort(key=lambda x: x.get("time", "9999"))
+            if today_items:
+                earliest = today_items[0]
+                print(f"[Simulation] Combined 최초 분석: {earliest['filename']}")
+                data = self._load_json(
+                    self.RESULTS_DIR / "combined" / "history" / earliest["filename"]
+                )
+                if data:
+                    any_found = True
+                    for stock in data.get("stocks", []):
+                        if (stock.get("match_status") == "match"
+                                and stock.get("vision_signal") == "적극매수"):
+                            categories["combined"].append({
+                                "code": stock["code"],
+                                "name": stock["name"],
+                                "market": stock.get("market", ""),
+                            })
+
+        # fallback: 히스토리에 당일 항목이 없으면 기존 *_analysis.json 사용
+        if not any_found:
+            print("[Simulation] 당일 히스토리 없음 → *_analysis.json fallback")
+            return self.get_strong_buy_stocks()
+
+        for cat, stocks in categories.items():
+            print(f"[Simulation] {cat} 적극매수 (최초 분석 기준): {len(stocks)}개")
+
+        return categories
+
     def collect_today(self) -> dict:
         """오늘의 시뮬레이션 데이터 수집"""
         import pytz
@@ -172,7 +272,7 @@ class SimulationCollector:
         print(f"\n[Simulation] 당일 수집 시작: {today_str}")
         print("=" * 60)
 
-        categories = self.get_strong_buy_stocks()
+        categories = self._get_earliest_today_stocks(today_str)
 
         # 전체 종목코드 중복 제거 (API 호출 최소화)
         all_codes: dict[str, dict] = {}
