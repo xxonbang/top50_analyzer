@@ -1,0 +1,81 @@
+{
+  "date": "2026-02-12",
+  "collected_at": "2026-02-12T08:00:41.686454+09:00",
+  "categories": {
+    "vision": [
+      {
+        "code": "005380",
+        "name": "현대차",
+        "market": "KOSPI",
+        "open_price": null,
+        "close_price": null,
+        "high_price": null,
+        "return_pct": null,
+        "high_return_pct": null
+      },
+      {
+        "code": "012450",
+        "name": "한화에어로스페이스",
+        "market": "KOSPI",
+        "open_price": null,
+        "close_price": null,
+        "high_price": null,
+        "return_pct": null,
+        "high_return_pct": null
+      },
+      {
+        "code": "000270",
+        "name": "기아",
+        "market": "KOSPI",
+        "open_price": null,
+        "close_price": null,
+        "high_price": null,
+        "return_pct": null,
+        "high_return_pct": null
+      },
+      {
+        "code": "267260",
+        "name": "HD현대일렉트릭",
+        "market": "KOSPI",
+        "open_price": null,
+        "close_price": null,
+        "high_price": null,
+        "return_pct": null,
+        "high_return_pct": null
+      },
+      {
+        "code": "042700",
+        "name": "한미반도체",
+        "market": "KOSPI",
+        "open_price": null,
+        "close_price": null,
+        "high_price": null,
+        "return_pct": null,
+        "high_return_pct": null
+      },
+      {
+        "code": "196170",
+        "name": "알테오젠",
+        "market": "KOSDAQ",
+        "open_price": null,
+        "close_price": null,
+        "high_price": null,
+        "return_pct": null,
+        "high_return_pct": null
+      },
+      {
+        "code": "221800",
+        "name": "유투바이오",
+        "market": "KOSDAQ",
+        "open_price": null,
+        "close_price": null,
+        "high_price": null,
+        "return_pct": null,
+        "high_return_pct": null
+      }
+    ],
+    "kis": [],
+    "combined": []
+  },
+  "all_prices": {}
+}
