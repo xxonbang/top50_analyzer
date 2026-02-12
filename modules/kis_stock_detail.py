@@ -23,7 +23,7 @@ def safe_int(value, default: int = 0) -> int:
     if value is None or value == "":
         return default
     try:
-        return int(value)
+        return int(float(value))
     except (ValueError, TypeError):
         return default
 
@@ -408,13 +408,14 @@ class KISStockDetailAPI:
         }
 
     def get_financial_info(self, stock_code: str) -> Dict[str, Any]:
-        """재무정보 조회
+        """재무비율 + 손익계산서 통합 조회
 
         Returns:
-            매출액, 영업이익, 순이익, 자산, 부채 등 재무제표 정보
+            ROE, 부채비율, EPS, BPS, 매출액, 영업이익, 당기순이익 등
         """
-        path = "/uapi/domestic-stock/v1/finance/financial-ratio"
-        tr_id = "FHKST66430100"
+        # --- (A) 재무비율 API ---
+        ratio_path = "/uapi/domestic-stock/v1/finance/financial-ratio"
+        ratio_tr_id = "FHKST66430300"
 
         params = {
             "FID_DIV_CLS_CODE": "0",
@@ -422,25 +423,47 @@ class KISStockDetailAPI:
             "fid_input_iscd": stock_code,
         }
 
-        result = self.client.request("GET", path, tr_id, params=params)
+        ratio_result = self.client.request("GET", ratio_path, ratio_tr_id, params=params)
+        ratio_output = []
+        if ratio_result.get("rt_cd") == "0":
+            ratio_output = ratio_result.get("output", [])
 
-        if result.get("rt_cd") != "0":
-            return {"error": result.get("msg1", "Unknown error")}
+        # --- (B) 손익계산서 API ---
+        time.sleep(0.05)
+        income_path = "/uapi/domestic-stock/v1/finance/income-statement"
+        income_tr_id = "FHKST66430200"
 
-        output = result.get("output", [])
+        income_result = self.client.request("GET", income_path, income_tr_id, params=params)
+        income_output = []
+        if income_result.get("rt_cd") == "0":
+            income_output = income_result.get("output", [])
 
-        # 연도별 재무 데이터
+        # --- (C) 연도(stac_yymm) 기준으로 병합 ---
+        # 손익계산서를 연도 맵으로 변환
+        income_map = {}
+        for item in income_output[:5]:
+            year = item.get("stac_yymm", "")
+            if year:
+                income_map[year] = item
+
         yearly_data = []
-        for item in output[:5]:  # 최근 5년
+        for item in ratio_output[:5]:
+            year = item.get("stac_yymm", "")
+            inc = income_map.get(year, {})
+
             yearly_data.append({
-                "year": item.get("stac_yymm", ""),                    # 결산년월
-                "sales": safe_int(item.get("sale_account", 0) or 0),       # 매출액
-                "operating_profit": safe_int(item.get("bsop_prti", 0) or 0),  # 영업이익
-                "net_income": safe_int(item.get("thtr_ntin", 0) or 0),     # 당기순이익
-                "roe": safe_float(item.get("roe_val", 0) or 0),            # ROE
-                "eps": safe_float(item.get("eps", 0) or 0),                # EPS
-                "bps": safe_float(item.get("bps", 0) or 0),                # BPS
-                "debt_ratio": safe_float(item.get("lblt_rate", 0) or 0),   # 부채비율
+                "year": year,                                                    # 결산년월
+                # 재무비율 API
+                "roe": safe_float(item.get("roe_val", 0) or 0),                 # ROE
+                "eps": safe_float(item.get("eps", 0) or 0),                     # EPS
+                "bps": safe_float(item.get("bps", 0) or 0),                     # BPS
+                "debt_ratio": safe_float(item.get("lblt_rate", 0) or 0),        # 부채비율
+                "sales_growth": safe_float(item.get("grs", 0) or 0),            # 매출액 증가율
+                "op_profit_growth": safe_float(item.get("bsop_prfi_inrt", 0) or 0),  # 영업이익 증가율
+                # 손익계산서 API
+                "sales": safe_int(inc.get("sale_account", 0) or 0),              # 매출액
+                "operating_profit": safe_int(inc.get("bsop_prti", 0) or 0),      # 영업이익
+                "net_income": safe_int(inc.get("thtr_ntin", 0) or 0),            # 당기순이익
             })
 
         return {

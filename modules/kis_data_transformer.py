@@ -142,6 +142,7 @@ class KISDataTransformer:
         investor_trend_estimate = details.get("investor_trend_estimate", {})
         daily_chart = details.get("daily_chart", {})
         foreign_inst = details.get("foreign_institution_summary", {})
+        financial_info = details.get("financial_info", {})
 
         # 종목명: ranking_info에서 가져오거나 daily_chart에서 가져옴
         stock_name = ""
@@ -213,6 +214,21 @@ class KISDataTransformer:
             # === 일봉 차트 (최근 20일) ===
             "price_history": self._transform_daily_chart(daily_chart),
         }
+
+        # === 펀더멘탈 (유효한 데이터가 있을 때만) ===
+        fundamental = self._transform_financial_info(financial_info)
+        if fundamental:
+            stock_data["fundamental"] = fundamental
+
+            # PEG 계산: PER / EPS 성장률
+            per = current_price.get("per")
+            eps_growth = fundamental.get("eps_growth_rate")
+            if per and eps_growth and eps_growth > 0:
+                stock_data["valuation"]["peg"] = round(per / eps_growth, 2)
+            else:
+                stock_data["valuation"]["peg"] = None
+        else:
+            stock_data["valuation"]["peg"] = None
 
         return stock_data
 
@@ -330,14 +346,132 @@ class KISDataTransformer:
             "description": "양수=순매수, 음수=순매도. 5일/20일 누적 합계",
         }
 
+    @staticmethod
+    def _calculate_rsi(close_prices: list, period: int = 14) -> Optional[float]:
+        """Wilder's smoothed RSI 계산
+
+        Args:
+            close_prices: 시간순(오래된→최근) close 가격 리스트
+            period: RSI 기간 (기본 14)
+
+        Returns:
+            RSI 값 (0~100) 또는 데이터 부족 시 None
+        """
+        if not close_prices or len(close_prices) < period + 1:
+            return None
+
+        # 가격 변동 계산
+        deltas = [close_prices[i] - close_prices[i - 1] for i in range(1, len(close_prices))]
+
+        # 초기 평균 (첫 period개)
+        gains = [d if d > 0 else 0 for d in deltas[:period]]
+        losses = [-d if d < 0 else 0 for d in deltas[:period]]
+
+        avg_gain = sum(gains) / period
+        avg_loss = sum(losses) / period
+
+        # Wilder's smoothing (나머지 구간)
+        for d in deltas[period:]:
+            gain = d if d > 0 else 0
+            loss = -d if d < 0 else 0
+            avg_gain = (avg_gain * (period - 1) + gain) / period
+            avg_loss = (avg_loss * (period - 1) + loss) / period
+
+        if avg_loss == 0:
+            return 100.0
+
+        rs = avg_gain / avg_loss
+        rsi = 100 - (100 / (1 + rs))
+        return round(rsi, 2)
+
+    def _transform_financial_info(self, financial_info: Dict[str, Any]) -> Optional[Dict[str, Any]]:
+        """재무정보를 펀더멘탈 데이터로 변환
+
+        Args:
+            financial_info: get_financial_info() 결과 (재무비율 + 손익계산서 병합)
+
+        Returns:
+            펀더멘탈 딕셔너리 또는 데이터 없으면 None
+        """
+        if not financial_info or financial_info.get("error"):
+            return None
+
+        financial_data = financial_info.get("financial_data", [])
+        if not financial_data:
+            return None
+
+        # 유효한(non-zero) 최신 연도 탐색 — 재무비율 또는 손익계산서 데이터 존재
+        latest = None
+        for item in financial_data:
+            roe = item.get("roe", 0)
+            eps = item.get("eps", 0)
+            sales = item.get("sales", 0)
+            if roe != 0 or eps != 0 or sales != 0:
+                latest = item
+                break
+
+        if latest is None:
+            return None
+
+        roe = latest.get("roe", 0)
+        debt_ratio = latest.get("debt_ratio", 0)
+        sales = latest.get("sales", 0)
+        operating_profit = latest.get("operating_profit", 0)
+
+        # OPM (영업이익률) 계산 — 손익계산서 데이터 사용
+        opm = round(operating_profit / sales * 100, 2) if sales != 0 else None
+
+        # EPS 성장률 (YoY) 계산 — 최신과 그 다음 유효 연도 비교
+        eps_growth_rate = None
+        if len(financial_data) >= 2:
+            prev = None
+            for item in financial_data[1:]:
+                prev_roe = item.get("roe", 0)
+                prev_eps = item.get("eps", 0)
+                prev_sales = item.get("sales", 0)
+                if prev_roe != 0 or prev_eps != 0 or prev_sales != 0:
+                    prev = item
+                    break
+
+            if prev:
+                curr_eps = latest.get("eps", 0)
+                prev_eps = prev.get("eps", 0)
+                if prev_eps and prev_eps != 0:
+                    eps_growth_rate = round((curr_eps - prev_eps) / abs(prev_eps) * 100, 2)
+
+        # 매출액/영업이익 증가율 — 재무비율 API에서 직접 제공
+        sales_growth = latest.get("sales_growth", 0)
+        op_profit_growth = latest.get("op_profit_growth", 0)
+
+        result = {
+            "roe": roe if roe != 0 else None,
+            "opm": opm,
+            "debt_ratio": debt_ratio if debt_ratio != 0 else None,
+            "eps_growth_rate": eps_growth_rate,
+            "sales_growth": sales_growth if sales_growth != 0 else None,
+            "op_profit_growth": op_profit_growth if op_profit_growth != 0 else None,
+            "latest_year": latest.get("year", ""),
+        }
+
+        # 모든 값이 None이면 반환하지 않음
+        if all(v is None for k, v in result.items() if k != "latest_year"):
+            return None
+
+        return result
+
     def _transform_daily_chart(self, daily_chart: Dict[str, Any]) -> Dict[str, Any]:
-        """일봉 차트 데이터 변환 (최근 20일)"""
+        """일봉 차트 데이터 변환 (최근 20일 + RSI-14)"""
         if not daily_chart:
             return {}
 
         ohlcv = daily_chart.get("ohlcv", [])
         if not ohlcv:
             return {}
+
+        # RSI 계산: 전체 OHLCV(최대 41일)를 시간순으로 정렬하여 계산
+        # ohlcv는 최신→과거 순이므로 reversed
+        all_closes = [c.get("close", 0) for c in reversed(ohlcv) if c.get("close")]
+        rsi_14 = self._calculate_rsi(all_closes, period=14)
 
         # 최근 20일만 포함
         recent = ohlcv[:20]
@@ -355,6 +489,7 @@ class KISDataTransformer:
                 for c in recent
             ],
             "count": len(recent),
+            "rsi_14": rsi_14,
         }
 
     def save_transformed_data(
