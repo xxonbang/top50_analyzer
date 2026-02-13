@@ -1,17 +1,17 @@
 {
   "date": "2026-02-13",
-  "collected_at": "2026-02-13T08:05:17.675658+09:00",
+  "collected_at": "2026-02-13T15:40:18.373706+09:00",
   "categories": {
     "vision": [
       {
         "code": "032820",
         "name": "우리기술",
         "market": "KOSDAQ",
-        "open_price": null,
-        "close_price": null,
-        "high_price": null,
-        "return_pct": null,
-        "high_return_pct": null
+        "open_price": 13200,
+        "close_price": 12340,
+        "high_price": 13210,
+        "return_pct": -6.52,
+        "high_return_pct": 0.08
       }
     ],
     "kis": [
@@ -19,34 +19,55 @@
         "code": "000890",
         "name": "보해양조",
         "market": "KOSPI",
-        "open_price": null,
-        "close_price": null,
-        "high_price": null,
-        "return_pct": null,
-        "high_return_pct": null
+        "open_price": 506,
+        "close_price": 469,
+        "high_price": 525,
+        "return_pct": -7.31,
+        "high_return_pct": 3.75
       },
       {
         "code": "019570",
         "name": "플루토스",
         "market": "KOSDAQ",
-        "open_price": null,
-        "close_price": null,
-        "high_price": null,
-        "return_pct": null,
-        "high_return_pct": null
+        "open_price": 603,
+        "close_price": 461,
+        "high_price": 628,
+        "return_pct": -23.55,
+        "high_return_pct": 4.15
       },
       {
         "code": "012340",
         "name": "뉴인텍",
         "market": "KOSDAQ",
-        "open_price": null,
-        "close_price": null,
-        "high_price": null,
-        "return_pct": null,
-        "high_return_pct": null
+        "open_price": 686,
+        "close_price": 675,
+        "high_price": 956,
+        "return_pct": -1.6,
+        "high_return_pct": 39.36
       }
     ],
     "combined": []
   },
-  "all_prices": {}
+  "all_prices": {
+    "012340": {
+      "open_price": 686,
+      "close_price": 675,
+      "high_price": 956
+    },
+    "019570": {
+      "open_price": 603,
+      "close_price": 461,
+      "high_price": 628
+    },
+    "000890": {
+      "open_price": 506,
+      "close_price": 469,
+      "high_price": 525
+    },
+    "032820": {
+      "open_price": 13200,
+      "close_price": 12340,
+      "high_price": 13210
+    }
+  }
 }
