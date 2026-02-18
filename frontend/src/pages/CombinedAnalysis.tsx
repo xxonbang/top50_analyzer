@@ -1,12 +1,15 @@
 import { useState, useMemo, memo } from 'react';
 import { useCombinedData, useCombinedHistoryData } from '@/hooks/useCombinedData';
-import type { CombinedStock, CombinedAnalysisData, MarketType, SignalType, MatchStatus } from '@/services/types';
+import type { CombinedStock, CombinedAnalysisData, MarketType, SignalType, MatchStatus, StockCriteria } from '@/services/types';
 import { LoadingSpinner, EmptyState, AnimatedNumber } from '@/components/common';
 import { SignalBadge } from '@/components/signal';
 import { MarketTabs } from '@/components/stock';
 import { NewsAnalysisSection } from '@/components/stock/NewsAnalysisSection';
+import { CriteriaIndicator } from '@/components/stock/CriteriaIndicator';
+import { CriteriaLegend } from '@/components/stock/CriteriaLegend';
 import { NewsSection } from '@/components/news';
 import { useUIStore } from '@/store/uiStore';
+import { useAuthStore } from '@/store/authStore';
 import { cn } from '@/lib/utils';
 
 // 시그널 타입 리스트
@@ -49,7 +52,7 @@ function ConfidenceBar({ score }: { score: number }) {
 }
 
 // 통합 종목 카드 (메모화)
-const CombinedStockCard = memo(function CombinedStockCard({ stock }: { stock: CombinedStock }) {
+const CombinedStockCard = memo(function CombinedStockCard({ stock, criteria, isAdmin }: { stock: CombinedStock; criteria: StockCriteria | null; isAdmin: boolean }) {
   const [isExpanded, setIsExpanded] = useState(false);
   const [isVisionDetailOpen, setIsVisionDetailOpen] = useState(false);
   const [isApiDetailOpen, setIsApiDetailOpen] = useState(false);
@@ -62,7 +65,8 @@ const CombinedStockCard = memo(function CombinedStockCard({ stock }: { stock: Co
       'bg-bg-secondary border rounded-xl p-3 md:p-4',
       stock.match_status === 'match' ? 'border-emerald-300 bg-emerald-50/30' :
       stock.match_status === 'mismatch' ? 'border-red-300 bg-red-50/30' :
-      'border-border'
+      'border-border',
+      isAdmin && criteria?.all_met && 'ring-2 ring-yellow-400/70 animate-shimmer'
     )}>
       {/* 헤더 */}
       <div className="flex justify-between items-start mb-2 md:mb-3">
@@ -91,6 +95,11 @@ const CombinedStockCard = memo(function CombinedStockCard({ stock }: { stock: Co
         </div>
         <MatchStatusBadge status={stock.match_status} />
       </div>
+
+      {/* 기준 인디케이터 (Admin 전용) */}
+      {isAdmin && criteria && (
+        <CriteriaIndicator criteria={criteria} />
+      )}
 
       {/* 시그널 비교 */}
       <div className="grid grid-cols-2 gap-2 md:gap-3 mb-2 md:mb-3">
@@ -301,6 +310,7 @@ export function CombinedAnalysis() {
   const [matchFilters, setMatchFilters] = useState<Set<MatchStatus>>(new Set());
   const [signalFilters, setSignalFilters] = useState<Set<SignalType>>(new Set());
   const { isViewingHistory, viewingHistoryDateTime, isCompactView } = useUIStore();
+  const isAdmin = useAuthStore((s) => s.isAdmin);
 
   // viewingHistoryDateTime: "2026-02-04_0700" → filename: "combined_2026-02-04_0700.json"
   const historyFilename = viewingHistoryDateTime ? `combined_${viewingHistoryDateTime}.json` : null;
@@ -316,6 +326,7 @@ export function CombinedAnalysis() {
   // 실제 사용할 데이터 선택
   const data: CombinedAnalysisData | null | undefined = isViewingHistory ? historyData : latestData;
   const isLoading = isViewingHistory ? isLoadingHistory : isLoadingLatest;
+  const criteriaData = data?.criteria_data ?? null;
 
   // 필터 토글 함수
   const toggleMatchFilter = (status: MatchStatus) => {
@@ -556,6 +567,9 @@ export function CombinedAnalysis() {
         )}
       </div>
 
+      {/* 기준 범례 (Admin 전용) */}
+      <CriteriaLegend isAdmin={isAdmin} hasCriteriaData={!!criteriaData} />
+
       {/* 시장 탭 */}
       <MarketTabs
         active={marketFilter}
@@ -601,7 +615,7 @@ export function CombinedAnalysis() {
           // 일반 보기
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {filteredStocks.map(stock => (
-              <CombinedStockCard key={stock.code} stock={stock} />
+              <CombinedStockCard key={stock.code} stock={stock} criteria={criteriaData?.[stock.code] ?? null} isAdmin={isAdmin} />
             ))}
           </div>
         )

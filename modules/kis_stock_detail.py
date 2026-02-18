@@ -701,7 +701,7 @@ class KISStockDetailAPI:
 
         # 6. 일봉 차트 (선택)
         if include_chart:
-            data["daily_chart"] = self.get_daily_chart(stock_code, period="D", days=60)
+            data["daily_chart"] = self.get_daily_chart(stock_code, period="D", days=200)
             time.sleep(0.1)
 
         # 7. 당일 틱 데이터 (선택)

@@ -357,6 +357,47 @@ jobs:
           "
           echo "kis_success=true" >> $GITHUB_OUTPUT
 
+      - name: Evaluate stock criteria
+        if: steps.kis_collect.outputs.kis_collected == 'true'
+        run: |
+          echo "=== 종목 선정 기준 평가 ==="
+          python -c "
+          import json
+          from pathlib import Path
+          from modules.criteria_evaluator import CriteriaEvaluator
+
+          raw_path = Path('results/kis/kis_latest.json')
+          if not raw_path.exists():
+              print('kis_latest.json 없음. 스킵.')
+              exit(0)
+
+          with open(raw_path, 'r', encoding='utf-8') as f:
+              raw_data = json.load(f)
+
+          evaluator = CriteriaEvaluator(raw_data)
+          criteria_data = evaluator.evaluate_all()
+
+          output_path = Path('results/kis/criteria_data.json')
+          with open(output_path, 'w', encoding='utf-8') as f:
+              json.dump(criteria_data, f, ensure_ascii=False, indent=2)
+
+          # 요약 출력
+          total = len(criteria_data)
+          met_counts = {}
+          all_met_count = 0
+          for code, c in criteria_data.items():
+              if c.get('all_met'):
+                  all_met_count += 1
+              for key in ['high_breakout','momentum_history','resistance_breakout','ma_alignment','supply_demand','program_trading','top30_trading_value']:
+                  if c.get(key, {}).get('met'):
+                      met_counts[key] = met_counts.get(key, 0) + 1
+
+          print(f'기준 평가 완료: {total}개 종목')
+          for key, count in met_counts.items():
+              print(f'  {key}: {count}/{total}')
+          print(f'  ALL MET: {all_met_count}/{total}')
+          "
+
       # KIS 토큰 캐시 저장 (1일 1회 발급 제한 대응)
       - name: Save KIS token cache
         if: always() && steps.check_kis.outputs.has_credentials == 'true' && steps.kis-cache.outputs.cache-hit != 'true'
@@ -492,6 +533,12 @@ jobs:
               with open(kis_gemini_file, 'r', encoding='utf-8') as f:
                   kis_gemini = json.load(f)
 
+          criteria_file = results_dir / 'kis' / 'criteria_data.json'
+          criteria_data = {}
+          if criteria_file.exists():
+              with open(criteria_file, 'r', encoding='utf-8') as f:
+                  criteria_data = json.load(f)
+
           # KIS 분석 결과를 코드별 맵으로
           kis_analysis_map = {}
           for r in kis_analysis.get('results', []):
@@ -602,7 +649,8 @@ jobs:
               'source': {
                   'vision': vision_file.name if vision_file.exists() else None,
                   'kis_analysis': kis_file.name if kis_file.exists() else None,
-              }
+              },
+              'criteria_data': criteria_data if criteria_data else None,
           }
 
           # 최신 파일 저장

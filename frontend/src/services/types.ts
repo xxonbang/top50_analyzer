@@ -155,6 +155,28 @@ export interface KISAnalysisData {
   results: KISAnalysisResult[];
 }
 
+// 기준 평가 결과 (단일)
+export interface CriterionResult {
+  met: boolean;
+  reason?: string | null;
+  is_52w_high?: boolean;
+  had_limit_up?: boolean;
+  had_15pct_rise?: boolean;
+  ma_values?: Record<string, number | null>;
+}
+
+// 종목별 전체 평가 결과
+export interface StockCriteria {
+  high_breakout: CriterionResult;
+  momentum_history: CriterionResult;
+  resistance_breakout: CriterionResult;
+  ma_alignment: CriterionResult;
+  supply_demand: CriterionResult;
+  program_trading: CriterionResult;
+  top30_trading_value: CriterionResult;
+  all_met: boolean;
+}
+
 // Combined 분석 타입
 export type MatchStatus = 'match' | 'partial' | 'mismatch' | 'vision-only' | 'api-only';
 
@@ -217,6 +239,7 @@ export interface CombinedAnalysisData {
     vision: string | null;
     kis_analysis: string | null;
   };
+  criteria_data?: Record<string, StockCriteria> | null;
 }
 
 // 모의투자 시뮬레이션 타입

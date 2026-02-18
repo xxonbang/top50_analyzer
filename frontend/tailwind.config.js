@@ -44,6 +44,15 @@ export default {
         'md': '0 4px 12px rgba(0, 0, 0, 0.08)',
         'lg': '0 10px 25px rgba(0, 0, 0, 0.1)',
       },
+      keyframes: {
+        shimmer: {
+          '0%, 100%': { boxShadow: '0 0 6px 1px rgba(234, 179, 8, 0.25)' },
+          '50%': { boxShadow: '0 0 20px 4px rgba(234, 179, 8, 0.5)' },
+        },
+      },
+      animation: {
+        shimmer: 'shimmer 3s ease-in-out infinite',
+      },
     },
   },
   plugins: [],
