@@ -311,7 +311,10 @@ class KISStockDetailAPI:
         period: str = "D",
         days: int = 60,
     ) -> Dict[str, Any]:
-        """국내주식기간별시세 조회 (일봉/주봉/월봉)
+        """국내주식기간별시세 조회 (일봉/주봉/월봉) — 페이지네이션 지원
+
+        KIS API는 응답을 최대 100건으로 제한하므로,
+        100건 이상이 필요한 경우 날짜 범위를 분할하여 연속 조회한다.
 
         Args:
             stock_code: 종목코드
@@ -327,46 +330,84 @@ class KISStockDetailAPI:
         end_date = datetime.now(KST).strftime("%Y%m%d")
         start_date = (datetime.now(KST) - timedelta(days=days)).strftime("%Y%m%d")
 
-        params = {
-            "FID_COND_MRKT_DIV_CODE": "J",
-            "FID_INPUT_ISCD": stock_code,
-            "FID_INPUT_DATE_1": start_date,
-            "FID_INPUT_DATE_2": end_date,
-            "FID_PERIOD_DIV_CODE": period,
-            "FID_ORG_ADJ_PRC": "0",  # 수정주가 적용
-        }
+        all_ohlcv = []
+        stock_name = ""
+        current_end = end_date
+        max_pages = 5  # 안전 장치: 최대 5회 조회
 
-        result = self.client.request("GET", path, tr_id, params=params)
+        for page in range(max_pages):
+            params = {
+                "FID_COND_MRKT_DIV_CODE": "J",
+                "FID_INPUT_ISCD": stock_code,
+                "FID_INPUT_DATE_1": start_date,
+                "FID_INPUT_DATE_2": current_end,
+                "FID_PERIOD_DIV_CODE": period,
+                "FID_ORG_ADJ_PRC": "0",  # 수정주가 적용
+            }
 
-        if result.get("rt_cd") != "0":
-            return {"error": result.get("msg1", "Unknown error")}
+            # 첫 페이지는 tr_cont 없음, 이후 페이지는 "N"
+            tr_cont = "" if page == 0 else "N"
 
-        output1 = result.get("output1", {})
-        output2 = result.get("output2", [])
+            result, resp_headers = self.client.request_raw(
+                "GET", path, tr_id, params=params, tr_cont=tr_cont,
+            )
 
-        # API가 list를 반환하는 경우 처리
-        if isinstance(output1, list):
-            output1 = output1[0] if output1 else {}
+            if result.get("rt_cd") != "0":
+                if not all_ohlcv:
+                    return {"error": result.get("msg1", "Unknown error")}
+                break
 
-        # OHLCV 데이터 파싱
-        ohlcv = []
-        for item in output2:
-            ohlcv.append({
-                "date": item.get("stck_bsop_date", ""),
-                "open": safe_int(item.get("stck_oprc", 0)),
-                "high": safe_int(item.get("stck_hgpr", 0)),
-                "low": safe_int(item.get("stck_lwpr", 0)),
-                "close": safe_int(item.get("stck_clpr", 0)),
-                "volume": safe_int(item.get("acml_vol", 0)),
-                "trading_value": safe_int(item.get("acml_tr_pbmn", 0)),
-                "change_rate": safe_float(item.get("prdy_ctrt", 0)),
-            })
+            output1 = result.get("output1", {})
+            output2 = result.get("output2", [])
+
+            if isinstance(output1, list):
+                output1 = output1[0] if output1 else {}
+
+            if page == 0:
+                stock_name = output1.get("hts_kor_isnm", "")
+
+            if not output2:
+                break
+
+            for item in output2:
+                all_ohlcv.append({
+                    "date": item.get("stck_bsop_date", ""),
+                    "open": safe_int(item.get("stck_oprc", 0)),
+                    "high": safe_int(item.get("stck_hgpr", 0)),
+                    "low": safe_int(item.get("stck_lwpr", 0)),
+                    "close": safe_int(item.get("stck_clpr", 0)),
+                    "volume": safe_int(item.get("acml_vol", 0)),
+                    "trading_value": safe_int(item.get("acml_tr_pbmn", 0)),
+                    "change_rate": safe_float(item.get("prdy_ctrt", 0)),
+                })
+
+            # 연속 조회 여부 확인: 응답 헤더 tr_cont가 "M"이면 다음 페이지 존재
+            next_cont = resp_headers.get("tr_cont", "").strip()
+            if next_cont not in ("M", "F"):
+                break
+
+            # 다음 페이지: 현재 결과의 마지막 날짜 전날을 새 end_date로 설정
+            last_date = output2[-1].get("stck_bsop_date", "")
+            if not last_date or last_date <= start_date:
+                break
+
+            # 마지막 날짜 하루 전을 end_date로 (중복 방지)
+            try:
+                last_dt = datetime.strptime(last_date, "%Y%m%d")
+                current_end = (last_dt - timedelta(days=1)).strftime("%Y%m%d")
+            except ValueError:
+                break
+
+            if current_end < start_date:
+                break
+
+            time.sleep(0.05)
 
         return {
             "stock_code": stock_code,
-            "stock_name": output1.get("hts_kor_isnm", ""),
+            "stock_name": stock_name,
             "period": period,
-            "ohlcv": ohlcv,
+            "ohlcv": all_ohlcv,
         }
 
     def get_today_ticks(self, stock_code: str) -> Dict[str, Any]:

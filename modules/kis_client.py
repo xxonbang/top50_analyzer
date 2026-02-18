@@ -353,6 +353,56 @@ class KISClient:
                 error_msg = str(e)
             raise Exception(f"API 요청 실패: {error_msg}")
 
+    def request_raw(
+        self,
+        method: str,
+        path: str,
+        tr_id: str,
+        params: Dict[str, Any] = None,
+        body: Dict[str, Any] = None,
+        tr_cont: str = "",
+        _retry: bool = True,
+    ) -> tuple:
+        """API 요청 실행 (응답 헤더 포함 반환)
+
+        Returns:
+            (response_data: dict, response_headers: dict)
+        """
+        url = f"{self.base_url}{path}"
+        headers = self._get_headers(tr_id, tr_cont)
+
+        try:
+            if method.upper() == "GET":
+                response = requests.get(url, headers=headers, params=params)
+            else:
+                response = requests.post(url, headers=headers, json=body)
+
+            if response.status_code == 401 and _retry:
+                self._refresh_token()
+                return self.request_raw(method, path, tr_id, params, body, tr_cont, _retry=False)
+
+            response.raise_for_status()
+            data = response.json()
+
+            if _retry and data.get("rt_cd") != "0":
+                msg = data.get("msg1", "")
+                if "만료" in msg or "token" in msg.lower():
+                    self._refresh_token()
+                    return self.request_raw(method, path, tr_id, params, body, tr_cont, _retry=False)
+
+            return data, dict(response.headers)
+
+        except requests.exceptions.HTTPError as e:
+            try:
+                error_data = response.json()
+                error_msg = error_data.get('msg1', str(e))
+                if _retry and ("만료" in error_msg or "token" in error_msg.lower() or "expired" in error_msg.lower()):
+                    self._refresh_token()
+                    return self.request_raw(method, path, tr_id, params, body, tr_cont, _retry=False)
+            except:
+                error_msg = str(e)
+            raise Exception(f"API 요청 실패: {error_msg}")
+
     def get_token_status(self) -> Dict[str, Any]:
         """현재 토큰 상태 조회"""
         status = {
