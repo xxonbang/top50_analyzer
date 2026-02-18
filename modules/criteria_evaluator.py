@@ -168,7 +168,12 @@ class CriteriaEvaluator:
         current_price: float,
         daily_prices: list[dict],
     ) -> dict:
-        """4. 이동평균선 정배열: 현재가 > MA5 > MA10 > MA20 > MA60 > MA120"""
+        """4. 이동평균선 정배열 (적응형)
+
+        이상적: 현재가 > MA5 > MA10 > MA20 > MA60 > MA120
+        데이터가 부족하면 계산 가능한 MA까지만 검사한다.
+        최소 MA20(20일 데이터)은 있어야 의미 있는 판정이 가능.
+        """
         if not current_price or current_price <= 0:
             return {"met": False, "reason": "현재가 데이터 없음"}
 
@@ -179,41 +184,45 @@ class CriteriaEvaluator:
             if c and c > 0:
                 closes.append(c)
 
+        if len(closes) < 20:
+            return {
+                "met": False,
+                "reason": f"데이터 부족 (최소 20일 필요, 현재 {len(closes)}일)",
+                "ma_values": {},
+            }
+
         def sma(data: list, period: int) -> float | None:
             if len(data) < period:
                 return None
             return sum(data[-period:]) / period
 
-        ma_periods = [5, 10, 20, 60, 120]
+        all_periods = [5, 10, 20, 60, 120]
         ma_values: dict[str, float | None] = {}
-        for p in ma_periods:
+        for p in all_periods:
             ma_values[f"MA{p}"] = sma(closes, p)
 
-        # 데이터 부족 체크
-        if any(v is None for v in ma_values.values()):
-            missing = [k for k, v in ma_values.items() if v is None]
-            return {
-                "met": False,
-                "reason": f"데이터 부족 ({', '.join(missing)} 계산 불가, {len(closes)}일)",
-                "ma_values": {k: round(v, 1) if v else None for k, v in ma_values.items()},
-            }
+        # 계산 가능한 MA만 추출 (순서 유지)
+        available_periods = [p for p in all_periods if ma_values[f"MA{p}"] is not None]
+        ma_display = {f"MA{p}": round(ma_values[f"MA{p}"], 1) for p in available_periods}
 
-        # 정배열 검사: 현재가 > MA5 > MA10 > MA20 > MA60 > MA120
-        vals = [current_price] + [ma_values[f"MA{p}"] for p in ma_periods]
+        # 정배열 검사: 현재가 > MA5 > MA10 > ... (계산 가능한 것까지)
+        vals = [current_price] + [ma_values[f"MA{p}"] for p in available_periods]
         is_aligned = all(vals[i] > vals[i + 1] for i in range(len(vals) - 1))
 
-        ma_display = {k: round(v, 1) for k, v in ma_values.items() if v is not None}
+        checked_label = ">".join(f"MA{p}" for p in available_periods)
+        missing_periods = [p for p in all_periods if ma_values[f"MA{p}"] is None]
+        partial_note = f" (MA{','.join(str(p) for p in missing_periods)} 데이터 부족으로 제외)" if missing_periods else ""
 
         if is_aligned:
             return {
                 "met": True,
-                "reason": f"정배열 확인 (현재가>{'>'.join(f'MA{p}' for p in ma_periods)})",
+                "reason": f"정배열 확인 (현재가>{checked_label}){partial_note}",
                 "ma_values": ma_display,
             }
 
         return {
             "met": False,
-            "reason": "정배열 아님",
+            "reason": f"정배열 아님{partial_note}",
             "ma_values": ma_display,
         }
 
