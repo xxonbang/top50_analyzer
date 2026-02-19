@@ -503,7 +503,7 @@ export function CombinedAnalysis() {
         {/* 선택된 필터 표시 */}
         {(matchFilters.size > 0 || signalFilters.size > 0) && (
           <div className="mt-3 pt-3 border-t border-border-light">
-            <div className="text-xs text-text-muted">
+            <div className="text-sm font-medium text-accent-primary">
               선택된 필터: {' '}
               {matchFilters.size === 0 && signalFilters.size === 0 ? '전체' : (
                 <>
@@ -518,7 +518,7 @@ export function CombinedAnalysis() {
                   {Array.from(signalFilters).join(', ')}
                 </>
               )}
-              {' '}→ {filteredStocks.length}건
+              {' '}→ <span className="font-bold">{filteredStocks.length}건</span>
             </div>
           </div>
         )}
@@ -560,6 +560,9 @@ export function CombinedAnalysis() {
                 <div className="min-w-0 flex-1">
                   <div className="font-medium text-sm text-text-primary truncate">{stock.name}</div>
                   <div className="text-xs text-text-muted font-mono">{stock.code}</div>
+                  {isAdmin && criteriaData?.[stock.code] && (
+                    <CriteriaIndicator criteria={criteriaData[stock.code]} isCompact />
+                  )}
                 </div>
                 <div className="flex flex-col items-end gap-0.5">
                   {stock.vision_signal && stock.api_signal && stock.vision_signal === stock.api_signal ? (
