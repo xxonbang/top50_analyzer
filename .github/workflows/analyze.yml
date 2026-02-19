@@ -173,7 +173,7 @@ jobs:
       (needs.check-market.outputs.is_market_open == 'true' || github.event_name == 'workflow_dispatch') &&
       github.event.inputs.skip_kis != 'true'
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 40
     outputs:
       success: ${{ steps.kis_analysis.outputs.kis_success }}
 
