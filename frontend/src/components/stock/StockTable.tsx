@@ -1,15 +1,17 @@
 import { SignalBadge } from '@/components/signal';
 import { NewsSection } from '@/components/news';
 import { NewsAnalysisSection } from './NewsAnalysisSection';
+import { CriteriaIndicator } from './CriteriaIndicator';
 import { formatTimeOnly } from '@/lib/utils';
-import type { StockResult } from '@/services/types';
+import type { StockResult, StockCriteria } from '@/services/types';
 
 interface StockTableProps {
   stocks: StockResult[];
   isCompact?: boolean;
+  criteriaData?: Record<string, StockCriteria> | null;
 }
 
-export function StockTable({ stocks, isCompact = false }: StockTableProps) {
+export function StockTable({ stocks, isCompact = false, criteriaData }: StockTableProps) {
   if (isCompact) {
     // Compact 보기: 그리드 형태로 간단하게 표시
     return (
@@ -25,6 +27,9 @@ export function StockTable({ stocks, isCompact = false }: StockTableProps) {
             <div className="min-w-0 flex-1">
               <div className="font-medium text-sm text-text-primary truncate">{stock.name}</div>
               <div className="text-xs text-text-muted font-mono">{stock.code}</div>
+              {criteriaData?.[stock.code] && (
+                <CriteriaIndicator criteria={criteriaData[stock.code]} isCompact />
+              )}
             </div>
             <SignalBadge signal={stock.signal} size="sm" />
           </a>
@@ -66,6 +71,9 @@ export function StockTable({ stocks, isCompact = false }: StockTableProps) {
                   <div className="font-semibold text-text-primary text-base">{stock.name}</div>
                   <div className="text-xs text-text-muted font-mono mt-0.5">{stock.code}</div>
                 </a>
+                {criteriaData?.[stock.code] && (
+                  <CriteriaIndicator criteria={criteriaData[stock.code]} isCompact />
+                )}
               </td>
               <td className="px-4 py-3.5 border-b border-border-light align-top whitespace-nowrap">
                 <SignalBadge signal={stock.signal} />

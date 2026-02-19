@@ -1,15 +1,17 @@
 import { SignalBadge } from '@/components/signal';
 import { NewsSection } from '@/components/news';
 import { NewsAnalysisSection } from './NewsAnalysisSection';
+import { CriteriaIndicator } from './CriteriaIndicator';
 import { formatTimeOnly } from '@/lib/utils';
-import type { StockResult } from '@/services/types';
+import type { StockResult, StockCriteria } from '@/services/types';
 
 interface StockCardProps {
   stock: StockResult;
   isCompact?: boolean;
+  criteria?: StockCriteria | null;
 }
 
-export function StockCard({ stock, isCompact = false }: StockCardProps) {
+export function StockCard({ stock, isCompact = false, criteria }: StockCardProps) {
   if (isCompact) {
     // Compact 보기: 간단한 한 줄 형태
     return (
@@ -22,6 +24,7 @@ export function StockCard({ stock, isCompact = false }: StockCardProps) {
         <div className="min-w-0 flex-1">
           <div className="font-medium text-sm text-text-primary truncate">{stock.name}</div>
           <div className="text-xs text-text-muted font-mono">{stock.code}</div>
+          {criteria && <CriteriaIndicator criteria={criteria} isCompact />}
         </div>
         <SignalBadge signal={stock.signal} size="sm" />
       </a>
@@ -43,6 +46,7 @@ export function StockCard({ stock, isCompact = false }: StockCardProps) {
         </a>
         <SignalBadge signal={stock.signal} />
       </div>
+      {criteria && <CriteriaIndicator criteria={criteria} />}
       <div className="text-xs md:text-sm text-text-secondary leading-relaxed pt-2.5 md:pt-3 border-t border-border-light">
         {stock.reason || '-'}
       </div>
