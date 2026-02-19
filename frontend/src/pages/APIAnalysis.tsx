@@ -195,7 +195,16 @@ function StockCard({
       </div>
 
       {/* Criteria 인디케이터 */}
-      {criteria && <CriteriaIndicator criteria={criteria} />}
+      {criteria && (
+        <>
+          <CriteriaIndicator criteria={criteria} />
+          {criteria.short_selling_alert?.met && (
+            <span className="text-[9px] text-red-600 font-medium">
+              공매도 주의 ({criteria.short_selling_alert.reason})
+            </span>
+          )}
+        </>
+      )}
 
       {/* 분석 근거 (있는 경우) */}
       {analysis && (
@@ -717,7 +726,16 @@ function HistoryStockCard({
       </div>
 
       {/* Criteria 인디케이터 */}
-      {criteria && <CriteriaIndicator criteria={criteria} />}
+      {criteria && (
+        <>
+          <CriteriaIndicator criteria={criteria} />
+          {criteria.short_selling_alert?.met && (
+            <span className="text-[9px] text-red-600 font-medium">
+              공매도 주의 ({criteria.short_selling_alert.reason})
+            </span>
+          )}
+        </>
+      )}
 
       {/* 분석 근거 */}
       <div
