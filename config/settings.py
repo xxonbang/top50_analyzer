@@ -43,8 +43,8 @@ OUTPUT_DIR = ROOT_DIR / "output"
 # AI 설정
 # Vision 분석용 (이미지 기반 복잡한 추론)
 GEMINI_MODEL = "gemini-2.5-flash"
-# KIS API 데이터 분석용 (flash-lite: 대량 배치 처리에 적합한 속도/비용)
-GEMINI_MODEL_LITE = "gemini-2.5-flash-lite"
+# KIS API 데이터 분석용 (flash: 분석 품질 향상, 데이터 수집 최적화로 timeout 해결)
+GEMINI_MODEL_LITE = "gemini-2.5-flash"
 
 # 시그널 카테고리
 SIGNAL_CATEGORIES = ["적극매수", "매수", "중립", "매도", "적극매도"]
