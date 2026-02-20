@@ -713,6 +713,44 @@ class KISStockDetailAPI:
         except Exception as e:
             return {"error": str(e)}
 
+    def _build_foreign_institution_summary(
+        self, stock_code: str, investor_data: Optional[Dict[str, Any]]
+    ) -> Dict[str, Any]:
+        """이미 수집한 investor_trend 데이터로 외인/기관 매매 요약 생성 (API 중복 호출 방지)"""
+        if not investor_data:
+            investor_data = self.get_investor_trend(stock_code)
+        if "error" in investor_data:
+            return investor_data
+
+        daily = investor_data.get("daily_investor_trend", [])
+        if not daily:
+            return {"error": "No investor data available"}
+
+        recent_5d = daily[:5]
+        foreign_5d = sum(d.get("foreign_net", 0) for d in recent_5d)
+        organ_5d = sum(d.get("organ_net", 0) for d in recent_5d)
+        individual_5d = sum(d.get("individual_net", 0) for d in recent_5d)
+
+        recent_20d = daily[:20]
+        foreign_20d = sum(d.get("foreign_net", 0) for d in recent_20d)
+        organ_20d = sum(d.get("organ_net", 0) for d in recent_20d)
+        individual_20d = sum(d.get("individual_net", 0) for d in recent_20d)
+
+        return {
+            "stock_code": stock_code,
+            "today": daily[0] if daily else {},
+            "summary_5d": {
+                "foreign_net": foreign_5d,
+                "organ_net": organ_5d,
+                "individual_net": individual_5d,
+            },
+            "summary_20d": {
+                "foreign_net": foreign_20d,
+                "organ_net": organ_20d,
+                "individual_net": individual_20d,
+            },
+        }
+
     def get_foreign_institution_summary(self, stock_code: str) -> Dict[str, Any]:
         """외인/기관 매매 요약 (투자자 동향에서 추출)
 
@@ -781,52 +819,50 @@ class KISStockDetailAPI:
 
         # 1. 현재가 시세 (필수)
         data["current_price"] = self.get_current_price(stock_code)
-        time.sleep(0.1)
+        time.sleep(0.05)
 
         # 2. 호가 정보
         data["asking_price"] = self.get_asking_price(stock_code)
-        time.sleep(0.1)
+        time.sleep(0.05)
 
         # 3. 투자자 동향 (30일)
         data["investor_trend"] = self.get_investor_trend(stock_code)
-        time.sleep(0.1)
+        time.sleep(0.05)
 
         # 3-1. 장중이면 추정 수급 데이터 추가 수집
         if is_market_hours():
             data["investor_trend_estimate"] = self.get_investor_trend_estimate(stock_code)
-            time.sleep(0.1)
+            time.sleep(0.05)
 
-        # 4. 회원사 매매현황
-        data["member_trading"] = self.get_member_trading(stock_code)
-        time.sleep(0.1)
-
-        # 5. 일별 시세 (30일)
+        # 4. 일별 시세 (30일)
         data["daily_price"] = self.get_daily_price(stock_code, days=30)
-        time.sleep(0.1)
+        time.sleep(0.05)
 
-        # 6. 일봉 차트 (선택)
+        # 5. 일봉 차트 (선택)
         if include_chart:
             data["daily_chart"] = self.get_daily_chart(stock_code, period="D", days=200)
-            time.sleep(0.1)
+            time.sleep(0.05)
 
-        # 7. 당일 틱 데이터 (선택)
+        # 6. 당일 틱 데이터 (선택)
         if include_ticks:
             data["today_ticks"] = self.get_today_ticks(stock_code)
-            time.sleep(0.1)
+            time.sleep(0.05)
 
-        # 8. 확장 데이터 (선택)
+        # 7. 확장 데이터 (선택)
         if include_extended:
             # 재무정보
             data["financial_info"] = self.get_financial_info(stock_code)
-            time.sleep(0.1)
+            time.sleep(0.05)
 
-            # 외국인/기관 매매 요약
-            data["foreign_institution_summary"] = self.get_foreign_institution_summary(stock_code)
-            time.sleep(0.1)
+            # 외국인/기관 매매 요약 (이미 수집한 investor_trend 재사용)
+            data["foreign_institution_summary"] = self._build_foreign_institution_summary(
+                stock_code, data.get("investor_trend")
+            )
+            time.sleep(0.05)
 
             # 프로그램매매 - 체결(실시간) + 일별 누적
             data["program_trading"] = self.get_program_trading(stock_code)
-            time.sleep(0.1)
+            time.sleep(0.05)
             data["program_trading_daily"] = self.get_program_trading_daily(stock_code)
 
         return data
@@ -837,7 +873,7 @@ class KISStockDetailAPI:
         include_chart: bool = True,
         include_ticks: bool = False,
         include_extended: bool = True,
-        delay: float = 0.2,
+        delay: float = 0.1,
     ) -> List[Dict[str, Any]]:
         """여러 종목의 상세 데이터 수집
 
