@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import type { StockCriteria, CriterionResult } from '@/services/types';
 import { cn } from '@/lib/utils';
 
@@ -20,6 +20,45 @@ interface CriteriaIndicatorProps {
 
 export function CriteriaIndicator({ criteria, isCompact = false }: CriteriaIndicatorProps) {
   const [showPopup, setShowPopup] = useState(false);
+  const containerRef = useRef<HTMLDivElement>(null);
+  const popupRef = useRef<HTMLDivElement>(null);
+
+  // 외부 클릭 시 닫기 (capture phase → stopPropagation 영향 안 받음)
+  useEffect(() => {
+    if (!showPopup) return;
+    const handleOutsideClick = (e: MouseEvent) => {
+      if (containerRef.current && !containerRef.current.contains(e.target as Node)) {
+        setShowPopup(false);
+      }
+    };
+    document.addEventListener('click', handleOutsideClick, true);
+    return () => document.removeEventListener('click', handleOutsideClick, true);
+  }, [showPopup]);
+
+  // 팝업이 뷰포트 밖으로 나가면 위치 보정
+  useEffect(() => {
+    if (!showPopup || !popupRef.current) return;
+    const popup = popupRef.current;
+    // 이전 보정 초기화
+    popup.style.left = '';
+    popup.style.right = '';
+    popup.style.top = '';
+    popup.style.bottom = '';
+    popup.style.marginTop = '';
+    popup.style.marginBottom = '';
+
+    const rect = popup.getBoundingClientRect();
+    if (rect.right > window.innerWidth - 8) {
+      popup.style.left = 'auto';
+      popup.style.right = '0';
+    }
+    if (rect.bottom > window.innerHeight - 8) {
+      popup.style.top = 'auto';
+      popup.style.bottom = '100%';
+      popup.style.marginTop = '0';
+      popup.style.marginBottom = '4px';
+    }
+  }, [showPopup]);
 
   const metCriteria = CRITERIA_CONFIG.filter(
     (c) => (criteria[c.key as keyof StockCriteria] as CriterionResult)?.met
@@ -44,7 +83,7 @@ export function CriteriaIndicator({ criteria, isCompact = false }: CriteriaIndic
   };
 
   return (
-    <div className="relative my-1">
+    <div className="relative my-1" ref={containerRef}>
       <button
         onClick={handleClick}
         className="flex flex-wrap items-center gap-1 sm:gap-1.5 py-1 -my-1 cursor-pointer"
@@ -80,6 +119,7 @@ export function CriteriaIndicator({ criteria, isCompact = false }: CriteriaIndic
       {/* 통합 팝업: 충족 + 미충족 기준 */}
       {showPopup && (
         <div
+          ref={popupRef}
           className="absolute top-full left-0 mt-1 z-50 w-72 sm:w-80 bg-white border border-border rounded-lg shadow-lg p-3 max-h-80 overflow-y-auto"
           onClick={(e) => { e.preventDefault(); e.stopPropagation(); }}
         >
