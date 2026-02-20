@@ -266,7 +266,7 @@ function ResultsMeta({ analysisTime, totalStocks, analyzedCount }: {
   analyzedCount: number;
 }) {
   const dateOnly = analysisTime?.slice(0, 10) || '-';
-  const timeOnly = analysisTime?.slice(11, 16) || '';
+  const timeOnly = analysisTime?.slice(11, 19) || '';
 
   return (
     <div className="grid grid-cols-3 gap-2 md:gap-3 mb-5">
@@ -276,7 +276,7 @@ function ResultsMeta({ analysisTime, totalStocks, analyzedCount }: {
         </div>
         <div className="min-w-0 flex-1">
           <div className="text-[0.6rem] md:text-[0.65rem] text-text-muted uppercase tracking-wide font-semibold">
-            분석 시각
+            분석 일시
           </div>
           <div className="text-xs md:text-base font-bold text-text-primary">
             {dateOnly}

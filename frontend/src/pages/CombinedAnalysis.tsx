@@ -459,7 +459,9 @@ export function CombinedAnalysis() {
               {data.date}
             </div>
             {data.time && (
-              <div className="text-[0.65rem] md:text-xs text-text-muted font-medium">{data.time}</div>
+              <div className="text-[0.65rem] md:text-xs text-text-muted font-medium">
+                {data.time.length === 4 ? `${data.time.slice(0, 2)}:${data.time.slice(2)}` : data.time}
+              </div>
             )}
           </div>
         </div>
