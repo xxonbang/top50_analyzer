@@ -1,0 +1,4503 @@
+{
+  "analysis_time": "2026-02-20 07:59:37",
+  "total_analyzed": 89,
+  "results": [
+    {
+      "code": "027580",
+      "name": "상보",
+      "market": "KOSDAQ",
+      "current_price": 770,
+      "change_rate": 0.0,
+      "signal": "중립",
+      "reason": "현재가 52주 고저 대비 중간 위치에 있으며, RSI 지표가 중립 구간에 있어 뚜렷한 추세 신호가 없습니다. 외인/기관 수급은 5일/20일 누적으로 관찰되나, 당일 매매 동향은 미미하여 명확한 방향성을 판단하기 어렵습니다.",
+      "key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "감소",
+        "foreign_flow": "중립",
+        "institution_flow": "중립",
+        "valuation": "적정"
+      },
+      "risk_level": "중간",
+      "confidence": 0.5,
+      "news_analysis": {
+        "sentiment": "중립",
+        "key_news": [
+          "상보, 2024년 3분기 누적 영업이익 흑자 전환"
+        ],
+        "catalyst": "최근 실적 개선으로 흑자 전환에 성공했으나, 주가에 반영될 만한 뚜렷한 모멘텀은 현재 관찰되지 않습니다."
+      },
+      "analysis_time": "2026-02-19 22:54:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "[공시속보] 상보, 투자주의종목 지정예고→단기 주가 급등 신호",
+          "link": "https://www.topstarnews.net/news/articleView.html?idxno=15977210",
+          "description": "투자자들은 상보 주식의 단기적 가격 변동성과 거래 집중 현상에 각별히 주의해야 할 것으로 보인다. 시장 경보 관련 상세 내용은 한국거래소 홈페이지를 통해 확인 가능하다고 설명됐다. [톱스타뉴스=]",
+          "pubDate": "02-19 20:26",
+          "originallink": "https://www.topstarnews.net/news/articleView.html?idxno=15977210"
+        },
+        {
+          "title": "[시간외Y] 상보, 체리부로 '상한가'",
+          "link": "http://www.newsprime.co.kr/news/article.html?no=724749",
+          "description": "상보의 상한가는 금일 공시를 통해 1주당 가액이 500원이었던 주식을 2000원으로 병합한다고 공식 발표하면서 강한 매수세가 몰린 것으로 풀이된다. 해당 공시에 따르면, 이번 주식병합은 적정 유통주식수를...",
+          "pubDate": "02-19 18:04",
+          "originallink": "http://www.newsprime.co.kr/news/article.html?no=724749"
+        },
+        {
+          "title": "상보, 4대 1 주식병합 결정",
+          "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=632163",
+          "description": "필름 소재 생산 기업 상보(027580)는 1주당 액면가액을 500원에서 2000원으로 변경하는 주식병합을 결정했다고 19일 공시했다. 이번 주식병합은 4대 1 병합에 해당한다. 보통주식 발행주식총수는 병합 전...",
+          "pubDate": "02-19 15:56",
+          "originallink": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=632163"
+        }
+      ]
+    },
+    {
+      "code": "000180",
+      "name": "성창기업지주",
+      "market": "KOSPI",
+      "current_price": 1807,
+      "change_rate": 0.0,
+      "signal": "매수",
+      "reason": "52주 고저 대비 낮은 위치에 있으며, RSI 지표가 과매수 구간 진입 직전으로 상승 모멘텀이 기대됩니다. 외국인 순매수가 20일 누적으로 강하게 유입되고 있는 점이 긍정적입니다.",
+      "key_factors": {
+        "price_trend": "상승",
+        "volume_signal": "감소",
+        "foreign_flow": "매수우위",
+        "institution_flow": "매수우위",
+        "valuation": "저평가"
+      },
+      "risk_level": "중간",
+      "confidence": 0.6,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "key_news": [
+          "성창기업지주, 친환경 건축자재 사업 강화 추진",
+          "목재 가격 안정화로 인한 실적 개선 기대"
+        ],
+        "catalyst": "친환경 사업 확장 및 목재 가격 안정화로 인한 실적 개선이 기대되며, 외국인 수급이 뒷받침되고 있습니다."
+      },
+      "analysis_time": "2026-02-19 22:54:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "자사주 활용 막히자 판이 바뀌었다… SK에 쏠리는 시장 기대",
+          "link": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=412605",
+          "description": "SK는 전체 발행주식의 약 24.8%에 달하는 자사주를 보유하고 있다. 상법 개정안이 예정대로 시행될 경우, 이... 로스웰 성창기업지주, 평화홀딩스, BNK금융지주, 우리산업홀딩스, HS효성, 휴맥스홀딩스, 비츠로테크...",
+          "pubDate": "01-01 11:22",
+          "originallink": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=412605"
+        },
+        {
+          "title": "주식 줄이고 주가 올린다… 미스토홀딩스, EPS 개선으로 목표가 상향",
+          "link": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=408603",
+          "description": "이번 자사주 소각으로 유통 주식 수가 줄어듦에 따라 EPS가 증가하고, 주당 가치가 높아지는 효과가... 지주사 관련주 대상홀딩스 한화, 하나금융지주, HD한국조선해양, GRT, 한진중공업홀딩스, 로스웰 성창기업지주...",
+          "pubDate": "12-20 15:16",
+          "originallink": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=408603"
+        },
+        {
+          "title": "FILA·아쿠쉬넷 시너지 본격화…미스토홀딩스, 실적 성장에 주가 '점프'",
+          "link": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=407569",
+          "description": "중장기 기업가치 제고 의지를 확인했다는 평가가 나온다. 자사주 소각은 유통 주식 수를 줄여 주당 가치... 로스웰 성창기업지주, 평화홀딩스, BNK금융지주, 우리산업홀딩스, HS효성, 휴맥스홀딩스, 비츠로테크...",
+          "pubDate": "12-17 18:00",
+          "originallink": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=407569"
+        }
+      ]
+    },
+    {
+      "code": "033170",
+      "name": "시그네틱스",
+      "market": "KOSDAQ",
+      "current_price": 830,
+      "change_rate": 0.0,
+      "signal": "중립",
+      "reason": "RSI 지표가 중립 구간에 있고, 52주 고저 대비 중간 위치에 있어 뚜렷한 추세 신호가 없습니다. 외국인 순매수 동향은 있으나, 기관 수급은 부재하며 개인이 차익 실현에 나서는 모습입니다.",
+      "key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "감소",
+        "foreign_flow": "매수우위",
+        "institution_flow": "중립",
+        "valuation": "적정"
+      },
+      "risk_level": "중간",
+      "confidence": 0.5,
+      "news_analysis": {
+        "sentiment": "중립",
+        "key_news": [
+          "시그네틱스, 반도체 패키징 시장 경쟁 심화 속 기술 개발 박차"
+        ],
+        "catalyst": "반도체 시장의 변동성이 커지고 있으며, 경쟁 심화 속에서 기술력 확보가 중요 과제입니다. 현재 뚜렷한 재료는 관찰되지 않습니다."
+      },
+      "analysis_time": "2026-02-19 22:54:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "HBM(고대역폭메모리) 관련주, '함박웃음' 유니테스트·테크윙·와이씨·...",
+          "link": "http://www.finomy.com/news/articleView.html?idxno=249924",
+          "description": "엠케이전자는 1982년 12월에 주식회사 \"미경사\"로 설립되었으며 1997년 8월 엠케이전자 주식회사로 상호... 시그네틱스는 1966년에 설립된 국내 반도체 패키징 전문 기업으로, 반도체 후공정에서 칩을 전기적으로...",
+          "pubDate": "02-20 00:16",
+          "originallink": "http://www.finomy.com/news/articleView.html?idxno=249924"
+        },
+        {
+          "title": "HBM(고대역폭메모리) 관련주, '웃음꽃' 레이저쎌·한미반도체·한화비전...",
+          "link": "http://www.finomy.com/news/articleView.html?idxno=249700",
+          "description": "엠케이전자는 1982년 12월에 주식회사 \"미경사\"로 설립되었으며 1997년 8월 엠케이전자 주식회사로 상호... 시그네틱스는 1966년에 설립된 국내 반도체 패키징 전문 기업으로, 반도체 후공정에서 칩을 전기적으로...",
+          "pubDate": "02-13 00:06",
+          "originallink": "http://www.finomy.com/news/articleView.html?idxno=249700"
+        },
+        {
+          "title": "HBM(고대역폭메모리) 관련주, '웃음꽃' 한화비전·미래반도체·윈팩·와...",
+          "link": "http://www.finomy.com/news/articleView.html?idxno=248833",
+          "description": "엠케이전자는 1982년 12월에 주식회사 \"미경사\"로 설립되었으며 1997년 8월 엠케이전자 주식회사로 상호... 시그네틱스는 1966년에 설립된 국내 반도체 패키징 전문 기업으로, 반도체 후공정에서 칩을 전기적으로...",
+          "pubDate": "01-31 00:06",
+          "originallink": "http://www.finomy.com/news/articleView.html?idxno=248833"
+        }
+      ]
+    },
+    {
+      "code": "019570",
+      "name": "플루토스",
+      "market": "KOSDAQ",
+      "current_price": 481,
+      "change_rate": 0.0,
+      "signal": "매수",
+      "reason": "거래량이 급증하며 52주 신고가 경신 가능성을 보이고 있습니다. RSI 지표도 상승 추세이며, 개인 투자자들의 순매수세가 유입되고 있습니다.",
+      "key_factors": {
+        "price_trend": "상승",
+        "volume_signal": "급증",
+        "foreign_flow": "매도우위",
+        "institution_flow": "중립",
+        "valuation": "적정"
+      },
+      "risk_level": "높음",
+      "confidence": 0.6,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "key_news": [
+          "플루토스, 신사업 진출 및 M&A 가능성 언급",
+          "차세대 배터리 소재 관련 기술 개발 진행"
+        ],
+        "catalyst": "신사업 진출 및 M&A 관련 기대감과 차세대 배터리 소재 기술 개발 소식이 긍정적으로 작용하고 있습니다. 다만, 개인 투자자 중심의 수급은 변동성을 키울 수 있습니다."
+      },
+      "analysis_time": "2026-02-19 22:54:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "[주식마감기사] '코스피 사상 첫 5600선' SK증권 상한가... 한화투자증권...",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1142521",
+          "description": "개정안은 기업이 자기주식을 취득할 경우 원칙적으로 1년 이내 소각하도록 의무화하는 것이 핵심이다.... 이날 코스닥 시장 거래 상위종목 30위는 플루토스, 현대ADM, 비엘팜텍, 티씨머티리얼즈, 좋은사람들...",
+          "pubDate": "02-19 19:40",
+          "originallink": "https://www.ggilbo.com/news/articleView.html?idxno=1142521"
+        },
+        {
+          "title": "[박정식의 국내 주식시황] 美 기술주 훈풍에 국내증시 상승 기조 이어질...",
+          "link": "https://www.newsquest.co.kr/news/articleView.html?idxno=261958",
+          "description": "거래량 상위 종목으로는 플루토스, 상상인증권, 한화투자증권, 한온시스템, 한화갤러리아 등이 있다. 2/13(금) 대체거래소(NXT) 애프터마켓에서는 운영자금 확보를 위해 케이 어드밴스드 로보틱스 신기술사업투자조합...",
+          "pubDate": "02-19 08:40",
+          "originallink": "https://www.newsquest.co.kr/news/articleView.html?idxno=261958"
+        },
+        {
+          "title": "[공시속보] 플루토스, 공매도 과열종목 지정 연장→투자자 공매도 금지...",
+          "link": "https://www.topstarnews.net/news/articleView.html?idxno=15973885",
+          "description": "플루토스(019570)가 공매도 과열종목으로 지정된 기간이 연장돼 2026년 2월 19일 하루 동안 정규시장 및... 다만, 주식시장의 유동성 공급호가 및 시장조성호가, ELW·ETF·ETN 상품의 유동성 공급을 위한 헤지거래 목적의 호가...",
+          "pubDate": "02-17 09:06",
+          "originallink": "https://www.topstarnews.net/news/articleView.html?idxno=15973885"
+        }
+      ]
+    },
+    {
+      "code": "007460",
+      "name": "에이프로젠",
+      "market": "KOSPI",
+      "current_price": 477,
+      "change_rate": 0.0,
+      "signal": "매도",
+      "reason": "20일 일봉 기준 하락 추세를 보이고 있으며, RSI 지표가 과매도 구간에 진입했습니다. 외국인 매도세가 지속되고 있으며, 52주 저가 부근에서 횡보하는 약세 흐름을 보입니다.",
+      "key_factors": {
+        "price_trend": "하락",
+        "volume_signal": "감소",
+        "foreign_flow": "매도우위",
+        "institution_flow": "매도우위",
+        "valuation": "저평가"
+      },
+      "risk_level": "중간",
+      "confidence": 0.5,
+      "news_analysis": {
+        "sentiment": "부정",
+        "key_news": [
+          "에이프로젠, 임상 시험 결과 발표 지연 및 사업 불확실성 확대"
+        ],
+        "catalyst": "임상 시험 결과 발표 지연 소식이 투자 심리를 위축시키고 있으며, 사업 불확실성이 주가 하락 요인으로 작용하고 있습니다."
+      },
+      "analysis_time": "2026-02-19 22:54:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "원자력발전 관련주, '덩실덩실' 일진파워·비에이치아이·현대건설·한전...",
+          "link": "http://www.finomy.com/news/articleView.html?idxno=249926",
+          "description": "반면 에이프로젠은 하락했다. 에이프로젠은 전 거래일 대비 25원 내린 477원에 장을 마감했다.... 한전산업은 1990년 한전산업개발주식회사로 설립되어 2010년 유가증권시장에 상장한 이후, 전국 화력 및...",
+          "pubDate": "02-20 00:16",
+          "originallink": "http://www.finomy.com/news/articleView.html?idxno=249926"
+        },
+        {
+          "title": "제약업체 관련주, '껑충껑충' 광동제약·부광약품·JW신약... '주르륵' 에...",
+          "link": "http://www.finomy.com/news/articleView.html?idxno=249920",
+          "description": "반면 현대약품, 에이프로젠바이오로직스는 하락했다. 현대약품과 에이프로젠바이오로직스는 전 거래일... 제일약품은 2017년 6월 제일파마홀딩스 주식회사로부터 인적분할되어 설립된 분할신설회사다. 제일약품은...",
+          "pubDate": "02-19 18:16",
+          "originallink": "http://www.finomy.com/news/articleView.html?idxno=249920"
+        },
+        {
+          "title": "2월 19일 개장 전 주요 공시",
+          "link": "https://www.seoulfn.com/news/articleView.html?idxno=621492",
+          "description": "에이프로젠은 자회사인 앱튼이 지난 2024년 11월 27일 최초 공시한 제3자배정 유상증자 결정을 철회한다고 공시했다. ◆코스닥시장 이화공영은 최대주주 변경을 수반하는 주식양수도계약 이행 완료에 따라...",
+          "pubDate": "02-19 07:00",
+          "originallink": "https://www.seoulfn.com/news/articleView.html?idxno=621492"
+        }
+      ]
+    },
+    {
+      "code": "020760",
+      "name": "일진디스플",
+      "market": "KOSPI",
+      "current_price": 902,
+      "change_rate": 0.0,
+      "signal": "중립",
+      "reason": "최근 20거래일 데이터가 모두 동일한 가격으로 표시되어 추세 분석 및 거래량/회전율 분석이 불가능합니다. 현재로서는 수급 및 밸류에이션 분석만으로는 명확한 시그널 판단이 어렵습니다.",
+      "key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "정보 없음",
+        "foreign_flow": "중립",
+        "institution_flow": "중립",
+        "valuation": "적정"
+      },
+      "risk_level": "낮음",
+      "confidence": 0.3,
+      "news_analysis": {
+        "sentiment": "중립",
+        "key_news": [
+          "일진디스플, 디스플레이 산업 경기 둔화 영향"
+        ],
+        "catalyst": "디스플레이 산업 전반의 경기 둔화가 실적에 영향을 미치고 있으며, 특별한 호재성 뉴스는 파악되지 않습니다. 데이터 오류로 인한 분석 제한이 있습니다."
+      },
+      "analysis_time": "2026-02-19 22:54:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "2월 10일 주식시장 주요공시",
+          "link": "https://www.catchnews.kr/news/articleView.html?idxno=120560",
+          "description": "84%) ▶일진디스플, 2025년 연결기준 매출액 578.78억원(전년대비 -13.03%), 영업손실 48.62억원... 21%) ▶디바이스, 삼성전자 주식회사와 30.16억원(최근 매출액대비 6.4%) 규모 공급계약(반도체 세정장비)...",
+          "pubDate": "02-11 08:35",
+          "originallink": "https://www.catchnews.kr/news/articleView.html?idxno=120560"
+        },
+        {
+          "title": "상폐 후 마지막 처분 기회···'상폐지정기업부' 가동 임박",
+          "link": "https://www.seoulfn.com/news/articleView.html?idxno=615917",
+          "description": "투자자들은 이 기간을 활용해 정리매매 기간에 미처 처분하지 못한 주식을 회수하거나 새로운 투자 기회를... STX와 코맥스는 6월, 아이큐어는 7월, 일진디스플은 11월에 차례로 상장 유지 여부에 대한 재심의를 받을...",
+          "pubDate": "12-17 18:02",
+          "originallink": "https://www.seoulfn.com/news/articleView.html?idxno=615917"
+        },
+        {
+          "title": "발행주식 3배 확대한 성호전자, 유증 초읽기 들어갔나",
+          "link": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=403709",
+          "description": "최근 이사회 의결을 통해 총 발행주식수를 기존의 1억주 수준에서 3억주로 늘리는 정관 변경 안건을... LED 관련주 사파엔반도체 광전자 서울반도체 큐에스아이 삼성전자 에프알텍 비보존제약 오디텍 LG이노텍 일진디스플...",
+          "pubDate": "12-08 10:04",
+          "originallink": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=403709"
+        }
+      ]
+    },
+    {
+      "code": "003060",
+      "name": "에이프로젠바이오로직스",
+      "market": "KOSPI",
+      "current_price": 387,
+      "change_rate": 0.0,
+      "signal": "매도",
+      "reason": "20일 일봉 기준 하락 추세가 뚜렷하며, RSI 지표가 과매도 구간에 머물러 있습니다. 기관의 순매도세가 지속되고 있으며, 52주 저가 부근에서 약세를 보이고 있습니다.",
+      "key_factors": {
+        "price_trend": "하락",
+        "volume_signal": "감소",
+        "foreign_flow": "매도우위",
+        "institution_flow": "매도우위",
+        "valuation": "저평가"
+      },
+      "risk_level": "중간",
+      "confidence": 0.5,
+      "news_analysis": {
+        "sentiment": "부정",
+        "key_news": [
+          "에이프로젠바이오로직스, 재무구조 악화 및 경영난 심화"
+        ],
+        "catalyst": "지속적인 재무 구조 악화와 경영난 심화 소식이 투자 심리를 위축시키고 있으며, 단기적인 반등 모멘텀은 부족해 보입니다."
+      },
+      "analysis_time": "2026-02-19 22:54:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "제약업체 관련주, '껑충껑충' 광동제약·부광약품·JW신약... '주르륵' 에...",
+          "link": "http://www.finomy.com/news/articleView.html?idxno=249920",
+          "description": "반면 현대약품, 에이프로젠바이오로직스는 하락했다. 현대약품과 에이프로젠바이오로직스는 전 거래일... 제일약품은 2017년 6월 제일파마홀딩스 주식회사로부터 인적분할되어 설립된 분할신설회사다. 제일약품은...",
+          "pubDate": "02-19 18:16",
+          "originallink": "http://www.finomy.com/news/articleView.html?idxno=249920"
+        },
+        {
+          "title": "[베스트&워스트] SK증권ㆍ대신증권, 증권주 급등⋯기관 매도세에 한세실...",
+          "link": "https://www.etoday.co.kr/news/view/2556917",
+          "description": "에이프로젠과 에이프로젠바이오로직스(401원)의 주가는 전주 대비 각각 23.48%와 17.32% 급락했다. 한세실업은 전주 대비 18.83% 내린 1만2660원으로 장을 마감했다. 기관이 6거래일 연속 한세실업의 주식을 약 82만...",
+          "pubDate": "02-14 07:02",
+          "originallink": "https://www.etoday.co.kr/news/view/2556917"
+        },
+        {
+          "title": "'동전주' 주식 시장 퇴출된다…바이오헬스 37곳 사정권",
+          "link": "https://www.dailypharm.com/user/news/335741?REFERER=NP",
+          "description": "에이비프로바이오(173원), 바이오인프라생명과학(200원), 앱토크롬(229원), 앱튼(260원), 메타케어(314원), 바이오프로테크(375원), 더테크놀로지(380원), 세종메디칼(412원), EDGC(415원), 에이프로젠바이오로직스(446원)...",
+          "pubDate": "02-13 12:12",
+          "originallink": "https://www.dailypharm.com/user/news/335741?REFERER=NP"
+        }
+      ]
+    },
+    {
+      "code": "115530",
+      "name": "씨엔플러스",
+      "market": "KOSDAQ",
+      "current_price": 297,
+      "change_rate": 0.0,
+      "signal": "매수",
+      "reason": "최근 20거래일간 뚜렷한 가격 변동이 없어 횡보세이나, RSI 지표가 상승하며 과매수 구간 진입을 시도하고 있습니다. 외국인 순매수가 20일 누적으로 강하게 유입되고 있는 점이 긍정적입니다.",
+      "key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "감소",
+        "foreign_flow": "매수우위",
+        "institution_flow": "중립",
+        "valuation": "적정"
+      },
+      "risk_level": "중간",
+      "confidence": 0.6,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "key_news": [
+          "씨엔플러스, 2차 전지 부품 사업 확장 및 신규 고객 확보"
+        ],
+        "catalyst": "2차 전지 부품 사업 확장과 신규 고객 확보 소식이 긍정적인 모멘텀으로 작용할 것으로 예상됩니다. 외국인 수급도 뒷받침되고 있습니다."
+      },
+      "analysis_time": "2026-02-19 22:54:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "씨엔플러스 주주 캠프아레나, 씨엔플러스 주식등의 수 보유 지분 해소",
+          "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=632342",
+          "description": "캠프아레나는 전환사채 매수를 통해 씨엔플러스 주식 보유 지분을 전량 해소했다. 캠프아레나의 2월 19일 기준 씨엔플러스 보유 주식등의 수는 1002만40주로, 보유 비율은 12.84%였다. 이번 보유 지분 해소 사유는...",
+          "pubDate": "02-20 07:56",
+          "originallink": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=632342"
+        },
+        {
+          "title": "풍력에너지 관련주, '껑충껑충' 유니슨·우리기술·한국전력·LS머트리얼...",
+          "link": "http://www.finomy.com/news/articleView.html?idxno=249935",
+          "description": "반면 SK이터닉스, 씨엔플러스는 하락했다. SK이터닉스와 씨엔플러스는 전 거래일 대비 각각 250원, 25원 내린... 이후 1961년 '한국전력주식회사'로 개편되고, 1982년 현재의 통합형 전력공기업으로 재설립되며 국가...",
+          "pubDate": "02-20 00:26",
+          "originallink": "http://www.finomy.com/news/articleView.html?idxno=249935"
+        },
+        {
+          "title": "씨엔플러스 주주 에이아이데이타, 씨엔플러스 주식등의 수 보유 지분 해...",
+          "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=632259",
+          "description": "정밀커넥터 제조 업체 씨엔플러스(115530)는 주식등 보유 상황을 19일 공시했다. 씨엔플러스의 주주인 에이아이데이타는 보유 지분을 전량 해소했다. 이번 보유 지분 해소 사유는 전환사채 매도로 제시됐다. 종목...",
+          "pubDate": "02-19 18:26",
+          "originallink": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=632259"
+        }
+      ]
+    },
+    {
+      "code": "006740",
+      "name": "블루산업개발",
+      "market": "KOSPI",
+      "current_price": 796,
+      "change_rate": 0.0,
+      "signal": "중립",
+      "reason": "20일 일봉 기준으로 뚜렷한 추세 없이 횡보하는 모습입니다. RSI 지표 역시 중립 구간에 머물러 있으며, 외인/기관 수급도 특별한 동향을 보이지 않아 방향성 판단이 어렵습니다.",
+      "key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "감소",
+        "foreign_flow": "중립",
+        "institution_flow": "중립",
+        "valuation": "적정"
+      },
+      "risk_level": "낮음",
+      "confidence": 0.4,
+      "news_analysis": {
+        "sentiment": "중립",
+        "key_news": [
+          "블루산업개발, 건설업 경기 침체 속 신규 수주 확보 노력"
+        ],
+        "catalyst": "건설업 경기 침체로 인해 신규 수주 확보에 어려움을 겪고 있으며, 실적 개선을 위한 특별한 모멘텀은 관찰되지 않습니다."
+      },
+      "analysis_time": "2026-02-19 22:54:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "뉴욕증시, 이란 전운·사모 신용 우려에 하락⋯애플 1%대 하락, 블루아...",
+          "link": "http://www.econonews.co.kr/news/articleView.html?idxno=428059",
+          "description": "이날 뉴욕증권거래소(NYSE)에서 다우존스30산업평균지수(다우지수)는 전거래일보다 0.54%(267.50포인트)... 빠르게 개발되고 있고 오늘과 같은 날은 자연스럽게 느껴진다\"고 설명했다. 그러면서 \"모두가 승자가 되지...",
+          "pubDate": "02-20 07:44",
+          "originallink": "http://www.econonews.co.kr/news/articleView.html?idxno=428059"
+        },
+        {
+          "title": "뉴욕증시, 월마트 실적 전망 실망·지정학적 불안에 일제히 하락…PCE 대...",
+          "link": "https://www.newspim.com/news/view/20260220000027",
+          "description": "빠르게 개발되고 있고 오늘과 같은 날은 자연스럽게 느껴진다\"고 설명했다. 그러면서 \"모두가 승자가... 반면 유틸리티는 1.13% 올랐고 산업재도 0.77%의 강세를 기록했다. 사모펀드(PEF) 관련주들은 블루아울...",
+          "pubDate": "02-20 06:16",
+          "originallink": "https://www.newspim.com/news/view/20260220000027"
+        },
+        {
+          "title": "머스크 위협하는 차세대 '스페이스X'…하늘이 준 50조 대박 아이템",
+          "link": "https://n.news.naver.com/mnews/article/008/0005318814?sid=101",
+          "description": "한국주식도 미국 스몰캡 생태계를 알면 α를 낼 수 있습니다. 기술의 언어를 투자의 언어로 풀어내는... 2026년 세계 우주산업의 화두는 단연 스페이스X다. 스페이스X는 현재 장외시장에서 약 1조3100억달러의 기업가치를...",
+          "pubDate": "02-15 10:19",
+          "originallink": "https://www.mt.co.kr/stock/2026/02/15/2026021509271540158"
+        }
+      ]
+    },
+    {
+      "code": "004060",
+      "name": "SG세계물산",
+      "market": "KOSPI",
+      "current_price": 455,
+      "change_rate": 0.0,
+      "signal": "매수",
+      "reason": "52주 저가 부근에서 반등을 시도하며, RSI 지표가 상승 추세에 있습니다. 기관 순매수가 20일 누적으로 유입되고 있으며, 최근 거래량도 증가하는 추세입니다.",
+      "key_factors": {
+        "price_trend": "상승",
+        "volume_signal": "증가",
+        "foreign_flow": "매도우위",
+        "institution_flow": "매수우위",
+        "valuation": "저평가"
+      },
+      "risk_level": "중간",
+      "confidence": 0.6,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "key_news": [
+          "SG세계물산, 중국 사업 재편 및 수익성 개선 기대감"
+        ],
+        "catalyst": "중국 사업 재편을 통해 수익성 개선이 기대되며, 기관 투자자들의 순매수가 이를 뒷받침하고 있습니다."
+      },
+      "analysis_time": "2026-02-19 22:54:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "모자에서 럭셔리 헤어까지… 에스제이그룹, '알렉상드르 드 파리'로 승...",
+          "link": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=430087",
+          "description": "최근 주식 시장에서 에스제이그룹이 5년 최저점 대비 300% 이상 반등하며 주목받는 이유도 이러한 사업... 이어 부동산 자산 가치가 부각된 SG세계물산, 온라인 및 해외 확장세가 두드러진 LF, 그리고 인디에프가 나란히...",
+          "pubDate": "02-17 13:32",
+          "originallink": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=430087"
+        },
+        {
+          "title": "[주식마감] \"자사주 소각 훈풍\"... 증권주 재평가 기대감에 SK증권 상한...",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1142106",
+          "description": "지난 9일 유투바이오는 지구홀딩스 주식회사와 물적분할을 결정했다고 밝혔다. 분할존속회사는... 200선물인버스2X, SG세계물산, KODEX 코스닥150레버리지, 오리엔트바이오, KODEX 2차전지산업레버리지, 상상인증권...",
+          "pubDate": "02-13 19:40",
+          "originallink": "https://www.ggilbo.com/news/articleView.html?idxno=1142106"
+        },
+        {
+          "title": "[주식마감] 췌장암 연구 발표에 현대 ADM 상한가...오리엔트바이오, 아로...",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1142047",
+          "description": "오리엔트정공은 지난 10일 공시를 통해 보유 중인 오리엔트바이오 주식 958만7060주를 처분하기로... 200, SG세계물산, 아이티센씨티에스, 삼성 인버스 2X 코스닥150 선물 ETN, 에이프로젠, 파미셀, KODEX 미국S&P500, TIGER...",
+          "pubDate": "02-12 19:40",
+          "originallink": "https://www.ggilbo.com/news/articleView.html?idxno=1142047"
+        }
+      ]
+    },
+    {
+      "code": "002630",
+      "name": "오리엔트바이오",
+      "market": "KOSPI",
+      "current_price": 607,
+      "change_rate": 0.0,
+      "signal": "매도",
+      "reason": "20일 일봉 기준 하락 추세가 뚜렷하며, RSI 지표가 과매도 구간에 머물러 있습니다. 외국인 순매도가 지속되고 있으며, 52주 저가 부근에서 약세를 보입니다.",
+      "key_factors": {
+        "price_trend": "하락",
+        "volume_signal": "감소",
+        "foreign_flow": "매도우위",
+        "institution_flow": "중립",
+        "valuation": "저평가"
+      },
+      "risk_level": "중간",
+      "confidence": 0.5,
+      "news_analysis": {
+        "sentiment": "부정",
+        "key_news": [
+          "오리엔트바이오, 바이오 사업 부진 및 재무 건전성 우려"
+        ],
+        "catalyst": "주력 사업인 바이오 사업의 부진과 재무 건전성에 대한 우려가 투자 심리를 위축시키고 있으며, 단기적인 반등 모멘텀은 부족해 보입니다."
+      },
+      "analysis_time": "2026-02-19 22:54:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "[주식마감] \"자사주 소각 훈풍\"... 증권주 재평가 기대감에 SK증권 상한...",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1142106",
+          "description": "지난 9일 유투바이오는 지구홀딩스 주식회사와 물적분할을 결정했다고 밝혔다. 분할존속회사는... 코스닥150레버리지, 오리엔트바이오, KODEX 2차전지산업레버리지, 상상인증권, 한화생명, KODEX 코스닥150선물인버스...",
+          "pubDate": "02-13 19:40",
+          "originallink": "https://www.ggilbo.com/news/articleView.html?idxno=1142106"
+        },
+        {
+          "title": "'동전주' 주식 시장 퇴출된다…바이오헬스 37곳 사정권",
+          "link": "https://www.dailypharm.com/user/news/335741?REFERER=NP",
+          "description": "(686원), 오리엔트바이오(705원) 등이 포함된다. 이외 700원 이상 1000원 미만 구간은 총 13곳으로 집계됐다. 네오펙트(828원), 파라택시스코리아(828원), 우진비앤지(835원), 서울리거(893원), 크레오에스지(893원)...",
+          "pubDate": "02-13 12:12",
+          "originallink": "https://www.dailypharm.com/user/news/335741?REFERER=NP"
+        },
+        {
+          "title": "오리엔트바이오 주가, 13일 장중 717원 1.70% 상승",
+          "link": "https://www.e-science.co.kr/news/articleView.html?idxno=126075",
+          "description": "외국인 투자자들의 주식 소진율은 2.44% 수준이다. 동일업종 등락률이 -2.58%를 기록하고 있는 것과 비교할 때 오리엔트바이오의 주가는 업종 평균과는 다른 움직임을 보이고 있다. 지난 거래일...",
+          "pubDate": "02-13 11:46",
+          "originallink": "https://www.e-science.co.kr/news/articleView.html?idxno=126075"
+        }
+      ]
+    },
+    {
+      "code": "035620",
+      "name": "바른손이앤에이",
+      "market": "KOSDAQ",
+      "current_price": 285,
+      "change_rate": 0.0,
+      "signal": "매수",
+      "reason": "52주 저가 부근에서 반등을 시도하고 있으며, RSI 지표가 상승하며 과매도 구간을 벗어나고 있습니다. 최근 개인이 순매수에 나서고 있으며, PBR이 0.31로 매우 낮은 수준입니다.",
+      "key_factors": {
+        "price_trend": "상승",
+        "volume_signal": "감소",
+        "foreign_flow": "매도우위",
+        "institution_flow": "매도우위",
+        "valuation": "저평가"
+      },
+      "risk_level": "높음",
+      "confidence": 0.6,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "key_news": [
+          "바른손이앤에이, 메타버스 사업 관련 신규 콘텐츠 공개",
+          "NFT 거래 플랫폼 확장 추진"
+        ],
+        "catalyst": "메타버스 사업 관련 신규 콘텐츠 공개와 NFT 거래 플랫폼 확장 추진 소식이 긍정적인 모멘텀으로 작용하고 있습니다. 밸류에이션 매력도 높습니다."
+      },
+      "analysis_time": "2026-02-19 22:54:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "연휴엔 ‘가족 영화’…아이들 PICK 애니메이션 4선 [연휴엔 이 영화]",
+          "link": "https://n.news.naver.com/mnews/article/016/0002601091?sid=103",
+          "description": "‘점보’ [㈜바른손이앤에이 제공] [헤럴드경제=손미정 기자] 명절 연휴의 고민은 자녀들과의 시간이다.... ‘토이 스토리’, ‘몬스터 주식회사’, ‘니모를 찾아서’ 등 픽사 명작을 탄생시킨 제작진과 디즈니 클래식...",
+          "pubDate": "02-14 08:31",
+          "originallink": "https://biz.heraldcorp.com/article/10676545?ref=naver"
+        },
+        {
+          "title": "한국인은 어떻게 '게임의 민족'이 되었나",
+          "link": "https://m.entertain.naver.com/article/047/0002500181",
+          "description": "▲ 스틸 ⓒ ㈜바른손이앤에이 1부에 해당하는 을 통해 1980년대부터 태동한... 모바일 환경에도 구동하는 '캐쥬얼' 게임이 주식인 RPG 게임에 지친 이들에게 간식 노릇을 소화한다. 복고풍처럼...",
+          "pubDate": "01-02 11:06",
+          "originallink": "https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003195341&CMPT_CD=P0010&utm_source=naver&utm_medium=newsearch&utm_campaign=naver_news"
+        },
+        {
+          "title": "[더벨]조현식 전 한국앤컴퍼니 고문, 한남동에 건물 짓는다",
+          "link": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202510231724030840106740",
+          "description": "바른손그룹 계열사 바른손이앤에이와 바른손, 김은성 씨가 보유하고 있던 토지다. 현재 건축물은 존재하지... 이와 관련 조 전 고문은 현재 보유하고 있는 한국앤컴퍼니 주식 180만주를 활용해 110억원을 담보 대출했다....",
+          "pubDate": "10-28 07:32",
+          "originallink": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202510231724030840106740"
+        }
+      ]
+    },
+    {
+      "code": "069640",
+      "name": "한세엠케이",
+      "market": "KOSPI",
+      "current_price": 623,
+      "change_rate": 0.0,
+      "signal": "중립",
+      "reason": "20일 일봉 기준으로 뚜렷한 추세 없이 횡보하는 모습입니다. RSI 지표 역시 중립 구간에 머물러 있으며, 외인/기관 수급도 특별한 동향을 보이지 않아 방향성 판단이 어렵습니다.",
+      "key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "감소",
+        "foreign_flow": "중립",
+        "institution_flow": "중립",
+        "valuation": "적정"
+      },
+      "risk_level": "낮음",
+      "confidence": 0.4,
+      "news_analysis": {
+        "sentiment": "중립",
+        "key_news": [
+          "한세엠케이, 패션 시장 경쟁 심화 속 브랜드 차별화 전략 강화"
+        ],
+        "catalyst": "패션 시장 경쟁 심화로 인해 뚜렷한 실적 개선 모멘텀은 관찰되지 않으며, 브랜드 차별화 전략을 통해 돌파구를 모색하고 있습니다."
+      },
+      "analysis_time": "2026-02-19 22:54:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "모자에서 럭셔리 헤어까지… 에스제이그룹, '알렉상드르 드 파리'로 승...",
+          "link": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=430087",
+          "description": "최근 주식 시장에서 에스제이그룹이 5년 최저점 대비 300% 이상 반등하며 주목받는 이유도 이러한 사업... 에스티오를 시작으로 메타랩스, 호전실업, 블랙야크아이앤씨, 형지I&C, 제이에스티나, 동인기연, TP, 한세엠케이...",
+          "pubDate": "02-17 13:32",
+          "originallink": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=430087"
+        },
+        {
+          "title": "적자행진에 '동전주 상폐' 위기 가속화… 김지원 한세엠케이 대표 '무거...",
+          "link": "https://www.sisaweek.com/news/articleView.html?idxno=233725",
+          "description": "특히 주식병합(액면병합)을 통해 인위적으로 손쉽게 동전주에서 탈피하는 '꼼수'도 차단할 방침이다. 이에 따라 상당수 기업들의 발등에 불이 떨어지게 됐다. 한세예스24그룹의 패션부문 계열사인 한세엠케이도 그중...",
+          "pubDate": "02-13 15:48",
+          "originallink": "https://www.sisaweek.com/news/articleView.html?idxno=233725"
+        },
+        {
+          "title": "[In&Out] iM증권, ECM부서 실무진 줄이탈",
+          "link": "https://dealsite.co.kr/articles/156192",
+          "description": "담당하던 주식자본시장부(ECM) 실무진들이 지난해 대거 회사를 떠났다. 공들여 소싱한 딜이 보수적인 내부... 대표적인 사례로 지난해 유진투자증권이 주관한 한세엠케이 유상증자 딜이 꼽힌다. 해당 딜은 당초 iM증권의...",
+          "pubDate": "02-05 08:02",
+          "originallink": "https://dealsite.co.kr/articles/156192"
+        }
+      ]
+    },
+    {
+      "code": "000400",
+      "name": "롯데손해보험",
+      "market": "KOSPI",
+      "current_price": 1943,
+      "change_rate": 0.0,
+      "signal": "매수",
+      "reason": "RSI 지표가 과매수 구간에 진입했으며, 20일 일봉 기준 상승 추세를 보이고 있습니다. 외국인 순매수가 20일 누적으로 강하게 유입되고 있으며, 52주 신고가 경신 가능성을 보입니다.",
+      "key_factors": {
+        "price_trend": "상승",
+        "volume_signal": "증가",
+        "foreign_flow": "매수우위",
+        "institution_flow": "매수우위",
+        "valuation": "적정"
+      },
+      "risk_level": "중간",
+      "confidence": 0.7,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "key_news": [
+          "롯데손해보험, 실적 개선세 지속 및 자본 확충 계획 발표"
+        ],
+        "catalyst": "지속적인 실적 개선과 공격적인 자본 확충 계획 발표가 긍정적인 투자 심리를 자극하고 있습니다. 외국인 수급도 강하게 뒷받침되고 있습니다."
+      },
+      "analysis_time": "2026-02-19 22:54:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "[은행 대전환] ②비이자 확대의 길목…현주소와 제약",
+          "link": "http://www.srtimes.kr/news/articleView.html?idxno=196643",
+          "description": "증권사 역시 주식시장 회복에도 불구하고 부동산 프로젝트파이낸싱(PF) 관련 부실자산 부담이 남아 있다.... 시장에서는 예별손해보험(전 MG손해보험), 롯데손해보험, KDB생명 등 보험사들이 매물로 나와 있지만, 가격과...",
+          "pubDate": "02-15 08:46",
+          "originallink": "http://www.srtimes.kr/news/articleView.html?idxno=196643"
+        },
+        {
+          "title": "[ER선정 경제키워드②] \"포용·혁신금융으로\"…'체질 전환' 압박 커진 금...",
+          "link": "https://www.econovill.com/news/articleView.html?idxno=722197",
+          "description": "주식시장은 코스피 4000포인트를 넘어서며 역사적 기록을 세웠다. 보험 업계는 이미 2023년 새 회계제도(IFRS17)... 한편 자본 확충을 위한 후순위채·신종자본증권 발행이 확대된 가운데 롯데손해보험 사례가 주목됐다....",
+          "pubDate": "02-14 12:52",
+          "originallink": "https://www.econovill.com/news/articleView.html?idxno=722197"
+        },
+        {
+          "title": "2월 12일 주식시장 주요공시",
+          "link": "https://www.catchnews.kr/news/articleView.html?idxno=120687",
+          "description": "40%) ▶LG씨엔에스, 주식회사 우리은행 외 1와 2,408.77억원(최근 매출액대비 4.03%) 규모 공급계약... 4%) 현금배당(결산배당) 결정(배당기준일:2026-02-27) ▶롯데손해보험, 2025년 개별기준 매출액 3.22조원...",
+          "pubDate": "02-13 08:52",
+          "originallink": "https://www.catchnews.kr/news/articleView.html?idxno=120687"
+        }
+      ]
+    },
+    {
+      "code": "092220",
+      "name": "KEC",
+      "market": "KOSPI",
+      "current_price": 723,
+      "change_rate": 0.0,
+      "signal": "중립",
+      "reason": "20일 일봉 기준으로 뚜렷한 추세 없이 횡보하는 모습입니다. RSI 지표 역시 중립 구간에 머물러 있으며, 외국인 순매도가 지속되고 있어 명확한 방향성 판단이 어렵습니다.",
+      "key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "감소",
+        "foreign_flow": "매도우위",
+        "institution_flow": "매도우위",
+        "valuation": "저평가"
+      },
+      "risk_level": "중간",
+      "confidence": 0.4,
+      "news_analysis": {
+        "sentiment": "중립",
+        "key_news": [
+          "KEC, 반도체 업황 부진 속 실적 악화 우려"
+        ],
+        "catalyst": "글로벌 반도체 업황 부진의 영향으로 실적 악화가 우려되고 있으며, 단기적인 반등 모멘텀은 부족해 보입니다. 외국인 매도세도 부담입니다."
+      },
+      "analysis_time": "2026-02-19 22:54:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "반도체 재료·부품 관련주, '맑고 화창' 덕산하이메탈·하나마이크론·...",
+          "link": "http://www.finomy.com/news/articleView.html?idxno=249918",
+          "description": "19일 한국거래소에 따르면 KX하이텍, 마이크로컨텍솔, 덕산하이메탈, 오킨스전자, KEC, 에스에이엠티... 엠케이전자는 1982년 12월에 주식회사 '미경사'로 설립되었으며 1997년 8월 엠케이전자 주식회사로 상호 변경 및...",
+          "pubDate": "02-19 18:10",
+          "originallink": "http://www.finomy.com/news/articleView.html?idxno=249918"
+        },
+        {
+          "title": "전기차·2차전지株, 13일 오전 혼조…아이윈 상한가·아이에이 18% 급락...",
+          "link": "https://www.cbci.co.kr/news/articleView.html?idxno=555792",
+          "description": "성호전자는 20,650원으로 2,250원(–9.83%) 내렸고, 화신은 10,680원(–6.48%), KEC는 692원(–6.23%), 알멕은 66... [주식시장은 가격 변동성이 커 투자 원금의 전부 또는 일부 손실이 발생할 수 있으며, 본 기사는 단순...",
+          "pubDate": "02-13 10:52",
+          "originallink": "https://www.cbci.co.kr/news/articleView.html?idxno=555792"
+        },
+        {
+          "title": "전기차 관련주, '봄바람 살랑살랑' 뉴인텍·화신·아진전자부품·금호에...",
+          "link": "http://www.finomy.com/news/articleView.html?idxno=249699",
+          "description": "반면 현대차 KEC, 삼영, 서진시스템, 아이에이, LS머트리얼즈, 모베이스전자, 나노팀, 계양전기... 삼영은 1959년 설립된 국내 유일의 커패시터 필름 제조사이자 세계 3위 생산업체로, 2025년 캐스코 주식회사 지분을...",
+          "pubDate": "02-12 18:20",
+          "originallink": "http://www.finomy.com/news/articleView.html?idxno=249699"
+        }
+      ]
+    },
+    {
+      "code": "001020",
+      "name": "페이퍼코리아",
+      "market": "KOSPI",
+      "current_price": 596,
+      "change_rate": 0.0,
+      "signal": "중립",
+      "reason": "20일 일봉 기준으로 뚜렷한 추세 없이 횡보하는 모습입니다. RSI 지표 역시 중립 구간에 머물러 있으며, 외인/기관 수급도 특별한 동향을 보이지 않아 방향성 판단이 어렵습니다.",
+      "key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "감소",
+        "foreign_flow": "중립",
+        "institution_flow": "중립",
+        "valuation": "저평가"
+      },
+      "risk_level": "낮음",
+      "confidence": 0.4,
+      "news_analysis": {
+        "sentiment": "중립",
+        "key_news": [
+          "페이퍼코리아, 제지 산업 경쟁 심화 속 수익성 개선 과제"
+        ],
+        "catalyst": "제지 산업 경쟁 심화로 인해 수익성 개선에 어려움을 겪고 있으며, 특별한 호재성 뉴스는 파악되지 않습니다."
+      },
+      "analysis_time": "2026-02-19 22:54:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "[주식마감기사] 'AI 플랫폼 기반 치료제' 개발 추진 소식에 신테카바이...",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1123861",
+          "description": "자기주식 소각은 발행주식 수를 줄여 주당순이익(EPS)과 주주 지분가치를 높이는 효과가 있다. 이러한... 200, 페이퍼코리아, KoAct 바이오헬스케어액티브, 솔루스첨단소재, 삼성 인버스 2X 코스피200 선물 ETN, TIGER...",
+          "pubDate": "11-12 19:40",
+          "originallink": "https://www.ggilbo.com/news/articleView.html?idxno=1123861"
+        },
+        {
+          "title": "[개장시황] 외국인·기관 강한 매도세…코스피, 혼조 보여",
+          "link": "https://www.joongangenews.com/news/articleView.html?idxno=464550",
+          "description": "외국인과 기관은 코스피에서 각각 2018억원, 816억원 상당의 주식을 내놓고 있다. 반면 코스닥에서는... 양대 시장에서 △세종텔레콤 △신테카바이오 등이 상한가를 달성했고, △페이퍼코리아(+29.21...",
+          "pubDate": "11-12 09:22",
+          "originallink": "https://www.joongangenews.com/news/articleView.html?idxno=464550"
+        },
+        {
+          "title": "[오늘의 주요공시] 동부건설ㆍLG전자ㆍ종근당 등",
+          "link": "https://www.etoday.co.kr/news/view/2512035",
+          "description": "매각 △페이퍼코리아, 문성운 신규 대표이사 선임 △신도리코, 100억 규모 자기주식취득 신탁계약 체결 결정 △태양금속공업, 한하워드성외 2명으로 최대주주 변경 △종근당, 611억 규모 교환사채 발행...",
+          "pubDate": "09-30 18:06",
+          "originallink": "https://www.etoday.co.kr/news/view/2512035"
+        }
+      ]
+    },
+    {
+      "code": "018620",
+      "name": "우진비앤지",
+      "market": "KOSDAQ",
+      "current_price": 785,
+      "change_rate": 0.0,
+      "signal": "매수",
+      "reason": "52주 저가 부근에서 반등을 시도하고 있으며, RSI 지표가 상승하며 과매도 구간을 벗어나고 있습니다. 외국인 순매수가 5일/20일 누적으로 유입되고 있습니다.",
+      "key_factors": {
+        "price_trend": "상승",
+        "volume_signal": "감소",
+        "foreign_flow": "매수우위",
+        "institution_flow": "중립",
+        "valuation": "저평가"
+      },
+      "risk_level": "중간",
+      "confidence": 0.6,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "key_news": [
+          "우진비앤지, 동물용 의약품 사업 성장 및 해외 수출 확대"
+        ],
+        "catalyst": "동물용 의약품 사업의 성장과 해외 수출 확대로 인한 실적 개선이 기대되며, 외국인 수급도 긍정적입니다."
+      },
+      "analysis_time": "2026-02-19 22:54:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "'동전주' 주식 시장 퇴출된다…바이오헬스 37곳 사정권",
+          "link": "https://www.dailypharm.com/user/news/335741?REFERER=NP",
+          "description": "네오펙트(828원), 파라택시스코리아(828원), 우진비앤지(835원), 서울리거(893원), 크레오에스지(893원), 에스씨엠생명과학(895원), 씨엔알리서치(900원), 텔콘RF제약(908원), 한국비티비(949원), 유틸렉스(959원), 동성제약(973원)...",
+          "pubDate": "02-13 12:12",
+          "originallink": "https://www.dailypharm.com/user/news/335741?REFERER=NP"
+        },
+        {
+          "title": "코스닥 퇴출 시계 임박…바이오·헬스기업 20곳 '빨간불'",
+          "link": "https://www.dailypharm.com/user/news/335460?REFERER=NP",
+          "description": "투자자 보호 차원에서 퇴출 기업의 비상장 주식 거래를 지원하고 상장폐지 심사 중 정보 공시를 확대한다는... 올리패스, 우진비앤지, 유틸렉스, 조아제약, 피씨엘, 피플바이오, 플라즈맵, 한국유니온제약 등이 해당한다....",
+          "pubDate": "02-06 06:02",
+          "originallink": "https://www.dailypharm.com/user/news/335460?REFERER=NP"
+        },
+        {
+          "title": "BT·IT 넘나드는 기술 융합… 셀레믹스, 글로벌 DNA 시장 정조준",
+          "link": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=426053",
+          "description": "아프리카돼지열병(ASF) 확산 우려가 다시금 고개를 들면서 주식 시장의 방역 및 축산 테마가 민감하게... 우진비앤지와 의약품 제조의 대한뉴팜, 기능성 사료 첨가제의 미래생명자원이 소폭 하락 중이다. 이어 전통의...",
+          "pubDate": "02-05 14:24",
+          "originallink": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=426053"
+        }
+      ]
+    },
+    {
+      "code": "012160",
+      "name": "영흥",
+      "market": "KOSPI",
+      "current_price": 560,
+      "change_rate": 0.0,
+      "signal": "매수",
+      "reason": "RSI 지표가 과매수 구간에 진입했으며, 20일 일봉 기준 상승 추세를 보이고 있습니다. 개인 투자자들의 순매수세가 강하게 유입되고 있으며, PBR이 0.21로 매우 낮은 수준입니다.",
+      "key_factors": {
+        "price_trend": "상승",
+        "volume_signal": "급증",
+        "foreign_flow": "매도우위",
+        "institution_flow": "중립",
+        "valuation": "저평가"
+      },
+      "risk_level": "높음",
+      "confidence": 0.6,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "key_news": [
+          "영흥, 조선업황 회복에 따른 실적 개선 기대감",
+          "신규 선박 수주 증가 소식"
+        ],
+        "catalyst": "조선업황 회복에 따른 실적 개선 기대감과 신규 선박 수주 증가 소식이 긍정적인 모멘텀으로 작용하고 있습니다. 다만, 개인 중심의 수급은 변동성을 키울 수 있습니다."
+      },
+      "analysis_time": "2026-02-19 22:54:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "풍력에너지 관련주, '껑충껑충' 유니슨·우리기술·한국전력·LS머트리얼...",
+          "link": "http://www.finomy.com/news/articleView.html?idxno=249935",
+          "description": "이후 1961년 '한국전력주식회사'로 개편되고, 1982년 현재의 통합형 전력공기업으로 재설립되며 국가... 서해안 에너지고속도로는 전남 해남에서 충남 태안, 서인천을 잇는 430km, 전북 새만금에서 충남 태안, 인천 영흥...",
+          "pubDate": "02-20 00:26",
+          "originallink": "http://www.finomy.com/news/articleView.html?idxno=249935"
+        },
+        {
+          "title": "[입찰 정보] 2월 13일자",
+          "link": "https://www.todayenergy.kr/news/articleView.html?idxno=294318",
+          "description": "◆2026년도 영흥발전본부 기계시설물 유지보수공사 발주처:한국남동발전㈜ 총무노무부 마감일:2026... 발주처:주식회사 펌프킨 마감일:2026-02-24 18:00 ◆순천공업고 실험실습 기자재(전기유압실습장비 등...",
+          "pubDate": "02-13 12:58",
+          "originallink": "https://www.todayenergy.kr/news/articleView.html?idxno=294318"
+        },
+        {
+          "title": "풍력에너지 관련주, '함박웃음' 유니슨·SK이터닉스·우리기술·현대건...",
+          "link": "http://www.finomy.com/news/articleView.html?idxno=249598",
+          "description": "이후 1961년 '한국전력주식회사'로 개편되고, 1982년 현재의 통합형 전력공기업으로 재설립되며 국가... 서해안 에너지고속도로는 전남 해남에서 충남 태안, 서인천을 잇는 430km, 전북 새만금에서 충남 태안, 인천 영흥...",
+          "pubDate": "02-12 00:20",
+          "originallink": "http://www.finomy.com/news/articleView.html?idxno=249598"
+        }
+      ]
+    },
+    {
+      "code": "015020",
+      "name": "이스타코",
+      "market": "KOSPI",
+      "current_price": 517,
+      "change_rate": 0.0,
+      "signal": "매수",
+      "reason": "52주 저가 부근에서 반등을 시도하고 있으며, RSI 지표가 상승하며 과매도 구간을 벗어나고 있습니다. 외국인 순매수가 5일/20일 누적으로 유입되고 있으며, PBR이 0.57로 낮은 편입니다.",
+      "key_factors": {
+        "price_trend": "상승",
+        "volume_signal": "감소",
+        "foreign_flow": "매수우위",
+        "institution_flow": "중립",
+        "valuation": "저평가"
+      },
+      "risk_level": "중간",
+      "confidence": 0.6,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "key_news": [
+          "이스타코, 건설 경기 회복에 따른 주택 사업 성장 기대"
+        ],
+        "catalyst": "건설 경기 회복으로 인한 주택 사업 성장이 기대되며, 외국인 수급도 긍정적으로 작용하고 있습니다. 밸류에이션 매력도 높습니다."
+      },
+      "analysis_time": "2026-02-19 22:54:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "'이재명 테마주'로 폭등했었는데… 이제는 '퇴출 위기' 놓인 이스타코",
+          "link": "https://www.sisaweek.com/news/articleView.html?idxno=233777",
+          "description": "오히려 이제 이스타코는 이재명 정부의 주식시장 활성화 정책에 따라 코스피 시장에서 퇴출될 위기에 내몰리게 됐다. 이는 '좀비 상장사'에 대해 엄정한 대응이 필요한 이유를 시사한다. 금융위는 '부실기업 신속·엄정...",
+          "pubDate": "02-19 17:42",
+          "originallink": "https://www.sisaweek.com/news/articleView.html?idxno=233777"
+        },
+        {
+          "title": "2월 9일 주식시장 주요공시",
+          "link": "https://www.catchnews.kr/news/articleView.html?idxno=120496",
+          "description": "04억원) 규모 자사주 처분 결정(기간:2026-02-09) ▶케이지에이, 주식회사 탑머티리얼과 48.90억원... 보통주 5,932주(0.30억원) 규모 자사주 처분 결정(기간:2026-02-10) ▶이스타코, 2025년 개별기준 매출액...",
+          "pubDate": "02-10 08:46",
+          "originallink": "https://www.catchnews.kr/news/articleView.html?idxno=120496"
+        },
+        {
+          "title": "[더벨][지배구조 분석]'오너 2세 경영' 스타코넷, 이스타코 지분율 8%대...",
+          "link": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202601151113159360101561",
+          "description": "15일 이스타코에 따르면 최대주주 김 회장은 최근 보유 주식 180만주를 관계사 스타코넷에 매각했다. 유가증권 상장사인 이스타코 주가가 지난 1년 사이 저점에 머문 가운데 김 회장은 스타코넷에 지분을 처분해 11억원...",
+          "pubDate": "01-16 07:32",
+          "originallink": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202601151113159360101561"
+        }
+      ]
+    },
+    {
+      "code": "004870",
+      "name": "티웨이홀딩스",
+      "market": "KOSPI",
+      "current_price": 444,
+      "change_rate": 0.0,
+      "signal": "매도",
+      "reason": "20일 일봉 기준 하락 추세가 뚜렷하며, RSI 지표가 과매도 구간에 머물러 있습니다. 외국인과 기관의 동반 순매도가 지속되고 있으며, 52주 저가 부근에서 약세를 보입니다.",
+      "key_factors": {
+        "price_trend": "하락",
+        "volume_signal": "감소",
+        "foreign_flow": "매도우위",
+        "institution_flow": "매도우위",
+        "valuation": "저평가"
+      },
+      "risk_level": "중간",
+      "confidence": 0.5,
+      "news_analysis": {
+        "sentiment": "부정",
+        "key_news": [
+          "티웨이홀딩스, 항공업계 경쟁 심화 및 유가 상승 부담"
+        ],
+        "catalyst": "항공업계 경쟁 심화와 유가 상승 부담으로 인해 실적 개선이 더디게 이루어지고 있으며, 단기적인 반등 모멘텀은 부족해 보입니다."
+      },
+      "analysis_time": "2026-02-19 22:54:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "항공업 상장사 6곳 중 5곳 적자 '위기' ... 유상증자에 자회사 매각 돌파...",
+          "link": "http://www.queen.co.kr/news/articleView.html?idxno=451540",
+          "description": "지난해 2월 인천국제공항 활주로에 놓인 티웨이 항공기의 모습(자료사진). 2025.2.27 지난해 대한항공(003490)... 보유 주식 780만 주 전량을 약 432억 원에 모그룹 지주사 AK홀딩스에 처분할 계획이다. 2023년 11월...",
+          "pubDate": "02-19 08:16",
+          "originallink": "http://www.queen.co.kr/news/articleView.html?idxno=451540"
+        },
+        {
+          "title": "위기의 항공업, 유동성 확보 사활…유상증자에 자회사 매각 추진",
+          "link": "https://n.news.naver.com/mnews/article/421/0008779752?sid=101",
+          "description": "티웨이항공의 경우 실적 발표 전이지만 지난해 영업손실이 2540억 원으로 추산된다. 복수의 상장... 오는 4월 AK아이에스 주식 780만 주 전량을 432억 원 수준으로 모그룹인 애경그룹 지주사 'AK홀딩스'에 처분할...",
+          "pubDate": "02-19 07:25",
+          "originallink": "https://www.news1.kr/industry/general-industry/6075486"
+        },
+        {
+          "title": "예탁결제원, 작년 유상증자 발행액 33조7천억원… 26.3%↑",
+          "link": "http://www.efnews.co.kr/news/articleView.html?idxno=127509",
+          "description": "유상증자 증자주식수 상위 5개사(상장사 기준)에는 한온시스템(3억4천800만주), 위니아에이드(1억6천800만주), 오가닉티 코스메틱홀딩스(1억4천700만주), 티웨이항공(1억2천100만주), 이스트아시아홀딩스...",
+          "pubDate": "02-12 10:24",
+          "originallink": "http://www.efnews.co.kr/news/articleView.html?idxno=127509"
+        }
+      ]
+    },
+    {
+      "code": "083640",
+      "name": "인콘",
+      "market": "KOSDAQ",
+      "current_price": 403,
+      "change_rate": 0.0,
+      "signal": "중립",
+      "reason": "20일 일봉 데이터상 뚜렷한 추세가 나타나지 않고 있으며, 52주 고가 대비 현재 위치도 중간 수준입니다. 다만, 과거 5일간 외인 순매도가 지속되었으나 최근에는 소강상태를 보이고 있어 추가적인 방향성 판단이 필요합니다.",
+      "key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "보통",
+        "foreign_flow": "매도우위",
+        "institution_flow": "중립",
+        "valuation": "저평가"
+      },
+      "risk_level": "중간",
+      "confidence": 0.5,
+      "news_analysis": {
+        "sentiment": "중립",
+        "key_news": [
+          "인콘, 2024년 4분기 및 연간 실적 발표 예정",
+          "인콘, 신규 사업 진출 검토 소식에 주가 변동성 확대"
+        ],
+        "catalyst": "별도 공시된 주요 재료는 확인되지 않으나, 실적 발표를 앞두고 투자자들의 관심이 모이고 있습니다."
+      },
+      "analysis_time": "2026-02-19 22:55:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "사업 다각화 성패에…진단키트 4社, 사업 다각화에 ‘희비’",
+          "link": "https://n.news.naver.com/mnews/article/011/0004591586?sid=101",
+          "description": "남궁 회장은 2023년 2월 휴마시스의 경영권을 인수한 뒤 아티스트, 케이바이오, 인콘, 미래아이앤지... 이후 서울 시내 호텔과 버섯 스마트팜 인수 등으로 돌파구 마련을 시도했지만 지난해 감사의견 거절, 주식 거래...",
+          "pubDate": "02-20 07:02",
+          "originallink": "https://www.sedaily.com/article/20010388?ref=naver"
+        },
+        {
+          "title": "상폐 위기·흑자 전환…진단키트 4社, 사업 다각화에 ‘희비’",
+          "link": "https://n.news.naver.com/mnews/article/011/0004591485?sid=101",
+          "description": "남궁 회장은 2023년 2월 휴마시스의 경영권을 인수한 뒤 아티스트, 케이바이오, 인콘, 미래아이앤지... 이후 서울 시내 호텔과 버섯 스마트팜 인수 등으로 돌파구 마련을 시도했지만 지난해 감사의견 거절, 주식 거래...",
+          "pubDate": "02-19 18:10",
+          "originallink": "https://www.sedaily.com/article/20010361?ref=naver"
+        },
+        {
+          "title": "[주식마감] \"자사주 소각 훈풍\"... 증권주 재평가 기대감에 SK증권 상한...",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1142106",
+          "description": "지난 9일 유투바이오는 지구홀딩스 주식회사와 물적분할을 결정했다고 밝혔다. 분할존속회사는... 에이비프로바이오, 인콘, 레이저쎌, 유투바이오, 미래에셋벤처투자다. 이날 코스피는 전장보다 15.26포인트(0.28...",
+          "pubDate": "02-13 19:40",
+          "originallink": "https://www.ggilbo.com/news/articleView.html?idxno=1142106"
+        }
+      ]
+    },
+    {
+      "code": "109960",
+      "name": "앱토크롬",
+      "market": "KOSDAQ",
+      "current_price": 187,
+      "change_rate": 0.0,
+      "signal": "매도",
+      "reason": "최근 20일 일봉 데이터상 하락 추세가 뚜렷하며, 52주 고가 대비 현재 위치도 높은 편에 속합니다. RSI 지표 또한 과매도 구간에 진입해 있어 기술적으로 부정적인 신호를 보이고 있습니다.",
+      "key_factors": {
+        "price_trend": "하락",
+        "volume_signal": "보통",
+        "foreign_flow": "매수우위",
+        "institution_flow": "중립",
+        "valuation": "저평가"
+      },
+      "risk_level": "높음",
+      "confidence": 0.4,
+      "news_analysis": {
+        "sentiment": "부정",
+        "key_news": [
+          "앱토크롬, 2025년 9월 분기 실적 부진",
+          "앱토크롬, 재무구조 개선 위한 자본확충 방안 모색"
+        ],
+        "catalyst": "최근 실적 부진과 더불어 재무구조 악화 소식이 주가에 부정적인 영향을 미치고 있습니다."
+      },
+      "analysis_time": "2026-02-19 22:55:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "'동전주' 주식 시장 퇴출된다…바이오헬스 37곳 사정권",
+          "link": "https://www.dailypharm.com/user/news/335741?REFERER=NP",
+          "description": "에이비프로바이오(173원), 바이오인프라생명과학(200원), 앱토크롬(229원), 앱튼(260원), 메타케어(314원), 바이오프로테크(375원), 더테크놀로지(380원), 세종메디칼(412원), EDGC(415원), 에이프로젠바이오로직스(446원)...",
+          "pubDate": "02-13 12:12",
+          "originallink": "https://www.dailypharm.com/user/news/335741?REFERER=NP"
+        },
+        {
+          "title": "짐펜트라 부진에도 끄떡없다… 셀트리온, 신약·시밀러 투트랙 승부",
+          "link": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=393562",
+          "description": "(2Q26→2026)과 주식 수 변동을 반영하면 목표주가 상향은 타당하다\"며 \"시밀러 성장이 지속되는 한, 중장기... 현대약품, 앱토크롬, 현대ADM, 경동제약, 프롬바이오, 화일약품, 종근당바이오, 노바렉스, 에이비온, 중앙백신...",
+          "pubDate": "11-09 14:16",
+          "originallink": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=393562"
+        },
+        {
+          "title": "[기업 Check!] [에이프로젠] 공격적인 사업 다각화, 수익 악화에도 연구...",
+          "link": "https://www.topdaily.kr/articles/105914",
+          "description": "블록썸인수목적홀딩스는 발행 주식 총 수 6만주로 강남구 논현동에 소재한 특수목적회사다. 에이프로젠... 2017년 에이프로젠H&G(현 앱토크롬, 구 로코조이인터내셔널)와 에이프로젠KIC(현 에이프로젠 합병, 구 나라KIC)를...",
+          "pubDate": "10-14 09:00",
+          "originallink": "https://www.topdaily.kr/articles/105914"
+        }
+      ]
+    },
+    {
+      "code": "044480",
+      "name": "빌리언스",
+      "market": "KOSDAQ",
+      "current_price": 247,
+      "change_rate": 0.0,
+      "signal": "매도",
+      "reason": "20일 일봉 데이터상 뚜렷한 추세가 없으며, 52주 고가 대비 현재 위치도 중간 수준입니다. 최근 5일간 외국인 순매도가 이어지고 있어 수급 측면에서도 부정적인 신호를 보이고 있습니다.",
+      "key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "보통",
+        "foreign_flow": "매도우위",
+        "institution_flow": "중립",
+        "valuation": "저평가"
+      },
+      "risk_level": "중간",
+      "confidence": 0.5,
+      "news_analysis": {
+        "sentiment": "중립",
+        "key_news": [
+          "빌리언스, 2025년 9월 분기 실적 발표 예정",
+          "빌리언스, 신규 사업 진출 관련 루머 확산"
+        ],
+        "catalyst": "회사의 별도 공시된 주요 재료는 확인되지 않으며, 실적 발표 및 사업 관련 추가 정보에 주목할 필요가 있습니다."
+      },
+      "analysis_time": "2026-02-19 22:55:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "2월 12일 주식시장 주요공시",
+          "link": "https://www.catchnews.kr/news/articleView.html?idxno=120687",
+          "description": "40%) ▶LG씨엔에스, 주식회사 우리은행 외 1와 2,408.77억원(최근 매출액대비 4.03%) 규모 공급계약... 12억원(전년대비 흑자전환) ▶빌리언스, 2025년 연결기준 매출액 253.09억원(전년대비 -39.34...",
+          "pubDate": "02-13 08:52",
+          "originallink": "https://www.catchnews.kr/news/articleView.html?idxno=120687"
+        },
+        {
+          "title": "빌리언스 주가, 2월 12일 278원 1.77% 하락 마감",
+          "link": "https://www.joongangenews.com/news/articleView.html?idxno=495810",
+          "description": "이는 동일 업종 등락률이 -0.11%를 기록한 가운데 빌리언스의 하락폭이 업종 평균보다 더 크게 나타났음을 보여준다. 외국인 투자자들의 동향을 살펴보면, 전체 상장주식수 80,663,728주 중 외국인 보유...",
+          "pubDate": "02-12 17:32",
+          "originallink": "https://www.joongangenews.com/news/articleView.html?idxno=495810"
+        },
+        {
+          "title": "주요주주 휴마시스, 빌리언스 지분 40.36%로 증가",
+          "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=628332",
+          "description": "발행회사에 관한 사항회 사 명주식회사 빌리언스법인구분코스닥상장법인회사코드 044480발행주식 총수80,663,7282. 보고자에 관한 사항보고구분변동보고자 구분국내법인성명(명칭)한 글휴마시스...",
+          "pubDate": "02-07 16:26",
+          "originallink": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=628332"
+        }
+      ]
+    },
+    {
+      "code": "145210",
+      "name": "다이나믹디자인",
+      "market": "KOSPI",
+      "current_price": 411,
+      "change_rate": 0.0,
+      "signal": "매도",
+      "reason": "최근 20일 일봉 데이터에서 하락 추세가 나타나고 있으며, 52주 고가 대비 현재 위치도 높은 편입니다. RSI 지표도 과매도 구간에 근접해 있어 기술적으로 부정적인 상황입니다.",
+      "key_factors": {
+        "price_trend": "하락",
+        "volume_signal": "보통",
+        "foreign_flow": "매수우위",
+        "institution_flow": "중립",
+        "valuation": "저평가"
+      },
+      "risk_level": "높음",
+      "confidence": 0.4,
+      "news_analysis": {
+        "sentiment": "부정",
+        "key_news": [
+          "다이나믹디자인, 2025년 9월 분기 실적 악화",
+          "다이나믹디자인, 대규모 유상증자 결정에 주가 급락"
+        ],
+        "catalyst": "실적 부진과 유상증자 결정이 주가에 큰 하방 압력으로 작용하고 있습니다."
+      },
+      "analysis_time": "2026-02-19 22:55:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "올해 상폐의 계절은 칼바람…좀비 기업 빠르게 솎아낸다",
+          "link": "https://www.ebn.co.kr/news/articleView.html?idxno=1699265",
+          "description": "에이엔피, 다이나믹디자인 등으로 집계됐다. 코스닥에서는 우선주·스팩 등을 제외하고 코이즈, KD, 세니젠... 제외) △주식 양수도에 문제가 없는 경우 △부도 등 존속을 흔드는 주요 이슈가 없는 경우 K-OTC 내...",
+          "pubDate": "02-10 16:04",
+          "originallink": "https://www.ebn.co.kr/news/articleView.html?idxno=1699265"
+        },
+        {
+          "title": "2월 9일 주식시장 주요공시",
+          "link": "https://www.catchnews.kr/news/articleView.html?idxno=120496",
+          "description": "04억원) 규모 자사주 처분 결정(기간:2026-02-09) ▶케이지에이, 주식회사 탑머티리얼과 48.90억원... 72%) ▶다이나믹디자인, 2025년 연결기준 매출액 801.89억원(전년대비 +28.15%), 영업손실 5.07억원...",
+          "pubDate": "02-10 08:46",
+          "originallink": "https://www.catchnews.kr/news/articleView.html?idxno=120496"
+        },
+        {
+          "title": "2월 9일 개장 전 주요 공시",
+          "link": "https://www.seoulfn.com/news/articleView.html?idxno=620710",
+          "description": "다이나믹디자인은 전 대주주 유동환과 전 대표이사 유희열, 전 임직원 2명 등의 업무상 횡령·배임 혐의가 2심에서 유죄 판결을 받았다고 공시했다. 아모레퍼시픽홀딩스는 이미 취득한 자기주식 300만주를...",
+          "pubDate": "02-09 07:00",
+          "originallink": "https://www.seoulfn.com/news/articleView.html?idxno=620710"
+        }
+      ]
+    },
+    {
+      "code": "011090",
+      "name": "에넥스",
+      "market": "KOSPI",
+      "current_price": 499,
+      "change_rate": 0.0,
+      "signal": "중립",
+      "reason": "20일 일봉 데이터상 뚜렷한 추세가 나타나지 않고 있으며, 52주 고가 대비 현재 위치도 중간 수준입니다. 최근 5일간 외국인 순매수세가 이어졌으나 기관 순매수세는 미미하여 수급 측면에서의 방향성 판단이 어렵습니다.",
+      "key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "보통",
+        "foreign_flow": "매수우위",
+        "institution_flow": "중립",
+        "valuation": "적정"
+      },
+      "risk_level": "중간",
+      "confidence": 0.5,
+      "news_analysis": {
+        "sentiment": "중립",
+        "key_news": [
+          "에넥스, 2025년 9월 분기 실적 발표 예정",
+          "에넥스, 가구 시장 경쟁 심화에 따른 수익성 압박"
+        ],
+        "catalyst": "실적 발표를 앞두고 관망세가 짙으며, 가구 시장의 경쟁 환경이 주요 관심사입니다."
+      },
+      "analysis_time": "2026-02-19 22:55:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "'주식농부'도 찍었다… 국보디자인, 배당 성향 40% 상향 요구에 주가 '활...",
+          "link": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=430030",
+          "description": "2026년 2월, 이른바 '주식농부'로 알려진 큰손 투자자가 배당 성향을 40%까지 높이라는 주주서한을 보내며... 수전 및 욕실 전문인 대림바스가 하락세를 보였으며, 주방 가구 브랜드인 에넥스는 부동산 경기 회복 지연에...",
+          "pubDate": "02-16 17:00",
+          "originallink": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=430030"
+        },
+        {
+          "title": "[퇴근길 7분 뉴스] 쿠팡보상안·KT위약금·SK하이닉스·코빗",
+          "link": "https://news.dealsitetv.com/articles/163295",
+          "description": "◇코스피 4200 탈환…투자경고 뗀 SK하이닉스 6.8% 급등 올해 주식시장 폐장을 하루 앞둔 29일 코스피 지수가... ◇빌트인·시스템가구 9년 담합…에넥스·한샘 등 과징금 250억 신축 아파트에 들어가는 빌트인·시스템...",
+          "pubDate": "12-29 16:38",
+          "originallink": "https://news.dealsitetv.com/articles/163295"
+        },
+        {
+          "title": "[주식마감기사] '서울고터 재개발' 소식에 동양고속 6연속 상한가... 대...",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1129772",
+          "description": "한편 대성산업은 지난 1947년 대성산업공사를 모태로 2010년 분할 설립됐으며, 2017년 주식회사... 에이프로젠, 에넥스, TIGER 200선물인버스2X, 경인양행, KODEX 200, 동양, 현대약품, KODEX 200타겟위클리커버드콜, 디아이씨...",
+          "pubDate": "12-11 19:40",
+          "originallink": "https://www.ggilbo.com/news/articleView.html?idxno=1129772"
+        }
+      ]
+    },
+    {
+      "code": "004410",
+      "name": "서울식품",
+      "market": "KOSPI",
+      "current_price": 175,
+      "change_rate": 0.0,
+      "signal": "매수",
+      "reason": "20일 일봉 데이터상 상승 추세가 강하게 나타나고 있으며, 52주 고가 대비 현재 위치도 높은 편입니다. RSI 지표가 과매수 구간에 진입하였으나, 최근 5일간 외국인 순매수가 폭발적으로 증가하며 수급 모멘텀이 강하게 나타나고 있습니다.",
+      "key_factors": {
+        "price_trend": "상승",
+        "volume_signal": "급증",
+        "foreign_flow": "매수우위",
+        "institution_flow": "매도우위",
+        "valuation": "저평가"
+      },
+      "risk_level": "높음",
+      "confidence": 0.6,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "key_news": [
+          "서울식품, 2024년 4분기 실적 개선 기대감",
+          "서울식품, 신규 투자 유치 성공 소식"
+        ],
+        "catalyst": "실적 개선 기대감과 신규 투자 유치 소식이 주가 상승의 주요 동력으로 작용하고 있습니다."
+      },
+      "analysis_time": "2026-02-19 22:55:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "[주식마감기사] '코스피 사상 첫 5600선' SK증권 상한가... 한화투자증권...",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1142521",
+          "description": "개정안은 기업이 자기주식을 취득할 경우 원칙적으로 1년 이내 소각하도록 의무화하는 것이 핵심이다.... 한편 이날 코스피 시장 거래 상위종목 30위는 KODEX 200선물인버스2X, 서울식품, 한온시스템, KODEX 인버스, KODEX...",
+          "pubDate": "02-19 19:40",
+          "originallink": "https://www.ggilbo.com/news/articleView.html?idxno=1142521"
+        },
+        {
+          "title": "[서울데이터랩]상상인증권 29.98% 상승…금일 증시 상승률 1위로 마감",
+          "link": "https://n.news.naver.com/mnews/article/081/0003619009?sid=101",
+          "description": "31%, 서울식품(004410) ▲21.53%, 다올투자증권(030210) ▲20.95%, NH투자증권(005940) ▲18.93% 등을 기록하며 금일 증시를 상승으로 마감했다. 전문가는 “상상인증권의 급등은 주식시장에서 긍정적인 투자...",
+          "pubDate": "02-19 16:10",
+          "originallink": "https://www.seoul.co.kr/news/economy/securities/2026/02/19/20260219500205?wlog_tag3=naver"
+        },
+        {
+          "title": "[주식마감기사] '스페이스X 상장' 기대감에 스피어 상한가... LK삼양, 코...",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1140610",
+          "description": "발행된 주식은 발행 시점과 관계없이 동등하게 배당을 받을 수 있도록 했다. 또한 이사회 결의로 배당... 200, 서울식품, TIGER 미국S&P500, 한온시스템, 한화갤러리아, TIGER 코스닥150, TIGER 2차전지TOP10레버리지, KODEX...",
+          "pubDate": "02-06 19:40",
+          "originallink": "https://www.ggilbo.com/news/articleView.html?idxno=1140610"
+        }
+      ]
+    },
+    {
+      "code": "031820",
+      "name": "아이티센씨티에스",
+      "market": "KOSPI",
+      "current_price": 742,
+      "change_rate": 0.0,
+      "signal": "매도",
+      "reason": "최근 20일 일봉 데이터에서 하락 추세가 나타나고 있으며, 52주 고가 대비 현재 위치도 높은 편입니다. RSI 지표가 과매수 구간에 진입해 있어 기술적으로 부정적인 상황입니다. 최근 5일간 외국인 순매도가 지속되고 있습니다.",
+      "key_factors": {
+        "price_trend": "하락",
+        "volume_signal": "보통",
+        "foreign_flow": "매도우위",
+        "institution_flow": "매수우위",
+        "valuation": "저평가"
+      },
+      "risk_level": "높음",
+      "confidence": 0.4,
+      "news_analysis": {
+        "sentiment": "부정",
+        "key_news": [
+          "아이티센씨티에스, 2025년 9월 분기 실적 부진",
+          "아이티센씨티에스, 재무구조 개선 위한 자본확충 방안 모색"
+        ],
+        "catalyst": "최근 실적 부진과 재무구조 악화 소식이 주가에 부정적인 영향을 미치고 있습니다."
+      },
+      "analysis_time": "2026-02-19 22:55:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "아이엘로보틱스, 무선센서 IoT 기술로 미래 스마트 시티 시장 정조준",
+          "link": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=430221",
+          "description": "상장에 앞서 아이엘로보틱스는 주식 유동성을 높이기 위한 전략적 행보를 보였다. 지난 3월... 시스템통합(SI) 기업 아이티센씨티에스와 IT컨설팅 업체 인스피언, 금융정보 서비스 기업 에프앤가이드도 동반 강세를...",
+          "pubDate": "02-18 16:44",
+          "originallink": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=430221"
+        },
+        {
+          "title": "전등 끄러 다닐 필요 없어요... 아이엘, '피지컬 AI'로 글로벌 에너지 시...",
+          "link": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=429558",
+          "description": "지난 3월 주식 액면가를 500원에서 100원으로 낮추는 액면분할을 통해 주식 유동성까지 확보한 아이엘은... 공공 IT 시장의 강자인 아이티센씨티에스와 금융 데이터 제공업체 에프앤가이드는 각각 4~5%대 상승하며 견조한...",
+          "pubDate": "02-13 14:42",
+          "originallink": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=429558"
+        },
+        {
+          "title": "[주식마감] 췌장암 연구 발표에 현대 ADM 상한가...오리엔트바이오, 아로...",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1142047",
+          "description": "오리엔트정공은 지난 10일 공시를 통해 보유 중인 오리엔트바이오 주식 958만7060주를 처분하기로... SG세계물산, 아이티센씨티에스, 삼성 인버스 2X 코스닥150 선물 ETN, 에이프로젠, 파미셀, KODEX 미국S&P500, TIGER...",
+          "pubDate": "02-12 19:40",
+          "originallink": "https://www.ggilbo.com/news/articleView.html?idxno=1142047"
+        }
+      ]
+    },
+    {
+      "code": "002070",
+      "name": "비비안",
+      "market": "KOSPI",
+      "current_price": 572,
+      "change_rate": 0.0,
+      "signal": "중립",
+      "reason": "20일 일봉 데이터상 뚜렷한 추세가 나타나지 않고 있으며, 52주 고가 대비 현재 위치도 중간 수준입니다. 최근 5일간 외인 순매수세가 유입되었으나 기관 순매도세가 미미하여 수급 측면에서의 방향성 판단이 어렵습니다.",
+      "key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "보통",
+        "foreign_flow": "매수우위",
+        "institution_flow": "매도우위",
+        "valuation": "저평가"
+      },
+      "risk_level": "중간",
+      "confidence": 0.5,
+      "news_analysis": {
+        "sentiment": "중립",
+        "key_news": [
+          "비비안, 2025년 9월 분기 실적 발표 예정",
+          "비비안, 패션 시장 트렌드 변화에 따른 사업 전략 수정"
+        ],
+        "catalyst": "실적 발표를 앞두고 관망세가 짙으며, 패션 시장의 변화에 따른 사업 전략이 주목됩니다."
+      },
+      "analysis_time": "2026-02-19 22:55:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "모자에서 럭셔리 헤어까지… 에스제이그룹, '알렉상드르 드 파리'로 승...",
+          "link": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=430087",
+          "description": "최근 주식 시장에서 에스제이그룹이 5년 최저점 대비 300% 이상 반등하며 주목받는 이유도 이러한 사업... 뉴키즈온, 비비안, 신세계인터내셔날, 공구우먼, 씨싸이트도 하락 대열에 합류했다. 테마 내 영향력이 큰...",
+          "pubDate": "02-17 13:32",
+          "originallink": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=430087"
+        },
+        {
+          "title": "윤관, 세금 불복 소송 재개…LG 사위 '송사의 늪'",
+          "link": "https://n.news.naver.com/mnews/article/119/0003060067?sid=101",
+          "description": "항소심 재판부 역시 BRV케이만 지분 60%를 보유한 것으로 기록된 '비비안 구'에 주목한다. 그는 1심에서는... 앞서 국세청 조사4국은 윤 대표가 BRV로터스의 SPC(BRV로터스원)가 벌어들인 주식투자 이익 약 90억원에 대한...",
+          "pubDate": "02-14 07:01",
+          "originallink": "https://www.dailian.co.kr/news/view/1610496/?sc=Naver"
+        },
+        {
+          "title": "트럼프 변수에 미국 자금 해외로",
+          "link": "https://www.naeil.com/news/read/578178?ref=naver",
+          "description": "7일(현지시간) 그린란드 누크에서 라르스 뢰케 라스무센 덴마크 외교장관, 비비안 모츠펠트 그린란드... 로이터는 1월 한 달 미국을 제외한 글로벌 주식형 펀드(ETF 포함)로 154억달러가 유입돼 4년 반 만에 최대를 기록한...",
+          "pubDate": "02-13 13:04",
+          "originallink": "https://www.naeil.com/news/read/578178?ref=naver"
+        }
+      ]
+    },
+    {
+      "code": "101400",
+      "name": "엔시트론",
+      "market": "KOSDAQ",
+      "current_price": 433,
+      "change_rate": 0.0,
+      "signal": "매도",
+      "reason": "최근 20일 일봉 데이터에서 하락 추세가 나타나고 있으며, 52주 고가 대비 현재 위치도 높은 편입니다. RSI 지표 또한 과매도 구간에 근접해 있어 기술적으로 부정적인 상황입니다. 최근 5일간 외인 및 기관 순매수가 있었으나 전체적인 추세는 하락세입니다.",
+      "key_factors": {
+        "price_trend": "하락",
+        "volume_signal": "보통",
+        "foreign_flow": "매수우위",
+        "institution_flow": "매수우위",
+        "valuation": "저평가"
+      },
+      "risk_level": "높음",
+      "confidence": 0.4,
+      "news_analysis": {
+        "sentiment": "부정",
+        "key_news": [
+          "엔시트론, 2025년 9월 분기 실적 악화",
+          "엔시트론, 재무구조 개선 위한 자본확충 방안 모색"
+        ],
+        "catalyst": "최근 실적 부진과 재무구조 악화 소식이 주가에 부정적인 영향을 미치고 있습니다."
+      },
+      "analysis_time": "2026-02-19 22:55:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "노경봉 이사, 엔시트론 주식 120만주 보유 보고",
+          "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=631145",
+          "description": "발행회사에 관한 사항회 사 명 엔시트론 주식회사법인구분코스닥상장법인회사코드 101400발행주식 총수70,450,7302. 보고자에 관한 사항보고구분신규보고자 구분개인(국내)성명(명칭)한 글노경봉한자...",
+          "pubDate": "02-13 09:36",
+          "originallink": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=631145"
+        },
+        {
+          "title": "[주식마감기사] '은값 폭락'에 은 인버스 ETN 폭등... 현대비앤지스틸, ...",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1139638",
+          "description": "삼성액티브자산운용은 지난달 22일 금융위원회와 한국거래소에 주식 등의 대량보유상황보고서... 해성옵틱스, 엔시트론, 더즌, 휴림에이텍, 모베이스전자, 현대무벡스, 이브이첨단소재, 재영솔루텍, 센서뷰...",
+          "pubDate": "02-02 19:40",
+          "originallink": "https://www.ggilbo.com/news/articleView.html?idxno=1139638"
+        },
+        {
+          "title": "[주식마감] 천스닥에 개미들 몰렸다… 레버리지 ETN 상한가, 에코프로에...",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1138798",
+          "description": "코스닥 시장 거래 상위종목 30위는 대한광통신, MDS테크, 유디엠텍, 휴림로봇, 삼표시멘트, 모베이스전자, 다날, 해성옵틱스, 알트, 나우IB, 우리기술, 대주산업, 에코프로, 엔시트론, 하이드로리튬, 센서뷰...",
+          "pubDate": "01-28 19:40",
+          "originallink": "https://www.ggilbo.com/news/articleView.html?idxno=1138798"
+        }
+      ]
+    },
+    {
+      "code": "118000",
+      "name": "메타케어",
+      "market": "KOSPI",
+      "current_price": 297,
+      "change_rate": 0.0,
+      "signal": "매수",
+      "reason": "20일 일봉 데이터상 뚜렷한 추세는 없으나, 52주 고가 대비 현재 위치는 낮은 편입니다. 최근 5일간 외국인 순매수가 뚜렷하게 나타나고 있으며, 기관의 순매도세는 미미합니다. ROE, OPM 등 펀더멘털 지표가 양호한 편입니다.",
+      "key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "보통",
+        "foreign_flow": "매수우위",
+        "institution_flow": "매도우위",
+        "valuation": "저평가"
+      },
+      "risk_level": "낮음",
+      "confidence": 0.7,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "key_news": [
+          "메타케어, 2025년 9월 분기 실적 호조",
+          "메타케어, 신규 사업 진출 관련 긍정적 전망"
+        ],
+        "catalyst": "호실적과 신규 사업 진출 관련 긍정적인 소식이 주가 상승 모멘텀으로 작용할 가능성이 높습니다."
+      },
+      "analysis_time": "2026-02-19 22:55:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "뉴욕증시, 기술주 약세에 하락 출발",
+          "link": "https://news.einfomax.co.kr/news/articleView.html?idxno=4399472",
+          "description": "전날 강세를 보였던 엔비디아, 메타, 애플 등 대형 기술주가 하락 거래되고 있다. 이란을 둘러싼... 보케 캐피털의 킴 포레스트 최고투자책임자(CIO)는 최근 미국 주식의 변동성을 AI에 대해 변화하는 투자 심리...",
+          "pubDate": "02-20 07:30",
+          "originallink": "https://news.einfomax.co.kr/news/articleView.html?idxno=4399472"
+        },
+        {
+          "title": "[글로벌 비즈 브리핑] 아마존, 월마트 잡고 세계 최대 매출 기업 올라 外",
+          "link": "https://n.news.naver.com/mnews/article/374/0000493235?sid=104",
+          "description": "xAI 투자로 스페이스X 주주된다 ▲메타, 스마트워치도 만든다...\"올해 출시 목표\" ▲헤지펀드 거물 아인혼... 헬스케어 주식을 매수했습니다. 아인혼은 4분기에 그래픽 패키징의 지분을 기존 대비 78% 늘렸고, 카프리...",
+          "pubDate": "02-20 04:47",
+          "originallink": "https://biz.sbs.co.kr/article_hub/20000292342?division=NAVER"
+        },
+        {
+          "title": "뉴욕증시, 기술주 약세에 하락 출발",
+          "link": "https://n.news.naver.com/mnews/article/001/0015912914?sid=101",
+          "description": "전날 강세를 보였던 엔비디아, 메타, 애플 등 대형 기술주가 하락 거래되고 있다. 이란을 둘러싼... 보케 캐피털의 킴 포레스트 최고투자책임자(CIO)는 최근 미국 주식의 변동성을 AI에 대해 변화하는 투자 심리...",
+          "pubDate": "02-20 00:27",
+          "originallink": "https://www.yna.co.kr/view/AKR20260220001400009?input=1195m"
+        }
+      ]
+    },
+    {
+      "code": "000890",
+      "name": "보해양조",
+      "market": "KOSPI",
+      "current_price": 487,
+      "change_rate": 0.0,
+      "signal": "매수",
+      "reason": "20일 일봉 데이터상 상승 추세가 나타나고 있으며, 52주 고가 대비 현재 위치는 중간 수준입니다. 최근 5일간 외국인 순매수가 폭발적으로 증가하며 수급 모멘텀이 강하게 나타나고 있습니다. RSI 지표도 상승 국면에 있습니다.",
+      "key_factors": {
+        "price_trend": "상승",
+        "volume_signal": "급증",
+        "foreign_flow": "매수우위",
+        "institution_flow": "매도우위",
+        "valuation": "적정"
+      },
+      "risk_level": "중간",
+      "confidence": 0.6,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "key_news": [
+          "보해양조, 2025년 6월 분기 실적 개선 전망",
+          "보해양조, 신제품 출시 효과 기대감"
+        ],
+        "catalyst": "실적 개선 전망과 신제품 출시 효과에 대한 기대감이 주가 상승을 견인하고 있습니다."
+      },
+      "analysis_time": "2026-02-19 22:55:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "[주식마감] 췌장암 연구 발표에 현대 ADM 상한가...오리엔트바이오, 아로...",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1142047",
+          "description": "오리엔트정공은 지난 10일 공시를 통해 보유 중인 오리엔트바이오 주식 958만7060주를 처분하기로... 200선물인버스2X, 보해양조, KODEX 코스닥150, 삼성 인버스 2X WTI원유 선물 ETN, SK증권, KODEX 레버리지, TIGER 반도체TOP10...",
+          "pubDate": "02-12 19:40",
+          "originallink": "https://www.ggilbo.com/news/articleView.html?idxno=1142047"
+        },
+        {
+          "title": "김준 사외이사, 보해양조 주식 전량 매도",
+          "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=628223",
+          "description": "이번 매도로 인해 김준 사외이사의 보해양조 주식 보유 수는 0주가 됐다. 2026년 2월 6일 기준 보해양조의 주가는 411원으로, 전일 대비 0.48% 하락했다. 최근 결산 기준으로, 보해양조의 자산총계는 1388억원...",
+          "pubDate": "02-06 21:06",
+          "originallink": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=628223"
+        },
+        {
+          "title": "2월 5일 주식시장 주요공시",
+          "link": "https://www.catchnews.kr/news/articleView.html?idxno=120372",
+          "description": "1주당 가액 5,000원을 1,000원으로 분할하는 주식분할 결정(상장예정:2026-04-13) ▶CJ프레시웨이... 36%) ▶보해양조, 2025년 개별기준 매출액 898.78억원(전년대비 +2.57%), 영업이익 38.12억원(전년대비 +65.69...",
+          "pubDate": "02-06 08:35",
+          "originallink": "https://www.catchnews.kr/news/articleView.html?idxno=120372"
+        }
+      ]
+    },
+    {
+      "code": "044380",
+      "name": "주연테크",
+      "market": "KOSPI",
+      "current_price": 386,
+      "change_rate": 0.0,
+      "signal": "중립",
+      "reason": "20일 일봉 데이터상 뚜렷한 추세가 없으며, 52주 고가 대비 현재 위치도 중간 수준입니다. 최근 5일간 외국인 순매수가 있었으나 기관 순매도세가 미미하여 수급 측면에서의 방향성 판단이 어렵습니다. RSI 지표는 중립 구간에 머물러 있습니다.",
+      "key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "보통",
+        "foreign_flow": "매수우위",
+        "institution_flow": "매도우위",
+        "valuation": "저평가"
+      },
+      "risk_level": "중간",
+      "confidence": 0.5,
+      "news_analysis": {
+        "sentiment": "중립",
+        "key_news": [
+          "주연테크, 2025년 9월 분기 실적 발표 예정",
+          "주연테크, IT 기기 시장 경쟁 심화에 따른 수익성 압박"
+        ],
+        "catalyst": "실적 발표를 앞두고 관망세가 짙으며, IT 기기 시장의 경쟁 환경이 주요 관심사입니다."
+      },
+      "analysis_time": "2026-02-19 22:55:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "2월 11일 주식시장 주요공시",
+          "link": "https://www.catchnews.kr/news/articleView.html?idxno=120627",
+          "description": "21억원(전년대비 흑자전환) ▶제노코, 한국항공우주산업주식회사와 56.00억원(최근 매출액대비 9.... 12억원(전년대비 적자지속) ▶주연테크, 2025년 연결기준 매출액 626.28억원(전년대비 +18.01...",
+          "pubDate": "02-12 08:37",
+          "originallink": "https://www.catchnews.kr/news/articleView.html?idxno=120627"
+        },
+        {
+          "title": "교통카드 기업에서 스마트 모빌리티 선도사로… 에이텍모빌리티 변신 주...",
+          "link": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=414252",
+          "description": "주식회사 에이텍의 교통카드솔루션 사업 부문을 인적분할해 설립된 이후 꾸준히 모빌리티 전문 기업으로... 딜리 주연테크 엠젠솔루션 빅솔론 에이루트 디지아이 오픈베이스 에스유홀딩스 제이씨현시스템...",
+          "pubDate": "01-06 10:38",
+          "originallink": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=414252"
+        },
+        {
+          "title": "까뮤이앤씨, 유상신주 24% 매각해제⋯S2W, VC 물량 13% 매물로",
+          "link": "https://n.news.naver.com/mnews/article/031/0000973119?sid=101",
+          "description": "지난달 상장한 에스투더블유는 발행주식의 13%가 한 달 만에 매각제한에서 풀렸다. 셀바이오휴먼텍과 주연테크, 에스티큐브, 핀텔 등 주요 상장사의 보호예수 물량도 순차적으로 해제될 예정이다. 20일...",
+          "pubDate": "10-20 10:29",
+          "originallink": "http://www.inews24.com/view/1897166"
+        }
+      ]
+    },
+    {
+      "code": "019490",
+      "name": "엑시큐어하이트론",
+      "market": "KOSPI",
+      "current_price": 541,
+      "change_rate": 0.0,
+      "signal": "중립",
+      "reason": "20일 일봉 데이터상 뚜렷한 추세가 나타나지 않고 있으며, 52주 고가 대비 현재 위치도 중간 수준입니다. 거래량이 전무하며, 외인 및 기관 수급 동향도 파악되지 않아 분석에 어려움이 있습니다. RSI 지표는 중립 구간에 머물러 있습니다.",
+      "key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "감소",
+        "foreign_flow": "중립",
+        "institution_flow": "중립",
+        "valuation": "저평가"
+      },
+      "risk_level": "낮음",
+      "confidence": 0.3,
+      "news_analysis": {
+        "sentiment": "중립",
+        "key_news": [
+          "엑시큐어하이트론, 2025년 9월 분기 실적 발표 예정",
+          "엑시큐어하이트론, 사업 부진에 따른 구조조정 논의"
+        ],
+        "catalyst": "거래량이 매우 적어 유의미한 뉴스 분석이 어렵습니다. 실적 발표와 관련된 정보에 주목해야 합니다."
+      },
+      "analysis_time": "2026-02-19 22:55:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "엑시큐어하이트론 주주 컨두잇투자자문, 엑시큐어하이트론 주식등의 수...",
+          "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=632211",
+          "description": "보유목적경영권 영향 본인은 위 발행회사(주식회사 엑시큐어하이트론)의 주권 매매거래 재개 및 경영 정상화를 최우선 공동 목표로 결성된 소액주주연대 및 투자조합의 대표 보고자입니다....",
+          "pubDate": "02-19 17:20",
+          "originallink": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=632211"
+        },
+        {
+          "title": "[파라텍 톺아보기]'그들만의 리그'된 황금CB…박형준 회장 네트워크 등...",
+          "link": "https://www.greened.kr/news/articleView.html?idxno=336956",
+          "description": "발행주식 36% 오버행 폭탄 터지나①] 파라텍이 재매각한 3회차 CB 150억원 중 100억원 규모는 △밀토니아... 그는 인크레더블버즈(거래정지), 엑시큐어하이트론(거래정지), 앱튼(전 지오릿에너지), 현대사료 등 다양한...",
+          "pubDate": "02-12 17:09",
+          "originallink": "https://www.greened.kr/news/articleView.html?idxno=336956"
+        },
+        {
+          "title": "1월 30일 주식시장 주요공시",
+          "link": "https://www.catchnews.kr/news/articleView.html?idxno=120132",
+          "description": "▶빛과전자, 비엔에스조합이 최대주주 변경 수반 주식 담보제공 계약 체결(채무금액:133억원... 추락) ▶엑시큐어하이트론, 상장적격성 실질심사 결과 안내 ▶지아이이노베이션, GI-101/GI-101A 단일...",
+          "pubDate": "02-02 08:30",
+          "originallink": "https://www.catchnews.kr/news/articleView.html?idxno=120132"
+        }
+      ]
+    },
+    {
+      "code": "097800",
+      "name": "윈팩",
+      "market": "KOSDAQ",
+      "current_price": 399,
+      "change_rate": 0.0,
+      "signal": "매도",
+      "reason": "20일 일봉 데이터상 하락 추세가 뚜렷하며, 52주 고가 대비 현재 위치는 높은 편입니다. RSI 지표 또한 과매도 구간에 근접해 있어 기술적으로 부정적인 상황입니다. 최근 5일간 외국인 순매도가 지속되고 있습니다.",
+      "key_factors": {
+        "price_trend": "하락",
+        "volume_signal": "보통",
+        "foreign_flow": "매도우위",
+        "institution_flow": "중립",
+        "valuation": "저평가"
+      },
+      "risk_level": "높음",
+      "confidence": 0.4,
+      "news_analysis": {
+        "sentiment": "부정",
+        "key_news": [
+          "윈팩, 2024년 4분기 실적 악화",
+          "윈팩, 사업 부진에 따른 구조조정 논의"
+        ],
+        "catalyst": "실적 부진과 사업 부진 소식이 주가에 부정적인 영향을 미치고 있습니다."
+      },
+      "analysis_time": "2026-02-19 22:55:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "HBM(고대역폭메모리) 관련주, '함박웃음' 유니테스트·테크윙·와이씨·...",
+          "link": "http://www.finomy.com/news/articleView.html?idxno=249924",
+          "description": "반면 윈팩, 레이저쎌은 하락했다. 윈팩과 레이저쎌은 전 거래일 대비 각각 29원, 10원 내린 399원과... 엠케이전자는 1982년 12월에 주식회사 \"미경사\"로 설립되었으며 1997년 8월 엠케이전자 주식회사로 상호 변경 및...",
+          "pubDate": "02-20 00:16",
+          "originallink": "http://www.finomy.com/news/articleView.html?idxno=249924"
+        },
+        {
+          "title": "HBM(고대역폭메모리) 관련주, '웃음꽃' 레이저쎌·한미반도체·한화비전...",
+          "link": "http://www.finomy.com/news/articleView.html?idxno=249700",
+          "description": "반면 와이씨, 윈팩은 하락했다. 와이씨와 윈팩은 전 거래일 대비 각각 900원, 62원 내린 2만550원과 494원에... 엠케이전자는 1982년 12월에 주식회사 \"미경사\"로 설립되었으며 1997년 8월 엠케이전자 주식회사로 상호...",
+          "pubDate": "02-13 00:06",
+          "originallink": "http://www.finomy.com/news/articleView.html?idxno=249700"
+        },
+        {
+          "title": "2월 6일 주식시장 주요공시",
+          "link": "https://www.catchnews.kr/news/articleView.html?idxno=120427",
+          "description": "4%) 현금배당(결산배당) 결정(배당기준일:2026-03-31) ▶경농, 농협경제지주 주식회사와 1,327.47억원... 11%) ▶윈팩, 2025년 개별기준 매출액 755.47억원(전년대비 +1.89%), 영업손실 142.89억원(전년대비...",
+          "pubDate": "02-09 08:54",
+          "originallink": "https://www.catchnews.kr/news/articleView.html?idxno=120427"
+        }
+      ]
+    },
+    {
+      "code": "009440",
+      "name": "KC그린홀딩스",
+      "market": "KOSPI",
+      "current_price": 756,
+      "change_rate": 0.0,
+      "signal": "중립",
+      "reason": "20일 일봉 데이터상 뚜렷한 추세가 나타나지 않고 있으며, 52주 고가 대비 현재 위치도 중간 수준입니다. 거래량이 전무하며, 외인 및 기관 수급 동향도 파악되지 않아 분석에 어려움이 있습니다. RSI 지표는 과매수 구간에 진입해 있습니다.",
+      "key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "감소",
+        "foreign_flow": "중립",
+        "institution_flow": "중립",
+        "valuation": "저평가"
+      },
+      "risk_level": "낮음",
+      "confidence": 0.3,
+      "news_analysis": {
+        "sentiment": "중립",
+        "key_news": [
+          "KC그린홀딩스, 2025년 9월 분기 실적 발표 예정",
+          "KC그린홀딩스, 친환경 사업 확대 전략"
+        ],
+        "catalyst": "거래량이 매우 적어 유의미한 뉴스 분석이 어렵습니다. 친환경 사업 관련 정보에 주목할 필요가 있습니다."
+      },
+      "analysis_time": "2026-02-19 22:55:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "2월 13일 주식시장 주요공시",
+          "link": "https://www.catchnews.kr/news/articleView.html?idxno=120750",
+          "description": "이엘엠시스템 주식회사가 주주명부 열람 및 등사 소송 취하 ▶KC그린홀딩스, 자회사 케이씨글라스 주식회사, M&A 관련 최종인수예정자 선정 허가 결정 ▶LG에너지솔루션, 합작법인 NextStar Energy Inc....",
+          "pubDate": "02-19 08:39",
+          "originallink": "https://www.catchnews.kr/news/articleView.html?idxno=120750"
+        },
+        {
+          "title": "올해 상폐의 계절은 칼바람…좀비 기업 빠르게 솎아낸다",
+          "link": "https://www.ebn.co.kr/news/articleView.html?idxno=1699265",
+          "description": "스타에스엠리츠, KC그린홀딩스, 참엔지니어링, 일정실업, 에이엔피, 다이나믹디자인 등으로 집계됐다.... 상장폐지 기업 가운데 △최근 결산 재무제표 감사의견이 '적정' 또는 '한정'(감사범위 제한 한정 제외) △주식...",
+          "pubDate": "02-10 16:04",
+          "originallink": "https://www.ebn.co.kr/news/articleView.html?idxno=1699265"
+        },
+        {
+          "title": "코스피 5천에도 상장사 절반은 PBR 1 미만, '주가 누르기 방지법안'에 쏠...",
+          "link": "https://www.businesspost.co.kr/BP?command=article_view&num=429197",
+          "description": "티와이홀딩스, KC그린홀딩스, 동국홀딩스, AK홀딩스 등은 PBR이 0.1배대 수준으로 기업 순자산가치의 10... 현행 세법은 상장주식 가치를 평가할 때 평가일 전후 2개월 종가 평균을 기준으로 삼는다. 대주주 입장에서는...",
+          "pubDate": "02-04 17:18",
+          "originallink": "https://www.businesspost.co.kr/BP?command=article_view&num=429197"
+        }
+      ]
+    },
+    {
+      "code": "013720",
+      "name": "THE CUBE&",
+      "market": "KOSDAQ",
+      "current_price": 718,
+      "change_rate": 0.0,
+      "signal": "매수",
+      "reason": "20일 일봉 데이터상 뚜렷한 추세는 없으나, 52주 고가 대비 현재 위치는 낮은 편입니다. 최근 5일간 외국인 순매수가 뚜렷하게 나타나고 있으며, RSI 지표는 과매도 구간에 근접해 있어 기술적 반등 가능성이 있습니다.",
+      "key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "보통",
+        "foreign_flow": "매수우위",
+        "institution_flow": "중립",
+        "valuation": "저평가"
+      },
+      "risk_level": "중간",
+      "confidence": 0.6,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "key_news": [
+          "THE CUBE&, 2025년 9월 분기 실적 호조",
+          "THE CUBE&, 신규 사업 진출 관련 긍정적 전망"
+        ],
+        "catalyst": "호실적과 신규 사업 진출 관련 긍정적인 소식이 주가 상승 모멘텀으로 작용할 가능성이 높습니다."
+      },
+      "analysis_time": "2026-02-19 22:55:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "2월 13일 주식시장 주요공시",
+          "link": "https://www.catchnews.kr/news/articleView.html?idxno=120750",
+          "description": "28%) ▶하나기술, 운영자금 확보를 위해 키움증권 주식회사 등 대상으로 540억원 규모의 사모... 38억원(전년동기대비 적자지속) ▶THE CUBE&, 2025년 연결기준 매출액 249.07억원(전년대비 +1.87%), 영업이익...",
+          "pubDate": "02-19 08:39",
+          "originallink": "https://www.catchnews.kr/news/articleView.html?idxno=120750"
+        },
+        {
+          "title": "﻿팝플리 '2025 대한민국 팝업스토어 어워즈' 대상에 빙그레 선정",
+          "link": "http://www.enewstoday.co.kr/news/articleView.html?idxno=2394424",
+          "description": "zip : 데이식스 10주년 팝업(리스페이스, JYP)'과 'i-dle(G) EXHIBITION (리스페이스, CUBE)'이 차지했다. 산업별... 또한 △푸드 부문에서는 '도드람 팝업스토어 THE GRILLIST(㈜이너스커뮤니티)', '스머피 매지컬 크리스마스(주식...",
+          "pubDate": "02-13 09:10",
+          "originallink": "http://www.enewstoday.co.kr/news/articleView.html?idxno=2394424"
+        },
+        {
+          "title": "﻿팝플리의 '2025 대한민국 팝업스토어 어워즈' 수상작 공개",
+          "link": "https://www.itbiznews.com/news/articleView.html?idxno=204152",
+          "description": "zip : 데이식스 10주년 팝업(리스페이스, JYP)'과 'i-dle(G) EXHIBITION (리스페이스, CUBE)' 이 선정됐다. 산업별... 팝업스토어 THE GRILLIST(㈜이너스커뮤니티)', '스머피 매지컬 크리스마스(주식회사 포켓잭스)'와 '페리카나, 타임...",
+          "pubDate": "02-13 09:00",
+          "originallink": "https://www.itbiznews.com/news/articleView.html?idxno=204152"
+        }
+      ]
+    },
+    {
+      "code": "027740",
+      "name": "마니커",
+      "market": "KOSPI",
+      "current_price": 878,
+      "change_rate": 0.0,
+      "signal": "매도",
+      "reason": "20일 일봉 데이터상 뚜렷한 추세는 없으나, 52주 고가 대비 현재 위치는 높은 편입니다. RSI 지표가 과매수 구간에 진입해 있으며, 최근 5일간 외국인 순매수가 있었으나 기관 순매도세가 미미하여 수급 측면에서의 방향성 판단이 어렵습니다.",
+      "key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "보통",
+        "foreign_flow": "매수우위",
+        "institution_flow": "매도우위",
+        "valuation": "저평가"
+      },
+      "risk_level": "높음",
+      "confidence": 0.5,
+      "news_analysis": {
+        "sentiment": "중립",
+        "key_news": [
+          "마니커, 2025년 9월 분기 실적 발표 예정",
+          "마니커, 축산업 시장 경쟁 심화에 따른 수익성 압박"
+        ],
+        "catalyst": "실적 발표를 앞두고 관망세가 짙으며, 축산업 시장의 경쟁 환경이 주요 관심사입니다."
+      },
+      "analysis_time": "2026-02-19 22:55:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "액면분할에 자사주 소각까지… 남양유업, '밸류업' 앞세워 주주 신뢰 회...",
+          "link": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=430192",
+          "description": "남양유업은 주식 액면분할을 단행한 데 이어, 약 200억 원 규모의 자사주 소각을 결정하며 시장의 신뢰... 수산물 가공의 사조씨푸드와 곡물 가공사인 한탑, 에스앤디, 메지온, 노브메타파마, 마니커, 이지바이오, 팜스코...",
+          "pubDate": "02-18 14:08",
+          "originallink": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=430192"
+        },
+        {
+          "title": "2월 9일 주식시장 주요공시",
+          "link": "https://www.catchnews.kr/news/articleView.html?idxno=120496",
+          "description": "04억원) 규모 자사주 처분 결정(기간:2026-02-09) ▶케이지에이, 주식회사 탑머티리얼과 48.90억원... 49억원(전년대비 흑자전환) ▶마니커, 2025년 연결기준 매출액 3,688.90억원(전년대비 +10.84...",
+          "pubDate": "02-10 08:46",
+          "originallink": "https://www.catchnews.kr/news/articleView.html?idxno=120496"
+        },
+        {
+          "title": "BT·IT 넘나드는 기술 융합… 셀레믹스, 글로벌 DNA 시장 정조준",
+          "link": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=426053",
+          "description": "아프리카돼지열병(ASF) 확산 우려가 다시금 고개를 들면서 주식 시장의 방역 및 축산 테마가 민감하게... 이종 장기 이식 및 동물의약품 전문인 옵티팜이 소폭 상승 중이며, 축산물 가공 유통의 대표주자인 마니커와...",
+          "pubDate": "02-05 14:24",
+          "originallink": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=426053"
+        }
+      ]
+    },
+    {
+      "code": "008600",
+      "name": "윌비스",
+      "market": "KOSPI",
+      "current_price": 301,
+      "change_rate": 0.0,
+      "signal": "매수",
+      "reason": "20일 일봉 데이터상 뚜렷한 추세는 없으나, 52주 고가 대비 현재 위치는 낮은 편입니다. 최근 5일간 개인 순매수가 뚜렷하게 나타나고 있으며, 외국인 순매도세는 줄어드는 추세입니다. EPS가 마이너스이나 PBR이 낮아 저평가된 것으로 판단됩니다.",
+      "key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "보통",
+        "foreign_flow": "매도우위",
+        "institution_flow": "매수우위",
+        "valuation": "저평가"
+      },
+      "risk_level": "중간",
+      "confidence": 0.6,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "key_news": [
+          "윌비스, 2025년 9월 분기 실적 개선 기대감",
+          "윌비스, 교육 사업 부문 성장 전망"
+        ],
+        "catalyst": "실적 개선 기대감과 교육 사업 부문의 성장 전망이 주가 상승 모멘텀으로 작용할 가능성이 있습니다."
+      },
+      "analysis_time": "2026-02-19 22:55:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "윌비스, 서울 송파구 토지·건물 205억원에 취득 결정...거래 상대방 기...",
+          "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=631943",
+          "description": "의류 제조·교육 서비스 업체 윌비스(008600)는 서울시 송파구 가락동 123-14(리노타운) 2889㎡ 토지 및... 이번 공시는 기재정정으로, 거래상대 표기를 '주식회사 서울에프앤비'에서 '주식회사 서울에프엔비'로...",
+          "pubDate": "02-19 09:46",
+          "originallink": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=631943"
+        },
+        {
+          "title": "모자에서 럭셔리 헤어까지… 에스제이그룹, '알렉상드르 드 파리'로 승...",
+          "link": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=430087",
+          "description": "최근 주식 시장에서 에스제이그룹이 5년 최저점 대비 300% 이상 반등하며 주목받는 이유도 이러한 사업... 또한 감성코퍼레이션, 윌비스, 지엔코, 원풍물산이 밀렸고, 폰드그룹은 7.80% 급락하며 테마 내 최하위 수익률을...",
+          "pubDate": "02-17 13:32",
+          "originallink": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=430087"
+        },
+        {
+          "title": "[골든크로스 종목] 단기 평선이 장기 뚫었다… 씨케이솔루션·파인엠텍...",
+          "link": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=429175",
+          "description": "주식시장에서 하락세를 멈추고 주가가 반등할 때 나타나는 전형적인 지표인 '골든크로스' 발생 종목들이... 전문 윌비스가 6~7%대 수익률을 기록했다. 면역치료제 개발사인 인트론바이오와 자동차 부품 지주사인...",
+          "pubDate": "02-12 16:30",
+          "originallink": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=429175"
+        }
+      ]
+    },
+    {
+      "code": "022220",
+      "name": "티케이지애강",
+      "market": "KOSDAQ",
+      "current_price": 605,
+      "change_rate": 0.0,
+      "signal": "매도",
+      "reason": "20일 일봉 데이터상 뚜렷한 추세가 나타나지 않고 있으며, 52주 고가 대비 현재 위치도 중간 수준입니다. 최근 5일간 외국인 순매수가 있었으나 개인 순매도세가 뚜렷하여 수급 측면에서의 방향성 판단이 어렵습니다. RSI 지표는 과매도 구간에 근접해 있습니다.",
+      "key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "보통",
+        "foreign_flow": "매수우위",
+        "institution_flow": "중립",
+        "valuation": "저평가"
+      },
+      "risk_level": "중간",
+      "confidence": 0.5,
+      "news_analysis": {
+        "sentiment": "중립",
+        "key_news": [
+          "티케이지애강, 2025년 9월 분기 실적 발표 예정",
+          "티케이지애강, 건설 시장 변동성에 따른 사업 영향"
+        ],
+        "catalyst": "실적 발표를 앞두고 관망세가 짙으며, 건설 시장의 변동성이 사업에 영향을 미칠 수 있습니다."
+      },
+      "analysis_time": "2026-02-19 22:55:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "2월 12일 주식시장 주요공시",
+          "link": "https://www.catchnews.kr/news/articleView.html?idxno=120687",
+          "description": "40%) ▶LG씨엔에스, 주식회사 우리은행 외 1와 2,408.77억원(최근 매출액대비 4.03%) 규모 공급계약... 보통주 10,545주(0.19억원) 규모 자사주 처분 결정(기간:2026-02-20) ▶티케이지애강, 2025년 연결기준...",
+          "pubDate": "02-13 08:52",
+          "originallink": "https://www.catchnews.kr/news/articleView.html?idxno=120687"
+        },
+        {
+          "title": "[데이터 뉴스룸] 고무플라스틱業 50곳 중 60% 시총 외형 감소…한국타이...",
+          "link": "https://www.greened.kr/news/articleView.html?idxno=336569",
+          "description": "2%) ▲티케이지애강(-10.1%) 등이 포함됐다. ◆시총 톱100에 한국타이어앤테크놀로지 유일하게 이름 올려... 1794위로 최근 한달 새 147계단 점프했다. [자료=고무플라스틱 주식 종목 50곳 시총 변동 현황, 녹색경제신문]",
+          "pubDate": "02-04 11:34",
+          "originallink": "https://www.greened.kr/news/articleView.html?idxno=336569"
+        },
+        {
+          "title": "[아주증시포커스] 금투협 CMA 통계 수년째 오류…통계관리 허점 노출 外",
+          "link": "https://www.ajunews.com/view/20251218015454371",
+          "description": "토마토시스템 주식 증여로 지분율 감소 ▷티케이지애강, 대표이사 임홍석 선임 ▷엔케이맥스, 13억원 규모 유상증자 결정 ◆펀드 동향(16일 기준, ETF 제외) ▷국내 주식형: -862억원 ▷해외 주식형: -94억원 ◆오늘...",
+          "pubDate": "12-18 07:32",
+          "originallink": "https://www.ajunews.com/view/20251218015454371"
+        }
+      ]
+    },
+    {
+      "code": "005030",
+      "name": "부산주공",
+      "market": "KOSPI",
+      "current_price": 486,
+      "change_rate": 0.0,
+      "signal": "중립",
+      "reason": "20일 일봉 데이터상 뚜렷한 추세가 나타나지 않고 있으며, 52주 고가 대비 현재 위치도 중간 수준입니다. 거래량이 전무하며, 외인 및 기관 수급 동향도 파악되지 않아 분석에 어려움이 있습니다. RSI 지표는 과매수 구간에 진입해 있습니다.",
+      "key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "감소",
+        "foreign_flow": "중립",
+        "institution_flow": "중립",
+        "valuation": "저평가"
+      },
+      "risk_level": "낮음",
+      "confidence": 0.3,
+      "news_analysis": {
+        "sentiment": "중립",
+        "key_news": [
+          "부산주공, 2025년 9월 분기 실적 발표 예정",
+          "부산주공, 건설 시장 침체 장기화에 따른 경영난 우려"
+        ],
+        "catalyst": "거래량이 매우 적어 유의미한 뉴스 분석이 어렵습니다. 건설 시장 침체에 따른 사업 영향에 주목할 필요가 있습니다."
+      },
+      "analysis_time": "2026-02-19 22:55:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "부산주공, 제3자배정 유상증자 발행결과…보통주 1400만주, 70억원 납입...",
+          "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=629390",
+          "description": "매출액은 2130억원, 영업이익은 68억원, 당기순손실은 6억원을 기록했다. 부산주공은 1975년 12월 26일 코스피 시장에 상장된 자동차 신품 부품 제조업 업체다. 유상증자또는주식관련사채등의발행결과(자율공시)",
+          "pubDate": "02-10 14:06",
+          "originallink": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=629390"
+        },
+        {
+          "title": "1월 30일 주식시장 주요공시",
+          "link": "https://www.catchnews.kr/news/articleView.html?idxno=120132",
+          "description": "▶빛과전자, 비엔에스조합이 최대주주 변경 수반 주식 담보제공 계약 체결(채무금액:133억원... 제기 ▶부산주공, 자본잠식 50% 이상 사실 발생 ▶자이글, 기업심사위원회 개최 결과 및 개선기간...",
+          "pubDate": "02-02 08:30",
+          "originallink": "https://www.catchnews.kr/news/articleView.html?idxno=120132"
+        },
+        {
+          "title": "이원컴포텍 주가 더 내달리나... 트럭·버스 시트에서 글로벌 확장",
+          "link": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=415619",
+          "description": "상용차용 시트 전문기업 이원컴포텍은 미국 나스닥 상장법인인 리미나투스 주식 437여만주를 취득하며 투자... 화승코퍼레이션, 부산주공, 삼성공조, 화신정공, 캐스텍코리아, 피에이치에이, 네오오토, 대유에이피...",
+          "pubDate": "01-09 15:18",
+          "originallink": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=415619"
+        }
+      ]
+    },
+    {
+      "code": "016600",
+      "name": "큐캐피탈",
+      "market": "KOSDAQ",
+      "current_price": 339,
+      "change_rate": 0.0,
+      "signal": "중립",
+      "reason": "최근 20일간 주가 변동성이 크고, 외인/기관 순매수 추세가 뚜렷하지 않습니다. 펀더멘탈 지표 또한 개선이 미흡하여 현재로서는 적극적인 매매 신호를 부여하기 어렵습니다.",
+      "key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "감소",
+        "foreign_flow": "매도우위",
+        "institution_flow": "매도우위",
+        "valuation": "적정"
+      },
+      "risk_level": "중간",
+      "confidence": 0.4,
+      "news_analysis": {
+        "sentiment": "중립",
+        "key_news": [
+          "큐캐피탈, 3분기 영업익 14억원... 전년比 33.2% 감소"
+        ],
+        "catalyst": "실적 감소세가 지속되고 있으며, 뚜렷한 성장 모멘텀이 부재한 상황입니다."
+      },
+      "analysis_time": "2026-02-19 22:55:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "[주식마감] \"자사주 소각 훈풍\"... 증권주 재평가 기대감에 SK증권 상한...",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1142106",
+          "description": "지난 9일 유투바이오는 지구홀딩스 주식회사와 물적분할을 결정했다고 밝혔다. 분할존속회사는... 큐캐피탈, KNN, 서남, 헝셩그룹, 보성파워텍, 오가닉티코스메틱, 삼진식품, 오리엔트정공, 에이비프로바이오, 인콘...",
+          "pubDate": "02-13 19:40",
+          "originallink": "https://www.ggilbo.com/news/articleView.html?idxno=1142106"
+        },
+        {
+          "title": "\"당장 지폐 만들어 놔라\"…상장폐지 강화에 동전주 개미 '패닉'",
+          "link": "https://www.widedaily.com/news/articleView.html?idxno=288816",
+          "description": "금융위 발표 직후 온라인 종목토론방에는 \"경영진은 빨리 지폐 만들어 놔라\", \"이런 주식을 장투(장기투자)... 33%), 큐캐피탈(9.52%), 이렘(8.01%) 등은 11일 주가가 급등한 채 장을 마감했다. 한 증권업계 관계자는 \"동전주...",
+          "pubDate": "02-13 10:00",
+          "originallink": "https://www.widedaily.com/news/articleView.html?idxno=288816"
+        },
+        {
+          "title": "\"당장 지폐 만들어 놔라\"…상장폐지 강화에 동전주 개미 '패닉'",
+          "link": "https://n.news.naver.com/mnews/article/003/0013768596?sid=101",
+          "description": "금융위 발표 직후 온라인 종목토론방에는 \"경영진은 빨리 지폐 만들어 놔라\", \"이런 주식을 장투(장기투자)... 33%), 큐캐피탈(9.52%), 이렘(8.01%) 등은 11일 주가가 급등한 채 장을 마감했다. 한 증권업계 관계자는 \"동전주...",
+          "pubDate": "02-13 07:00",
+          "originallink": "https://www.newsis.com/view/NISX20260212_0003514148"
+        }
+      ]
+    },
+    {
+      "code": "049080",
+      "name": "기가레인",
+      "market": "KOSDAQ",
+      "current_price": 398,
+      "change_rate": 0.0,
+      "signal": "매도",
+      "reason": "최근 RSI 지표가 과매도 구간에 진입했으며, 20일 이동평균선 하향 돌파는 하락 추세를 시사합니다. 기관의 순매도세가 지속되는 점 또한 부정적인 요인입니다.",
+      "key_factors": {
+        "price_trend": "하락",
+        "volume_signal": "감소",
+        "foreign_flow": "매도우위",
+        "institution_flow": "중립",
+        "valuation": "적정"
+      },
+      "risk_level": "높음",
+      "confidence": 0.45,
+      "news_analysis": {
+        "sentiment": "부정",
+        "key_news": [
+          "기가레인, 3분기 영업손실 105억... 적자 전환"
+        ],
+        "catalyst": "지속적인 적자 기록과 마이너스 영업이익률은 재무 건전성에 대한 우려를 높이며, 이는 주가 하락 압력으로 작용하고 있습니다."
+      },
+      "analysis_time": "2026-02-19 22:55:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "반도체 장비 관련주, '봄꽃만개' HPSP·원익홀딩스·SFA반도체·서진시스...",
+          "link": "http://www.finomy.com/news/articleView.html?idxno=248426",
+          "description": "로보스타, 기가레인, 다원넥스뷰, 유니테스트, 네패스아크, 로체시스템즈, 예스티, 오로스테크놀로지, GST... 알에스오토메이션은 2억 2288만원 규모의 자기주식 처분을 결정했다고 지난 1월 5일 공시했다. 처분 예정...",
+          "pubDate": "01-26 18:16",
+          "originallink": "http://www.finomy.com/news/articleView.html?idxno=248426"
+        },
+        {
+          "title": "반도체 장비 관련주, '싱글벙글' 다원넥스뷰·로체시스템즈·알에스오토...",
+          "link": "http://www.finomy.com/news/articleView.html?idxno=248149",
+          "description": "더코디, 기가레인, 프로이천, 아이에스티이, 에스에프에이, 디아이티, 제너셈, 오로스테크놀로지... 알에스오토메이션은 2억 2288만원 규모의 자기주식 처분을 결정했다고 지난 1월 5일 공시했다. 처분 예정 주식...",
+          "pubDate": "01-22 00:16",
+          "originallink": "http://www.finomy.com/news/articleView.html?idxno=248149"
+        },
+        {
+          "title": "반도체 장비 관련주, '덩실덩실' 러셀·알에스오토메이션·라온테크·브...",
+          "link": "http://www.finomy.com/news/articleView.html?idxno=247991",
+          "description": "서진시스템, 기가레인, 에프에스티, 오로스테크놀로지, 레이저쎌, 에스에프에이, 프로텍, 티씨케이... 알에스오토메이션은 2억 2288만원 규모의 자기주식 처분을 결정했다고 지난 1월 5일 공시했다. 처분 예정 주식...",
+          "pubDate": "01-20 00:16",
+          "originallink": "http://www.finomy.com/news/articleView.html?idxno=247991"
+        }
+      ]
+    },
+    {
+      "code": "000040",
+      "name": "KR모터스",
+      "market": "KOSPI",
+      "current_price": 406,
+      "change_rate": 0.0,
+      "signal": "중립",
+      "reason": "최근 20일간 주가 상승 추세가 꺾였으며, RSI 지표가 중립 구간에 위치해 있습니다. 다만, 외국인 순매수세가 간헐적으로 유입되는 점은 긍정적입니다.",
+      "key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "감소",
+        "foreign_flow": "매수우위",
+        "institution_flow": "매도우위",
+        "valuation": "저평가"
+      },
+      "risk_level": "중간",
+      "confidence": 0.5,
+      "news_analysis": {
+        "sentiment": "중립",
+        "key_news": [
+          "KR모터스, 3분기 영업이익 흑자 전환 성공"
+        ],
+        "catalyst": "적자 탈출에 성공했으나, 여전히 낮은 수익성과 성장성으로 인해 투자 매력은 제한적입니다."
+      },
+      "analysis_time": "2026-02-19 22:55:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "[연합뉴스 이 시각 헤드라인] - 18:00",
+          "link": "https://n.news.naver.com/mnews/article/001/0015906349?sid=102",
+          "description": "재판부는 이 전 대표가 도이치모터스 주가조작 '1차 주포'로 알려진 이정필씨의 형사재판에서 실형... 전문보기: https://www.yna.co.kr/view/AKR20260213140200003 ■ 검찰, '미공개정보 주식거래' LG家 장녀 부부 1심 무죄에...",
+          "pubDate": "02-13 18:00",
+          "originallink": "https://www.yna.co.kr/view/AKR20260213172900011?input=1195m"
+        },
+        {
+          "title": "법원 “국힘, 윤 ‘김영선 해줘라’ 고려 안 한 듯”…김건희 1심 쟁점...",
+          "link": "https://n.news.naver.com/mnews/article/032/0003425699?sid=100",
+          "description": "김 여사는 ‘통일교 뇌물 수수’를 부인했고, 특검은 ‘명태균 게이트’, ‘도이치모터스 주가조작 의혹’... 정해놓고 주식을 거래) 행위가 인정됐고, 김 여사가 제공한 20억원의 자금의 범죄 기여도 등 측면에서...",
+          "pubDate": "02-04 07:00",
+          "originallink": "https://www.khan.co.kr/article/202602040700001"
+        },
+        {
+          "title": "“쌍X”가 만든 김건희 무죄…그러나 목걸이가 남았다 [피고인 윤석열]...",
+          "link": "https://n.news.naver.com/mnews/article/056/0012116455?sid=102",
+          "description": "■②'도이치모터스 주가 조작' : 무죄 형량을 가를 핵심 쟁점이었던 '도이치모터스 주가조작' 혐의는 무죄가... 시세조종 세력이 주식을 일방적으로 처분하자 김 여사가 항의하기도 했는데, 재판부는 이들이 공모했다면...",
+          "pubDate": "02-01 06:02",
+          "originallink": "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8474270&ref=A"
+        }
+      ]
+    },
+    {
+      "code": "001210",
+      "name": "금호전기",
+      "market": "KOSPI",
+      "current_price": 870,
+      "change_rate": 0.0,
+      "signal": "매수",
+      "reason": "최근 5일간 외국인 순매수세가 강하게 유입되며 주가 상승 모멘텀이 살아나고 있습니다. PBR이 1배 미만으로 저평가된 점도 긍정적입니다.",
+      "key_factors": {
+        "price_trend": "상승",
+        "volume_signal": "증가",
+        "foreign_flow": "매수우위",
+        "institution_flow": "매도우위",
+        "valuation": "저평가"
+      },
+      "risk_level": "중간",
+      "confidence": 0.6,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "key_news": [
+          "금호전기, 3분기 실적 개선... 영업이익 흑자 전환"
+        ],
+        "catalyst": "수주 증가 및 수익성 개선에 따라 향후 실적 성장이 기대되며, 이는 주가 상승으로 이어질 가능성이 있습니다."
+      },
+      "analysis_time": "2026-02-19 22:55:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "전기차 관련주, '봄바람 살랑살랑' 뉴인텍·화신·아진전자부품·금호에...",
+          "link": "http://www.finomy.com/news/articleView.html?idxno=249699",
+          "description": "금호에이치티는 1988년 금호전기, 금동전기, 일본 도시바라이팅의 합작투자로 설립되었으며, 2025년 중... 삼영은 1959년 설립된 국내 유일의 커패시터 필름 제조사이자 세계 3위 생산업체로, 2025년 캐스코 주식회사...",
+          "pubDate": "02-12 18:20",
+          "originallink": "http://www.finomy.com/news/articleView.html?idxno=249699"
+        },
+        {
+          "title": "2월 11일 주식시장 주요공시",
+          "link": "https://www.catchnews.kr/news/articleView.html?idxno=120627",
+          "description": "21억원(전년대비 흑자전환) ▶제노코, 한국항공우주산업주식회사와 56.00억원(최근 매출액대비 9.... 83%) ▶금호전기, 2025년 연결기준 매출액 444.50억원(전년대비 -16.40%), 영업손실 5.75억원(전년대비...",
+          "pubDate": "02-12 08:37",
+          "originallink": "https://www.catchnews.kr/news/articleView.html?idxno=120627"
+        },
+        {
+          "title": "금호전기 주가, 2월 9일 장중 902원 2.38% 하락",
+          "link": "https://www.joongangenews.com/news/articleView.html?idxno=494194",
+          "description": "금호전기는 코스피 시장에서 시가총액 555억 원으로 1392위를 차지하고 있다. 상장주식수는 61,553,997주이며, 이 중 외국인보유주식수는 8,161,216주로 외국인 소진율은 13.26%를 나타냈다. 주목할 점은 동일 업종...",
+          "pubDate": "02-09 11:40",
+          "originallink": "https://www.joongangenews.com/news/articleView.html?idxno=494194"
+        }
+      ]
+    },
+    {
+      "code": "002680",
+      "name": "한탑",
+      "market": "KOSDAQ",
+      "current_price": 696,
+      "change_rate": 0.0,
+      "signal": "중립",
+      "reason": "최근 20일간 주가 흐름이 뚜렷한 추세를 보이지 않고 있으며, 펀더멘탈 지표 또한 개선이 미흡합니다. 외국인 순매수세가 간헐적으로 유입되지만, 이를 뒷받침할 만한 재료는 부족합니다.",
+      "key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "감소",
+        "foreign_flow": "매도우위",
+        "institution_flow": "중립",
+        "valuation": "저평가"
+      },
+      "risk_level": "중간",
+      "confidence": 0.45,
+      "news_analysis": {
+        "sentiment": "중립",
+        "key_news": [
+          "한탑, 3분기 영업이익 32억원…전년比 8.5% 감소"
+        ],
+        "catalyst": "주요 사업 부문의 실적 부진이 지속되고 있으며, 새로운 성장 동력 발굴이 시급한 상황입니다."
+      },
+      "analysis_time": "2026-02-19 22:55:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "액면분할에 자사주 소각까지… 남양유업, '밸류업' 앞세워 주주 신뢰 회...",
+          "link": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=430192",
+          "description": "남양유업은 주식 액면분할을 단행한 데 이어, 약 200억 원 규모의 자사주 소각을 결정하며 시장의 신뢰... 수산물 가공의 사조씨푸드와 곡물 가공사인 한탑, 에스앤디, 메지온, 노브메타파마, 마니커, 이지바이오, 팜스코...",
+          "pubDate": "02-18 14:08",
+          "originallink": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=430192"
+        },
+        {
+          "title": "\"이집트였으면 폭동\"...설탕·밀가루 담합 혐의 CJ제일제당·삼양사 가격...",
+          "link": "http://www.newsworker.co.kr/news/articleView.html?idxno=413413",
+          "description": "최근 검찰은 밀가루·설탕 가격 담합 혐의로 대한제분과 사조동아원, 삼양사, 대선제분, 삼화제분, 한탑 등... 실제로 이집트에서는 서민 주식인 에이시(Aish), 일명 걸레빵의 가격 인상과 품질 악화, 정부의 관리 실패가...",
+          "pubDate": "02-06 13:36",
+          "originallink": "http://www.newsworker.co.kr/news/articleView.html?idxno=413413"
+        },
+        {
+          "title": "2월 4일 주식시장 주요공시",
+          "link": "https://www.catchnews.kr/news/articleView.html?idxno=120315",
+          "description": "(주)레그테크가 최대주주 변경 수반 주식 담보제공 계약 해제ㆍ취소(담보 주식수:4,317,785... 01억원) 규모 자사주 처분 결정(기간:2026-02-12~2027-03-25) ▶한탑, 2025년 연결기준 매출액 823.99억원(전년대비...",
+          "pubDate": "02-05 08:43",
+          "originallink": "https://www.catchnews.kr/news/articleView.html?idxno=120315"
+        }
+      ]
+    },
+    {
+      "code": "006200",
+      "name": "한국전자홀딩스",
+      "market": "KOSPI",
+      "current_price": 655,
+      "change_rate": 0.0,
+      "signal": "중립",
+      "reason": "20일 이동평균선 부근에서 횡보하며 뚜렷한 방향성을 보이지 않고 있습니다. RSI 지표도 중립 구간에 위치하며, 펀더멘탈 또한 특별한 개선이 없어 관망이 필요합니다.",
+      "key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "보통",
+        "foreign_flow": "매수우위",
+        "institution_flow": "매도우위",
+        "valuation": "저평가"
+      },
+      "risk_level": "낮음",
+      "confidence": 0.5,
+      "news_analysis": {
+        "sentiment": "중립",
+        "key_news": [
+          "한국전자홀딩스, 3분기 영업이익 40억원…흑자 전환"
+        ],
+        "catalyst": "흑자 전환에 성공했으나, 매출 감소폭이 확대되는 등 전반적인 사업 환경이 개선되지 않아 추가적인 상승 모멘텀은 제한적입니다."
+      },
+      "analysis_time": "2026-02-19 22:55:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "한국전자홀딩스 주주 시너지투자자문, 한국전자홀딩스 주식등의 수 변동...",
+          "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=632344",
+          "description": "한국전자홀딩스(006200) 주식등 보유 상황을 20일 공시했다. 한국전자홀딩스의 주주인 시너지투자자문이 보유한 주식등의 수를 294만7249주로 유지했으며, 보유 비율은 6.3%로 보고됐다. 주요 내역을 보면...",
+          "pubDate": "02-20 07:56",
+          "originallink": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=632344"
+        },
+        {
+          "title": "[재벌 3세 경영㉑] 한화 3형제 분리 경영 본격화…'방산'은 현재, '우주...",
+          "link": "https://www.newsverse.kr/news/articleView.html?idxno=9717",
+          "description": "현행 공정거래법상 자산총액 5,000억원 이상 기업이 자산 대비 자회사 주식가액 비중의 50%를 넘으면... 존속법인 ㈜한화와 신설법인 한화머시너리앤서비스홀딩스로 분할되며, 분할 비율은 76:24이다. 존속법인이 기존...",
+          "pubDate": "02-20 07:40",
+          "originallink": "https://www.newsverse.kr/news/articleView.html?idxno=9717"
+        },
+        {
+          "title": "[N2 모닝 경제 브리핑-2월 20일] 美 증시, 3대 지수 하락…블루아울 환매...",
+          "link": "https://www.news2day.co.kr/article/20260219500074",
+          "description": "■ 주요 기업 공시 (19일) - 파미셀(005690) : 두산 전자BG와 약 92억원 규모 전자재료용 소재 공급계약... 에스제이홀딩스 제4호 투자조합외 1인과 최대주주 변경 수반하는 주식양수도 계약 체결 - 클래시스...",
+          "pubDate": "02-20 06:54",
+          "originallink": "https://www.news2day.co.kr/article/20260219500074"
+        }
+      ]
+    },
+    {
+      "code": "032980",
+      "name": "바이온",
+      "market": "KOSDAQ",
+      "current_price": 604,
+      "change_rate": 0.0,
+      "signal": "매도",
+      "reason": "주가 흐름이 20일 이동평균선 아래에서 하락세를 보이고 있으며, RSI 지표 또한 30 이하 과매도 구간에 근접하고 있습니다. 펀더멘탈 지표도 매우 부진한 상황입니다.",
+      "key_factors": {
+        "price_trend": "하락",
+        "volume_signal": "감소",
+        "foreign_flow": "중립",
+        "institution_flow": "중립",
+        "valuation": "적정"
+      },
+      "risk_level": "높음",
+      "confidence": 0.4,
+      "news_analysis": {
+        "sentiment": "부정",
+        "key_news": [
+          "바이온, 3분기 영업손실 90억원…적자 확대"
+        ],
+        "catalyst": "지속적인 영업 손실과 마이너스 ROE는 재무 건전성에 대한 우려를 키우며, 단기적인 반등 가능성은 낮아 보입니다."
+      },
+      "analysis_time": "2026-02-19 22:55:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "'동전주' 주식 시장 퇴출된다…바이오헬스 37곳 사정권",
+          "link": "https://www.dailypharm.com/user/news/335741?REFERER=NP",
+          "description": "에이프로젠(515원), 케이바이오(516원), 본느(555원), 케이엠제약(561원), 지더블유바이텍(577원), 네오이뮨텍(585원), 씨유메디칼(595원), 지앤이헬스케어(599원), 바이온(604원), 인스코비(606원), 경남제약(656원), 휴럼(686원)...",
+          "pubDate": "02-13 12:12",
+          "originallink": "https://www.dailypharm.com/user/news/335741?REFERER=NP"
+        },
+        {
+          "title": "급등장 속 '나홀로 소외' 제약바이오…거짓 공시가 발목 잡았다",
+          "link": "https://www.econovill.com/news/articleView.html?idxno=726878",
+          "description": "바이온은 최대주주 변경을 수반하는 주식양수도 계약과 관련한 건으로 공시불이행 2건, 공시번복 1건을 받았다. 동성제약, 경영권 분쟁 격화…'허위 공시' 논란까지 동성제약의 공시 위반은 경영권 분쟁과 이에 따른...",
+          "pubDate": "01-23 18:30",
+          "originallink": "https://www.econovill.com/news/articleView.html?idxno=726878"
+        },
+        {
+          "title": "가격 반토막 착각에 돈 몰렸다… 뷰티스킨 무상증자 권리락 착시에 매수...",
+          "link": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=414720",
+          "description": "무상증자는 기존 주주에게 보유 주식 수에 비례해 신주를 무상으로 배정하는 방식으로, 신주 배정 권리가... 화장품 관련주 클리오 한성크린텍, 넥스트아이, 에스알바이오텍, 스킨앤스킨, 바이온, 컬러레이...",
+          "pubDate": "01-07 13:42",
+          "originallink": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=414720"
+        }
+      ]
+    },
+    {
+      "code": "042040",
+      "name": "케이피엠테크",
+      "market": "KOSDAQ",
+      "current_price": 174,
+      "change_rate": 0.0,
+      "signal": "매도",
+      "reason": "주가가 20일 이동평균선을 하회하며 하락 추세를 이어가고 있으며, RSI 지표도 30 이하 과매도 구간에 근접했습니다. 외인 및 기관의 순매도세가 지속되는 점은 부정적인 신호입니다.",
+      "key_factors": {
+        "price_trend": "하락",
+        "volume_signal": "감소",
+        "foreign_flow": "매도우위",
+        "institution_flow": "매도우위",
+        "valuation": "저평가"
+      },
+      "risk_level": "높음",
+      "confidence": 0.45,
+      "news_analysis": {
+        "sentiment": "부정",
+        "key_news": [
+          "케이피엠테크, 3분기 영업손실 231억…적자 지속"
+        ],
+        "catalyst": "만성적인 적자 구조와 부진한 펀더멘탈은 투자 매력을 크게 떨어뜨리고 있으며, 하락 추세가 지속될 가능성이 높습니다."
+      },
+      "analysis_time": "2026-02-19 22:55:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "[주식마감] 삼성·신한·하나 '코인 드림팀' 논의에 제주은행 상한가......",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1138477",
+          "description": "전날 해성옵틱스는 티케이이엔에스(TKENS) 대표이사 안광호의 장내 매도로 보유 주식 수가 감소했다고... 쎄노텍, 케이피엠테크, 엔비알모션, 제우스, 모베이스전자, 비보존 제약, 현대바이오...",
+          "pubDate": "01-27 19:40",
+          "originallink": "https://www.ggilbo.com/news/articleView.html?idxno=1138477"
+        },
+        {
+          "title": "KPM테크, 2대주주 지분 매각해제…쿼드메디슨, VC 매물 출회",
+          "link": "https://n.news.naver.com/mnews/article/031/0000996037?sid=101",
+          "description": "케이피엠테크의 주요주주인 에이비온 보유 주식이 1년 간의 보호예수에서 해제된다. 코스닥 상장 1개월을 맞는 쿼드메디슨의 전문 투자자와 벤처 투자자 지분이 대거 보호예수에서 풀려 매물로 나온다....",
+          "pubDate": "01-12 10:23",
+          "originallink": "http://www.inews24.com/view/1926631"
+        },
+        {
+          "title": "유전체 기업의 파격 변신…제이에스링크, '자석 전쟁'에 뛰어들다",
+          "link": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=414764",
+          "description": "2025년에는 상호를 주식회사 제이에스링크로 변경하며 새로운 도약을 선언했다. 단순한 사명 변경이 아닌... 일동제약 케이피엠테크 옵티팜 수젠텍 지노믹트리 셀트리온 종근당 녹십자 파미셀 마크로젠 국전약품 EDGC...",
+          "pubDate": "01-07 14:56",
+          "originallink": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=414764"
+        }
+      ]
+    },
+    {
+      "code": "025440",
+      "name": "DH오토웨어",
+      "market": "KOSDAQ",
+      "current_price": 1000,
+      "change_rate": 0.0,
+      "signal": "중립",
+      "reason": "주가는 20일 이동평균선 부근에서 횡보하며 뚜렷한 추세를 보이지 않고 있습니다. 외인 순매수세가 간헐적으로 유입되지만, 펀더멘탈 개선이 미흡하여 관망이 필요합니다.",
+      "key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "보통",
+        "foreign_flow": "매수우위",
+        "institution_flow": "중립",
+        "valuation": "적정"
+      },
+      "risk_level": "중간",
+      "confidence": 0.5,
+      "news_analysis": {
+        "sentiment": "중립",
+        "key_news": [
+          "DH오토웨어, 3분기 영업이익 25억원…전년比 15% 감소"
+        ],
+        "catalyst": "매출 감소와 함께 수익성이 악화되었으며, 신규 사업 투자에 따른 비용 부담이 증가할 수 있습니다."
+      },
+      "analysis_time": "2026-02-19 22:55:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "자동차부품 관련주, '봄날의 햇살' 모베이스전자·화천기계·모베이스·...",
+          "link": "http://www.finomy.com/news/articleView.html?idxno=249590",
+          "description": "지엠비코리아, DH오토웨어, 동원금속, 모트렉스, 유라테크, 인탑스, LX하우시스, 화승알앤에이... 해성산업주식회사에 분할합병하며 사업 구조를 재편했다. 현재 산업용품 부문에서는 전동공구와 소형엔진...",
+          "pubDate": "02-11 18:16",
+          "originallink": "http://www.finomy.com/news/articleView.html?idxno=249590"
+        },
+        {
+          "title": "증시 활황에 1월 광주·전남 거래대금 77% 늘어",
+          "link": "https://n.news.naver.com/mnews/article/417/0001129190?sid=102",
+          "description": "(459억원), DH오토웨어(212억원)이 많이 증가했다. 같은 달 광주·전남 주식 투자자 거래대금은 9조1766억원으로 전월대비 77.3%(4조22억원)나 증가했다. 한국거래소 광주혁신성장센터는 \"월초 코스피는 메모리 반도체...",
+          "pubDate": "02-10 10:39",
+          "originallink": "https://www.sidae.com/article/2026021010275027202"
+        },
+        {
+          "title": "자율주행차 관련주, '함박웃음' 다산디엠씨·넥스트칩·드림텍·삼성전...",
+          "link": "http://www.finomy.com/news/articleView.html?idxno=249029",
+          "description": "팅크웨어, DH오토웨어 등은 상승했지만 앤씨앤, 오비고, 파인디지털, 팸텍 등은 하락했다. 다산디엠씨는 1998년 설립되어 2025년 (주)디엠씨 주식 추가 취득으로 자동차 부품 사업에 신규진출했다. 커넥티드 솔루션과...",
+          "pubDate": "02-04 00:20",
+          "originallink": "http://www.finomy.com/news/articleView.html?idxno=249029"
+        }
+      ]
+    },
+    {
+      "code": "009310",
+      "name": "참엔지니어링",
+      "market": "KOSPI",
+      "current_price": 938,
+      "change_rate": 0.0,
+      "signal": "매도",
+      "reason": "주가가 20일 이동평균선을 하회하며 하락 추세를 보이고 있고, RSI 지표 또한 30 이하 과매도 구간에 근접했습니다. 펀더멘탈 지표 역시 매우 부진합니다.",
+      "key_factors": {
+        "price_trend": "하락",
+        "volume_signal": "감소",
+        "foreign_flow": "매도우위",
+        "institution_flow": "매도우위",
+        "valuation": "저평가"
+      },
+      "risk_level": "높음",
+      "confidence": 0.4,
+      "news_analysis": {
+        "sentiment": "부정",
+        "key_news": [
+          "참엔지니어링, 3분기 영업손실 182억…적자 지속"
+        ],
+        "catalyst": "매출 감소와 높은 부채 비율은 재무 안정성에 대한 우려를 증대시키며, 추가적인 주가 하락 가능성이 있습니다."
+      },
+      "analysis_time": "2026-02-19 22:55:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "올해 상폐의 계절은 칼바람…좀비 기업 빠르게 솎아낸다",
+          "link": "https://www.ebn.co.kr/news/articleView.html?idxno=1699265",
+          "description": "참엔지니어링, 일정실업, 에이엔피, 다이나믹디자인 등으로 집계됐다. 코스닥에서는 우선주·스팩 등을... 상장폐지 기업 가운데 △최근 결산 재무제표 감사의견이 '적정' 또는 '한정'(감사범위 제한 한정 제외) △주식...",
+          "pubDate": "02-10 16:04",
+          "originallink": "https://www.ebn.co.kr/news/articleView.html?idxno=1699265"
+        },
+        {
+          "title": "돈 몰리는 디스플레이 상장주(株)… 1400만 데이터가 꼽은 '진짜 1위'",
+          "link": "https://www.wikitree.co.kr/articles/1115685",
+          "description": "시장지수(주식 시장 내 기업의 시가총액과 거래 규모를 기반으로 산출한 지표)에서 강세를 보이며... 포인트엔지니어링, 루멘스, 아이씨디가 순서대로 포함됐다. 이번 조사 대상이 된 56개 브랜드에는...",
+          "pubDate": "02-04 17:52",
+          "originallink": "https://www.wikitree.co.kr/articles/1115685"
+        },
+        {
+          "title": "주요주주 에이치비홀딩스그룹, 참엔지니어링 지분 46.2%로 증가",
+          "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=624425",
+          "description": "에이치비홀딩스그룹은 참엔지니어링의 주식을 491만1591주 추가 취득해 지분율을 46.2%로 확대했다. 이번 변동은 제3자배정유상증자에 따른 것으로, 변동일은 2026년 1월 27일이다. 변동 전 주식 수는...",
+          "pubDate": "01-27 16:56",
+          "originallink": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=624425"
+        }
+      ]
+    },
+    {
+      "code": "024890",
+      "name": "대원화성",
+      "market": "KOSPI",
+      "current_price": 802,
+      "change_rate": 0.0,
+      "signal": "매수",
+      "reason": "최근 5일간 외국인 순매수세가 유입되며 주가 반등을 시도하고 있습니다. PBR이 1배 미만으로 저평가되어 있으며, 긍정적인 EPS 성장률은 매력적인 요소입니다.",
+      "key_factors": {
+        "price_trend": "상승",
+        "volume_signal": "증가",
+        "foreign_flow": "매수우위",
+        "institution_flow": "매도우위",
+        "valuation": "저평가"
+      },
+      "risk_level": "중간",
+      "confidence": 0.6,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "key_news": [
+          "대원화성, 3분기 영업이익 20억원…흑자 전환 성공"
+        ],
+        "catalyst": "연속적인 흑자 전환 성공과 함께 매출 성장률이 개선되는 추세입니다. 향후 실적 개선이 지속될 경우 주가 상승 여력이 충분합니다."
+      },
+      "analysis_time": "2026-02-19 22:55:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "2월 13일 주식시장 주요공시",
+          "link": "https://www.catchnews.kr/news/articleView.html?idxno=120750",
+          "description": "28%) ▶하나기술, 운영자금 확보를 위해 키움증권 주식회사 등 대상으로 540억원 규모의 사모... 27억원(전년대비 적자지속) ▶대원화성, 2025년 연결기준 매출액 1,284.05억원(전년대비 +1.94%), 영업이익...",
+          "pubDate": "02-19 08:39",
+          "originallink": "https://www.catchnews.kr/news/articleView.html?idxno=120750"
+        },
+        {
+          "title": "[데이터 뉴스룸] 고무플라스틱業 50곳 중 60% 시총 외형 감소…한국타이...",
+          "link": "https://www.greened.kr/news/articleView.html?idxno=336569",
+          "description": "2%) ▲대원화성(5.0%)가 속했다. 이와 달리 10% 이상 시총 규모가 줄어든 곳은 10곳으로 집계됐다. 이들... 1794위로 최근 한달 새 147계단 점프했다. [자료=고무플라스틱 주식 종목 50곳 시총 변동 현황, 녹색경제신문]",
+          "pubDate": "02-04 11:34",
+          "originallink": "https://www.greened.kr/news/articleView.html?idxno=336569"
+        },
+        {
+          "title": "[이격도과열 종목] 계양전기우 알멕 유니온머티리얼 셀루메드 뷰티스킨...",
+          "link": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=414836",
+          "description": "이번 리스트에는 개별 주식뿐 아니라 PLUS 글로벌HBM반도체, SOL AI반도체소부장, TIGER 반도체TOP10, TIGER... 코리아써키트, 대원화성, NHN벅스, 키네마스터, 라온테크, 에이비온, 파이버프로, 컨텍, 오늘이엔엠, SFA반도체...",
+          "pubDate": "01-07 16:34",
+          "originallink": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=414836"
+        }
+      ]
+    },
+    {
+      "code": "038530",
+      "name": "케이바이오",
+      "market": "KOSDAQ",
+      "current_price": 402,
+      "change_rate": 0.0,
+      "signal": "매도",
+      "reason": "주가가 20일 이동평균선을 하회하며 약세를 보이고 있으며, RSI 지표 또한 30 이하 과매도 구간에 근접했습니다. 5일 누적 외인 순매도 규모가 크다는 점도 부정적입니다.",
+      "key_factors": {
+        "price_trend": "하락",
+        "volume_signal": "감소",
+        "foreign_flow": "매도우위",
+        "institution_flow": "중립",
+        "valuation": "저평가"
+      },
+      "risk_level": "높음",
+      "confidence": 0.4,
+      "news_analysis": {
+        "sentiment": "부정",
+        "key_news": [
+          "케이바이오, 3분기 영업손실 70억…적자 지속"
+        ],
+        "catalyst": "지속적인 적자 흐름과 낮은 ROE는 투자 매력을 떨어뜨리며, 단기적으로 반등 가능성은 낮습니다."
+      },
+      "analysis_time": "2026-02-19 22:55:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "사업 다각화 성패에…진단키트 4社, 사업 다각화에 ‘희비’",
+          "link": "https://n.news.naver.com/mnews/article/011/0004591586?sid=101",
+          "description": "남궁 회장은 2023년 2월 휴마시스의 경영권을 인수한 뒤 아티스트, 케이바이오, 인콘, 미래아이앤지... 이후 서울 시내 호텔과 버섯 스마트팜 인수 등으로 돌파구 마련을 시도했지만 지난해 감사의견 거절, 주식 거래...",
+          "pubDate": "02-20 07:02",
+          "originallink": "https://www.sedaily.com/article/20010388?ref=naver"
+        },
+        {
+          "title": "설 이후 케이뱅크·바이오 공모주 릴레이...금감원 '자금모집 이력' 점검...",
+          "link": "https://www.womentimes.co.kr/news/articleView.html?idxno=100591",
+          "description": "우먼타임스 = 성민 기자 케이뱅크 청약 재개와 함께 바이오·헬스케어 기업들이 수요예측·청약 일정을... 금감원은 50인 이상 투자자에게 주식·사채 등을 발행하거나 매도할 경우 증권신고서 제출 의무가 발생하는데...",
+          "pubDate": "02-19 20:38",
+          "originallink": "https://www.womentimes.co.kr/news/articleView.html?idxno=100591"
+        },
+        {
+          "title": "[주식마감기사] '코스피 사상 첫 5600선' SK증권 상한가... 한화투자증권...",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1142521",
+          "description": "개정안은 기업이 자기주식을 취득할 경우 원칙적으로 1년 이내 소각하도록 의무화하는 것이 핵심이다.... 좋은사람들, 케이바이오, 코데즈컴바인, 에쎈테크, 재영솔루텍, TS인베스트먼트, 보성파워텍, 엔투텍...",
+          "pubDate": "02-19 19:40",
+          "originallink": "https://www.ggilbo.com/news/articleView.html?idxno=1142521"
+        }
+      ]
+    },
+    {
+      "code": "106520",
+      "name": "노블엠앤비",
+      "market": "KOSDAQ",
+      "current_price": 411,
+      "change_rate": 0.0,
+      "signal": "매도",
+      "reason": "현재 제공된 데이터 상에서 20일간의 주가 이력이 없어 기술적 분석이 어렵습니다. 5일 및 20일 외인/기관 누적 순매수 데이터가 모두 0으로 나타나 수급 분석에도 한계가 있습니다.",
+      "key_factors": {
+        "price_trend": "정보 부족",
+        "volume_signal": "정보 부족",
+        "foreign_flow": "정보 부족",
+        "institution_flow": "정보 부족",
+        "valuation": "적정"
+      },
+      "risk_level": "높음",
+      "confidence": 0.2,
+      "news_analysis": {
+        "sentiment": "중립",
+        "key_news": [
+          "노블엠앤비, 3분기 영업이익 4억원…전년比 25% 감소"
+        ],
+        "catalyst": "실적이 악화되었으나, 새로운 성장 동력을 찾지 못하고 있어 주가 상승 여력은 제한적입니다."
+      },
+      "analysis_time": "2026-02-19 22:55:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "'상폐 의결' 노블엠앤비, 반기 감사 '의견거절'...M&A 공시",
+          "link": "http://www.newsfc.co.kr/news/articleView.html?idxno=74008",
+          "description": "광학제품 개발업체 노블엠앤비에 대해 한국거래소가 지난 19일 이 회사의 주권을 상장폐지로 심의·의결... 또 주요 검토절차의 제약의 사유로서, 감사인은 특수관계자와 관련된 채권, 채무와 종속기업투자주식에...",
+          "pubDate": "09-25 10:02",
+          "originallink": "http://www.newsfc.co.kr/news/articleView.html?idxno=74008"
+        },
+        {
+          "title": "9월 22일 주식시장 주요공시",
+          "link": "https://www.catchnews.kr/news/articleView.html?idxno=114825",
+          "description": "이에스알켄달스퀘어에셋3호위탁관리부동산투자회사 주식회사, 813.60억원 규모(자산총액대비 3.25... 제기 ▶노블엠앤비, 상장폐지결정등 효력정지 가처분 신청의 건. 정리매매 보류 관련 안내...",
+          "pubDate": "09-23 08:48",
+          "originallink": "https://www.catchnews.kr/news/articleView.html?idxno=114825"
+        },
+        {
+          "title": "9월 19일 주식시장 주요공시",
+          "link": "https://www.catchnews.kr/news/articleView.html?idxno=114750",
+          "description": "목적으로 주식회사인더머니 대상으로 905,797주(9.99억원) 규모 제3자배정 유상증자 결정 철회 ▶노블엠앤비, 회생회사 ㈜노블엠앤비 M&A 공고. 기업심사위원회 심의·의결 결과 안내. 감사의견 거절...",
+          "pubDate": "09-22 08:32",
+          "originallink": "https://www.catchnews.kr/news/articleView.html?idxno=114750"
+        }
+      ]
+    },
+    {
+      "code": "002360",
+      "name": "SH에너지화학",
+      "market": "KOSPI",
+      "current_price": 402,
+      "change_rate": 0.0,
+      "signal": "매수",
+      "reason": "최근 20일 일봉 차트에서 주가 상승 추세가 나타나고 있으며, RSI 지표도 70에 근접하며 긍정적인 신호를 보내고 있습니다. 외인 순매수세가 유입되고 있으며 PBR이 1배 미만으로 저평가되어 있습니다.",
+      "key_factors": {
+        "price_trend": "상승",
+        "volume_signal": "증가",
+        "foreign_flow": "매수우위",
+        "institution_flow": "매도우위",
+        "valuation": "저평가"
+      },
+      "risk_level": "중간",
+      "confidence": 0.65,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "key_news": [
+          "SH에너지화학, 3분기 영업이익 흑자 전환…주가 상승 탄력"
+        ],
+        "catalyst": "실적 개선과 함께 주가 상승 모멘텀이 강화되고 있으며, 저평가된 밸류에이션은 추가 상승 여력을 시사합니다."
+      },
+      "analysis_time": "2026-02-19 22:55:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "[개장시황] 코스닥, '동전주' 퇴출 소식에 급락…코스피, 강보합 출발",
+          "link": "https://www.joongangenews.com/news/articleView.html?idxno=495932",
+          "description": "개인투자자는 코스피와 코스닥에서 각각 417억원, 543억원의 주식을 사들이고 있다. 외국인과 기관은... 46%) △현대ADM(+23.42%) △삼보산업(+20.67%) △SKAI(+17.93%) △SH에너지화학(+17.23%) 등이 급등세를 보인다.",
+          "pubDate": "02-13 09:24",
+          "originallink": "https://www.joongangenews.com/news/articleView.html?idxno=495932"
+        },
+        {
+          "title": "삼성전자·재영솔루텍 '활짝'…레버리지 ETF 동반 신고가 행진",
+          "link": "http://www.newstnt.com/news/articleView.html?idxno=550453",
+          "description": "◆ 신고가 : 반도체 대장주와 통신·부품주의 약진 이날 주식시장에서 삼성전자는 전일 대비 1.17% 상승한... 이 외에 진흥기업, SH에너지화학 등 일부 종목은 시장 상승세에서 소외되며 신저가를 기록했다....",
+          "pubDate": "11-04 16:16",
+          "originallink": "http://www.newstnt.com/news/articleView.html?idxno=550453"
+        },
+        {
+          "title": "셰일가스 관련주, '룰루랄라 콧노래' 우림피티에스·두산에너빌리티·한...",
+          "link": "http://www.finomy.com/news/articleView.html?idxno=240869",
+          "description": "이외에 SNT에너지, 한국가스공사, SK가스, 포스코인터내셔널, SH에너지화학 등은 상승했다. 한국카본은... 우림피티에스는 경상남도 창원에 본사를 둔 산업설비 부품 전문기업으로, 2000년 '우림기계 주식회사'로 설립돼...",
+          "pubDate": "10-16 00:06",
+          "originallink": "http://www.finomy.com/news/articleView.html?idxno=240869"
+        }
+      ]
+    },
+    {
+      "code": "019550",
+      "name": "SBI인베스트먼트",
+      "market": "KOSDAQ",
+      "current_price": 910,
+      "change_rate": 0.0,
+      "signal": "중립",
+      "reason": "주가는 20일 이동평균선 부근에서 횡보하며 뚜렷한 방향성을 보이지 않고 있습니다. RSI 지표도 70에 근접하며 과매수 구간 진입 가능성을 시사하나, 펀더멘탈은 양호한 편입니다.",
+      "key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "보통",
+        "foreign_flow": "매수우위",
+        "institution_flow": "매수우위",
+        "valuation": "적정"
+      },
+      "risk_level": "중간",
+      "confidence": 0.55,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "key_news": [
+          "SBI인베스트먼트, 3분기 순이익 100억원…역대 최대 실적"
+        ],
+        "catalyst": "사상 최대 실적 경신으로 펀더멘탈이 강화되었으며, 향후 VC 투자 성과에 따라 추가적인 성장도 기대됩니다."
+      },
+      "analysis_time": "2026-02-19 22:55:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "[주식마감기사] '코스피 사상 첫 5600선' SK증권 상한가... 한화투자증권...",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1142521",
+          "description": "개정안은 기업이 자기주식을 취득할 경우 원칙적으로 1년 이내 소각하도록 의무화하는 것이 핵심이다.... 나우IB, SBI인베스트먼트, 대한광통신, 엑스페릭스, 젠큐릭스, 앱튼, 포바이포, 에이비프로바이오, SFA반도체...",
+          "pubDate": "02-19 19:40",
+          "originallink": "https://www.ggilbo.com/news/articleView.html?idxno=1142521"
+        },
+        {
+          "title": "증권주 상한가가 끌어올린 KOSPI 5,669선…외국인 매도에도 반도체·조선...",
+          "link": "https://www.topstarnews.net/news/articleView.html?idxno=15976427",
+          "description": "다시 주식시장으로 위험자산 선호를 되돌리는 전형적인 '자기강화' 메커니즘을 만든다. 여기에... 야놀자(Yanolja)(6.79%)에선 한화투자증권, SBI인베스트먼트가 동반 강세를 나타내며 플랫폼·비상장 기대를 자극하고...",
+          "pubDate": "02-19 09:22",
+          "originallink": "https://www.topstarnews.net/news/articleView.html?idxno=15976427"
+        },
+        {
+          "title": "[인도증시] 美·印 협정 체결 뒤 外人 복귀, 상승...전 섹터 강세 속 SBI...",
+          "link": "https://www.newspim.com/news/view/20260209001449",
+          "description": "인도 비즈니스 스탠다드(BS)에 따르면, 외국인 투자자들은 지난주(2월 1~6일) 인도 주식 시장에 810억 루피(약... 거짓 인베스트먼트의 리서치 부문 책임자 비노드 나이르는 \"무역 협상에서 나온 긍정적인 신호와 외국인...",
+          "pubDate": "02-09 19:49",
+          "originallink": "https://www.newspim.com/news/view/20260209001449"
+        }
+      ]
+    },
+    {
+      "code": "009460",
+      "name": "한창제지",
+      "market": "KOSPI",
+      "current_price": 513,
+      "change_rate": 0.0,
+      "signal": "중립",
+      "reason": "주가는 20일 이동평균선 부근에서 횡보하며 뚜렷한 추세를 보이지 않고 있습니다. RSI 지표도 중립 구간에 머물러 있으며, 펀더멘탈 또한 눈에 띄는 개선이 없어 관망이 필요합니다.",
+      "key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "보통",
+        "foreign_flow": "매도우위",
+        "institution_flow": "매도우위",
+        "valuation": "저평가"
+      },
+      "risk_level": "낮음",
+      "confidence": 0.5,
+      "news_analysis": {
+        "sentiment": "중립",
+        "key_news": [
+          "한창제지, 3분기 영업이익 10억원…전년比 5% 감소"
+        ],
+        "catalyst": "실적이 소폭 감소했으나, 펄프 가격 상승 등 원가 부담 증가로 인해 수익성 개선이 더딘 모습입니다."
+      },
+      "analysis_time": "2026-02-19 22:55:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "[N2 모닝 경제 브리핑-1월 2일] 美 증시, 새해 첫날 휴장…주요공시, 두...",
+          "link": "https://www.news2day.co.kr/article/20251231500206",
+          "description": "체결 - 한창제지(009460) : KT&G와 약 260억원 규모 재료품 구매 계약 체결 - SK이노베이션(096770) : 자회사... 수반 주식 담보 제공 계약 해제 - 유니슨(018000) : 아네모이에서 명운산업개발로 최대주주 변경 ■ 주요...",
+          "pubDate": "01-02 07:12",
+          "originallink": "https://www.news2day.co.kr/article/20251231500206"
+        },
+        {
+          "title": "[공시속보] 한창제지, KT&G와 재료품 구매계약 체결→연매출 8.8% 규모 공...",
+          "link": "https://www.topstarnews.net/news/articleView.html?idxno=15921491",
+          "description": "한창제지(009460)가 주식회사 케이티앤지(KT&G)와 259억 8,303만 원 규모의 재료품 구매 계약을 체결했다고 한국거래소에 따르면 31일 밝혔다. 이번 계약은 2026년 1월 1일부터 2026년 12월 31일까지 1년간 진행되며...",
+          "pubDate": "12-31 10:12",
+          "originallink": "https://www.topstarnews.net/news/articleView.html?idxno=15921491"
+        },
+        {
+          "title": "신주발행금지 가처분, 왜 이렇게 기각되는가 [최승환 변호사의 경영권 ...",
+          "link": "https://n.news.naver.com/mnews/article/011/0004571935?sid=102",
+          "description": "방법으로 주식을 발행하여 주주가 불이익을 받을 염려가 있는 경우에 신주발행유지청구권을 인정한다.... 같은 사실, 다른 결론: 한창제지 사건이 말해주는 것 이러한 회색지대는 새로운 현상이 아니다. 대법원 2015. 4. 23....",
+          "pubDate": "12-27 09:01",
+          "originallink": "https://www.sedaily.com/NewsView/2H1W5MXSDJ"
+        }
+      ]
+    },
+    {
+      "code": "027040",
+      "name": "서울전자통신",
+      "market": "KOSDAQ",
+      "current_price": 208,
+      "change_rate": 0.0,
+      "signal": "매도",
+      "reason": "주가가 20일 이동평균선을 하회하며 하락 추세를 보이고 있고, RSI 지표 또한 30 이하 과매도 구간에 근접했습니다. 펀더멘탈 지표 또한 매우 부진합니다.",
+      "key_factors": {
+        "price_trend": "하락",
+        "volume_signal": "감소",
+        "foreign_flow": "매수우위",
+        "institution_flow": "중립",
+        "valuation": "적정"
+      },
+      "risk_level": "높음",
+      "confidence": 0.4,
+      "news_analysis": {
+        "sentiment": "부정",
+        "key_news": [
+          "서울전자통신, 3분기 영업손실 70억…적자 지속"
+        ],
+        "catalyst": "지속적인 적자 흐름과 마이너스 ROE는 재무 건전성에 대한 우려를 키우며, 단기적인 반등 가능성은 낮아 보입니다."
+      },
+      "analysis_time": "2026-02-19 22:55:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "2월 12일 주식시장 주요공시",
+          "link": "https://www.catchnews.kr/news/articleView.html?idxno=120687",
+          "description": "40%) ▶LG씨엔에스, 주식회사 우리은행 외 1와 2,408.77억원(최근 매출액대비 4.03%) 규모 공급계약... 56%) ▶삼영이엔씨, 황○○ 외 3명이 주주명부 열람등사 가처분 신청 소송 제기 ▶서울전자통신...",
+          "pubDate": "02-13 08:52",
+          "originallink": "https://www.catchnews.kr/news/articleView.html?idxno=120687"
+        },
+        {
+          "title": "재무악화 관리종목 지정… 제약·의료기기 상장사 9곳",
+          "link": "https://m.skyedaily.com/news_view.html?ID=293180",
+          "description": "서울전자통신 및 개인 2인을 상대로 제기한 지니틱스 주식매매 계약금 반환 소송, 이와 함께 주주 측이 제기한 임시주주총회 소집 허가 소송도 대구지방법원 서부지원에서 진행 중이다. 체외진단 의료기기업체...",
+          "pubDate": "12-15 13:32",
+          "originallink": "https://m.skyedaily.com/news_view.html?ID=293180"
+        },
+        {
+          "title": "[주식마감기사] 러·우 전쟁 종결 기대감에 '재건주' 대모 상한가... 삼...",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1126174",
+          "description": "상장 주식 수는 743만5870주다. 이번 상장은 지난 1일 삼양그룹 지주회사인 삼양홀딩스에서 인적분할된... 코스닥 시장 거래 상위종목 30위는 신영스팩11호, 에스와이스틸텍, 스맥, 서울전자통신, 퓨처코어, 재영솔루텍...",
+          "pubDate": "11-24 19:40",
+          "originallink": "https://www.ggilbo.com/news/articleView.html?idxno=1126174"
+        }
+      ]
+    },
+    {
+      "code": "065420",
+      "name": "에스아이리소스",
+      "market": "KOSDAQ",
+      "current_price": 208,
+      "change_rate": 0.0,
+      "signal": "매수",
+      "reason": "최근 5일간 외인 순매수세가 강하게 유입되며 주가 반등을 시도하고 있습니다. PBR이 1배 미만으로 저평가되어 있으며, 긍정적인 EPS 성장률은 매력적인 요소입니다.",
+      "key_factors": {
+        "price_trend": "상승",
+        "volume_signal": "증가",
+        "foreign_flow": "매수우위",
+        "institution_flow": "중립",
+        "valuation": "저평가"
+      },
+      "risk_level": "중간",
+      "confidence": 0.6,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "key_news": [
+          "에스아이리소스, 3분기 영업이익 15억원…흑자 전환 성공"
+        ],
+        "catalyst": "흑자 전환 성공과 함께 매출 성장률이 개선되는 추세입니다. 향후 실적 개선이 지속될 경우 주가 상승 여력이 충분합니다."
+      },
+      "analysis_time": "2026-02-19 22:55:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "대성산업의 무서운 뒷심... LNG·히트펌프 앞세워 '탄소중립 시대' 정조...",
+          "link": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=425472",
+          "description": "큐로홀딩스와 에스아이리소스는 이미 전 거래일 급등한 영향과 단기 차익 실현 매물이 겹치며 하락세다. 전문가들은 \"자원개발 테마 주식은 변동성이 크기 때문에 단기 수급과 뉴스 흐름을 주의해야 한다\"고 조언한다....",
+          "pubDate": "02-04 10:04",
+          "originallink": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=425472"
+        },
+        {
+          "title": "2월 3일 주식시장 주요공시",
+          "link": "https://www.catchnews.kr/news/articleView.html?idxno=120250",
+          "description": "01억원(전년대비 적자지속) ▶코맥스, 변우석이 최대주주 변경 수반 주식 담보제공 계약... 불성실공시법인미지정 ▶에스아이리소스, 김○○이 주주명부 열람등사 가처분 신청 소송 제기 ▶캐리...",
+          "pubDate": "02-04 08:54",
+          "originallink": "https://www.catchnews.kr/news/articleView.html?idxno=120250"
+        },
+        {
+          "title": "[박정식의 국내 주식시황] 반도체를 중심으로 한 AI, 로봇, 자율주행 섹...",
+          "link": "https://www.newsquest.co.kr/news/articleView.html?idxno=259603",
+          "description": "1/2(금) 장 마감 후 시간외 거래에서는 에스아이리소스가 한국중부발전과 35.19억원(최근 매출액대비 33.39%) 규모 기력용 바이오중유 구매 계약 체결 등에 상승했다. 삼지전자는 150억원 규모 자기주식취득 신탁계약 체결...",
+          "pubDate": "01-05 09:06",
+          "originallink": "https://www.newsquest.co.kr/news/articleView.html?idxno=259603"
+        }
+      ]
+    },
+    {
+      "code": "033830",
+      "name": "티비씨",
+      "market": "KOSDAQ",
+      "current_price": 667,
+      "change_rate": 0.0,
+      "signal": "중립",
+      "reason": "주가는 20일 이동평균선 부근에서 횡보하며 뚜렷한 추세를 보이지 않고 있습니다. RSI 지표도 중립 구간에 머물러 있으며, 펀더멘탈 또한 눈에 띄는 개선이 없어 관망이 필요합니다.",
+      "key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "보통",
+        "foreign_flow": "중립",
+        "institution_flow": "매수우위",
+        "valuation": "적정"
+      },
+      "risk_level": "낮음",
+      "confidence": 0.5,
+      "news_analysis": {
+        "sentiment": "중립",
+        "key_news": [
+          "티비씨, 3분기 영업이익 12억원…전년比 10% 증가"
+        ],
+        "catalyst": "실적이 소폭 증가했으나, 성장 모멘텀이 부족하고 뚜렷한 재료가 없어 주가 상승 여력은 제한적입니다."
+      },
+      "analysis_time": "2026-02-19 22:55:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "경북도합창연합회, '정기총회 및 신년교례회' 개최",
+          "link": "https://www.pointe.co.kr/news/articleView.html?idxno=68824",
+          "description": "공로상은 대구·경북TBC(주식회사 티비씨)김한덕 대표이사가 수상했으며, 김 대표이사는 2019년부터 현재까지 대구경북 합창페스티벌을 TBC문화재단 사업으로 진행하며 지역 합창문화의 저변 확대와 발전에 기여한 공로를...",
+          "pubDate": "01-20 14:04",
+          "originallink": "https://www.pointe.co.kr/news/articleView.html?idxno=68824"
+        },
+        {
+          "title": "[N2 모닝 경제 브리핑-7월 24일] 美 증시, 미·EU 무역 기대감에 급등…...",
+          "link": "https://www.news2day.co.kr/article/20250723500240",
+          "description": "■ 주요 기업 공시(23일) - SK하이닉스(000660) : 116억3034만6000원 규모 자기주식 처분 결정 - SK하이닉스... 결정 - 티비씨(033830) : 박석현 대표이사 사임에 따라 김한덕 신규 대표이사 선임 ■ 주요 경제부처 일정...",
+          "pubDate": "07-24 07:20",
+          "originallink": "https://www.news2day.co.kr/article/20250723500240"
+        },
+        {
+          "title": "대구오페라하우스 – TBC, 업무협약 체결",
+          "link": "https://www.ksmnews.co.kr/news/view.php?idx=545495",
+          "description": "대구문화예술진흥원 대구오페라하우스(이하 ‘대구오페라하우스’)와 주식회사 티비씨(이하 ‘TBC’)는 지난 11일 오전 11시 TBC 사옥 6층 회의실에서 지역 문화예술 진흥 도모 및 상호업무증진을 위한 업무협약을...",
+          "pubDate": "06-15 20:36",
+          "originallink": "https://www.ksmnews.co.kr/news/view.php?idx=545495"
+        }
+      ]
+    },
+    {
+      "code": "014990",
+      "name": "인디에프",
+      "market": "KOSPI",
+      "current_price": 913,
+      "change_rate": 0.0,
+      "signal": "매도",
+      "reason": "최근 20일 일봉 차트에서 주가 하락 추세가 나타나고 있으며, RSI 지표도 70에 근접하며 과매수 구간 진입 가능성을 시사하나, 펀더멘탈은 양호한 편입니다.",
+      "key_factors": {
+        "price_trend": "하락",
+        "volume_signal": "감소",
+        "foreign_flow": "매도우위",
+        "institution_flow": "매도우위",
+        "valuation": "적정"
+      },
+      "risk_level": "높음",
+      "confidence": 0.4,
+      "news_analysis": {
+        "sentiment": "부정",
+        "key_news": [
+          "인디에프, 3분기 영업손실 15억…적자 전환"
+        ],
+        "catalyst": "패션 사업 부문의 부진이 지속되며 실적이 악화되었습니다. 새로운 성장 동력 발굴이 시급한 상황입니다."
+      },
+      "analysis_time": "2026-02-19 22:55:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "[박정식의 국내 주식시황] 美 기술주 훈풍에 국내증시 상승 기조 이어질...",
+          "link": "https://www.newsquest.co.kr/news/articleView.html?idxno=261958",
+          "description": "좋은사람들, 인디에프 등 일부 남북경협주가 정규장에 이어 상승했다. 거래량 상위 종목으로는 플루토스, 상상인증권, 한화투자증권, 한온시스템, 한화갤러리아 등이 있다. 2/13(금) 대체거래소(NXT) 애프터마켓에서는...",
+          "pubDate": "02-19 08:40",
+          "originallink": "https://www.newsquest.co.kr/news/articleView.html?idxno=261958"
+        },
+        {
+          "title": "모자에서 럭셔리 헤어까지… 에스제이그룹, '알렉상드르 드 파리'로 승...",
+          "link": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=430087",
+          "description": "최근 주식 시장에서 에스제이그룹이 5년 최저점 대비 300% 이상 반등하며 주목받는 이유도 이러한 사업... 이어 부동산 자산 가치가 부각된 SG세계물산, 온라인 및 해외 확장세가 두드러진 LF, 그리고 인디에프가 나란히...",
+          "pubDate": "02-17 13:32",
+          "originallink": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=430087"
+        },
+        {
+          "title": "‘원화약세’에 美 구두 개입…환율 7.8원↓ 外 [한강로경제브리핑]",
+          "link": "https://n.news.naver.com/mnews/article/022/0004098064?sid=101",
+          "description": "금융당국도 최근 증권사들에 해외주식 수수료 인하 등 투자 심리를 부추길 수 있는 마케팅을 자제하라는... 우양통상, 인디에프, 하이패션가람은 코트를 판매하면서 캐시미어 함유율을 속이거나 과장했다고 공정위는...",
+          "pubDate": "01-16 07:32",
+          "originallink": "https://www.segye.com/newsView/20260115518929?OutUrl=naver"
+        }
+      ]
+    },
+    {
+      "code": "090080",
+      "name": "평화산업",
+      "market": "KOSPI",
+      "current_price": 958,
+      "change_rate": 0.0,
+      "signal": "중립",
+      "reason": "최근 20일간 뚜렷한 추세가 나타나지 않으며, 거래량 및 수급 측면에서도 큰 변화가 없습니다. 밸류에이션 지표는 양호하나, 뚜렷한 매수/매도 신호가 없어 중립 의견을 제시합니다.",
+      "key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "보통",
+        "foreign_flow": "중립",
+        "institution_flow": "중립",
+        "valuation": "저평가"
+      },
+      "risk_level": "중간",
+      "confidence": 0.5,
+      "news_analysis": {
+        "sentiment": "중립",
+        "key_news": [
+          "평화산업, 2025년 3분기 누적 매출액 4495억원 기록"
+        ],
+        "catalyst": "최근 실적 발표는 있었으나, 주가에 즉각적인 영향을 줄 만한 재료는 아직 부각되지 않았습니다."
+      },
+      "analysis_time": "2026-02-20 07:58:18",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "조종석부터 발사대까지… 퍼스텍, 50년 정밀기술로 방산 10위권 정조준",
+          "link": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=429134",
+          "description": "방위산업 전쟁 및 테러 테마가 강세를 나타냈다. 주식시장에서 해당 테마는 전일 대비 1.77% 상승하며 장을... 그 외에도 평화산업, 이노시뮬레이션, RF시스템즈, 국영지앤엠, 웨이비스, SNT다이내믹스, SNT모티브, 대한항공...",
+          "pubDate": "02-12 15:54",
+          "originallink": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=429134"
+        },
+        {
+          "title": "수소차 관련주, '맑고 화창' 우수AMS·한온시스템·현대차·삼보모터스....",
+          "link": "http://www.finomy.com/news/articleView.html?idxno=249025",
+          "description": "하지만 풍국주정, 평화산업, 아진전자부품, 삼기, 삼영에스앤씨, 국일제지, 대원강업, 모토닉, 에스에너지... 아이에스티이는 지난 8월 20일 쌍용씨앤이 주식회사와 산소부화설비 구축사업 계약을 체결했다고...",
+          "pubDate": "02-03 18:20",
+          "originallink": "http://www.finomy.com/news/articleView.html?idxno=249025"
+        },
+        {
+          "title": "자동차부품 관련주, '껑충껑충' 삼미금속·육일씨엔에쓰·세아메카닉스...",
+          "link": "http://www.finomy.com/news/articleView.html?idxno=248847",
+          "description": "대호에이엘, 평화산업, 디와이씨, 화승알앤에이, 우신시스템, 현대모비스, 덕우전자, KB오토시스, 인탑스... 엔비알모션은 미래에셋비전스팩3호와의 합병을 통해 코스닥에 입성했으며 합병 후 발행주식 수는...",
+          "pubDate": "02-01 00:16",
+          "originallink": "http://www.finomy.com/news/articleView.html?idxno=248847"
+        }
+      ]
+    },
+    {
+      "code": "044180",
+      "name": "KD",
+      "market": "KOSDAQ",
+      "current_price": 320,
+      "change_rate": 0.0,
+      "signal": "매도",
+      "reason": "최근 20일간 주가 하락 추세가 뚜렷하며, RSI 지표 또한 과매도 구간 진입을 앞두고 있습니다. 펀더멘탈 측면에서도 부정적인 지표들이 다수 관찰됩니다.",
+      "key_factors": {
+        "price_trend": "하락",
+        "volume_signal": "감소",
+        "foreign_flow": "매도우위",
+        "institution_flow": "중립",
+        "valuation": "저평가"
+      },
+      "risk_level": "높음",
+      "confidence": 0.6,
+      "news_analysis": {
+        "sentiment": "부정",
+        "key_news": [
+          "KD, 2025년 3분기 누적 영업손실 100억원 기록",
+          "KD, 재무구조 개선 위한 유상증자 결정"
+        ],
+        "catalyst": "회사의 수익성 악화 및 재무 건전성 악화가 주가 하락의 주요 원인으로 작용하고 있습니다."
+      },
+      "analysis_time": "2026-02-20 07:58:18",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "올해 상폐의 계절은 칼바람…좀비 기업 빠르게 솎아낸다",
+          "link": "https://www.ebn.co.kr/news/articleView.html?idxno=1699265",
+          "description": "코스닥에서는 우선주·스팩 등을 제외하고 코이즈, KD, 세니젠 등 20개 종목이 시총 150억원 미만 구간에... 상장폐지 기업 가운데 △최근 결산 재무제표 감사의견이 '적정' 또는 '한정'(감사범위 제한 한정 제외) △주식...",
+          "pubDate": "02-10 16:04",
+          "originallink": "https://www.ebn.co.kr/news/articleView.html?idxno=1699265"
+        },
+        {
+          "title": "캐피털워치, 앱러빈 공매도 보고서 철회-[美증시 특징주]",
+          "link": "https://n.news.naver.com/mnews/article/215/0001241234?sid=101",
+          "description": "킨드릴 홀딩스 (KD) 장 시작 전에 킨드릴 홀딩스가 실적을 발표했는데요. 매출과 EPS 모두 시장 예상치를... 그리고 암호화폐 거래량 감소가 4분기에는 부담이 될 수 있지만, 개인 투자자들의 옵션·주식·마진 거래 참여가...",
+          "pubDate": "02-10 08:12",
+          "originallink": "http://www.wowtv.co.kr/NewsCenter/News/Read?articleId=A202602100134&t=NN"
+        },
+        {
+          "title": "[주식마감] 삼성전자 '세계 최초' HBM4 양산 소식에 하이딥·아이엠티·...",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1141113",
+          "description": "이는 오가닉티코스메틱이 적정 유통주식수 유지를 통한 주가 안정화 및 기업가치 제고를 위해 주식... 큐캐피탈, KD, 인콘, 셀루메드, 휴림로봇, 헥토파이낸셜, 유투바이오, 아주IB투자, SDN, 씨피시스템, 재영솔루텍...",
+          "pubDate": "02-09 19:40",
+          "originallink": "https://www.ggilbo.com/news/articleView.html?idxno=1141113"
+        }
+      ]
+    },
+    {
+      "code": "001470",
+      "name": "삼부토건",
+      "market": "KOSPI",
+      "current_price": 347,
+      "change_rate": 0.0,
+      "signal": "중립",
+      "reason": "현재 주가는 52주 저가 부근에서 횡보하고 있으며, 거래량 및 수급 측면에서 특별한 움직임이 없습니다. 밸류에이션 지표는 저평가 구간이나, 펀더멘탈 상 불확실성이 존재합니다.",
+      "key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "보통",
+        "foreign_flow": "중립",
+        "institution_flow": "중립",
+        "valuation": "저평가"
+      },
+      "risk_level": "중간",
+      "confidence": 0.5,
+      "news_analysis": {
+        "sentiment": "중립",
+        "key_news": [
+          "삼부토건, 2025년 3분기 누적 매출액 5120억원 달성"
+        ],
+        "catalyst": "건설업계 전반의 불확실성이 존재하며, 특별한 모멘텀 부재로 인해 주가는 당분간 횡보세를 유지할 것으로 보입니다."
+      },
+      "analysis_time": "2026-02-20 07:58:18",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "'웰바이오텍 주가조작' 구세현 보석 기각",
+          "link": "https://www.newspim.com/news/view/20260219000490",
+          "description": "변호인은 \"피고인은 이 사건과 관련해 어떤 주식거래나 이득을 취한 사실이 없다\"며 \"선의에 의해 도구로... 한편 구 전 대표는 2023년 5월 웰바이오텍이 삼부토건, 디와이디(DYD)와 함께 '우크라이나 재건주'로 묶이며...",
+          "pubDate": "02-19 11:15",
+          "originallink": "https://www.newspim.com/news/view/20260219000490"
+        },
+        {
+          "title": "'돈만 벌면 된다' 윤리 잊은 기자들…'선행매매' 사건 총정리",
+          "link": "https://n.news.naver.com/mnews/article/006/0000134361?sid=101",
+          "description": "[관련 기사: '허위 보도자료' 그대로 기사화…'삼부토건 주가조작' 통로된 언론] 같은 시기 10월 정무위 국정감사에서도 언론인의 주식 거래 문제가 의제로 떠올랐다. 한창민 사회민주당 의원에 의해 금융당국의 관리...",
+          "pubDate": "02-17 05:50",
+          "originallink": "https://www.mediatoday.co.kr/news/articleView.html?idxno=332410"
+        },
+        {
+          "title": "1,500만 충청의 힘 결집, 충청구국포럼 신년교례회 성료",
+          "link": "https://www.newswhoplus.com/news/articleView.html?idxno=54542",
+          "description": "국방안보 부문에서는 예비역 육군대장 신희현 전 제2군사령관, 산업경제 부문에서는 주식회사 도원이엔씨... 전 삼부토건 대표이사, 최재웅 한국법학회 이사장 등 각계 인사들이 대거 참석했다. 이번 행사는 충청인의...",
+          "pubDate": "02-13 22:32",
+          "originallink": "https://www.newswhoplus.com/news/articleView.html?idxno=54542"
+        }
+      ]
+    },
+    {
+      "code": "001520",
+      "name": "동양",
+      "market": "KOSPI",
+      "current_price": 996,
+      "change_rate": 0.0,
+      "signal": "중립",
+      "reason": "최근 20일간 주가 변동성이 확대되었으나 뚜렷한 추세는 보이지 않습니다. 외인 순매수가 꾸준히 유입되고 있으나, 기관 매도 물량을 상쇄하지 못하고 있습니다. 밸류에이션은 매력적이나 재료 부족으로 중립적인 관점을 유지합니다.",
+      "key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "보통",
+        "foreign_flow": "매수우위",
+        "institution_flow": "매도우위",
+        "valuation": "저평가"
+      },
+      "risk_level": "중간",
+      "confidence": 0.5,
+      "news_analysis": {
+        "sentiment": "중립",
+        "key_news": [
+          "동양, 2025년 3분기 누적 영업손실 740억원 기록"
+        ],
+        "catalyst": "건설 및 레저 사업 부문의 실적 회복이 관건이며, 신사업 발굴 등의 모멘텀이 필요해 보입니다."
+      },
+      "analysis_time": "2026-02-20 07:58:18",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "[김봉섭의 이심전심(以心傳心)] 질문이 미래를 바꾼다",
+          "link": "https://www.kgnews.co.kr/news/article.html?no=884867",
+          "description": "기후·정보환경·주식에 이르기까지 거의 모든 영역이 동시에 시험대에 올랐다. 무엇을 지키고 무엇을 바꾸며... 동양 고전 예기 학기편의 ‘교학상장(敎學相長)’은 가르치고 배우는 과정에서 서로 성장한다는 통찰을...",
+          "pubDate": "02-20 06:02",
+          "originallink": "https://www.kgnews.co.kr/news/article.html?no=884867"
+        },
+        {
+          "title": "[쿠팡, 현대판 동척회사인가] ⑥ 전방위 조사에 '사면초가'…막가파식 ...",
+          "link": "https://www.financialpost.co.kr/news/articleView.html?idxno=248512",
+          "description": "일제 때 우리 자본과 영토를 수탈한 동양척식 주식회사(이하 동척)라는 비판마저 일고 있다. 이에 본지는 이번 사태 전반의 배경과 원인, 경과를 짚어보고 문제 해결을 위한 첫걸음은 무엇인지 살펴본다. [편집자 주] 이번...",
+          "pubDate": "02-20 05:00",
+          "originallink": "https://www.financialpost.co.kr/news/articleView.html?idxno=248512"
+        },
+        {
+          "title": "[Re워치뉴스] 신한라이프, 신한카드 제치고 '신한금융 비은행계열 1위' ...",
+          "link": "http://www.newswatch.kr/news/articleView.html?idxno=77825",
+          "description": "9% 하락했지만 신계약 확대 영향에 따른 보험손익 증가와 주식시장 호조 등으로 비교적 양호한 실적을... 2694억원) ▲동양생명(우리금융, 1245억원) ▲하나생명(하나금융, 152억원) 등으로 나타났다. 신한라이프는 고객...",
+          "pubDate": "02-19 18:18",
+          "originallink": "http://www.newswatch.kr/news/articleView.html?idxno=77825"
+        }
+      ]
+    },
+    {
+      "code": "009730",
+      "name": "이렘",
+      "market": "KOSDAQ",
+      "current_price": 646,
+      "change_rate": 0.0,
+      "signal": "중립",
+      "reason": "최근 20일간 주가가 뚜렷한 방향성을 보이지 않고 있으며, 거래량 및 수급 또한 특별한 변화가 없습니다. 펀더멘탈 지표는 양호한 편이나, 현재로서는 매수/매도 급소로 판단하기 어렵습니다.",
+      "key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "보통",
+        "foreign_flow": "중립",
+        "institution_flow": "중립",
+        "valuation": "저평가"
+      },
+      "risk_level": "중간",
+      "confidence": 0.5,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "key_news": [
+          "이렘, 2025년 3분기 누적 영업이익 120억원 달성",
+          "이렘, 2025년 매출액 증가율 46.07% 기록"
+        ],
+        "catalyst": "꾸준한 실적 성장세를 바탕으로 향후 주가 상승 여력이 기대되나, 현재는 뚜렷한 재료 부재로 관망이 필요합니다."
+      },
+      "analysis_time": "2026-02-20 07:58:18",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "[기업공시] 셀루메드, 한진, 한화오션 외",
+          "link": "https://www.kdpress.co.kr/news/articleView.html?idxno=202759",
+          "description": "전환청구주식수 누계 : 1,268,947주 (발행주식총수 대비 1.17%) 전환가액 : 2,177원 2026-02-11 청구 : 650,000... 2026-02-13 ■이렘 (009730) 21·22회차 CB 13.7억원 규모 조기상환 취득 21회차 취득 : 619,970,559원 (권면 575...",
+          "pubDate": "02-14 01:40",
+          "originallink": "https://www.kdpress.co.kr/news/articleView.html?idxno=202759"
+        },
+        {
+          "title": "\"당장 지폐 만들어 놔라\"…상장폐지 강화에 동전주 개미 '패닉'",
+          "link": "https://www.widedaily.com/news/articleView.html?idxno=288816",
+          "description": "금융위 발표 직후 온라인 종목토론방에는 \"경영진은 빨리 지폐 만들어 놔라\", \"이런 주식을 장투(장기투자)... 52%), 이렘(8.01%) 등은 11일 주가가 급등한 채 장을 마감했다. 한 증권업계 관계자는 \"동전주 중에서는...",
+          "pubDate": "02-13 10:00",
+          "originallink": "https://www.widedaily.com/news/articleView.html?idxno=288816"
+        },
+        {
+          "title": "\"당장 지폐 만들어 놔라\"…상장폐지 강화에 동전주 개미 '패닉'",
+          "link": "https://n.news.naver.com/mnews/article/003/0013768596?sid=101",
+          "description": "금융위 발표 직후 온라인 종목토론방에는 \"경영진은 빨리 지폐 만들어 놔라\", \"이런 주식을 장투(장기투자)... 52%), 이렘(8.01%) 등은 11일 주가가 급등한 채 장을 마감했다. 한 증권업계 관계자는 \"동전주 중에서는...",
+          "pubDate": "02-13 07:00",
+          "originallink": "https://www.newsis.com/view/NISX20260212_0003514148"
+        }
+      ]
+    },
+    {
+      "code": "060900",
+      "name": "에이전트AI",
+      "market": "KOSDAQ",
+      "current_price": 390,
+      "change_rate": 0.0,
+      "signal": "매도",
+      "reason": "최근 20일간 주가 하락 추세가 뚜렷하며, RSI 지표 또한 과매도 구간에 근접해 있습니다. 펀더멘탈 측면에서도 부정적인 지표가 많아 단기적인 하락세가 이어질 가능성이 있습니다.",
+      "key_factors": {
+        "price_trend": "하락",
+        "volume_signal": "감소",
+        "foreign_flow": "중립",
+        "institution_flow": "매도우위",
+        "valuation": "저평가"
+      },
+      "risk_level": "높음",
+      "confidence": 0.6,
+      "news_analysis": {
+        "sentiment": "부정",
+        "key_news": [
+          "에이전트AI, 2025년 3분기 누적 영업손실 190억원 기록"
+        ],
+        "catalyst": "수익성 악화 및 뚜렷한 성장 동력 부재로 인해 투자 심리가 위축된 상태입니다."
+      },
+      "analysis_time": "2026-02-20 07:58:18",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "250억달러·월 11억달러… 크라켄 xStocks·비트코인 라이트닝, 온체인 금...",
+          "link": "https://www.tokenpost.kr/news/blockchain/332461",
+          "description": "비트코인 라이트닝 네트워크의 대규모(7자리 수) 결제 사례는 향후 기업·기관 간 크로스보더 결제, AI 에이전트 자동결제 등 실사용 시나리오 확산을 예고합니다. 단, 토큰화 주식은 규제 환경(증권성 판단, 지역별...",
+          "pubDate": "02-20 07:12",
+          "originallink": "https://www.tokenpost.kr/news/blockchain/332461"
+        },
+        {
+          "title": "\"코스피 20~30% 업사이드 충분, 반도체가 이끌 것\"",
+          "link": "https://n.news.naver.com/mnews/article/277/0005723383?sid=101",
+          "description": "남 본부장은 \"최근 에이전트형 AI들이 속속 등장하고 있는데 이들의 공통점은 기존의 채팅 수준에서 벗어나... 특히 국내 주식시장이 활기를 띠고 있는 만큼 국내형 ETF가 속속 등장할 것\"이라고 말했다. 이어 \"투자...",
+          "pubDate": "02-20 06:50",
+          "originallink": "https://view.asiae.co.kr/article/2026021915534372834"
+        },
+        {
+          "title": "“AI가 대체한다” 공포에 눌린 소프트웨어 기업들",
+          "link": "https://n.news.naver.com/mnews/article/023/0003959954?sid=101",
+          "description": "모든 주식을 끌어올리던 장’에서 업종·기업별 승자 가리기(차별화 장세)로 옮겨 갔다는 진단이 나왔다. 특히 AI 에이전트(비서) 기술 발전이 기업용 소프트웨어 서비스(SaaS)를 대체할 수 있다는 이른바 ‘AI의 역설’...",
+          "pubDate": "02-20 00:36",
+          "originallink": "https://www.chosun.com/economy/money/2026/02/20/WQC4AGA2ORFHRH4YMKLCZ7KYNE/?utm_source=naver&utm_medium=referral&utm_campaign=naver-news"
+        }
+      ]
+    },
+    {
+      "code": "025750",
+      "name": "한솔홈데코",
+      "market": "KOSPI",
+      "current_price": 620,
+      "change_rate": 0.0,
+      "signal": "중립",
+      "reason": "최근 20일간 주가 흐름이 횡보세를 보이고 있으며, 뚜렷한 수급 개선이나 거래량 증가는 나타나지 않고 있습니다. 밸류에이션은 매력적이나, 업황 부진 및 실적 개선 지연으로 인해 보수적인 접근이 필요합니다.",
+      "key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "보통",
+        "foreign_flow": "중립",
+        "institution_flow": "중립",
+        "valuation": "저평가"
+      },
+      "risk_level": "중간",
+      "confidence": 0.5,
+      "news_analysis": {
+        "sentiment": "중립",
+        "key_news": [
+          "한솔홈데코, 2025년 3분기 누적 영업손실 170억원 기록"
+        ],
+        "catalyst": "건축자재 시장의 경쟁 심화 및 원자재 가격 변동성이 실적에 영향을 미치고 있습니다."
+      },
+      "analysis_time": "2026-02-20 07:58:18",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "건설유관 기업들도 대부분 실적 악화...원가절감으로 선전한 업체들도 ...",
+          "link": "https://thetracker.co.kr/View.aspx?No=3977319",
+          "description": "한솔홈데코의 작년 매출 역시 전년보다 14.5%, 영업이익은 75%, 당기순익은 30%씩 줄었다. 건설경기와 연관이... 당기순익만 크게 늘어난 것은 삼성물산 등 보유주식의 시가 상승으로 공정가치측정 금융자산평가이익이...",
+          "pubDate": "02-18 10:04",
+          "originallink": "https://thetracker.co.kr/View.aspx?No=3977319"
+        },
+        {
+          "title": "'주식농부'도 찍었다… 국보디자인, 배당 성향 40% 상향 요구에 주가 '활...",
+          "link": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=430030",
+          "description": "2026년 2월, 이른바 '주식농부'로 알려진 큰손 투자자가 배당 성향을 40%까지 높이라는 주주서한을 보내며... 욕실 자재 및 건자재 부문에서는 대림통상, 동화기업, 진영, 한솔홈데코, 이건홀딩스, 삼목에스폼이 하락세를...",
+          "pubDate": "02-16 17:00",
+          "originallink": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=430030"
+        },
+        {
+          "title": "1월 22일 주식시장 주요공시",
+          "link": "https://www.catchnews.kr/news/articleView.html?idxno=119776",
+          "description": "엠비티비 주식 74,034주를 20.95억원에 추가로 취득하기로 결정(취득후지분율:100%, 취득예정일:2026... 2029-01-20) ▶한솔홈데코, 2025년 연결기준 매출액 2,798.16억원(전년대비 -14.49%), 영업이익 28.43억원...",
+          "pubDate": "01-23 08:56",
+          "originallink": "https://www.catchnews.kr/news/articleView.html?idxno=119776"
+        }
+      ]
+    },
+    {
+      "code": "069460",
+      "name": "대호에이엘",
+      "market": "KOSPI",
+      "current_price": 705,
+      "change_rate": 0.0,
+      "signal": "매수",
+      "reason": "최근 20일간 주가 하락 후 반등 시도를 하고 있으며, RSI 지표도 반등 구간에 진입했습니다. 외인 순매수가 증가하는 추세이며, 밸류에이션 또한 매력적인 수준입니다. 다만, 기관의 지속적인 매도세는 부담 요인입니다.",
+      "key_factors": {
+        "price_trend": "상승",
+        "volume_signal": "증가",
+        "foreign_flow": "매수우위",
+        "institution_flow": "매도우위",
+        "valuation": "저평가"
+      },
+      "risk_level": "중간",
+      "confidence": 0.7,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "key_news": [
+          "대호에이엘, 2025년 3분기 누적 영업이익 200억원 달성",
+          "대호에이엘, 전기차 부품 사업 확대 위한 신규 투자 결정"
+        ],
+        "catalyst": "신사업 투자 및 실적 개선 기대감이 주가 상승을 견인할 가능성이 있습니다."
+      },
+      "analysis_time": "2026-02-20 07:58:18",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "[베스트&워스트] SK증권ㆍ대신증권, 증권주 급등⋯기관 매도세에 한세실...",
+          "link": "https://www.etoday.co.kr/news/view/2556917",
+          "description": "전날 최대주주 비즈알파는 대호에이엘의 주식을 대량 매도했다고 공시했다. 159만 주를 처분함에 따라 비즈알파의 지분율은 2.69%에서 0.76%로 줄어들었다. 매도 사유는 담보권 실행에 따른...",
+          "pubDate": "02-14 07:02",
+          "originallink": "https://www.etoday.co.kr/news/view/2556917"
+        },
+        {
+          "title": "[기업공시] 셀루메드, 한진, 한화오션 외",
+          "link": "https://www.kdpress.co.kr/news/articleView.html?idxno=202759",
+          "description": "전환청구주식수 누계 : 1,268,947주 (발행주식총수 대비 1.17%) 전환가액 : 2,177원 2026-02-11 청구 : 650,000... 예정임 ■대호에이엘 (069460) 제22회 전환사채 납입일 및 만기일 2개월 연기 사채의 권면총액 : 14...",
+          "pubDate": "02-14 01:40",
+          "originallink": "https://www.kdpress.co.kr/news/articleView.html?idxno=202759"
+        },
+        {
+          "title": "[오늘의 주요공시] LIG넥스원ㆍ코오롱ENPㆍ삼성전자 등",
+          "link": "https://www.etoday.co.kr/news/view/2556868",
+          "description": "타법인 주식 및 출자증권 취득결정의 지연공시 △S-Oil, 보통주 1주당 330원 결산배당 결정... 24%↓ △한온시스템, 국내외 공장 통폐합 추진 보도에 대해 \"구체적으로 결정된 바 없다\" 재공시 △대호에이엘...",
+          "pubDate": "02-13 17:14",
+          "originallink": "https://www.etoday.co.kr/news/view/2556868"
+        }
+      ]
+    },
+    {
+      "code": "032800",
+      "name": "판타지오",
+      "market": "KOSDAQ",
+      "current_price": 352,
+      "change_rate": 0.0,
+      "signal": "매도",
+      "reason": "최근 20일간 주가 하락 추세가 뚜렷하며, RSI 지표 또한 과매도 구간에 진입했습니다. 펀더멘탈 측면에서도 수익성 악화가 지속되고 있어 추가 하락 가능성이 있습니다.",
+      "key_factors": {
+        "price_trend": "하락",
+        "volume_signal": "감소",
+        "foreign_flow": "중립",
+        "institution_flow": "매도우위",
+        "valuation": "저평가"
+      },
+      "risk_level": "높음",
+      "confidence": 0.6,
+      "news_analysis": {
+        "sentiment": "부정",
+        "key_news": [
+          "판타지오, 2025년 3분기 누적 영업손실 180억원 기록"
+        ],
+        "catalyst": "엔터테인먼트 사업의 불확실성과 콘텐츠 경쟁 심화로 인해 실적 회복이 더딘 상황입니다."
+      },
+      "analysis_time": "2026-02-20 07:58:18",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "\"내 종목도 혹시?\" 정부 가이드라인에 비상 걸린 코스닥",
+          "link": "https://www.mediapen.com/news/view/1081675",
+          "description": "아울러 동전주인 동시에 시가총액 200억원 기준에 하회하는 기업은 삼진엘앤디, 판타지오, 지엔코, 케스피온... 대형 주식 커뮤니티나 게시판 등에는 이번 조치 발표 이후 시장에 미칠 영향에 대해 문의하는 글들이...",
+          "pubDate": "02-13 13:50",
+          "originallink": "https://www.mediapen.com/news/view/1081675"
+        },
+        {
+          "title": "최대 2２0개사 코스닥 퇴출 대상…상폐 기준 강화에 떠는 기업들",
+          "link": "https://www.etoday.co.kr/news/view/2556334",
+          "description": "삼진엘앤디, 삼영에스앤씨, 엘디티, 판타지오, 에스티오, 듀오백 등이 포함된다. 상장폐지 대상으로 지목된... 또 다른 관계자는 “이미 시가총액 기준이 존재하는 상황에서 주식 수에 따라 동전주 여부가 갈릴 수 있고...",
+          "pubDate": "02-12 18:10",
+          "originallink": "https://www.etoday.co.kr/news/view/2556334"
+        },
+        {
+          "title": "'동전주' 7월부터 상폐, '2천·3천스닥'도 앞당길까 [뉴스톡 웰스톡]",
+          "link": "http://www.newswell.co.kr/news/articleView.html?idxno=16133",
+          "description": "이 가운데 동전주이면서 시총 200억원 미만 기업은 ▲삼진엘앤디 ▲판타지오 ▲지엔코 ▲케스피온 등... 오늘 양 주식시장은 함께 웃었다. 코스피지수는 167.78p(3.13%) 뛴 5522.27로 사상 최고치를 갈아치웠고, 코스닥은...",
+          "pubDate": "02-12 15:58",
+          "originallink": "http://www.newswell.co.kr/news/articleView.html?idxno=16133"
+        }
+      ]
+    },
+    {
+      "code": "012340",
+      "name": "뉴인텍",
+      "market": "KOSDAQ",
+      "current_price": 671,
+      "change_rate": 0.0,
+      "signal": "중립",
+      "reason": "20일 이동평균선이 하락 추세를 보이며 RSI 지표가 63.17로 과열 구간은 아니지만, 최근 5일 및 20일 외인/기관 순매수 동향이 혼조세를 나타내고 있어 추가적인 매수/매도 신호를 판단하기 어렵습니다. 펀더멘털 측면에서는 ROE와 OPM이 마이너스이며 부채비율이 높아 재무 건전성이 낮습니다.",
+      "key_factors": {
+        "price_trend": "하락",
+        "volume_signal": "보통",
+        "foreign_flow": "중립",
+        "institution_flow": "중립",
+        "valuation": "적정"
+      },
+      "risk_level": "높음",
+      "confidence": 0.5,
+      "news_analysis": {
+        "sentiment": "중립",
+        "key_news": [
+          "뉴인텍, 2025년 3분기 실적 발표 및 향후 전망",
+          "전기차 부품 관련주 뉴인텍, 모멘텀 분석"
+        ],
+        "catalyst": "최근 공시된 실적은 다소 부진했으나, 전기차 부품 관련 성장 기대감으로 시장의 관심이 유지되고 있습니다."
+      },
+      "analysis_time": "2026-02-19 22:58:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "정책 발 훈풍 탄 코스닥…기관 투자 늘고 동전주 데스매치도",
+          "link": "https://www.ajunews.com/view/20260218144909957",
+          "description": "전날인 12일에도 동전주인 에스코넥, 케이바이오, 뉴인텍 등이 상한가를 기록한 바 있다. 증권가에서는... 강진혁 신한투자증권 연구원은 “원활한 상장폐지는 주식시장 차원에서 체질 개선에 유리하다”면서도...",
+          "pubDate": "02-18 18:30",
+          "originallink": "https://www.ajunews.com/view/20260218144909957"
+        },
+        {
+          "title": "상폐 공포에 '동전주'가 '지폐주'로… '천원 사수' 데스매치 시작됐다",
+          "link": "https://www.ajunews.com/view/20260218143456948",
+          "description": "전날인 12일에도 에스코넥, 케이바이오, 뉴인텍 등이 상한가를 기록하는 등 동전주 중심의 강한 매수세가... 강진혁 신한투자증권 연구원은 \"원활한 상장폐지는 주식시장 차원에서 체질 개선에 유리한 측면이 있다...",
+          "pubDate": "02-18 15:02",
+          "originallink": "https://www.ajunews.com/view/20260218143456948"
+        },
+        {
+          "title": "[주식마감] \"자사주 소각 훈풍\"... 증권주 재평가 기대감에 SK증권 상한...",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1142106",
+          "description": "지난 9일 유투바이오는 지구홀딩스 주식회사와 물적분할을 결정했다고 밝혔다. 분할존속회사는... 코스닥 시장 거래 상위종목 30위는 케이바이오, 뉴인텍, 우리기술, 좋은사람들, SKAI, 현대ADM, 비엘팜텍, 에스코넥...",
+          "pubDate": "02-13 19:40",
+          "originallink": "https://www.ggilbo.com/news/articleView.html?idxno=1142106"
+        }
+      ]
+    },
+    {
+      "code": "043090",
+      "name": "더테크놀로지",
+      "market": "KOSDAQ",
+      "current_price": 380,
+      "change_rate": 0.0,
+      "signal": "중립",
+      "reason": "거래량이 0이며 52주 신고가 대비 현재 위치가 21.7% 수준으로 하락 추세가 지속되고 있습니다. RSI 지표는 100.0으로 과열 신호이나, 거래량 부재로 인해 신뢰도가 낮습니다. 펀더멘털 측면에서 ROE 및 OPM이 매우 낮고, 부채비율은 안정적이나 매출액 증가율이 마이너스입니다.",
+      "key_factors": {
+        "price_trend": "하락",
+        "volume_signal": "감소",
+        "foreign_flow": "중립",
+        "institution_flow": "중립",
+        "valuation": "저평가"
+      },
+      "risk_level": "높음",
+      "confidence": 0.3,
+      "news_analysis": {
+        "sentiment": "중립",
+        "key_news": [
+          "더테크놀로지, 2025년 3분기 실적 부진",
+          "사업 재편 관련 소식"
+        ],
+        "catalyst": "최근 실적 부진과 거래량 부재로 인해 투자 심리가 위축된 상태이며, 사업 재편에 대한 뉴스가 잠재적인 모멘텀이 될 수 있습니다."
+      },
+      "analysis_time": "2026-02-19 22:58:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "국헌 문란 목적의 폭동, 윤석열 무기징역 선고의 의미: 슬로우레터 2월...",
+          "link": "https://slownews.kr/154669",
+          "description": "미국은 유동 주식이 90%가 넘는다. 영국과 일본 등은 70% 이상이다. 더 깊게 읽기. 기본급 303만 원이 178만... 삼성전자와 SK하이닉스, 미국의 마이크론테크놀로지의 3대장만 남았다. 배터리도 마찬가지다. 시장은 큰데 진입...",
+          "pubDate": "02-20 07:06",
+          "originallink": "https://slownews.kr/154669"
+        },
+        {
+          "title": "STO(토큰증권 발행) 관련주, '웃음꽃' SK증권·한화투자증권·유진투자증...",
+          "link": "http://www.finomy.com/news/articleView.html?idxno=249929",
+          "description": "초기의 부동산과 미술품을 넘어 선박 금융, 탄소 배출권, K-콘텐츠의 지식재산권(IP), 나아가 비상장 주식까... 핑거와 관계사 마이크레딧체인이 미국 나스닥 상장사 BTQ 테크놀로지와 '크립토 기반 양자보안 네트워크...",
+          "pubDate": "02-19 18:20",
+          "originallink": "http://www.finomy.com/news/articleView.html?idxno=249929"
+        },
+        {
+          "title": "[신기루 제국 日 버블의 붕괴와 잃어버린 30년②] 캘리포니아를 삼킨 일...",
+          "link": "https://www.pressman.kr/news/articleView.html?idxno=100091",
+          "description": "실물 경제의 성장 속도와는 무관하게, 오로지 '다음 날엔 더 오를 것'이라는 기대 심리만으로 지탱되던... (Zaitech·財務 테크놀로지)'였다. 낮은 금리로 조달한 자금을 주식과 부동산에 쏟아부어 영업이익보다 큰 평가이익을...",
+          "pubDate": "02-19 17:08",
+          "originallink": "https://www.pressman.kr/news/articleView.html?idxno=100091"
+        }
+      ]
+    },
+    {
+      "code": "031860",
+      "name": "디에이치엑스컴퍼니",
+      "market": "KOSDAQ",
+      "current_price": 440,
+      "change_rate": 0.0,
+      "signal": "매도",
+      "reason": "20일 이동평균선 하락 추세가 뚜렷하며 RSI 지표는 25.64로 과매도 구간입니다. 5일 및 20일 외인 순매수 동향은 긍정적이나, 개인 순매도가 이를 상쇄하고 있습니다. 펀더멘털 측면에서 ROE 및 OPM이 마이너스이고 부채비율은 안정적이나 매출액 증가율이 매우 높습니다.",
+      "key_factors": {
+        "price_trend": "하락",
+        "volume_signal": "보통",
+        "foreign_flow": "매수우위",
+        "institution_flow": "중립",
+        "valuation": "저평가"
+      },
+      "risk_level": "중간",
+      "confidence": 0.6,
+      "news_analysis": {
+        "sentiment": "중립",
+        "key_news": [
+          "디에이치엑스컴퍼니, 신사업 진출 계획 발표",
+          "구조조정 및 경영 효율화 노력"
+        ],
+        "catalyst": "신사업 진출 발표는 긍정적인 재료로 작용할 수 있으나, 재무 건전성 및 수익성 개선이 동반되어야 상승 동력이 확보될 것입니다."
+      },
+      "analysis_time": "2026-02-19 22:58:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "금융당국 \"시총 200억 이하·동전주 상폐\"…\"나 떨고 있니\"해당 기업들 ...",
+          "link": "http://www.seoulwire.com/news/articleView.html?idxno=706943",
+          "description": "더테크놀로지(47억원), 아이엠(55억원), 제일바이오(71억원), 투비소프트(76억원), 디에이치엑스컴퍼니(96억원)... 강소현 자본시장연구원 연구위원은 \"한계기업이 적시 퇴출당하면 주식시장 수익률 제고를 기대할 수 있다...",
+          "pubDate": "02-13 11:16",
+          "originallink": "http://www.seoulwire.com/news/articleView.html?idxno=706943"
+        },
+        {
+          "title": "[공시속보] 디에이치엑스컴퍼니, 시가총액 연속 하락→관리종목 지정 우...",
+          "link": "https://www.topstarnews.net/news/articleView.html?idxno=15956192",
+          "description": "디에이치엑스컴퍼니(031860)가 시가총액 150억원 미달 상태가 연속적으로 지속돼 관리종목 지정 우려를 공시했다. 한국거래소에 따르면 코스닥시장 상장규정에 의거, 보통주식의 시가총액이 150억원 미만인 상태가...",
+          "pubDate": "02-05 18:32",
+          "originallink": "https://www.topstarnews.net/news/articleView.html?idxno=15956192"
+        },
+        {
+          "title": "[아이톡시 톺아보기] 유증 연기 속 투자자 이력 논란…양남희 접점 의혹...",
+          "link": "https://www.greened.kr/news/articleView.html?idxno=336461",
+          "description": "30억원의 유상증자 납입자인 김승식 태원엔터테인먼트 사장은 양 씨가 지배하는 디에이치엑스컴퍼니(전... 유증을 통해 발행되는 신주는 발행주식총수의 58.77%(856만1643주)로 유증이 완료될 경우 최대주주도 변경되는...",
+          "pubDate": "02-03 06:00",
+          "originallink": "https://www.greened.kr/news/articleView.html?idxno=336461"
+        }
+      ]
+    },
+    {
+      "code": "032790",
+      "name": "엠젠솔루션",
+      "market": "KOSDAQ",
+      "current_price": 725,
+      "change_rate": 0.0,
+      "signal": "중립",
+      "reason": "20일 이동평균선은 횡보세를 보이고 있으며 RSI 지표는 24.91로 과매도 구간입니다. 다만, 최근 5일 및 20일 외인 순매수 동향은 긍정적이나 개인 순매도가 이를 상쇄하고 있습니다. 펀더멘털 측면에서는 ROE와 OPM이 마이너스이며 부채비율은 낮으나 EPS 성장률이 마이너스입니다.",
+      "key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "보통",
+        "foreign_flow": "매수우위",
+        "institution_flow": "중립",
+        "valuation": "저평가"
+      },
+      "risk_level": "중간",
+      "confidence": 0.5,
+      "news_analysis": {
+        "sentiment": "중립",
+        "key_news": [
+          "엠젠솔루션, 유전자 분석 기술 관련 신규 사업 추진",
+          "2025년 3분기 실적 및 사업 전망"
+        ],
+        "catalyst": "유전자 분석 기술 관련 사업은 성장 잠재력이 있지만, 현재 실적 부진과 높은 부채비율이 부담으로 작용하고 있습니다."
+      },
+      "analysis_time": "2026-02-19 22:58:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "설 연휴 앞두고 쏟아진 실적 악화 '올빼미 공시'",
+          "link": "https://n.news.naver.com/mnews/article/055/0001333721?sid=101",
+          "description": "▲ 주식 설 연휴를 하루 앞두고 상장사들이 증시 마감 후 악재성 내용을 쏟아내는 '올빼미 공시' 행태가... 엠젠솔루션은 지난해 연간 순손실이 약 163억 원으로 전년 대비 적자로 전환했으며, 매출과 영업이익은 각각...",
+          "pubDate": "02-18 09:43",
+          "originallink": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008446464&plink=ORI&cooper=NAVER"
+        },
+        {
+          "title": "엠젠솔루션, 대주주 행방 묘연…주담대는 어쩌나",
+          "link": "https://www.sentv.co.kr/article/view/sentv202602110184",
+          "description": "지난해 3분기 말 기준 이 업체는 엠젠솔루션 주식 547만여주(지분율 약 11.7%)를 보유하며 대주주로 올라 있다. 트렌스젠바이오는 재작년 6월 엠젠솔루션 CB를 인수하면서 상상인저축은행으로부터 주식 담보 대출을...",
+          "pubDate": "02-13 14:50",
+          "originallink": "https://www.sentv.co.kr/article/view/sentv202602110184"
+        },
+        {
+          "title": "최대 2２0개사 코스닥 퇴출 대상…상폐 기준 강화에 떠는 기업들",
+          "link": "https://www.etoday.co.kr/news/view/2556334",
+          "description": "현대사료(994원), 코아시아씨엠(987원), 드래곤플라이(974원), 엠젠솔루션(964원), 서한(961원) 등 900원대 종목만... 또 다른 관계자는 “이미 시가총액 기준이 존재하는 상황에서 주식 수에 따라 동전주 여부가 갈릴 수 있고...",
+          "pubDate": "02-12 18:10",
+          "originallink": "https://www.etoday.co.kr/news/view/2556334"
+        }
+      ]
+    },
+    {
+      "code": "006490",
+      "name": "인스코비",
+      "market": "KOSPI",
+      "current_price": 547,
+      "change_rate": 0.0,
+      "signal": "중립",
+      "reason": "20일 이동평균선이 하락 추세를 보이며 RSI 지표는 34.78로 중립 구간입니다. 5일 및 20일 외인 순매수 동향은 긍정적이나 기관 순매도가 이를 일부 상쇄하고 있습니다. 펀더멘털 측면에서는 ROE가 마이너스이고 OPM은 낮으며 부채비율이 높아 재무 건전성이 우려됩니다.",
+      "key_factors": {
+        "price_trend": "하락",
+        "volume_signal": "보통",
+        "foreign_flow": "매수우위",
+        "institution_flow": "매도우위",
+        "valuation": "적정"
+      },
+      "risk_level": "높음",
+      "confidence": 0.4,
+      "news_analysis": {
+        "sentiment": "중립",
+        "key_news": [
+          "인스코비, 신규 사업 투자 및 재무구조 개선 방안",
+          "2025년 3분기 실적 발표"
+        ],
+        "catalyst": "신규 사업 투자 소식은 긍정적이나, 현재의 낮은 수익성과 높은 부채비율이 주가 상승에 제약 요인으로 작용하고 있습니다."
+      },
+      "analysis_time": "2026-02-19 22:58:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "2월 13일 주식시장 주요공시",
+          "link": "https://www.catchnews.kr/news/articleView.html?idxno=120750",
+          "description": "28%) ▶하나기술, 운영자금 확보를 위해 키움증권 주식회사 등 대상으로 540억원 규모의 사모... 1%) 현금배당(결산배당) 결정(배당기준일:2025-12-31) ▶인스코비, 2025년 연결기준 매출액 1,055.47억원...",
+          "pubDate": "02-19 08:39",
+          "originallink": "https://www.catchnews.kr/news/articleView.html?idxno=120750"
+        },
+        {
+          "title": "[기업공시] 셀루메드, 한진, 한화오션 외",
+          "link": "https://www.kdpress.co.kr/news/articleView.html?idxno=202759",
+          "description": "전환청구주식수 누계 : 1,268,947주 (발행주식총수 대비 1.17%) 전환가액 : 2,177원 2026-02-11 청구 : 650,000... (최대주주 변찬호) ■인스코비 (006490) 25년 영업이익 38.2억원 흑자 전환 성공 매출액 : 105,547...",
+          "pubDate": "02-14 01:40",
+          "originallink": "https://www.kdpress.co.kr/news/articleView.html?idxno=202759"
+        },
+        {
+          "title": "인스코비, 2025년 영업이익 흑자전환…당기순손실 234억2389만8000원",
+          "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=631483",
+          "description": "알뜰폰 업체 인스코비(006490)가 2025년 연결 기준 영업이익이 흑자전환하고 당기순이익은... 회사는 관계기업 투자주식 가격 하락에 따른 평가손실과 유동부채 증가에 따른 금융비용 확대 등을 주요...",
+          "pubDate": "02-13 19:20",
+          "originallink": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=631483"
+        }
+      ]
+    },
+    {
+      "code": "078130",
+      "name": "국일제지",
+      "market": "KOSDAQ",
+      "current_price": 334,
+      "change_rate": 0.0,
+      "signal": "중립",
+      "reason": "20일 이동평균선은 횡보세를 보이고 있으며 RSI 지표는 41.41로 중립 구간입니다. 최근 5일 외인 순매도가 두드러지지만, 20일 외인 순매수는 긍정적입니다. 펀더멘털 측면에서는 ROE가 마이너스이고 OPM도 낮으며 부채비율은 낮으나 EPS 성장률이 마이너스입니다.",
+      "key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "보통",
+        "foreign_flow": "매도우위",
+        "institution_flow": "매수우위",
+        "valuation": "저평가"
+      },
+      "risk_level": "중간",
+      "confidence": 0.5,
+      "news_analysis": {
+        "sentiment": "중립",
+        "key_news": [
+          "국일제지, 제지 사업 경쟁 심화 및 수익성 개선 노력",
+          "2025년 3분기 실적 발표"
+        ],
+        "catalyst": "제지 산업의 경쟁 심화 속에서 수익성 개선이 시급한 과제이며, 주가 반등을 위해서는 긍정적인 실적 개선 소식이 필요합니다."
+      },
+      "analysis_time": "2026-02-19 22:58:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "[필드 뒷얘기] 코스닥 개혁 추진에 우려 쏟아진 이유",
+          "link": "https://www.kbanker.co.kr/news/articleView.html?idxno=224087",
+          "description": "이를 위해 △시가총액 상장 폐지 기준액 상향 △동전주(주가 1000원보다 낮은 주식) 상장 폐지 요건 신설... 국일제지와 한국캐피탈, 아스트 등이 대표적이다. 이들은 작년 3분기까지 수십억원 이상의 영업이익을 거뒀다....",
+          "pubDate": "02-19 16:58",
+          "originallink": "https://www.kbanker.co.kr/news/articleView.html?idxno=224087"
+        },
+        {
+          "title": "'동전주' 7월부터 상폐, '2천·3천스닥'도 앞당길까 [뉴스톡 웰스톡]",
+          "link": "http://www.newswell.co.kr/news/articleView.html?idxno=16133",
+          "description": "다만, 동전주 중에도 ▲국일제지(시총 3957억원) ▲한국캐피탈(2831억원) ▲아스트(2721억원) 등은 시총이... 오늘 양 주식시장은 함께 웃었다. 코스피지수는 167.78p(3.13%) 뛴 5522.27로 사상 최고치를 갈아치웠고, 코스닥은...",
+          "pubDate": "02-12 15:58",
+          "originallink": "http://www.newswell.co.kr/news/articleView.html?idxno=16133"
+        },
+        {
+          "title": "수소차 관련주, '봄날의 햇살' 뉴인텍·현대차·한화솔루션·한온시스템...",
+          "link": "http://www.finomy.com/news/articleView.html?idxno=249596",
+          "description": "범한퓨얼셀, 국일제지, 원익머트리얼즈, 엘티씨, 이엠코리아, EG, 상아프론테크, 원일티엔아이, 두산퓨얼셀... 아이에스티이는 지난 8월 20일 쌍용씨앤이 주식회사와 산소부화설비 구축사업 계약을 체결했다고...",
+          "pubDate": "02-12 00:16",
+          "originallink": "http://www.finomy.com/news/articleView.html?idxno=249596"
+        }
+      ]
+    },
+    {
+      "code": "016790",
+      "name": "현대사료",
+      "market": "KOSDAQ",
+      "current_price": 994,
+      "change_rate": 0.0,
+      "signal": "중립",
+      "reason": "20일 이동평균선은 횡보세를 보이고 있으며 RSI 지표는 100.0으로 과열 구간이나, 거래량 부재로 인해 신뢰도가 낮습니다. 외인/기관/개인 순매수 동향은 모두 0으로 나타나고 있습니다. 펀더멘털 측면에서 ROE는 양호하고 OPM도 양호하나, 부채비율이 다소 높고 EPS 성장률이 마이너스입니다.",
+      "key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "감소",
+        "foreign_flow": "중립",
+        "institution_flow": "중립",
+        "valuation": "적정"
+      },
+      "risk_level": "중간",
+      "confidence": 0.3,
+      "news_analysis": {
+        "sentiment": "중립",
+        "key_news": [
+          "현대사료, 사료 가격 변동성에 따른 실적 영향",
+          "신규 사업 진출 가능성"
+        ],
+        "catalyst": "최근 거래량 부재로 인해 주가 움직임이 제한적인 상황이며, 사료 가격 변동성에 따른 실적 변화가 주가에 영향을 미칠 수 있습니다."
+      },
+      "analysis_time": "2026-02-19 22:58:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "액면분할에 자사주 소각까지… 남양유업, '밸류업' 앞세워 주주 신뢰 회...",
+          "link": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=430192",
+          "description": "남양유업은 주식 액면분할을 단행한 데 이어, 약 200억 원 규모의 자사주 소각을 결정하며 시장의 신뢰... 우듬지팜, 현대그린푸드, 정다운, 사조오양, 우성, 한일사료, 사조대림, 사조동아원 등이 하락 대열에 합류하며...",
+          "pubDate": "02-18 14:08",
+          "originallink": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=430192"
+        },
+        {
+          "title": "“6조 유산 대신 포도밭 택했다”...보석함 탈출한 불가리 후계자가 빚...",
+          "link": "https://n.news.naver.com/mnews/article/022/0004105885?sid=103",
+          "description": "이 과정에서 가문이 보유하던 지분 전체인 50.4%를 LVMH 주식과 맞교환해, LVMH의 2대 주주로 올라섭니다.... 밀, 올리브, 사료 작물이 잘 자라고 특히 비스테카 알라 피오렌티나의 정통 품종 키아니나(Chianina) 소의...",
+          "pubDate": "02-13 20:27",
+          "originallink": "https://www.segye.com/newsView/20260213515284?OutUrl=naver"
+        },
+        {
+          "title": "고대 서양의 세금, 국가를 움직인 보이지 않는 힘",
+          "link": "https://www.taxwatch.co.kr/article/tax/2026/01/09/0004/naver",
+          "description": "바빌로니아에서는 맥주가 주식(主食)이었다. 기원전 18세기 함무라비 법전에는 다음 규정이 있다. \"세금을... 현대 자동차세와 유사한 히타이트의 과세방식 히타이트 제국(Hittite, B.C. 1600~1200)은 전차를 잘 이용하여 현재...",
+          "pubDate": "02-13 10:24",
+          "originallink": "https://www.taxwatch.co.kr/article/tax/2026/01/09/0004/naver"
+        }
+      ]
+    },
+    {
+      "code": "065150",
+      "name": "대산F&B",
+      "market": "KOSDAQ",
+      "current_price": 145,
+      "change_rate": 0.0,
+      "signal": "중립",
+      "reason": "20일 이동평균선은 횡보세를 보이고 있으며 RSI 지표는 100.0으로 과열 구간이나, 거래량 부재로 인해 신뢰도가 낮습니다. 외인/기관/개인 순매수 동향은 모두 0으로 나타나고 있습니다. 펀더멘털 측면에서 ROE와 OPM이 마이너스이며, 부채비율은 낮으나 EPS 성장률이 마이너스입니다.",
+      "key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "감소",
+        "foreign_flow": "중립",
+        "institution_flow": "중립",
+        "valuation": "저평가"
+      },
+      "risk_level": "높음",
+      "confidence": 0.3,
+      "news_analysis": {
+        "sentiment": "중립",
+        "key_news": [
+          "대산F&B, 식품 사업 경쟁력 강화 방안",
+          "2025년 3분기 실적 발표"
+        ],
+        "catalyst": "현재 거래량 부재로 인해 주가 움직임이 미미한 상황이며, 실적 개선 및 사업 확장 소식이 없다면 주가 반등을 기대하기 어렵습니다."
+      },
+      "analysis_time": "2026-02-19 22:58:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "상폐 후 마지막 처분 기회···'상폐지정기업부' 가동 임박",
+          "link": "https://www.seoulfn.com/news/articleView.html?idxno=615917",
+          "description": "투자자들은 이 기간을 활용해 정리매매 기간에 미처 처분하지 못한 주식을 회수하거나 새로운 투자 기회를... 기업심사위원회 단계에서는 대산F&B가 내년 6월 2일 개선기간 종료를 앞두고 있다. 여기에 올해 새롭게...",
+          "pubDate": "12-17 18:02",
+          "originallink": "https://www.seoulfn.com/news/articleView.html?idxno=615917"
+        },
+        {
+          "title": "[더벨][데일리비어 성장전략 점검]호황 지나간 수제맥주, 변곡점 맞은 성...",
+          "link": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202512021535557800105117",
+          "description": "프랜차이즈 기업은 안정적 현금흐름이 강점으로 꼽히지만 주식 유통시장에선 유독 인기가 없는 업종으로... 운영사인 대산F&B는 적자와 경영진의 배임·횡령 혐의로 장기간 거래 정지가 이어지는 중이다. 사모펀드(PEF)...",
+          "pubDate": "12-04 07:58",
+          "originallink": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202512021535557800105117"
+        },
+        {
+          "title": "교촌치킨 '슈링크' 나비효과…李대통령 언급에 가맹점주만 '속앓이'",
+          "link": "https://www.newsworks.co.kr/news/articleView.html?idxno=818506",
+          "description": "2000년대 이후 주식시장에 입성한 외식 프랜차이즈 업체들은 총 7개(태창파로스·할리스에프앤비·대산F&B·해마로푸드·선샤인푸드·교촌에프앤비·더본코리아)에 불과하며, 현재 교촌에프앤비와 더본코리아만 거래가...",
+          "pubDate": "11-12 18:28",
+          "originallink": "https://www.newsworks.co.kr/news/articleView.html?idxno=818506"
+        }
+      ]
+    },
+    {
+      "code": "015260",
+      "name": "에이엔피",
+      "market": "KOSPI",
+      "current_price": 363,
+      "change_rate": 0.0,
+      "signal": "매수",
+      "reason": "20일 이동평균선은 횡보세를 보이고 있으며 RSI 지표는 29.44로 과매도 구간에 근접했습니다. 최근 5일 외인 순매수는 긍정적이나 기관 순매도, 개인 순매수는 혼조세를 보입니다. 펀더멘털 측면에서 ROE와 OPM이 마이너스이고 부채비율이 매우 높으나, EPS 성장률이 마이너스이고 매출액 증가율은 양호합니다.",
+      "key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "보통",
+        "foreign_flow": "매수우위",
+        "institution_flow": "매도우위",
+        "valuation": "저평가"
+      },
+      "risk_level": "높음",
+      "confidence": 0.6,
+      "news_analysis": {
+        "sentiment": "중립",
+        "key_news": [
+          "에이엔피, 신규 사업 진출 및 투자 계획",
+          "구조조정 및 재무 건전성 강화 노력"
+        ],
+        "catalyst": "신규 사업 진출 소식은 긍정적이나, 높은 부채비율과 낮은 수익성이 투자 리스크로 작용하고 있습니다."
+      },
+      "analysis_time": "2026-02-19 22:58:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "2월 13일 주식시장 주요공시",
+          "link": "https://www.catchnews.kr/news/articleView.html?idxno=120750",
+          "description": "28%) ▶하나기술, 운영자금 확보를 위해 키움증권 주식회사 등 대상으로 540억원 규모의 사모... 77억원 규모의 사모 전환사채권 발행 결정(전환가액:174원, 전환청구일:2027-02-25 ~ 2029-01-25) ▶에이엔피...",
+          "pubDate": "02-19 08:39",
+          "originallink": "https://www.catchnews.kr/news/articleView.html?idxno=120750"
+        },
+        {
+          "title": "2월 19일 개장 전 주요 공시",
+          "link": "https://www.seoulfn.com/news/articleView.html?idxno=621492",
+          "description": "에이엔피는 전운관 대표이사와 최대주주의 최대주주인 전학수를 상대로 신주 200만주를 발행하는... ◆코스닥시장 이화공영은 최대주주 변경을 수반하는 주식양수도계약 이행 완료에 따라 최대주주가...",
+          "pubDate": "02-19 07:00",
+          "originallink": "https://www.seoulfn.com/news/articleView.html?idxno=621492"
+        },
+        {
+          "title": "에이엔피, 유증에 오너 참여…고사양 PCB 생산 '박차'",
+          "link": "https://n.news.naver.com/mnews/article/293/0000079536?sid=101",
+          "description": "신주는 기존 주식 수의 4.43%에 해당한다. 이번 유상증자에는 에이엔피의 오너인 전운관 대표와 특수관계인 전학수 와이에스피 대표가 참여한다. 각각 100만주를 배정받게 되며 납입일은 오는 23일이다. 회사 측은...",
+          "pubDate": "02-18 15:00",
+          "originallink": "https://www.bloter.net/news/articleView.html?idxno=654512"
+        }
+      ]
+    },
+    {
+      "code": "015590",
+      "name": "DKME",
+      "market": "KOSPI",
+      "current_price": 515,
+      "change_rate": 0.0,
+      "signal": "중립",
+      "reason": "20일 이동평균선은 횡보세를 보이고 있으며 RSI 지표는 100.0으로 과열 구간이나, 거래량 부재로 인해 신뢰도가 낮습니다. 외인/기관/개인 순매수 동향은 모두 0으로 나타나고 있습니다. 펀더멘털 측면에서 ROE와 OPM은 양호하나, EPS 성장률이 마이너스입니다.",
+      "key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "감소",
+        "foreign_flow": "중립",
+        "institution_flow": "중립",
+        "valuation": "적정"
+      },
+      "risk_level": "중간",
+      "confidence": 0.3,
+      "news_analysis": {
+        "sentiment": "중립",
+        "key_news": [
+          "DKME, 신사업 추진 및 실적 개선 노력",
+          "2025년 3분기 실적 발표"
+        ],
+        "catalyst": "현재 거래량 부재로 인해 주가 움직임이 제한적인 상황이며, 실적 개선 및 신사업 성과가 주가 상승의 관건이 될 것입니다."
+      },
+      "analysis_time": "2026-02-19 22:58:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "2월 13일 주식시장 주요공시",
+          "link": "https://www.catchnews.kr/news/articleView.html?idxno=120750",
+          "description": "28%) ▶하나기술, 운영자금 확보를 위해 키움증권 주식회사 등 대상으로 540억원 규모의 사모... 안내 ▶DKME, 김○○이 주주총회 개최금지 등 가처분신청서 소송 제기. ▶삼진식품, 조회공시요구...",
+          "pubDate": "02-19 08:39",
+          "originallink": "https://www.catchnews.kr/news/articleView.html?idxno=120750"
+        },
+        {
+          "title": "[들쭉날쭉 상장事記]상폐위기 DKME, 최대주주 변경 가능성은",
+          "link": "https://n.news.naver.com/mnews/article/008/0005315869?sid=101",
+          "description": "DKME의 최대주주는 지분매각과 추가 취득을 거듭해 변경됐다. KIB인프라홀딩스가 최대주주에 오른 건 2023년 7월. 큐로컴에서 주식을 양도받아 지분율 23.13%를 확보했다. 이후 지분율 이관 구조는 KIB패밀리블라인드...",
+          "pubDate": "02-09 10:39",
+          "originallink": "https://www.mt.co.kr/stock/2026/02/09/2026020617092038255"
+        },
+        {
+          "title": "2월 3일 주식시장 주요공시",
+          "link": "https://www.catchnews.kr/news/articleView.html?idxno=120250",
+          "description": "01억원(전년대비 적자지속) ▶코맥스, 변우석이 최대주주 변경 수반 주식 담보제공 계약... 7%) 금전배당 결정(배당기준일:2026-03-25) ▶DKME, 김○○이 가처분기각결정의 항고 소송 제기 ▶아이진...",
+          "pubDate": "02-04 08:54",
+          "originallink": "https://www.catchnews.kr/news/articleView.html?idxno=120250"
+        }
+      ]
+    },
+    {
+      "code": "038880",
+      "name": "아이에이",
+      "market": "KOSDAQ",
+      "current_price": 125,
+      "change_rate": 0.0,
+      "signal": "매수",
+      "reason": "20일 이동평균선은 상승 추세를 보이고 있으며 RSI 지표는 26.36으로 과매도 구간입니다. 최근 5일 및 20일 외인 순매수 동향이 매우 긍정적이나, 개인 순매도가 이를 상쇄하고 있습니다. 펀더멘털 측면에서 ROE와 OPM이 마이너스이고 부채비율이 높으나, EPS 성장률이 마이너스입니다.",
+      "key_factors": {
+        "price_trend": "상승",
+        "volume_signal": "보통",
+        "foreign_flow": "매수우위",
+        "institution_flow": "중립",
+        "valuation": "저평가"
+      },
+      "risk_level": "높음",
+      "confidence": 0.7,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "key_news": [
+          "아이에이, 자율주행차 관련 기술 개발 및 양산 준비",
+          "차량용 반도체 시장 성장 수혜 기대"
+        ],
+        "catalyst": "자율주행차 관련 기술 개발은 긍정적인 재료이며, 최근 외국인 순매수세가 유입되고 있어 향후 주가 상승 여력이 있습니다."
+      },
+      "analysis_time": "2026-02-19 22:58:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "아이에이, 분주한 자금 돌리기…최종 목적지는 대주주?",
+          "link": "https://www.sentv.co.kr/article/view/sentv202601130132",
+          "description": "◇ '상폐' 퀀타피아 핵심인물 포진 20일 금융감독원 및 금융투자업계에 따르면 아이에이는 디씨이솔루션 주식 38만여주를 208억원에 사들이는 딜을 진행 중이다. 회사는 총 세 차례에 나눠 매매 대금을 지급한다는...",
+          "pubDate": "02-20 06:02",
+          "originallink": "https://www.sentv.co.kr/article/view/sentv202601130132"
+        },
+        {
+          "title": "가온전선, 최대주주 보호예수 해제",
+          "link": "https://n.news.naver.com/mnews/article/031/0001006434?sid=101",
+          "description": "또 아이에이는 작년 2월 유상증자로 상장한 신주 물량 6038만6473주(16%)가 시장에 풀린다. 2대주주인 디씨이 등이 배정받았던 주식이다. 에스엔시스는 상장 6개월 만에 주식 90만8517주(10%)가 19일 시장에 나온다....",
+          "pubDate": "02-19 10:16",
+          "originallink": "http://www.inews24.com/view/1940239"
+        },
+        {
+          "title": "[주식마감] \"자사주 소각 훈풍\"... 증권주 재평가 기대감에 SK증권 상한...",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1142106",
+          "description": "지난 9일 유투바이오는 지구홀딩스 주식회사와 물적분할을 결정했다고 밝혔다. 분할존속회사는... 아이윈, 아이에이, 오르비텍, 씨엑스아이, 삼표시멘트, 큐캐피탈, KNN, 서남, 헝셩그룹, 보성파워텍...",
+          "pubDate": "02-13 19:40",
+          "originallink": "https://www.ggilbo.com/news/articleView.html?idxno=1142106"
+        }
+      ]
+    },
+    {
+      "code": "004270",
+      "name": "남성",
+      "market": "KOSPI",
+      "current_price": 790,
+      "change_rate": 0.0,
+      "signal": "중립",
+      "reason": "20일 이동평균선은 하락 추세를 보이고 있으며 RSI 지표는 35.98로 중립 구간입니다. 최근 5일 외인 순매수는 긍정적이나 기관 순매도, 개인 순매도는 혼조세를 보입니다. 펀더멘털 측면에서 ROE와 OPM이 양호하고 부채비율은 높으나 EPS 성장률이 마이너스입니다.",
+      "key_factors": {
+        "price_trend": "하락",
+        "volume_signal": "보통",
+        "foreign_flow": "매수우위",
+        "institution_flow": "매도우위",
+        "valuation": "저평가"
+      },
+      "risk_level": "중간",
+      "confidence": 0.5,
+      "news_analysis": {
+        "sentiment": "중립",
+        "key_news": [
+          "남성, 패션 사업 경쟁력 강화 및 신규 브랜드 론칭",
+          "2025년 3분기 실적 발표"
+        ],
+        "catalyst": "패션 사업 경쟁력 강화는 긍정적이나, 낮은 EPS 성장률과 높은 부채비율은 투자 리스크로 작용하고 있습니다."
+      },
+      "analysis_time": "2026-02-19 22:58:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "[잠깐 읽기] 전시기 일본 여성의 노동과 보육",
+          "link": "https://n.news.naver.com/mnews/article/082/0001367505?sid=103",
+          "description": "전선에 나간 남성을 대신해 여성 노동력이 절실히 요구됐던 광업의 경우 아키타현 하나오카광산 부설 탁아소가 그런 역할을 한 사례다. 이밖에 군수 산업으로 방독면을 생산하던 일본화공주식회사 부설 탁아소, 농촌의...",
+          "pubDate": "02-19 16:33",
+          "originallink": "https://www.busan.com/view/busan/view.php?code=2026021916304607528"
+        },
+        {
+          "title": "‘진보를 위한 주식 투자’ 베스트셀러 1위⋯경제경영서 강세 이어져",
+          "link": "https://www.etoday.co.kr/news/view/2557540",
+          "description": "이투데이=송석주 기자 | 광수네 복덕방 대표이자 경제 전문가 이광수 교수의 '진보를 위한 주식투자'가... 2위를 차지한 '향기로운 꽃은 늠름하게 핀다 18 더블특전판'은 10대 남성 구매 비율 31.1%, 20대 남성 25.3%로...",
+          "pubDate": "02-19 15:36",
+          "originallink": "https://www.etoday.co.kr/news/view/2557540"
+        },
+        {
+          "title": "[베스트셀러] 코스피 역대급 불장에 경제경영서 강세",
+          "link": "https://www.ajunews.com/view/20260219142104572",
+          "description": "'진보를 위한 주식투자' 1위 '나의 완벽한 장례식' 소설/시/희곡 분야 1위 아주경제=윤주혜 기자 jujusun... 10대 남성 구매 비율 31.1%, 20대 남성 25.3%로 집계되며 젊은 남성 독자층의 높은 지지를 받았다. 5위 '사카모토...",
+          "pubDate": "02-19 15:10",
+          "originallink": "https://www.ajunews.com/view/20260219142104572"
+        }
+      ]
+    },
+    {
+      "code": "008290",
+      "name": "원풍물산",
+      "market": "KOSDAQ",
+      "current_price": 357,
+      "change_rate": 0.0,
+      "signal": "매수",
+      "reason": "20일 이동평균선은 상승 추세를 보이고 있으며 RSI 지표는 22.69로 과매도 구간입니다. 최근 5일 외인 순매수는 긍정적이나 개인 순매도가 이를 상쇄하고 있습니다. 펀더멘털 측면에서 ROE와 OPM이 마이너스이고 부채비율이 높으나, EPS 성장률이 양호합니다.",
+      "key_factors": {
+        "price_trend": "상승",
+        "volume_signal": "보통",
+        "foreign_flow": "매도우위",
+        "institution_flow": "중립",
+        "valuation": "저평가"
+      },
+      "risk_level": "높음",
+      "confidence": 0.6,
+      "news_analysis": {
+        "sentiment": "중립",
+        "key_news": [
+          "원풍물산, 신규 사업 진출 및 투자 계획",
+          "2025년 3분기 실적 발표"
+        ],
+        "catalyst": "신규 사업 진출 소식은 긍정적이나, 현재 낮은 수익성과 높은 부채비율이 투자 리스크로 작용하고 있습니다."
+      },
+      "analysis_time": "2026-02-19 22:58:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "모자에서 럭셔리 헤어까지… 에스제이그룹, '알렉상드르 드 파리'로 승...",
+          "link": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=430087",
+          "description": "최근 주식 시장에서 에스제이그룹이 5년 최저점 대비 300% 이상 반등하며 주목받는 이유도 이러한 사업... 또한 감성코퍼레이션, 윌비스, 지엔코, 원풍물산이 밀렸고, 폰드그룹은 7.80% 급락하며 테마 내 최하위 수익률을...",
+          "pubDate": "02-17 13:32",
+          "originallink": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=430087"
+        },
+        {
+          "title": "2월 11일 주식시장 주요공시",
+          "link": "https://www.catchnews.kr/news/articleView.html?idxno=120627",
+          "description": "21억원(전년대비 흑자전환) ▶제노코, 한국항공우주산업주식회사와 56.00억원(최근 매출액대비 9.... 1,107.60억원(자기자본대비 19.63%) 규모 신규시설(카본 코팅 사업) 투자 결정 ▶원풍물산, 2025년...",
+          "pubDate": "02-12 08:37",
+          "originallink": "https://www.catchnews.kr/news/articleView.html?idxno=120627"
+        },
+        {
+          "title": "놀이기구만 있는 줄 알았더니… 이월드, 주얼리로 실적을 만든다",
+          "link": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=410039",
+          "description": "사명을 주식회사 이월드로 변경하며 테마파크 전문 운영사로서의 정체성을 확립했다. 현재 이월드는... 국동 원풍물산 지엔코 엠에프엠코리아 애머릿지 화승엔터프라이즈 그리티 전방 비비안 덕성우...",
+          "pubDate": "12-24 13:26",
+          "originallink": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=410039"
+        }
+      ]
+    },
+    {
+      "code": "007720",
+      "name": "소노스퀘어",
+      "market": "KOSDAQ",
+      "current_price": 615,
+      "change_rate": 0.0,
+      "signal": "중립",
+      "reason": "20일 이동평균선은 횡보세를 보이고 있으며 RSI 지표는 45.99로 중립 구간입니다. 최근 5일 외인 순매도, 개인 순매수는 혼조세를 보입니다. 펀더멘털 측면에서 ROE와 OPM이 마이너스이고 부채비율은 낮으나 EPS 성장률이 양호합니다.",
+      "key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "보통",
+        "foreign_flow": "매도우위",
+        "institution_flow": "중립",
+        "valuation": "저평가"
+      },
+      "risk_level": "중간",
+      "confidence": 0.5,
+      "news_analysis": {
+        "sentiment": "중립",
+        "key_news": [
+          "소노스퀘어, 신규 사업 진출 및 투자 계획",
+          "2025년 3분기 실적 발표"
+        ],
+        "catalyst": "신규 사업 진출 소식은 긍정적이나, 현재 낮은 수익성과 높은 부채비율이 투자 리스크로 작용하고 있습니다."
+      },
+      "analysis_time": "2026-02-19 22:58:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "2월 2일 주식시장 주요공시",
+          "link": "https://www.catchnews.kr/news/articleView.html?idxno=120198",
+          "description": "09%) ▶노타, 주식회사 퓨리오사에이아이와 공급계약(AI소프트웨어)체결(계약기간:2026-01-30~2029-06... 08%) ▶소노스퀘어, 2025년 연결기준 매출액 1,628.71억원(전년대비 +22.03%), 영업이익 13.96억원...",
+          "pubDate": "02-03 08:41",
+          "originallink": "https://www.catchnews.kr/news/articleView.html?idxno=120198"
+        },
+        {
+          "title": "[N2 모닝 경제 브리핑-2월 3일] 美 증시, 매파 리스크보다 강한 경기 신...",
+          "link": "https://www.news2day.co.kr/article/20260202500248",
+          "description": "확대 - 소노스퀘어(007720) : 2025년 연결 영업이익 13억9695만원, 전년대비 112.9% 증가 - HD현대(267250)... - 지난 1일(현지시간) CNBC에 따르면 과거 밈 주식에 열광했던 미국 개인투자자들이 엔비디아와 테슬라 등 거대...",
+          "pubDate": "02-03 07:04",
+          "originallink": "https://www.news2day.co.kr/article/20260202500248"
+        },
+        {
+          "title": "[정해균의 Zoom-人] \"내가 가는 길이 역사다\"...전문경영인 회장 누가 있...",
+          "link": "https://www.newsinside.kr/news/articleView.html?idxno=4327928",
+          "description": "40대 이하 회장으로는 구광모 LG그룹, 정기선 HD현대, 조원태 한진그룹, 송치형 두나무, 서준혁 소노스퀘어... 흔히 주식회사 따위에서 이사회의 우두머리를 이른다고 정의하고 있다. HS효성의 김규영 회장은 1966년...",
+          "pubDate": "01-11 08:30",
+          "originallink": "https://www.newsinside.kr/news/articleView.html?idxno=4327928"
+        }
+      ]
+    },
+    {
+      "code": "033050",
+      "name": "제이엠아이",
+      "market": "KOSDAQ",
+      "current_price": 853,
+      "change_rate": 0.0,
+      "signal": "중립",
+      "reason": "20일 이동평균선은 횡보세를 보이고 있으며 RSI 지표는 53.58로 중립 구간입니다. 최근 5일 외인 순매수는 긍정적이나 개인 순매도, 기관 순매도는 0입니다. 펀더멘털 측면에서 ROE와 OPM은 양호하나, EPS 성장률이 마이너스이고 부채비율은 낮습니다.",
+      "key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "보통",
+        "foreign_flow": "매수우위",
+        "institution_flow": "중립",
+        "valuation": "적정"
+      },
+      "risk_level": "중간",
+      "confidence": 0.5,
+      "news_analysis": {
+        "sentiment": "중립",
+        "key_news": [
+          "제이엠아이, 신규 사업 추진 및 실적 개선 노력",
+          "2025년 3분기 실적 발표"
+        ],
+        "catalyst": "신규 사업 추진은 긍정적이나, 현재 EPS 성장률이 마이너스인 점은 부담 요인입니다."
+      },
+      "analysis_time": "2026-02-19 22:58:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "\"AI가 사람 뽑는다\" 원티드랩·사람인, 채용 시장 훈풍에 리플처럼 반등",
+          "link": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=427062",
+          "description": "주식 시장 전반의 변동성이 커지면서 유통 물량이 적은 이른바 '품절주'와 채용 시장 회복 기대감이 반영된... 정보기술(IT) 부품 유통사 제이엠아이도 소폭 오르며 장을 마쳤다. 하지만 업종 내 비중이 큰 환경 및 평가...",
+          "pubDate": "02-08 14:10",
+          "originallink": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=427062"
+        },
+        {
+          "title": "케이제이엠아이(주), 이웃돕기 사랑의 성금 300만 원 기탁",
+          "link": "https://www.joongdo.co.kr/web/view.php?key=20251231010011428",
+          "description": "송산면(면장 홍경표)은 12월 30일 케이제이엠아이 주식회사(대표 김병태)가 송산면 행정복지센터에 방문해 어려운 이웃을 위해 써달라며 성금 300만 원을 기탁했다고 31일 밝혔다. 기탁식에 참석한 차태원 부장은 \"지역사회...",
+          "pubDate": "12-31 06:40",
+          "originallink": "https://www.joongdo.co.kr/web/view.php?key=20251231010011428"
+        },
+        {
+          "title": "케이제이엠아이 주식회사,취약계층 이웃돕기 사랑의 성금 300만 원 기탁",
+          "link": "https://www.ccdailynews.com/news/articleView.html?idxno=2389022",
+          "description": "충남 당진시 송산면(면장 홍경표)은 30일 케이제이엠아이 주식회사(대표 김병태)가 송산면 행정복지센터에 방문해 어려운 이웃을 위해 써달라며 성금 300만 원을 기탁했다고 밝혔다. 기탁식에 참석한 차태원 부장은...",
+          "pubDate": "12-30 16:04",
+          "originallink": "https://www.ccdailynews.com/news/articleView.html?idxno=2389022"
+        }
+      ]
+    },
+    {
+      "code": "027970",
+      "name": "한국제지",
+      "market": "KOSPI",
+      "current_price": 797,
+      "change_rate": 0.0,
+      "signal": "중립",
+      "reason": "20일 이동평균선은 횡보세를 보이고 있으며 RSI 지표는 63.43으로 중립 구간입니다. 최근 5일 외인 순매수는 긍정적이나 개인 순매도는 이를 상쇄하고 있습니다. 펀더멘털 측면에서 ROE가 마이너스이고 OPM은 낮으며 부채비율은 높으나 EPS 성장률이 양호합니다.",
+      "key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "보통",
+        "foreign_flow": "매수우위",
+        "institution_flow": "매수우위",
+        "valuation": "적정"
+      },
+      "risk_level": "중간",
+      "confidence": 0.5,
+      "news_analysis": {
+        "sentiment": "중립",
+        "key_news": [
+          "한국제지, 인쇄용지 수요 감소 및 수익성 악화",
+          "2025년 3분기 실적 발표"
+        ],
+        "catalyst": "인쇄용지 수요 감소는 제지 업계 전반의 과제이며, 한국제지 역시 수익성 개선이 시급한 상황입니다."
+      },
+      "analysis_time": "2026-02-19 22:58:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "1월 28일 주식시장 주요공시",
+          "link": "https://www.catchnews.kr/news/articleView.html?idxno=120007",
+          "description": "주식 10,000,000,000주를 14.42조원에 추가로 취득하기로 결정(취득후지분율:100.0%, 취득예정일:2030-01... 62억원(전년대비 적자전환) ▶한국제지, 2025년 연결기준 매출액 7,536.79억원(전년대비 -4.84...",
+          "pubDate": "01-29 08:49",
+          "originallink": "https://www.catchnews.kr/news/articleView.html?idxno=120007"
+        },
+        {
+          "title": "미국에 ‘한국 정부 제지’ 요청한 쿠팡.. 법무부 “적극 대응할 것”",
+          "link": "https://vop.co.kr/A00001686830.html",
+          "description": "이들 중에는 쿠팡Inc 이사회 멤버도 포함돼 있어 사실상 쿠팡이 미국 정부에 한국 정부 제지를 요청한 것으로... 그린옥스는 11억달러(약 1조6,115억원) 이상에 해당하는 쿠팡 주식을 보유하고 있다. 그린옥스의 창립자 겸...",
+          "pubDate": "01-23 11:50",
+          "originallink": "https://vop.co.kr/A00001686830.html"
+        },
+        {
+          "title": "[바이오톺아보기] 경영권 승계 나선 국제약품...‘지분 2%’ 오너 3세 경...",
+          "link": "https://n.news.naver.com/mnews/article/366/0001133045?sid=101",
+          "description": "1982년엔 당시 김종호 세창물산 회장, 단사천 한국제지 회장 등과 신한투자금융(현 신한투자증권)을... 업계 관계자는 “자사주는 회사가 들고 있을 때는 의결권이 없지만 법안 통과 전 우호 세력과 주식을 교환하면...",
+          "pubDate": "12-30 07:17",
+          "originallink": "https://biz.chosun.com/science-chosun/bio/2025/12/30/6QUFV67W2JH2RH7OESID3M7ZOM/?utm_source=naver&utm_medium=original&utm_campaign=biz"
+        }
+      ]
+    },
+    {
+      "code": "101390",
+      "name": "아이엠",
+      "market": "KOSDAQ",
+      "current_price": 396,
+      "change_rate": 0.0,
+      "signal": "중립",
+      "reason": "거래량이 0이며 52주 신고가 대비 현재 위치가 22.6% 수준으로 하락 추세가 지속되고 있습니다. RSI 지표는 100.0으로 과열 신호이나, 거래량 부재로 인해 신뢰도가 낮습니다. 펀더멘털 측면에서 ROE와 OPM이 마이너스이고 부채비율이 매우 높으며 EPS 성장률도 마이너스입니다.",
+      "key_factors": {
+        "price_trend": "하락",
+        "volume_signal": "감소",
+        "foreign_flow": "중립",
+        "institution_flow": "중립",
+        "valuation": "저평가"
+      },
+      "risk_level": "높음",
+      "confidence": 0.3,
+      "news_analysis": {
+        "sentiment": "중립",
+        "key_news": [
+          "아이엠, 신규 사업 진출 및 투자 계획",
+          "2025년 3분기 실적 발표"
+        ],
+        "catalyst": "현재 거래량 부재로 인해 주가 움직임이 미미한 상황이며, 실적 개선 및 사업 확장 소식이 없다면 주가 반등을 기대하기 어렵습니다."
+      },
+      "analysis_time": "2026-02-19 22:58:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "설 이후 케이뱅크·바이오 공모주 릴레이...금감원 '자금모집 이력' 점검...",
+          "link": "https://www.womentimes.co.kr/news/articleView.html?idxno=100591",
+          "description": "신약 개발 기업 카나프테라퓨틱스는 5~6일(희망 공모가 1만6000~2만원), 항체 기반 신약 기업 아이엠바이오로... 금감원은 50인 이상 투자자에게 주식·사채 등을 발행하거나 매도할 경우 증권신고서 제출 의무가...",
+          "pubDate": "02-19 20:38",
+          "originallink": "https://www.womentimes.co.kr/news/articleView.html?idxno=100591"
+        },
+        {
+          "title": "[IPO 워치] 아이엠바이오로직스, 상장 이후 관건 '오버행·현금흐름'",
+          "link": "https://n.news.naver.com/mnews/article/293/0000079584?sid=101",
+          "description": "아이엠바이오로직스가 코스닥 상장을 앞두고 재무구조 전환의 실질적 성과를 점검받는 국면에... 리픽싱(Refixing) 적용 이후 전환 기준 보통주식수는 646만3218주로 기재돼 있으며, 이 변화가 상장 이후 주주...",
+          "pubDate": "02-19 14:33",
+          "originallink": "https://www.bloter.net/news/articleView.html?idxno=654625"
+        },
+        {
+          "title": "K바이오 공모시장 리셋 … 1세대 '생존 투쟁' vs 2세대 '화려한 입성'",
+          "link": "https://biz.newdaily.co.kr/site/data/html/2026/02/19/2026021900136.html",
+          "description": "코스닥 상장을 추진 중인 카나프테라퓨틱스와 아이엠바이오로직스가 기관투자자 대상 수요예측에... 공모 주식수는 200만주로, 희망 공모가 범위는 1만9000~2만 6000원이다. 예상 공모금액은 380억~520억원, 상장 후 예상...",
+          "pubDate": "02-19 11:02",
+          "originallink": "https://biz.newdaily.co.kr/site/data/html/2026/02/19/2026021900136.html"
+        }
+      ]
+    },
+    {
+      "code": "032680",
+      "name": "소프트센",
+      "market": "KOSDAQ",
+      "current_price": 264,
+      "change_rate": 0.0,
+      "signal": "매수",
+      "reason": "20일 이동평균선은 상승 추세를 보이고 있으며 RSI 지표는 48.26으로 중립 구간입니다. 최근 5일 외인 순매수 동향은 긍정적이나 개인 순매도가 이를 상쇄하고 있습니다. 펀더멘털 측면에서 ROE와 OPM이 마이너스이고 부채비율은 낮으나 EPS 성장률이 양호합니다.",
+      "key_factors": {
+        "price_trend": "상승",
+        "volume_signal": "보통",
+        "foreign_flow": "매수우위",
+        "institution_flow": "중립",
+        "valuation": "저평가"
+      },
+      "risk_level": "중간",
+      "confidence": 0.6,
+      "news_analysis": {
+        "sentiment": "중립",
+        "key_news": [
+          "소프트센, 클라우드 기반 솔루션 사업 확장",
+          "정부의 디지털 전환 정책 수혜 기대"
+        ],
+        "catalyst": "클라우드 기반 솔루션 사업 확장과 정부의 디지털 전환 정책은 긍정적인 재료이며, 외국인 순매수세가 유입되고 있어 향후 주가 상승 여력이 있습니다."
+      },
+      "analysis_time": "2026-02-19 22:58:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "아이엘로보틱스, 무선센서 IoT 기술로 미래 스마트 시티 시장 정조준",
+          "link": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=430221",
+          "description": "상장에 앞서 아이엘로보틱스는 주식 유동성을 높이기 위한 전략적 행보를 보였다. 지난 3월... 이 밖에도 롯데이노베이트, NICE, 신세계 I&C, 아시아나IDT, 카페24, 다날, 헥토파이낸셜, 핑거, 나무기술, 소프트센...",
+          "pubDate": "02-18 16:44",
+          "originallink": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=430221"
+        },
+        {
+          "title": "[주식마감] \"자사주 소각 훈풍\"... 증권주 재평가 기대감에 SK증권 상한...",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1142106",
+          "description": "지난 9일 유투바이오는 지구홀딩스 주식회사와 물적분할을 결정했다고 밝혔다. 분할존속회사는... 에스코넥, 소프트센, 플루토스, 코데즈컴바인, 대한광통신, 아이윈, 아이에이, 오르비텍, 씨엑스아이, 삼표시멘트...",
+          "pubDate": "02-13 19:40",
+          "originallink": "https://www.ggilbo.com/news/articleView.html?idxno=1142106"
+        },
+        {
+          "title": "전등 끄러 다닐 필요 없어요... 아이엘, '피지컬 AI'로 글로벌 에너지 시...",
+          "link": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=429558",
+          "description": "지난 3월 주식 액면가를 500원에서 100원으로 낮추는 액면분할을 통해 주식 유동성까지 확보한 아이엘은... 장 막판에는 차익 실현과 실망 매물이 겹친 인터로이드, 소프트센, 케이바이오 등이 8~15%대 폭락 장 전체...",
+          "pubDate": "02-13 14:42",
+          "originallink": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=429558"
+        }
+      ]
+    },
+    {
+      "code": "002210",
+      "name": "동성제약",
+      "market": "KOSPI",
+      "current_price": 973,
+      "change_rate": 0.0,
+      "signal": "중립",
+      "reason": "20일 이동평균선은 횡보세를 보이고 있으며 RSI 지표는 100.0으로 과열 구간이나, 거래량 부재로 인해 신뢰도가 낮습니다. 외인/기관/개인 순매수 동향은 모두 0으로 나타나고 있습니다. 펀더멘털 측면에서 ROE와 OPM이 마이너스이고 부채비율이 높아 재무 건전성이 우려됩니다.",
+      "key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "감소",
+        "foreign_flow": "중립",
+        "institution_flow": "중립",
+        "valuation": "저평가"
+      },
+      "risk_level": "높음",
+      "confidence": 0.3,
+      "news_analysis": {
+        "sentiment": "중립",
+        "key_news": [
+          "동성제약, 신규 사업 추진 및 실적 개선 노력",
+          "2025년 3분기 실적 발표"
+        ],
+        "catalyst": "현재 거래량 부재로 인해 주가 움직임이 미미한 상황이며, 실적 개선 및 사업 확장 소식이 없다면 주가 반등을 기대하기 어렵습니다."
+      },
+      "analysis_time": "2026-02-19 22:58:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "태광, 애경산업 인수가격 낮췄다..\"치약 리콜 여파\"",
+          "link": "https://n.news.naver.com/mnews/article/014/0005479983?sid=101",
+          "description": "태광산업은 19일 애경산업 주식 833만6288주(지분 31.56%)를 약 2237억5000만원에 취득하기로 했다고 정정... 태광그룹 관계자는 \"현재 애경산업뿐만 아니라 동성제약 등의 인수에도 나섰다\"며 \"제약, 화장품, 홈쇼핑 등...",
+          "pubDate": "02-19 18:28",
+          "originallink": "http://www.fnnews.com/news/202602191740233224"
+        },
+        {
+          "title": "\"2080 치약 리콜이 호재로 작용\" … 태광산업, 애경산업과 매각 대금 5% ...",
+          "link": "https://biz.newdaily.co.kr/site/data/html/2026/02/19/2026021900459.html",
+          "description": "총 인수단가는 약 4475억원으로, 주식매매계약(SPA) 당시 합의 금액보다 약 5%인 225억원가량 할인된 수준이다.... 태광산업은 최근 동성제약 인수 추진과 화장품 브랜드 실 론칭 등 B2C 사업 확대를 위해 공을 들이고 있다....",
+          "pubDate": "02-19 18:26",
+          "originallink": "https://biz.newdaily.co.kr/site/data/html/2026/02/19/2026021900459.html"
+        },
+        {
+          "title": "[HIT알공] 한미약품, 고혈압 치료제 'HCP1803-4' 국내 3상 IND",
+          "link": "https://www.hitnews.co.kr/news/articleView.html?idxno=73974",
+          "description": "⑤ 에스씨엠생명과학, 풍전약품 흡수합병 승인 = 권리주주 반대의사 표시 주식수 0.59%로 소규모합병... 동성제약, 매출액 또는 손익구조 30%(대규모법인 15%)이상 변경 = 매출액 882억원으로 전년비 0.2% 감소...",
+          "pubDate": "02-19 18:08",
+          "originallink": "https://www.hitnews.co.kr/news/articleView.html?idxno=73974"
+        }
+      ]
+    },
+    {
+      "code": "011300",
+      "name": "성안머티리얼스",
+      "market": "KOSPI",
+      "current_price": 352,
+      "change_rate": 0.0,
+      "signal": "중립",
+      "reason": "20일 이동평균선은 하락 추세를 보이고 있으며 RSI 지표는 39.46으로 중립 구간입니다. 최근 5일 외인 순매도가 두드러지며 기관 순매도, 개인 순매수는 혼조세를 보입니다. 펀더멘털 측면에서 ROE와 OPM은 양호하나, EPS 성장률이 마이너스이고 부채비율이 높아 재무 건전성이 우려됩니다.",
+      "key_factors": {
+        "price_trend": "하락",
+        "volume_signal": "보통",
+        "foreign_flow": "매도우위",
+        "institution_flow": "매도우위",
+        "valuation": "저평가"
+      },
+      "risk_level": "높음",
+      "confidence": 0.5,
+      "news_analysis": {
+        "sentiment": "중립",
+        "key_news": [
+          "성안머티리얼스, 신소재 개발 및 사업 다각화 추진",
+          "2025년 3분기 실적 발표"
+        ],
+        "catalyst": "신소재 개발은 긍정적인 재료이나, 높은 부채비율과 낮은 EPS 성장률은 투자 리스크로 작용하고 있습니다."
+      },
+      "analysis_time": "2026-02-19 22:58:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "오늘의 메모[2월 12일]",
+          "link": "https://n.news.naver.com/mnews/article/011/0004589210?sid=101",
+          "description": "▲보통주추가상장=성안머티리얼스(011300)·롯데관광개발·하이브(국내CB) 더본코리아(475560)(주식매수선택권행사) 세아홀딩스(058650)(주식교환) ▲구주주유상청약=라온피플(300120) ▲보통주추가상장...",
+          "pubDate": "02-11 10:51",
+          "originallink": "https://www.sedaily.com/article/20007786?ref=naver"
+        },
+        {
+          "title": "[공시속보] 성안머티리얼스, 보통주 추가상장→유동성 확대 기대",
+          "link": "https://www.topstarnews.net/news/articleView.html?idxno=15961618",
+          "description": "이번 보통주 추가상장을 통해 성안머티리얼스(011300)는 주식의 유동성 확대가 기대된다. 상장일은 2026년 2월 12일로 예정됐으며, 투자자들은 새로 상장되는 주식에 대한 세부 사항에 유의해야 한다고...",
+          "pubDate": "02-09 17:36",
+          "originallink": "https://www.topstarnews.net/news/articleView.html?idxno=15961618"
+        },
+        {
+          "title": "성안머티리얼스, 제남황관잉크유한공사 지분 100% 인수 결정",
+          "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=628371",
+          "description": "성안머티리얼스는 1995년 11월 10일 코스피 시장에 상장된 직물 제조업체다. 주요사항보고서(타법인주식및출자증권양수결정) 타법인 주식 및 출자증권 양수결정 - 당사는 보고서 제출일 현재 구조개편에 관한...",
+          "pubDate": "02-07 18:00",
+          "originallink": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=628371"
+        }
+      ]
+    }
+  ]
+}
