@@ -1,0 +1,3202 @@
+{
+  "date": "2026-02-04",
+  "total_stocks": 94,
+  "results": [
+    {
+      "name": "한화갤러리아",
+      "code": "452260",
+      "current_price": "2,235원",
+      "change": "+155원",
+      "change_percent": "+7.47%",
+      "signal": "매수",
+      "reason": "주가가 저점을 다지고 강한 장대양봉과 함께 전고점 돌파를 시도하며 단기 상승 추세로 전환되었다. 외국인과 기관의 강한 순매수 유입 및 폭발적인 거래량 증가가 긍정적이며, 매수 잔량 우위로 추가 상승 여력이 충분하다.",
+      "capture_time": "2026-02-04 20:28:03",
+      "analysis_time": "2026-02-04 20:47:25",
+      "news": [
+        {
+          "title": "[주식마감기사] '태양광 사업' 기대감에 HD현대에너지솔루션 상한가... ...",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1140232",
+          "description": "대성산업은 지난 1947년 대성산업공사를 모태로 2010년 분할 설립됐으며, 2017년 주식회사 대성합동지주와... 2차전지산업레버리지, 한화갤러리아, KODEX 코스닥150선물인버스, KODEX 코스닥150, 한온시스템, 한화솔루션...",
+          "pubDate": "02-04 19:40",
+          "originallink": "https://www.ggilbo.com/news/articleView.html?idxno=1140232"
+        },
+        {
+          "title": "한화갤러리아 주가, 4일 장중 2,320원 15.71% 상승",
+          "link": "https://www.e-science.co.kr/news/articleView.html?idxno=124781",
+          "description": "외국인 한도 주식수는 193,859,610주이며, 외국인 보유 주식수는 3,624,256주로 외국인 소진율은 1.87%를 보였다. 동일 업종의 등락률이 2.88% 상승한 것과 비교하면, 한화갤러리아는 업종 평균보다 높은 상승률을...",
+          "pubDate": "02-04 14:00",
+          "originallink": "https://www.e-science.co.kr/news/articleView.html?idxno=124781"
+        },
+        {
+          "title": "'한화머시너리앤서비스'는 뭐지?",
+          "link": "http://www.ilemonde.com/news/articleView.html?idxno=21923",
+          "description": "물적분할과 달리 인적분할은 기존 주주들이 지분율대로 신설 법인의 주식을 나눠 갖는다. 이는 향후 형제들... 한화갤러리아 역시 영업이익률이 0.1% 수준에 머물 정도로 수익성이 악화했다. 신설 지주사가 ㈜한화로부터...",
+          "pubDate": "02-04 07:42",
+          "originallink": "http://www.ilemonde.com/news/articleView.html?idxno=21923"
+        }
+      ]
+    },
+    {
+      "name": "한온시스템",
+      "code": "018880",
+      "current_price": "8,720원",
+      "change": "+555원",
+      "change_percent": "+6.81%",
+      "signal": "적극매수",
+      "reason": "외국인과 기관의 대규모 순매수와 함께 폭발적인 거래량으로 장대양봉이 발생하며 단기 골든크로스가 형성되었다. 이는 강한 상승 추세 전환을 시사하며, 압도적인 매수 잔량 우위로 추가 상승 여력이 충분하다.",
+      "capture_time": "2026-02-04 20:28:10",
+      "analysis_time": "2026-02-04 20:47:25",
+      "news": [
+        {
+          "title": "[주식마감기사] '태양광 사업' 기대감에 HD현대에너지솔루션 상한가... ...",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1140232",
+          "description": "대성산업은 지난 1947년 대성산업공사를 모태로 2010년 분할 설립됐으며, 2017년 주식회사 대성합동지주와... 코스닥150, 한온시스템, 한화솔루션, SG세계물산, 삼성전자, TIGER 반도체TOP10, 삼성 인버스 2X 코스닥150 선물...",
+          "pubDate": "02-04 19:40",
+          "originallink": "https://www.ggilbo.com/news/articleView.html?idxno=1140232"
+        },
+        {
+          "title": "전기차 관련주, '룰루랄라 콧노래' 삼성SDI·한온시스템·씨아이에스·휴...",
+          "link": "http://www.finomy.com/news/articleView.html?idxno=249117",
+          "description": "4일 한국거래소에 따르면 씨아이에스, 한온시스템, 삼영, 휴맥스, 삼성SDI, 파워로직스, 세아메카닉스... 삼영은 1959년 설립된 국내 유일의 커패시터 필름 제조사이자 세계 3위 생산업체로, 2025년 캐스코 주식회사...",
+          "pubDate": "02-04 18:20",
+          "originallink": "http://www.finomy.com/news/articleView.html?idxno=249117"
+        },
+        {
+          "title": "실적 개선된 한온시스템, 주주들은 웃지 못하는 이유",
+          "link": "https://n.news.naver.com/mnews/article/648/0000044215?sid=101",
+          "description": "그러나 증권가에서는 이 같은 실적 회복의 방향성은 긍정적으로 평가하면서도 두 차례의 유상증자로 인해 발행 주식 수가 기존 대비 51% 급증한 점을 기업가치 재평가의 가장 큰 걸림돌로 꼽고 있다. 한온시스템은...",
+          "pubDate": "02-04 14:00",
+          "originallink": "http://news.bizwatch.co.kr/article/market/2026/02/04/0024"
+        }
+      ]
+    },
+    {
+      "name": "한화솔루션",
+      "code": "009830",
+      "current_price": "36,450원",
+      "change": "+8,400원",
+      "change_percent": "+30.00%",
+      "signal": "적극매수",
+      "reason": "상한가를 기록하며 강력한 매수세를 보였고, 외국인과 기관의 대규모 순매수가 이를 뒷받침한다. 폭발적인 거래량과 압도적인 매수잔량 우위는 추가 상승 가능성을 높이며, 단기 추세가 완전히 전환되는 시그널로 판단된다.",
+      "capture_time": "2026-02-04 20:28:18",
+      "analysis_time": "2026-02-04 20:47:25",
+      "news": [
+        {
+          "title": "[주식마감기사] '태양광 사업' 기대감에 HD현대에너지솔루션 상한가... ...",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1140232",
+          "description": "4일 한화솔루션, HD현대에너지솔루션, 대성산업, 팜스코, SG세계물산, 한화솔루션우, 하림지주... 대성산업은 지난 1947년 대성산업공사를 모태로 2010년 분할 설립됐으며, 2017년 주식회사 대성합동지주와 합병했다....",
+          "pubDate": "02-04 19:40",
+          "originallink": "https://www.ggilbo.com/news/articleView.html?idxno=1140232"
+        },
+        {
+          "title": "태양광·ESS株, 美 수주 확대에 강세…\"AI發 전력망 현대화 주목\"",
+          "link": "https://www.apnews.kr/news/articleView.html?idxno=3045550",
+          "description": "©AP신문(AP뉴스)/이미지 제공 = 주식차트연구소 ▲주도 테마지도 태양광 관련주들이 미국 시장에서의... 4일 업계에 따르면, LG에너지솔루션은 한화솔루션 큐셀부문(한화큐셀) 미국법인과 총 5GWh 규모의 ESS 배터리...",
+          "pubDate": "02-04 18:34",
+          "originallink": "https://www.apnews.kr/news/articleView.html?idxno=3045550"
+        },
+        {
+          "title": "['클릭' 증시] '국민주' 삼성전자 시총 1000조 돌파",
+          "link": "http://www.00news.co.kr/news/articleView.html?idxno=101684",
+          "description": "지난해 4월 이후 이어진 상승세로 주식거래에 관심이 없거나 부정적이던 국민들도 시장 참여에 나서기... 호재로 한화솔루션과 HD현대에어지솔루션이 급등하면서 OCI홀딩스, 씨에스 윈드 등 친환경에너지 업종이 동반...",
+          "pubDate": "02-04 18:10",
+          "originallink": "http://www.00news.co.kr/news/articleView.html?idxno=101684"
+        }
+      ]
+    },
+    {
+      "name": "SG세계물산",
+      "code": "004060",
+      "current_price": "416원",
+      "change": "+15원",
+      "change_percent": "+3.74%",
+      "signal": "중립",
+      "reason": "폭발적인 거래량과 장대양봉으로 52주 최고가를 돌파하며 강한 상승세를 보였으나, 외국인 순매도 및 매도 잔량 우위가 단기 조정 가능성을 시사한다. 급등에 따른 차익 실현 압력이 있을 수 있어 신중한 접근이 필요하다.",
+      "capture_time": "2026-02-04 20:28:25",
+      "analysis_time": "2026-02-04 20:47:25",
+      "news": [
+        {
+          "title": "[주식마감기사] '태양광 사업' 기대감에 HD현대에너지솔루션 상한가... ...",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1140232",
+          "description": "4일 한화솔루션, HD현대에너지솔루션, 대성산업, 팜스코, SG세계물산, 한화솔루션우, 하림지주... 대성산업은 지난 1947년 대성산업공사를 모태로 2010년 분할 설립됐으며, 2017년 주식회사 대성합동지주와 합병했다....",
+          "pubDate": "02-04 19:40",
+          "originallink": "https://www.ggilbo.com/news/articleView.html?idxno=1140232"
+        },
+        {
+          "title": "[오늘의 상한가] 삼표시멘트·파두 등",
+          "link": "https://www.joongangenews.com/news/articleView.html?idxno=492938",
+          "description": "|중앙이코노미뉴스 엄현식 기자| 4일 주식시장에서 삼표시멘트, 파두, HD현대에너지솔루션, 한화솔루션, 한화솔루션우, 대성산업, 팜스코, SG세계물산, 하림지주, 선익시스템, 엘케이켐, 비엘팜텍, 누리플렉스...",
+          "pubDate": "02-04 16:14",
+          "originallink": "https://www.joongangenews.com/news/articleView.html?idxno=492938"
+        },
+        {
+          "title": "5천피 씹어먹은 '이 지수', 6천피·7천피도 앞당긴다 [뉴스톡 웰스톡]",
+          "link": "http://www.newswell.co.kr/news/articleView.html?idxno=15936",
+          "description": "코스피 지수가 5천피를 훌쩍 넘어 사상 최고치 행진을 이어가는 가운데, 자기주식 소각 등 기업들의... /자료=네이버 증권정보 이날 ▲HD현대에너지솔루션 ▲대성산업 ▲팜스코 ▲SG세계물산 ▲한화솔루션...",
+          "pubDate": "02-04 15:36",
+          "originallink": "http://www.newswell.co.kr/news/articleView.html?idxno=15936"
+        }
+      ]
+    },
+    {
+      "name": "삼성전기",
+      "code": "005930",
+      "current_price": "169,100원",
+      "change": "+4,700원",
+      "change_percent": "+2.86%",
+      "signal": "적극매수",
+      "reason": "외국인과 기관의 강력한 동반 순매수와 대규모 거래량으로 52주 최고가 부근에서 강한 상승을 보였다. 매수 잔량 우위와 모든 이평선을 상향 돌파하며 정배열로 전환되는 흐름은 추가 상승 기대를 높인다.",
+      "capture_time": "2026-02-04 20:28:32",
+      "analysis_time": "2026-02-04 20:47:25",
+      "news": [
+        {
+          "title": "[THE FINANCE] 삼성전자에서 금융·지주까지… 배당 확대 움직임 확산",
+          "link": "https://n.news.naver.com/mnews/article/029/0003009157?sid=101",
+          "description": "삼성전자 주식 100주를 보유한 주주는 총 5만6600원을 받게 된다. 삼성전자를 비롯해 삼성전기, 삼성SDS, 삼성E&A 등 주요 삼성 관계사들도 특별배당을 실시한다. 각 사의 연간 배당액은 삼성전기 1777억원, 삼성SDS 2467억원...",
+          "pubDate": "02-04 18:30",
+          "originallink": "https://www.dt.co.kr/article/12044936?ref=naver"
+        },
+        {
+          "title": "삼성전기 주가, 2월 4일 305,000원 0.81% 하락 마감",
+          "link": "https://www.topstarnews.net/news/articleView.html?idxno=15953969",
+          "description": "외국인 투자자들의 삼성전기 보유 주식수는 28,812,495주로, 전체 한도 주식수 대비 38.57%의 소진율을 기록했다. 시간대별 시세 흐름을 살펴보면, 9시에는 301,500원으로 시작하여 295,500원까지 하락하는...",
+          "pubDate": "02-04 15:56",
+          "originallink": "https://www.topstarnews.net/news/articleView.html?idxno=15953969"
+        },
+        {
+          "title": "삼성전기 주가, 2월 4일 장중 296,500원 3.58% 하락",
+          "link": "https://www.joongangenews.com/news/articleView.html?idxno=492690",
+          "description": "외국인 투자자들은 삼성전기 총 상장주식수 74,693,696주 중 28,812,495주를 보유하며, 외국인소진율은 38.57%에 달했다. 지난 거래일인 2026년 2월 3일, 삼성전기 주가는 시가 294,000원으로 출발하여 고가 309,500원...",
+          "pubDate": "02-04 10:16",
+          "originallink": "https://www.joongangenews.com/news/articleView.html?idxno=492690"
+        }
+      ]
+    },
+    {
+      "name": "신성이엔지",
+      "code": "011930",
+      "current_price": "1,959원",
+      "change": "+130원",
+      "change_percent": "+6.63%",
+      "signal": "적극매수",
+      "reason": "외국인과 기관의 강력한 동반 순매수와 폭발적인 거래량으로 주가가 강하게 상승하며 새로운 고점을 형성했다. 압도적인 매수 잔량 우위와 정배열 전환은 추가 상승에 대한 강한 기대를 뒷받침한다.",
+      "capture_time": "2026-02-04 20:28:39",
+      "analysis_time": "2026-02-04 20:47:25",
+      "news": [
+        {
+          "title": "[주식마감기사] '태양광 사업' 기대감에 HD현대에너지솔루션 상한가... ...",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1140232",
+          "description": "대성산업은 지난 1947년 대성산업공사를 모태로 2010년 분할 설립됐으며, 2017년 주식회사 대성합동지주와... 레버리지, 신성이엔지, TIGER 200선물인버스2X, 대한해운, 대성산업, KODEX 은선물(H), KCTC, KODEX 200, 대우건설...",
+          "pubDate": "02-04 19:40",
+          "originallink": "https://www.ggilbo.com/news/articleView.html?idxno=1140232"
+        },
+        {
+          "title": "태양광·ESS株, 美 수주 확대에 강세…\"AI發 전력망 현대화 주목\"",
+          "link": "https://www.apnews.kr/news/articleView.html?idxno=3045550",
+          "description": "©AP신문(AP뉴스)/이미지 제공 = 주식차트연구소 ▲주도 테마지도 태양광 관련주들이 미국 시장에서의... 90%), 신성이엔지(+6.53%), 아바코(+4.21%), 알에스오토메이션(+3.47%), KCC(+3.32%) 등이 일제히 강세를 보였다.",
+          "pubDate": "02-04 18:34",
+          "originallink": "https://www.apnews.kr/news/articleView.html?idxno=3045550"
+        },
+        {
+          "title": "태양광에너지 관련주, '맑고 화창' 한화솔루션·유니테스트·파루·에스...",
+          "link": "http://www.finomy.com/news/articleView.html?idxno=249112",
+          "description": "주성엔지니어링, 신성이엔지, 지투파워, 한국전력, 대성파인텍, 이건홀딩스, 씨엔플러스는 상승했다.... 이후 1961년 '한국전력주식회사'로 개편되고, 1982년 현재의 통합형 전력공기업으로 재설립되며 국가 전력공급의...",
+          "pubDate": "02-04 18:06",
+          "originallink": "http://www.finomy.com/news/articleView.html?idxno=249112"
+        }
+      ]
+    },
+    {
+      "name": "대한해운",
+      "code": "005880",
+      "current_price": "2,185원",
+      "change": "+130원",
+      "change_percent": "+6.33%",
+      "signal": "적극매수",
+      "reason": "외국인과 기관의 강한 순매수와 함께 폭발적인 거래량으로 주가가 모든 이동평균선을 돌파하며 강한 상승 추세로 전환되었다. 매수 잔량 우위와 낮은 추정 PER은 추가 상승 여력을 시사한다.",
+      "capture_time": "2026-02-04 20:28:47",
+      "analysis_time": "2026-02-04 20:47:25",
+      "news": [
+        {
+          "title": "[주식마감기사] '태양광 사업' 기대감에 HD현대에너지솔루션 상한가... ...",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1140232",
+          "description": "대성산업은 지난 1947년 대성산업공사를 모태로 2010년 분할 설립됐으며, 2017년 주식회사 대성합동지주와... 200선물인버스2X, 대한해운, 대성산업, KODEX 은선물(H), KCTC, KODEX 200, 대우건설, 동양, 대한전선, KODEX 미국S&P500...",
+          "pubDate": "02-04 19:40",
+          "originallink": "https://www.ggilbo.com/news/articleView.html?idxno=1140232"
+        },
+        {
+          "title": "[명동백작들의 영화 이야기⑳] 박인환의 생애에 흘렀던 시간들, 그 흔적...",
+          "link": "https://www.news2day.co.kr/article/20260203500042",
+          "description": "동대문 상인연합회를 거점으로 부를 쌓기 시작했던 임화수는 ‘한국연예주식회사’를 만들어 이승만에게... 박인환은 영화산업과 관련이 없는 대한해운공사에 들어갔다. 그 역시 영화 비즈니스(산업)와 영화 비평이 한...",
+          "pubDate": "02-03 10:18",
+          "originallink": "https://www.news2day.co.kr/article/20260203500042"
+        },
+        {
+          "title": "대한해운 주가, 2월 2일 1,979원 1.33% 상승 마감",
+          "link": "https://www.job-post.co.kr/news/articleView.html?idxno=205289",
+          "description": "외국인 투자자들의 대한해운 보유 주식수는 37,616,401주로, 전체 외국인 한도 주식수 322,747,340주 대비 11.66%의 외국인소진율을 기록했다. 시간대별 시세 흐름을 살펴보면, 9시에는 1,919원에서 출발하여 장중...",
+          "pubDate": "02-02 17:50",
+          "originallink": "https://www.job-post.co.kr/news/articleView.html?idxno=205289"
+        }
+      ]
+    },
+    {
+      "name": "대성산업",
+      "code": "128820",
+      "current_price": "11,240원",
+      "change": "+2,590원",
+      "change_percent": "+30.00%",
+      "signal": "적극매수",
+      "reason": "상한가를 기록하며 강력한 매수세를 보였고, 외국인의 순매수와 폭발적인 거래량이 이를 뒷받침한다. 압도적인 매수잔량 우위와 모든 이평선 돌파는 단기 상승 추세가 매우 강함을 시사한다.",
+      "capture_time": "2026-02-04 20:28:54",
+      "analysis_time": "2026-02-04 20:47:25",
+      "news": [
+        {
+          "title": "[주식마감기사] '태양광 사업' 기대감에 HD현대에너지솔루션 상한가... ...",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1140232",
+          "description": "대성산업은 지난 1947년 대성산업공사를 모태로 2010년 분할 설립됐으며, 2017년 주식회사 대성합동지주와 합병했다. 동사는 연결대상 종속회사 20개사를 보유하고 있으며, 지난 2024년 디큐브 냉열 구역전기 사업 관련...",
+          "pubDate": "02-04 19:40",
+          "originallink": "https://www.ggilbo.com/news/articleView.html?idxno=1140232"
+        },
+        {
+          "title": "[오늘의 상한가] 삼표시멘트·파두 등",
+          "link": "https://www.joongangenews.com/news/articleView.html?idxno=492938",
+          "description": "|중앙이코노미뉴스 엄현식 기자| 4일 주식시장에서 삼표시멘트, 파두, HD현대에너지솔루션, 한화솔루션, 한화솔루션우, 대성산업, 팜스코, SG세계물산, 하림지주, 선익시스템, 엘케이켐, 비엘팜텍, 누리플렉스...",
+          "pubDate": "02-04 16:14",
+          "originallink": "https://www.joongangenews.com/news/articleView.html?idxno=492938"
+        },
+        {
+          "title": "5천피 씹어먹은 '이 지수', 6천피·7천피도 앞당긴다 [뉴스톡 웰스톡]",
+          "link": "http://www.newswell.co.kr/news/articleView.html?idxno=15936",
+          "description": "코스피 지수가 5천피를 훌쩍 넘어 사상 최고치 행진을 이어가는 가운데, 자기주식 소각 등 기업들의... /자료=네이버 증권정보 이날 ▲HD현대에너지솔루션 ▲대성산업 ▲팜스코 ▲SG세계물산 ▲한화솔루션...",
+          "pubDate": "02-04 15:36",
+          "originallink": "http://www.newswell.co.kr/news/articleView.html?idxno=15936"
+        }
+      ]
+    },
+    {
+      "name": "KCTC",
+      "code": "009070",
+      "current_price": "6,990원",
+      "change": "+1,110원",
+      "change_percent": "+18.91%",
+      "signal": "매수",
+      "reason": "기관의 강력한 순매수와 폭발적인 거래량으로 주가가 크게 상승하며 모든 이동평균선을 상향 돌파했다. 매도 잔량 우위가 다소 부담스러우나, 강한 가격 모멘텀과 기관 수급은 추가 상승 가능성을 시사한다.",
+      "capture_time": "2026-02-04 20:29:01",
+      "analysis_time": "2026-02-04 20:47:25",
+      "news": [
+        {
+          "title": "[주식마감기사] '태양광 사업' 기대감에 HD현대에너지솔루션 상한가... ...",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1140232",
+          "description": "대성산업은 지난 1947년 대성산업공사를 모태로 2010년 분할 설립됐으며, 2017년 주식회사 대성합동지주와... (H), KCTC, KODEX 200, 대우건설, 동양, 대한전선, KODEX 미국S&P500, 삼성 인버스 2X WTI원유 선물 ETN, 두산에너빌리티...",
+          "pubDate": "02-04 19:40",
+          "originallink": "https://www.ggilbo.com/news/articleView.html?idxno=1140232"
+        },
+        {
+          "title": "마산·평택 터미널 쥐고 미디어까지… 동양고속의 조용한 영토 확장",
+          "link": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=425067",
+          "description": "중견 부동산 보유 기업 대성산업과 물류·운송 전문 KCTC도 각각 11%, 10%대 상승을 나타낸다. 장 초반 매수세가... 이번 상승은 투자자들의 안전자산 선호와 함께 실물자산 가치가 주식시장에 반영되는 움직임으로 평가된다.",
+          "pubDate": "02-03 12:56",
+          "originallink": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=425067"
+        },
+        {
+          "title": "KCTC 주가, 2월 3일 장중 6,870원 7.85% 상승",
+          "link": "https://www.job-post.co.kr/news/articleView.html?idxno=205441",
+          "description": "외국인 투자자들의 KCTC 주식 소진율은 3.14%이다. 동일 업종의 등락률이 0.58% 상승한 가운데, KCTC의 주가 상승률은 이를 크게 상회하는 모습을 보이고 있다. 현재까지의 변동폭은 저가 6,370원과 고가 6...",
+          "pubDate": "02-03 11:26",
+          "originallink": "https://www.job-post.co.kr/news/articleView.html?idxno=205441"
+        }
+      ]
+    },
+    {
+      "name": "대우건설",
+      "code": "047040",
+      "current_price": "5,590원",
+      "change": "+500원",
+      "change_percent": "+9.82%",
+      "signal": "중립",
+      "reason": "주가가 높은 상승률과 거래량으로 52주 신고가에 근접하며 이동평균선 골든크로스가 형성되었으나, 매도 잔량이 압도적으로 우위에 있어 단기 조정 가능성이 높다. 외국인 순매도는 불안 요인으로 작용한다.",
+      "capture_time": "2026-02-04 20:29:08",
+      "analysis_time": "2026-02-04 20:47:25",
+      "news": [
+        {
+          "title": "[주식마감기사] '태양광 사업' 기대감에 HD현대에너지솔루션 상한가... ...",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1140232",
+          "description": "대성산업은 지난 1947년 대성산업공사를 모태로 2010년 분할 설립됐으며, 2017년 주식회사 대성합동지주와... 200, 대우건설, 동양, 대한전선, KODEX 미국S&P500, 삼성 인버스 2X WTI원유 선물 ETN, 두산에너빌리티, 삼성제약...",
+          "pubDate": "02-04 19:40",
+          "originallink": "https://www.ggilbo.com/news/articleView.html?idxno=1140232"
+        },
+        {
+          "title": "목수에서 '재계 20위권' 신화…'호남 건설 상징' 정창선 중흥그룹 회장...",
+          "link": "https://www.kfenews.co.kr/news/articleView.html?idxno=653981",
+          "description": "2021년 정창선 중흥그룹 회장(왼쪽)과 이대현 KDB인베스트먼트 대표가 대우건설 지분 인수를 위한 주식매매계약(SPA)을 체결했다. 사진=중흥그룹 ◆ 19세 현장 기술자, 호남 건설업 '성공 신화' 되다…20위권 대기업 성장...",
+          "pubDate": "02-04 18:28",
+          "originallink": "https://www.kfenews.co.kr/news/articleView.html?idxno=653981"
+        },
+        {
+          "title": "대한민국 건설업계 '큰 별' 정창선 중흥그룹 회장, 5일 영결식",
+          "link": "https://www.namdonews.com/news/articleView.html?idxno=900435",
+          "description": "2015년 자산 총액은 5조 원을 넘어섰고, 2021년 대우건설 인수 우선협상대상자로 선정된 뒤 같은 해 12월 주식매매계약(SPA)을 체결해 2022년 최종 인수를 완료하며 국내 건설업계의 지형을 바꾼 주역으로 자리매김했다.",
+          "pubDate": "02-04 18:22",
+          "originallink": "https://www.namdonews.com/news/articleView.html?idxno=900435"
+        }
+      ]
+    },
+    {
+      "name": "동양",
+      "code": "001520",
+      "current_price": "994원",
+      "change": "+80원",
+      "change_percent": "+8.72%",
+      "signal": "중립",
+      "reason": "강한 양봉과 거래량 증가, 외국인 및 기관 순매수로 단기 추세는 긍정적이나, 매도 잔량이 매수 잔량보다 많아 단기 조정 압력이 존재한다. 고평가된 PER 또한 신중한 접근을 요한다.",
+      "capture_time": "2026-02-04 20:29:15",
+      "analysis_time": "2026-02-04 20:47:25",
+      "news": [
+        {
+          "title": "[주식마감기사] '태양광 사업' 기대감에 HD현대에너지솔루션 상한가... ...",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1140232",
+          "description": "대성산업은 지난 1947년 대성산업공사를 모태로 2010년 분할 설립됐으며, 2017년 주식회사 대성합동지주와... 대우건설, 동양, 대한전선, KODEX 미국S&P500, 삼성 인버스 2X WTI원유 선물 ETN, 두산에너빌리티, 삼성제약...",
+          "pubDate": "02-04 19:40",
+          "originallink": "https://www.ggilbo.com/news/articleView.html?idxno=1140232"
+        },
+        {
+          "title": "동양생명 주가, 2월 4일 7,540원 4.72% 상승 마감",
+          "link": "https://www.job-post.co.kr/news/articleView.html?idxno=205861",
+          "description": "외국인 투자자들의 동양생명 주식 보유 현황을 살펴보면, 상장주식수 161,358,585주 중 77,582,963주를 보유하여 외국인소진율은 48.08%였다. 동일업종 등락률이 5.96% 상승한 것과 비교하면 동양생명의 주가...",
+          "pubDate": "02-04 16:44",
+          "originallink": "https://www.job-post.co.kr/news/articleView.html?idxno=205861"
+        },
+        {
+          "title": "부산 중구 가볼 만한 곳, 하루 코스로 딱 좋은 원도심",
+          "link": "https://www.topstarnews.net/news/articleView.html?idxno=15953866",
+          "description": "부산근현대역사관 별관 — 부산의 격동적인 역사를 조명하는 공간 대청동2가에 위치한 부산근현대역사관 별관은 일제강점기 시기 건축물인 옛 동양척식주식회사 건물을 활용하여 부산의 근현대사를 집중 조명한다....",
+          "pubDate": "02-04 14:52",
+          "originallink": "https://www.topstarnews.net/news/articleView.html?idxno=15953866"
+        }
+      ]
+    },
+    {
+      "name": "대한전선",
+      "code": "001440",
+      "current_price": "33,500원",
+      "change": "+700원",
+      "change_percent": "+2.14%",
+      "signal": "매수",
+      "reason": "외국인과 기관의 강력한 순매수와 함께 유의미한 거래량으로 52주 최고가에 근접하는 강한 상승을 보였다. 골든크로스 형성으로 단기 상승 추세 전환이 기대되며, 매도 잔량이 약간 우위이나 매수세가 이를 흡수할 가능성이 높다.",
+      "capture_time": "2026-02-04 20:29:23",
+      "analysis_time": "2026-02-04 20:47:25",
+      "news": [
+        {
+          "title": "[주식마감기사] '태양광 사업' 기대감에 HD현대에너지솔루션 상한가... ...",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1140232",
+          "description": "대성산업은 지난 1947년 대성산업공사를 모태로 2010년 분할 설립됐으며, 2017년 주식회사 대성합동지주와... 동양, 대한전선, KODEX 미국S&P500, 삼성 인버스 2X WTI원유 선물 ETN, 두산에너빌리티, 삼성제약, SK증권이다....",
+          "pubDate": "02-04 19:40",
+          "originallink": "https://www.ggilbo.com/news/articleView.html?idxno=1140232"
+        },
+        {
+          "title": "순식간에 돌변한 외국인…삼성전자 1조 넘게 팔아치우더니",
+          "link": "https://n.news.naver.com/mnews/article/015/0005246872?sid=101",
+          "description": "공매도 관점에서 큰 수익을 내기 어려운 데다 빌린 주식을 갚기 위해 되사는 과정에서 더 큰 손실을 보는... 대한전선(4위·1060억원)에도 큰 관심을 보였다. 한·미 원전 협력 프로젝트 ‘마누가’(MANUGA·미국 원전을...",
+          "pubDate": "02-04 17:24",
+          "originallink": "https://www.hankyung.com/article/2026020442751"
+        },
+        {
+          "title": "대한전선 주가, 2월 4일 장중 31,900원 3.57% 상승",
+          "link": "https://www.joongangenews.com/news/articleView.html?idxno=492699",
+          "description": "현재 동일업종 등락률은 1.86% 상승했으며, 이는 대한전선의 상승률보다 낮은 수치이다. 외국인 투자자들의 주식 소진율은 9.53%를 기록하고 있다. 배당수익률은 현재 N/A로 표시되었다. 지난 거래일...",
+          "pubDate": "02-04 10:28",
+          "originallink": "https://www.joongangenews.com/news/articleView.html?idxno=492699"
+        }
+      ]
+    },
+    {
+      "name": "두산에너빌리티",
+      "code": "034020",
+      "current_price": "97,200원",
+      "change": "+5,300원",
+      "change_percent": "+5.76%",
+      "signal": "적극매수",
+      "reason": "외국인과 기관의 압도적인 순매수와 함께 급증한 거래량으로 52주 최고가에 근접하며 강한 상승세를 보였다. 골든크로스 형성 및 매수 잔량 압도적 우위는 추가 상승에 대한 강력한 기대를 높인다.",
+      "capture_time": "2026-02-04 20:29:30",
+      "analysis_time": "2026-02-04 20:47:25",
+      "news": [
+        {
+          "title": "[주식마감기사] '태양광 사업' 기대감에 HD현대에너지솔루션 상한가... ...",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1140232",
+          "description": "대성산업은 지난 1947년 대성산업공사를 모태로 2010년 분할 설립됐으며, 2017년 주식회사 대성합동지주와... ETN, 두산에너빌리티, 삼성제약, SK증권이다. 이날 코스닥 시장 거래 상위종목 30위는 LK삼양, 케이바이오...",
+          "pubDate": "02-04 19:40",
+          "originallink": "https://www.ggilbo.com/news/articleView.html?idxno=1140232"
+        },
+        {
+          "title": "['클릭' 증시] '국민주' 삼성전자 시총 1000조 돌파",
+          "link": "http://www.00news.co.kr/news/articleView.html?idxno=101684",
+          "description": "지난해 4월 이후 이어진 상승세로 주식거래에 관심이 없거나 부정적이던 국민들도 시장 참여에 나서기... 한화에어로스페이스, 두산에너빌리티, 기아 등이 상승하고 SK하이닉스와 삼성전자 우는 떨어졌다. 코스닥 시장...",
+          "pubDate": "02-04 18:10",
+          "originallink": "http://www.00news.co.kr/news/articleView.html?idxno=101684"
+        },
+        {
+          "title": "순식간에 돌변한 외국인…삼성전자 1조 넘게 팔아치우더니",
+          "link": "https://n.news.naver.com/mnews/article/015/0005246872?sid=101",
+          "description": "공매도 관점에서 큰 수익을 내기 어려운 데다 빌린 주식을 갚기 위해 되사는 과정에서 더 큰 손실을 보는... 외국인이 이달 가장 많이 사들인 종목은 두산에너빌리티(4210억원)로 나타났다. 대한전선(4위·1060억원)에도...",
+          "pubDate": "02-04 17:24",
+          "originallink": "https://www.hankyung.com/article/2026020442751"
+        }
+      ]
+    },
+    {
+      "name": "삼성제약",
+      "code": "001360",
+      "current_price": "2,075원",
+      "change": "+146원",
+      "change_percent": "+7.57%",
+      "signal": "매수",
+      "reason": "외국인의 강한 순매수와 함께 유의미한 거래량으로 주가가 상승하며 골든크로스가 형성되었다. 매도 잔량 데이터 오류로 정확한 판단은 어렵지만, 강한 매수 모멘텀이 단기 상승 추세 전환을 시사한다.",
+      "capture_time": "2026-02-04 20:29:37",
+      "analysis_time": "2026-02-04 20:47:25",
+      "news": [
+        {
+          "title": "[주식마감기사] '태양광 사업' 기대감에 HD현대에너지솔루션 상한가... ...",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1140232",
+          "description": "대성산업은 지난 1947년 대성산업공사를 모태로 2010년 분할 설립됐으며, 2017년 주식회사 대성합동지주와... 두산에너빌리티, 삼성제약, SK증권이다. 이날 코스닥 시장 거래 상위종목 30위는 LK삼양, 케이바이오...",
+          "pubDate": "02-04 19:40",
+          "originallink": "https://www.ggilbo.com/news/articleView.html?idxno=1140232"
+        },
+        {
+          "title": "주식시장 활황 속 제약ㆍ바이오주 상대적 부진",
+          "link": "http://www.newsmp.com/news/articleView.html?idxno=251412",
+          "description": "이 가운데 유가증권시장에서는 삼양바이오팜이 82.1%의 상승률로 5위를, 현대약품은 41.1%로 31위를 기록했으며, JW중외제약과 삼성제약, 한올바이오파마, 셀트리온 등도 두 자릿수의 상승률로 200위 안에 이름을...",
+          "pubDate": "02-02 12:22",
+          "originallink": "http://www.newsmp.com/news/articleView.html?idxno=251412"
+        },
+        {
+          "title": "삼성제약 주가, 1월 28일 장중 1,657원 2.98% 상승",
+          "link": "https://www.job-post.co.kr/news/articleView.html?idxno=204381",
+          "description": "총 상장주식수 94,162,079주 중 외국인 보유 주식수는 2,828,832주로, 외국인 소진율은 3.00%를 기록하고 있다. 지난 거래일 삼성제약은 시가 1,631원으로 시작하여 고가 1,650원, 저가 1,600원을 기록한 뒤 1,609원으로...",
+          "pubDate": "01-28 10:46",
+          "originallink": "https://www.job-post.co.kr/news/articleView.html?idxno=204381"
+        }
+      ]
+    },
+    {
+      "name": "SK증권",
+      "code": "001510",
+      "current_price": "943원",
+      "change": "+11원",
+      "change_percent": "+1.18%",
+      "signal": "중립",
+      "reason": "거래량이 급감한 가운데 주가가 소폭 상승하며 횡보하는 모습을 보이며 방향성을 탐색 중이다. 매도 잔량 우위와 외국인 순매도는 불안 요인으로 작용하며, 높은 추정 PER은 투자 매력을 낮춘다.",
+      "capture_time": "2026-02-04 20:29:44",
+      "analysis_time": "2026-02-04 20:47:25",
+      "news": [
+        {
+          "title": "[토요줌IN] ‘꿈의 지수’ 이후 흔들리는 증시…변동성 장세 본격화",
+          "link": "https://sateconomy.co.kr/news/view/1065606323814773",
+          "description": "SK증권은 “올해 주식시장은 변동성을 동반한 우상향 흐름을 이어가겠지만 유동성 장세보다는 실적 중심 장세에 가까운 환경”이라며 “대형 IT(정보기술) 기업과 정부 지출이 집중되는 AI(인공지능) 인프라 관련 산업...",
+          "pubDate": "02-04 19:50",
+          "originallink": "https://sateconomy.co.kr/news/view/1065606323814773"
+        },
+        {
+          "title": "[주식마감기사] '태양광 사업' 기대감에 HD현대에너지솔루션 상한가... ...",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1140232",
+          "description": "대성산업은 지난 1947년 대성산업공사를 모태로 2010년 분할 설립됐으며, 2017년 주식회사 대성합동지주와... 삼성제약, SK증권이다. 이날 코스닥 시장 거래 상위종목 30위는 LK삼양, 케이바이오, 우리기술, 시지메드텍...",
+          "pubDate": "02-04 19:40",
+          "originallink": "https://www.ggilbo.com/news/articleView.html?idxno=1140232"
+        },
+        {
+          "title": "지난해 웃은 증권사들…올해는 '실력 시험대'",
+          "link": "http://www.srtimes.kr/news/articleView.html?idxno=196035",
+          "description": "주식시장 회복과 거래대금 증가, 대형 기업공개(IPO) 재개가 맞물리면서 실적 지표도 빠르게 개선됐다. 다만... SK증권은 당기순이익 326억원을 기록해 전년 손실에서 흑자 전환했고, 영업이익도 85억원으로 돌아섰다....",
+          "pubDate": "02-04 18:00",
+          "originallink": "http://www.srtimes.kr/news/articleView.html?idxno=196035"
+        }
+      ]
+    },
+    {
+      "name": "한전산업",
+      "code": "130660",
+      "current_price": "16,100원",
+      "change": "+2,500원",
+      "change_percent": "+18.46%",
+      "signal": "매수",
+      "reason": "외국인과 기관의 강력한 순매수와 폭발적인 거래량으로 주가가 크게 상승하며 52주 최고가에 근접했다. 긴 위꼬리가 단기 차익 실현 압력을 시사하나, 압도적인 매수 잔량 우위는 추가 상승 가능성을 높인다.",
+      "capture_time": "2026-02-04 20:29:52",
+      "analysis_time": "2026-02-04 20:47:25",
+      "news": [
+        {
+          "title": "['클릭' 증시] '국민주' 삼성전자 시총 1000조 돌파",
+          "link": "http://www.00news.co.kr/news/articleView.html?idxno=101684",
+          "description": "지난해 4월 이후 이어진 상승세로 주식거래에 관심이 없거나 부정적이던 국민들도 시장 참여에 나서기... 그러면서 \"두 가지 이유 모두 AI의 수요 악화 요인은 아니다\"며 \"궁극적으로 빠른속도로 발전하는 AI 산업과...",
+          "pubDate": "02-04 18:10",
+          "originallink": "http://www.00news.co.kr/news/articleView.html?idxno=101684"
+        },
+        {
+          "title": "발전공기업 통합안 연말 가닥… 사업 이관 등 구조조정 난관",
+          "link": "https://www.asiatoday.co.kr/view.php?key=20260205010001725",
+          "description": "풍력산업발전전략위원장은 \"재생에너지 공공부문에서 대표 선수가 나오고 민간 개발사 한 곳과 함께 국내 시장을 선도하면, 아시아 태평양을 충분히 리드할 수 있다\"며 \"어차피 발전사들은 한전의 100% 자회사이기 때문에...",
+          "pubDate": "02-04 18:08",
+          "originallink": "https://www.asiatoday.co.kr/view.php?key=20260205010001725"
+        },
+        {
+          "title": "[위클리오늘] 해남군, \"에너지로 군민소득 올린다\"신재생에너지 군민펀...",
+          "link": "http://www.weeklytoday.com/news/articleView.html?idxno=756982",
+          "description": "군은 국가AI컴퓨팅센터 유치와 LS그룹의 화원산단 해상풍력 전용항만 구축사업, 한전KDN의 에너지특화AI데이터센터 조성 등이 확정되고, 지산지소(地産地消) 에너지 대전환의 계기가 될 RE100국가산업단지와 반도체...",
+          "pubDate": "02-04 17:44",
+          "originallink": "http://www.weeklytoday.com/news/articleView.html?idxno=756982"
+        }
+      ]
+    },
+    {
+      "name": "한화생명",
+      "code": "088350",
+      "current_price": "3,835원",
+      "change": "+200원",
+      "change_percent": "+5.50%",
+      "signal": "중립",
+      "reason": "주가가 높은 상승률과 거래량으로 단기 상승 추세로 전환되었으나, 외국인 순매도와 매도 잔량 우위가 단기 조정 가능성을 시사한다. 높은 추정 PER 또한 신중한 접근을 필요로 한다.",
+      "capture_time": "2026-02-04 20:29:59",
+      "analysis_time": "2026-02-04 20:47:25",
+      "news": [
+        {
+          "title": "[주요공시] 2월 4일 오후",
+          "link": "https://www.ebn.co.kr/news/articleView.html?idxno=1698402",
+          "description": "진인혜 상무는 보유 중이던 전환사채(CB)에 대한 전환권 행사해 HLB이노베이션 주식 신규 취득.... ▲ 한화생명, 지난해 당기순이익 8010억원…7.51% 감소 =한화생명 연결 기준 지난해 당기순이익이...",
+          "pubDate": "02-04 18:44",
+          "originallink": "https://www.ebn.co.kr/news/articleView.html?idxno=1698402"
+        },
+        {
+          "title": "한화생명·서울보증 지분 언제 팔까…만료 앞둔 예보채상환기금",
+          "link": "https://news.einfomax.co.kr/news/articleView.html?idxno=4397128",
+          "description": "예보는 \"한화생명 주식은 현재 주가가 낮은 수준에 머물고 있어 본격적인 매각은 어려운 상황\"이라며 \"주가 동향 등 매각 여건을 지속 점검하면서 매각방안을 검토할 계획\"이라고 말했다. 한화생명은 지난 2024년 결산...",
+          "pubDate": "02-04 08:54",
+          "originallink": "https://news.einfomax.co.kr/news/articleView.html?idxno=4397128"
+        },
+        {
+          "title": "[이 달의 신문광고] '동계올림픽 국가대표 선수를 응원하는 마음을 담아...",
+          "link": "https://www.banronbodo.com/news/articleView.html?idxno=31686",
+          "description": "한화생명은 주 사업분야인 보험을 넘어, 외국 증권사 인수 등 글로벌 시장에서 대한민국의 이름을 알릴... 여기저기서 투자와 주식 투자에 대한 이야기가 꽃을 피운다. 미래에셋증권은 투자에 관심은 많지만, 주식 시장의...",
+          "pubDate": "02-04 08:00",
+          "originallink": "https://www.banronbodo.com/news/articleView.html?idxno=31686"
+        }
+      ]
+    },
+    {
+      "name": "KG모빌리티",
+      "code": "003620",
+      "current_price": "3,745",
+      "change": "+10",
+      "change_percent": "+0.27%",
+      "signal": "중립",
+      "reason": "현재가가 52주 신저가 부근이며 PBR이 낮아 저평가 매력이 있으나, 중장기 하락 추세와 주요 이동평균선 아래에서 거래되고 있습니다. 외국인의 지속적인 순매도 흐름이 보이며 강한 매수 시그널은 약합니다.",
+      "capture_time": "2026-02-04 20:33:00",
+      "analysis_time": "2026-02-04 20:51:18",
+      "news": [
+        {
+          "title": "전기차 관련주, '룰루랄라 콧노래' 삼성SDI·한온시스템·씨아이에스·휴...",
+          "link": "http://www.finomy.com/news/articleView.html?idxno=249117",
+          "description": "반면 KG모빌리티, 아이에이, 모베이스전자, LS머트리얼즈는 하락했다. KG모빌리티와 아이에이는 전 거래일... 삼영은 1959년 설립된 국내 유일의 커패시터 필름 제조사이자 세계 3위 생산업체로, 2025년 캐스코 주식회사...",
+          "pubDate": "02-04 18:20",
+          "originallink": "http://www.finomy.com/news/articleView.html?idxno=249117"
+        },
+        {
+          "title": "자율주행차 관련주, '함박웃음' 다산디엠씨·넥스트칩·드림텍·삼성전...",
+          "link": "http://www.finomy.com/news/articleView.html?idxno=249029",
+          "description": "삼보모터스, KG모빌리티, 한라캐스트, NAVER는 상승했다. 다산디엠씨와 넥스트칩은 전 거래일 대비 각각... 다산디엠씨는 1998년 설립되어 2025년 (주)디엠씨 주식 추가 취득으로 자동차 부품 사업에 신규진출했다....",
+          "pubDate": "02-04 00:20",
+          "originallink": "http://www.finomy.com/news/articleView.html?idxno=249029"
+        },
+        {
+          "title": "‘쌍용차 인수’ 미끼로 주가조작…에디슨모터스 前 회장 ‘징역 3년’",
+          "link": "https://n.news.naver.com/mnews/article/018/0006212530?sid=102",
+          "description": "쌍용차(현 KG모빌리티) 인수를 미끼로 주가를 띄워 이익을 챙긴 혐의를 받는 강영권(67) 에디슨모터스 회장이... 회사 주식을 사들였다. 부정거래를 통해 회사 주가가 뛰자 에디슨EV의 대주주였던 6개 투자조합은 주식...",
+          "pubDate": "02-03 17:29",
+          "originallink": "http://www.edaily.co.kr/news/newspath.asp?newsid=04765846645346912"
+        }
+      ]
+    },
+    {
+      "name": "다이나믹디자인",
+      "code": "145210",
+      "current_price": "436",
+      "change": "+6",
+      "change_percent": "+1.39%",
+      "signal": "중립",
+      "reason": "52주 신저가 부근에서 PBR 0.37배로 저평가되어 있으나, 장기 하락 추세가 뚜렷하고 오늘 긴 윗꼬리 캔들이 형성되어 매도 압력이 강합니다. 외국인/기관의 유의미한 매수세가 없어 상승 동력이 부족합니다.",
+      "capture_time": "2026-02-04 20:33:07",
+      "analysis_time": "2026-02-04 20:51:18",
+      "news": [
+        {
+          "title": "다이나믹디자인, 유상증자 결정…보통주 1000만주 발행",
+          "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=626930",
+          "description": "주요사항보고서(유상증자결정) 금융위원회 / 한국거래소 귀중 2026 년 02 월 04 일회 사 명 :주식회사 다이나믹디자인대 표 이 사 :황 응 연본 점 소 재 지 :광주광역시 북구 첨단연신로 29번길 12(전 화)062-944-6161...",
+          "pubDate": "02-04 14:46",
+          "originallink": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=626930"
+        },
+        {
+          "title": "[박정식의 국내 주식시황] Fed 금리 동결 속 반도체·이차전지 중심 상승...",
+          "link": "https://www.newsquest.co.kr/news/articleView.html?idxno=260938",
+          "description": "거래량 상위 종목으로는 KG모빌리티, MDS테크, 대한광통신, 남선알미늄, 다이나믹디자인 등이 있다. 전일(28일) 대체거래소(NXT) 애프터마켓에서는 미래에셋생명의 자사주 소각 결정 소식에 주가가 상승했다. SK하이닉스의...",
+          "pubDate": "01-29 09:14",
+          "originallink": "https://www.newsquest.co.kr/news/articleView.html?idxno=260938"
+        },
+        {
+          "title": "1월 27일 주식시장 주요공시",
+          "link": "https://www.catchnews.kr/news/articleView.html?idxno=119958",
+          "description": "생산중단(생산재개예정일:2026-03-26) ▶알파AI, 엔지더블유 주식 275만주를 55억원에 신규 취득키로... 지정 ▶다이나믹디자인, 공매도 과열종목 지정 ▶뉴로메카, 공매도 과열종목 연장...",
+          "pubDate": "01-28 08:50",
+          "originallink": "https://www.catchnews.kr/news/articleView.html?idxno=119958"
+        }
+      ]
+    },
+    {
+      "name": "와이투솔루션",
+      "code": "011690",
+      "current_price": "6,120",
+      "change": "+20",
+      "change_percent": "+0.33%",
+      "signal": "중립",
+      "reason": "강한 상승 추세로 52주 신고가를 경신하며 외국인과 개인의 매수세가 지속되고 있습니다. 하지만 오늘 도지 캔들과 긴 윗꼬리가 나타나며 단기 고점 부담과 함께 차익실현 매물이 출회될 가능성이 있어 보수적인 접근이 필요합니다.",
+      "capture_time": "2026-02-04 20:33:15",
+      "analysis_time": "2026-02-04 20:51:18",
+      "news": [
+        {
+          "title": "돈 몰리는 디스플레이 상장주(株)… 1400만 데이터가 꼽은 '진짜 1위'",
+          "link": "https://www.wikitree.co.kr/articles/1115685",
+          "description": "시장지수(주식 시장 내 기업의 시가총액과 거래 규모를 기반으로 산출한 지표)에서 강세를 보이며... AP시스템, 와이투솔루션, 오성첨단소재, HB테크놀러지, 베셀, 미래컴퍼니, 우리바이오, 토비스, 야스, 인베니아...",
+          "pubDate": "02-04 17:52",
+          "originallink": "https://www.wikitree.co.kr/articles/1115685"
+        },
+        {
+          "title": "로봇·산업용·협동로봇 관련주, '웃음꽃' TPC·대동기어·아진엑스텍·...",
+          "link": "http://www.finomy.com/news/articleView.html?idxno=249027",
+          "description": "지난 12일부터 13일까지 이틀간 장내에서 주식을 취득해 보유 주식 수는 22만7739주로 증가했다. 지분율은 0.43%에서 0.62%로 확대됐다. 와이투솔루션은 최근 로봇 사업 전담 조직을 공식 발족하고 차세대 자율주행로봇...",
+          "pubDate": "02-04 00:10",
+          "originallink": "http://www.finomy.com/news/articleView.html?idxno=249027"
+        },
+        {
+          "title": "[베스트&워스트] 와이투솔루션 40.71% 급등⋯SK스퀘어도 강세",
+          "link": "https://www.etoday.co.kr/news/view/2551596",
+          "description": "주간 상승률 1위는 와이투솔루션이다. 와이투솔루션은 4200원에서 5910원으로 40.71% 급등했다. 로봇과... 유상증자 추진 이슈가 부각되면서 주식 가치 희석 우려가 반영된 것으로 풀이된다. 진양화학은...",
+          "pubDate": "01-31 09:02",
+          "originallink": "https://www.etoday.co.kr/news/view/2551596"
+        }
+      ]
+    },
+    {
+      "name": "한신기계",
+      "code": "011700",
+      "current_price": "4,240",
+      "change": "+150",
+      "change_percent": "+3.67%",
+      "signal": "매수",
+      "reason": "단기 상승 추세가 명확하며, 오늘 강한 양봉으로 저항선을 돌파했습니다. 외국인과 개인의 꾸준한 매수세가 뒷받침되고 있으며, 모든 이동평균선이 정배열을 형성하며 상승 동력을 확보했습니다.",
+      "capture_time": "2026-02-04 20:33:22",
+      "analysis_time": "2026-02-04 20:51:18",
+      "news": [
+        {
+          "title": "\"美는 규제 풀고 韓은 짓는다\"…원전주, '한미 협력 기대감'에 강세",
+          "link": "https://www.apnews.kr/news/articleView.html?idxno=3045540",
+          "description": "©AP신문(AP뉴스)/이미지 제공 = 주식차트연구소 ▲주도 테마지도 국내 원전 관련주가 강세 흐름을... 05%), 한신기계(+3.67%), 우진엔텍(+3.65%), 에너토크(+3.56%), 우리기술(+3.38%), 서전기전(+1.89%), 일진파워(+1.84%), 삼성물산...",
+          "pubDate": "02-04 16:44",
+          "originallink": "https://www.apnews.kr/news/articleView.html?idxno=3045540"
+        },
+        {
+          "title": "원자력발전 관련주, '껑충껑충' 삼미금속·대한전선·두산에너빌리티·...",
+          "link": "http://www.finomy.com/news/articleView.html?idxno=249024",
+          "description": "한전산업, 한신기계, 금화피에스시, 광명전기, 한전KPS, 수산인더스트리, 이엠코리아, 하이록코리아... 이후 1961년 '한국전력주식회사'로 개편되고, 1982년 현재의 통합형 전력공기업으로 재설립되며 국가 전력공급의...",
+          "pubDate": "02-03 18:20",
+          "originallink": "http://www.finomy.com/news/articleView.html?idxno=249024"
+        },
+        {
+          "title": "원자력발전 관련주, '함박웃음' SNT에너지·대한전선·보성파워텍·두산...",
+          "link": "http://www.finomy.com/news/articleView.html?idxno=248727",
+          "description": "29일 한국거래소에 따르면 SNT에너지, 한양이엔지, 비에이치아이, 대한전선, 삼미금속, 한신기계, 우진... 이후 1961년 '한국전력주식회사'로 개편되고, 1982년 현재의 통합형 전력공기업으로 재설립되며 국가...",
+          "pubDate": "01-30 00:06",
+          "originallink": "http://www.finomy.com/news/articleView.html?idxno=248727"
+        }
+      ]
+    },
+    {
+      "name": "제주은행",
+      "code": "006220",
+      "current_price": "16,350",
+      "change": "+150",
+      "change_percent": "+0.93%",
+      "signal": "매수",
+      "reason": "최근 가격 조정에도 불구하고 기관의 강력한 순매수세가 유입되며 단기 바닥을 형성하는 모습입니다. PBR 0.95배 수준이며, 전반적인 상승 추세 내에서의 조정으로 판단되며 반등 가능성이 높습니다.",
+      "capture_time": "2026-02-04 20:33:31",
+      "analysis_time": "2026-02-04 20:51:18",
+      "news": [
+        {
+          "title": "[주식마감기사] '은값 폭락'에 은 인버스 ETN 폭등... 현대비앤지스틸, ...",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1139638",
+          "description": "삼성액티브자산운용은 지난달 22일 금융위원회와 한국거래소에 주식 등의 대량보유상황보고서... 2차전지TOP10레버리지, 제주은행, ACE KRX금현물, 남선알미늄, 한화갤러리아, 대성산업, KODEX 2차전지산업, KODEX...",
+          "pubDate": "02-02 19:40",
+          "originallink": "https://www.ggilbo.com/news/articleView.html?idxno=1139638"
+        },
+        {
+          "title": "[이달해의 달달한 10분] '엔비알모션' 로보택시 최대 수혜! \"상장 후 첫...",
+          "link": "https://news.mtn.co.kr/news-detail/2026020214062377411",
+          "description": "화상>이달해 주식명가 MTN W 어드바이저▶실시간 종목 검색 상위 TOP10- 에코프로- 제주은행▶달달한 공략주 : 엔비알모션- 구동계 베이링·고정밀 소재 부품 기업- 테이퍼롤러 국내 유일 생산 기업- 테슬라...",
+          "pubDate": "02-02 14:12",
+          "originallink": "https://news.mtn.co.kr/news-detail/2026020214062377411"
+        },
+        {
+          "title": "제주은행 주가, 2월 2일 장중 16,020원 13.05% 상승",
+          "link": "https://www.stardailynews.co.kr/news/articleView.html?idxno=521916",
+          "description": "재무 지표를 살펴보면, 제주은행의 주가수익비율(PER)은 41.61배로, 동일업종 PER인 8.04배와 비교했을 때 현저히 높은 수준이다. 외국인 소진율은 상장주식수 37,798,557주 중 140,669주를 보유하며 0.37%로 매우...",
+          "pubDate": "02-02 14:04",
+          "originallink": "https://www.stardailynews.co.kr/news/articleView.html?idxno=521916"
+        }
+      ]
+    },
+    {
+      "name": "동양고속",
+      "code": "084670",
+      "current_price": "69,900",
+      "change": "+600",
+      "change_percent": "+0.87%",
+      "signal": "중립",
+      "reason": "강력한 상승 추세로 52주 신고가에 근접하였고 모든 이동평균선이 정배열을 보입니다. 하지만 오늘 긴 윗꼬리 양봉은 단기 과열 및 차익실현 매물 출회를 시사하며, 개인 매수 주도 상승은 지속 가능성에 의문이 있습니다.",
+      "capture_time": "2026-02-04 20:33:38",
+      "analysis_time": "2026-02-04 20:51:18",
+      "news": [
+        {
+          "title": "동양고속 주가, 2월 4일 장중 69,400원 19.04% 상승",
+          "link": "https://www.joongangenews.com/news/articleView.html?idxno=492725",
+          "description": "현재 코스피 시장에서 동양고속은 시가총액 2,007억 원을 기록하며 시가총액 순위 832위에 자리하고 있다. 외국인 투자자의 매매 동향을 살펴보면, 상장주식수 2,895,569주 중 외국인 보유 주식수는 25,314주로...",
+          "pubDate": "02-04 10:52",
+          "originallink": "https://www.joongangenews.com/news/articleView.html?idxno=492725"
+        },
+        {
+          "title": "마산·평택 터미널 쥐고 미디어까지… 동양고속의 조용한 영토 확장",
+          "link": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=425067",
+          "description": "교통 인프라 중심 기업 동양고속과 경방도 강세를 이어간다. 동양고속은 장 초반 16%대 상승하며 자산 기반의... 이번 상승은 투자자들의 안전자산 선호와 함께 실물자산 가치가 주식시장에 반영되는 움직임으로 평가된다.",
+          "pubDate": "02-03 12:56",
+          "originallink": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=425067"
+        },
+        {
+          "title": "증시도 ‘부동산 불패’...삼표시멘트, 성수동 개발 기대감에 상한가 [...",
+          "link": "https://n.news.naver.com/mnews/article/011/0004585653?sid=101",
+          "description": "서울고속버스터미널 재개발 수혜주로 묶이는 동양고속(084670)은 전 거래일 대비 15.99% 오른 5만 7300원, 천일고속(000650)은 6.74% 뛴 30만 9000원을 기록 중이다. 이외에도 대성산업(128820)이 13.47% 상승하고 있다.",
+          "pubDate": "02-02 14:50",
+          "originallink": "https://www.sedaily.com/article/20003712?ref=naver"
+        }
+      ]
+    },
+    {
+      "name": "전진건설로봇",
+      "code": "079900",
+      "current_price": "64,500",
+      "change": "+100",
+      "change_percent": "+0.16%",
+      "signal": "중립",
+      "reason": "장기 상승 추세 속 단기 조정 국면으로, 기관의 지속적인 매도세와 높은 PER은 부담 요인입니다. 오늘 도지 캔들과 높은 거래량은 매수/매도 균형을 보여주지만, 기관 매도가 추세 전환의 가능성을 시사합니다.",
+      "capture_time": "2026-02-04 20:33:46",
+      "analysis_time": "2026-02-04 20:51:18",
+      "news": [
+        {
+          "title": "[주식마감기사] '상장폐지' 피한 파두, 거래재개 후 상한가... 전진건설...",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1139940",
+          "description": "3일 전진건설로봇, 삼표시멘트, 파두, 미래에셋벤처투자, LK삼양, 이녹스, 다산디엠씨, 하이즈항공... 이는 '뻥튀기 상장' 의혹에 휩싸였던 파두의 주식 거래가 이날부터 재개되면서 영향을 받은 것으로 풀이된다....",
+          "pubDate": "02-03 19:40",
+          "originallink": "https://www.ggilbo.com/news/articleView.html?idxno=1139940"
+        },
+        {
+          "title": "[애프터마켓 브리핑] JP모건 \"코스피 6000 넘어 7500까지\"",
+          "link": "https://n.news.naver.com/mnews/article/374/0000490457?sid=101",
+          "description": "우선 정규장 후반에 우크라이나 호재로 전진건설로봇과 HD건설기계 급등했습니다. 내일(4일) 미국과... 상무이사가 보유 주식을 전량 매도하며 투자자들을 자극한 것으로 보입니다. 펄어비스는 5.24% 하락률 보이며...",
+          "pubDate": "02-03 16:52",
+          "originallink": "https://biz.sbs.co.kr/article_hub/20000289327?division=NAVER"
+        },
+        {
+          "title": "누가 '4일 천하'래? 워시 쇼크 싹 씻고 '5천피' 진짜 시작이다 [뉴스톡 ...",
+          "link": "http://www.newswell.co.kr/news/articleView.html?idxno=15904",
+          "description": "/자료=네이버 증권정보 상한가 종목은 ▲전진건설로봇 ▲삼표시멘트 ▲파두 ▲미래에셋벤처투자... 양 주식시장은 전날 반납분을 회복했다. 코스피지수는 338.41p(6.84%) 뛴 5288.08로 5천피를 가볍게 되찾았고, 코스닥은...",
+          "pubDate": "02-03 15:38",
+          "originallink": "http://www.newswell.co.kr/news/articleView.html?idxno=15904"
+        }
+      ]
+    },
+    {
+      "name": "삼일제약",
+      "code": "000520",
+      "current_price": "12,220",
+      "change": "+1,390",
+      "change_percent": "+12.83%",
+      "signal": "적극매수",
+      "reason": "오늘 강한 거래량과 함께 의미 있는 가격 상승으로 저항선을 돌파하며 매우 긍정적인 매수 시그널을 보였습니다. 모든 이동평균선이 정배열 상태로 전환되어 상승 추세가 강화될 것으로 예상되며, 외국인 매수세 유입도 긍정적입니다.",
+      "capture_time": "2026-02-04 20:33:54",
+      "analysis_time": "2026-02-04 20:51:18",
+      "news": [
+        {
+          "title": "[주식] 매출·영업익 급증 씨어스테크놀로지, '재료 소멸' 인식에 7% 약세",
+          "link": "https://www.hitnews.co.kr/news/articleView.html?idxno=73596",
+          "description": "오늘의 증시 시장 지수 KOSPI: 5,371.10 (▲1.57%) KOSDAQ: 1,149.43 (▲0.45%) 상승 종목 코미팜(+15.44%), 삼일제약(+12.83%), 제이엘케이(+10.68%), 한미약품(+7.36%), JW홀딩스(+7.20%) 하락 종목 씨어스테크놀로지...",
+          "pubDate": "02-04 20:22",
+          "originallink": "https://www.hitnews.co.kr/news/articleView.html?idxno=73596"
+        },
+        {
+          "title": "셀트리온·삼성바이오로직스 외국인 주식 보유액 10조원 돌파",
+          "link": "http://www.bosa.co.kr/news/articleView.html?idxno=2269267",
+          "description": "2026년 1월 코스피 제약바이오기업의 외국인 주식 보유액은 25.5조원으로 지난해 12월 대비 2.7조원... 85%p 증가, 삼일제약 0.78%p 증가, 종근당바이오 0.65%p 증가, 일동제약 0.64%p 증가, 부광약품 0.63%p 증가...",
+          "pubDate": "02-04 06:00",
+          "originallink": "http://www.bosa.co.kr/news/articleView.html?idxno=2269267"
+        },
+        {
+          "title": "1월 26일 주식시장 주요공시",
+          "link": "https://www.catchnews.kr/news/articleView.html?idxno=119900",
+          "description": "보유주식 5,810,350주를 250억원에 양도하는 최대주주 변경 수반 주식양수도 계약 체결(변경예정일... 47%) ▶삼일제약, 2025년 연결기준 매출액 2,103.68억원(전년대비 -4.24%), 영업손실 221.55억원(전년대비...",
+          "pubDate": "01-27 08:53",
+          "originallink": "https://www.catchnews.kr/news/articleView.html?idxno=119900"
+        }
+      ]
+    },
+    {
+      "name": "카카오",
+      "code": "035720",
+      "current_price": "58,500",
+      "change": "+200",
+      "change_percent": "+0.34%",
+      "signal": "중립",
+      "reason": "장기 하락 추세 속에서 최근 횡보하며 기관 매수세가 유입되지만, 외국인 매도세와 높은 PER이 부담입니다. 주요 이동평균선 아래에 위치하고 있어 명확한 상승 추세로의 전환 시그널이 부족하여 관망이 필요합니다.",
+      "capture_time": "2026-02-04 20:34:02",
+      "analysis_time": "2026-02-04 20:51:18",
+      "news": [
+        {
+          "title": "\"AI 전환 vs 고용 안정\"…카카오, 사업 재편 딜레마에 빠지다",
+          "link": "http://www.ftoday.co.kr/news/articleView.html?idxno=354621",
+          "description": "지난달 29일 AXZ 모회사인 카카오와 AI 기업 업스테이지는 주식교환 거래 등을 위한 양해각서(MOU) 체결을 승인했다. 카카오가 보유한 AXZ 지분을 업스테이지에 넘기고, 업스테이지의 일정 지분을 카카오가 취득하는...",
+          "pubDate": "02-04 19:42",
+          "originallink": "http://www.ftoday.co.kr/news/articleView.html?idxno=354621"
+        },
+        {
+          "title": "카카오뱅크, 비이자수익 1조 돌파 기반 '역대 최대 실적' 달성",
+          "link": "http://www.enewstoday.co.kr/news/articleView.html?idxno=2390805",
+          "description": "카카오뱅크는 '2025년 경영실적 발표'를 통해 지속적인 고객 유입 및 트래픽 확대를 기반으로 전 부문의... 2분기 투자 탭을 신설해 고객이 MMF, 가상자산, 국내 외 주식매매 등 다양한 금융 상품을 한 눈에 비교하고...",
+          "pubDate": "02-04 19:09",
+          "originallink": "http://www.enewstoday.co.kr/news/articleView.html?idxno=2390805"
+        },
+        {
+          "title": "주식 양도소득세 예정신고 기한은 3.3.입니다",
+          "link": "https://www.ktv.go.kr/content/view?content_id=747534",
+          "description": "대상은 상장주식 대주주나 장외 거래 투자자, 비상장 주식 거래자 등입니다. 국세청은 카카오톡으로 안내문을 보내고, 홈택스에서 자동으로 거래내역을 채워주는 '미리채움 서비스'도 제공합니다. 기한을 넘기면 가산세가...",
+          "pubDate": "02-04 19:00",
+          "originallink": "https://www.ktv.go.kr/content/view?content_id=747534"
+        }
+      ]
+    },
+    {
+      "name": "에이피알",
+      "code": "278470",
+      "current_price": "264,500",
+      "change": "+6,900",
+      "change_percent": "+2.67%",
+      "signal": "중립",
+      "reason": "상장 초 높은 변동성으로 급등락을 보이며, 최근 급락 후 저가 매수세 유입으로 반등하는 모습입니다. 그러나 외국인/기관의 매도세와 명확하지 않은 추세는 불확실성을 높이며, 추가적인 주가 움직임을 관망할 필요가 있습니다.",
+      "capture_time": "2026-02-04 20:34:09",
+      "analysis_time": "2026-02-04 20:51:18",
+      "news": [
+        {
+          "title": "조정장 속 금융·반도체주 주목 / 김경준",
+          "link": "http://www.kjdaily.com/article.php?aid=1770113804672750004",
+          "description": "회복되면 주식시장에 다시 우호적인 환경이 조성될 것으로 생각한다. 그렇다면 조정기에 어떤 섹터에... 4%로 강한 수출 데이터를 보이고 있어 아모레퍼시픽과 에이피알도 조정시 매수대상으로 보인다. 반면 석유화학(-1....",
+          "pubDate": "02-03 19:54",
+          "originallink": "http://www.kjdaily.com/article.php?aid=1770113804672750004"
+        },
+        {
+          "title": "[코스피 지수선물 옵션] 현대로템·한화에어로 급부상… 선물시장에 나...",
+          "link": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=425247",
+          "description": "코스피 지수선물·옵션 시장에서 3일 장 종료 시점 기준으로 확인된 개별주식선물 흐름이 현물시장과는... 삼양식품, 에이피알이 거래됐다. 방산·로봇·첨단기계 분야에서는 현대로템, 한화시스템, LIG넥스원, 두산...",
+          "pubDate": "02-03 16:44",
+          "originallink": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=425247"
+        },
+        {
+          "title": "화장품 수출 급증에도, 에이피알·달바글로벌 '장중 뚝'...왜?",
+          "link": "http://www.choicenews.co.kr/news/articleView.html?idxno=160483",
+          "description": "3일 증시에서 에이피알, 달바글로벌 등 화장품주 주가가 장중 약세를 기록 중이다. 한국의 1월 화장품... 특정 섹터 및 특정 기업에 대한 분석 내용과 이슈, 특정 테마는 지켜봐야 하는 경우가 많은 데다, 주식투자는...",
+          "pubDate": "02-03 11:36",
+          "originallink": "http://www.choicenews.co.kr/news/articleView.html?idxno=160483"
+        }
+      ]
+    },
+    {
+      "name": "LK삼양",
+      "code": "225190",
+      "current_price": "2,185",
+      "change": "+80",
+      "change_percent": "+3.79%",
+      "signal": "매수",
+      "reason": "명확한 단기 상승 추세에 있으며, 오늘 대량 거래량과 함께 강한 상승을 보였습니다. 모든 이동평균선이 정배열을 형성하며 상승 모멘텀이 강하지만, 윗꼬리가 길게 형성된 점은 단기적인 매도 압력을 시사하므로 주의가 필요합니다.",
+      "capture_time": "2026-02-04 20:34:16",
+      "analysis_time": "2026-02-04 20:51:18",
+      "news": [
+        {
+          "title": "[주식마감기사] '태양광 사업' 기대감에 HD현대에너지솔루션 상한가... ...",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1140232",
+          "description": "대성산업은 지난 1947년 대성산업공사를 모태로 2010년 분할 설립됐으며, 2017년 주식회사 대성합동지주와... 이날 코스닥 시장 거래 상위종목 30위는 LK삼양, 케이바이오, 우리기술, 시지메드텍, KD, 유니슨, 테라뷰...",
+          "pubDate": "02-04 19:40",
+          "originallink": "https://www.ggilbo.com/news/articleView.html?idxno=1140232"
+        },
+        {
+          "title": "LK삼양 주가, 2거래일 연속 강세... 호재는?",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1140265",
+          "description": "지난 3일 외국인은 90만4213주를 순매수하며 보유 주식 수를 169만2487주로 늘렸고, 보유 비율은 2.40%로 확대됐다. 최근 거래일 기준 LK삼양의 주가는 지난달 말 이후 변동성이 확대되는 모습이다. 지난 1월 28일부터 2월...",
+          "pubDate": "02-04 19:36",
+          "originallink": "https://www.ggilbo.com/news/articleView.html?idxno=1140265"
+        },
+        {
+          "title": "LK삼양 주가, 4일 장중 상한가, 2,185원 17.66% 상승",
+          "link": "https://www.e-science.co.kr/news/articleView.html?idxno=124798",
+          "description": "LK삼양의 거래량은 56,106,358주를 기록했으며, 거래대금은 1,263억 300만 원에 달했다. 시가총액은 1,536억 원으로 코스닥 시장 637위이다. 외국인 투자자들의 보유 주식수는 1,692,487주이며, 전체 상장주식수 70...",
+          "pubDate": "02-04 14:14",
+          "originallink": "https://www.e-science.co.kr/news/articleView.html?idxno=124798"
+        }
+      ]
+    },
+    {
+      "name": "케이바이오",
+      "code": "038530",
+      "current_price": "375",
+      "change": "+80",
+      "change_percent": "+27.97%",
+      "signal": "매수",
+      "reason": "금일 매우 높은 거래량과 함께 강한 상승을 보이며 바닥권에서 벗어나려는 강력한 의지를 나타냈습니다. 단기 이동평균선이 급격히 상승 전환 중이며, PBR이 낮아 잠재적인 상승 여력이 크다고 판단됩니다.",
+      "capture_time": "2026-02-04 20:34:23",
+      "analysis_time": "2026-02-04 20:51:18",
+      "news": [
+        {
+          "title": "[주식마감기사] '태양광 사업' 기대감에 HD현대에너지솔루션 상한가... ...",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1140232",
+          "description": "인콘, 케이바이오, 파루, 쏘닉스, 알톤, 이엠앤아이, 코이즈, KD가 상한가에 이름을 올리고 장을 마감한... 대성산업은 지난 1947년 대성산업공사를 모태로 2010년 분할 설립됐으며, 2017년 주식회사 대성합동지주와...",
+          "pubDate": "02-04 19:40",
+          "originallink": "https://www.ggilbo.com/news/articleView.html?idxno=1140232"
+        },
+        {
+          "title": "코로나19·진단·치료제·백신개발 관련주, '맑음' 케이바이오·코미팜·...",
+          "link": "http://www.finomy.com/news/articleView.html?idxno=249116",
+          "description": "4일 한국거래소에 따르면 케이바이오, 코미팜, 샤페론, SV인베스트먼트, 셀리드, 바이오스마트... 변경 사유는 대표이사 주식 일부 매도에 의한 일시적 최대 주주 변경이다. 유틸렉스 측은 \"2026년 1월 15일...",
+          "pubDate": "02-04 18:16",
+          "originallink": "http://www.finomy.com/news/articleView.html?idxno=249116"
+        },
+        {
+          "title": "케이바이오 주가, 2월 4일 375원 29.76% 상승 마감",
+          "link": "https://www.topstarnews.net/news/articleView.html?idxno=15954001",
+          "description": "시장 전체적으로 동일업종 등락률이 1.38% 상승한 것과 비교하면 케이바이오의 주가 상승률은 크게 높은 수준이었다. 외국인 투자자의 보유 현황을 살펴보면, 상장주식수 115,714,347주 중 4,376,775주를 보유하여...",
+          "pubDate": "02-04 16:18",
+          "originallink": "https://www.topstarnews.net/news/articleView.html?idxno=15954001"
+        }
+      ]
+    },
+    {
+      "name": "우리기술",
+      "code": "032820",
+      "current_price": "9,480",
+      "change": "0",
+      "change_percent": "0.00%",
+      "signal": "중립",
+      "reason": "52주 신고가 근접의 강한 상승 추세에 있으나, 고점에서 높은 거래량과 함께 도지 캔들이 형성되어 차익실현 압박이 강합니다. 기관의 지속적인 매도세는 단기적인 주가 조정을 유발할 수 있어 관망이 필요합니다.",
+      "capture_time": "2026-02-04 20:34:30",
+      "analysis_time": "2026-02-04 20:51:18",
+      "news": [
+        {
+          "title": "[해풍단상] 세상에서 인간이 퇴출되는 날",
+          "link": "https://www.ksmnews.co.kr/news/view.php?idx=588938",
+          "description": "주식시장도 AI를 활용해야 한다. 활활 타오르는 불장에서 얼떨결에 빠져나와버린 개미들은 소외된 지옥에서... 하이데거에 의하면 기술 진보 덕분에 우리는 이미 인간의 사유마저 미리 배치하고 호출하는 질서 안으로...",
+          "pubDate": "02-04 20:43",
+          "originallink": "https://www.ksmnews.co.kr/news/view.php?idx=588938"
+        },
+        {
+          "title": "[주식마감기사] '태양광 사업' 기대감에 HD현대에너지솔루션 상한가... ...",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1140232",
+          "description": "대성산업은 지난 1947년 대성산업공사를 모태로 2010년 분할 설립됐으며, 2017년 주식회사 대성합동지주와... 이날 코스닥 시장 거래 상위종목 30위는 LK삼양, 케이바이오, 우리기술, 시지메드텍, KD, 유니슨, 테라뷰...",
+          "pubDate": "02-04 19:40",
+          "originallink": "https://www.ggilbo.com/news/articleView.html?idxno=1140232"
+        },
+        {
+          "title": "\"美는 규제 풀고 韓은 짓는다\"…원전주, '한미 협력 기대감'에 강세",
+          "link": "https://www.apnews.kr/news/articleView.html?idxno=3045540",
+          "description": "©AP신문(AP뉴스)/이미지 제공 = 주식차트연구소 ▲주도 테마지도 국내 원전 관련주가 강세 흐름을... 56%), 우리기술(+3.38%), 서전기전(+1.89%), 일진파워(+1.84%), 삼성물산(+0.48%), 오르비텍(+0.44%), 삼미금속(+0.11%)이 전일...",
+          "pubDate": "02-04 16:44",
+          "originallink": "https://www.apnews.kr/news/articleView.html?idxno=3045540"
+        }
+      ]
+    },
+    {
+      "name": "시지메드텍",
+      "code": "056090",
+      "current_price": "1,875",
+      "change": "+241",
+      "change_percent": "+14.75%",
+      "signal": "적극매수",
+      "reason": "압도적인 거래량과 함께 강한 상승세로 52주 신고가를 경신하며 강력한 매수 시그널을 보였습니다. 모든 이동평균선이 정배열을 유지하며 추가 상승에 대한 기대감이 높고, 단기적인 모멘텀이 매우 강합니다.",
+      "capture_time": "2026-02-04 20:34:37",
+      "analysis_time": "2026-02-04 20:51:18",
+      "news": [
+        {
+          "title": "[주식마감기사] '태양광 사업' 기대감에 HD현대에너지솔루션 상한가... ...",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1140232",
+          "description": "대성산업은 지난 1947년 대성산업공사를 모태로 2010년 분할 설립됐으며, 2017년 주식회사 대성합동지주와... 이날 코스닥 시장 거래 상위종목 30위는 LK삼양, 케이바이오, 우리기술, 시지메드텍, KD, 유니슨, 테라뷰...",
+          "pubDate": "02-04 19:40",
+          "originallink": "https://www.ggilbo.com/news/articleView.html?idxno=1140232"
+        },
+        {
+          "title": "의료기기 관련주, '봄꽃만개' 네오펙트·뉴로핏·시지메드텍... '시들시...",
+          "link": "http://www.finomy.com/news/articleView.html?idxno=248938",
+          "description": "수젠텍, 시지메드텍, 휴마시스는 상승했다. 네오펙트와 뉴로핏과 한스바이오메드는 전 거래일 대비... 원텍은 1999년 설립된 의료기기 전문기업으로, 2022년 대신밸런스제8호기업인수목적과 합병 후 사명을 원텍 주식회...",
+          "pubDate": "02-02 18:16",
+          "originallink": "http://www.finomy.com/news/articleView.html?idxno=248938"
+        },
+        {
+          "title": "의료기기 관련주, '룰루랄라 콧노래' 네오펙트·제테마·시지메드텍·더...",
+          "link": "http://www.finomy.com/news/articleView.html?idxno=248730",
+          "description": "29일 한국거래소에 따르면 네오펙트, 뷰웍스, 제테마, 클래시스, 원텍, 더블유에스아이, 시지메드텍... 원텍은 1999년 설립된 의료기기 전문기업으로, 2022년 대신밸런스제8호기업인수목적과 합병 후 사명을 원텍 주식회...",
+          "pubDate": "01-30 00:16",
+          "originallink": "http://www.finomy.com/news/articleView.html?idxno=248730"
+        }
+      ]
+    },
+    {
+      "name": "KD",
+      "code": "044180",
+      "current_price": "438",
+      "change": "+101",
+      "change_percent": "+29.97%",
+      "signal": "적극매수",
+      "reason": "금일 상한가 기록과 함께 대량 거래가 터지며 강력한 상승 추세로의 전환을 알렸습니다. PBR 0.36배로 매우 저평가되어 있으며, 바닥권 탈출 시그널이 명확하여 추가 상승 가능성이 매우 높습니다.",
+      "capture_time": "2026-02-04 20:34:44",
+      "analysis_time": "2026-02-04 20:51:18",
+      "news": [
+        {
+          "title": "[주식마감기사] '태양광 사업' 기대감에 HD현대에너지솔루션 상한가... ...",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1140232",
+          "description": "코이즈, KD가 상한가에 이름을 올리고 장을 마감한 가운데 투자자들의 관심이 뜨겁다. 이날 코스피... 대성산업은 지난 1947년 대성산업공사를 모태로 2010년 분할 설립됐으며, 2017년 주식회사 대성합동지주와...",
+          "pubDate": "02-04 19:40",
+          "originallink": "https://www.ggilbo.com/news/articleView.html?idxno=1140232"
+        },
+        {
+          "title": "[오늘의 상한가] 삼표시멘트·파두 등",
+          "link": "https://www.joongangenews.com/news/articleView.html?idxno=492938",
+          "description": "|중앙이코노미뉴스 엄현식 기자| 4일 주식시장에서 삼표시멘트, 파두, HD현대에너지솔루션, 한화솔루션... 코이즈, KD 등 주가가 상한가를 기록했다. 이날 한국거래소에 따르면 삼표시멘트 주가는 전 거래일 대비 29.95...",
+          "pubDate": "02-04 16:14",
+          "originallink": "https://www.joongangenews.com/news/articleView.html?idxno=492938"
+        },
+        {
+          "title": "5천피 씹어먹은 '이 지수', 6천피·7천피도 앞당긴다 [뉴스톡 웰스톡]",
+          "link": "http://www.newswell.co.kr/news/articleView.html?idxno=15936",
+          "description": "코스피 지수가 5천피를 훌쩍 넘어 사상 최고치 행진을 이어가는 가운데, 자기주식 소각 등 기업들의... 코이즈 ▲KD는 상한가를 기록했다. 이 가운데 삼표시멘트와 인콘은 3연상, 파두와 유디엠텍, 코이즈는 2연상을...",
+          "pubDate": "02-04 15:36",
+          "originallink": "http://www.newswell.co.kr/news/articleView.html?idxno=15936"
+        }
+      ]
+    },
+    {
+      "name": "유니슨",
+      "code": "018000",
+      "current_price": "1,153",
+      "change": "+50",
+      "change_percent": "+4.54%",
+      "signal": "매수",
+      "reason": "대량 거래량과 함께 강한 상승을 보이며 단기 저항선을 돌파했습니다. 모든 이동평균선이 정배열을 형성하며 강력한 상승 추세에 진입했고, 외국인 매수세 유입도 긍정적인 신호입니다.",
+      "capture_time": "2026-02-04 20:34:51",
+      "analysis_time": "2026-02-04 20:51:18",
+      "news": [
+        {
+          "title": "박원서 대표이사, 유니슨 주식 3만3884주 추가 매수",
+          "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=624360",
+          "description": "발행회사에 관한 사항회 사 명유니슨주식회사법인구분코스닥상장법인회사코드 018000발행주식 총수245,157,7422. 보고자에 관한 사항보고구분변동보고자 구분개인(국내)성명(명칭)한 글박원서한자(영문)...",
+          "pubDate": "01-27 15:36",
+          "originallink": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=624360"
+        },
+        {
+          "title": "유니슨 주가, 1월 22일 장중 1,002원 0.60% 하락",
+          "link": "https://www.joongangenews.com/news/articleView.html?idxno=488740",
+          "description": "외국인 투자자들의 유니슨 주식 소진율은 3.59%로, 이는 전체 상장주식수 대비 외국인 보유 비중이 상대적으로 낮은 수준임을 의미한다. 현재 거래량은 1,367,996주로 집계되었으며, 거래대금은 13억 5,700만 원을...",
+          "pubDate": "01-22 11:28",
+          "originallink": "https://www.joongangenews.com/news/articleView.html?idxno=488740"
+        },
+        {
+          "title": "유니슨 주가, 1월 21일 장중 1,004원 2.90% 하락",
+          "link": "https://www.joongangenews.com/news/articleView.html?idxno=488238",
+          "description": "있는 점은 현재 주가 조정이 업종 평균보다 강하게 나타나고 있음을 시사한다. 외국인 투자자들의 유니슨 주식 소진율은 3.89%이다. 이는 전체 상장주식수 대비 외국인 보유 주식 비율이 낮은 수치에 해당한다.",
+          "pubDate": "01-21 10:48",
+          "originallink": "https://www.joongangenews.com/news/articleView.html?idxno=488238"
+        }
+      ]
+    },
+    {
+      "name": "테라뷰",
+      "code": "950250",
+      "current_price": "10,100",
+      "change": "+650",
+      "change_percent": "+6.88%",
+      "signal": "매수",
+      "reason": "금일 높은 거래량과 함께 강한 상승을 보이며 최근 횡보 구간을 상향 돌파했습니다. 단기 이동평균선이 급격히 상승 전환 중이며, 상승 모멘텀이 강화될 것으로 예상됩니다.",
+      "capture_time": "2026-02-04 20:34:58",
+      "analysis_time": "2026-02-04 20:51:18",
+      "news": [
+        {
+          "title": "[주식마감기사] '태양광 사업' 기대감에 HD현대에너지솔루션 상한가... ...",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1140232",
+          "description": "대성산업은 지난 1947년 대성산업공사를 모태로 2010년 분할 설립됐으며, 2017년 주식회사 대성합동지주와... 이날 코스닥 시장 거래 상위종목 30위는 LK삼양, 케이바이오, 우리기술, 시지메드텍, KD, 유니슨, 테라뷰...",
+          "pubDate": "02-04 19:40",
+          "originallink": "https://www.ggilbo.com/news/articleView.html?idxno=1140232"
+        },
+        {
+          "title": "테라뷰 주가, 2월 4일 10,100원 6.88% 상승 마감",
+          "link": "https://www.topstarnews.net/news/articleView.html?idxno=15954016",
+          "description": "상장주식수 35,517,731주 중 외국인 보유 주식수는 0으로, 외국인 소진율은 0.00%를 기록했다. 동일 업종 등락률이 +0.25%를 보인 가운데, 테라뷰는 이보다 훨씬 높은 상승률을 기록하며 두드러진 움직임을...",
+          "pubDate": "02-04 16:22",
+          "originallink": "https://www.topstarnews.net/news/articleView.html?idxno=15954016"
+        },
+        {
+          "title": "테라뷰 주가, 2월 4일 장중 10,710원 13.33% 상승",
+          "link": "https://www.stardailynews.co.kr/news/articleView.html?idxno=522360",
+          "description": "한도 주식수 35,517,731주 대비 외국인소진율은 0.00%를 보였다. 동일업종의 평균 PER은 25.30이며, 동일업종 등락률이 -0.62%를 기록하는 가운데 테라뷰는 이와 대조적인 상승 흐름을 보였다. 시간대별 시세...",
+          "pubDate": "02-04 13:54",
+          "originallink": "https://www.stardailynews.co.kr/news/articleView.html?idxno=522360"
+        }
+      ]
+    },
+    {
+      "name": "덕산하이메탈",
+      "code": "077360",
+      "current_price": "11,640",
+      "change": "+100",
+      "change_percent": "+0.87%",
+      "signal": "적극매수",
+      "reason": "압도적인 거래량과 함께 강한 상승으로 52주 신고가에 근접하며 강력한 매수 시그널을 보였습니다. 기관과 외국인의 동반 순매수세가 유입되어 상승 모멘텀이 매우 강하고, 추가 상승 여력이 충분합니다.",
+      "capture_time": "2026-02-04 20:35:05",
+      "analysis_time": "2026-02-04 20:51:18",
+      "news": [
+        {
+          "title": "[주식마감기사] '태양광 사업' 기대감에 HD현대에너지솔루션 상한가... ...",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1140232",
+          "description": "대성산업은 지난 1947년 대성산업공사를 모태로 2010년 분할 설립됐으며, 2017년 주식회사 대성합동지주와... 테라뷰, 덕산하이메탈, KX하이텍, SG, 하림, 아이로보틱스, 파루, 유일에너테크, 솔트웨어, 아주IB투자...",
+          "pubDate": "02-04 19:40",
+          "originallink": "https://www.ggilbo.com/news/articleView.html?idxno=1140232"
+        },
+        {
+          "title": "덕산하이메탈 주가, 2월 4일 장중 상한가, 11,640원 26.80% 상승 마감",
+          "link": "https://www.joongangenews.com/news/articleView.html?idxno=492926",
+          "description": "따르면 덕산하이메탈 주가는 지난 종가 9,180원 대비 2,460원(26.80%) 상승한 11,640원에 장을 마감했다.... 외국인 투자자의 보유 주식수는 1,132,980주로, 전체 상장 주식수 45,437,002주 대비 외국인 소진율은 2.49%를...",
+          "pubDate": "02-04 16:00",
+          "originallink": "https://www.joongangenews.com/news/articleView.html?idxno=492926"
+        },
+        {
+          "title": "덕산하이메탈 주가, 2월 4일 장중 11,850원 29.08% 상승",
+          "link": "https://www.stardailynews.co.kr/news/articleView.html?idxno=522380",
+          "description": "총 45,437,002주의 상장주식수 가운데 외국인 보유 주식수는 1,132,980주로, 외국인 소진율은 2.49%를 기록했다. 동일업종 등락률이 -0.49%를 기록한 가운데 덕산하이메탈은 상대적으로 높은 상승률을 보였다....",
+          "pubDate": "02-04 13:52",
+          "originallink": "https://www.stardailynews.co.kr/news/articleView.html?idxno=522380"
+        }
+      ]
+    },
+    {
+      "name": "KX하이텍",
+      "code": "052900",
+      "current_price": "1,745",
+      "change": "+100",
+      "change_percent": "+6.09%",
+      "signal": "적극매수",
+      "reason": "대량 거래량과 함께 강한 상승을 보이며 중요한 저항선을 돌파했습니다. 모든 이동평균선이 정배열을 형성하며 강력한 상승 추세를 확인했고, PBR이 낮아 추가 상승 잠재력이 높아 적극 매수를 추천합니다.",
+      "capture_time": "2026-02-04 20:35:12",
+      "analysis_time": "2026-02-04 20:51:18",
+      "news": [
+        {
+          "title": "[주식마감기사] '태양광 사업' 기대감에 HD현대에너지솔루션 상한가... ...",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1140232",
+          "description": "대성산업은 지난 1947년 대성산업공사를 모태로 2010년 분할 설립됐으며, 2017년 주식회사 대성합동지주와... 덕산하이메탈, KX하이텍, SG, 하림, 아이로보틱스, 파루, 유일에너테크, 솔트웨어, 아주IB투자, 휴림로봇...",
+          "pubDate": "02-04 19:40",
+          "originallink": "https://www.ggilbo.com/news/articleView.html?idxno=1140232"
+        },
+        {
+          "title": "[박정식의 국내 주식시황] 인공지능 밸류에이션 및 중동 지정학적 리스...",
+          "link": "https://www.newsquest.co.kr/news/articleView.html?idxno=261264",
+          "description": "원익IPS, KX하이텍, 저스템 등 반도체 관련주는 정규장에 이어 상승. 반면, 탑머티리얼, 와이즈넛 등은 실적 부진 등에 하락. 거래량 상위 종목으로는 SG, SK증권, 에스와이스틸텍, 동양, 아주IB투자 등. 2/3(화) 대체거래소...",
+          "pubDate": "02-04 08:28",
+          "originallink": "https://www.newsquest.co.kr/news/articleView.html?idxno=261264"
+        },
+        {
+          "title": "[주식마감기사] '상장폐지' 피한 파두, 거래재개 후 상한가... 전진건설...",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1139940",
+          "description": "이는 '뻥튀기 상장' 의혹에 휩싸였던 파두의 주식 거래가 이날부터 재개되면서 영향을 받은 것으로... 삼미금속, KX하이텍, 미래에셋벤처투자, 대주산업, 케이바이오, 삼표시멘트, 우리기술, 나무기술, LK삼양...",
+          "pubDate": "02-03 19:40",
+          "originallink": "https://www.ggilbo.com/news/articleView.html?idxno=1139940"
+        }
+      ]
+    },
+    {
+      "name": "SG",
+      "code": "255220",
+      "current_price": "3,045",
+      "change": "+195",
+      "change_percent": "+6.82%",
+      "signal": "매수",
+      "reason": "높은 거래량과 함께 강한 상승을 보이며 단기 저항선을 돌파하여 상승 추세가 이어지고 있습니다. 이동평균선이 정배열을 형성하며 견고한 상승 모멘텀을 유지하고 있어 긍정적입니다.",
+      "capture_time": "2026-02-04 20:35:19",
+      "analysis_time": "2026-02-04 20:51:18",
+      "news": [
+        {
+          "title": "[주식마감기사] '태양광 사업' 기대감에 HD현대에너지솔루션 상한가... ...",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1140232",
+          "description": "4일 한화솔루션, HD현대에너지솔루션, 대성산업, 팜스코, SG세계물산, 한화솔루션우, 하림지주... 대성산업은 지난 1947년 대성산업공사를 모태로 2010년 분할 설립됐으며, 2017년 주식회사 대성합동지주와 합병했다....",
+          "pubDate": "02-04 19:40",
+          "originallink": "https://www.ggilbo.com/news/articleView.html?idxno=1140232"
+        },
+        {
+          "title": "오늘의 메모[2월 5일]",
+          "link": "https://n.news.naver.com/mnews/article/011/0004586659?sid=101",
+          "description": "▲주권변경상장=KB금융(105560)·유한양행(000100)(주식소각) ▲실권주청약=아이씨에이치(368600)(주관사 SK) ▲보통주추가상장=SG(255220)(국내BW) 아이스크림미디어·뉴로핏·RF머트리얼즈(주식매수선택권행사)...",
+          "pubDate": "02-04 16:38",
+          "originallink": "https://www.sedaily.com/article/20004905?ref=naver"
+        },
+        {
+          "title": "[오늘의 상한가] 삼표시멘트·파두 등",
+          "link": "https://www.joongangenews.com/news/articleView.html?idxno=492938",
+          "description": "|중앙이코노미뉴스 엄현식 기자| 4일 주식시장에서 삼표시멘트, 파두, HD현대에너지솔루션, 한화솔루션, 한화솔루션우, 대성산업, 팜스코, SG세계물산, 하림지주, 선익시스템, 엘케이켐, 비엘팜텍, 누리플렉스...",
+          "pubDate": "02-04 16:14",
+          "originallink": "https://www.joongangenews.com/news/articleView.html?idxno=492938"
+        }
+      ]
+    },
+    {
+      "name": "하림",
+      "code": "136480",
+      "current_price": "3,220",
+      "change": "+60",
+      "change_percent": "+1.90%",
+      "signal": "중립",
+      "reason": "외국인의 꾸준한 순매수세가 긍정적이나, 오늘 긴 윗꼬리 캔들이 형성되며 단기 고점 부담과 차익실현 매물이 출회될 가능성이 있습니다. 현재 가격은 이동평균선 위에 있으나, 상승 모멘텀이 다소 둔화될 수 있어 관망이 필요합니다.",
+      "capture_time": "2026-02-04 20:35:26",
+      "analysis_time": "2026-02-04 20:51:18",
+      "news": [
+        {
+          "title": "닭은 아버지가 키웠고, 지분은 아들이 챙겼다...하림 승계 시계, 지분이...",
+          "link": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=422222",
+          "description": "27일 하림지주 사업보고서에 따르면 김홍국 회장은 하림지주 주식 2362만8621주, 지분율 21.10%를 보유하고 있다. 반면 김준영 상무보가 지분 100%를 보유한 비상장사 올품은 하림지주 주식 646만8939주, 지분율 5.78%를 들고...",
+          "pubDate": "01-27 13:24",
+          "originallink": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=422222"
+        },
+        {
+          "title": "[더벨][지주사 사각지대 점검]한국바이오텍, 15년 간 다진 하림그룹 2세...",
+          "link": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202601211445162720105017",
+          "description": "한국바이오텍은 하림지주 주식을 담보로 대출을 일으켜 지배력을 키우고 있다. 이미 김 상무보가 비상장사를 거쳐 간접 취득한 하림지주 지분은 김 회장을 능가한다. 하림그룹은 지난해 지주사 체제 밖 계열사가...",
+          "pubDate": "01-27 08:18",
+          "originallink": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202601211445162720105017"
+        },
+        {
+          "title": "하림, 완전자회사 에이치비씨 흡수합병 결정",
+          "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=623369",
+          "description": "합병 후 존속회사(합병회사) : 주식회사 하림 주식회사 하림의 정기보고서(사업, 분/반기) 내용을 참조하여 주시기 바랍니다.나. 합병 후 소멸회사(피합병회사) : 주식회사 에이치비씨 (1) 회사의 개요 (2) 사업의 내용...",
+          "pubDate": "01-22 18:20",
+          "originallink": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=623369"
+        }
+      ]
+    },
+    {
+      "name": "아이로보틱스",
+      "code": "066430",
+      "current_price": "2,905",
+      "change": "+260",
+      "change_percent": "+9.83%",
+      "signal": "적극매수",
+      "reason": "금일 높은 거래량과 함께 강한 상승세로 52주 신고가를 경신하며 강력한 매수 시그널을 보였습니다. 모든 이동평균선이 정배열을 유지하며 추가 상승에 대한 기대감이 높고, 단기적인 모멘텀이 매우 강합니다.",
+      "capture_time": "2026-02-04 20:35:33",
+      "analysis_time": "2026-02-04 20:51:18",
+      "news": [
+        {
+          "title": "[주식마감기사] '태양광 사업' 기대감에 HD현대에너지솔루션 상한가... ...",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1140232",
+          "description": "대성산업은 지난 1947년 대성산업공사를 모태로 2010년 분할 설립됐으며, 2017년 주식회사 대성합동지주와... 하림, 아이로보틱스, 파루, 유일에너테크, 솔트웨어, 아주IB투자, 휴림로봇, 네오펙트, 인콘, SDN...",
+          "pubDate": "02-04 19:40",
+          "originallink": "https://www.ggilbo.com/news/articleView.html?idxno=1140232"
+        },
+        {
+          "title": "기업결합, AI·K컬처 중심 재편…SK·태광·한화 등 대기업 주도",
+          "link": "https://www.newspim.com/news/view/20260204000693",
+          "description": "주식취득, '베어로보틱스코리아-엘지전자' 영업양수가 대표적이다. 반도체 업종는 '한앤코32호–에스케이엔펄스' 영업양수, '리제닉스-제이쓰리' 주식취득, '티케이지태광–솔믹스' 주식취득, '원익엠엔에이–아이엠...",
+          "pubDate": "02-04 12:27",
+          "originallink": "https://www.newspim.com/news/view/20260204000693"
+        },
+        {
+          "title": "2월 3일 주식시장 주요공시",
+          "link": "https://www.catchnews.kr/news/articleView.html?idxno=120250",
+          "description": "38억원(전년대비 흑자전환) ▶아이티아이즈, 운영자금 확보를 위해 KB증권 주식회사(본건 펀드1의... 제기 ▶해성에어로보틱스, 최○○이 직무집행정지 등 가처분신청 소송 제기 ▶롯데리츠, 보통주...",
+          "pubDate": "02-04 08:54",
+          "originallink": "https://www.catchnews.kr/news/articleView.html?idxno=120250"
+        }
+      ]
+    },
+    {
+      "name": "파루",
+      "code": "043200",
+      "current_price": "1,011",
+      "change": "+23",
+      "change_percent": "+2.33%",
+      "signal": "적극매수",
+      "reason": "금일 높은 거래량과 함께 강한 상승으로 당일 고가를 기록하며 강력한 매수 시그널을 보였습니다. 모든 이동평균선이 정배열을 유지하며 상승 모멘텀이 매우 강하여 추가적인 상승 여력이 충분합니다.",
+      "capture_time": "2026-02-04 20:35:39",
+      "analysis_time": "2026-02-04 20:51:18",
+      "news": [
+        {
+          "title": "[특징주] 이재명 정부 재생에너지 확대 기대감에 태양광株 강세",
+          "link": "https://n.news.naver.com/mnews/article/366/0001084278?sid=101",
+          "description": "태양광 추적 장치를 만드는 파루 주식은 11일 오전 9시 11분 코스닥시장에서 1623원에 거래됐다. 전날보다 주가가 26.01%(335원) 뛰었다. 대선파인텍, 대명에너지 등도 두 자릿수 주가 상승률을 기록했다. 파루, 대명에너지를...",
+          "pubDate": "06-11 09:19",
+          "originallink": "https://biz.chosun.com/stock/stock_general/2025/06/11/DHLSYMBKFJCKJGYLU5YCCLRCWQ/?utm_source=naver&utm_medium=original&utm_campaign=biz"
+        },
+        {
+          "title": "파루솔라, 인터솔라 유럽 2025에서 영농형 태양광 단축 트래커 공개",
+          "link": "https://www.aitimes.com/news/articleView.html?idxno=170495",
+          "description": "파루솔라는 주식회사 파루가 2025년도부터 파루의 태양광 트래커 브랜드로 신규 런칭하여 국내와 미국을 넘어 유럽과 아시아 시장까지 파루솔라의 태양광 트래커 제품을 알리고 안정적으로 자리잡을 수 있도록 제품의...",
+          "pubDate": "05-16 13:54",
+          "originallink": "https://www.aitimes.com/news/articleView.html?idxno=170495"
+        },
+        {
+          "title": "[특징주] ‘태양광’ 파루, 3일 연속 상한가",
+          "link": "https://n.news.naver.com/mnews/article/366/0001077231?sid=101",
+          "description": "파루 주식은 15일 오전 코스닥시장에서 1237원에 거래됐다. 장이 열리자마자 전날보다 주가가 29.94%(285원) 올랐다. 파루는 지난 13일부터 이날까지 상한가 행진을 이어갔다. 지난 12일 종가 대비 주가 수준도 2배 넘게...",
+          "pubDate": "05-15 09:17",
+          "originallink": "https://biz.chosun.com/stock/stock_general/2025/05/15/7WCO3KJ3YRGQPHPMBMHARG27BU/?utm_source=naver&utm_medium=original&utm_campaign=biz"
+        }
+      ]
+    },
+    {
+      "name": "유일에너테크",
+      "code": "340930",
+      "current_price": "1,471",
+      "change": "+23",
+      "change_percent": "+1.59%",
+      "signal": "매수",
+      "reason": "대량 거래량과 함께 강한 상승을 보이며 단기 저항선을 돌파했습니다. 모든 이동평균선이 정배열을 형성하며 강력한 상승 모멘텀을 유지하고 있고, 외국인 매수세도 긍정적입니다.",
+      "capture_time": "2026-02-04 20:35:46",
+      "analysis_time": "2026-02-04 20:51:18",
+      "news": [
+        {
+          "title": "[주식마감기사] '태양광 사업' 기대감에 HD현대에너지솔루션 상한가... ...",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1140232",
+          "description": "대성산업은 지난 1947년 대성산업공사를 모태로 2010년 분할 설립됐으며, 2017년 주식회사 대성합동지주와... 파루, 유일에너테크, 솔트웨어, 아주IB투자, 휴림로봇, 네오펙트, 인콘, SDN, 제주반도체, 아로마티카...",
+          "pubDate": "02-04 19:40",
+          "originallink": "https://www.ggilbo.com/news/articleView.html?idxno=1140232"
+        },
+        {
+          "title": "전기차 관련주, '룰루랄라 콧노래' 삼성SDI·한온시스템·씨아이에스·휴...",
+          "link": "http://www.finomy.com/news/articleView.html?idxno=249117",
+          "description": "세아메카닉스, 유일에너테크, KEC, 현대차, LG전자, 기아, 나노팀, 서진시스템, 금호에이치티는 상승했다.... 삼영은 1959년 설립된 국내 유일의 커패시터 필름 제조사이자 세계 3위 생산업체로, 2025년 캐스코 주식회사...",
+          "pubDate": "02-04 18:20",
+          "originallink": "http://www.finomy.com/news/articleView.html?idxno=249117"
+        },
+        {
+          "title": "수소차 관련주, '맑고 화창' 우수AMS·한온시스템·현대차·삼보모터스....",
+          "link": "http://www.finomy.com/news/articleView.html?idxno=249025",
+          "description": "반면 유일에너테크, 덕양에너젠은 하락했다. 유일에너테크와 덕양에너젠은 전 거래일 대비 각각 11원... 아이에스티이는 지난 8월 20일 쌍용씨앤이 주식회사와 산소부화설비 구축사업 계약을 체결했다고 공시했다....",
+          "pubDate": "02-03 18:20",
+          "originallink": "http://www.finomy.com/news/articleView.html?idxno=249025"
+        }
+      ]
+    },
+    {
+      "name": "솔트웨어",
+      "code": "328380",
+      "current_price": "1,005",
+      "change": "+10",
+      "change_percent": "+1.00%",
+      "signal": "매수",
+      "reason": "대량 거래량과 함께 강한 상승을 보이며 단기 저항선을 돌파했습니다. 모든 이동평균선이 정배열을 형성하며 상승 모멘텀을 유지하고 있고, PBR이 낮아 추가 상승 잠재력이 있습니다.",
+      "capture_time": "2026-02-04 20:35:53",
+      "analysis_time": "2026-02-04 20:51:18",
+      "news": [
+        {
+          "title": "[주식마감기사] '태양광 사업' 기대감에 HD현대에너지솔루션 상한가... ...",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1140232",
+          "description": "대성산업은 지난 1947년 대성산업공사를 모태로 2010년 분할 설립됐으며, 2017년 주식회사 대성합동지주와... 유일에너테크, 솔트웨어, 아주IB투자, 휴림로봇, 네오펙트, 인콘, SDN, 제주반도체, 아로마티카...",
+          "pubDate": "02-04 19:40",
+          "originallink": "https://www.ggilbo.com/news/articleView.html?idxno=1140232"
+        },
+        {
+          "title": "[개장시황] 코스피, '롤러코스터' 양상 연출",
+          "link": "https://www.joongangenews.com/news/articleView.html?idxno=492659",
+          "description": "[사진=연합뉴스] 오늘 주식시장이 개장한 뒤 개인 투자자의 매수세가 두드러지고 있지만, 차익을... 양대 시장에서 △파두 △삼표시멘트 △코이즈 △비엘팜텍 △팜스코 △쏘닉스 △유니엠텍 △솔트웨어...",
+          "pubDate": "02-04 09:32",
+          "originallink": "https://www.joongangenews.com/news/articleView.html?idxno=492659"
+        },
+        {
+          "title": "2월 3일 주식시장 주요공시",
+          "link": "https://www.catchnews.kr/news/articleView.html?idxno=120250",
+          "description": "31) ▶솔트웨어, 2025년 연결기준 매출액 636.74억원(전년대비 +10.03%), 영업이익 5.66억원(전년대비 흑자전환), 순이익 8.38억원(전년대비 흑자전환) ▶아이티아이즈, 운영자금 확보를 위해 KB증권 주식회...",
+          "pubDate": "02-04 08:54",
+          "originallink": "https://www.catchnews.kr/news/articleView.html?idxno=120250"
+        }
+      ]
+    },
+    {
+      "name": "아주IB투자",
+      "code": "027360",
+      "current_price": "5,040",
+      "change": "+310",
+      "change_percent": "+6.54%",
+      "signal": "매수",
+      "reason": "최근 조정 후 오늘 대량 거래와 함께 강한 반등을 보이며 상승 추세를 이어갈 것으로 예상됩니다. 기관의 강력한 순매수세가 유입되고 있으며, 주요 이동평균선이 정배열을 유지하여 긍정적입니다.",
+      "capture_time": "2026-02-04 20:36:00",
+      "analysis_time": "2026-02-04 20:51:18",
+      "news": [
+        {
+          "title": "[주식마감기사] '태양광 사업' 기대감에 HD현대에너지솔루션 상한가... ...",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1140232",
+          "description": "대성산업은 지난 1947년 대성산업공사를 모태로 2010년 분할 설립됐으며, 2017년 주식회사 대성합동지주와... 솔트웨어, 아주IB투자, 휴림로봇, 네오펙트, 인콘, SDN, 제주반도체, 아로마티카, 바이오스마트...",
+          "pubDate": "02-04 19:40",
+          "originallink": "https://www.ggilbo.com/news/articleView.html?idxno=1140232"
+        },
+        {
+          "title": "[박정식의 국내 주식시황] 인공지능 밸류에이션 및 중동 지정학적 리스...",
+          "link": "https://www.newsquest.co.kr/news/articleView.html?idxno=261264",
+          "description": "거래량 상위 종목으로는 SG, SK증권, 에스와이스틸텍, 동양, 아주IB투자 등. 2/3(화) 대체거래소(NXT) 애프터마켓에서는 반도체 슈퍼사이클 지속 전망에 기가비스, 주성엔지니어링 등 일부 반도체 관련주가 상승했다....",
+          "pubDate": "02-04 08:28",
+          "originallink": "https://www.newsquest.co.kr/news/articleView.html?idxno=261264"
+        },
+        {
+          "title": "스페이스X 관련주, '덩실덩실' 미래에셋벤처투자·미래에셋증권·나노팀...",
+          "link": "http://www.finomy.com/news/articleView.html?idxno=249026",
+          "description": "3일 한국거래소에 따르면 미래에셋벤처투자, 미래에셋증권, 나노팀, 아주IB투자, 와이제이링크... Ltd.)의 주식 500만주를 취득하기로 결정했다고 지난 1월 15일 공시했다. 취득금액은 73억 6400만원으로 자기자본 대비...",
+          "pubDate": "02-04 00:10",
+          "originallink": "http://www.finomy.com/news/articleView.html?idxno=249026"
+        }
+      ]
+    },
+    {
+      "name": "휴림로봇",
+      "code": "090710",
+      "current_price": "14,340",
+      "change": "+310",
+      "change_percent": "+2.12%",
+      "signal": "매도",
+      "reason": "52주 신고가 부근에서 강력한 상승 추세이나, 극히 높은 PBR(531배)은 심각한 고평가를 의미하며 차익실현 매물 압박이 매우 강합니다. 오늘 긴 윗꼬리 캔들은 상승 여력 둔화 및 하락 전환 가능성을 시사합니다.",
+      "capture_time": "2026-02-04 20:36:08",
+      "analysis_time": "2026-02-04 20:51:18",
+      "news": [
+        {
+          "title": "[주식마감기사] '태양광 사업' 기대감에 HD현대에너지솔루션 상한가... ...",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1140232",
+          "description": "대성산업은 지난 1947년 대성산업공사를 모태로 2010년 분할 설립됐으며, 2017년 주식회사 대성합동지주와... 아주IB투자, 휴림로봇, 네오펙트, 인콘, SDN, 제주반도체, 아로마티카, 바이오스마트, 미래에셋벤처투자...",
+          "pubDate": "02-04 19:40",
+          "originallink": "https://www.ggilbo.com/news/articleView.html?idxno=1140232"
+        },
+        {
+          "title": "휴림로봇 유진로봇 레인보우로보틱스 고전...고영 두산로보틱스 장중 양...",
+          "link": "https://www.cbci.co.kr/news/articleView.html?idxno=553888",
+          "description": "4일 주식시장의 주인은 로봇주가 아닌 것 같다. 코스닥은 양봉으로 돌아섰지만 로봇주들의 고전은 계속되고 있다. 레인보우로보틱스 로보로보 로보스타 로보티즈 휴림로봇 유잊로봇 클로봇 현대무벡스 등이 고전을 면치...",
+          "pubDate": "02-04 14:40",
+          "originallink": "https://www.cbci.co.kr/news/articleView.html?idxno=553888"
+        },
+        {
+          "title": "휴림로봇 주가, 2월 4일 장중 14,130원 3.55% 하락",
+          "link": "https://www.joongangenews.com/news/articleView.html?idxno=492765",
+          "description": "휴림로봇의 시가총액은 1조 6,891억 원으로 코스닥 시장에서 68위를 차지하고 있다. 이는 119,457,197주의 상장주식수를 바탕으로 한다. 주가수익비율(PER)은 523.33배로, 동일 업종의 PER 142.75배와 비교할 때 높은...",
+          "pubDate": "02-04 11:24",
+          "originallink": "https://www.joongangenews.com/news/articleView.html?idxno=492765"
+        }
+      ]
+    },
+    {
+      "name": "네오펙트",
+      "code": "290660",
+      "current_price": "1,076",
+      "change": "+114",
+      "change_percent": "+11.88%",
+      "signal": "매수",
+      "reason": "대량 거래량과 함께 강한 상승을 보이며 단기 저항선을 돌파하여 상승 추세가 이어지고 있습니다. 모든 이동평균선이 정배열을 형성하며 견고한 상승 모멘텀을 유지하고 있어 긍정적입니다.",
+      "capture_time": "2026-02-04 20:36:14",
+      "analysis_time": "2026-02-04 20:51:18",
+      "news": [
+        {
+          "title": "[주식마감기사] '태양광 사업' 기대감에 HD현대에너지솔루션 상한가... ...",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1140232",
+          "description": "대성산업은 지난 1947년 대성산업공사를 모태로 2010년 분할 설립됐으며, 2017년 주식회사 대성합동지주와... 휴림로봇, 네오펙트, 인콘, SDN, 제주반도체, 아로마티카, 바이오스마트, 미래에셋벤처투자, 대한광통신...",
+          "pubDate": "02-04 19:40",
+          "originallink": "https://www.ggilbo.com/news/articleView.html?idxno=1140232"
+        },
+        {
+          "title": "[주식마감기사] '상장폐지' 피한 파두, 거래재개 후 상한가... 전진건설...",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1139940",
+          "description": "이는 '뻥튀기 상장' 의혹에 휩싸였던 파두의 주식 거래가 이날부터 재개되면서 영향을 받은 것으로... 코스닥 시장 거래 상위종목 30위는 아주IB투자, 바이오스마트, SG, 다날, 유디엠텍, 인콘, 네오펙트...",
+          "pubDate": "02-03 19:40",
+          "originallink": "https://www.ggilbo.com/news/articleView.html?idxno=1139940"
+        },
+        {
+          "title": "[박정식의 국내 주식시황] 美-이란 긴장 완화 및 美 제조업지표 호조로...",
+          "link": "https://www.newsquest.co.kr/news/articleView.html?idxno=261185",
+          "description": "거래량 상위 종목으로는 네오펙트, 금호에이치티, 바이오스마트, SK증권, 화신정공 등이 있다. 2/2(월) 대체거래소(NXT) 애프터마켓에서는 장 마감후 호실적을 발표하며 유바이오로직스, 노바렉스 등 일부 호실적...",
+          "pubDate": "02-03 08:44",
+          "originallink": "https://www.newsquest.co.kr/news/articleView.html?idxno=261185"
+        }
+      ]
+    },
+    {
+      "name": "인콘",
+      "code": "083640",
+      "current_price": "642",
+      "change": "+48",
+      "change_percent": "+8.05%",
+      "signal": "매수",
+      "reason": "금일 높은 거래량과 함께 강한 상승으로 당일 고가를 기록하며 강력한 매수 시그널을 보였습니다. 모든 이동평균선이 정배열을 유지하며 상승 모멘텀이 매우 강하여 추가적인 상승 여력이 충분합니다.",
+      "capture_time": "2026-02-04 20:36:21",
+      "analysis_time": "2026-02-04 20:51:18",
+      "news": [
+        {
+          "title": "[주식마감기사] '태양광 사업' 기대감에 HD현대에너지솔루션 상한가... ...",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1140232",
+          "description": "유디엠텍, 인콘, 케이바이오, 파루, 쏘닉스, 알톤, 이엠앤아이, 코이즈, KD가 상한가에 이름을 올리고 장을... 대성산업은 지난 1947년 대성산업공사를 모태로 2010년 분할 설립됐으며, 2017년 주식회사 대성합동지주와...",
+          "pubDate": "02-04 19:40",
+          "originallink": "https://www.ggilbo.com/news/articleView.html?idxno=1140232"
+        },
+        {
+          "title": "[오늘의 상한가] 삼표시멘트·파두 등",
+          "link": "https://www.joongangenews.com/news/articleView.html?idxno=492938",
+          "description": "4일 주식시장에서 삼표시멘트, 파두, HD현대에너지솔루션, 한화솔루션, 한화솔루션우, 대성산업, 팜스코, SG세계물산, 하림지주, 선익시스템, 엘케이켐, 비엘팜텍, 누리플렉스, 유디엠텍, 인콘, 케이바이오, 파루...",
+          "pubDate": "02-04 16:14",
+          "originallink": "https://www.joongangenews.com/news/articleView.html?idxno=492938"
+        },
+        {
+          "title": "5천피 씹어먹은 '이 지수', 6천피·7천피도 앞당긴다 [뉴스톡 웰스톡]",
+          "link": "http://www.newswell.co.kr/news/articleView.html?idxno=15936",
+          "description": "코스피 지수가 5천피를 훌쩍 넘어 사상 최고치 행진을 이어가는 가운데, 자기주식 소각 등 기업들의... 유디엠텍 ▲인콘 ▲케이바이오 ▲파루 ▲쏘닉스 ▲알톤 ▲이엠앤아이 ▲코이즈 ▲KD는 상한가를 기록했다. 이...",
+          "pubDate": "02-04 15:36",
+          "originallink": "http://www.newswell.co.kr/news/articleView.html?idxno=15936"
+        }
+      ]
+    },
+    {
+      "name": "SDN",
+      "code": "099220",
+      "current_price": "1,209",
+      "change": "+133",
+      "change_percent": "+12.36%",
+      "signal": "매수",
+      "reason": "대량 거래량과 함께 강한 상승을 보이며 단기 저항선을 돌파하여 상승 추세가 이어지고 있습니다. 모든 이동평균선이 정배열을 형성하며 견고한 상승 모멘텀을 유지하고 있고, PBR이 낮아 추가 상승 잠재력이 있습니다.",
+      "capture_time": "2026-02-04 20:36:28",
+      "analysis_time": "2026-02-04 20:51:18",
+      "news": [
+        {
+          "title": "[주식마감기사] '태양광 사업' 기대감에 HD현대에너지솔루션 상한가... ...",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1140232",
+          "description": "대성산업은 지난 1947년 대성산업공사를 모태로 2010년 분할 설립됐으며, 2017년 주식회사 대성합동지주와... 인콘, SDN, 제주반도체, 아로마티카, 바이오스마트, 미래에셋벤처투자, 대한광통신, 하림지주, 이원컴포텍...",
+          "pubDate": "02-04 19:40",
+          "originallink": "https://www.ggilbo.com/news/articleView.html?idxno=1140232"
+        },
+        {
+          "title": "태양광·ESS株, 美 수주 확대에 강세…\"AI發 전력망 현대화 주목\"",
+          "link": "https://www.apnews.kr/news/articleView.html?idxno=3045550",
+          "description": "©AP신문(AP뉴스)/이미지 제공 = 주식차트연구소 ▲주도 테마지도 태양광 관련주들이 미국 시장에서의... 00%), SDN(+12.36%), OCI(+8.77%), 그리드위즈(+8.56%), SK이터닉스(+8.00%), 레이크머트리얼즈(+7.41%), 주성엔지니어링(+6....",
+          "pubDate": "02-04 18:34",
+          "originallink": "https://www.apnews.kr/news/articleView.html?idxno=3045550"
+        },
+        {
+          "title": "태양광에너지 관련주, '맑고 화창' 한화솔루션·유니테스트·파루·에스...",
+          "link": "http://www.finomy.com/news/articleView.html?idxno=249112",
+          "description": "에코, SDN, SK이터닉스, 레이크머티리얼즈, 주성엔지니어링, 신성이엔지, 지투파워, 한국전력, 대성파인텍... 이후 1961년 '한국전력주식회사'로 개편되고, 1982년 현재의 통합형 전력공기업으로 재설립되며 국가...",
+          "pubDate": "02-04 18:06",
+          "originallink": "http://www.finomy.com/news/articleView.html?idxno=249112"
+        }
+      ]
+    },
+    {
+      "name": "제주반도체",
+      "code": "080220",
+      "current_price": "43,850",
+      "change": "+1,540",
+      "change_percent": "+3.63%",
+      "signal": "중립",
+      "reason": "매우 강한 상승 추세로 52주 신고가에 근접하며 기관의 매수세가 긍정적입니다. 하지만 PBR 42.04배는 극심한 고평가를 의미하며, 윗꼬리 캔들은 단기적인 차익실현 압력을 시사하여 신중한 접근이 필요합니다.",
+      "capture_time": "2026-02-04 20:36:35",
+      "analysis_time": "2026-02-04 20:51:18",
+      "news": [
+        {
+          "title": "[주식마감기사] '태양광 사업' 기대감에 HD현대에너지솔루션 상한가... ...",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1140232",
+          "description": "대성산업은 지난 1947년 대성산업공사를 모태로 2010년 분할 설립됐으며, 2017년 주식회사 대성합동지주와... SDN, 제주반도체, 아로마티카, 바이오스마트, 미래에셋벤처투자, 대한광통신, 하림지주, 이원컴포텍...",
+          "pubDate": "02-04 19:40",
+          "originallink": "https://www.ggilbo.com/news/articleView.html?idxno=1140232"
+        },
+        {
+          "title": "[AI 금융 브리핑] 생산적금융·서민금융·코스닥·결의대회·포용금융·...",
+          "link": "http://www.shinailbo.co.kr/news/articleView.html?idxno=2187893",
+          "description": "소개하고 반도체를 국가 안보와 AI 인프라의 핵심 자산으로 규정해 글로벌 반도체 업황 전망과 공급 계획을... 최근 금융시장 전반에 주식·펀드 등 자산 형성 기회가 확대되고 있으나 청년·지방 취약계층은 대출 상환...",
+          "pubDate": "02-04 17:58",
+          "originallink": "http://www.shinailbo.co.kr/news/articleView.html?idxno=2187893"
+        },
+        {
+          "title": "제주반도체 주가, 2월 4일 43,850원 6.43% 상승 마감",
+          "link": "https://www.joongangenews.com/news/articleView.html?idxno=492914",
+          "description": "동일업종 등락률이 0.25% 상승한 것과 비교했을 때, 제주반도체의 6.43% 상승률은 업종 전체의 움직임을 크게 상회했다. 외국인 투자자의 보유 주식수는 0주로, 전체 외국인 한도 주식수 대비 외국인...",
+          "pubDate": "02-04 16:00",
+          "originallink": "https://www.joongangenews.com/news/articleView.html?idxno=492914"
+        }
+      ]
+    },
+    {
+      "name": "바이오스마트",
+      "code": "038460",
+      "current_price": "6,250",
+      "change": "+170",
+      "change_percent": "+2.80%",
+      "signal": "매수",
+      "reason": "대량 거래량과 함께 강한 상승을 보이며 상승 추세가 이어지고 있습니다. 모든 이동평균평선이 정배열을 형성하며 견고한 상승 모멘텀을 유지하고 있고, 기관 매수세도 긍정적입니다.",
+      "capture_time": "2026-02-04 20:36:49",
+      "analysis_time": "2026-02-04 20:51:18",
+      "news": [
+        {
+          "title": "[주식마감기사] '태양광 사업' 기대감에 HD현대에너지솔루션 상한가... ...",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1140232",
+          "description": "대성산업은 지난 1947년 대성산업공사를 모태로 2010년 분할 설립됐으며, 2017년 주식회사 대성합동지주와... 아로마티카, 바이오스마트, 미래에셋벤처투자, 대한광통신, 하림지주, 이원컴포텍, 동아엘텍, 재영솔루텍...",
+          "pubDate": "02-04 19:40",
+          "originallink": "https://www.ggilbo.com/news/articleView.html?idxno=1140232"
+        },
+        {
+          "title": "코로나19·진단·치료제·백신개발 관련주, '맑음' 케이바이오·코미팜·...",
+          "link": "http://www.finomy.com/news/articleView.html?idxno=249116",
+          "description": "4일 한국거래소에 따르면 케이바이오, 코미팜, 샤페론, SV인베스트먼트, 셀리드, 바이오스마트... 변경 사유는 대표이사 주식 일부 매도에 의한 일시적 최대 주주 변경이다. 유틸렉스 측은 \"2026년 1월 15일...",
+          "pubDate": "02-04 18:16",
+          "originallink": "http://www.finomy.com/news/articleView.html?idxno=249116"
+        },
+        {
+          "title": "[주식마감기사] '상장폐지' 피한 파두, 거래재개 후 상한가... 전진건설...",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1139940",
+          "description": "이는 '뻥튀기 상장' 의혹에 휩싸였던 파두의 주식 거래가 이날부터 재개되면서 영향을 받은 것으로... 코스닥 시장 거래 상위종목 30위는 아주IB투자, 바이오스마트, SG, 다날, 유디엠텍, 인콘, 네오펙트...",
+          "pubDate": "02-03 19:40",
+          "originallink": "https://www.ggilbo.com/news/articleView.html?idxno=1139940"
+        }
+      ]
+    },
+    {
+      "name": "미래에셋벤처투자",
+      "code": "100790",
+      "current_price": "25,000",
+      "change": "+2,050",
+      "change_percent": "+8.90%",
+      "signal": "매수",
+      "reason": "압도적인 거래량과 함께 강한 상승세로 52주 신고가를 경신하며 강력한 매수 시그널을 보였습니다. 모든 이동평균선이 정배열을 유지하며 추가 상승에 대한 기대감이 높지만, PBR이 다소 높아 주의가 필요합니다.",
+      "capture_time": "2026-02-04 20:36:56",
+      "analysis_time": "2026-02-04 20:51:18",
+      "news": [
+        {
+          "title": "[주식마감기사] '태양광 사업' 기대감에 HD현대에너지솔루션 상한가... ...",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1140232",
+          "description": "대성산업은 지난 1947년 대성산업공사를 모태로 2010년 분할 설립됐으며, 2017년 주식회사 대성합동지주와... 바이오스마트, 미래에셋벤처투자, 대한광통신, 하림지주, 이원컴포텍, 동아엘텍, 재영솔루텍...",
+          "pubDate": "02-04 19:40",
+          "originallink": "https://www.ggilbo.com/news/articleView.html?idxno=1140232"
+        },
+        {
+          "title": "[마켓인] “안 한다더니”…BDC 신청 임박에 5개 운용사 ‘참전’",
+          "link": "https://n.news.naver.com/mnews/article/018/0006213387?sid=101",
+          "description": "한화자산운용, 미래에셋자산운용, NH아문디자산운용, 한국투자신탁운용 등 종합 자산운용사들은 다음달 BDC... 불과 몇 달 전만 해도 “리스크가 크다”, “벤처캐피탈(VC) 영역과 겹친다”며 한발 물러섰던 분위기가...",
+          "pubDate": "02-04 19:02",
+          "originallink": "http://www.edaily.co.kr/news/newspath.asp?newsid=05553046645347240"
+        },
+        {
+          "title": "['클릭' 증시] '국민주' 삼성전자 시총 1000조 돌파",
+          "link": "http://www.00news.co.kr/news/articleView.html?idxno=101684",
+          "description": "지난해 4월 이후 이어진 상승세로 주식거래에 관심이 없거나 부정적이던 국민들도 시장 참여에 나서기... 스페이스X지분을 보유 중인 미래에셋벤처투자도 스페이스X와 xAI의 합병 및 IPO추진으로 상승세를 타고 있다.",
+          "pubDate": "02-04 18:10",
+          "originallink": "http://www.00news.co.kr/news/articleView.html?idxno=101684"
+        }
+      ]
+    },
+    {
+      "name": "대한광통신",
+      "code": "010170",
+      "current_price": "3,425",
+      "change": "+40",
+      "change_percent": "+1.18%",
+      "signal": "매수",
+      "reason": "대량 거래량과 함께 강한 상승을 보이며 견고한 상승 추세가 이어지고 있습니다. 모든 이동평균선이 정배열을 형성하며 강력한 상승 모멘텀을 유지하고 있고, 외국인 매수세도 긍정적입니다.",
+      "capture_time": "2026-02-04 20:37:03",
+      "analysis_time": "2026-02-04 20:51:18",
+      "news": [
+        {
+          "title": "[주식마감기사] '태양광 사업' 기대감에 HD현대에너지솔루션 상한가... ...",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1140232",
+          "description": "대성산업은 지난 1947년 대성산업공사를 모태로 2010년 분할 설립됐으며, 2017년 주식회사 대성합동지주와... 미래에셋벤처투자, 대한광통신, 하림지주, 이원컴포텍, 동아엘텍, 재영솔루텍, 경남제약이다. 이날...",
+          "pubDate": "02-04 19:40",
+          "originallink": "https://www.ggilbo.com/news/articleView.html?idxno=1140232"
+        },
+        {
+          "title": "대한광통신 주가, 2월 4일 장중 3,395원 0.30% 상승",
+          "link": "https://www.joongangenews.com/news/articleView.html?idxno=492728",
+          "description": "외국인 투자자의 대한광통신 주식 소진율은 2.03%이며, 총 2,680,208주를 보유하고 있다. 이는 전체 상장주식수 131,985,660주와 비교된다. 동일 업종 등락률은 -0.56%를 나타내고 있어, 대한광통신 주가는 업종...",
+          "pubDate": "02-04 10:52",
+          "originallink": "https://www.joongangenews.com/news/articleView.html?idxno=492728"
+        },
+        {
+          "title": "[주식마감기사] '상장폐지' 피한 파두, 거래재개 후 상한가... 전진건설...",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1139940",
+          "description": "이는 '뻥튀기 상장' 의혹에 휩싸였던 파두의 주식 거래가 이날부터 재개되면서 영향을 받은 것으로... 재영솔루텍, 대한광통신, 휴림로봇, 쿼드메디슨, 루미르, 덕양에너젠, 나노팀, 코아시아씨엠, 흥국에프엔비...",
+          "pubDate": "02-03 19:40",
+          "originallink": "https://www.ggilbo.com/news/articleView.html?idxno=1139940"
+        }
+      ]
+    },
+    {
+      "name": "하림지주",
+      "code": "003380",
+      "current_price": "19,610",
+      "change": "+4,520",
+      "change_percent": "+30.00%",
+      "signal": "적극매수",
+      "reason": "금일 상한가 기록과 함께 압도적인 거래량으로 52주 신고가를 경신하며 강력한 매수 시그널을 보였습니다. PBR이 낮아 잠재적인 상승 여력이 크고, 모든 이동평균선이 정배열을 유지하여 추가 상승 모멘텀이 매우 강합니다.",
+      "capture_time": "2026-02-04 20:37:10",
+      "analysis_time": "2026-02-04 20:51:18",
+      "news": [
+        {
+          "title": "[주식마감기사] '태양광 사업' 기대감에 HD현대에너지솔루션 상한가... ...",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1140232",
+          "description": "4일 한화솔루션, HD현대에너지솔루션, 대성산업, 팜스코, SG세계물산, 한화솔루션우, 하림지주... 대성산업은 지난 1947년 대성산업공사를 모태로 2010년 분할 설립됐으며, 2017년 주식회사 대성합동지주와 합병했다....",
+          "pubDate": "02-04 19:40",
+          "originallink": "https://www.ggilbo.com/news/articleView.html?idxno=1140232"
+        },
+        {
+          "title": "[오늘의 상한가] 삼표시멘트·파두 등",
+          "link": "https://www.joongangenews.com/news/articleView.html?idxno=492938",
+          "description": "|중앙이코노미뉴스 엄현식 기자| 4일 주식시장에서 삼표시멘트, 파두, HD현대에너지솔루션, 한화솔루션, 한화솔루션우, 대성산업, 팜스코, SG세계물산, 하림지주, 선익시스템, 엘케이켐, 비엘팜텍, 누리플렉스...",
+          "pubDate": "02-04 16:14",
+          "originallink": "https://www.joongangenews.com/news/articleView.html?idxno=492938"
+        },
+        {
+          "title": "하림지주, ROE 1% 미만 정체 속 PBR 0.2배 자산 디스카운트 구조",
+          "link": "https://www.topstarnews.net/news/articleView.html?idxno=15953947",
+          "description": "하림지주는 2월 4일 코스닥 시장에서 전 거래일 대비 29.95% 오른 1만9610원에 마감했다. 식품·물류 계열사를... 상장주식수는 1억1200만주로 유통 물량이 충분한 편이지만, 단기적으로 매수 주문이 집중되며 가격 탄력성이...",
+          "pubDate": "02-04 15:52",
+          "originallink": "https://www.topstarnews.net/news/articleView.html?idxno=15953947"
+        }
+      ]
+    },
+    {
+      "name": "이원컴포텍",
+      "code": "088290",
+      "current_price": "781",
+      "change": "+70",
+      "change_percent": "+10.31%",
+      "signal": "매수",
+      "reason": "대량 거래량과 함께 강한 상승을 보이며 단기 저항선을 돌파했습니다. 모든 이동평균선이 정배열을 형성하며 강력한 상승 모멘텀을 유지하고 있고, 52주 최저가 부근에서 반등하는 모습이 긍정적입니다.",
+      "capture_time": "2026-02-04 20:37:17",
+      "analysis_time": "2026-02-04 20:51:18",
+      "news": [
+        {
+          "title": "[주식마감기사] '태양광 사업' 기대감에 HD현대에너지솔루션 상한가... ...",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1140232",
+          "description": "대성산업은 지난 1947년 대성산업공사를 모태로 2010년 분할 설립됐으며, 2017년 주식회사 대성합동지주와... 하림지주, 이원컴포텍, 동아엘텍, 재영솔루텍, 경남제약이다. 이날 코스피는 전장보다 83.02포인트(1.57...",
+          "pubDate": "02-04 19:40",
+          "originallink": "https://www.ggilbo.com/news/articleView.html?idxno=1140232"
+        },
+        {
+          "title": "[개장시황] 코스피, '롤러코스터' 양상 연출",
+          "link": "https://www.joongangenews.com/news/articleView.html?idxno=492659",
+          "description": "[사진=연합뉴스] 오늘 주식시장이 개장한 뒤 개인 투자자의 매수세가 두드러지고 있지만, 차익을... 45%) △케이바이오(+22.15%) △이원컴포텍(+21.37%) △미래에셋벤처투자(+17.42%) 등이 급등세를 보인다.",
+          "pubDate": "02-04 09:32",
+          "originallink": "https://www.joongangenews.com/news/articleView.html?idxno=492659"
+        },
+        {
+          "title": "1월 30일 주식시장 주요공시",
+          "link": "https://www.catchnews.kr/news/articleView.html?idxno=120132",
+          "description": "▶빛과전자, 비엔에스조합이 최대주주 변경 수반 주식 담보제공 계약 체결(채무금액:133억원... 07억원(전년대비 적자지속) ▶이원컴포텍, 2025년 연결기준 매출액 565.77억원(전년대비 +7.77%), 영업이익...",
+          "pubDate": "02-02 08:30",
+          "originallink": "https://www.catchnews.kr/news/articleView.html?idxno=120132"
+        }
+      ]
+    },
+    {
+      "name": "동아엘텍",
+      "code": "088130",
+      "current_price": "7,900",
+      "change": "+210",
+      "change_percent": "+2.73%",
+      "signal": "매수",
+      "reason": "강력한 상승 추세로 52주 신고가에 근접하였고 모든 이동평균선이 정배열을 보이며 견고합니다. 단기적인 윗꼬리가 보이지만, 전반적인 매수 동력이 강해 추가 상승 가능성이 높다고 판단됩니다.",
+      "capture_time": "2026-02-04 20:37:24",
+      "analysis_time": "2026-02-04 20:51:18",
+      "news": [
+        {
+          "title": "[주식마감기사] '태양광 사업' 기대감에 HD현대에너지솔루션 상한가... ...",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1140232",
+          "description": "대성산업은 지난 1947년 대성산업공사를 모태로 2010년 분할 설립됐으며, 2017년 주식회사 대성합동지주와... 이원컴포텍, 동아엘텍, 재영솔루텍, 경남제약이다. 이날 코스피는 전장보다 83.02포인트(1.57%) 오른 5,371.10에...",
+          "pubDate": "02-04 19:40",
+          "originallink": "https://www.ggilbo.com/news/articleView.html?idxno=1140232"
+        },
+        {
+          "title": "돈 몰리는 디스플레이 상장주(株)… 1400만 데이터가 꼽은 '진짜 1위'",
+          "link": "https://www.wikitree.co.kr/articles/1115685",
+          "description": "시장지수(주식 시장 내 기업의 시가총액과 거래 규모를 기반으로 산출한 지표)에서 강세를 보이며... 신화인터텍, 동아엘텍, 와이엠씨, 디아이티, 제이엠티, 파인디앤씨, 핌스, 인지디스플레이, 참엔지니어링...",
+          "pubDate": "02-04 17:52",
+          "originallink": "https://www.wikitree.co.kr/articles/1115685"
+        },
+        {
+          "title": "동아엘텍 주가, 급등세... 왜?",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1139531",
+          "description": "지난달 30일 동아엘텍은 2025년 결산배당으로 보통주식 1주당 150원의 현금배당을 결정했다고 공시했다. 이에 따라 총 배당금액은 약 26억2279만7100원에 달한다. 이번 배당금은 지난해 12월 31일을 기준으로 산정되며...",
+          "pubDate": "02-02 13:42",
+          "originallink": "https://www.ggilbo.com/news/articleView.html?idxno=1139531"
+        }
+      ]
+    },
+    {
+      "name": "재영솔루텍",
+      "code": "049630",
+      "current_price": "4,710",
+      "change": "+51",
+      "change_percent": "+1.10%",
+      "signal": "매수",
+      "reason": "강력한 상승 추세로 52주 신고가에 근접하였고 모든 이동평균선이 정배열을 보이며 견고합니다. 단기적인 윗꼬리가 보이지만, 전반적인 매수 동력이 강해 추가 상승 가능성이 높다고 판단됩니다.",
+      "capture_time": "2026-02-04 20:37:31",
+      "analysis_time": "2026-02-04 20:51:18",
+      "news": [
+        {
+          "title": "[주식마감기사] '태양광 사업' 기대감에 HD현대에너지솔루션 상한가... ...",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1140232",
+          "description": "대성산업은 지난 1947년 대성산업공사를 모태로 2010년 분할 설립됐으며, 2017년 주식회사 대성합동지주와... 동아엘텍, 재영솔루텍, 경남제약이다. 이날 코스피는 전장보다 83.02포인트(1.57%) 오른 5,371.10에 거래를...",
+          "pubDate": "02-04 19:40",
+          "originallink": "https://www.ggilbo.com/news/articleView.html?idxno=1140232"
+        },
+        {
+          "title": "재영솔루텍 주가, 2월 4일 장중 4,730원 3.86% 하락",
+          "link": "https://www.joongangenews.com/news/articleView.html?idxno=492748",
+          "description": "현재 주가수익비율(PER)은 131.39배를 나타내고 있으며, 외국인 투자자들의 주식 소진율은 전체 상장주식수 대비 1.67%를 기록했다. 이러한 재영솔루텍의 주가 흐름은 동일 업종 등락률이 0.05% 상승한 것과 비교할 때...",
+          "pubDate": "02-04 11:24",
+          "originallink": "https://www.joongangenews.com/news/articleView.html?idxno=492748"
+        },
+        {
+          "title": "[주식마감기사] '상장폐지' 피한 파두, 거래재개 후 상한가... 전진건설...",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1139940",
+          "description": "이는 '뻥튀기 상장' 의혹에 휩싸였던 파두의 주식 거래가 이날부터 재개되면서 영향을 받은 것으로... 네오셈, 재영솔루텍, 대한광통신, 휴림로봇, 쿼드메디슨, 루미르, 덕양에너젠, 나노팀, 코아시아씨엠...",
+          "pubDate": "02-03 19:40",
+          "originallink": "https://www.ggilbo.com/news/articleView.html?idxno=1139940"
+        }
+      ]
+    },
+    {
+      "name": "경남제약",
+      "code": "053950",
+      "current_price": "680",
+      "change": "+51",
+      "change_percent": "+8.11%",
+      "signal": "매수",
+      "reason": "대량 거래량과 함께 강한 상승을 보이며 단기 저항선을 돌파했습니다. 모든 이동평균선이 정배열을 형성하며 강력한 상승 모멘텀을 유지하고 있고, PBR이 매우 낮아 추가 상승 잠재력이 높습니다.",
+      "capture_time": "2026-02-04 20:37:38",
+      "analysis_time": "2026-02-04 20:51:18",
+      "news": [
+        {
+          "title": "[주식마감기사] '태양광 사업' 기대감에 HD현대에너지솔루션 상한가... ...",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1140232",
+          "description": "대성산업은 지난 1947년 대성산업공사를 모태로 2010년 분할 설립됐으며, 2017년 주식회사 대성합동지주와... 재영솔루텍, 경남제약이다. 이날 코스피는 전장보다 83.02포인트(1.57%) 오른 5,371.10에 거래를 마감했다....",
+          "pubDate": "02-04 19:40",
+          "originallink": "https://www.ggilbo.com/news/articleView.html?idxno=1140232"
+        },
+        {
+          "title": "차은우 소속사, '200억 탈세 의혹' 장어집 왜 물려받았나…\"부모님이 폐...",
+          "link": "https://m.entertain.naver.com/article/477/0000592035",
+          "description": "A숯불장어를 운영하던 주식회사 법인은 여전히 남아있다. A숯불장어의 셰프를 맡았던 B씨가 대표이사 겸... S씨는 판타지오·경남제약 등 판타지오를 소유한 남궁견 미래아이엔지 회장이 보유한 회사의 사내이사를...",
+          "pubDate": "02-04 18:40",
+          "originallink": "https://www.spotvnews.co.kr/news/articleView.html?idxno=796938"
+        },
+        {
+          "title": "‘판타지오’82억 불복 속 … 남궁견의 수백억 베팅",
+          "link": "http://wemakenews.co.kr/news/view.php?no=24491",
+          "description": "또 이 조합의 최대 출자자가 경남제약(지분 65%)이라는 대목도 함께 전해졌다. 실제로 아센디오 임시주총에서... 씨씨에스 주식으로 지급하는 특약이 포함됐다는 점도 전했다. 씨씨에스 자체도 ‘초전도체 사업화’ 기대...",
+          "pubDate": "02-04 09:48",
+          "originallink": "http://wemakenews.co.kr/news/view.php?no=24491"
+        }
+      ]
+    },
+    {
+      "name": "유디엠텍",
+      "code": "389680",
+      "current_price": "1,402",
+      "change": "▲201",
+      "change_percent": "+16.75%",
+      "signal": "중립",
+      "reason": "단기 급등으로 52주 신고가를 기록하고 거래량이 폭증하며 강한 모멘텀을 보이지만, 개인 매수세가 주도하는 과열 양상이며 펀더멘털 정보가 부족합니다. 급격한 이격도 확대로 단기 조정 가능성이 높아 신규 매수는 부담스럽습니다.",
+      "capture_time": "2026-02-04 20:37:44",
+      "analysis_time": "2026-02-04 20:52:50",
+      "news": [
+        {
+          "title": "[공시속보] 유디엠텍, 투자경고종목 지정→추가 상승 시 매매거래 정지...",
+          "link": "https://www.topstarnews.net/news/articleView.html?idxno=15954474",
+          "description": "한국거래소에 따르면 유디엠텍(389680)이 주가 급등에 따라 투자경고종목으로 지정됐다. 2026년 2월 4일... 또한 투자경고종목으로 지정된 주식은 위탁증거금 100% 납부 의무, 신용융자 불가, 대용증권 미인정 등의 조건이...",
+          "pubDate": "02-04 20:26",
+          "originallink": "https://www.topstarnews.net/news/articleView.html?idxno=15954474"
+        },
+        {
+          "title": "[주식마감기사] '태양광 사업' 기대감에 HD현대에너지솔루션 상한가... ...",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1140232",
+          "description": "누리플렉스, 유디엠텍, 인콘, 케이바이오, 파루, 쏘닉스, 알톤, 이엠앤아이, 코이즈, KD가 상한가에 이름을... 대성산업은 지난 1947년 대성산업공사를 모태로 2010년 분할 설립됐으며, 2017년 주식회사 대성합동지주와...",
+          "pubDate": "02-04 19:40",
+          "originallink": "https://www.ggilbo.com/news/articleView.html?idxno=1140232"
+        },
+        {
+          "title": "[오늘의 상한가] 삼표시멘트·파두 등",
+          "link": "https://www.joongangenews.com/news/articleView.html?idxno=492938",
+          "description": "4일 주식시장에서 삼표시멘트, 파두, HD현대에너지솔루션, 한화솔루션, 한화솔루션우, 대성산업, 팜스코, SG세계물산, 하림지주, 선익시스템, 엘케이켐, 비엘팜텍, 누리플렉스, 유디엠텍, 인콘, 케이바이오, 파루...",
+          "pubDate": "02-04 16:14",
+          "originallink": "https://www.joongangenews.com/news/articleView.html?idxno=492938"
+        }
+      ]
+    },
+    {
+      "name": "아스트",
+      "code": "067390",
+      "current_price": "659",
+      "change": "▲44",
+      "change_percent": "+7.15%",
+      "signal": "중립",
+      "reason": "단기 상승 모멘텀과 거래량 급증은 긍정적이나, 장기 추세가 약세이고 기관 수급이 부재하며 EPS가 음수여서 펀더멘털이 좋지 않습니다. 장기 이동평균선 저항에 부딪힐 수 있어 관망이 필요합니다.",
+      "capture_time": "2026-02-04 20:37:51",
+      "analysis_time": "2026-02-04 20:52:50",
+      "news": [
+        {
+          "title": "비츠로넥스텍 주가 룰루랄라...로켓 엔진 기술력 부각",
+          "link": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=424069",
+          "description": "항공기 동체 제작사인 아스트와 항공 우주 부품 제조의 켄코아에어로스페이스도 내림세를 보였다. 방산... 비상장 주식 거래 플랫폼과 연계된 비유테크놀러지는 보합을, 우주 항공 기획 및 컨설팅 기업인 타임기술과...",
+          "pubDate": "01-31 16:54",
+          "originallink": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=424069"
+        },
+        {
+          "title": "우주·핵융합 품은 비츠로넥스텍… 미래산업 '숨은 핵심 기업'",
+          "link": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=412699",
+          "description": "비츠로넥스텍의 공식 명칭은 '주식회사 비츠로넥스텍'이며 영문명은 'Vitzro Nextech Co., LTD.'다.... 우주항공과국방 관련주 퍼스텍 타임기술 퍼스텍 한화에어로스페이스 엠앤씨솔루션 한화시스템 아스트 한국항공우주 제노코...",
+          "pubDate": "01-01 15:00",
+          "originallink": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=412699"
+        },
+        {
+          "title": "[Who Is ?] 이민규 켄코아에어로스페이스 대표이사",
+          "link": "https://www.businesspost.co.kr/BP?command=article_view&num=424896",
+          "description": "△켄코아에어로스페이스의 지배구조 켄코아에어로스페이스의 최대 주주는 케플러 주식회사다. 2025년... 개발기업인 아스트로엑스에 지분 투자를 했다. 켄코아에어로스페이스는 2022년 4월 아스트로엑스의 지분...",
+          "pubDate": "12-26 07:50",
+          "originallink": "https://www.businesspost.co.kr/BP?command=article_view&num=424896"
+        }
+      ]
+    },
+    {
+      "name": "다산디엠씨",
+      "code": "208860",
+      "current_price": "2,075",
+      "change": "▲230",
+      "change_percent": "+12.47%",
+      "signal": "매수",
+      "reason": "최근 52주 최저점 부근에서 강한 거래량과 함께 급등하며 모든 이동평균선을 상향 돌파했습니다. 외국인과 기관의 순매수 전환이 긍정적인 수급 시그널로, 추가 상승 가능성이 높습니다.",
+      "capture_time": "2026-02-04 20:37:58",
+      "analysis_time": "2026-02-04 20:52:50",
+      "news": [
+        {
+          "title": "자율주행차 관련주, '함박웃음' 다산디엠씨·넥스트칩·드림텍·삼성전...",
+          "link": "http://www.finomy.com/news/articleView.html?idxno=249029",
+          "description": "다산디엠씨는 1998년 설립되어 2025년 (주)디엠씨 주식 추가 취득으로 자동차 부품 사업에 신규진출했다. 커넥티드 솔루션과 택시 모빌리티 솔루션을 글로벌 전장업체 및 완성차업체에 공급하며 자동차 부품을 제조...",
+          "pubDate": "02-04 00:20",
+          "originallink": "http://www.finomy.com/news/articleView.html?idxno=249029"
+        },
+        {
+          "title": "전 세계 90개국 누빈다... 다산디엠씨, 소프트웨어 업고 자동차 부품 시...",
+          "link": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=425115",
+          "description": "다산디엠씨는 지난해 자동차 부품 전문 기업 (주)디엠씨의 주식을 추가 취득하며 전장 사업에 본격 진출, 하드웨어와 소프트웨어를 아우르는 종합 모빌리티 기업으로 거듭나고 있다. 현재 다산디엠씨는 커넥티드...",
+          "pubDate": "02-03 14:44",
+          "originallink": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=425115"
+        },
+        {
+          "title": "사실상 지배주주 다산네트웍스, 다산디엠씨 주식 184만2105주 감소",
+          "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=620320",
+          "description": "다산디엠씨(208860)의 사실상 지배주주 다산네트웍스가 2026년 1월 12일 공시를 통해 전환사채권을... 세부변동내역 보고사유 변동일* 특정증권등의종류 소 유 주 식 수 (주) 취득/처분단가(원)** 비 고...",
+          "pubDate": "01-12 16:46",
+          "originallink": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=620320"
+        }
+      ]
+    },
+    {
+      "name": "지투파워",
+      "code": "388050",
+      "current_price": "9,500",
+      "change": "▲560",
+      "change_percent": "+6.25%",
+      "signal": "중립",
+      "reason": "주가가 52주 신고가를 경신하며 단기 강한 상승 모멘텀을 보이지만, 최근 기관 매도세가 출회되고 외국인 수급도 변동성이 큽니다. 단기 이격도가 과도하게 벌어져 단기 조정 가능성이 존재합니다.",
+      "capture_time": "2026-02-04 20:38:05",
+      "analysis_time": "2026-02-04 20:52:50",
+      "news": [
+        {
+          "title": "태양광에너지 관련주, '맑고 화창' 한화솔루션·유니테스트·파루·에스...",
+          "link": "http://www.finomy.com/news/articleView.html?idxno=249112",
+          "description": "신성이엔지, 지투파워, 한국전력, 대성파인텍, 이건홀딩스, 씨엔플러스는 상승했다. 한화솔루션과 파루와... 이후 1961년 '한국전력주식회사'로 개편되고, 1982년 현재의 통합형 전력공기업으로 재설립되며 국가...",
+          "pubDate": "02-04 18:06",
+          "originallink": "http://www.finomy.com/news/articleView.html?idxno=249112"
+        },
+        {
+          "title": "원자력발전 관련주, '껑충껑충' 삼미금속·대한전선·두산에너빌리티·...",
+          "link": "http://www.finomy.com/news/articleView.html?idxno=249024",
+          "description": "일진파워, 지투파워, 태웅, 원일티엔아이, DL이앤씨, GS건설, 삼영엠텍, 한미글로벌, 에너토크, 한양이엔지... 이후 1961년 '한국전력주식회사'로 개편되고, 1982년 현재의 통합형 전력공기업으로 재설립되며 국가...",
+          "pubDate": "02-03 18:20",
+          "originallink": "http://www.finomy.com/news/articleView.html?idxno=249024"
+        },
+        {
+          "title": "전력설비 관련주, '봄날의 햇살' 에이루트·바이오스마트... '먹구름' 두...",
+          "link": "http://www.finomy.com/news/articleView.html?idxno=248941",
+          "description": "금화피에스시, 지투파워, 위너스, 세명전기, 제일일렉트릭, 한전산업, 비츠로테크, LS에코에너지... 이후 1961년 '한국전력주식회사'로 개편되고, 1982년 현재의 통합형 전력공기업으로 재설립되며 국가 전력공급의...",
+          "pubDate": "02-02 18:20",
+          "originallink": "http://www.finomy.com/news/articleView.html?idxno=248941"
+        }
+      ]
+    },
+    {
+      "name": "보성파워텍",
+      "code": "006910",
+      "current_price": "8,140",
+      "change": "▲380",
+      "change_percent": "+4.90%",
+      "signal": "매수",
+      "reason": "주가가 모든 이동평균선 위에 위치하며 정배열을 유지하고 있고, 외국인 순매수세가 유입되며 단기 상승 모멘텀이 강합니다. 52주 최고가 근접에도 불구하고, 거래량 증가와 함께 상승 추세가 이어질 가능성이 있습니다.",
+      "capture_time": "2026-02-04 20:38:12",
+      "analysis_time": "2026-02-04 20:52:50",
+      "news": [
+        {
+          "title": "\"美는 규제 풀고 韓은 짓는다\"…원전주, '한미 협력 기대감'에 강세",
+          "link": "https://www.apnews.kr/news/articleView.html?idxno=3045540",
+          "description": "©AP신문(AP뉴스)/이미지 제공 = 주식차트연구소 ▲주도 테마지도 국내 원전 관련주가 강세 흐름을... 49%), 보성파워텍(+4.90%), 현대건설(+4.05%), 한신기계(+3.67%), 우진엔텍(+3.65%), 에너토크(+3.56%), 우리기술(+3.38...",
+          "pubDate": "02-04 16:44",
+          "originallink": "https://www.apnews.kr/news/articleView.html?idxno=3045540"
+        },
+        {
+          "title": "보성파워텍 주가, 2월 4일 장중 8,140원 4.89% 상승",
+          "link": "https://www.joongangenews.com/news/articleView.html?idxno=492774",
+          "description": "외국인 보유 주식수는 5,575,816주이며, 이는 외국인 한도 주식수인 49,129,824주 대비 11.35%의 외국인 소진율을 나타낸다. 지난 거래일인 지난 2월 3일의 보성파워텍 주가 흐름을 살펴보면, 시가는 7,510원으로...",
+          "pubDate": "02-04 11:34",
+          "originallink": "https://www.joongangenews.com/news/articleView.html?idxno=492774"
+        },
+        {
+          "title": "원자력발전 관련주, '껑충껑충' 삼미금속·대한전선·두산에너빌리티·...",
+          "link": "http://www.finomy.com/news/articleView.html?idxno=249024",
+          "description": "3일 한국거래소에 따르면 삼미금속, 대한전선, 현대건설, 두산에너빌리티, 대우건설, 보성파워텍, GS건설... 이후 1961년 '한국전력주식회사'로 개편되고, 1982년 현재의 통합형 전력공기업으로 재설립되며 국가...",
+          "pubDate": "02-03 18:20",
+          "originallink": "http://www.finomy.com/news/articleView.html?idxno=249024"
+        }
+      ]
+    },
+    {
+      "name": "다날",
+      "code": "064260",
+      "current_price": "9,510",
+      "change": "▲100",
+      "change_percent": "+1.06%",
+      "signal": "중립",
+      "reason": "주가가 52주 최저점 부근에서 반등 시도 중이나, 장기 이동평균선 아래에 위치하며 하락 추세가 지속되고 있습니다. 최근 개인의 매수세는 강하지만 외국인과 기관의 매도세가 뚜렷하여 상승 전환에는 시간이 걸릴 것으로 보입니다.",
+      "capture_time": "2026-02-04 20:38:19",
+      "analysis_time": "2026-02-04 20:52:50",
+      "news": [
+        {
+          "title": "다날 주가, 1월 30일 장중 9,350원 0.43% 상승",
+          "link": "https://www.job-post.co.kr/news/articleView.html?idxno=204783",
+          "description": "외국인 투자자들의 다날 보유 주식수는 3,636,677주로, 전체 상장주식수 75,179,479주 대비 외국인소진율은 4.84%이다. 동일 업종의 등락률이 -0.69%로 하락세를 보이는 가운데, 다날은 소폭 상승하며 다른...",
+          "pubDate": "01-30 10:54",
+          "originallink": "https://www.job-post.co.kr/news/articleView.html?idxno=204783"
+        },
+        {
+          "title": "다날 주가, 29일 장중 9,260원 3.12% 상승",
+          "link": "https://www.e-science.co.kr/news/articleView.html?idxno=124061",
+          "description": "| 이코노미사이언스 정상훈 기자 | 29일 오후 2시 24분 기준, 네이버페이 증권에 따르면 국내주식 다날은 현재 코스닥 시장에서 9,260원에 거래되며 지난 종가 대비 280원, 3.12% 상승했다. 시가는 9,010원으로...",
+          "pubDate": "01-29 14:48",
+          "originallink": "https://www.e-science.co.kr/news/articleView.html?idxno=124061"
+        },
+        {
+          "title": "다날 주가, 1월 28일 장중 9,790원 0.71% 하락",
+          "link": "https://www.topstarnews.net/news/articleView.html?idxno=15946774",
+          "description": "외국인 투자자들의 다날 주식 소진율은 4.69%이다. 지난 거래일 다날의 주가는 9,560원에 시작하여 10,700원의 고가를 기록했고, 9,540원의 저가 후 9,860원에 마감했다. 당시 거래량은 45,967,529주였다....",
+          "pubDate": "01-28 09:50",
+          "originallink": "https://www.topstarnews.net/news/articleView.html?idxno=15946774"
+        }
+      ]
+    },
+    {
+      "name": "삼미금속",
+      "code": "012210",
+      "current_price": "17,900",
+      "change": "▲1,210",
+      "change_percent": "+7.23%",
+      "signal": "매수",
+      "reason": "최근 52주 최저점을 기록한 후 강하게 반등하며 모든 이동평균선을 상향 돌파했습니다. 거래량이 크게 증가하며 개인의 강력한 매수세가 유입되고 있어 추가 상승 가능성이 높습니다.",
+      "capture_time": "2026-02-04 20:38:26",
+      "analysis_time": "2026-02-04 20:52:50",
+      "news": [
+        {
+          "title": "\"美는 규제 풀고 韓은 짓는다\"…원전주, '한미 협력 기대감'에 강세",
+          "link": "https://www.apnews.kr/news/articleView.html?idxno=3045540",
+          "description": "©AP신문(AP뉴스)/이미지 제공 = 주식차트연구소 ▲주도 테마지도 국내 원전 관련주가 강세 흐름을... 89%), 일진파워(+1.84%), 삼성물산(+0.48%), 오르비텍(+0.44%), 삼미금속(+0.11%)이 전일 대비 상승세로 장을 마감했다.",
+          "pubDate": "02-04 16:44",
+          "originallink": "https://www.apnews.kr/news/articleView.html?idxno=3045540"
+        },
+        {
+          "title": "삼미금속 주가, 2월 4일 장중 19,200원 7.26% 상승",
+          "link": "https://www.topstarnews.net/news/articleView.html?idxno=15953485",
+          "description": "외국인 투자자들의 주식 소진율은 0.86%를 기록했다. 지난 거래일 삼미금속은 16,340원에 시작하여 19,960원의 고가와 15,400원의 저가를 기록한 후 17,900원으로 거래를 마쳤다. 당시 거래량은 16,698,320주였다....",
+          "pubDate": "02-04 10:16",
+          "originallink": "https://www.topstarnews.net/news/articleView.html?idxno=15953485"
+        },
+        {
+          "title": "[주식마감기사] '상장폐지' 피한 파두, 거래재개 후 상한가... 전진건설...",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1139940",
+          "description": "이는 '뻥튀기 상장' 의혹에 휩싸였던 파두의 주식 거래가 이날부터 재개되면서 영향을 받은 것으로... 이미지스, 삼미금속, KX하이텍, 미래에셋벤처투자, 대주산업, 케이바이오, 삼표시멘트, 우리기술, 나무기술...",
+          "pubDate": "02-03 19:40",
+          "originallink": "https://www.ggilbo.com/news/articleView.html?idxno=1139940"
+        }
+      ]
+    },
+    {
+      "name": "이렘",
+      "code": "009730",
+      "current_price": "651",
+      "change": "▲60",
+      "change_percent": "+10.17%",
+      "signal": "매수",
+      "reason": "주가가 52주 최저점에서 벗어나 단기 이동평균선을 상향 돌파하며 강한 상승 모멘텀을 보입니다. 외국인과 기관의 순매수 유입이 긍정적이며, 거래량 증가와 함께 상승 추세가 이어질 수 있습니다.",
+      "capture_time": "2026-02-04 20:38:33",
+      "analysis_time": "2026-02-04 20:52:50",
+      "news": [
+        {
+          "title": "이렘, 유상증자 결정…채무상환자금 조달",
+          "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=627056",
+          "description": "주요사항보고서(유상증자결정) 금융위원회 / 한국거래소 귀중2026 년 2 월 4 일회 사 명 :주식회사 이렘대 표 이 사 :김 우 진본 점 소 재 지 :전라북도 부안군 행안면 부안농공단지길 29(전 화) 02-598-5133(홈페이지)...",
+          "pubDate": "02-04 17:36",
+          "originallink": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=627056"
+        },
+        {
+          "title": "[개장시황] 코스피·코스닥, 동반 하락 출발…그린란드 두고 美·EU 긴장...",
+          "link": "https://www.joongangenews.com/news/articleView.html?idxno=488120",
+          "description": "가량의 주식을 사들이고 있다. 코스피 시가총액 상위 종목들 중△삼성전자(+0.62%) △SK하이닉스(+1.08... 79%) △이렘(+17.20%) △에스에너지(+17.11%) △해성옵틱스(+15.77%) △이미지스(+15.75%) △화성밸브(+15.51...",
+          "pubDate": "01-21 09:24",
+          "originallink": "https://www.joongangenews.com/news/articleView.html?idxno=488120"
+        },
+        {
+          "title": "[공시학개론] 불성실공시 벌점 쌓이면…'개미 피해' 끝은 상장폐지",
+          "link": "https://www.ajunews.com/view/20260112161346255",
+          "description": "13일 한국거래소에 따르면 올해 들어 코스닥 상장사 3곳(이렘, 큐리옥스바이오시스템즈, 소룩스)과 코스피... 금융투자업계 관계자는 \"불성실공시는 주식시장 전반에 대한 신뢰를 훼손하는 요인\"이라며 \"투자자들은...",
+          "pubDate": "01-13 11:02",
+          "originallink": "https://www.ajunews.com/view/20260112161346255"
+        }
+      ]
+    },
+    {
+      "name": "DSC인베스트먼트",
+      "code": "241520",
+      "current_price": "9,280",
+      "change": "▲890",
+      "change_percent": "+10.61%",
+      "signal": "매수",
+      "reason": "최근 바닥권에서 대량 거래량을 동반한 급등으로 모든 이동평균선을 돌파하며 강한 매수 시그널을 보입니다. 외국인과 기관의 순매수 유입이 긍정적이며, 추가적인 상승 여력이 기대됩니다.",
+      "capture_time": "2026-02-04 20:38:40",
+      "analysis_time": "2026-02-04 20:52:50",
+      "news": [
+        {
+          "title": "DSC인베스트먼트 주가, 2월 4일 9,280원 10.61% 상승 마감",
+          "link": "https://www.topstarnews.net/news/articleView.html?idxno=15954019",
+          "description": "DSC인베스트먼트의 시가총액은 2,506억 원으로 코스닥 시장에서 430위를 차지했다. 기업의 주가수익비율(PER)은 30.33배로, 동일업종 PER인 16.35배보다 높은 수준을 보였다. 한편, 외국인 보유 주식수는 1,518...",
+          "pubDate": "02-04 16:22",
+          "originallink": "https://www.topstarnews.net/news/articleView.html?idxno=15954019"
+        },
+        {
+          "title": "팜스코 주가 폭등랠리...마켓컬리 테마 무슨 호재 있나",
+          "link": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=425464",
+          "description": "DSC인베스트먼트는 벤처 지분 확대와 물류 스타트업 투자 기대가 동시에 부각되며 6%대 강세를 기록 중이다.... 전문가들은 \"테마 주식은 변동성이 크므로 수급과 뉴스 흐름을 동시에 확인해야 한다\"고 조언한다. 마켓컬리...",
+          "pubDate": "02-04 09:58",
+          "originallink": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=425464"
+        },
+        {
+          "title": "[금융 소식] 뱅크샐러드, 금리인하요구권 등록 시작 外",
+          "link": "http://www.dailypop.kr/news/articleView.html?idxno=96095",
+          "description": "NH농협은행, DSC인베스트먼트와 광화문·시청 일대 플로깅 NH농협은행 GIB부문은 DSC인베스트먼트와 함께... 대표 코너인 '주식 반상'은 시장 흐름과 유망 종목을 중심으로 한 투자 전략을 제시하며, 화요일에 방송되는 'ETF...",
+          "pubDate": "02-03 13:10",
+          "originallink": "http://www.dailypop.kr/news/articleView.html?idxno=96095"
+        }
+      ]
+    },
+    {
+      "name": "씨아이에스",
+      "code": "222080",
+      "current_price": "13,350",
+      "change": "▲1,520",
+      "change_percent": "+12.67%",
+      "signal": "적극매수",
+      "reason": "주가가 52주 신고가를 경신하며 강력한 상승 추세를 보이고 있으며, 외국인과 기관의 지속적인 순매수가 주가를 견인하고 있습니다. 모든 이동평균선이 정배열 상태로 우상향하고 있어 추가적인 상승이 유력합니다.",
+      "capture_time": "2026-02-04 20:38:47",
+      "analysis_time": "2026-02-04 20:52:50",
+      "news": [
+        {
+          "title": "전기차 관련주, '룰루랄라 콧노래' 삼성SDI·한온시스템·씨아이에스·휴...",
+          "link": "http://www.finomy.com/news/articleView.html?idxno=249117",
+          "description": "4일 한국거래소에 따르면 씨아이에스, 한온시스템, 삼영, 휴맥스, 삼성SDI, 파워로직스, 세아메카닉스... 삼영은 1959년 설립된 국내 유일의 커패시터 필름 제조사이자 세계 3위 생산업체로, 2025년 캐스코 주식회사...",
+          "pubDate": "02-04 18:20",
+          "originallink": "http://www.finomy.com/news/articleView.html?idxno=249117"
+        },
+        {
+          "title": "씨아이에스 주가, 2월 4일 장중 13,340원 11.17% 상승",
+          "link": "https://www.topstarnews.net/news/articleView.html?idxno=15953496",
+          "description": "외국인 투자자들의 보유 현황을 살펴보면, 상장주식수 77,371,839주 가운데 6,428,069주를 외국인이 보유하여 8.31%의 외국인 소진율을 보이고 있다. 지난 거래일 씨아이에스의 주가는 시가 12,450원으로 출발하여...",
+          "pubDate": "02-04 10:22",
+          "originallink": "https://www.topstarnews.net/news/articleView.html?idxno=15953496"
+        },
+        {
+          "title": "오늘의 메모[2월 4일]",
+          "link": "https://n.news.naver.com/mnews/article/011/0004585985?sid=101",
+          "description": "▲주권변경상장=백산(035150)(주식소각) ▲구주주유상청약=인베니아(079950) ▲보통주추가상장=드림씨아이에스(223250)·HEM파마·M83(주식매수선택권행사) 뉴로메카(348340)·휴림에이텍·모아라이프플러스...",
+          "pubDate": "02-03 10:41",
+          "originallink": "https://www.sedaily.com/article/20004078?ref=naver"
+        }
+      ]
+    },
+    {
+      "name": "에코프로",
+      "code": "086520",
+      "current_price": "175,800",
+      "change": "▲4,400",
+      "change_percent": "+2.59%",
+      "signal": "중립",
+      "reason": "주가가 장기 이동평균선 아래에서 횡보하며 뚜렷한 추세가 형성되지 않고 있습니다. 최근 외국인 매수세가 약화되고 기관 매도세가 나타나 수급 불확실성이 크며, 단기 급등 후 조정 가능성도 있습니다.",
+      "capture_time": "2026-02-04 20:38:54",
+      "analysis_time": "2026-02-04 20:52:50",
+      "news": [
+        {
+          "title": "['클릭' 증시] '국민주' 삼성전자 시총 1000조 돌파",
+          "link": "http://www.00news.co.kr/news/articleView.html?idxno=101684",
+          "description": "지난해 4월 이후 이어진 상승세로 주식거래에 관심이 없거나 부정적이던 국민들도 시장 참여에 나서기... 코스닥 시장 시총 상위 10개 종목은 에코프로, 에코프로비엠, 레인보우로보틱스, 삼천당제약, 리노공업 등이...",
+          "pubDate": "02-04 18:10",
+          "originallink": "http://www.00news.co.kr/news/articleView.html?idxno=101684"
+        },
+        {
+          "title": "[단독] ‘승계 시동 거나’ 에코프로 오너 가족회사 사업목적에 투자업...",
+          "link": "https://ilyo.co.kr/?ac=article_view&entry_id=507734",
+          "description": "2020년 1월부터 2021년 9월까지 에코프로비엠의 계약 정보가 공개되기 전 차명 계좌로 미리 주식을 매입한 뒤 다시 매도해 11억여 원의 시세차익을 올린 혐의로 재판에 넘겨졌고 대법원에서 징역 2년의 실형이 확정됐다. 이...",
+          "pubDate": "02-04 17:56",
+          "originallink": "https://ilyo.co.kr/?ac=article_view&entry_id=507734"
+        },
+        {
+          "title": "코스피, 또 최고치 '5,371'…삼성전자 시총 1천조원 돌파",
+          "link": "http://www.newsfc.co.kr/news/articleView.html?idxno=76633",
+          "description": "에코프로(3.53%), 에코프로비엠(1.60%), 레인보우로보틱스(0.13%), 삼천당제약(1.89%) 등이 올랐다. 이날 오후 3시 30분 기준 서울 외환시장에서 달러 대비 원화 환율은 4.8원 오른 1,450.2원을 나타냈다. 이날 주식시장에...",
+          "pubDate": "02-04 17:22",
+          "originallink": "http://www.newsfc.co.kr/news/articleView.html?idxno=76633"
+        }
+      ]
+    },
+    {
+      "name": "글로벌텍스프리",
+      "code": "204620",
+      "current_price": "5,180",
+      "change": "▲250",
+      "change_percent": "+5.07%",
+      "signal": "매수",
+      "reason": "주가가 모든 이동평균선을 상향 돌파하며 강한 상승 추세로 전환되었습니다. 외국인과 기관의 동반 순매수세가 유입되어 수급이 개선되고 있으며, 거래량 증가와 함께 추가 상승 여력이 충분합니다.",
+      "capture_time": "2026-02-04 20:39:01",
+      "analysis_time": "2026-02-04 20:52:50",
+      "news": [
+        {
+          "title": "지티에프홀딩스, 장내 매수로 글로벌텍스프리 지분 확대",
+          "link": "https://dealsite.co.kr/articles/155630",
+          "description": "106만주 추가 취득…최대주주 변경 확정 시 지분 22.59% 국내 택스리펀드 사업자 글로벌텍스프리(GTF)의 변경 예정 최대주주인 지티에프홀딩스가 기업가치 평가 및 책임경영 강화를 위해 GTF 주식을 장내 매수했다고 23일...",
+          "pubDate": "01-23 16:44",
+          "originallink": "https://dealsite.co.kr/articles/155630"
+        },
+        {
+          "title": "지티에프홀딩스, 장내매수로 글로벌텍스프리 지분확대…실적 자신감",
+          "link": "https://news.dealsitetv.com/articles/164414",
+          "description": "지티에프홀딩스는 글로벌텍스프리 주식 106만주(1.51%)를 장내에서 매수했다고 23일 공시를 통해 밝혔다. 지티에프홀딩스는 MDS테크와 아이즈비전이 각각 50% 출자해 지난해 설립된 법인으로, 문양근 글로벌텍스프리...",
+          "pubDate": "01-23 15:18",
+          "originallink": "https://news.dealsitetv.com/articles/164414"
+        },
+        {
+          "title": "지티에프홀딩스, 글로벌텍스프리 지분 장내 매수…\"실적 자신감\"",
+          "link": "https://n.news.naver.com/mnews/article/008/0005308626?sid=101",
+          "description": "택스리펀드 기업인 글로벌텍스프리(이하 GTF)의 변경 예정 최대주주인 지티에프홀딩스가 GTF 주식을 장내 매수했다고 23일 밝혔다. 최근 주가 하락으로 기업 가치가 지나치게 저평가됐다는 판단에서다....",
+          "pubDate": "01-23 14:58",
+          "originallink": "https://www.mt.co.kr/stock/2026/01/23/2026012314421096445"
+        }
+      ]
+    },
+    {
+      "name": "에스와이스틸텍",
+      "code": "365330",
+      "current_price": "4,035",
+      "change": "▼65",
+      "change_percent": "-1.59%",
+      "signal": "중립",
+      "reason": "주가가 장기 이동평균선 아래에서 약세를 보이고 있으며, 52주 최저점 부근에서 횡보하는 움직임입니다. 기관과 외국인 모두 매도세를 보이며 수급 상황이 좋지 않아 상승 모멘텀을 기대하기 어렵습니다.",
+      "capture_time": "2026-02-04 20:39:08",
+      "analysis_time": "2026-02-04 20:52:50",
+      "news": [
+        {
+          "title": "[박정식의 국내 주식시황] 인공지능 밸류에이션 및 중동 지정학적 리스...",
+          "link": "https://www.newsquest.co.kr/news/articleView.html?idxno=261264",
+          "description": "거래량 상위 종목으로는 SG, SK증권, 에스와이스틸텍, 동양, 아주IB투자 등. 2/3(화) 대체거래소(NXT) 애프터마켓에서는 반도체 슈퍼사이클 지속 전망에 기가비스, 주성엔지니어링 등 일부 반도체 관련주가 상승했다....",
+          "pubDate": "02-04 08:28",
+          "originallink": "https://www.newsquest.co.kr/news/articleView.html?idxno=261264"
+        },
+        {
+          "title": "[주식마감기사] '상장폐지' 피한 파두, 거래재개 후 상한가... 전진건설...",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1139940",
+          "description": "이는 '뻥튀기 상장' 의혹에 휩싸였던 파두의 주식 거래가 이날부터 재개되면서 영향을 받은 것으로... 네오펙트, 에스와이스틸텍, 이미지스, 삼미금속, KX하이텍, 미래에셋벤처투자, 대주산업, 케이바이오...",
+          "pubDate": "02-03 19:40",
+          "originallink": "https://www.ggilbo.com/news/articleView.html?idxno=1139940"
+        },
+        {
+          "title": "[주식마감기사] 러·우 전쟁 종결 기대감에 '재건주' 대모 상한가... 삼...",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1126174",
+          "description": "상장 주식 수는 743만5870주다. 이번 상장은 지난 1일 삼양그룹 지주회사인 삼양홀딩스에서 인적분할된... 코스닥 시장 거래 상위종목 30위는 신영스팩11호, 에스와이스틸텍, 스맥, 서울전자통신, 퓨처코어, 재영솔루텍...",
+          "pubDate": "11-24 19:40",
+          "originallink": "https://www.ggilbo.com/news/articleView.html?idxno=1126174"
+        }
+      ]
+    },
+    {
+      "name": "센서뷰",
+      "code": "321370",
+      "current_price": "3,650",
+      "change": "▼310",
+      "change_percent": "-7.83%",
+      "signal": "매도",
+      "reason": "주가가 장기 이동평균선 아래에서 하락 추세를 지속하고 있으며, 고저 대비 위치가 낮아 추가 하락 압력이 높습니다. 외국인과 기관의 매도세가 심화되고 있어 부정적인 수급 상황입니다.",
+      "capture_time": "2026-02-04 20:39:15",
+      "analysis_time": "2026-02-04 20:52:50",
+      "news": [
+        {
+          "title": "센서뷰 주가, 2월 4일 3,650원 7.83% 하락 마감",
+          "link": "https://www.topstarnews.net/news/articleView.html?idxno=15954013",
+          "description": "코스닥 시장에서 센서뷰의 시가총액은 1,695억 원이며, 코스닥 내 시가총액 순위는 583위이다. 외국인 투자자들의 주식 보유 현황을 살펴보면, 전체 상장주식수 46,438,038주 중 506,066주를 보유하여...",
+          "pubDate": "02-04 16:20",
+          "originallink": "https://www.topstarnews.net/news/articleView.html?idxno=15954013"
+        },
+        {
+          "title": "센서뷰 주가, 2월 4일 3,650원 7.83% 하락 마감",
+          "link": "https://www.joongangenews.com/news/articleView.html?idxno=492927",
+          "description": "외국인 투자자들의 움직임을 보면, 전체 상장 주식수 46,438,038주 가운데 외국인 보유 주식수는 506,066주로, 외국인소진율은 1.09%를 보였다. 낮은 외국인소진율과 업종 평균 대비 하락세는 센서뷰의 현재 시장...",
+          "pubDate": "02-04 16:00",
+          "originallink": "https://www.joongangenews.com/news/articleView.html?idxno=492927"
+        },
+        {
+          "title": "스페이스X 관련주, '덩실덩실' 미래에셋벤처투자·미래에셋증권·나노팀...",
+          "link": "http://www.finomy.com/news/articleView.html?idxno=249026",
+          "description": "이녹스첨단소재, 센서뷰, 스피어, 켄코아에어로스페이스는 상승했다. 미래에셋벤처투자와... Ltd.)의 주식 500만주를 취득하기로 결정했다고 지난 1월 15일 공시했다. 취득금액은 73억 6400만원으로 자기자본 대비 11.40...",
+          "pubDate": "02-04 00:10",
+          "originallink": "http://www.finomy.com/news/articleView.html?idxno=249026"
+        }
+      ]
+    },
+    {
+      "name": "캡스톤파트너스",
+      "code": "452300",
+      "current_price": "3,265",
+      "change": "▲250",
+      "change_percent": "+8.29%",
+      "signal": "매수",
+      "reason": "주가가 52주 최저점 부근에서 강한 거래량을 동반하여 상승하며 단기 이동평균선을 돌파했습니다. 최근 개인의 강한 매수세가 유입되고 있으며, 52주 최저점 대비 위치가 낮아 상승 여력이 존재합니다.",
+      "capture_time": "2026-02-04 20:39:22",
+      "analysis_time": "2026-02-04 20:52:50",
+      "news": [
+        {
+          "title": "2월 3일 주식시장 주요공시",
+          "link": "https://www.catchnews.kr/news/articleView.html?idxno=120250",
+          "description": "36억원(전년대비 적자지속) ▶캡스톤파트너스, 보통주 1주당 29원(시가배당률 1.0%) 현금배당(결산배당) 결정(배당기준일:2025-12-31) ▶수성웹툰, 투믹스홀딩스가 최대주주 변경 수반 주식 담보제공...",
+          "pubDate": "02-04 08:54",
+          "originallink": "https://www.catchnews.kr/news/articleView.html?idxno=120250"
+        },
+        {
+          "title": "[아주증시포커스] 개미 vs 외국인…끝없는 매수-매도 전쟁",
+          "link": "https://www.ajunews.com/view/20260203223801548",
+          "description": "캡스톤파트너스, 주당 29원 배당 ▷ 시큐브, 보통주 34만1779주 소각 ◆펀드 동향(30일 기준, ETF 제외) 국내주식형 496억원 해외주식형 -437억원 ◆오늘(월) 주요일정 유로존-소비자물가지수, 생산자물가지수 미국-ADP...",
+          "pubDate": "02-04 07:00",
+          "originallink": "https://www.ajunews.com/view/20260203223801548"
+        },
+        {
+          "title": "[더벨]케이스톤, LS머트리얼즈 최종 엑시트 성공 'IRR 37.2%'",
+          "link": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202601291545396160108663",
+          "description": "케이스톤파트너스(이하 케이스톤)가 LS머트리얼즈 최종 엑시트에 성공했다. 투자 6년 만에 거둔 성과로... 이에 케이스톤은 보유 중이던 LS알스코 지분 전량을 LS머트리얼즈에 현물 출자하고, LS머트리얼즈 주식으로...",
+          "pubDate": "01-30 09:38",
+          "originallink": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202601291545396160108663"
+        }
+      ]
+    },
+    {
+      "name": "빌리언스",
+      "code": "044480",
+      "current_price": "289",
+      "change": "▲20",
+      "change_percent": "+7.43%",
+      "signal": "매수",
+      "reason": "주가가 52주 최저점 대비 크게 상승하지 못한 상태에서 최근 급등하며 단기 이동평균선을 돌파했습니다. 거래량이 크게 증가하며 바닥권에서 매수세가 유입되고 있어 추가 상승을 기대해 볼 만합니다.",
+      "capture_time": "2026-02-04 20:39:29",
+      "analysis_time": "2026-02-04 20:52:50",
+      "news": [
+        {
+          "title": "'M&A 전문가' 남궁견 미래아이앤지 회장…차은우·김선호 '세무 리스크'...",
+          "link": "https://www.bizhankook.com/bk/article/31370",
+          "description": "미래아이앤지그룹은 2023년 휴마시스를, 2024년에는 경남제약과 빌리언스를 인수했고 최근에는 아센디오를... 현재 미래아이앤지그룹 계열사가 보유한 판타지오 주식 수는 1071만 7579주(지분율 23.32%)다. 차은우의 탈세...",
+          "pubDate": "02-02 16:54",
+          "originallink": "https://www.bizhankook.com/bk/article/31370"
+        },
+        {
+          "title": "주요주주 경남제약, 빌리언스 CB 행사가액 조정",
+          "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=618077",
+          "description": "경남제약은 빌리언스의 전환사채권 행사가액 조정으로 주식 수를 144만4160주 증가시켰다. 이번 변동으로 경남제약의 빌리언스에 대한 특정증권등의 비율은 22.09%에서 23.16%로 1.07% 증가했다. 변동 사유는...",
+          "pubDate": "01-02 17:06",
+          "originallink": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=618077"
+        },
+        {
+          "title": "주요주주 휴마시스, 빌리언스 주식 보유 현황 공시",
+          "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=618053",
+          "description": "발행회사에 관한 사항회 사 명주식회사 빌리언스법인구분코스닥상장법인회사코드 044480발행주식 총수80,663,7282. 보고자에 관한 사항보고구분변동보고자 구분국내법인성명(명칭)한 글휴마시스...",
+          "pubDate": "01-02 16:26",
+          "originallink": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=618053"
+        }
+      ]
+    },
+    {
+      "name": "대주산업",
+      "code": "003310",
+      "current_price": "5,430",
+      "change": "▲60",
+      "change_percent": "+1.12%",
+      "signal": "중립",
+      "reason": "주가가 횡보하며 장기 이동평균선 아래에 위치하여 뚜렷한 추세가 없습니다. 외국인 매도세가 지속되고 있어 수급이 불안정하며, 의미 있는 상승 모멘텀이 나타나기까지는 시간이 필요해 보입니다.",
+      "capture_time": "2026-02-04 20:39:36",
+      "analysis_time": "2026-02-04 20:52:50",
+      "news": [
+        {
+          "title": "[주식마감기사] '상장폐지' 피한 파두, 거래재개 후 상한가... 전진건설...",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1139940",
+          "description": "이는 '뻥튀기 상장' 의혹에 휩싸였던 파두의 주식 거래가 이날부터 재개되면서 영향을 받은 것으로... 미래에셋벤처투자, 대주산업, 케이바이오, 삼표시멘트, 우리기술, 나무기술, LK삼양, 네오셈, 재영솔루텍...",
+          "pubDate": "02-03 19:40",
+          "originallink": "https://www.ggilbo.com/news/articleView.html?idxno=1139940"
+        },
+        {
+          "title": "대주산업 주가, 2월 3일 장중 5,590원 3.51% 상승",
+          "link": "https://www.topstarnews.net/news/articleView.html?idxno=15952167",
+          "description": "외국인 투자자의 대주산업 주식 소진율은 1.40%로, 전체 상장주식수 35,392,350주 중 494,919주를 보유하고 있는 것으로 확인된다. 동일 업종은 현재 1.17%의 등락률을 기록하고 있다. 거래량은 10,486,793주로...",
+          "pubDate": "02-03 10:18",
+          "originallink": "https://www.topstarnews.net/news/articleView.html?idxno=15952167"
+        },
+        {
+          "title": "대주산업 주가, 3일 장중 5,630원 4.26% 상승",
+          "link": "https://www.e-science.co.kr/news/articleView.html?idxno=124507",
+          "description": "대주산업의 현재 시가총액은 1,989억 원으로 코스닥 시장에서 511위를 차지하고 있다. 총 35,392,350주의 상장주식수 중 외국인 보유 주식수는 494,919주이며, 외국인소진율은 1.40%로 낮은 수준을 보였다. 기업의...",
+          "pubDate": "02-03 09:58",
+          "originallink": "https://www.e-science.co.kr/news/articleView.html?idxno=124507"
+        }
+      ]
+    },
+    {
+      "name": "대모",
+      "code": "317850",
+      "current_price": "9,550",
+      "change": "▼750",
+      "change_percent": "-7.26%",
+      "signal": "매도",
+      "reason": "주가가 모든 이동평균선을 하향 돌파하며 하락 추세로 전환되었고, 외국인과 기관의 동반 매도세가 강하게 나타나고 있습니다. 단기 하락 모멘텀이 강해 추가적인 주가 하락이 예상됩니다.",
+      "capture_time": "2026-02-04 20:39:42",
+      "analysis_time": "2026-02-04 20:52:50",
+      "news": [
+        {
+          "title": "[중국증시 주간 포인트] ②2월 국내외 빅테크 'AI 대전', 해외 대형 기술...",
+          "link": "https://www.newspim.com/news/view/20260201000139",
+          "description": "이 기사는 2월 2일 오전 06시00분 '해외 주식 투자의 도우미' GAM(Global Asset Management)에 출고된 프리미엄... ② 바이두(9888.HK)가 개발한 AI 기반 지식강화 거대언어모델(LLM)인 원신대모형(文心大模型)은 1월 26일부터...",
+          "pubDate": "02-02 06:00",
+          "originallink": "https://www.newspim.com/news/view/20260201000139"
+        },
+        {
+          "title": "웹의 미래를 재정의하다… AI 에이전트로 마음의 여유 실현하는 ‘유토...",
+          "link": "https://n.news.naver.com/mnews/article/020/0003693497?sid=105",
+          "description": "펠리시스와 레디컬벤처스를 비롯해 ‘딥러닝의 대모’로 불리는 페이페이 리 스탠퍼드대 교수, 구글 AI를... ‘AI 로봇 반도체 BIG 3 투자 트렌드’ ‘2025-2027 앞으로 3년 미국 주식 트렌드’ 등의 저자다.",
+          "pubDate": "01-29 17:42",
+          "originallink": "https://www.donga.com/news/It/article/all/20260129/133250084/1"
+        },
+        {
+          "title": "깊이가 다른 글로벌 투자 정보 GAM - 맛보기편 (1/27)",
+          "link": "https://www.newspim.com/news/view/20260127001011",
+          "description": "개발한 대모형(大模型) 브랜드인 퉁이첸원(通義千問∙Qwen) 홍보 이미지. [AI의 종목 이야기] 中 '유니트리... 관련 주식들 [자료=블룸버그] [AI의 종목 이야기] 애플, 업그레이드된 신형 에어태그 발표 애플의 신형...",
+          "pubDate": "01-27 16:50",
+          "originallink": "https://www.newspim.com/news/view/20260127001011"
+        }
+      ]
+    },
+    {
+      "name": "이엠앤아이",
+      "code": "083470",
+      "current_price": "1,160",
+      "change": "▲290",
+      "change_percent": "+33.33%",
+      "signal": "적극매수",
+      "reason": "주가가 52주 최저점에서 강한 거래량을 동반한 상한가로 급등하며 모든 이동평균선을 돌파했습니다. 외국인과 기관의 동반 순매수가 확인되어 강력한 매수 시그널로 판단됩니다.",
+      "capture_time": "2026-02-04 20:40:02",
+      "analysis_time": "2026-02-04 20:52:50",
+      "news": [
+        {
+          "title": "[주식마감기사] '태양광 사업' 기대감에 HD현대에너지솔루션 상한가... ...",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1140232",
+          "description": "알톤, 이엠앤아이, 코이즈, KD가 상한가에 이름을 올리고 장을 마감한 가운데 투자자들의 관심이 뜨겁다.... 대성산업은 지난 1947년 대성산업공사를 모태로 2010년 분할 설립됐으며, 2017년 주식회사 대성합동지주와...",
+          "pubDate": "02-04 19:40",
+          "originallink": "https://www.ggilbo.com/news/articleView.html?idxno=1140232"
+        },
+        {
+          "title": "[오늘의 상한가] 삼표시멘트·파두 등",
+          "link": "https://www.joongangenews.com/news/articleView.html?idxno=492938",
+          "description": "|중앙이코노미뉴스 엄현식 기자| 4일 주식시장에서 삼표시멘트, 파두, HD현대에너지솔루션, 한화솔루션... 알톤, 이엠앤아이, 코이즈, KD 등 주가가 상한가를 기록했다. 이날 한국거래소에 따르면 삼표시멘트 주가는...",
+          "pubDate": "02-04 16:14",
+          "originallink": "https://www.joongangenews.com/news/articleView.html?idxno=492938"
+        },
+        {
+          "title": "5천피 씹어먹은 '이 지수', 6천피·7천피도 앞당긴다 [뉴스톡 웰스톡]",
+          "link": "http://www.newswell.co.kr/news/articleView.html?idxno=15936",
+          "description": "코스피 지수가 5천피를 훌쩍 넘어 사상 최고치 행진을 이어가는 가운데, 자기주식 소각 등 기업들의... 알톤 ▲이엠앤아이 ▲코이즈 ▲KD는 상한가를 기록했다. 이 가운데 삼표시멘트와 인콘은 3연상, 파두와...",
+          "pubDate": "02-04 15:36",
+          "originallink": "http://www.newswell.co.kr/news/articleView.html?idxno=15936"
+        }
+      ]
+    },
+    {
+      "name": "제룡산업",
+      "code": "147830",
+      "current_price": "4,750",
+      "change": "▲290",
+      "change_percent": "+6.49%",
+      "signal": "매수",
+      "reason": "주가가 52주 최저점 부근에서 바닥을 다지고 상승 전환을 시도하며 모든 이동평균선을 돌파했습니다. 외국인 순매수가 꾸준히 유입되고 있으며, 거래량 증가와 함께 추가 상승 여력이 보입니다.",
+      "capture_time": "2026-02-04 20:40:09",
+      "analysis_time": "2026-02-04 20:52:50",
+      "news": [
+        {
+          "title": "전력설비 관련주, '봄날의 햇살' 에이루트·바이오스마트... '먹구름' 두...",
+          "link": "http://www.finomy.com/news/articleView.html?idxno=248941",
+          "description": "이외에 피앤씨테크는 상승했지만 비츠로시스, 티씨머티리얼즈, 서남, 제룡산업, 한전KPS, 서전기전... 전력산업의 역사 그 자체다. 이후 1961년 '한국전력주식회사'로 개편되고, 1982년 현재의 통합형 전력공기업으로...",
+          "pubDate": "02-02 18:20",
+          "originallink": "http://www.finomy.com/news/articleView.html?idxno=248941"
+        },
+        {
+          "title": "전력설비 관련주, '룰루랄라 콧노래' 한전산업·서전기전·한전KPS... '시...",
+          "link": "http://www.finomy.com/news/articleView.html?idxno=248525",
+          "description": "반면 보성파워텍, 지투파워, 제룡산업은 하락했다. 보성파워텍과 지투파워와 제룡산업은 전 거래일 대비... 한전산업은 1990년 한전산업개발주식회사로 설립되어 2010년 유가증권시장에 상장한 이후, 전국 화력 및...",
+          "pubDate": "01-27 18:10",
+          "originallink": "http://www.finomy.com/news/articleView.html?idxno=248525"
+        },
+        {
+          "title": "탈탄소 파도 올라탄 HD현대일렉트릭, '그린트릭'으로 에너지 판도 바꾼...",
+          "link": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=422139",
+          "description": "오늘 주식시장에서 전력설비 테마가 강력한 우상향 곡선을 그리고 있다. 27일 한국거래소에 따르면, 이날... 이어 티씨머티리얼즈, 광명전기, 제룡산업, 바이오스마트도 소폭 하락하며 숨 고르기에 들어간 모습이다....",
+          "pubDate": "01-27 10:16",
+          "originallink": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=422139"
+        }
+      ]
+    },
+    {
+      "name": "CS",
+      "code": "065770",
+      "current_price": "853",
+      "change": "▲72",
+      "change_percent": "+9.22%",
+      "signal": "매수",
+      "reason": "주가가 52주 최저점 대비 낮은 가격에서 급등하며 단기 이동평균선을 상향 돌파했습니다. 외국인 순매수와 거래량 증가가 긍정적인 시그널로, 바닥권 탈출 후 추가 상승을 기대할 수 있습니다.",
+      "capture_time": "2026-02-04 20:40:15",
+      "analysis_time": "2026-02-04 20:52:50",
+      "news": [
+        {
+          "title": "美 증시에 클로드 코워크 충격…AI 혁신에 파괴되는 기존 산업[오미주]",
+          "link": "https://n.news.naver.com/mnews/article/008/0005314143?sid=101",
+          "description": "이에 따라 법률 분야에서는 톰슨 로이터(-16%)와 리걸줌(-20%), CS 디스코(-12%), 재무 및 회계 분야에서는... LPL 파이낸셜의 주식 리서치팀장인 토마스 쉽은 \"AI에 대한 공포는 경쟁 심화와 가격 인하 압박, 경쟁사의 진출을...",
+          "pubDate": "02-04 18:05",
+          "originallink": "https://www.mt.co.kr/world/2026/02/04/2026020414521696794"
+        },
+        {
+          "title": "안경진 상무, CS 주식 1만3000주 매수",
+          "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=626915",
+          "description": "이동통신중계기 제조사 CS(065770)의 비등기임원 안경진 상무가 2월 4일 공시를 통해 주식 매수 사실을 알렸다. 안경진 상무는 2026년 2월 2일 장내매수를 통해 CS의 보통주 1만3000주를 취득했다. 이에 따라...",
+          "pubDate": "02-04 14:26",
+          "originallink": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=626915"
+        },
+        {
+          "title": "정흥식 회장, CS 주식 2만주 추가 매수",
+          "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=626916",
+          "description": "이번 보고 기준일인 2026년 2월 4일 기준으로 정흥식 회장이 보유한 CS 주식 수는 413만4819주이며, 지분율은 21.3%로 집계됐다. 직전 보고 기준일인 2022년 10월 21일에는 411만4819주를 보유하고 있었으며...",
+          "pubDate": "02-04 14:26",
+          "originallink": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=626916"
+        }
+      ]
+    },
+    {
+      "name": "현대바이오",
+      "code": "048410",
+      "current_price": "9,990",
+      "change": "▼1,120",
+      "change_percent": "-10.08%",
+      "signal": "매도",
+      "reason": "주가가 모든 이동평균선을 하향 돌파하며 하락 추세로 전환되었고, 외국인과 기관의 동반 매도세가 강하게 나타나고 있습니다. 단기 하락 모멘텀이 강해 추가적인 주가 하락이 예상됩니다.",
+      "capture_time": "2026-02-04 20:40:23",
+      "analysis_time": "2026-02-04 20:52:50",
+      "news": [
+        {
+          "title": "[주식마감기사] '태양광 사업' 기대감에 HD현대에너지솔루션 상한가... ...",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1140232",
+          "description": "케이바이오, 파루, 쏘닉스, 알톤, 이엠앤아이, 코이즈, KD가 상한가에 이름을 올리고 장을 마감한 가운데 투자자들의 관심이 뜨겁다. 이날 코스피 시장에는 한화솔루션, HD현대에너지솔루션, 대성산업, 팜스코...",
+          "pubDate": "02-04 19:40",
+          "originallink": "https://www.ggilbo.com/news/articleView.html?idxno=1140232"
+        },
+        {
+          "title": "자사주 소각 3년 새 4.5배 폭증… ‘밸류업 지수’ 최고",
+          "link": "https://n.news.naver.com/mnews/article/022/0004103324?sid=101",
+          "description": "회사가 자기 주식을 취득해 이를 소각하면 주당 가치가 상승하기 때문에 주주 이익을 높이는 대표적인... 그외 현대차(2.54%), LG에너지솔루션(2.94%), 삼성바이오로직스(0.57%) 등 시총 상위종목 대부분은 상승했다.",
+          "pubDate": "02-04 19:25",
+          "originallink": "https://www.segye.com/newsView/20260204516080?OutUrl=naver"
+        },
+        {
+          "title": "신규 ETF 절반이 고배당 테마…배당 투자 수요에 운용사들 '집중'",
+          "link": "https://www.industrynews.co.kr/news/articleView.html?idxno=77723",
+          "description": "ETF는 주식, 채권, 지수, 원자재 등 기초자산의 가치 흐름을 추종하는 금융상품으로, 하나의 상품을 통해... 삼성전자, SK하이닉스, 삼양식품 등 대형주뿐 아니라 에스피지, 리가켐바이오 등 코스닥 주요 종목까지...",
+          "pubDate": "02-04 18:36",
+          "originallink": "https://www.industrynews.co.kr/news/articleView.html?idxno=77723"
+        }
+      ]
+    },
+    {
+      "name": "이미지스",
+      "code": "115610",
+      "current_price": "2,235",
+      "change": "▼328",
+      "change_percent": "-16.44%",
+      "signal": "적극매도",
+      "reason": "주가가 장기 이동평균선 아래로 급락하며 52주 최저점을 향해 가고 있고, 외국인과 기관의 동반 매도세가 매우 강합니다. 하락 모멘텀이 매우 강해 추가 하락 가능성이 높으므로 적극 매도를 권합니다.",
+      "capture_time": "2026-02-04 20:40:29",
+      "analysis_time": "2026-02-04 20:52:50",
+      "news": [
+        {
+          "title": "[주식마감기사] '상장폐지' 피한 파두, 거래재개 후 상한가... 전진건설...",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1139940",
+          "description": "이는 '뻥튀기 상장' 의혹에 휩싸였던 파두의 주식 거래가 이날부터 재개되면서 영향을 받은 것으로... 에스와이스틸텍, 이미지스, 삼미금속, KX하이텍, 미래에셋벤처투자, 대주산업, 케이바이오, 삼표시멘트...",
+          "pubDate": "02-03 19:40",
+          "originallink": "https://www.ggilbo.com/news/articleView.html?idxno=1139940"
+        },
+        {
+          "title": "[개장시황] 외국인·기관 매수세에 코스피 5100 회복",
+          "link": "https://www.joongangenews.com/news/articleView.html?idxno=492256",
+          "description": "코스피에서 기관과 외국인은 각각 1060억원, 21억원의 주식을 매수 중이고 개인은 969억원의 물량을... 양대 시장에서 △파두 △이녹스 △아이빔테크놀로지 △인콘 등이 상한가를 달성했고, △이미지스(+21....",
+          "pubDate": "02-03 09:22",
+          "originallink": "https://www.joongangenews.com/news/articleView.html?idxno=492256"
+        },
+        {
+          "title": "[코퍼스코리아 톺아보기] 'M&A 잔혹사' 반복…관리종목·불성실공시 리...",
+          "link": "https://www.greened.kr/news/articleView.html?idxno=336394",
+          "description": "수반하는 주식 양수도 계약이 해지됐다고 공시했다. 오 대표의 구주 매각이 무산되면서 리버스에이징... TS트릴리온, 이미지스 등에서 M&A를 시도했던 주체들과의 연결고리가 확인됐다. [본지보도: 새 FI 등장...",
+          "pubDate": "02-02 06:00",
+          "originallink": "https://www.greened.kr/news/articleView.html?idxno=336394"
+        }
+      ]
+    },
+    {
+      "name": "쎄노텍",
+      "code": "222420",
+      "current_price": "1,670",
+      "change": "▲460",
+      "change_percent": "+37.93%",
+      "signal": "적극매수",
+      "reason": "주가가 52주 최저점 대비 강하게 상승하며 모든 이동평균선을 상향 돌파했습니다. 외국인과 기관의 동반 순매수가 확인되고 거래량이 크게 증가하며 강력한 매수 시그널로 판단됩니다.",
+      "capture_time": "2026-02-04 20:40:36",
+      "analysis_time": "2026-02-04 20:52:50",
+      "news": [
+        {
+          "title": "2차전지 관련주, '봄날의 햇살' 쎄노텍·쎄크·애경케미칼·엠플러스......",
+          "link": "http://www.finomy.com/news/articleView.html?idxno=248947",
+          "description": "2일 한국거래소에 따르면 쎄노텍, 애경케미칼, 쎄크, 엠플러스, 파워넷은 상승했다. 쎄노텍과... 이차전지 조립 장비 전문기업 엠플러스가 보유 중인 자기주식 32만 7173주(전체발행주식 수 대비 2.69%) 중 지난해 7월에...",
+          "pubDate": "02-03 00:16",
+          "originallink": "http://www.finomy.com/news/articleView.html?idxno=248947"
+        },
+        {
+          "title": "2차전지 관련주, '살랑살랑 봄바람' 세아메카닉스·필옵틱스·한농화성...",
+          "link": "http://www.finomy.com/news/articleView.html?idxno=248830",
+          "description": "반면 나노팀, 알루코, 쎄노텍, 성우하이텍, HB테크놀러지, 나인테크, 켐트로스, POSCO홀딩스, 유일에너테크... 엠케이전자는 1982년 12월에 주식회사 \"미경사\"로 설립되었으며 1997년 8월 엠케이전자 주식회사로 상호 변경...",
+          "pubDate": "01-30 18:10",
+          "originallink": "http://www.finomy.com/news/articleView.html?idxno=248830"
+        },
+        {
+          "title": "쎄노텍, 15억 규모 전환청구권 행사",
+          "link": "https://n.news.naver.com/mnews/article/018/0006209718?sid=101",
+          "description": "쎄노텍(222420)은 3회차 무기명식 무보증 사모 전환사채에 대한 전환청구권 행사로 136만 9863주가 신규 상장한다고 29일 공시했다. 발행주식총수 대비 2.93%다. 전환가액은 1095원이며 청구금액은 15억원이다....",
+          "pubDate": "01-29 17:21",
+          "originallink": "http://www.edaily.co.kr/news/newspath.asp?newsid=04916726645322640"
+        }
+      ]
+    },
+    {
+      "name": "지앤비에스 에코",
+      "code": "382800",
+      "current_price": "3,745",
+      "change": "▲360",
+      "change_percent": "+10.65%",
+      "signal": "매수",
+      "reason": "주가가 52주 최저점 부근에서 대량 거래량을 동반한 급등으로 단기 이동평균선을 돌파했습니다. 외국인 순매수세가 유입되어 긍정적인 수급 흐름을 보이며, 추가 상승 여력이 기대됩니다.",
+      "capture_time": "2026-02-04 20:40:43",
+      "analysis_time": "2026-02-04 20:52:50",
+      "news": [
+        {
+          "title": "태양광·ESS株, 美 수주 확대에 강세…\"AI發 전력망 현대화 주목\"",
+          "link": "https://www.apnews.kr/news/articleView.html?idxno=3045550",
+          "description": "©AP신문(AP뉴스)/이미지 제공 = 주식차트연구소 ▲주도 테마지도 태양광 관련주들이 미국 시장에서의... 15%), 지앤비에스에코(+14.00%), SDN(+12.36%), OCI(+8.77%), 그리드위즈(+8.56%), SK이터닉스(+8.00%), 레이크머트리얼즈...",
+          "pubDate": "02-04 18:34",
+          "originallink": "https://www.apnews.kr/news/articleView.html?idxno=3045550"
+        },
+        {
+          "title": "태양광에너지 관련주, '맑고 화창' 한화솔루션·유니테스트·파루·에스...",
+          "link": "http://www.finomy.com/news/articleView.html?idxno=249112",
+          "description": "에스에너지와 지앤비에스에코와 SDN은 전 거래일 대비 각각각 231원, 460원, 133원 오른 1515원과 3745원 그리고... 이후 1961년 '한국전력주식회사'로 개편되고, 1982년 현재의 통합형 전력공기업으로 재설립되며 국가...",
+          "pubDate": "02-04 18:06",
+          "originallink": "http://www.finomy.com/news/articleView.html?idxno=249112"
+        },
+        {
+          "title": "1월 29일 주식시장 주요공시",
+          "link": "https://www.catchnews.kr/news/articleView.html?idxno=120070",
+          "description": "2026년 사업연도 연결 기준 매출액 31조원, 영업이익 2.10조원 전망 ▶지앤비에스 에코, 2025년... 목적으로 ㈜모티바코리아 주식 10,444주를 400.70억원에 추가로 취득하기로 결정(취득후지분율:66.25...",
+          "pubDate": "01-30 08:48",
+          "originallink": "https://www.catchnews.kr/news/articleView.html?idxno=120070"
+        }
+      ]
+    },
+    {
+      "name": "앱튼",
+      "code": "270520",
+      "current_price": "342",
+      "change": "▼26",
+      "change_percent": "-7.05%",
+      "signal": "매도",
+      "reason": "주가가 52주 최저점 부근에서 지속적인 하락 추세를 보이고 있으며, 모든 이동평균선 아래에 위치합니다. 외국인과 기관의 매도세가 계속되어 하락 모멘텀이 강하므로 매도를 권합니다.",
+      "capture_time": "2026-02-04 20:40:50",
+      "analysis_time": "2026-02-04 20:52:50",
+      "news": [
+        {
+          "title": "리튬 관련주, '봄바람 살랑살랑' 유일에너테크·하이드로리튬·중앙첨단...",
+          "link": "http://www.finomy.com/news/articleView.html?idxno=248240",
+          "description": "반면 앱튼은 하락했다. 앱튼은 전 거래일 대비 26원 내린 373원에 장을 마감했다. 앱튼의 주가 하락률은 6.52... 포스코엠텍은 철강제품포장 및 철강부원료 사업을 영위하고 있는 기업으로 1973년 삼정강업 주식회사로...",
+          "pubDate": "01-23 00:06",
+          "originallink": "http://www.finomy.com/news/articleView.html?idxno=248240"
+        },
+        {
+          "title": "[주식마감기사] '한미 원전 협력' 기대감에 우리기술 상한가... 한신기계...",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1137025",
+          "description": "이에 따라 발행주식 수는 기존 7382만4118주에서 1476만4823주로 감소한다. 무상감자 이후에는 주주배정... 코스닥 시장 거래 상위종목 30위는 우리기술, 보성파워텍, 아진산업, 앱튼, 러셀, 대한광통신, 씨피시스템...",
+          "pubDate": "01-20 19:40",
+          "originallink": "https://www.ggilbo.com/news/articleView.html?idxno=1137025"
+        },
+        {
+          "title": "리튬 관련주, '으쓱으쓱 어깨춤' POSCO홀딩스·포스코엠텍·하이드로리튬...",
+          "link": "http://www.finomy.com/news/articleView.html?idxno=247656",
+          "description": "반면 유일에너테크, 앱튼은 하락했다. 유일에너테크와 앱튼은 전 거래일 대비 각각 2원, 20원 내린 1123원과... 포스코엠텍은 철강제품포장 및 철강부원료 사업을 영위하고 있는 기업으로 1973년 삼정강업 주식회사로...",
+          "pubDate": "01-13 18:10",
+          "originallink": "http://www.finomy.com/news/articleView.html?idxno=247656"
+        }
+      ]
+    },
+    {
+      "name": "빛과전자",
+      "code": "069540",
+      "current_price": "1,440",
+      "change": "▲90",
+      "change_percent": "+6.67%",
+      "signal": "매수",
+      "reason": "주가가 52주 최저점 부근에서 급등하며 단기 이동평균선을 돌파했습니다. 외국인 순매수가 꾸준히 유입되고 거래량도 증가하고 있어 긍정적인 추세 전환 시그널로 볼 수 있습니다.",
+      "capture_time": "2026-02-04 20:40:57",
+      "analysis_time": "2026-02-04 20:52:50",
+      "news": [
+        {
+          "title": "2월 2일 주식시장 주요공시",
+          "link": "https://www.catchnews.kr/news/articleView.html?idxno=120198",
+          "description": "09%) ▶노타, 주식회사 퓨리오사에이아이와 공급계약(AI소프트웨어)체결(계약기간:2026-01-30~2029-06... 25~27년 주주환원 정책(M&A 등 대규모 투자와 운전자금, 사업 환경 등을 종합적으로 고려하여 연결...",
+          "pubDate": "02-03 08:41",
+          "originallink": "https://www.catchnews.kr/news/articleView.html?idxno=120198"
+        },
+        {
+          "title": "빛과전자 주가, 2월 2일 장중 1,628원 7.38% 상승",
+          "link": "https://www.joongangenews.com/news/articleView.html?idxno=491892",
+          "description": "빛과전자의 시가총액은 988억 원으로, 코스닥 시장에서 865위에 해당한다. 전체 상장주식수 60,990,153주 가운데 외국인 보유 주식수는 442,028주이며, 외국인소진율은 0.72%로 나타났다. 동일 업종의 등락률이 0.00...",
+          "pubDate": "02-02 10:04",
+          "originallink": "https://www.joongangenews.com/news/articleView.html?idxno=491892"
+        },
+        {
+          "title": "1월 30일 주식시장 주요공시",
+          "link": "https://www.catchnews.kr/news/articleView.html?idxno=120132",
+          "description": "▶빛과전자, 비엔에스조합이 최대주주 변경 수반 주식 담보제공 계약 체결(채무금액:133억원, 담보설정금액:133억원) ▶대원전선, 2025년 연결기준 매출액 6,245.42억원(전년대비 +12.98%), 영업이익 93....",
+          "pubDate": "02-02 08:30",
+          "originallink": "https://www.catchnews.kr/news/articleView.html?idxno=120132"
+        }
+      ]
+    },
+    {
+      "name": "알로이스",
+      "code": "297570",
+      "current_price": "1,396",
+      "change": "▲85",
+      "change_percent": "+6.48%",
+      "signal": "중립",
+      "reason": "주가가 장기 이동평균선 아래에서 횡보하며 박스권 움직임을 보입니다. 최근 급등했으나, 외국인과 기관의 수급이 불안정하고 펀더멘털 지표가 부족하여 상승 지속 여부가 불확실합니다.",
+      "capture_time": "2026-02-04 20:41:04",
+      "analysis_time": "2026-02-04 20:52:50",
+      "news": [
+        {
+          "title": "1월 29일 주식시장 주요공시",
+          "link": "https://www.catchnews.kr/news/articleView.html?idxno=120070",
+          "description": "목적으로 ㈜모티바코리아 주식 10,444주를 400.70억원에 추가로 취득하기로 결정(취득후지분율:66.25... 97억원(전년대비 적자전환) ▶알로이스, 최대주주가 신정관 외 1인으로 변경 ▶대상, 2025년...",
+          "pubDate": "01-30 08:48",
+          "originallink": "https://www.catchnews.kr/news/articleView.html?idxno=120070"
+        },
+        {
+          "title": "1월 27일 주식시장 주요공시",
+          "link": "https://www.catchnews.kr/news/articleView.html?idxno=119958",
+          "description": "자회사 골프존카운티, 윤○○이 주식양도절차이행 소송(항소) 제기 ▶에스케이증권제10호스팩, 관리종목 지정우려 예고 ▶알로이스, 정보통신망이용촉진 및 정보보호등에관한법률위반 검찰 기소...",
+          "pubDate": "01-28 08:50",
+          "originallink": "https://www.catchnews.kr/news/articleView.html?idxno=119958"
+        },
+        {
+          "title": "1월 28일 개장 전 주요 공시",
+          "link": "https://www.seoulfn.com/news/articleView.html?idxno=619614",
+          "description": "한양이엔지는 주식 관리 신탁 계약에 따라 최대주주가 김형육 외 6명에서 김윤상 외 6명으로 변경됐다고 공시했다. 알로이스는 전현직 임직원 5명이 '정보통신망 이용촉진 및 정보보호 등에 관한 법률' 위반 혐의로...",
+          "pubDate": "01-28 08:40",
+          "originallink": "https://www.seoulfn.com/news/articleView.html?idxno=619614"
+        }
+      ]
+    },
+    {
+      "name": "흥국에프엔비",
+      "code": "189980",
+      "current_price": "2,265",
+      "change": "▲615",
+      "change_percent": "+37.29%",
+      "signal": "적극매수",
+      "reason": "주가가 52주 최저점 대비 강한 거래량을 동반한 상한가로 급등하며 모든 이동평균선을 돌파했습니다. 외국인과 기관의 동반 순매수가 확인되어 강력한 매수 시그널로 판단됩니다.",
+      "capture_time": "2026-02-04 20:41:11",
+      "analysis_time": "2026-02-04 20:52:50",
+      "news": [
+        {
+          "title": "팜스코 주가 폭등랠리...마켓컬리 테마 무슨 호재 있나",
+          "link": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=425464",
+          "description": "마찬가지로 흥국에프엔비는 식품 제조·유통 경험과 마켓컬리 채널 연계 가능성이 주가에 반영되며 3% 올라... 전문가들은 \"테마 주식은 변동성이 크므로 수급과 뉴스 흐름을 동시에 확인해야 한다\"고 조언한다. 마켓컬리...",
+          "pubDate": "02-04 09:58",
+          "originallink": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=425464"
+        },
+        {
+          "title": "[주식마감기사] '상장폐지' 피한 파두, 거래재개 후 상한가... 전진건설...",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1139940",
+          "description": "이는 '뻥튀기 상장' 의혹에 휩싸였던 파두의 주식 거래가 이날부터 재개되면서 영향을 받은 것으로... 코아시아씨엠, 흥국에프엔비, SFA반도체, 하림지주다. 이날 코스피는 전장보다 338.41포인트(6.84%) 오른 5,288.08에...",
+          "pubDate": "02-03 19:40",
+          "originallink": "https://www.ggilbo.com/news/articleView.html?idxno=1139940"
+        },
+        {
+          "title": "“거기서 카다이프 마구 사들인다던데?”…‘두쫀쿠’에 불붙은 기업들",
+          "link": "https://n.news.naver.com/mnews/article/009/0005630301?sid=103",
+          "description": "이로 인해 원재료 수입업체의 주가가 상한가를 찍는 등 두쫀쿠 열풍이 주식시장으로까지 번졌다. 유행의... 흥국에프엔비는 해외 거래처를 통해 두쫀쿠에 들어가는 피스타치오 원물과 카다이프·마시멜로 등을 직수입해...",
+          "pubDate": "02-01 06:07",
+          "originallink": "https://www.mk.co.kr/article/11949269"
+        }
+      ]
+    },
+    {
+      "name": "알톤",
+      "code": "123750",
+      "current_price": "2,675",
+      "change": "▲615",
+      "change_percent": "+29.85%",
+      "signal": "매수",
+      "reason": "주가가 52주 최저점 부근에서 대량 거래량을 동반한 급등으로 단기 이동평균선을 돌파했습니다. 외국인과 기관의 동반 순매수가 유입되어 긍정적인 수급 흐름을 보이며, 추가 상승 여력이 기대됩니다.",
+      "capture_time": "2026-02-04 20:41:18",
+      "analysis_time": "2026-02-04 20:52:50",
+      "news": [
+        {
+          "title": "[주식마감기사] '태양광 사업' 기대감에 HD현대에너지솔루션 상한가... ...",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1140232",
+          "description": "쏘닉스, 알톤, 이엠앤아이, 코이즈, KD가 상한가에 이름을 올리고 장을 마감한 가운데 투자자들의 관심이... 대성산업은 지난 1947년 대성산업공사를 모태로 2010년 분할 설립됐으며, 2017년 주식회사 대성합동지주와...",
+          "pubDate": "02-04 19:40",
+          "originallink": "https://www.ggilbo.com/news/articleView.html?idxno=1140232"
+        },
+        {
+          "title": "[오늘의 상한가] 삼표시멘트·파두 등",
+          "link": "https://www.joongangenews.com/news/articleView.html?idxno=492938",
+          "description": "|중앙이코노미뉴스 엄현식 기자| 4일 주식시장에서 삼표시멘트, 파두, HD현대에너지솔루션, 한화솔루션... 쏘닉스, 알톤, 이엠앤아이, 코이즈, KD 등 주가가 상한가를 기록했다. 이날 한국거래소에 따르면 삼표시멘트...",
+          "pubDate": "02-04 16:14",
+          "originallink": "https://www.joongangenews.com/news/articleView.html?idxno=492938"
+        },
+        {
+          "title": "5천피 씹어먹은 '이 지수', 6천피·7천피도 앞당긴다 [뉴스톡 웰스톡]",
+          "link": "http://www.newswell.co.kr/news/articleView.html?idxno=15936",
+          "description": "코스피 지수가 5천피를 훌쩍 넘어 사상 최고치 행진을 이어가는 가운데, 자기주식 소각 등 기업들의... 쏘닉스 ▲알톤 ▲이엠앤아이 ▲코이즈 ▲KD는 상한가를 기록했다. 이 가운데 삼표시멘트와 인콘은 3연상...",
+          "pubDate": "02-04 15:36",
+          "originallink": "http://www.newswell.co.kr/news/articleView.html?idxno=15936"
+        }
+      ]
+    },
+    {
+      "name": "SFA반도체",
+      "code": "036540",
+      "current_price": "7,320",
+      "change": "▼330",
+      "change_percent": "-4.32%",
+      "signal": "매도",
+      "reason": "주가가 장기 이동평균선 아래에서 하락 추세를 지속하고 있으며, 외국인과 기관의 매도세가 강하게 나타나고 있습니다. 펀더멘털 지표(PER N/A, BPS 음수)도 좋지 않아 추가적인 주가 하락이 예상됩니다.",
+      "capture_time": "2026-02-04 20:41:25",
+      "analysis_time": "2026-02-04 20:52:50",
+      "news": [
+        {
+          "title": "SFA반도체 주가, 2월 4일 장중 7,330원 3.04% 하락",
+          "link": "https://www.joongangenews.com/news/articleView.html?idxno=492715",
+          "description": "투자자별 동향을 살펴보면, 외국인 투자자들은 전체 상장주식수 164,460,303주 중 4,355,708주를 보유하여 2.65%의 소진율을 보였다. 동일 업종의 등락률이 -0.99%를 기록한 반면, SFA반도체의 현재 하락률은 -3.04...",
+          "pubDate": "02-04 10:52",
+          "originallink": "https://www.joongangenews.com/news/articleView.html?idxno=492715"
+        },
+        {
+          "title": "삼성전자·SK하이닉스, HBM 이어 'HBF'까지…반도체 업종 '겹호재'",
+          "link": "https://www.apnews.kr/news/articleView.html?idxno=3045513",
+          "description": "©AP신문(AP뉴스)/이미지 제공 = 주식차트연구소 ▲주도 테마지도 국내 반도체 업종이 전례 없는 호황... 47%), SFA반도체(+8.46%), 동진쎄미켐(+8.24%), 아이씨티케이(+8.15%), SK스퀘어(+8.12%), 원익QnC(+7.71...",
+          "pubDate": "02-03 19:54",
+          "originallink": "https://www.apnews.kr/news/articleView.html?idxno=3045513"
+        },
+        {
+          "title": "[주식마감기사] '상장폐지' 피한 파두, 거래재개 후 상한가... 전진건설...",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1139940",
+          "description": "이는 '뻥튀기 상장' 의혹에 휩싸였던 파두의 주식 거래가 이날부터 재개되면서 영향을 받은 것으로... 흥국에프엔비, SFA반도체, 하림지주다. 이날 코스피는 전장보다 338.41포인트(6.84%) 오른 5,288.08에 거래를...",
+          "pubDate": "02-03 19:40",
+          "originallink": "https://www.ggilbo.com/news/articleView.html?idxno=1139940"
+        }
+      ]
+    },
+    {
+      "name": "오가닉티코스메틱",
+      "code": "900300",
+      "current_price": "132",
+      "change": "▲2",
+      "change_percent": "+1.54%",
+      "signal": "중립",
+      "reason": "주가가 52주 최저점 부근에서 횡보하며 뚜렷한 추세가 없습니다. 외국인과 기관의 매매가 미미하고 거래량도 많지 않아 매수 매도 모두 관망하는 자세가 필요합니다.",
+      "capture_time": "2026-02-04 20:41:32",
+      "analysis_time": "2026-02-04 20:52:50",
+      "news": [
+        {
+          "title": "[주식마감기사] '은값 폭락'에 은 인버스 ETN 폭등... 현대비앤지스틸, ...",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1139638",
+          "description": "삼성액티브자산운용은 지난달 22일 금융위원회와 한국거래소에 주식 등의 대량보유상황보고서... 유디엠텍, 오가닉티코스메틱, NHN KCP, 아주IB투자, 캠시스, 이랜시스, 미투온, 중앙첨단소재, 리튬포어스...",
+          "pubDate": "02-02 19:40",
+          "originallink": "https://www.ggilbo.com/news/articleView.html?idxno=1139638"
+        },
+        {
+          "title": "[주식마감기사] '스테이블 코인' 관련주 카카오페이 상한가... NHN KCP, 다...",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1137739",
+          "description": "한화에어로스페이스 등 투자자산의 지분 가치가 상승했고, 자사주 소각으로 유통 주식 수가 감소한 점이... 유디엠텍, 오가닉티코스메틱, NHN KCP, 아주IB투자, 캠시스, 이랜시스, 미투온, 중앙첨단소재, 리튬포어스...",
+          "pubDate": "01-23 19:40",
+          "originallink": "https://www.ggilbo.com/news/articleView.html?idxno=1137739"
+        },
+        {
+          "title": "[주식마감기사] 이차전지 관련주 '질주' 하이드로리튬 상한가... 한농화...",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1137641",
+          "description": "최근 비엘팜텍의 박영철 대표이사는 자사 주식을 추가 매수하며 지분율을 확대했다고 밝혔다. 지난 21일... 협진, 오가닉티코스메틱, 현대무벡스, 모베이스전자, 한국첨단소재, 유진로봇, 아이엘, 이미지스, 빛과전자...",
+          "pubDate": "01-22 19:40",
+          "originallink": "https://www.ggilbo.com/news/articleView.html?idxno=1137641"
+        }
+      ]
+    },
+    {
+      "name": "소프트캠프",
+      "code": "258790",
+      "current_price": "1,416",
+      "change": "▲61",
+      "change_percent": "+4.50%",
+      "signal": "매수",
+      "reason": "주가가 52주 최저점 부근에서 바닥을 다지고 상승 전환을 시도하며 단기 이동평균선을 돌파했습니다. 거래량이 증가하고 있으며, 외국인 수급이 개선되는 점도 긍정적입니다.",
+      "capture_time": "2026-02-04 20:41:39",
+      "analysis_time": "2026-02-04 20:52:50",
+      "news": [
+        {
+          "title": "[손병관의 뉴스프레소] 노조의 'AI로봇 반대'를 19세기 기계파괴 운동에...",
+          "link": "https://n.news.naver.com/mnews/article/047/0002503240?sid=102",
+          "description": "2021년 윤석열캠프 상임공보특보 겸 대변인으로 활동했던 그는 2024년 1월 국민의힘을 나와 개혁신당... 특히 엔비디아 1만 7588주, 마이크로소프트 2015주 등 미국 나스닥 상장 주식과 홍콩의 FXI 8700주를 보유 중인 것으로...",
+          "pubDate": "01-30 07:26",
+          "originallink": "https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003203059&CMPT_CD=P0010&utm_source=naver&utm_medium=newsearch&utm_campaign=naver_news"
+        },
+        {
+          "title": "[최상명의 제민지산(制民之産)] 선분배(pre-distribution) 룰과 기업시민...",
+          "link": "https://www.ccdn.co.kr/news/articleView.html?idxno=1058859",
+          "description": "선거운동캠프에 정치자금을 제공하려면 이사회는 물론, 주주 75%의 찬성을 확보하도록 했다. 회사 임원들은 보상으로 받은 주식을 최소 5년 동안 보유토록 하는 규정도 두게 했다. 노동자의 경영 참여를 통해...",
+          "pubDate": "01-18 13:58",
+          "originallink": "https://www.ccdn.co.kr/news/articleView.html?idxno=1058859"
+        },
+        {
+          "title": "한국투자증권, '리부트 코리아 2026, 지금은 한국투자' 캠페인…삼성증...",
+          "link": "http://www.sisaon.co.kr/news/articleView.html?idxno=179549",
+          "description": "캠페인의 일환으로 이달부터 신규계좌 이벤트와 국내주식 입고 이벤트를 진행한다. 1월 말까지 뱅키스... 이 ETF는 엔비디아(NVDA), 구글(GOOGL), 애플(AAPL), 마이크로소프트(MSFT), 아마존(AMZN), 메타(META), 브로드컴(AVGO)...",
+          "pubDate": "01-14 17:42",
+          "originallink": "http://www.sisaon.co.kr/news/articleView.html?idxno=179549"
+        }
+      ]
+    },
+    {
+      "name": "에스에너지",
+      "code": "095910",
+      "current_price": "1,515",
+      "change": "▲231",
+      "change_percent": "+17.99%",
+      "signal": "적극매수",
+      "reason": "주가가 52주 최저점 부근에서 강한 거래량과 함께 급등하며 모든 이동평균선을 상향 돌파했습니다. 외국인과 기관의 동반 순매수가 확인되어 강력한 매수 시그널로 판단됩니다.",
+      "capture_time": "2026-02-04 20:41:45",
+      "analysis_time": "2026-02-04 20:52:50",
+      "news": [
+        {
+          "title": "태양광·ESS株, 美 수주 확대에 강세…\"AI發 전력망 현대화 주목\"",
+          "link": "https://www.apnews.kr/news/articleView.html?idxno=3045550",
+          "description": "©AP신문(AP뉴스)/이미지 제공 = 주식차트연구소 ▲주도 테마지도 태양광 관련주들이 미국 시장에서의... 81%), 에스에너지(+17.99%), 금양그린파워(+16.15%), 지앤비에스에코(+14.00%), SDN(+12.36%), OCI(+8.77%), 그리드위즈(+8.56...",
+          "pubDate": "02-04 18:34",
+          "originallink": "https://www.apnews.kr/news/articleView.html?idxno=3045550"
+        },
+        {
+          "title": "태양광에너지 관련주, '맑고 화창' 한화솔루션·유니테스트·파루·에스...",
+          "link": "http://www.finomy.com/news/articleView.html?idxno=249112",
+          "description": "4일 한국거래소에 따르면 한화솔루션, 파루, HD현대에너지솔루션, 유니테스트, OCI홀딩스, 에스에너지... 이후 1961년 '한국전력주식회사'로 개편되고, 1982년 현재의 통합형 전력공기업으로 재설립되며 국가 전력공급의...",
+          "pubDate": "02-04 18:06",
+          "originallink": "http://www.finomy.com/news/articleView.html?idxno=249112"
+        },
+        {
+          "title": "中 보조금 축소 앞두고...한화솔루션 등 태양광주 '장중 껑충'",
+          "link": "http://www.choicenews.co.kr/news/articleView.html?idxno=160556",
+          "description": "HD현대에너지솔루션(+24.31%), OCI홀딩스(+16.36%), 에스에너지(+7.79%), OCI(+6.30%) 등도 급등세로 움직이는 중이다.... 특정 섹터 및 특정 기업에 대한 분석 내용과 이슈, 특정 테마는 지켜봐야 하는 경우가 많은 데다, 주식투자...",
+          "pubDate": "02-04 11:54",
+          "originallink": "http://www.choicenews.co.kr/news/articleView.html?idxno=160556"
+        }
+      ]
+    },
+    {
+      "name": "유니테스트",
+      "code": "086390",
+      "current_price": "18,400",
+      "change": "▲2,250",
+      "change_percent": "+13.90%",
+      "signal": "매수",
+      "reason": "주가가 단기 이동평균선을 상향 돌파하며 강한 상승 모멘텀을 보입니다. 외국인과 기관의 동반 순매수가 유입되고 있으며, 거래량 증가와 함께 추가 상승 여력이 기대됩니다.",
+      "capture_time": "2026-02-04 20:41:53",
+      "analysis_time": "2026-02-04 20:52:50",
+      "news": [
+        {
+          "title": "태양광·ESS株, 美 수주 확대에 강세…\"AI發 전력망 현대화 주목\"",
+          "link": "https://www.apnews.kr/news/articleView.html?idxno=3045550",
+          "description": "©AP신문(AP뉴스)/이미지 제공 = 주식차트연구소 ▲주도 테마지도 태양광 관련주들이 미국 시장에서의... 83%), 유니테스트(+29.03%), OCI홀딩스(+28.05%), 대명에너지(+22.81%), 에스에너지(+17.99%), 금양그린파워(+16.15...",
+          "pubDate": "02-04 18:34",
+          "originallink": "https://www.apnews.kr/news/articleView.html?idxno=3045550"
+        },
+        {
+          "title": "태양광에너지 관련주, '맑고 화창' 한화솔루션·유니테스트·파루·에스...",
+          "link": "http://www.finomy.com/news/articleView.html?idxno=249112",
+          "description": "4일 한국거래소에 따르면 한화솔루션, 파루, HD현대에너지솔루션, 유니테스트, OCI홀딩스, 에스에너지... 이후 1961년 '한국전력주식회사'로 개편되고, 1982년 현재의 통합형 전력공기업으로 재설립되며 국가 전력공급의...",
+          "pubDate": "02-04 18:06",
+          "originallink": "http://www.finomy.com/news/articleView.html?idxno=249112"
+        },
+        {
+          "title": "HBM(고대역폭메모리) 관련주, '웃음꽃' 한화비전·미래반도체·윈팩·와...",
+          "link": "http://www.finomy.com/news/articleView.html?idxno=248833",
+          "description": "마이크로투나노, 유니테스트 등은 상승했지만 워트, 아이엠티, 제너셈, 엠케이전자 등은 하락했다.... 엠케이전자는 1982년 12월에 주식회사 \"미경사\"로 설립되었으며 1997년 8월 엠케이전자 주식회사로 상호 변경...",
+          "pubDate": "01-31 00:06",
+          "originallink": "http://www.finomy.com/news/articleView.html?idxno=248833"
+        }
+      ]
+    },
+    {
+      "name": "TS트릴리온",
+      "code": "317240",
+      "current_price": "443",
+      "change": "▲29",
+      "change_percent": "+7.00%",
+      "signal": "매수",
+      "reason": "주가가 52주 최저점 대비 강하게 상승하며 단기 이동평균선을 돌파했습니다. 외국인 순매수가 강하게 유입되며 수급이 개선되고 있고, 거래량 증가와 함께 상승 추세가 이어질 수 있습니다.",
+      "capture_time": "2026-02-04 20:41:59",
+      "analysis_time": "2026-02-04 20:52:50",
+      "news": [
+        {
+          "title": "[코퍼스코리아 톺아보기] 'M&A 잔혹사' 반복…관리종목·불성실공시 리...",
+          "link": "https://www.greened.kr/news/articleView.html?idxno=336394",
+          "description": "수반하는 주식 양수도 계약이 해지됐다고 공시했다. 오 대표의 구주 매각이 무산되면서 리버스에이징... 해성티피씨), TS트릴리온, 이미지스 등에서 M&A를 시도했던 주체들과의 연결고리가 확인됐다. [본지보도: 새 FI...",
+          "pubDate": "02-02 06:00",
+          "originallink": "https://www.greened.kr/news/articleView.html?idxno=336394"
+        },
+        {
+          "title": "[주식마감] 천스닥에 개미들 몰렸다… 레버리지 ETN 상한가, 에코프로에...",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1138798",
+          "description": "네오셈, TS트릴리온, 웰크론한텍, 삼기, 휴림에이텍, SFA반도체, 율촌이다. 이날 코스피는 전장보다 85.96포인트(1.69%) 오른 5,170.81로 거래를 종료했다. 지수는 60.54포인트(1.19%) 오른 5,145.39로 출발한 이후 오전...",
+          "pubDate": "01-28 19:40",
+          "originallink": "https://www.ggilbo.com/news/articleView.html?idxno=1138798"
+        },
+        {
+          "title": "[더벨][Company Watch]TS트릴리온, 옛 대주주 조합 해산 직후 엑시트 기회",
+          "link": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202601191529519160101562",
+          "description": "TS트릴리온은 지난 9일 비상장 법인 비비알컴퍼니의 주식 30만주(지분 100%)를 취득하며 자회사로 편입했다. 현금 유출 없이 49억원 규모 3회차 전환사채(CB)를 발행해 인수 대금으로 지급하는 대용납입 방식을 택했다....",
+          "pubDate": "01-21 07:18",
+          "originallink": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202601191529519160101562"
+        }
+      ]
+    },
+    {
+      "name": "모베이스전자",
+      "code": "012860",
+      "current_price": "4,150",
+      "change": "▲85",
+      "change_percent": "+2.09%",
+      "signal": "중립",
+      "reason": "주가가 장기 이동평균선 아래에서 횡보하며 뚜렷한 추세가 없습니다. 외국인과 기관의 수급이 불안정하고 거래량도 감소하여 의미 있는 상승 모멘텀이 나타나기까지는 시간이 필요해 보입니다.",
+      "capture_time": "2026-02-04 20:42:06",
+      "analysis_time": "2026-02-04 20:52:50",
+      "news": [
+        {
+          "title": "전기차 관련주, '룰루랄라 콧노래' 삼성SDI·한온시스템·씨아이에스·휴...",
+          "link": "http://www.finomy.com/news/articleView.html?idxno=249117",
+          "description": "반면 KG모빌리티, 아이에이, 모베이스전자, LS머트리얼즈는 하락했다. KG모빌리티와 아이에이는 전 거래일... 삼영은 1959년 설립된 국내 유일의 커패시터 필름 제조사이자 세계 3위 생산업체로, 2025년 캐스코 주식회사...",
+          "pubDate": "02-04 18:20",
+          "originallink": "http://www.finomy.com/news/articleView.html?idxno=249117"
+        },
+        {
+          "title": "홍성만 전무, 모베이스전자 주식 1만5000주 매도",
+          "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=627070",
+          "description": "이번 매도로 인해 홍성만 전무의 모베이스전자 주식 보유 수는 5만8671주에서 4만3671주로 감소했다. 이에 따라 지분율은 0.08%에서 0.06%로 줄어들었다. 모베이스전자는 자동차용 전자부품을 제조하는...",
+          "pubDate": "02-04 18:06",
+          "originallink": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=627070"
+        },
+        {
+          "title": "차종익 상무, 모베이스전자 주식 1만642주 매도",
+          "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=627071",
+          "description": "담당자소속회사주식회사 모베이스전자부 서국내기획팀직 위매니저전화번호031-51*******성 명이승준팩스번호031-51*******이메일 주소******@mobaseelec.com3. 특정증권등의 소유상황가. 소유 특정증권등의 수 및...",
+          "pubDate": "02-04 18:06",
+          "originallink": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=627071"
+        }
+      ]
+    },
+    {
+      "name": "고영",
+      "code": "098460",
+      "current_price": "33,800",
+      "change": "▲3,360",
+      "change_percent": "+10.91%",
+      "signal": "매수",
+      "reason": "주가가 바닥권에서 대량 거래량을 동반한 급등으로 모든 이동평균선을 돌파하며 상승 추세로 전환되었습니다. 외국인 순매수가 꾸준히 유입되며 수급이 개선되고 있어 추가 상승이 기대됩니다.",
+      "capture_time": "2026-02-04 20:42:13",
+      "analysis_time": "2026-02-04 20:52:50",
+      "news": [
+        {
+          "title": "휴림로봇 유진로봇 레인보우로보틱스 고전...고영 두산로보틱스 장중 양...",
+          "link": "https://www.cbci.co.kr/news/articleView.html?idxno=553888",
+          "description": "4일 주식시장의 주인은 로봇주가 아닌 것 같다. 코스닥은 양봉으로 돌아섰지만 로봇주들의 고전은 계속되고... 고영과 나우로보틱스, 두산로보틱스 등은 장중 양봉을 기록하며 상대적으로 양호한 흐름을 나타냈다. 다만...",
+          "pubDate": "02-04 14:40",
+          "originallink": "https://www.cbci.co.kr/news/articleView.html?idxno=553888"
+        },
+        {
+          "title": "고영, 실적 서프라이즈에 주가 반등…미래에셋 목표가 3만6천원 제시",
+          "link": "https://www.cbci.co.kr/news/articleView.html?idxno=553867",
+          "description": "고영이 실적 개선 기대감 속에 주가 반등에 나섰다. 고영은 이날 전 거래일 대비 550원 오른 3만3,100원에... 특정 종목에 대한 매수·매도 권유가 아니며, 주식 투자는 가격 변동성에 따라 손실이 발생할 수 있습니다....",
+          "pubDate": "02-04 13:34",
+          "originallink": "https://www.cbci.co.kr/news/articleView.html?idxno=553867"
+        },
+        {
+          "title": "고영 주가, 2월 4일 장중 33,200원 1.99% 상승",
+          "link": "https://www.topstarnews.net/news/articleView.html?idxno=15953502",
+          "description": "이는 외국인 투자자들의 고영 주식에 대한 참여 수준을 나타내는 지표이다. 지난 거래일의 고영 주가는 종가 32,550원으로 마감했다. 당시 시가는 33,500원, 고가는 33,600원, 저가는 31,800원을 기록했다. 거래량은 2...",
+          "pubDate": "02-04 10:26",
+          "originallink": "https://www.topstarnews.net/news/articleView.html?idxno=15953502"
+        }
+      ]
+    }
+  ]
+}
