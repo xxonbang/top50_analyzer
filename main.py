@@ -18,7 +18,7 @@ from modules.naver_news import collect_news_for_stocks
 KST = timezone(timedelta(hours=9))
 
 # Vision 배치 처리 설정
-VISION_BATCH_SIZE = 40  # 40개씩 배치 처리
+VISION_BATCH_SIZE = 15  # 15개씩 배치 처리 (google_search 안정성 확보)
 
 
 # 분석 결과 보존 기간 (일)
@@ -155,6 +155,7 @@ async def main():
     total_stocks = len(scrape_results)
     total_batches = (total_stocks + VISION_BATCH_SIZE - 1) // VISION_BATCH_SIZE
 
+    # === 1차 배치 루프: 결과 수집, 즉시 재시도 없음 ===
     for i in range(0, total_stocks, VISION_BATCH_SIZE):
         batch_stocks = scrape_results[i:i + VISION_BATCH_SIZE]
         batch_num = i // VISION_BATCH_SIZE + 1
@@ -165,37 +166,43 @@ async def main():
 
         if batch_results:
             all_results.extend(batch_results)
-            print(f"[배치 {batch_num}] 완료: {len(batch_results)}개 분석")
+            print(f"[배치 {batch_num}] {len(batch_results)}/{len(batch_stocks)}개 분석")
         else:
-            # 배치 실패 시 1회 재시도
-            print(f"[배치 {batch_num}] 실패: 5초 후 재시도...")
-            time.sleep(5)
-            batch_results = analyze_stocks_batch(batch_stocks, capture_dir)
-            if batch_results:
-                all_results.extend(batch_results)
-                print(f"[배치 {batch_num}] 재시도 성공: {len(batch_results)}개 분석")
-            else:
-                print(f"[배치 {batch_num}] 재시도 실패: {len(batch_stocks)}개 종목 손실")
+            print(f"[배치 {batch_num}] 전체 실패")
 
         # 배치 간 대기 (rate limit 방지)
         if i + VISION_BATCH_SIZE < total_stocks:
             print("다음 배치 대기 중... (5초)")
             time.sleep(5)
 
-    print(f"\n총 분석 완료: {len(all_results)}/{total_stocks}개 종목")
+    print(f"\n[1차] 분석 완료: {len(all_results)}/{total_stocks}개 종목")
 
-    # 누락 종목 보충 재분석 (20% 이상 누락 시)
+    # === 2차 보충 루프: 누락 종목을 VISION_BATCH_SIZE씩 재시도 ===
     analyzed_codes = set(r.get("code") for r in all_results if r.get("code"))
     missing_stocks = [s for s in scrape_results if s.get("success") and s.get("code") not in analyzed_codes]
 
-    if missing_stocks and len(missing_stocks) / max(total_stocks, 1) >= 0.2:
-        print(f"\n=== 누락 종목 보충 분석 ({len(missing_stocks)}개) ===\n")
-        supplement_results = analyze_stocks_batch(missing_stocks, capture_dir)
-        if supplement_results:
-            all_results.extend(supplement_results)
-            print(f"[보충] {len(supplement_results)}개 종목 추가 분석 완료")
-        else:
-            print(f"[보충] 재분석 실패: {len(missing_stocks)}개 종목 여전히 누락")
+    if missing_stocks:
+        print(f"\n=== 2차 보충 배치 ({len(missing_stocks)}개, {VISION_BATCH_SIZE}개씩) ===")
+        print("키 쿨다운 대기 중... (10초)")
+        time.sleep(10)
+
+        supplement_batches = (len(missing_stocks) + VISION_BATCH_SIZE - 1) // VISION_BATCH_SIZE
+        for i in range(0, len(missing_stocks), VISION_BATCH_SIZE):
+            batch = missing_stocks[i:i + VISION_BATCH_SIZE]
+            retry_num = i // VISION_BATCH_SIZE + 1
+
+            print(f"\n--- 보충 배치 {retry_num}/{supplement_batches} ({len(batch)}개) ---")
+
+            results = analyze_stocks_batch(batch, capture_dir)
+            if results:
+                all_results.extend(results)
+                print(f"[보충 {retry_num}] {len(results)}개 복구")
+            else:
+                print(f"[보충 {retry_num}] 실패")
+
+            if i + VISION_BATCH_SIZE < len(missing_stocks):
+                time.sleep(5)
+
         print(f"\n최종 분석 결과: {len(all_results)}/{total_stocks}개 종목")
 
     analysis_results = all_results
