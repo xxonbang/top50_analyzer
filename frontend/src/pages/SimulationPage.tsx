@@ -15,6 +15,7 @@ export function SimulationPage() {
   const { data: index, isLoading: indexLoading } = useSimulationIndex();
   const { activeDetailDate, selectAllDates, setAnalysisTime } = useSimulationStore();
   const initializedRef = useRef(false);
+  const [searchQuery, setSearchQuery] = useState('');
 
   // 인덱스 최초 로드 시에만 전체 선택 (이후 사용자 조작은 존중)
   useEffect(() => {
@@ -83,7 +84,7 @@ export function SimulationPage() {
 
   return (
     <div className="space-y-3 md:space-y-4">
-      <PageHeader allDates={index.history.map((h) => h.date)} />
+      <PageHeader allDates={index.history.map((h) => h.date)} searchQuery={searchQuery} onSearchChange={setSearchQuery} />
       <SimulationModeTabs />
 
       {/* 종합 수익률 */}
@@ -109,6 +110,7 @@ export function SimulationPage() {
           selectedTime={selectedTime}
           onSelectTime={(time) => setAnalysisTime(activeDetailDate, time)}
           isTimeLoading={timeOverrideLoading}
+          searchQuery={searchQuery}
         />
       )}
 
@@ -121,7 +123,7 @@ export function SimulationPage() {
   );
 }
 
-function PageHeader({ allDates }: { allDates?: string[] }) {
+function PageHeader({ allDates, searchQuery, onSearchChange }: { allDates?: string[]; searchQuery?: string; onSearchChange?: (q: string) => void }) {
   const { simulationMode, resetAll } = useSimulationStore();
   const { isAdmin } = useAuthStore();
   const desc = simulationMode === 'close'
@@ -129,22 +131,58 @@ function PageHeader({ allDates }: { allDates?: string[] }) {
     : '적극매수 시그널 종목의 시가 매수 → 장중 최고가 매도 수익률';
 
   return (
-    <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
-      <div>
-        <h2 className="text-lg md:text-xl font-bold">모의투자 시뮬레이션</h2>
-        <p className="text-xs text-text-muted mt-0.5">{desc}</p>
+    <div className="space-y-2">
+      <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+        <div>
+          <h2 className="text-lg md:text-xl font-bold">모의투자 시뮬레이션</h2>
+          <p className="text-xs text-text-muted mt-0.5">{desc}</p>
+        </div>
+        <div className="flex items-center gap-2 flex-shrink-0">
+          {allDates && (
+            <button
+              onClick={() => resetAll(allDates)}
+              className="px-3 py-1.5 text-xs font-medium text-text-muted hover:text-text-secondary bg-bg-secondary hover:bg-bg-primary border border-border rounded-lg transition-all whitespace-nowrap"
+            >
+              초기화
+            </button>
+          )}
+          {isAdmin && <CollectionTrigger />}
+        </div>
       </div>
-      <div className="flex items-center gap-2 flex-shrink-0">
-        {allDates && (
-          <button
-            onClick={() => resetAll(allDates)}
-            className="px-3 py-1.5 text-xs font-medium text-text-muted hover:text-text-secondary bg-bg-secondary hover:bg-bg-primary border border-border rounded-lg transition-all whitespace-nowrap"
+
+      {onSearchChange && (
+        <div className="relative">
+          <svg
+            className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-text-muted pointer-events-none"
+            viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
           >
-            초기화
-          </button>
-        )}
-        {isAdmin && <CollectionTrigger />}
-      </div>
+            <circle cx="11" cy="11" r="8" />
+            <line x1="21" y1="21" x2="16.65" y2="16.65" />
+          </svg>
+          <input
+            type="text"
+            value={searchQuery ?? ''}
+            onChange={(e) => onSearchChange(e.target.value)}
+            placeholder="종목 검색 (이름, 코드, 초성 예: ㅅㅅㅈㅈ)"
+            className="w-full pl-9 pr-9 py-2 text-sm
+              bg-bg-secondary border border-border rounded-xl
+              placeholder:text-text-muted/50
+              focus:outline-none focus:border-accent-primary/50 focus:ring-1 focus:ring-accent-primary/20
+              transition-all"
+          />
+          {searchQuery && (
+            <button
+              onClick={() => onSearchChange('')}
+              className="absolute right-3 top-1/2 -translate-y-1/2 text-text-muted hover:text-text-secondary transition-colors"
+            >
+              <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <line x1="18" y1="6" x2="6" y2="18" />
+                <line x1="6" y1="6" x2="18" y2="18" />
+              </svg>
+            </button>
+          )}
+        </div>
+      )}
     </div>
   );
 }
@@ -185,11 +223,10 @@ interface DetailSectionProps {
   selectedTime: string | null;
   onSelectTime: (time: string | null) => void;
   isTimeLoading: boolean;
+  searchQuery: string;
 }
 
-function DetailSection({ date, data, availableTimes, selectedTime, onSelectTime, isTimeLoading }: DetailSectionProps) {
-  const [searchQuery, setSearchQuery] = useState('');
-
+function DetailSection({ date, data, availableTimes, selectedTime, onSelectTime, isTimeLoading, searchQuery }: DetailSectionProps) {
   // 검색 필터링된 종목 (카테고리별)
   const filteredCategories = useMemo(() => {
     const cats = data?.categories;
@@ -213,51 +250,15 @@ function DetailSection({ date, data, availableTimes, selectedTime, onSelectTime,
 
   return (
     <div className="space-y-3">
-      <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
-        <h3 className="text-sm font-semibold text-text-secondary flex items-center gap-2">
-          <span className="w-2 h-2 bg-accent-primary rounded-full" />
-          {date} 상세
-        </h3>
-
-        {/* 종목 검색 */}
-        <div className="relative">
-          <svg
-            className="absolute left-2.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-text-muted pointer-events-none"
-            viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
-          >
-            <circle cx="11" cy="11" r="8" />
-            <line x1="21" y1="21" x2="16.65" y2="16.65" />
-          </svg>
-          <input
-            type="text"
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-            placeholder="종목 검색 (초성 가능)"
-            className="w-full sm:w-48 pl-8 pr-8 py-1.5 text-xs
-              bg-bg-secondary border border-border rounded-lg
-              placeholder:text-text-muted/50
-              focus:outline-none focus:border-accent-primary/50 focus:ring-1 focus:ring-accent-primary/20
-              transition-all"
-          />
-          {searchQuery && (
-            <button
-              onClick={() => setSearchQuery('')}
-              className="absolute right-2 top-1/2 -translate-y-1/2 text-text-muted hover:text-text-secondary transition-colors"
-            >
-              <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <line x1="18" y1="6" x2="6" y2="18" />
-                <line x1="6" y1="6" x2="18" y2="18" />
-              </svg>
-            </button>
-          )}
-        </div>
-      </div>
-
-      {isFiltering && (
-        <p className="text-[0.65rem] text-text-muted">
-          검색 결과: {totalFiltered}/{totalAll}개 종목
-        </p>
-      )}
+      <h3 className="text-sm font-semibold text-text-secondary flex items-center gap-2">
+        <span className="w-2 h-2 bg-accent-primary rounded-full" />
+        {date} 상세
+        {isFiltering && (
+          <span className="text-[0.65rem] font-normal text-text-muted">
+            ({totalFiltered}/{totalAll}개)
+          </span>
+        )}
+      </h3>
 
       <AnalysisTimeSelector
         availableTimes={availableTimes}
