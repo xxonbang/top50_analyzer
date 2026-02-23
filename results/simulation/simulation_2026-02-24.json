@@ -1,0 +1,162 @@
+{
+  "date": "2026-02-24",
+  "collected_at": "2026-02-24T08:56:15.282029+09:00",
+  "categories": {
+    "vision": [
+      {
+        "code": "066570",
+        "name": "LG전자",
+        "market": "KOSPI",
+        "open_price": null,
+        "close_price": null,
+        "high_price": null,
+        "return_pct": null,
+        "high_return_pct": null
+      },
+      {
+        "code": "012510",
+        "name": "더존비즈온",
+        "market": "KOSPI",
+        "open_price": null,
+        "close_price": null,
+        "high_price": null,
+        "return_pct": null,
+        "high_return_pct": null
+      },
+      {
+        "code": "000720",
+        "name": "현대건설",
+        "market": "KOSPI",
+        "open_price": null,
+        "close_price": null,
+        "high_price": null,
+        "return_pct": null,
+        "high_return_pct": null
+      },
+      {
+        "code": "034220",
+        "name": "LG디스플레이",
+        "market": "KOSPI",
+        "open_price": null,
+        "close_price": null,
+        "high_price": null,
+        "return_pct": null,
+        "high_return_pct": null
+      },
+      {
+        "code": "267260",
+        "name": "HD현대일렉트릭",
+        "market": "KOSPI",
+        "open_price": null,
+        "close_price": null,
+        "high_price": null,
+        "return_pct": null,
+        "high_return_pct": null
+      },
+      {
+        "code": "103590",
+        "name": "일진전기",
+        "market": "KOSPI",
+        "open_price": null,
+        "close_price": null,
+        "high_price": null,
+        "return_pct": null,
+        "high_return_pct": null
+      },
+      {
+        "code": "010820",
+        "name": "퍼스텍",
+        "market": "KOSPI",
+        "open_price": null,
+        "close_price": null,
+        "high_price": null,
+        "return_pct": null,
+        "high_return_pct": null
+      },
+      {
+        "code": "038500",
+        "name": "삼표시멘트",
+        "market": "KOSDAQ",
+        "open_price": null,
+        "close_price": null,
+        "high_price": null,
+        "return_pct": null,
+        "high_return_pct": null
+      },
+      {
+        "code": "010170",
+        "name": "대한광통신",
+        "market": "KOSDAQ",
+        "open_price": null,
+        "close_price": null,
+        "high_price": null,
+        "return_pct": null,
+        "high_return_pct": null
+      },
+      {
+        "code": "457550",
+        "name": "우진엔텍",
+        "market": "KOSDAQ",
+        "open_price": null,
+        "close_price": null,
+        "high_price": null,
+        "return_pct": null,
+        "high_return_pct": null
+      },
+      {
+        "code": "475830",
+        "name": "오름테라퓨틱",
+        "market": "KOSDAQ",
+        "open_price": null,
+        "close_price": null,
+        "high_price": null,
+        "return_pct": null,
+        "high_return_pct": null
+      },
+      {
+        "code": "226590",
+        "name": "엠디바이스",
+        "market": "KOSDAQ",
+        "open_price": null,
+        "close_price": null,
+        "high_price": null,
+        "return_pct": null,
+        "high_return_pct": null
+      },
+      {
+        "code": "131030",
+        "name": "옵투스제약",
+        "market": "KOSDAQ",
+        "open_price": null,
+        "close_price": null,
+        "high_price": null,
+        "return_pct": null,
+        "high_return_pct": null
+      },
+      {
+        "code": "024840",
+        "name": "KBI메탈",
+        "market": "KOSDAQ",
+        "open_price": null,
+        "close_price": null,
+        "high_price": null,
+        "return_pct": null,
+        "high_return_pct": null
+      }
+    ],
+    "kis": [
+      {
+        "code": "004060",
+        "name": "SG세계물산",
+        "market": "KOSPI",
+        "open_price": null,
+        "close_price": null,
+        "high_price": null,
+        "return_pct": null,
+        "high_return_pct": null
+      }
+    ],
+    "combined": []
+  },
+  "all_prices": {}
+}
