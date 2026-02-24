@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useMemo } from 'react';
 import type { SimulationStock, SimulationCategory } from '@/services/types';
 import { StockBadge } from './StockBadge';
 import { ReturnDisplay } from './ReturnDisplay';
@@ -20,12 +20,13 @@ interface CategorySectionProps {
   category: SimulationCategory;
   stocks: SimulationStock[];
   date: string;
+  expanded: boolean;
+  onToggleExpand: () => void;
 }
 
-export function CategorySection({ category, stocks, date }: CategorySectionProps) {
+export function CategorySection({ category, stocks, date, expanded, onToggleExpand }: CategorySectionProps) {
   const { activeCategories, toggleCategory, excludedStocks, excludeAllStocks, includeAllStocks, simulationMode } = useSimulationStore();
   const isActive = activeCategories.has(category);
-  const [expanded, setExpanded] = useState(true);
 
   const codes = useMemo(() => stocks.map((s) => s.code), [stocks]);
 
@@ -85,7 +86,7 @@ export function CategorySection({ category, stocks, date }: CategorySectionProps
             {allExcluded ? '전체선택' : '전체해제'}
           </button>
           <button
-            onClick={() => setExpanded(!expanded)}
+            onClick={onToggleExpand}
             className="p-0.5 md:p-1 text-text-muted hover:text-text-secondary transition-colors flex-shrink-0"
           >
             <svg

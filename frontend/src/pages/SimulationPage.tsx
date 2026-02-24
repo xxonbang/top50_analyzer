@@ -1,4 +1,4 @@
-import { useEffect, useRef, useMemo } from 'react';
+import { useEffect, useRef, useMemo, useState } from 'react';
 import { useSimulationIndex, useSimulationMultipleDates } from '@/hooks/useSimulationData';
 import { useSimulationStore } from '@/store/simulationStore';
 import { useAuthStore } from '@/store/authStore';
@@ -193,12 +193,29 @@ interface DetailSectionProps {
 }
 
 function DetailSection({ date, data, availableTimes, selectedTime, onSelectTime, isTimeLoading }: DetailSectionProps) {
+  const allCategories: SimulationCategory[] = ['vision', 'kis', 'combined'];
+  const [expandedCategories, setExpandedCategories] = useState<Set<string>>(
+    () => new Set(allCategories)
+  );
+
+  const allExpanded = allCategories.every((cat) => expandedCategories.has(cat));
+
   return (
     <div className="space-y-3">
-      <h3 className="text-sm font-semibold text-text-secondary flex items-center gap-2">
-        <span className="w-2 h-2 bg-accent-primary rounded-full" />
-        {date} 상세
-      </h3>
+      <div className="flex items-center justify-between">
+        <h3 className="text-sm font-semibold text-text-secondary flex items-center gap-2">
+          <span className="w-2 h-2 bg-accent-primary rounded-full" />
+          {date} 상세
+        </h3>
+        <button
+          onClick={() =>
+            setExpandedCategories(allExpanded ? new Set() : new Set(allCategories))
+          }
+          className="px-2.5 py-1 text-xs font-medium text-text-muted hover:text-text-secondary bg-bg-secondary hover:bg-bg-primary border border-border rounded-lg transition-all"
+        >
+          {allExpanded ? '전체 접기' : '전체 펼치기'}
+        </button>
+      </div>
 
       <AnalysisTimeSelector
         availableTimes={availableTimes}
@@ -207,12 +224,20 @@ function DetailSection({ date, data, availableTimes, selectedTime, onSelectTime,
         isLoading={isTimeLoading}
       />
 
-      {(['vision', 'kis', 'combined'] as SimulationCategory[]).map((cat) => (
+      {allCategories.map((cat) => (
         <CategorySection
           key={cat}
           category={cat}
           stocks={data?.categories[cat] || []}
           date={date}
+          expanded={expandedCategories.has(cat)}
+          onToggleExpand={() =>
+            setExpandedCategories((prev) => {
+              const next = new Set(prev);
+              next.has(cat) ? next.delete(cat) : next.add(cat);
+              return next;
+            })
+          }
         />
       ))}
     </div>
