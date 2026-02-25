@@ -6,7 +6,7 @@ import { useCriteriaData } from '@/hooks/useCriteriaData';
 import type { KISStockData, KISAnalysisResult, KISAnalysisData, MarketType, SignalType, SignalCounts, StockCriteria } from '@/services/types';
 import { LoadingSpinner, EmptyState, AnimatedNumber, KosdaqStatusBanner, TipText, ViewingHistoryBanner, FilterIndicator } from '@/components/common';
 import { SignalSummary, SignalBadge } from '@/components/signal';
-import { MarketTabs, NewsAnalysisSection, CriteriaLegend } from '@/components/stock';
+import { MarketTabs, NewsAnalysisSection, CriteriaLegend, RecentChanges } from '@/components/stock';
 import { CriteriaIndicator } from '@/components/stock/CriteriaIndicator';
 import { NewsSection } from '@/components/news';
 import { useUIStore } from '@/store/uiStore';
@@ -196,6 +196,13 @@ function StockCard({
         <FlowBadge value={stock.investor_flow?.today?.institution_net} label="기관" isEstimated={stock.investor_flow?.is_estimated} />
         <FlowBadge value={stock.investor_flow?.today?.individual_net} label="개인" isEstimated={stock.investor_flow?.is_estimated} />
       </div>
+
+      {/* 최근 6일 등락률 */}
+      {stock.recent_changes && stock.recent_changes.length > 0 && (
+        <div className="mb-2 md:mb-3">
+          <RecentChanges changes={stock.recent_changes} />
+        </div>
+      )}
 
       {/* Criteria 인디케이터 */}
       {criteria && (

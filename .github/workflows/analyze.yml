@@ -629,6 +629,7 @@ jobs:
                       'price': kis_stock.get('price'),
                       'ranking': kis_stock.get('ranking'),
                       'valuation': kis_stock.get('valuation'),
+                      'recent_changes': kis_stock.get('recent_changes', []),
                   }
               else:
                   # 새로운 API 전용 데이터
@@ -651,6 +652,7 @@ jobs:
                           'price': kis_stock.get('price'),
                           'ranking': kis_stock.get('ranking'),
                           'valuation': kis_stock.get('valuation'),
+                          'recent_changes': kis_stock.get('recent_changes', []),
                       },
                   }
 

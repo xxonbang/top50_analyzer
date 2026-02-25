@@ -218,8 +218,11 @@ class KISDataTransformer:
             # === 외인/기관 동향 요약 ===
             "foreign_institution": self._transform_foreign_institution(foreign_inst),
 
-            # === 일봉 차트 (최근 20일) ===
+            # === 일봉 차트 (최근 60일) ===
             "price_history": self._transform_daily_chart(daily_chart),
+
+            # === 최근 6일 등락률 ===
+            "recent_changes": self._extract_recent_changes(daily_chart, days=6),
         }
 
         # === 펀더멘탈 (유효한 데이터가 있을 때만) ===
@@ -467,7 +470,7 @@ class KISDataTransformer:
         return result
 
     def _transform_daily_chart(self, daily_chart: Dict[str, Any]) -> Dict[str, Any]:
-        """일봉 차트 데이터 변환 (최근 20일 + RSI-14)"""
+        """일봉 차트 데이터 변환 (최근 60일 + RSI-14)"""
         if not daily_chart:
             return {}
 
@@ -480,8 +483,8 @@ class KISDataTransformer:
         all_closes = [c.get("close", 0) for c in reversed(ohlcv) if c.get("close")]
         rsi_14 = self._calculate_rsi(all_closes, period=14)
 
-        # 최근 20일만 포함
-        recent = ohlcv[:20]
+        # 최근 60일만 포함
+        recent = ohlcv[:60]
 
         return {
             "days": [
@@ -492,12 +495,25 @@ class KISDataTransformer:
                     "low": c.get("low"),
                     "close": c.get("close"),
                     "volume": c.get("volume"),
+                    "change_rate": c.get("change_rate"),
                 }
                 for c in recent
             ],
             "count": len(recent),
             "rsi_14": rsi_14,
         }
+
+    @staticmethod
+    def _extract_recent_changes(daily_chart: Dict[str, Any], days: int = 6) -> list:
+        """최근 N일의 등락률만 추출"""
+        if not daily_chart:
+            return []
+        ohlcv = daily_chart.get("ohlcv", [])
+        return [
+            {"date": c.get("date"), "change_rate": c.get("change_rate")}
+            for c in ohlcv[:days]
+            if c.get("date")
+        ]
 
     def save_transformed_data(
         self,

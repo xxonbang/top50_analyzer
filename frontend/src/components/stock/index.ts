@@ -5,3 +5,4 @@ export { StockList } from './StockList';
 export { NewsAnalysisSection } from './NewsAnalysisSection';
 export { CriteriaIndicator } from './CriteriaIndicator';
 export { CriteriaLegend } from './CriteriaLegend';
+export { RecentChanges } from './RecentChanges';

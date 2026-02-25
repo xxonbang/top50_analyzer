@@ -72,6 +72,12 @@ export interface SignalCounts {
   적극매도: number;
 }
 
+// 최근 등락률 아이템
+export interface RecentChange {
+  date: string;
+  change_rate: number | null;
+}
+
 // KIS API 데이터 타입
 export interface KISStockData {
   code: string;
@@ -113,6 +119,7 @@ export interface KISStockData {
       individual_net: number;
     };
   };
+  recent_changes?: RecentChange[];
 }
 
 export interface KISGeminiData {
@@ -206,6 +213,7 @@ export interface CombinedStock {
       per: number;
       pbr: number;
     };
+    recent_changes?: RecentChange[];
   } | null;
   vision_news_analysis?: NewsAnalysis;
   api_news_analysis?: NewsAnalysis;

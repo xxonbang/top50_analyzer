@@ -7,6 +7,7 @@ import { MarketTabs } from '@/components/stock';
 import { NewsAnalysisSection } from '@/components/stock/NewsAnalysisSection';
 import { CriteriaIndicator } from '@/components/stock/CriteriaIndicator';
 import { CriteriaLegend } from '@/components/stock/CriteriaLegend';
+import { RecentChanges } from '@/components/stock/RecentChanges';
 import { NewsSection } from '@/components/news';
 import { useUIStore } from '@/store/uiStore';
 import { useAuthStore } from '@/store/authStore';
@@ -166,6 +167,13 @@ const CombinedStockCard = memo(function CombinedStockCard({ stock, criteria, isA
           )}
         </div>
       </div>
+
+      {/* 최근 6일 등락률 */}
+      {stock.api_data?.recent_changes && stock.api_data.recent_changes.length > 0 && (
+        <div className="mb-2 md:mb-3">
+          <RecentChanges changes={stock.api_data.recent_changes} />
+        </div>
+      )}
 
       {/* 신뢰도 */}
       <div className="mb-2 md:mb-3">
