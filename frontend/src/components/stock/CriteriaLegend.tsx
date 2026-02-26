@@ -20,7 +20,7 @@ const LEGEND_ITEMS = [
 ];
 
 export function CriteriaLegend({ isAdmin, hasCriteriaData }: CriteriaLegendProps) {
-  const [activeIndex, setActiveIndex] = useState<number | null>(null);
+  const [activeIndex, setActiveIndex] = useState<number | 'help' | null>(null);
   const popupRef = useRef<HTMLDivElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
 
@@ -52,8 +52,17 @@ export function CriteriaLegend({ isAdmin, hasCriteriaData }: CriteriaLegendProps
   return (
     <div ref={containerRef} className="bg-bg-primary/40 rounded-lg p-2 sm:p-3 mb-4">
       <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
-        <span className="text-[10px] sm:text-xs font-semibold text-text-secondary mr-1">
-          선정 기준 <span className="inline-flex items-center justify-center w-3 h-3 sm:w-3.5 sm:h-3.5 rounded-full bg-text-muted/20 text-text-muted text-[8px] sm:text-[9px] font-bold leading-none">?</span>
+        <span className="relative text-[10px] sm:text-xs font-semibold text-text-secondary mr-1">
+          선정 기준
+          <button
+            onClick={() => setActiveIndex(activeIndex === 'help' ? null : 'help')}
+            className="inline-flex items-center justify-center w-3 h-3 sm:w-3.5 sm:h-3.5 rounded-full bg-text-muted/20 text-text-muted text-[8px] sm:text-[9px] font-bold leading-none ml-0.5 cursor-pointer active:opacity-60 sm:hover:opacity-70 transition-opacity"
+          >?</button>
+          {activeIndex === 'help' && (
+            <div className="absolute top-full left-0 mt-1.5 z-50 w-44 bg-white border border-border rounded-lg shadow-lg p-2">
+              <p className="text-[10px] text-text-secondary leading-relaxed">각 기준 이름을 클릭하면 상세 설명을 확인할 수 있습니다.</p>
+            </div>
+          )}
         </span>
         {LEGEND_ITEMS.map((item, i) => (
           <span key={item.label} className="relative inline-flex items-center gap-1">
