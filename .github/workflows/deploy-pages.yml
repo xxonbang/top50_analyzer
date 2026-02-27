@@ -24,9 +24,11 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: |
           if [ -n "$TELEGRAM_BOT_TOKEN" ] && [ -n "$TELEGRAM_CHAT_ID" ]; then
+            MSG=$(printf "<b>[Signal Pulse][Deploy] 시작</b>\nGitHub Pages 배포를 시작합니다")
             curl -s -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
               -d chat_id="${TELEGRAM_CHAT_ID}" \
-              -d text="[Deploy] 배포 시작"
+              -d parse_mode=HTML \
+              --data-urlencode "text=${MSG}"
           fi
 
       - name: Checkout
@@ -97,9 +99,11 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: |
           if [ -n "$TELEGRAM_BOT_TOKEN" ] && [ -n "$TELEGRAM_CHAT_ID" ]; then
+            MSG=$(printf "<b>[Signal Pulse][Deploy] 완료</b>\nGitHub Pages 배포가 완료되었습니다")
             curl -s -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
               -d chat_id="${TELEGRAM_CHAT_ID}" \
-              -d text="[Deploy] 배포 완료"
+              -d parse_mode=HTML \
+              --data-urlencode "text=${MSG}"
           fi
 
       - name: Telegram - 실패 알림
@@ -109,7 +113,9 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: |
           if [ -n "$TELEGRAM_BOT_TOKEN" ] && [ -n "$TELEGRAM_CHAT_ID" ]; then
+            MSG=$(printf "<b>[Signal Pulse][Deploy] 실패</b>\nGitHub Pages 배포 중 오류가 발생했습니다")
             curl -s -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
               -d chat_id="${TELEGRAM_CHAT_ID}" \
-              -d text="[Deploy] 배포 실패"
+              -d parse_mode=HTML \
+              --data-urlencode "text=${MSG}"
           fi

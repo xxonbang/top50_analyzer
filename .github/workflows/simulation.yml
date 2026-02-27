@@ -37,9 +37,11 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: |
           if [ -n "$TELEGRAM_BOT_TOKEN" ] && [ -n "$TELEGRAM_CHAT_ID" ]; then
+            MSG=$(printf "<b>[Signal Pulse][Simulation] 시작</b>\n시뮬레이션 데이터 수집을 시작합니다")
             curl -s -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
               -d chat_id="${TELEGRAM_CHAT_ID}" \
-              -d text="[Simulation] 데이터 수집 시작"
+              -d parse_mode=HTML \
+              --data-urlencode "text=${MSG}"
           fi
 
       - name: Checkout
@@ -123,9 +125,11 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: |
           if [ -n "$TELEGRAM_BOT_TOKEN" ] && [ -n "$TELEGRAM_CHAT_ID" ]; then
+            MSG=$(printf "<b>[Signal Pulse][Simulation] 완료</b>\n시뮬레이션 데이터 수집이 완료되었습니다")
             curl -s -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
               -d chat_id="${TELEGRAM_CHAT_ID}" \
-              -d text="[Simulation] 데이터 수집 완료"
+              -d parse_mode=HTML \
+              --data-urlencode "text=${MSG}"
           fi
 
       - name: Telegram - 실패 알림
@@ -135,7 +139,9 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: |
           if [ -n "$TELEGRAM_BOT_TOKEN" ] && [ -n "$TELEGRAM_CHAT_ID" ]; then
+            MSG=$(printf "<b>[Signal Pulse][Simulation] 실패</b>\n시뮬레이션 데이터 수집 중 오류가 발생했습니다")
             curl -s -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
               -d chat_id="${TELEGRAM_CHAT_ID}" \
-              -d text="[Simulation] 데이터 수집 실패"
+              -d parse_mode=HTML \
+              --data-urlencode "text=${MSG}"
           fi
