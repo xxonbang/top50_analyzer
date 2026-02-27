@@ -106,6 +106,18 @@ jobs:
             echo "::notice::시장 휴장일입니다 (${{ steps.check.outputs.market_status }}). 분석을 건너뜁니다."
           fi
 
+      - name: Telegram - 시작 알림
+        if: steps.check.outputs.is_market_open == 'true' || github.event_name == 'workflow_dispatch'
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          if [ -n "$TELEGRAM_BOT_TOKEN" ] && [ -n "$TELEGRAM_CHAT_ID" ]; then
+            curl -s -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
+              -d chat_id="${TELEGRAM_CHAT_ID}" \
+              -d text="[Stock Analysis] 워크플로우 시작 (${{ steps.check.outputs.market_status }})"
+          fi
+
   # Vision AI 분석 (네이버 스크린샷 + Gemini Vision)
   vision-analysis:
     needs: check-market
@@ -925,6 +937,46 @@ jobs:
           echo "Triggered simulation.yml workflow"
         env:
           GH_TOKEN: ${{ github.token }}
+
+  notify-complete:
+    needs: [check-market, vision-analysis, kis-analysis, commit-and-deploy]
+    if: always() && (needs.check-market.outputs.is_market_open == 'true' || github.event_name == 'workflow_dispatch')
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Telegram - 완료/실패 알림
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          if [ -z "$TELEGRAM_BOT_TOKEN" ] || [ -z "$TELEGRAM_CHAT_ID" ]; then
+            echo "Telegram credentials not configured. Skipping."
+            exit 0
+          fi
+
+          VISION="${{ needs.vision-analysis.result }}"
+          KIS="${{ needs.kis-analysis.result }}"
+          DEPLOY="${{ needs.commit-and-deploy.result }}"
+
+          # 실패 여부 판단
+          if [ "$VISION" == "failure" ] || [ "$KIS" == "failure" ] || [ "$DEPLOY" == "failure" ]; then
+            FAILED_JOBS=""
+            [ "$VISION" == "failure" ] && FAILED_JOBS="${FAILED_JOBS}Vision, "
+            [ "$KIS" == "failure" ] && FAILED_JOBS="${FAILED_JOBS}KIS, "
+            [ "$DEPLOY" == "failure" ] && FAILED_JOBS="${FAILED_JOBS}Deploy, "
+            FAILED_JOBS="${FAILED_JOBS%, }"
+            MSG="[Stock Analysis] 실패 - ${FAILED_JOBS}"
+          else
+            VISION_STATUS="Skip"
+            KIS_STATUS="Skip"
+            [ "$VISION" == "success" ] && VISION_STATUS="OK"
+            [ "$KIS" == "success" ] && KIS_STATUS="OK"
+            MSG="[Stock Analysis] 완료 (Vision: ${VISION_STATUS}, KIS: ${KIS_STATUS})"
+          fi
+
+          curl -s -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
+            -d chat_id="${TELEGRAM_CHAT_ID}" \
+            -d text="${MSG}"
 
   notify-skip:
     needs: check-market
