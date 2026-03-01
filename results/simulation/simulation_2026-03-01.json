@@ -1,0 +1,622 @@
+{
+  "date": "2026-03-01",
+  "collected_at": "2026-03-01T19:54:37.734818+09:00",
+  "categories": {
+    "vision": [
+      {
+        "code": "005380",
+        "name": "현대차",
+        "market": "KOSPI",
+        "open_price": 592000,
+        "close_price": 674000,
+        "high_price": 687000,
+        "high_price_time": null,
+        "return_pct": 13.85,
+        "high_return_pct": 16.05
+      },
+      {
+        "code": "000270",
+        "name": "기아",
+        "market": "KOSPI",
+        "open_price": 199600,
+        "close_price": 205500,
+        "high_price": 212500,
+        "high_price_time": null,
+        "return_pct": 2.96,
+        "high_return_pct": 6.46
+      },
+      {
+        "code": "006400",
+        "name": "삼성SDI",
+        "market": "KOSPI",
+        "open_price": 439500,
+        "close_price": 466000,
+        "high_price": 473500,
+        "high_price_time": null,
+        "return_pct": 6.03,
+        "high_return_pct": 7.74
+      },
+      {
+        "code": "322000",
+        "name": "HD현대에너지솔루션",
+        "market": "KOSPI",
+        "open_price": 80700,
+        "close_price": 104000,
+        "high_price": 104000,
+        "high_price_time": "15:06",
+        "return_pct": 28.87,
+        "high_return_pct": 28.87
+      },
+      {
+        "code": "064350",
+        "name": "현대로템",
+        "market": "KOSPI",
+        "open_price": 225000,
+        "close_price": 230500,
+        "high_price": 242500,
+        "high_price_time": null,
+        "return_pct": 2.44,
+        "high_return_pct": 7.78
+      },
+      {
+        "code": "105560",
+        "name": "KB금융",
+        "market": "KOSPI",
+        "open_price": 161100,
+        "close_price": 159000,
+        "high_price": 164200,
+        "high_price_time": null,
+        "return_pct": -1.3,
+        "high_return_pct": 1.92
+      },
+      {
+        "code": "006340",
+        "name": "대원전선",
+        "market": "KOSPI",
+        "open_price": 6380,
+        "close_price": 6790,
+        "high_price": 7490,
+        "high_price_time": null,
+        "return_pct": 6.43,
+        "high_return_pct": 17.4
+      },
+      {
+        "code": "055550",
+        "name": "신한지주",
+        "market": "KOSPI",
+        "open_price": 99500,
+        "close_price": 96900,
+        "high_price": 99500,
+        "high_price_time": null,
+        "return_pct": -2.61,
+        "high_return_pct": 0.0
+      },
+      {
+        "code": "226950",
+        "name": "올릭스",
+        "market": "KOSDAQ",
+        "open_price": 160900,
+        "close_price": 180000,
+        "high_price": 185500,
+        "high_price_time": null,
+        "return_pct": 11.87,
+        "high_return_pct": 15.29
+      },
+      {
+        "code": "012860",
+        "name": "모베이스전자",
+        "market": "KOSDAQ",
+        "open_price": 4880,
+        "close_price": 5020,
+        "high_price": 5340,
+        "high_price_time": null,
+        "return_pct": 2.87,
+        "high_return_pct": 9.43
+      },
+      {
+        "code": "298380",
+        "name": "에이비엘바이오",
+        "market": "KOSDAQ",
+        "open_price": 190900,
+        "close_price": 194000,
+        "high_price": 195900,
+        "high_price_time": null,
+        "return_pct": 1.62,
+        "high_return_pct": 2.62
+      },
+      {
+        "code": "347850",
+        "name": "디앤디파마텍",
+        "market": "KOSDAQ",
+        "open_price": 89200,
+        "close_price": 92400,
+        "high_price": 94300,
+        "high_price_time": null,
+        "return_pct": 3.59,
+        "high_return_pct": 5.72
+      },
+      {
+        "code": "058610",
+        "name": "에스피지",
+        "market": "KOSDAQ",
+        "open_price": 147100,
+        "close_price": 144600,
+        "high_price": 149500,
+        "high_price_time": null,
+        "return_pct": -1.7,
+        "high_return_pct": 1.63
+      },
+      {
+        "code": "001440",
+        "name": "대한전선",
+        "market": "KOSPI",
+        "open_price": 35200,
+        "close_price": 36000,
+        "high_price": 37350,
+        "high_price_time": null,
+        "return_pct": 2.27,
+        "high_return_pct": 6.11
+      },
+      {
+        "code": "000150",
+        "name": "두산",
+        "market": "KOSPI",
+        "open_price": 1195000,
+        "close_price": 1278000,
+        "high_price": 1295000,
+        "high_price_time": null,
+        "return_pct": 6.95,
+        "high_return_pct": 8.37
+      },
+      {
+        "code": "489790",
+        "name": "한화비전",
+        "market": "KOSPI",
+        "open_price": 81900,
+        "close_price": 85400,
+        "high_price": 90000,
+        "high_price_time": null,
+        "return_pct": 4.27,
+        "high_return_pct": 9.89
+      },
+      {
+        "code": "298040",
+        "name": "효성중공업",
+        "market": "KOSPI",
+        "open_price": 2890000,
+        "close_price": 2823000,
+        "high_price": 2911000,
+        "high_price_time": null,
+        "return_pct": -2.32,
+        "high_return_pct": 0.73
+      },
+      {
+        "code": "038500",
+        "name": "삼표시멘트",
+        "market": "KOSPI",
+        "open_price": 15520,
+        "close_price": 17350,
+        "high_price": 19470,
+        "high_price_time": null,
+        "return_pct": 11.79,
+        "high_return_pct": 25.45
+      }
+    ],
+    "kis": [
+      {
+        "code": "042700",
+        "name": "한미반도체",
+        "market": "KOSPI",
+        "open_price": 263500,
+        "close_price": 323500,
+        "high_price": 332500,
+        "high_price_time": null,
+        "return_pct": 22.77,
+        "high_return_pct": 26.19
+      },
+      {
+        "code": "006340",
+        "name": "대원전선",
+        "market": "KOSPI",
+        "open_price": 6380,
+        "close_price": 6790,
+        "high_price": 7490,
+        "high_price_time": null,
+        "return_pct": 6.43,
+        "high_return_pct": 17.4
+      },
+      {
+        "code": "083650",
+        "name": "비에이치아이",
+        "market": "KOSDAQ",
+        "open_price": 90000,
+        "close_price": 93500,
+        "high_price": 93900,
+        "high_price_time": null,
+        "return_pct": 3.89,
+        "high_return_pct": 4.33
+      },
+      {
+        "code": "000270",
+        "name": "기아",
+        "market": "KOSPI",
+        "open_price": 199600,
+        "close_price": 205500,
+        "high_price": 212500,
+        "high_price_time": null,
+        "return_pct": 2.96,
+        "high_return_pct": 6.46
+      },
+      {
+        "code": "222080",
+        "name": "씨아이에스",
+        "market": "KOSDAQ",
+        "open_price": 13700,
+        "close_price": 14690,
+        "high_price": 15430,
+        "high_price_time": null,
+        "return_pct": 7.23,
+        "high_return_pct": 12.63
+      },
+      {
+        "code": "064350",
+        "name": "현대로템",
+        "market": "KOSPI",
+        "open_price": 225000,
+        "close_price": 230500,
+        "high_price": 242500,
+        "high_price_time": null,
+        "return_pct": 2.44,
+        "high_return_pct": 7.78
+      },
+      {
+        "code": "322000",
+        "name": "HD현대에너지솔루션",
+        "market": "KOSPI",
+        "open_price": 80700,
+        "close_price": 104000,
+        "high_price": 104000,
+        "high_price_time": "15:06",
+        "return_pct": 28.87,
+        "high_return_pct": 28.87
+      },
+      {
+        "code": "027360",
+        "name": "아주IB투자",
+        "market": "KOSDAQ",
+        "open_price": 4685,
+        "close_price": 5810,
+        "high_price": 5810,
+        "high_price_time": "12:50",
+        "return_pct": 24.01,
+        "high_return_pct": 24.01
+      },
+      {
+        "code": "005385",
+        "name": "현대차우",
+        "market": "KOSPI",
+        "open_price": 305000,
+        "close_price": 321500,
+        "high_price": 329000,
+        "high_price_time": null,
+        "return_pct": 5.41,
+        "high_return_pct": 7.87
+      },
+      {
+        "code": "047040",
+        "name": "대우건설",
+        "market": "KOSPI",
+        "open_price": 10050,
+        "close_price": 10140,
+        "high_price": 10350,
+        "high_price_time": null,
+        "return_pct": 0.9,
+        "high_return_pct": 2.99
+      },
+      {
+        "code": "038500",
+        "name": "삼표시멘트",
+        "market": "KOSDAQ",
+        "open_price": 15520,
+        "close_price": 17350,
+        "high_price": 19470,
+        "high_price_time": null,
+        "return_pct": 11.79,
+        "high_return_pct": 25.45
+      },
+      {
+        "code": "178320",
+        "name": "서진시스템",
+        "market": "KOSDAQ",
+        "open_price": 38150,
+        "close_price": 47550,
+        "high_price": 49450,
+        "high_price_time": null,
+        "return_pct": 24.64,
+        "high_return_pct": 29.62
+      },
+      {
+        "code": "004020",
+        "name": "현대제철",
+        "market": "KOSPI",
+        "open_price": 38800,
+        "close_price": 46500,
+        "high_price": 50400,
+        "high_price_time": null,
+        "return_pct": 19.85,
+        "high_return_pct": 29.9
+      },
+      {
+        "code": "007660",
+        "name": "이수페타시스",
+        "market": "KOSPI",
+        "open_price": 113000,
+        "close_price": 127600,
+        "high_price": 131200,
+        "high_price_time": null,
+        "return_pct": 12.92,
+        "high_return_pct": 16.11
+      },
+      {
+        "code": "491000",
+        "name": "리브스메드",
+        "market": "KOSDAQ",
+        "open_price": 86900,
+        "close_price": 89700,
+        "high_price": 94400,
+        "high_price_time": null,
+        "return_pct": 3.22,
+        "high_return_pct": 8.63
+      },
+      {
+        "code": "005380",
+        "name": "현대차",
+        "market": "KOSPI",
+        "open_price": 592000,
+        "close_price": 674000,
+        "high_price": 687000,
+        "high_price_time": null,
+        "return_pct": 13.85,
+        "high_return_pct": 16.05
+      }
+    ],
+    "combined": [
+      {
+        "code": "005380",
+        "name": "현대차",
+        "market": "KOSPI",
+        "open_price": 592000,
+        "close_price": 674000,
+        "high_price": 687000,
+        "high_price_time": null,
+        "return_pct": 13.85,
+        "high_return_pct": 16.05
+      },
+      {
+        "code": "000270",
+        "name": "기아",
+        "market": "KOSPI",
+        "open_price": 199600,
+        "close_price": 205500,
+        "high_price": 212500,
+        "high_price_time": null,
+        "return_pct": 2.96,
+        "high_return_pct": 6.46
+      },
+      {
+        "code": "322000",
+        "name": "HD현대에너지솔루션",
+        "market": "KOSDAQ",
+        "open_price": 80700,
+        "close_price": 104000,
+        "high_price": 104000,
+        "high_price_time": "15:06",
+        "return_pct": 28.87,
+        "high_return_pct": 28.87
+      },
+      {
+        "code": "064350",
+        "name": "현대로템",
+        "market": "KOSPI",
+        "open_price": 225000,
+        "close_price": 230500,
+        "high_price": 242500,
+        "high_price_time": null,
+        "return_pct": 2.44,
+        "high_return_pct": 7.78
+      },
+      {
+        "code": "006340",
+        "name": "대원전선",
+        "market": "KOSPI",
+        "open_price": 6380,
+        "close_price": 6790,
+        "high_price": 7490,
+        "high_price_time": null,
+        "return_pct": 6.43,
+        "high_return_pct": 17.4
+      },
+      {
+        "code": "038500",
+        "name": "삼표시멘트",
+        "market": "KOSPI",
+        "open_price": 15520,
+        "close_price": 17350,
+        "high_price": 19470,
+        "high_price_time": null,
+        "return_pct": 11.79,
+        "high_return_pct": 25.45
+      }
+    ]
+  },
+  "all_prices": {
+    "042700": {
+      "open_price": 263500,
+      "close_price": 323500,
+      "high_price": 332500,
+      "high_price_time": null
+    },
+    "064350": {
+      "open_price": 225000,
+      "close_price": 230500,
+      "high_price": 242500,
+      "high_price_time": null
+    },
+    "012860": {
+      "open_price": 4880,
+      "close_price": 5020,
+      "high_price": 5340,
+      "high_price_time": null
+    },
+    "038500": {
+      "open_price": 15520,
+      "close_price": 17350,
+      "high_price": 19470,
+      "high_price_time": null
+    },
+    "006400": {
+      "open_price": 439500,
+      "close_price": 466000,
+      "high_price": 473500,
+      "high_price_time": null
+    },
+    "222080": {
+      "open_price": 13700,
+      "close_price": 14690,
+      "high_price": 15430,
+      "high_price_time": null
+    },
+    "005380": {
+      "open_price": 592000,
+      "close_price": 674000,
+      "high_price": 687000,
+      "high_price_time": null
+    },
+    "298380": {
+      "open_price": 190900,
+      "close_price": 194000,
+      "high_price": 195900,
+      "high_price_time": null
+    },
+    "027360": {
+      "open_price": 4685,
+      "close_price": 5810,
+      "high_price": 5810,
+      "high_price_time": "12:50"
+    },
+    "298040": {
+      "open_price": 2890000,
+      "close_price": 2823000,
+      "high_price": 2911000,
+      "high_price_time": null
+    },
+    "347850": {
+      "open_price": 89200,
+      "close_price": 92400,
+      "high_price": 94300,
+      "high_price_time": null
+    },
+    "105560": {
+      "open_price": 161100,
+      "close_price": 159000,
+      "high_price": 164200,
+      "high_price_time": null
+    },
+    "058610": {
+      "open_price": 147100,
+      "close_price": 144600,
+      "high_price": 149500,
+      "high_price_time": null
+    },
+    "491000": {
+      "open_price": 86900,
+      "close_price": 89700,
+      "high_price": 94400,
+      "high_price_time": null
+    },
+    "005385": {
+      "open_price": 305000,
+      "close_price": 321500,
+      "high_price": 329000,
+      "high_price_time": null
+    },
+    "226950": {
+      "open_price": 160900,
+      "close_price": 180000,
+      "high_price": 185500,
+      "high_price_time": null
+    },
+    "055550": {
+      "open_price": 99500,
+      "close_price": 96900,
+      "high_price": 99500,
+      "high_price_time": null
+    },
+    "001440": {
+      "open_price": 35200,
+      "close_price": 36000,
+      "high_price": 37350,
+      "high_price_time": null
+    },
+    "178320": {
+      "open_price": 38150,
+      "close_price": 47550,
+      "high_price": 49450,
+      "high_price_time": null
+    },
+    "000150": {
+      "open_price": 1195000,
+      "close_price": 1278000,
+      "high_price": 1295000,
+      "high_price_time": null
+    },
+    "083650": {
+      "open_price": 90000,
+      "close_price": 93500,
+      "high_price": 93900,
+      "high_price_time": null
+    },
+    "047040": {
+      "open_price": 10050,
+      "close_price": 10140,
+      "high_price": 10350,
+      "high_price_time": null
+    },
+    "489790": {
+      "open_price": 81900,
+      "close_price": 85400,
+      "high_price": 90000,
+      "high_price_time": null
+    },
+    "000270": {
+      "open_price": 199600,
+      "close_price": 205500,
+      "high_price": 212500,
+      "high_price_time": null
+    },
+    "004020": {
+      "open_price": 38800,
+      "close_price": 46500,
+      "high_price": 50400,
+      "high_price_time": null
+    },
+    "006340": {
+      "open_price": 6380,
+      "close_price": 6790,
+      "high_price": 7490,
+      "high_price_time": null
+    },
+    "007660": {
+      "open_price": 113000,
+      "close_price": 127600,
+      "high_price": 131200,
+      "high_price_time": null
+    },
+    "322000": {
+      "open_price": 80700,
+      "close_price": 104000,
+      "high_price": 104000,
+      "high_price_time": "15:06"
+    }
+  }
+}
