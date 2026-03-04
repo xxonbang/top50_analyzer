@@ -56,7 +56,7 @@ function IndexCard({ data, label, icon }: { data: MarketIndexStatus; label: stri
         </svg>
       </button>
       <div className={`overflow-hidden transition-all duration-200 ${open ? 'max-h-40' : 'max-h-0'}`}>
-        <div className="px-3 pb-2.5 grid grid-cols-3 sm:grid-cols-6 gap-x-3 gap-y-1.5 text-xs sm:text-sm">
+        <div className="px-3 pb-2.5 grid grid-cols-3 gap-x-3 gap-y-1.5 sm:flex sm:justify-between text-xs sm:text-sm">
           <div className="flex flex-col">
             <span className="text-[10px] uppercase tracking-wider opacity-40 font-medium">현재</span>
             <span className="tabular-nums font-bold">{data.current?.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</span>
@@ -137,13 +137,26 @@ function FearGreedCard({ data }: { data: FearGreedData }) {
           <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
         </svg>
       </button>
-      <div className={`overflow-hidden transition-all duration-200 ${open ? 'max-h-24' : 'max-h-0'}`}>
-        <div className="px-3 pb-2.5 flex flex-wrap gap-x-4 gap-y-0.5 text-xs sm:text-sm">
-          <span><span className="font-semibold">현재</span> <span className="tabular-nums">{data.score.toFixed(1)}</span></span>
-          <span className="opacity-75"><span className="font-medium">전일</span> <span className="tabular-nums">{data.previous_close.toFixed(1)}</span></span>
-          <span className="opacity-75"><span className="font-medium">1주전</span> <span className="tabular-nums">{data.previous_1_week.toFixed(1)}</span></span>
-          <span className="opacity-75"><span className="font-medium">1개월전</span> <span className="tabular-nums">{data.previous_1_month.toFixed(1)}</span></span>
-          <span className="opacity-75"><span className="font-medium">1년전</span> <span className="tabular-nums">{data.previous_1_year.toFixed(1)}</span></span>
+      <div className={`overflow-hidden transition-all duration-200 ${open ? 'max-h-40' : 'max-h-0'}`}>
+        <div className="px-3 pb-2.5 grid grid-cols-3 gap-x-3 gap-y-1.5 sm:flex sm:justify-between text-xs sm:text-sm">
+          {[
+            { label: '현재', value: data.score },
+            { label: '전일', value: data.previous_close },
+            { label: '1주전', value: data.previous_1_week },
+            { label: '1개월전', value: data.previous_1_month },
+            { label: '1년전', value: data.previous_1_year },
+          ].map(({ label, value }) => {
+            const diff = value - data.score;
+            const colorClass = label === '현재' ? '' : diff > 0 ? 'text-emerald-600' : diff < 0 ? 'text-red-500' : '';
+            return (
+              <div key={label} className="flex flex-col">
+                <span className="text-[10px] uppercase tracking-wider opacity-40 font-medium">{label}</span>
+                <span className={`tabular-nums ${label === '현재' ? 'font-bold' : `font-semibold ${colorClass}`}`}>
+                  {value.toFixed(1)}
+                </span>
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>
