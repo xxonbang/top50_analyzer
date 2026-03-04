@@ -55,14 +55,24 @@ function IndexCard({ data, label, icon }: { data: MarketIndexStatus; label: stri
           <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
         </svg>
       </button>
-      <div className={`overflow-hidden transition-all duration-200 ${open ? 'max-h-24' : 'max-h-0'}`}>
-        <div className="px-3 pb-2.5 flex flex-wrap gap-x-4 gap-y-0.5 text-xs sm:text-sm">
-          <span><span className="font-semibold">현재</span> <span className="tabular-nums">{data.current?.toFixed(2)}</span></span>
-          {Object.entries(data.ma_values).map(([k, v]) => (
-            <span key={k} className="opacity-75">
-              <span className="font-medium">{k}</span> <span className="tabular-nums">{v.toFixed(2)}</span>
-            </span>
-          ))}
+      <div className={`overflow-hidden transition-all duration-200 ${open ? 'max-h-40' : 'max-h-0'}`}>
+        <div className="px-3 pb-2.5 grid grid-cols-3 sm:grid-cols-6 gap-x-3 gap-y-1.5 text-xs sm:text-sm">
+          <div className="flex flex-col">
+            <span className="text-[10px] uppercase tracking-wider opacity-40 font-medium">현재</span>
+            <span className="tabular-nums font-bold">{data.current?.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</span>
+          </div>
+          {Object.entries(data.ma_values).map(([k, v]) => {
+            const diff = data.current ? v - data.current : 0;
+            const colorClass = diff > 0 ? 'text-emerald-600' : diff < 0 ? 'text-red-500' : '';
+            return (
+              <div key={k} className="flex flex-col">
+                <span className="text-[10px] uppercase tracking-wider opacity-40 font-medium">{k}</span>
+                <span className={`tabular-nums font-semibold ${colorClass}`}>
+                  {v.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
+                </span>
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>
