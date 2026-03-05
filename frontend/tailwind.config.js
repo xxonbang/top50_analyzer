@@ -37,7 +37,7 @@ export default {
         }
       },
       fontFamily: {
-        sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+        sans: ['Pretendard Variable', 'Pretendard', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
       },
       boxShadow: {
         'sm': '0 1px 3px rgba(0, 0, 0, 0.08)',
@@ -45,6 +45,10 @@ export default {
         'lg': '0 10px 25px rgba(0, 0, 0, 0.1)',
       },
       keyframes: {
+        'fade-in': {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
         shimmer: {
           '0%, 100%': { boxShadow: '0 0 6px 1px rgba(234, 179, 8, 0.25)' },
           '50%': { boxShadow: '0 0 20px 4px rgba(234, 179, 8, 0.5)' },
@@ -63,6 +67,7 @@ export default {
         },
       },
       animation: {
+        'fade-in': 'fade-in 0.2s ease-out',
         shimmer: 'shimmer 3s ease-in-out infinite',
         'danger-shimmer': 'danger-shimmer 2s ease-in-out infinite',
         'overheat-shimmer': 'overheat-shimmer 2s ease-in-out infinite',

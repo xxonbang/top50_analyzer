@@ -132,7 +132,7 @@ export function SignalCard({ signal, count, active = false, onClick }: SignalCar
 
       {/* Icon */}
       <div className={cn(
-        'w-6 h-6 md:w-10 md:h-10 rounded-lg flex items-center justify-center mx-auto mb-1.5 md:mb-3 transition-transform',
+        'w-7 h-7 md:w-10 md:h-10 rounded-lg flex items-center justify-center mx-auto mb-1.5 md:mb-3 transition-transform',
         styles.icon,
         'group-hover:scale-105'
       )}>
@@ -145,7 +145,7 @@ export function SignalCard({ signal, count, active = false, onClick }: SignalCar
       </div>
 
       {/* Label */}
-      <div className={cn('text-[0.55rem] md:text-xs font-semibold uppercase tracking-wide', styles.text)}>
+      <div className={cn('text-[0.65rem] md:text-xs font-semibold uppercase tracking-wide', styles.text)}>
         {config.label}
       </div>
 

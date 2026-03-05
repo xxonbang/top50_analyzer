@@ -84,10 +84,10 @@ function SearchBar() {
         value={searchQuery}
         onChange={(e) => setSearchQuery(e.target.value)}
         placeholder="종목 검색 (이름, 코드, 초성 예: ㅅㅅㅈㅈ)"
-        className="w-full pl-9 pr-9 py-2 text-sm
-          bg-bg-secondary border border-border rounded-xl
+        className="w-full pl-9 pr-9 py-2.5 text-sm
+          bg-bg-secondary border border-border rounded-xl shadow-sm
           placeholder:text-text-muted/50
-          focus:outline-none focus:border-accent-primary/50 focus:ring-1 focus:ring-accent-primary/20
+          focus:outline-none focus:border-accent-primary/50 focus:ring-2 focus:ring-accent-primary/15 focus:shadow-md
           transition-all"
       />
       {searchQuery && (

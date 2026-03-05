@@ -21,14 +21,14 @@ export function Navigation() {
 
         {/* 우측 버튼 그룹 */}
         <div className="flex items-center gap-2">
-          {/* 모의투자 / 홈으로 토글 */}
+          {/* 모의투자 / 홈으로 토글 - 주요 액션 */}
           <button
             onClick={() => setCurrentPage(currentPage === 'home' ? 'simulation' : 'home')}
             className="flex items-center gap-1.5 px-2.5 md:px-3 py-1.5 md:py-2
-              bg-bg-secondary text-text-secondary
-              border border-border
-              rounded-lg text-xs md:text-sm font-medium
-              hover:border-accent-primary hover:text-accent-primary
+              bg-accent-primary/10 text-accent-primary
+              border border-accent-primary/30
+              rounded-lg text-xs md:text-sm font-semibold
+              hover:bg-accent-primary hover:text-white
               transition-all"
           >
             {currentPage === 'home' ? (
@@ -50,14 +50,13 @@ export function Navigation() {
             )}
           </button>
 
-          {/* 히스토리 버튼 */}
+          {/* 히스토리 버튼 - 보조 액션 */}
           <button
             onClick={openHistoryPanel}
             className="flex items-center gap-1.5 px-2.5 md:px-3 py-1.5 md:py-2
-              bg-bg-secondary text-text-secondary
-              border border-border
+              text-text-muted
               rounded-lg text-xs md:text-sm font-medium
-              hover:border-accent-primary hover:text-accent-primary
+              hover:bg-bg-primary hover:text-text-secondary
               transition-all"
           >
             <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -109,15 +108,14 @@ export function Navigation() {
             <span className="hidden md:inline">{isCompactView ? '일반' : 'Compact'}</span>
           </button>
 
-          {/* 로그아웃 */}
+          {/* 로그아웃 - 최소화 */}
           {user && (
             <button
               onClick={signOut}
-              className="flex items-center gap-1.5 px-2.5 md:px-3 py-1.5 md:py-2
-                bg-bg-secondary text-text-secondary
-                border border-border
+              className="flex items-center gap-1.5 px-2 md:px-2.5 py-1.5 md:py-2
+                text-text-muted/60
                 rounded-lg text-xs md:text-sm font-medium
-                hover:border-red-400 hover:text-red-500
+                hover:text-red-500 hover:bg-red-50
                 transition-all"
               title={user.email ?? '로그아웃'}
             >

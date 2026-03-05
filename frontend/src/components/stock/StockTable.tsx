@@ -66,7 +66,7 @@ export function StockTable({ stocks, isCompact = false, criteriaData }: StockTab
         <tbody>
           {stocks.map((stock) => (
             <tr key={stock.code} className={cn(
-              'hover:bg-bg-primary group',
+              'hover:bg-bg-primary group even:bg-slate-50/40',
               getWarningRingClass(criteriaData?.[stock.code], true),
             )}>
               <td className="relative px-4 py-3.5 border-b border-border-light align-top whitespace-nowrap">
