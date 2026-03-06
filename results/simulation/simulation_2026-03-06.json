@@ -1,135 +1,65 @@
 {
   "date": "2026-03-06",
-  "collected_at": "2026-03-06T15:40:21.450901+09:00",
+  "collected_at": "2026-03-06T19:52:19.665055+09:00",
   "categories": {
     "vision": [
       {
-        "code": "005380",
-        "name": "현대차",
-        "market": "KOSPI",
-        "open_price": 532000,
-        "close_price": 553000,
-        "high_price": 564000,
-        "low_price": 530000,
-        "high_price_time": null,
-        "return_pct": 3.95,
-        "return_pct_net": 3.62,
-        "high_return_pct": 6.02,
+        "code": "074600",
+        "name": "원익QnC",
+        "market": "KOSDAQ",
+        "open_price": 32200,
+        "close_price": 36850,
+        "high_price": 36850,
+        "low_price": 31500,
+        "high_price_time": "15:30",
+        "return_pct": 14.44,
+        "return_pct_net": 14.11,
+        "high_return_pct": 14.44,
         "stop_result": "take_profit"
       },
       {
-        "code": "010950",
-        "name": "S-Oil",
-        "market": "KOSPI",
-        "open_price": 141700,
-        "close_price": 129700,
-        "high_price": 142100,
-        "low_price": 122200,
+        "code": "095340",
+        "name": "ISC",
+        "market": "KOSDAQ",
+        "open_price": 201000,
+        "close_price": 211500,
+        "high_price": 214000,
+        "low_price": 196100,
         "high_price_time": null,
-        "return_pct": -8.47,
-        "return_pct_net": -8.8,
-        "high_return_pct": 0.28,
-        "stop_result": "stop_loss"
-      },
-      {
-        "code": "012450",
-        "name": "한화에어로스페이스",
-        "market": "KOSPI",
-        "open_price": 1414000,
-        "close_price": 1481000,
-        "high_price": 1540000,
-        "low_price": 1368000,
-        "high_price_time": null,
-        "return_pct": 4.74,
-        "return_pct_net": 4.41,
-        "high_return_pct": 8.91,
-        "stop_result": "stop_loss"
-      },
-      {
-        "code": "042700",
-        "name": "한미반도체",
-        "market": "KOSPI",
-        "open_price": 326000,
-        "close_price": 333500,
-        "high_price": 334000,
-        "low_price": 305000,
-        "high_price_time": null,
-        "return_pct": 2.3,
-        "return_pct_net": 1.97,
-        "high_return_pct": 2.45,
-        "stop_result": "stop_loss"
-      },
-      {
-        "code": "034020",
-        "name": "두산에너빌리티",
-        "market": "KOSPI",
-        "open_price": 88600,
-        "close_price": 98000,
-        "high_price": 98200,
-        "low_price": 88600,
-        "high_price_time": null,
-        "return_pct": 10.61,
-        "return_pct_net": 10.28,
-        "high_return_pct": 10.84,
+        "return_pct": 5.22,
+        "return_pct_net": 4.89,
+        "high_return_pct": 6.47,
         "stop_result": "take_profit"
       }
     ],
     "kis": [
       {
-        "code": "010950",
-        "name": "S-Oil",
-        "market": "KOSPI",
-        "open_price": 141700,
-        "close_price": 129700,
-        "high_price": 142100,
-        "low_price": 122200,
-        "high_price_time": null,
-        "return_pct": -8.47,
-        "return_pct_net": -8.8,
-        "high_return_pct": 0.28,
-        "stop_result": "stop_loss"
-      },
-      {
-        "code": "065450",
-        "name": "빅텍",
+        "code": "458350",
+        "name": "에스팀",
         "market": "KOSDAQ",
-        "open_price": 5990,
-        "close_price": 5880,
-        "high_price": 6750,
-        "low_price": 5660,
-        "high_price_time": null,
-        "return_pct": -1.84,
-        "return_pct_net": -2.17,
-        "high_return_pct": 12.69,
-        "stop_result": "stop_loss"
-      },
-      {
-        "code": "178320",
-        "name": "서진시스템",
-        "market": "KOSDAQ",
-        "open_price": 46300,
-        "close_price": 46650,
-        "high_price": 47200,
-        "low_price": 42500,
-        "high_price_time": null,
-        "return_pct": 0.76,
-        "return_pct_net": 0.43,
-        "high_return_pct": 1.94,
-        "stop_result": "stop_loss"
-      },
-      {
-        "code": "032820",
-        "name": "우리기술",
-        "market": "KOSDAQ",
-        "open_price": 17130,
-        "close_price": 17230,
-        "high_price": 18750,
-        "low_price": 16620,
-        "high_price_time": null,
-        "return_pct": 0.58,
-        "return_pct_net": 0.25,
-        "high_return_pct": 9.46,
+        "open_price": 30650,
+        "close_price": 34000,
+        "high_price": 34000,
+        "low_price": 30650,
+        "high_price_time": "15:14",
+        "return_pct": 10.93,
+        "return_pct_net": 10.6,
+        "high_return_pct": 10.93,
         "stop_result": "take_profit"
+      },
+      {
+        "code": "000440",
+        "name": "중앙에너비스",
+        "market": "KOSDAQ",
+        "open_price": 35000,
+        "close_price": 29150,
+        "high_price": 37700,
+        "low_price": 28750,
+        "high_price_time": null,
+        "return_pct": -16.71,
+        "return_pct_net": -17.04,
+        "high_return_pct": 7.71,
+        "stop_result": "stop_loss"
       },
       {
         "code": "079550",
@@ -144,43 +74,442 @@
         "return_pct_net": -1.4,
         "high_return_pct": 6.64,
         "stop_result": "stop_loss"
-      },
-      {
-        "code": "347700",
-        "name": "스피어",
-        "market": "KOSDAQ",
-        "open_price": 45450,
-        "close_price": 46300,
-        "high_price": 48150,
-        "low_price": 42100,
-        "high_price_time": null,
-        "return_pct": 1.87,
-        "return_pct_net": 1.54,
-        "high_return_pct": 5.94,
-        "stop_result": "stop_loss"
       }
     ],
-    "combined": [
-      {
-        "code": "010950",
-        "name": "S-Oil",
-        "market": "KOSPI",
-        "open_price": 141700,
-        "close_price": 129700,
-        "high_price": 142100,
-        "low_price": 122200,
-        "high_price_time": null,
-        "return_pct": -8.47,
-        "return_pct_net": -8.8,
-        "high_return_pct": 0.28,
-        "stop_result": "stop_loss"
-      }
-    ]
+    "combined": []
   },
-  "all_prices": {},
-  "all_signals": {},
+  "all_prices": {
+    "095340": {
+      "open_price": 201000,
+      "close_price": 211500,
+      "high_price": 214000,
+      "high_price_time": null
+    },
+    "079550": {
+      "open_price": 843000,
+      "close_price": 834000,
+      "high_price": 899000,
+      "high_price_time": null
+    },
+    "458350": {
+      "open_price": 30650,
+      "close_price": 34000,
+      "high_price": 34000,
+      "high_price_time": "15:14"
+    },
+    "074600": {
+      "open_price": 32200,
+      "close_price": 36850,
+      "high_price": 36850,
+      "high_price_time": "15:30"
+    },
+    "000440": {
+      "open_price": 35000,
+      "close_price": 29150,
+      "high_price": 37700,
+      "high_price_time": null
+    }
+  },
+  "all_signals": {
+    "005930": {
+      "name": "삼성전자",
+      "vision_signal": "중립"
+    },
+    "000660": {
+      "name": "SK하이닉스",
+      "vision_signal": "중립"
+    },
+    "272210": {
+      "name": "한화시스템",
+      "vision_signal": "중립"
+    },
+    "079550": {
+      "name": "LIG넥스원",
+      "vision_signal": "매수"
+    },
+    "012450": {
+      "name": "한화에어로스페이스",
+      "vision_signal": "중립"
+    },
+    "009830": {
+      "name": "한화솔루션",
+      "vision_signal": "매수"
+    },
+    "005380": {
+      "name": "현대차",
+      "vision_signal": "중립"
+    },
+    "034020": {
+      "name": "두산에너빌리티",
+      "vision_signal": "중립"
+    },
+    "042700": {
+      "name": "한미반도체",
+      "vision_signal": "중립"
+    },
+    "005935": {
+      "name": "삼성전자우",
+      "vision_signal": "중립"
+    },
+    "322000": {
+      "name": "HD현대에너지솔루션",
+      "vision_signal": "중립"
+    },
+    "279570": {
+      "name": "케이뱅크",
+      "vision_signal": "매도"
+    },
+    "010950": {
+      "name": "S-Oil",
+      "vision_signal": "중립"
+    },
+    "001510": {
+      "name": "SK증권",
+      "vision_signal": "매수"
+    },
+    "006400": {
+      "name": "삼성SDI",
+      "vision_signal": "중립"
+    },
+    "010820": {
+      "name": "퍼스텍",
+      "vision_signal": "매수"
+    },
+    "402340": {
+      "name": "SK스퀘어",
+      "vision_signal": "매수"
+    },
+    "064350": {
+      "name": "현대로템",
+      "vision_signal": "중립"
+    },
+    "000270": {
+      "name": "기아",
+      "vision_signal": "중립"
+    },
+    "006800": {
+      "name": "미래에셋증권",
+      "vision_signal": "중립"
+    },
+    "000720": {
+      "name": "현대건설",
+      "vision_signal": "매도"
+    },
+    "009150": {
+      "name": "삼성전기",
+      "vision_signal": "매도"
+    },
+    "035420": {
+      "name": "NAVER",
+      "vision_signal": "매도"
+    },
+    "042660": {
+      "name": "한화오션",
+      "vision_signal": "중립"
+    },
+    "267260": {
+      "name": "HD현대일렉트릭",
+      "vision_signal": "중립"
+    },
+    "012330": {
+      "name": "현대모비스",
+      "vision_signal": "중립"
+    },
+    "047810": {
+      "name": "한국항공우주",
+      "vision_signal": "매도"
+    },
+    "001440": {
+      "name": "대한전선",
+      "vision_signal": "매도"
+    },
+    "105560": {
+      "name": "KB금융",
+      "vision_signal": "매도"
+    },
+    "489790": {
+      "name": "한화비전",
+      "vision_signal": "중립"
+    },
+    "005490": {
+      "name": "POSCO홀딩스",
+      "vision_signal": "중립"
+    },
+    "450080": {
+      "name": "에코프로머티",
+      "vision_signal": "매수"
+    },
+    "055550": {
+      "name": "신한지주",
+      "vision_signal": "매수"
+    },
+    "051910": {
+      "name": "LG화학",
+      "vision_signal": "중립"
+    },
+    "003280": {
+      "name": "흥아해운",
+      "vision_signal": "중립"
+    },
+    "035720": {
+      "name": "카카오",
+      "vision_signal": "중립"
+    },
+    "353200": {
+      "name": "대덕전자",
+      "vision_signal": "중립"
+    },
+    "028260": {
+      "name": "삼성물산",
+      "vision_signal": "매수"
+    },
+    "015760": {
+      "name": "한국전력",
+      "vision_signal": "중립"
+    },
+    "066570": {
+      "name": "LG전자",
+      "vision_signal": "중립"
+    },
+    "004020": {
+      "name": "현대제철",
+      "vision_signal": "중립"
+    },
+    "096770": {
+      "name": "SK이노베이션",
+      "vision_signal": "중립"
+    },
+    "373220": {
+      "name": "LG에너지솔루션",
+      "vision_signal": "중립"
+    },
+    "047050": {
+      "name": "포스코인터내셔널",
+      "vision_signal": "중립"
+    },
+    "068270": {
+      "name": "셀트리온",
+      "vision_signal": "중립"
+    },
+    "010140": {
+      "name": "삼성중공업",
+      "vision_signal": "중립"
+    },
+    "009540": {
+      "name": "HD한국조선해양",
+      "vision_signal": "중립"
+    },
+    "278470": {
+      "name": "에이피알",
+      "vision_signal": "매수"
+    },
+    "103140": {
+      "name": "풍산",
+      "vision_signal": "매도"
+    },
+    "086790": {
+      "name": "하나금융지주",
+      "vision_signal": "중립"
+    },
+    "032820": {
+      "name": "우리기술",
+      "vision_signal": "중립"
+    },
+    "089030": {
+      "name": "테크윙",
+      "vision_signal": "매수"
+    },
+    "086520": {
+      "name": "에코프로",
+      "vision_signal": "중립"
+    },
+    "024060": {
+      "name": "흥구석유",
+      "vision_signal": "매도"
+    },
+    "187660": {
+      "name": "현대ADM",
+      "vision_signal": "매수"
+    },
+    "078600": {
+      "name": "대주전자재료",
+      "vision_signal": "매수"
+    },
+    "403870": {
+      "name": "HPSP",
+      "vision_signal": "매수"
+    },
+    "277810": {
+      "name": "레인보우로보틱스",
+      "vision_signal": "중립"
+    },
+    "000250": {
+      "name": "삼천당제약",
+      "vision_signal": "중립"
+    },
+    "098460": {
+      "name": "고영",
+      "vision_signal": "매수"
+    },
+    "058470": {
+      "name": "리노공업",
+      "vision_signal": "중립"
+    },
+    "065450": {
+      "name": "빅텍",
+      "vision_signal": "중립"
+    },
+    "222080": {
+      "name": "씨아이에스",
+      "vision_signal": "매수"
+    },
+    "440110": {
+      "name": "파두",
+      "vision_signal": "중립"
+    },
+    "298380": {
+      "name": "에이비엘바이오",
+      "vision_signal": "중립"
+    },
+    "043260": {
+      "name": "성호전자",
+      "vision_signal": "중립"
+    },
+    "000440": {
+      "name": "중앙에너비스",
+      "vision_signal": "중립"
+    },
+    "038500": {
+      "name": "삼표시멘트",
+      "vision_signal": "중립"
+    },
+    "036930": {
+      "name": "주성엔지니어링",
+      "vision_signal": "중립"
+    },
+    "240810": {
+      "name": "원익IPS",
+      "vision_signal": "중립"
+    },
+    "247540": {
+      "name": "에코프로비엠",
+      "vision_signal": "중립"
+    },
+    "080220": {
+      "name": "제주반도체",
+      "vision_signal": "매수"
+    },
+    "090710": {
+      "name": "휴림로봇",
+      "vision_signal": "중립"
+    },
+    "178320": {
+      "name": "서진시스템",
+      "vision_signal": "중립"
+    },
+    "005860": {
+      "name": "한일사료",
+      "vision_signal": "중립"
+    },
+    "196170": {
+      "name": "알테오젠",
+      "vision_signal": "매수"
+    },
+    "234340": {
+      "name": "헥토파이낸셜",
+      "vision_signal": "매수"
+    },
+    "950160": {
+      "name": "코오롱티슈진",
+      "vision_signal": "매수"
+    },
+    "476830": {
+      "name": "알지노믹스",
+      "vision_signal": "매수"
+    },
+    "141080": {
+      "name": "리가켐바이오",
+      "vision_signal": "매수"
+    },
+    "458350": {
+      "name": "에스팀",
+      "vision_signal": "중립"
+    },
+    "456160": {
+      "name": "지투지바이오",
+      "vision_signal": "중립"
+    },
+    "226950": {
+      "name": "올릭스",
+      "vision_signal": "중립"
+    },
+    "083650": {
+      "name": "비에이치아이",
+      "vision_signal": "매수"
+    },
+    "253590": {
+      "name": "네오셈",
+      "vision_signal": "중립"
+    },
+    "048410": {
+      "name": "현대바이오",
+      "vision_signal": "중립"
+    },
+    "347700": {
+      "name": "스피어",
+      "vision_signal": "중립"
+    },
+    "491000": {
+      "name": "리브스메드",
+      "vision_signal": "중립"
+    },
+    "006920": {
+      "name": "모헨즈",
+      "vision_signal": "중립"
+    },
+    "222800": {
+      "name": "심텍",
+      "vision_signal": "매수"
+    },
+    "074600": {
+      "name": "원익QnC",
+      "vision_signal": "적극매수"
+    },
+    "039030": {
+      "name": "이오테크닉스",
+      "vision_signal": "중립"
+    },
+    "307180": {
+      "name": "아이엘",
+      "vision_signal": "매도"
+    },
+    "003380": {
+      "name": "하림지주",
+      "vision_signal": "매수"
+    },
+    "095340": {
+      "name": "ISC",
+      "vision_signal": "적극매수"
+    },
+    "024740": {
+      "name": "한일단조",
+      "vision_signal": "매수"
+    },
+    "067310": {
+      "name": "하나마이크론",
+      "vision_signal": "매수"
+    },
+    "321370": {
+      "name": "센서뷰",
+      "vision_signal": "매수"
+    },
+    "010170": {
+      "name": "대한광통신",
+      "vision_signal": "중립"
+    }
+  },
   "fear_greed": {
-    "score": 38.0810810810811,
+    "score": 30.7428571428571,
     "rating": "fear"
   }
 }
