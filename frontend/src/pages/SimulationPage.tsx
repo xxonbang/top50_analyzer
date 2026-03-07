@@ -2,7 +2,6 @@ import { useEffect, useRef, useMemo } from 'react';
 import { useSimulationIndex, useSimulationMultipleDates } from '@/hooks/useSimulationData';
 import { useSimulationStore } from '@/store/simulationStore';
 import { useAuthStore } from '@/store/authStore';
-import type { SimulationMode, InvestmentMode } from '@/store/simulationStore';
 import { SimulationSummary, DateSelector, CategorySection, CollectionTrigger, AnalysisTimeSelector } from '@/components/simulation';
 import { useAnalysisTimeOverride } from '@/hooks/useAnalysisTimeOverride';
 import { LoadingSpinner, EmptyState } from '@/components/common';
@@ -89,10 +88,7 @@ export function SimulationPage() {
   return (
     <div className="space-y-3 md:space-y-4">
       <PageHeader allDates={tradingDayHistory.map((h) => h.date)} />
-      <div className="flex flex-col sm:flex-row gap-2">
-        <SimulationModeTabs />
-        <InvestmentModeTabs />
-      </div>
+      <SimulationControls />
 
       {/* 종합 수익률 */}
       <SimulationSummary dataByDate={effectiveDataByDate} />
@@ -157,61 +153,78 @@ function PageHeader({ allDates }: { allDates?: string[] }) {
   );
 }
 
-const MODE_TABS: { key: SimulationMode; label: string; shortLabel: string }[] = [
-  { key: 'close', label: '종가 매도', shortLabel: '종가' },
-  { key: 'high', label: '최고가 매도', shortLabel: '최고가' },
-];
-
-function SimulationModeTabs() {
-  const { simulationMode, setSimulationMode } = useSimulationStore();
+function SimulationControls() {
+  const { simulationMode, setSimulationMode, investmentMode, setInvestmentMode } = useSimulationStore();
 
   return (
-    <div className="flex gap-1 bg-bg-secondary p-1 rounded-xl border border-border flex-1">
-      {MODE_TABS.map((tab) => (
-        <button
-          key={tab.key}
-          onClick={() => setSimulationMode(tab.key)}
-          className={cn(
-            'flex-1 py-2 md:py-2.5 px-3 md:px-4 rounded-lg text-xs md:text-sm font-semibold transition-all text-center',
-            simulationMode === tab.key
-              ? 'bg-accent-primary text-white'
-              : 'text-text-muted hover:text-text-secondary hover:bg-bg-primary'
-          )}
-        >
-          <span className="hidden sm:inline">{tab.label}</span>
-          <span className="sm:hidden">{tab.shortLabel}</span>
-        </button>
-      ))}
+    <div className="flex flex-col sm:flex-row gap-2.5 sm:gap-3">
+      {/* 투자 방식 */}
+      <ControlGroup label="투자 방식">
+        <ControlButton
+          active={investmentMode === 'equal_amount'}
+          onClick={() => setInvestmentMode('equal_amount')}
+          label="동일 금액"
+          shortLabel="동일금액"
+        />
+        <ControlButton
+          active={investmentMode === 'per_share'}
+          onClick={() => setInvestmentMode('per_share')}
+          label="종목당 1주"
+          shortLabel="1주씩"
+        />
+      </ControlGroup>
+
+      {/* 매도 기준 */}
+      <ControlGroup label="매도 기준">
+        <ControlButton
+          active={simulationMode === 'close'}
+          onClick={() => setSimulationMode('close')}
+          label="종가 매도"
+          shortLabel="종가"
+        />
+        <ControlButton
+          active={simulationMode === 'high'}
+          onClick={() => setSimulationMode('high')}
+          label="최고가 매도"
+          shortLabel="최고가"
+        />
+      </ControlGroup>
     </div>
   );
 }
 
-const INVESTMENT_TABS: { key: InvestmentMode; label: string; shortLabel: string }[] = [
-  { key: 'per_share', label: '종목당 1주', shortLabel: '1주씩' },
-  { key: 'equal_amount', label: '동일 금액', shortLabel: '동일금액' },
-];
-
-function InvestmentModeTabs() {
-  const { investmentMode, setInvestmentMode } = useSimulationStore();
-
+function ControlGroup({ label, children }: { label: string; children: React.ReactNode }) {
   return (
-    <div className="flex gap-1 bg-bg-secondary p-1 rounded-xl border border-border flex-1">
-      {INVESTMENT_TABS.map((tab) => (
-        <button
-          key={tab.key}
-          onClick={() => setInvestmentMode(tab.key)}
-          className={cn(
-            'flex-1 py-2 md:py-2.5 px-3 md:px-4 rounded-lg text-xs md:text-sm font-semibold transition-all text-center',
-            investmentMode === tab.key
-              ? 'bg-accent-primary text-white'
-              : 'text-text-muted hover:text-text-secondary hover:bg-bg-primary'
-          )}
-        >
-          <span className="hidden sm:inline">{tab.label}</span>
-          <span className="sm:hidden">{tab.shortLabel}</span>
-        </button>
-      ))}
+    <div className="flex-1">
+      <span className="text-[0.6rem] font-semibold text-text-muted/70 uppercase tracking-widest ml-1 mb-1 block">
+        {label}
+      </span>
+      <div className="flex gap-0.5 bg-bg-secondary/80 p-0.5 rounded-lg border border-border/60">
+        {children}
+      </div>
     </div>
+  );
+}
+
+function ControlButton({ active, onClick, label, shortLabel }: {
+  active: boolean;
+  onClick: () => void;
+  label: string;
+  shortLabel: string;
+}) {
+  return (
+    <button
+      onClick={onClick}
+      className={cn(
+        'flex-1 py-1.5 md:py-2 px-3 md:px-4 rounded-md text-[0.7rem] md:text-xs font-semibold transition-all text-center',
+        active
+          ? 'bg-white text-text-primary shadow-sm border border-border/40'
+          : 'text-text-muted hover:text-text-secondary'
+      )}
+    >
+      <span className="hidden sm:inline">{label}</span>
+      <span className="sm:hidden">{shortLabel}</span>
+    </button>
   );
 }
 

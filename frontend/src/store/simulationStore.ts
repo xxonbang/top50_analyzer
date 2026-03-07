@@ -56,7 +56,7 @@ interface SimulationStore {
 
 export const useSimulationStore = create<SimulationStore>((set, get) => ({
   simulationMode: 'close' as SimulationMode,
-  investmentMode: 'per_share' as InvestmentMode,
+  investmentMode: 'equal_amount' as InvestmentMode,
   activeCategories: new Set<SimulationCategory>(['vision', 'kis', 'combined']),
   excludedStocks: new Set<string>(),
   selectedDates: new Set<string>(),
@@ -136,7 +136,7 @@ export const useSimulationStore = create<SimulationStore>((set, get) => ({
   resetAll: (allDates) =>
     set({
       simulationMode: 'close' as SimulationMode,
-      investmentMode: 'per_share' as InvestmentMode,
+      investmentMode: 'equal_amount' as InvestmentMode,
       activeCategories: new Set<SimulationCategory>(['vision', 'kis', 'combined']),
       excludedStocks: new Set<string>(),
       selectedDates: new Set(allDates),
