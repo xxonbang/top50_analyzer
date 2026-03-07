@@ -45,7 +45,7 @@ export function StockBadge({ stock, category, date, isExpanded, onToggle }: Stoc
               {stock.name}
             </span>
             <a
-              href={`https://finance.naver.com/item/main.naver?code=${stock.code}`}
+              href={`https://m.stock.naver.com/domestic/stock/${stock.code}/total`}
               target="_blank"
               rel="noopener noreferrer"
               onClick={(e) => e.stopPropagation()}
