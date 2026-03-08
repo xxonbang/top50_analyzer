@@ -148,25 +148,21 @@ function FearGreedCard({ data }: { data: FearGreedData }) {
   const style = FEAR_GREED_STYLES[data.rating] ?? FEAR_GREED_STYLES['neutral']!;
   const label = FEAR_GREED_LABELS[data.rating] ?? data.rating;
 
-  // 게이지 퍼센트 (0~100)
   const pct = Math.max(0, Math.min(100, data.score));
 
   return (
     <div className={`bg-gradient-to-r ${style.bg} ${style.text} border rounded-lg relative`}>
-      <div className="flex items-center gap-2 px-3 py-2">
-        <button
-          type="button"
-          onClick={() => setOpen(v => !v)}
-          className="flex items-center gap-2 flex-1 min-w-0 cursor-pointer"
-        >
-          <span className="text-base flex-shrink-0">🎭</span>
-          <span className="font-semibold text-xs sm:text-sm whitespace-nowrap">Fear & Greed</span>
-          <span className={`text-[10px] sm:text-xs px-1.5 py-0.5 rounded border font-medium flex-shrink-0 ${style.badge}`}>
-            {label}
-          </span>
-        </button>
-        <HelpButton onClick={() => setShowLegend(v => !v)} />
-        {/* 미니 게이지 바 */}
+      <button
+        type="button"
+        onClick={() => setOpen(v => !v)}
+        className="w-full flex items-center gap-2 px-3 py-2 cursor-pointer"
+      >
+        <span className="text-base flex-shrink-0">🎭</span>
+        <span className="font-semibold text-xs sm:text-sm whitespace-nowrap">Fear & Greed</span>
+        <span className={`text-[10px] sm:text-xs px-1.5 py-0.5 rounded border font-medium flex-shrink-0 ${style.badge}`}>
+          {label}
+        </span>
+        <HelpButton onClick={e => { e.stopPropagation(); setShowLegend(v => !v); }} />
         <div className="flex-1 mx-1 h-2 bg-black/10 rounded-full overflow-hidden min-w-[40px]">
           <div
             className="h-full rounded-full transition-all duration-500"
@@ -177,22 +173,16 @@ function FearGreedCard({ data }: { data: FearGreedData }) {
             }}
           />
         </div>
-        <button
-          type="button"
-          onClick={() => setOpen(v => !v)}
-          className="flex items-center gap-2 flex-shrink-0 cursor-pointer"
+        <span className="ml-auto font-bold text-sm sm:text-base tabular-nums flex-shrink-0">
+          {data.score.toFixed(0)}
+        </span>
+        <svg
+          className={`w-4 h-4 flex-shrink-0 opacity-50 transition-transform duration-200 ${open ? 'rotate-180' : ''}`}
+          fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}
         >
-          <span className="font-bold text-sm sm:text-base tabular-nums">
-            {data.score.toFixed(0)}
-          </span>
-          <svg
-            className={`w-4 h-4 opacity-50 transition-transform duration-200 ${open ? 'rotate-180' : ''}`}
-            fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}
-          >
-            <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
-          </svg>
-        </button>
-      </div>
+          <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+        </svg>
+      </button>
       <div className={`overflow-hidden transition-all duration-200 ${open ? 'max-h-40' : 'max-h-0'}`}>
         <div className="px-3 pb-2.5 grid grid-cols-3 gap-x-3 gap-y-1.5 sm:flex sm:justify-between text-xs sm:text-sm">
           {[
@@ -247,37 +237,42 @@ function VixCard({ data }: { data: VixData }) {
   const style = getVixStyle(data.current);
   const changeColor = data.change > 0 ? 'text-red-500' : data.change < 0 ? 'text-emerald-600' : '';
 
+  // VIX 게이지: 10~50 범위를 0~100%로 매핑
+  const vixPct = Math.max(0, Math.min(100, ((data.current - 10) / 40) * 100));
+
   return (
     <div className={`bg-gradient-to-r ${style.bg} ${style.text} border rounded-lg relative`}>
-      <div className="flex items-center gap-2 px-3 py-2">
-        <button
-          type="button"
-          onClick={() => setOpen(v => !v)}
-          className="flex items-center gap-2 flex-1 min-w-0 cursor-pointer"
+      <button
+        type="button"
+        onClick={() => setOpen(v => !v)}
+        className="w-full flex items-center gap-2 px-3 py-2 cursor-pointer"
+      >
+        <span className="text-base flex-shrink-0">📉</span>
+        <span className="font-semibold text-xs sm:text-sm whitespace-nowrap">VIX</span>
+        <span className={`text-[10px] sm:text-xs px-1.5 py-0.5 rounded border font-medium flex-shrink-0 ${style.badge}`}>
+          {style.label}
+        </span>
+        <HelpButton onClick={e => { e.stopPropagation(); setShowLegend(v => !v); }} />
+        <div className="flex-1 mx-1 h-2 bg-black/10 rounded-full overflow-hidden min-w-[40px]">
+          <div
+            className="h-full rounded-full transition-all duration-500"
+            style={{
+              width: `${vixPct}%`,
+              background: `linear-gradient(90deg, #059669 0%, #22c55e 25%, #6b7280 50%, #f97316 75%, #dc2626 100%)`,
+              backgroundSize: '100vw',
+            }}
+          />
+        </div>
+        <span className="ml-auto font-bold text-sm sm:text-base tabular-nums flex-shrink-0">
+          {data.current.toFixed(2)}
+        </span>
+        <svg
+          className={`w-4 h-4 flex-shrink-0 opacity-50 transition-transform duration-200 ${open ? 'rotate-180' : ''}`}
+          fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}
         >
-          <span className="text-base flex-shrink-0">📉</span>
-          <span className="font-semibold text-xs sm:text-sm whitespace-nowrap">VIX</span>
-          <span className={`text-[10px] sm:text-xs px-1.5 py-0.5 rounded border font-medium flex-shrink-0 ${style.badge}`}>
-            {style.label}
-          </span>
-        </button>
-        <HelpButton onClick={() => setShowLegend(v => !v)} />
-        <button
-          type="button"
-          onClick={() => setOpen(v => !v)}
-          className="flex items-center gap-2 flex-shrink-0 cursor-pointer ml-auto"
-        >
-          <span className="font-bold text-sm sm:text-base tabular-nums">
-            {data.current.toFixed(2)}
-          </span>
-          <svg
-            className={`w-4 h-4 opacity-50 transition-transform duration-200 ${open ? 'rotate-180' : ''}`}
-            fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}
-          >
-            <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
-          </svg>
-        </button>
-      </div>
+          <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+        </svg>
+      </button>
       <div className={`overflow-hidden transition-all duration-200 ${open ? 'max-h-40' : 'max-h-0'}`}>
         <div className="px-3 pb-2.5 grid grid-cols-3 gap-x-3 gap-y-1.5 text-xs sm:text-sm">
           <div className="flex flex-col">
