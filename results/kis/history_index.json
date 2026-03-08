@@ -1,8 +1,21 @@
 {
-  "updated_at": "2026-03-06 19:51:54",
+  "updated_at": "2026-03-08 19:39:47",
   "retention_days": 30,
-  "total_records": 63,
+  "total_records": 64,
   "history": [
+    {
+      "date": "2026-03-08",
+      "time": "1939",
+      "filename": "kis_2026-03-08_1939.json",
+      "total_stocks": 100,
+      "signals": {
+        "중립": 76,
+        "매수": 17,
+        "적극매수": 3,
+        "매도": 3,
+        "적극매도": 1
+      }
+    },
     {
       "date": "2026-03-06",
       "time": "1951",
@@ -19,7 +32,13 @@
       "date": "2026-03-06",
       "time": "0739",
       "filename": "kis_2026-03-06_0739.json",
-      "total_stocks": 100
+      "total_stocks": 100,
+      "signals": {
+        "중립": 80,
+        "매도": 17,
+        "적극매도": 1,
+        "매수": 2
+      }
     },
     {
       "date": "2026-03-05",
